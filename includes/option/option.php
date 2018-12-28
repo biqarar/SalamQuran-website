@@ -22,4 +22,6 @@ self::$config['site']['slogan']        = "The simple framework for php programme
 self::$config['debug']                 = true;
 self::$config['enter']['force_verify'] = false;
 
+self::$config['coming'] = true;
+
 ?>
