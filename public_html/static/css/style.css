@@ -1,2 +1,15 @@
+body{
+	min-height: 100%;
+}
+.loading{
+	background-color:#000306;
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+}
+.loading img{
+	display:block;
+	margin:0 auto;
+}
 
 
