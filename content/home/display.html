@@ -3,16 +3,7 @@
 
 
 {%block body%}
-{%if not sura%}
-<div class="loading"><img src="{{url.static}}/images/home/loading500.jpg" alt='{{site.title}}'></div>
-{%else%}
-<div class="cbox">
-
-{%for key, value in sura%}
-<div class="msg">{{value.text}}</div>
-{%endfor%}
-</div>
-{%endif%}
+{%include 'content/home/list-sore.html'%}
 
 {%endblock%}
 
