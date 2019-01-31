@@ -19,7 +19,7 @@ self::$config['site']['title']         = "Dash";
 self::$config['site']['desc']          = "Free PHP Framework & CMS!";
 self::$config['site']['slogan']        = "The simple framework for php programmers ;)";
 
-self::$config['debug']                 = true;
+
 self::$config['enter']['force_verify'] = false;
 
 self::$config['coming'] = true;
