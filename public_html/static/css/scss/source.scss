@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*
+@ In the name of Allah
+Description   Salam Quran dot com project
+Author        Ermile
+Author URI    Ermile.com
+Version       1.0.0
+*/
+
+
+// add fonts
+@import 'font/page-by-page';
+@import 'font/soreha';
+
+// add website
+@import 'website/base';
+@import 'website/header';
+@import 'website/footer';
+@import 'website/homepage';
+
+
+// add responsive styles
+@import 'responsive/desktop';
+@import 'responsive/tablet';
+@import 'responsive/mobile';
+@import 'responsive/print';
+@import 'responsive/app';
+
+
