@@ -5819,6 +5819,13 @@ body {
   display: block;
   margin: 0 auto; }
 
+#header {
+  height: 50px;
+  background-color: #eee; }
+
+#footer {
+  height: 100px; }
+
 /* Design for print */
 
 /*# sourceMappingURL=style.css.map */
