@@ -5826,16 +5826,23 @@ body {
 #footer {
   height: 100px; }
 
-.soreha {
-  padding: 1em 0; }
+#soreha {
+  padding: 3em 0; }
 
-.soreha > .c4 {
+#soreha h2 {
+  color: #aaa;
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-bottom: 1em; }
+
+#soreha > .c4 {
   transition: 0.3s; }
 
-.soreha > .c4:hover {
-  background-color: #efefef; }
+#soreha > .c4:hover {
+  background-color: #f9f9f9;
+  border-radius: 0.5rem; }
 
-.soreha a {
+#soreha a {
   transition: 0.3s;
   padding: 1rem 1rem;
   -webkit-box-align: center !important;
@@ -5844,22 +5851,22 @@ body {
   -moz-box-align: center !important;
   align-items: center !important; }
 
-.soreha a:hover {
-  background-color: #ddd; }
+#soreha a:hover {
+  background-color: #eee; }
 
-.soreha .c1 {
+#soreha .c1 {
   color: #ccc; }
 
-.soreha .c3 {
+#soreha .c3 {
   text-align: right; }
 
-.soreha .c7 span {
+#soreha .c5 span {
   display: block;
   font-size: 1.3em;
   line-height: 1.5em;
   font-weight: 700; }
 
-.soreha .c7 abbr {
+#soreha .c5 abbr {
   display: block; }
 
 /* Design for print */
