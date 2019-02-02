@@ -66,3 +66,10 @@ return true;
 }));
 
 
+$(function()
+{
+	$('nav#menu').mmenu();
+
+});
+
+
