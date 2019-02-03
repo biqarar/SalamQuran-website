@@ -1,6 +1,13 @@
 #header{
 	height: 50px;
 	background-color: #eee;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	cursor:default;
 }
 
 // sidenavHandler
@@ -13,6 +20,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	cursor: pointer !important;
 }
 .sidenavHandler:before,
 .sidenavHandler:after
