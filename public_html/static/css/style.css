@@ -5838,14 +5838,18 @@ body {
   cursor: default; }
 
 .sidenavHandler {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
   display: block;
-  width: 50px;
-  height: 50px;
-  padding: 15px 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  color: #777;
+  padding: 1.5rem 1rem;
+  transition: 0.3s;
   cursor: pointer !important; }
+
+.sidenavHandler:hover {
+  color: #aaa;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .sidenavHandler:before,
 .sidenavHandler:after {
