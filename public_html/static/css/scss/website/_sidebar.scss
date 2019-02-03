@@ -4,6 +4,7 @@
 	top: 0;
 	bottom: 0;
 	left: 0;
+	z-index: 10;
 	font-size: 1.4em;
 	-webkit-touch-callout:none;
 	-webkit-user-select:none;
@@ -32,7 +33,7 @@
 	background-color: #333;
 	text-align: center;
 	border-right:1px solid rgba(0,0,0,.3);
-	z-index: 10;
+	z-index: 11;
 }
 .rtl #sidebar .always{
 	float: right;
@@ -64,11 +65,12 @@
 
 #sidebar .menu{
 	background-color: #f1f1f1;
-	display: inline-block;
+	display: block;
 	min-width: 200px;
 	max-width: 350px;
 	height: 100%;
 	position: absolute;
+	z-index: 10;
 	left: -25rem;
 	transition: 0.3s ease-in-out;
 }
