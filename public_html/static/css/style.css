@@ -5812,10 +5812,13 @@ body {
 
 #page {
   min-height: 100%;
-  margin: 0 0 0 5rem; }
+  margin: 0; }
+
+.ltr #page {
+  margin-left: 5rem; }
 
 .rtl #page {
-  margin: 0 5rem 0 0; }
+  margin-right: 5rem; }
 
 #menu {
   font-size: 1.3em; }
@@ -6069,6 +6072,12 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   display: block; }
 
 @media (max-width: 767px) {
+  .ltr #page {
+    margin-left: 0; }
+
+  .rtl #page {
+    margin-right: 0; }
+
   .ltr #sidebar {
     left: -5rem; }
 
