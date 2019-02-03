@@ -66,10 +66,61 @@ return true;
 }));
 
 
-$(function()
-{
-	$('nav#menu').mmenu();
+$(function() {
+	$('nav#menu').mmenu({
+		extensions	: [ 'theme-dark' ],
+		setSelected	: true,
+		counters	: true,
+		searchfield : {
+			placeholder		: 'Search menu items'
+		},
+		iconbar		: {
+			add 		: true,
+			size		: 40,
+			top 		: [
+				'<a href="#/"><span class="sf-home"></span></a>'
+			],
+			bottom 		: [
+				'<a href="#/"><span class="sf-twitter"></span></a>',
+				'<a href="#/"><span class="sf-facebook-square"></span></a>',
+				'<a href="#/"><span class="sf-youtube"></span></a>'
+			]
+		},
+		sidebar		: {
+			collapsed		: {
+				use 			: '(min-width: 450px)',
+				size			: 40,
+				hideNavbar		: false
+			},
+			expanded		: {
+				use 			: '(min-width: 1400px)',
+				size			: 35
+			}
+		},
+		navbars		: [
+			{
+				content		: [ 'searchfield' ]
+			}, {
+				content		: [ 'prev', 'breadcrumbs', 'close' ]
+			}, {
+				position	: 'bottom',
+				content		: [ '<a href="http://mmenu.frebsite.nl/wordpress-plugin" target="_blank">WordPress plugin</a>' ]
+			}
+		]
+	}, {
+		searchfield : {
+			clear 		: true
+		},
+		navbars		: {
+			breadcrumbs	: {
+				removeFirst	: true
+			}
+		}
+	});
 
+	$('a[href^="#/"]').click(function() {
+		alert( 'Thank you for clicking, but that\'s a demo link' );
+		return false;
+	})
 });
-
 
