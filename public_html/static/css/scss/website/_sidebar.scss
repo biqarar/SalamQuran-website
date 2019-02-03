@@ -1,0 +1,48 @@
+#sidebar{
+	max-width: 400px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #aaa;
+	font-size: 1.4em;
+}
+.rtl #sidebar{
+	left: initial;
+	right: 0;
+}
+#sidebar .always{
+	position: relative;
+	float: left;
+	width: 5rem;
+	height: 100%;
+	background-color: #333;
+	text-align: center;
+	border-right:1px solid rgba(0,0,0,.3);
+}
+.rtl #sidebar .always{
+	float: right;
+	border-right:none;
+	border-left:1px solid rgba(0,0,0,.3);
+}
+#sidebar .always .top a{
+	width: 5rem;
+	height: 5rem;
+	line-height: 5rem;
+	display: block;
+	color: #777;
+	transition: 0.3s;
+}
+#sidebar .always .top a:hover{
+	color: #aaa;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#sidebar .menu{
+	background-color: #ff3300;
+	position: relative;
+	display: inline-block;
+	min-width: 200px;
+	max-width: 350px;
+}
+

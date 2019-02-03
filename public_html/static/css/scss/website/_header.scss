@@ -3,7 +3,8 @@
 	background-color: #eee;
 }
 
-#header #sidebarHandler
+// sidenavHandler
+#sidenavHandler
 {
 	display: block;
 	width: 50px;
@@ -13,15 +14,15 @@
 	top: 0;
 	left: 0;
 }
-#header #sidebarHandler:before,
-#header #sidebarHandler:after
+#sidenavHandler:before,
+#sidenavHandler:after
 {
 	content: '';
 	display: block;
 	background: #333;
 	height: 2px;
 }
-#header #sidebarHandler span
+#sidenavHandler span
 {
 	background: #333;
 	display: block;

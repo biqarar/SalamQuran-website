@@ -6,48 +6,39 @@
 
 <div id="page">
 	<header id="header">
-		<a href="#menu" id='sidebarHandler' data-action><span></span></a>
+		<div id='sidenavHandler'><span></span></div>
 	</header>
 
 	<div class="cn">
 	{%include 'content/home/list-sore.html'%}
 	</div>
 
-	<nav id="menu">
-		<div id="panel-menu">
-			<ul>
-				<li><a href="#/">Home</a></li>
-				<li><span>About us</span>
-					<ul>
-						<li><a href="#/">History</a></li>
-						<li><span>The team</span>
-							<ul>
-								<li><a href="#/">Management</a></li>
-								<li><a href="#/">Sales</a></li>
-								<li><a href="#/">Development</a></li>
-							</ul>
-						</li>
-						<li><a href="#/">Our address</a></li>
-					</ul>
-				</li>
-				<li><a href="#/">Contact</a></li>
+	<footer id="footer">
+		<div class="cn">
 
-				<li class="Divider">Other demos</li>
-				<li><a href="default.html">Default demo</a></li>
-				<li><a href="onepage.html">One page demo</a></li>
-			</ul>
 		</div>
-	</nav>
-
+	</footer>
 </div>
 
+<aside id="sidebar">
+	<nav class="always">
+		<div class="top">
+			<a href="{{url.kingdom}}" title='{%trans "Homepage"%}'><span class="sf-home"></span></a>
+		</div>
+		<div class="bottom">
+		</div>
+	</nav>
+	<nav class="menu">
+		<ul>
+			<li>{%trans "Homepage"%}</li>
+			<li>{%trans "About"%}</li>
+			<li>{%trans "Contact"%}</li>
+			<li>{%trans "Vision"%}</li>
+		</ul>
+	</nav>
+</aside>
 
 
 
-<footer id="footer">
-	<div class="cn">
-
-	</div>
-</footer>
 {%endblock%}
 
