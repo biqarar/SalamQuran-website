@@ -5834,7 +5834,7 @@ body {
   margin: 0 auto; }
 
 #header {
-  height: 50px;
+  height: 5rem;
   background-color: #eee;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -5844,8 +5844,13 @@ body {
   user-select: none;
   cursor: default; }
 
+#header .sidenavHandler {
+  display: none; }
+
 .sidenavHandler {
   width: 5rem;
+  min-width: 5rem !important;
+  max-width: 5rem !important;
   height: 5rem;
   line-height: 5rem;
   display: block;
@@ -6082,7 +6087,10 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
     left: -5rem; }
 
   .rtl #sidebar {
-    right: -5rem; } }
+    right: -5rem; }
+
+  #header .sidenavHandler {
+    display: block; } }
 /* Design for print */
 
 /*# sourceMappingURL=style.css.map */
