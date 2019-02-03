@@ -4,7 +4,7 @@
 }
 
 // sidenavHandler
-#sidenavHandler
+.sidenavHandler
 {
 	display: block;
 	width: 50px;
@@ -14,17 +14,17 @@
 	top: 0;
 	left: 0;
 }
-#sidenavHandler:before,
-#sidenavHandler:after
+.sidenavHandler:before,
+.sidenavHandler:after
 {
 	content: '';
 	display: block;
-	background: #333;
+	background: #aaa;
 	height: 2px;
 }
-#sidenavHandler span
+.sidenavHandler span
 {
-	background: #333;
+	background: #aaa;
 	display: block;
 	height: 2px;
 	margin: 6px 0;

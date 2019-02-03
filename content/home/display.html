@@ -6,7 +6,7 @@
 
 <div id="page">
 	<header id="header">
-		<div id='sidenavHandler'><span></span></div>
+
 	</header>
 
 	<div class="cn">
@@ -23,6 +23,7 @@
 <aside id="sidebar">
 	<nav class="always">
 		<div class="top">
+			<a class='sidenavHandler'><span></span></a>
 			<a href="{{url.kingdom}}" title='{%trans "Homepage"%}'><span class="sf-home"></span><span class="hide">{%trans "Homepage"%}</span></a>
 		</div>
 
@@ -48,10 +49,9 @@
 	<nav class="menu">
 		<ul>
 			<li><a href="{{url.kingdom}}">{{site.title}}</a></li>
-			<li><a href="#">{%trans "Homepage"%}</a></li>
-			<li><a href="#">{%trans "About"%}</a></li>
-			<li><a href="#">{%trans "Contact"%}</a></li>
-			<li><a href="#">{%trans "Vision"%}</a></li>
+			<li><a href="{{url.kingdom}}/about">{%trans "About"%}</a></li>
+			<li><a href="{{url.kingdom}}/contact">{%trans "Contact"%}</a></li>
+			<li><a href="{{url.kingdom}}/vision">{%trans "Vision"%}</a></li>
 		</ul>
 	</nav>
 </aside>

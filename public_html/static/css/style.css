@@ -5830,7 +5830,7 @@ body {
   height: 50px;
   background-color: #eee; }
 
-#sidenavHandler {
+.sidenavHandler {
   display: block;
   width: 50px;
   height: 50px;
@@ -5839,15 +5839,15 @@ body {
   top: 0;
   left: 0; }
 
-#sidenavHandler:before,
-#sidenavHandler:after {
+.sidenavHandler:before,
+.sidenavHandler:after {
   content: '';
   display: block;
-  background: #333;
+  background: #aaa;
   height: 2px; }
 
-#sidenavHandler span {
-  background: #333;
+.sidenavHandler span {
+  background: #aaa;
   display: block;
   height: 2px;
   margin: 6px 0; }
@@ -5878,7 +5878,8 @@ body {
   height: 100%;
   background-color: #333;
   text-align: center;
-  border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  z-index: 10; }
 
 .rtl #sidebar .always {
   float: right;
@@ -5909,11 +5910,17 @@ body {
 
 #sidebar .menu {
   background-color: #f1f1f1;
-  position: relative;
   display: inline-block;
   min-width: 200px;
   max-width: 350px;
-  height: 100%; }
+  height: 100%;
+  position: absolute;
+  left: -25rem;
+  transition: 0.3s ease-in-out; }
+
+body[data-sidebar="dada"] #sidebar .menu {
+  left: 5rem;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
 
 #sidebar .menu a {
   padding: 1rem 2rem;
@@ -5922,6 +5929,9 @@ body {
 
 #sidebar .menu a:hover {
   background-color: rgba(0, 0, 0, 0.1); }
+
+#sidebar .menu ul {
+  margin-top: 5rem; }
 
 #sidebar .menu ul a:before {
   content: '';
