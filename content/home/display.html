@@ -23,17 +23,35 @@
 <aside id="sidebar">
 	<nav class="always">
 		<div class="top">
-			<a href="{{url.kingdom}}" title='{%trans "Homepage"%}'><span class="sf-home"></span></a>
+			<a href="{{url.kingdom}}" title='{%trans "Homepage"%}'><span class="sf-home"></span><span class="hide">{%trans "Homepage"%}</span></a>
 		</div>
-		<div class="bottom">
-		</div>
+
+		<footer>
+{%if social.twitter or 1%}
+		<a data-direct target='_blank' href="https://twitter.com/{{social.twitter}}" class="sf-twitter" title='{%trans "Twitter"%}'><span class="hide">{{site.title}} twitter</span></a>
+{%endif%}
+{%if social.facebook or 1%}
+		<a data-direct target='_blank' href="https://www.facebook.com/{{social.facebook}}" class="sf-facebook-official" title='{%trans "Facebook"%}'><span class="hide">{{site.title}} facebook</span></a>
+{%endif%}
+{%if social.telegram or 1%}
+		<a data-direct target='_blank' href="https://t.me/{{social.telegram}}" class="sf-paper-plane" title='{%trans "Telegram"%}'><span class="hide">{{site.title}} telegram</span></a>
+{%endif%}
+{%if social.instagram or 1%}
+		<a data-direct target='_blank' href="https://instagram.com/{{social.instagram}}" class="sf-instagram" title='{%trans "Instagram"%}'><span class="hide">{{site.title}} instagram</span></a>
+{%endif%}
+{%if social.linkedin or 1%}
+		<a data-direct target='_blank' href="https://www.linkedin.com/{{social.linkedin}}" class="sf-linkedin" title='{%trans "Linkedin"%}'><span class="hide">{{site.title}} linkedin</span></a>
+{%endif%}
+
+		</footer>
 	</nav>
 	<nav class="menu">
 		<ul>
-			<li>{%trans "Homepage"%}</li>
-			<li>{%trans "About"%}</li>
-			<li>{%trans "Contact"%}</li>
-			<li>{%trans "Vision"%}</li>
+			<li><a href="{{url.kingdom}}">{{site.title}}</a></li>
+			<li><a href="#">{%trans "Homepage"%}</a></li>
+			<li><a href="#">{%trans "About"%}</a></li>
+			<li><a href="#">{%trans "Contact"%}</a></li>
+			<li><a href="#">{%trans "Vision"%}</a></li>
 		</ul>
 	</nav>
 </aside>
