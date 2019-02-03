@@ -4,6 +4,10 @@ body{
 }
 #page{
 	min-height: 100%;
+	margin: 0 0 0 5rem;
+}
+.rtl #page{
+	margin: 0 5rem 0 0;
 }
 #menu{
 	font-size: 1.3em;
