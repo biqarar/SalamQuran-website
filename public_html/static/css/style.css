@@ -5843,15 +5843,27 @@ body {
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  padding: 0 3%; }
 
-#header nav {
-  padding: 0 3em; }
+#header h1 {
+  margin: 0; }
+
+#header h1 a {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0.5rem 1em; }
 
 #header nav a:not(.btn) {
   display: inline-block;
   line-height: 40px;
-  margin: 0.5rem 1em; }
+  padding: 0.5rem 1em;
+  margin: 0 0.5rem;
+  transition: 0.3s; }
+
+#header nav a:hover {
+  background-color: #fff;
+  color: #3070b0; }
 
 #header .sidenavHandler {
   display: none; }
