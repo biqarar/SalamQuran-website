@@ -5842,7 +5842,16 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default; }
+  cursor: default;
+  font-size: 1.3em; }
+
+#header nav {
+  padding: 0 3em; }
+
+#header nav a:not(.btn) {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0.5rem 1em; }
 
 #header .sidenavHandler {
   display: none; }
