@@ -1,5 +1,11 @@
+
+/*footer */
 #footer{
-	height: 100px;
+  padding:0;
+  color: #eee;
+  background-color: #000f2a;
+  overflow:hidden;
+  font-size: 1.2em;
 	-webkit-touch-callout:none;
 	-webkit-user-select:none;
 	-khtml-user-select:none;
@@ -8,4 +14,84 @@
 	user-select:none;
 	cursor:default;
 }
+#footer .logo{
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  max-width: 50rem;
+  display: block;
+  margin: 10rem auto 5rem;
+  color: #eee;
+  border-bottom: 1px dotted #eee;
+  text-align: center;
+}
+#footer .logo img{
+  max-width: 30rem;
+  background-color: #eee;
+  border-radius: 2em;
+  padding: 2rem;
+  display: block;
+  margin: 0 auto 2rem;
+  transition: 0.3s;
+}
+#footer .logo:hover img{
+  background-color: #fff;
+}
+#footer .logo:hover{
+  color: #efefef;
+}
+#footer .logo:focus{
+  color: #fff;
+}
+#footer .footerNav{
+  position: relative;
+  z-index: 5;
+  margin-bottom: 1em;
+  text-align: center;
+}
+#footer .footerNav > nav{
+  padding: 0 1em;
+  margin-bottom: 1em;
+}
+#footer .footerNav a{
+  display: block;
+  color: #eee;
+  padding: 0 1em;
+  line-height: 4rem;
+  height: 4rem;
+  margin-bottom: 0.5em;
+  background-color: rgba(255,255,255,0.1);
+  transition: 0.3s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#footer .footerNav a:hover{
+  color: #efefef;
+  background-color: rgba(255,255,255,0.2);
+}
+#footer .footerNav a:focus{
+  color: #fff;
+  background-color: rgba(255,255,255,0.3);
+}
 
+#footer #copyright{
+  /*border-top: 1px dotted #444;*/
+  padding: 5rem 0;
+  user-select: none;
+  position: relative;
+  z-index: 5;
+}
+#footer #copyright a{
+  padding:5px 0;
+  transition:0.3s;
+  line-height: 25px;
+  border-bottom:1px dashed transparent;
+  display: inline-block;
+  color: #eee;
+}
+#footer #copyright a:hover{
+  border-bottom:1px dashed #aaa
+}
+#footer #copyright a:focus{
+  background-color: rgba(0,0,0,0.1);
+}
