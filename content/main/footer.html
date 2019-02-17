@@ -1,0 +1,56 @@
+
+<footer>
+  <div class="cn">
+    <a class="logo" href="{{url.kingdom}}">
+      <img src="{{url.static}}/images/logo/svg/logo-karimeh.svg" align="{{site.title}}">
+      <h2>{{site.title}}</h2>
+      <p>{{site.desc}}</p>
+    </a>
+
+    <div class="f footerNav">
+      <nav class="c s6">
+        <a href="{{url.kingdom}}/about">{%trans "About"%}</a>
+        <a href="{{url.kingdom}}/contact">{%trans "Contact"%}</a>
+        <a href="{{url.kingdom}}/faq">{%trans "FAQ"%}</a>
+      </nav>
+
+      <nav class="c s6">
+        <a href="{{url.kingdom}}/office">{%trans "Donate Offices"%}</a>
+        <a href="{{url.kingdom}}/banks">{%trans "Bank Account Number"%}</a>
+        <a href="{{url.kingdom}}/methods">{%trans "Payment methods"%}</a>
+      </nav>
+
+      <nav class="c s6">
+        <a href="https://amfm.ir" target='_blank'>{%trans "Main website"%}</a>
+        <a href="https://amfm.ir/schedule" target='_blank'>{%trans "Schedule of events"%}</a>
+        <a href="https://amfm.ir/ziarat" target='_blank'>{%trans "Deputy pilgrimage"%}</a>
+      </nav>
+
+      <nav class="c3 s6">
+{%if lang.current == "fa"%}
+        <a class="txtLa" href="mailto:info@amfm.ir"><i class="compact mRa10 sf-envelope"></i><span class="s0">{%trans "Email"%}</span><span class="txtB floatRa">info@amfm.ir</span></a>
+        <a class="txtLa" href="tel:02537741442"><i class="compact mRa10 sf-phone"></i><span class="s0">{%trans "Tel"%}</span><span class="txtB floatRa">{{"025-3774-1442" | fitNumber(false)}}</span></a>
+        <a class="txtLa" href="sms:30001122"><i class="compact mRa10 sf-commenting-o"></i><span class="s0">{%trans "SMS"%}</span><span class="txtB floatRa">{{"30001122" | fitNumber(false)}}</span></a>
+{%else%}
+        <a class="txtLa" href="{{url.kingdom}}"><i class="compact mRa10 sf-envelope"></i><span class="s0">{%trans "Website"%}</span><span class="txtB floatRa">{{url.base}}</span></a>
+        <a class="txtLa" href="mailto:info@amfm.ir"><i class="compact mRa10 sf-envelope"></i><span class="s0">{%trans "Email"%}</span><span class="txtB floatRa">info@amfm.ir</span></a>
+        <a class="txtLa" href="tel:00982537741442"><i class="compact mRa10 sf-phone"></i><span class="s0">{%trans "Tel"%}</span><span class="txtB floatRa">{{"0098-025-3774-1442" | fitNumber(false)}}</span></a>
+{%endif%}
+      </nav>
+
+      <div class="cauto s12">
+        {{langList({'html':true, 'all': true}) | raw}}
+      </div>
+    </div>
+
+    <div class="f" id='copyright'>
+      <div class="c">
+        {{page.copyright | raw}}
+      </div>
+      <div class="cauto os s12 txtRa" id='ermile'><a href="https://ermile.com" target='_blank' title='{%trans "Software Solution Designer"%}'>{%trans "Developed by Ermile"%}</a></div>
+    </div>
+
+  </div>
+</footer>
+
+
