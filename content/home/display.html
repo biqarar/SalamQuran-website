@@ -5,21 +5,7 @@
 {%block body%}
 
 <div id="page">
-	<header id="header" class="f">
-		<div class='sidenavHandler cauto'><span></span></div>
-		<div class="c">
-			<h1>
-				<a href="{{url.kingdom}}" title='{{site.desc}}'>{{site.title}}</a>
-			</h1>
-
-		</div>
-		<nav class="cauto os">
-			<a href="{{url.kingdom}}/mag">{%trans "Magazine"%}</a>
-			<a href="{{url.kingdom}}/audio">{%trans "Audio"%}</a>
-			<a href="{{url.kingdom}}/namaz">{%trans "Namaz"%}</a>
-			<a href="{{url.kingdom}}/enter" class="btn outline primary" title='{%trans "Enter to your account and use SalamQuran account features"%}'>{%trans "Enter"%}</a>
-		</nav>
-	</header>
+{%include 'content/main/header.html'%}
 
 	<main id="main" class="cn">
 		{%if sura%}
@@ -30,7 +16,6 @@
 	</main>
 
 {%include 'content/main/footer.html'%}
-
 </div>
 
 <aside id="sidebar">
