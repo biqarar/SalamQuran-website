@@ -22,7 +22,11 @@
 	</header>
 
 	<div class="cn">
-	{%include 'content/home/list-sore.html'%}
+		{%if sura%}
+			{%include 'content/home/sore.html'%}
+		{%else%}
+			{%include 'content/home/list-sore.html'%}
+		{%endif%}
 	</div>
 
 	<footer id="footer">
