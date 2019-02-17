@@ -26,7 +26,7 @@
   text-align: center;
 }
 #footer .logo img{
-  max-width: 30rem;
+  max-width: 25rem;
   background-color: #eee;
   border-radius: 2em;
   padding: 2rem;
@@ -46,7 +46,6 @@
 #footer .footerNav{
   position: relative;
   z-index: 5;
-  margin-bottom: 1em;
   text-align: center;
 }
 #footer .footerNav > nav{
@@ -76,7 +75,7 @@
 
 #footer #copyright{
   /*border-top: 1px dotted #444;*/
-  padding: 5rem 0;
+  padding: 2rem 0;
   user-select: none;
   position: relative;
   z-index: 5;
