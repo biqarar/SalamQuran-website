@@ -5868,14 +5868,18 @@ body {
 #header h1 a {
   display: inline-block;
   line-height: 40px;
-  margin: 0.5rem 1em; }
+  margin: 5px 10px; }
 
-#header nav a:not(.btn) {
+#header nav a {
   display: inline-block;
   line-height: 40px;
-  padding: 0.5rem 1em;
-  margin: 0 0.5rem;
+  padding: 5px 10px;
+  margin: 0 5px;
   transition: 0.3s; }
+
+#header nav a.special {
+  background-color: rgba(64, 128, 192, 0.2);
+  font-weight: 900; }
 
 #header nav a:hover {
   background-color: #fff;
@@ -5982,6 +5986,7 @@ body {
 #sidebar .menu {
   background-color: #f1f1f1;
   display: block;
+  width: 300px;
   min-width: 200px;
   max-width: 350px;
   height: 100%;
