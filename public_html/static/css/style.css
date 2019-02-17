@@ -5810,6 +5810,9 @@ body {
   min-height: 100%;
   background-color: #fff; }
 
+#main {
+  z-index: 10; }
+
 #page {
   min-height: 100%;
   margin: 0; }
@@ -5842,7 +5845,7 @@ body {
   left: 0;
   right: 0;
   overflow: hidden;
-  z-index: 3; }
+  z-index: 1; }
 
 #header {
   height: 5rem;
@@ -5855,7 +5858,9 @@ body {
   user-select: none;
   cursor: default;
   font-size: 1.3em;
-  padding: 0 3%; }
+  padding: 0 3%;
+  position: relative;
+  z-index: 10; }
 
 #header h1 {
   margin: 0; }

@@ -2,6 +2,9 @@ body{
 	min-height: 100%;
 	background-color: #fff;
 }
+#main{
+	z-index: 10;
+}
 #page{
 	min-height: 100%;
 	margin: 0;
@@ -27,5 +30,5 @@ body{
 	margin:0 auto;
 }
 
-#nodes{width: 100%;height: 100%;position: fixed;top: 0;bottom: 0;left: 0;right: 0;overflow: hidden;z-index: 3;}
+#nodes{width: 100%;height: 100%;position: fixed;top: 0;bottom: 0;left: 0;right: 0;overflow: hidden;z-index: 1;}
 
