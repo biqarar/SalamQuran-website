@@ -2,6 +2,9 @@
 
 <div class="rtl txtB fs14">
 {%for key, value in sura%}
-<div class="msg">{{value.text}}</div>
+<div class="msg">
+{{value.text}}
+<small>{{value.simple}}</small>
+</div>
 {%endfor%}
 </div>
