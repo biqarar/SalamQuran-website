@@ -28,7 +28,7 @@ AnimatoriJS('nodes',
 {
   "particles": {
     "number": {
-      "value": 160,
+      "value": 100,
       "density": {
         "enable": true,
         "value_area": 800
@@ -78,7 +78,7 @@ AnimatoriJS('nodes',
     "move": {
       "enable": true,
       "speed": 1,
-      "direction": "none",
+      "direction": "top-left",
       "random": true,
       "straight": false,
       "out_mode": "out",
@@ -86,7 +86,7 @@ AnimatoriJS('nodes',
       "attract": {
         "enable": false,
         "rotateX": 600,
-        "rotateY": 600
+        "rotateY": 1200
       }
     }
   },
@@ -99,7 +99,7 @@ AnimatoriJS('nodes',
       },
       "onclick": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "remove"
       },
       "resize": true
     },
