@@ -1,25 +1,14 @@
-{%extends display.mvc%}
+{%extends display.main%}
 
 
 
-{%block body%}
+{%block page%}
 
-<div id="page">
-{%include 'content/main/header.html'%}
+    {%if sura%}
+      {%include 'content/home/sore.html'%}
+    {%else%}
+      {%include 'content/home/list-sore.html'%}
+    {%endif%}
 
-	<main id="main">
-		<div class="cn">
-		{%if sura%}
-			{%include 'content/home/sore.html'%}
-		{%else%}
-			{%include 'content/home/list-sore.html'%}
-		{%endif%}
-		</div>
-	</main>
-
-{%include 'content/main/footer.html'%}
-</div>
-
-{%include 'content/main/sidebar.html'%}
 {%endblock%}
 

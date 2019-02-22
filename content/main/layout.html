@@ -3,26 +3,23 @@
 
 {%block body%}
 
+<div id="page">
+{%include 'content/main/header.html'%}
 
 {%block content%}
-  <div class="page-block">
-   <div class="cn">
-{%block pageTitle%}
-    <div class="tile">
-     <h2>{{pageTitle}}</h2>
-     <h3>{{pageDesc}}</h3>
-    </div>
-{%endblock%}
-   </div>
-  </div>
-  <div class="pc">
-   <div class="cn">
+  <main id="main">
+    <div class="cn">
 {%block page%}{%endblock%}
-   </div>
-  </div>
-{%block pageExtra%}{%endblock%}
+
+    </div>
+  </main>
 {%endblock%}
- </div>
+{%block pageExtra%}{%endblock%}
+
+{%include 'content/main/footer.html'%}
+</div>
+
+{%include 'content/main/sidebar.html'%}
 
 
 {%endblock%}
