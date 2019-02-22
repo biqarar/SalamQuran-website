@@ -1,0 +1,36 @@
+
+<aside id="sidebar">
+  <nav class="always">
+    <div class="top">
+      <div class='sidenavHandler'><span></span></div>
+      <a href="{{url.kingdom}}" title='{%trans "Homepage"%}'><span class="sf-home"></span><span class="hide">{%trans "Homepage"%}</span></a>
+    </div>
+
+    <footer>
+{%if social.twitter%}
+    <a data-direct target='_blank' href="https://twitter.com/{{social.twitter}}" class="sf-twitter" title='{%trans "Twitter"%}'><span class="hide">{{site.title}} twitter</span></a>
+{%endif%}
+{%if social.facebook%}
+    <a data-direct target='_blank' href="https://www.facebook.com/{{social.facebook}}" class="sf-facebook-official" title='{%trans "Facebook"%}'><span class="hide">{{site.title}} facebook</span></a>
+{%endif%}
+{%if social.telegram%}
+    <a data-direct target='_blank' href="https://t.me/{{social.telegram}}" class="sf-paper-plane" title='{%trans "Telegram"%}'><span class="hide">{{site.title}} telegram</span></a>
+{%endif%}
+{%if social.instagram%}
+    <a data-direct target='_blank' href="https://instagram.com/{{social.instagram}}" class="sf-instagram" title='{%trans "Instagram"%}'><span class="hide">{{site.title}} instagram</span></a>
+{%endif%}
+{%if social.linkedin%}
+    <a data-direct target='_blank' href="https://www.linkedin.com/{{social.linkedin}}" class="sf-linkedin" title='{%trans "Linkedin"%}'><span class="hide">{{site.title}} linkedin</span></a>
+{%endif%}
+
+    </footer>
+  </nav>
+  <nav class="menu">
+    <ul>
+      <li><a href="{{url.kingdom}}">{{site.title}}</a></li>
+      <li><a href="{{url.kingdom}}/about">{%trans "About"%}</a></li>
+      <li><a href="{{url.kingdom}}/contact">{%trans "Contact"%}</a></li>
+      <li><a href="{{url.kingdom}}/vision">{%trans "Vision"%}</a></li>
+    </ul>
+  </nav>
+</aside>
