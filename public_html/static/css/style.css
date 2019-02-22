@@ -5870,10 +5870,15 @@ body {
 #header h1 a {
   display: inline-block;
   line-height: 40px;
-  margin: 5px 10px; }
+  margin: 5px 10px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s; }
 
 #header h1 a:hover {
-  color: #eee; }
+  color: white; }
+
+#header h1 a:focus {
+  color: rgba(255, 255, 255, 0.9); }
 
 #header nav a {
   display: inline-block;
@@ -5881,16 +5886,20 @@ body {
   padding: 0 2em;
   margin: 0 0.5em;
   transition: 0.3s;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   border-radius: 3px; }
 
 #header nav a.special {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.07);
   border: 1px solid #fff;
   font-weight: 900; }
 
 #header nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1); }
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white; }
+
+#header h1 a:focus {
+  color: rgba(255, 255, 255, 0.9); }
 
 #header .sidenavHandler {
   display: none; }
