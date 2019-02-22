@@ -5848,8 +5848,6 @@ body {
   z-index: 1; }
 
 #header {
-  height: 5rem;
-  background-color: #eee;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -5860,7 +5858,11 @@ body {
   font-size: 1.3em;
   padding: 0 3%;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  background: linear-gradient(-40deg, #00d7dc 0%, #0aa5dc 100%);
+  color: #fff;
+  padding-top: 60px;
+  min-height: 400px; }
 
 #header h1 {
   margin: 0; }
@@ -5870,30 +5872,35 @@ body {
   line-height: 40px;
   margin: 5px 10px; }
 
+#header h1 a:hover {
+  color: #eee; }
+
 #header nav a {
   display: inline-block;
   line-height: 40px;
-  padding: 5px 10px;
-  margin: 0 5px;
-  transition: 0.3s; }
+  padding: 0 2em;
+  margin: 0 0.5em;
+  transition: 0.3s;
+  color: #fff;
+  border-radius: 3px; }
 
 #header nav a.special {
-  background-color: rgba(64, 128, 192, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
   font-weight: 900; }
 
 #header nav a:hover {
-  background-color: #fff;
-  color: #3070b0; }
+  background-color: rgba(255, 255, 255, 0.1); }
 
 #header .sidenavHandler {
   display: none; }
 
 .sidenavHandler {
-  width: 5rem;
-  min-width: 5rem !important;
-  max-width: 5rem !important;
-  height: 5rem;
-  line-height: 5rem;
+  width: 50px;
+  min-width: 50px !important;
+  max-width: 50px !important;
+  height: 50px;
+  line-height: 50px;
   display: block;
   color: #777;
   padding: 1.5rem 1rem;
