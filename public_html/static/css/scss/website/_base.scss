@@ -1,9 +1,15 @@
 body{
 	min-height: 100%;
 	background-color: #fff;
+	background: linear-gradient( -40deg, rgb(0,215,220) 0%, rgb(10,165,220) 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
 }
 #main{
 	z-index: 10;
+	position: relative;
+	background-color: #fff;
 }
 #page{
 	min-height: 100%;

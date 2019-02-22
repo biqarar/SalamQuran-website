@@ -5808,10 +5808,15 @@ Version       1.0.0
 
 body {
   min-height: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  background: linear-gradient(-40deg, #00d7dc 0%, #0aa5dc 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 #main {
-  z-index: 10; }
+  z-index: 10;
+  position: relative;
+  background-color: #fff; }
 
 #page {
   min-height: 100%;
@@ -5858,7 +5863,6 @@ body {
   font-size: 1.3em;
   position: relative;
   z-index: 10;
-  background: linear-gradient(-40deg, #00d7dc 0%, #0aa5dc 100%);
   color: #fff;
   min-height: 400px; }
 
@@ -6102,7 +6106,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 #footer {
   padding: 0;
   color: #eee;
-  background-color: #000f2a;
+  background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   font-size: 1.2em;
   -webkit-touch-callout: none;

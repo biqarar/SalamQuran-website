@@ -7,12 +7,14 @@
 <div id="page">
 {%include 'content/main/header.html'%}
 
-	<main id="main" class="cn">
+	<main id="main">
+		<div class="cn">
 		{%if sura%}
 			{%include 'content/home/sore.html'%}
 		{%else%}
 			{%include 'content/home/list-sore.html'%}
 		{%endif%}
+		</div>
 	</main>
 
 {%include 'content/main/footer.html'%}
