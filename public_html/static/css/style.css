@@ -5856,13 +5856,14 @@ body {
   user-select: none;
   cursor: default;
   font-size: 1.3em;
-  padding: 0 3%;
   position: relative;
   z-index: 10;
   background: linear-gradient(-40deg, #00d7dc 0%, #0aa5dc 100%);
   color: #fff;
-  padding-top: 60px;
   min-height: 400px; }
+
+.topnav {
+  padding-top: 60px; }
 
 .topnav h1 {
   margin: 0; }
@@ -5903,11 +5904,20 @@ body {
   color: rgba(255, 255, 255, 0.9); }
 
 .topTitle {
-  padding: 3rem 1.5rem 7rem;
+  padding: 100px 1.5rem 40px;
   text-align: center; }
 
 .topTitle h2 {
-  font-weight: 900; }
+  font-weight: 900;
+  font-size: 6em;
+  line-height: 100px;
+  margin: 0; }
+
+.topTitle h3 {
+  line-height: 30px;
+  min-height: 60px;
+  font-weight: 100;
+  margin: 0; }
 
 #header .sidenavHandler {
   display: none; }
