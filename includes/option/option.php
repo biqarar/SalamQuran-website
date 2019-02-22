@@ -1,12 +1,10 @@
 <?php
-/**
- * save logs in other database
- */
 
-/**
-@ In the name Of Allah
-* The base configurations of the dashsample.
-*/
+require_once('social.php');
+require_once('payment.php');
+require_once('sms.php');
+
+
 self::$language =
 [
 	'default' => 'en',
