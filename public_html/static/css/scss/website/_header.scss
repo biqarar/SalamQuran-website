@@ -45,6 +45,7 @@
 	background-color: rgba(255, 255, 255, 0.07);
 	border: 1px solid #fff;
 	font-weight: 900;
+	line-height: 38px;
 }
 .topnav .links a:hover{
 	background-color: rgba(255, 255, 255, 0.1);
@@ -53,6 +54,21 @@
 .topnav h1 a:focus{
 	color: rgba(255,255,255,0.9);
 }
+
+.topTitle{
+	padding: 3rem 1.5rem 7rem;
+	text-align: center;
+}
+.topTitle h2{
+	font-weight: 900;
+}
+.topTitle h3{
+
+}
+
+
+
+
 
 // sidenavHandler
 #header .sidenavHandler{
