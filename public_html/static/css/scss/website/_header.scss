@@ -16,23 +16,23 @@
 	min-height: 400px;
 }
 
-#header h1{
+.topnav h1{
 	margin:0;
 }
-#header h1 a{
+.topnav h1 a{
 	display: inline-block;
 	line-height: 40px;
-	margin: 5px 10px;
+	margin: 0 10px;
 	color: rgba(255,255,255,0.8);
 	transition: color 0.3s;
 }
-#header h1 a:hover{
+.topnav h1 a:hover{
 	color: rgba(255,255,255,1);
 }
-#header h1 a:focus{
+.topnav h1 a:focus{
 	color: rgba(255,255,255,0.9);
 }
-#header nav a{
+.topnav .links a{
 	display: inline-block;
 	line-height: 40px;
 	padding: 0 2em;
@@ -41,16 +41,16 @@
 	color: rgba(255,255,255,0.8);
 	border-radius: 3px;
 }
-#header nav a.special{
+.topnav .links a.special{
 	background-color: rgba(255, 255, 255, 0.07);
 	border: 1px solid #fff;
 	font-weight: 900;
 }
-#header nav a:hover{
+.topnav .links a:hover{
 	background-color: rgba(255, 255, 255, 0.1);
 	color: rgba(255,255,255,1);
 }
-#header h1 a:focus{
+.topnav h1 a:focus{
 	color: rgba(255,255,255,0.9);
 }
 
