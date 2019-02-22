@@ -1,6 +1,4 @@
 #header{
-	height: 5rem;
-	background-color: #eee;
 	-webkit-touch-callout:none;
 	-webkit-user-select:none;
 	-khtml-user-select:none;
@@ -12,6 +10,10 @@
 	padding: 0 3%;
 	position: relative;
 	z-index: 10;
+	background: linear-gradient( -40deg, rgb(0,215,220) 0%, rgb(10,165,220) 100%);
+	color: #fff;
+	padding-top: 60px;
+	min-height: 400px;
 }
 
 #header h1{
@@ -22,41 +24,44 @@
 	line-height: 40px;
 	margin: 5px 10px;
 }
+#header h1 a:hover{
+	color: #eee;
+}
 #header nav a{
 	display: inline-block;
 	line-height: 40px;
-	padding: 5px 10px;
-	margin: 0 5px;
+	padding: 0 2em;
+	margin: 0 0.5em;
 	transition: 0.3s;
+	color: #fff;
+	border-radius: 3px;
 }
 #header nav a.special{
-	background-color: rgba(64, 128, 192, .2);
+	background-color: rgba(255, 255, 255, .2);
+	border: 1px solid #fff;
 	font-weight: 900;
 }
 #header nav a:hover{
-	background-color: #fff;
-	color: #3070b0;
+	background-color: rgba(255, 255, 255, .1);
 }
 
 // sidenavHandler
 #header .sidenavHandler{
 	display: none;
 }
-.sidenavHandler
-{
-	width: 5rem;
-	min-width: 5rem!important;
-	max-width: 5rem!important;
-	height: 5rem;
-	line-height: 5rem;
+.sidenavHandler{
+	width: 50px;
+	min-width: 50px!important;
+	max-width: 50px!important;
+	height: 50px;
+	line-height: 50px;
 	display: block;
 	color: #777;
 	padding: 1.5rem 1rem;
 	transition: 0.3s;
 	cursor: pointer !important;
 }
-.sidenavHandler:hover
-{
+.sidenavHandler:hover{
 	color: #aaa;
 	background-color: rgba(0,0,0,0.5);
 }
@@ -68,8 +73,7 @@
 	background: #aaa;
 	height: 2px;
 }
-.sidenavHandler span
-{
+.sidenavHandler span{
 	background: #aaa;
 	display: block;
 	height: 2px;
