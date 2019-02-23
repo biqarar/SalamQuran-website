@@ -5822,6 +5822,10 @@ body {
   min-height: 100%;
   margin: 0; }
 
+.wrapper {
+  padding: 5rem 0;
+  font-size: 1.3em; }
+
 .ltr #page {
   margin-left: 5rem; }
 
@@ -6197,7 +6201,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   background-color: rgba(0, 0, 0, 0.1); }
 
 #soreha {
-  padding: 3em 0; }
+  padding: 0; }
 
 #soreha h2 {
   color: #aaa;
@@ -6225,19 +6229,20 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   background-color: #eee; }
 
 #soreha .c1 {
-  color: #ccc; }
+  color: #ccc;
+  font-size: 0.8em; }
 
 #soreha .c4 {
   text-align: right; }
 
 #soreha .c7 span {
   display: block;
-  font-size: 1.3em;
   line-height: 1.5em;
   font-weight: 700; }
 
 #soreha .c7 abbr {
-  display: block; }
+  display: block;
+  font-size: 0.8em; }
 
 @media (max-width: 767px) {
   .ltr #page {
