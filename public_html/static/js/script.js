@@ -78,7 +78,7 @@ AnimatoriJS('nodes',
     "move": {
       "enable": true,
       "speed": 1,
-      "direction": "top-left",
+      "direction": "top-right",
       "random": true,
       "straight": false,
       "out_mode": "out",
