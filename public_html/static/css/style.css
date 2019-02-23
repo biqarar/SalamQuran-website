@@ -5880,15 +5880,13 @@ body {
   background-color: rgba(0, 200, 255, 0.05); }
 
 .ayeBox .ayeNum {
-  font-family: "Traditional Arabic", "Times New Roman";
-  margin: 0 0.1em;
-  display: inline-block; }
+  font-family: "Traditional Arabic", "Times New Roman"; }
 
 .ayeBox .meta {
   display: none; }
 
 .Quran.book {
-  width: 412px;
+  max-width: 412px;
   margin: 0 auto;
   text-align: justify; }
 

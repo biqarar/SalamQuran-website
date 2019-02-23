@@ -71,8 +71,6 @@ body{
 }
 .ayeBox .ayeNum{
 	font-family: "Traditional Arabic", "Times New Roman";
-	margin:0 0.1em;
-	display: inline-block;
 }
 .ayeBox .meta{
 	display: none;
@@ -80,7 +78,7 @@ body{
 
 
 .Quran.book{
-	width: 412px;
+	max-width: 412px;
 	margin: 0 auto;
 	text-align: justify;
 }
