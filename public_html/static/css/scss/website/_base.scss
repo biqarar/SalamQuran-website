@@ -78,16 +78,18 @@ body{
 
 
 // Quran design like book
-.Quran.book{
+.Quran.bookTxt{
 	max-width: 412px;
 	margin: 0 auto;
 	text-align: justify;
 }
-.Quran.book .ayeBox{
+.Quran.bookTxt .ayeBox{
 	display: inline;
 }
-.Quran.book .ayeBox .aye{
+.Quran.bookTxt .ayeBox .aye{
 	display: inline;
 }
-
+.Quran.bookTxt .ayeBox .aye:hover{
+	background-color: initial;
+}
 

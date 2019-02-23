@@ -1,4 +1,4 @@
-<div class='Quran book'>
+<div class='Quran bookTxt'>
 
 
 {%for key, value in sura%}
@@ -12,16 +12,13 @@
 
   <div class='ayeBox' id='{{value.aya}}'>
     <div class='aye'>
-      <span class='text' data-kerkere='[data-aye-meta="{{value.aya}}"]'>{{value.text}}</span>
+      <span class='text'>{{value.text}}</span>
       <a class='ayeNum' href='{{url.kingdom}}/{{value.sura}}#{{value.aya}}'>﴿{{value.aya | fitNumber}}﴾</a>
     </div>
-    <div class='meta' data-aye-meta='{{value.aya}}'>
-      <small>{{value.simple}}</small>
-    </div>
-
   </div>
 {%endfor%}
 </div>
+
 <div class='f'>
   <div class='c'></div>
   <div class='cauto os'>
