@@ -5885,6 +5885,9 @@ body {
 .ayeBox .meta {
   display: none; }
 
+.ayeBox .meta abbr {
+  display: none; }
+
 .Quran.bookTxt {
   max-width: 412px;
   margin: 0 auto;
