@@ -5856,6 +5856,48 @@ body {
   overflow: hidden;
   z-index: 1; }
 
+.Quran {
+  font-size: 1.4em; }
+
+.besmellah {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 2em; }
+
+.ayeBox {
+  margin-bottom: 1em; }
+
+.ayeBox:hover {
+  background-color: rgba(0, 200, 255, 0.05); }
+
+.ayeBox .aye {
+  direction: rtl;
+  text-align: right;
+  line-height: 2.5em;
+  transition: 0.3s; }
+
+.ayeBox .aye:hover {
+  background-color: rgba(0, 200, 255, 0.05); }
+
+.ayeBox .ayeNum {
+  font-family: "Traditional Arabic", "Times New Roman";
+  margin: 0 0.1em;
+  display: inline-block; }
+
+.ayeBox .meta {
+  display: none; }
+
+.Quran.book {
+  width: 412px;
+  margin: 0 auto;
+  text-align: justify; }
+
+.Quran.book .ayeBox {
+  display: inline; }
+
+.Quran.book .ayeBox .aye {
+  display: inline; }
+
 #header {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
