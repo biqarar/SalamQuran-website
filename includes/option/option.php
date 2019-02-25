@@ -13,9 +13,9 @@ self::$language =
 /**
  * system default lanuage
  */
-self::$config['site']['title']         = "Dash";
-self::$config['site']['desc']          = "Free PHP Framework & CMS!";
-self::$config['site']['slogan']        = "The simple framework for php programmers ;)";
+self::$config['site']['title']         = "SalamQuran";
+self::$config['site']['desc']          = "Say hello to Quran! Quran is calling you. Access to Quran in your language. Free and Easy.";
+self::$config['site']['slogan']        = "Quran Anywhere Anytime";
 
 
 self::$config['enter']['force_verify'] = false;
