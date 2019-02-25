@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SalamQuran - Persian\n"
 "POT-Creation-Date: 2019-02-25 15:10+0330\n"
-"PO-Revision-Date: 2019-02-25 15:48+0330\n"
+"PO-Revision-Date: 2019-02-25 18:35+0330\n"
 "Last-Translator: Javad <J.Evazzadeh@gmail.com>\n"
 "Language-Team: Ermile <J.Evazzadeh@gmail.com>\n"
 "Language: fa_IR\n"
@@ -27,8 +27,7 @@ msgstr "قرائت‌های قرآنی"
 msgid "Database of all quran sounds"
 msgstr "پایگاه داده از تمام قرائت‌های قرآنی"
 
-#: SalamQuran/content/contact/view.php:9
-#: dash/addons/content_cp/contact/edit/controller.php:11
+#: SalamQuran/content/contact/view.php:9 dash/addons/content_cp/contact/edit/controller.php:11
 #: dash/addons/content_cp/contact/home/view.php:11
 #: dash/addons/content_support/ticket/contact_ticket/model.php:180
 msgid "Contact Us"
@@ -37,11 +36,11 @@ msgstr "با ما تماس بگیرید"
 #: SalamQuran/content/contact/view.php:10
 #: dash/lib/social/telegram/commands/step_ticketCreate.php:36
 msgid ""
-"Knowing your valuable comments about bugs and problems and more importantly your "
-"precious offers will help us in this way."
+"Knowing your valuable comments about bugs and problems and more importantly your precious "
+"offers will help us in this way."
 msgstr ""
-"دانستن نظرات ارزشمند شما درباره‌ی مشکلات و نواقص و صدالبته پیشنهادات گرانبهایتان از طریق "
-"فرم زیر سبب کمک به ما برای این مهم خواهد شد."
+"دانستن نظرات ارزشمند شما درباره‌ی مشکلات و نواقص و صدالبته پیشنهادات گرانبهایتان از طریق فرم زیر "
+"سبب کمک به ما برای این مهم خواهد شد."
 
 #: SalamQuran/content/home/view.php:8 SalamQuran/includes/languages/trans_project.php:274
 msgid "Quran"
@@ -227,8 +226,7 @@ msgstr "نام شرکت"
 
 #: SalamQuran/includes/languages/trans_dash.php:33
 #: dash/addons/content_cp/attachment/home/view.php:121
-#: dash/addons/content_cp/posts/home/view.php:141
-#: dash/addons/includes/languages/trans_dash.php:43
+#: dash/addons/content_cp/posts/home/view.php:141 dash/addons/includes/languages/trans_dash.php:43
 msgid "Status"
 msgstr "وضعیت"
 
@@ -392,8 +390,7 @@ msgstr "بودجه"
 msgid "Invoice"
 msgstr "فاکتور"
 
-#: SalamQuran/includes/languages/trans_dash.php:71
-#: dash/addons/content_enter/verify/view.php:120
+#: SalamQuran/includes/languages/trans_dash.php:71 dash/addons/content_enter/verify/view.php:120
 #: dash/addons/includes/languages/trans_dash.php:1082
 msgid "Verify"
 msgstr "اعتبارسنجی"
@@ -423,8 +420,7 @@ msgstr "مجموع"
 msgid "Price"
 msgstr "قیمت"
 
-#: SalamQuran/includes/languages/trans_dash.php:79
-#: dash/addons/includes/languages/trans_dash.php:9
+#: SalamQuran/includes/languages/trans_dash.php:79 dash/addons/includes/languages/trans_dash.php:9
 #: dash/addons/includes/languages/trans_static.php:903
 msgid "Count"
 msgstr "تعداد"
@@ -507,8 +503,7 @@ msgstr "امنیت و ورود"
 msgid "Improve User Experience"
 msgstr "بهبود تجربه کاربری"
 
-#: SalamQuran/includes/languages/trans_dash.php:103
-#: dash/addons/content_enter/twostep/view.php:14
+#: SalamQuran/includes/languages/trans_dash.php:103 dash/addons/content_enter/twostep/view.php:14
 #: dash/addons/includes/languages/trans_dash.php:805
 msgid "Two step verification"
 msgstr "ورود دو مرحله ای"
@@ -891,23 +886,21 @@ msgstr "دوستان خود را از طریق شبکه‌های اجتماعی 
 #: dash/addons/includes/languages/trans_dash.php:1018
 msgid "Share the referral rewards program with friends on Facebook, Twitter, or Email."
 msgstr ""
-"برنامه معرفی را با دوستان خود در توئیتر، فیس‌بوک، تلگرام یا سایر شبکه‌های اجتماعی و ایمیل "
-"به اشتراک بگذارید."
+"برنامه معرفی را با دوستان خود در توئیتر، فیس‌بوک، تلگرام یا سایر شبکه‌های اجتماعی و ایمیل به "
+"اشتراک بگذارید."
 
 #: SalamQuran/includes/languages/trans_dash.php:189
 #: dash/addons/includes/languages/trans_dash.php:1019
 msgid "When they click on your post, we’ll know it was you who referred them."
-msgstr ""
-"زمانی که آن‌ها روی مطلب شما کلیک کردند، ما متوجه می‌شویم که شما آن‌ها را معرفی کرده‌اید."
+msgstr "زمانی که آن‌ها روی مطلب شما کلیک کردند، ما متوجه می‌شویم که شما آن‌ها را معرفی کرده‌اید."
 
 #: SalamQuran/includes/languages/trans_dash.php:190
 #: dash/addons/includes/languages/trans_dash.php:1020
 msgid ""
-"If someone forget to use your link, we allow to set your ref code as promo code in "
-"billing page!"
+"If someone forget to use your link, we allow to set your ref code as promo code in billing page!"
 msgstr ""
-"اگر هنگام ورود به سایت کسی فراموش کرد که از لینک شما استفاده کند، ما اجازه‌ی تنظیم کد شما "
-"را به عنوان کدتخفیف در صفحه مالی می‌دهیم!"
+"اگر هنگام ورود به سایت کسی فراموش کرد که از لینک شما استفاده کند، ما اجازه‌ی تنظیم کد شما را به "
+"عنوان کدتخفیف در صفحه مالی می‌دهیم!"
 
 #: SalamQuran/includes/languages/trans_dash.php:191
 #: dash/addons/includes/languages/trans_dash.php:1021
@@ -922,11 +915,11 @@ msgstr "دوستان شما وارد جیبرس شده و ۱۰.۰۰۰  توما�
 #: SalamQuran/includes/languages/trans_dash.php:193
 #: dash/addons/includes/languages/trans_dash.php:1023
 msgid ""
-"Anyone you refer to Jibres that enter using your unique referral link or your promo code "
-"will receive $5 in credit."
+"Anyone you refer to Jibres that enter using your unique referral link or your promo code will "
+"receive $5 in credit."
 msgstr ""
-"هرکسی که با کد منحصربفرد شما سایت را مشاده کرده و وارد جیبرس شود و یا کسانی که از کد "
-"تخفیف شما استفاده کنند، ۱۰.۰۰۰ تومان اعتبار هدیه برای کار با جیبرس دریافت خواهند کرد."
+"هرکسی که با کد منحصربفرد شما سایت را مشاده کرده و وارد جیبرس شود و یا کسانی که از کد تخفیف شما "
+"استفاده کنند، ۱۰.۰۰۰ تومان اعتبار هدیه برای کار با جیبرس دریافت خواهند کرد."
 
 #: SalamQuran/includes/languages/trans_dash.php:194
 #: dash/addons/includes/languages/trans_dash.php:1024
@@ -941,21 +934,21 @@ msgstr "جوایز جیبرس حداکثر ۷ روز کاری پس از تایی
 #: SalamQuran/includes/languages/trans_dash.php:196
 #: dash/addons/includes/languages/trans_dash.php:1026
 msgid ""
-"Amount of charge is depended on your friend total pay and after automatic calculation, "
-"system set your gift."
+"Amount of charge is depended on your friend total pay and after automatic calculation, system "
+"set your gift."
 msgstr ""
-"میزان شارژ بسته به مجموع پرداختی دوستان شما متفاوت بوده و پس از محاسبه خودکار، سیستم "
-"هدیه شما را منظور خواهد کرد."
+"میزان شارژ بسته به مجموع پرداختی دوستان شما متفاوت بوده و پس از محاسبه خودکار، سیستم هدیه شما "
+"را منظور خواهد کرد."
 
 #: SalamQuran/includes/languages/trans_dash.php:197
 #: dash/addons/includes/languages/trans_dash.php:1027
 msgid ""
-"We calculate your percentage until 6 month of your friend registration. Because of that "
-"it was your chance to convinced your friend to charge more!"
+"We calculate your percentage until 6 month of your friend registration. Because of that it was "
+"your chance to convinced your friend to charge more!"
 msgstr ""
-"شما ۶ ماه فرصت دارید تا مجموع پرداختی هر دوست معرفی شده را افزایش دهید. به‌همین دلیل، شما "
-"این زمان را خواهید داشت تا  پس از اطمینان دوستان از کیفیت سیستم، آنان را برای شارژ بیشتر "
-"متقاعد کنید!"
+"شما ۶ ماه فرصت دارید تا مجموع پرداختی هر دوست معرفی شده را افزایش دهید. به‌همین دلیل، شما این "
+"زمان را خواهید داشت تا  پس از اطمینان دوستان از کیفیت سیستم، آنان را برای شارژ بیشتر متقاعد "
+"کنید!"
 
 #: SalamQuran/includes/languages/trans_dash.php:198
 #: dash/addons/includes/languages/trans_dash.php:1028
@@ -965,8 +958,7 @@ msgstr "لینک خود را به اشتراک بگذارید"
 #: SalamQuran/includes/languages/trans_dash.php:199
 #: dash/addons/includes/languages/trans_dash.php:1029
 msgid "Copy your personal referral link and share it with your friends and followers."
-msgstr ""
-"لینک معرفی شخصی خود را کپی کنید و آن را با دوستان و دنبال‌کنندگان خود به اشتراک بگذارید."
+msgstr "لینک معرفی شخصی خود را کپی کنید و آن را با دوستان و دنبال‌کنندگان خود به اشتراک بگذارید."
 
 #: SalamQuran/includes/languages/trans_dash.php:200
 #: SalamQuran/includes/languages/trans_project.php:281
@@ -1135,15 +1127,13 @@ msgstr "انواع رابطه برنامه‌نویسی"
 msgid ""
 "With our API you can control the entire infrastructure via a standardized programmatic "
 "interface."
-msgstr ""
-"با ای‌پی‌آی ما شما می‌توانید تمام زیرساخت را از طریق واسط برنامه‌نویسی استاندارد کنترل کنید."
+msgstr "با ای‌پی‌آی ما شما می‌توانید تمام زیرساخت را از طریق واسط برنامه‌نویسی استاندارد کنترل کنید."
 
 #: SalamQuran/includes/languages/trans_dash.php:237
 #: dash/addons/includes/languages/trans_dash.php:332
 msgid "You can using API do just about anything you can do via your dashboard."
 msgstr ""
-"شما می‌توانید با استفاده از واسط برنامه‌نویسی تمامی عملیات‌های موجود در داشبورد خود را "
-"انجام دهید."
+"شما می‌توانید با استفاده از واسط برنامه‌نویسی تمامی عملیات‌های موجود در داشبورد خود را انجام دهید."
 
 #: SalamQuran/includes/languages/trans_dash.php:238
 #: dash/addons/includes/languages/trans_dash.php:333
@@ -1153,8 +1143,7 @@ msgstr "ای‌پی‌آی ما RESTful API طراحی شده است و تمام
 #: SalamQuran/includes/languages/trans_dash.php:239
 #: dash/addons/includes/languages/trans_dash.php:334
 msgid "If you are registered, you can obtain your API key from 'My Account' page."
-msgstr ""
-"اگر شما ثبت نام کرده اید، می توانید کلید ای‌پی‌آی خود را از صفحه «حساب من» دریافت کنید."
+msgstr "اگر شما ثبت نام کرده اید، می توانید کلید ای‌پی‌آی خود را از صفحه «حساب من» دریافت کنید."
 
 #: SalamQuran/includes/languages/trans_dash.php:240
 #: dash/addons/includes/languages/trans_dash.php:335
@@ -1170,14 +1159,12 @@ msgstr "مخاطبان رابط برنامه‌نویسی"
 #: dash/addons/includes/languages/trans_dash.php:337
 msgid "Most peoples manage their settings in the web dashboard, built using these APIs."
 msgstr ""
-"اکثر مردم تنظیمات خود را که در داشبورد وب، ساخته شده با استفاده از این ای‌پی‌آی ها، مدیریت "
-"می‌کنند."
+"اکثر مردم تنظیمات خود را که در داشبورد وب، ساخته شده با استفاده از این ای‌پی‌آی ها، مدیریت می‌کنند."
 
 #: SalamQuran/includes/languages/trans_dash.php:243
 #: dash/addons/includes/languages/trans_dash.php:338
 msgid "Virtually anything you can do in the customer dashboard may be done via API."
-msgstr ""
-"عملا هر چیزی که می توانید در داشبورد مشتری انجام دهید ممکن است از طریق ای‌پی‌آی انجام شود."
+msgstr "عملا هر چیزی که می توانید در داشبورد مشتری انجام دهید ممکن است از طریق ای‌پی‌آی انجام شود."
 
 #: SalamQuran/includes/languages/trans_dash.php:244
 #: dash/addons/includes/languages/trans_dash.php:339
@@ -1202,11 +1189,11 @@ msgstr "توسعه‌دهندگان"
 #: SalamQuran/includes/languages/trans_dash.php:248
 #: dash/addons/includes/languages/trans_dash.php:343
 msgid ""
-"The API documentation will start with a general overview about the design and technology "
-"that has been implemented, followed by reference information about specific endpoints."
+"The API documentation will start with a general overview about the design and technology that "
+"has been implemented, followed by reference information about specific endpoints."
 msgstr ""
-"مستندات ای‌پی‌آی با توضیحات مقدماتی درباره طراحی و تکنولوژی‌های پیاده‌سازی شروع شده است. در "
-"ادامه به دنبال اطلاعات بیشتر برای هر عملیات در نقطه پایان آن بیشتر بخوانید."
+"مستندات ای‌پی‌آی با توضیحات مقدماتی درباره طراحی و تکنولوژی‌های پیاده‌سازی شروع شده است. در ادامه "
+"به دنبال اطلاعات بیشتر برای هر عملیات در نقطه پایان آن بیشتر بخوانید."
 
 #: SalamQuran/includes/languages/trans_dash.php:251
 #: dash/addons/includes/languages/trans_dash.php:314
@@ -1216,12 +1203,12 @@ msgstr "نقطه پایان"
 #: SalamQuran/includes/languages/trans_dash.php:252
 #: dash/addons/includes/languages/trans_dash.php:391
 msgid ""
-"The API is accessed by making HTTPS requests to a specific version endpoint URL, in "
-"which GET, POST, PUT, PATCH,HEAD and DELETE methods dictate how your interact with the "
-"information available."
+"The API is accessed by making HTTPS requests to a specific version endpoint URL, in which GET, "
+"POST, PUT, PATCH,HEAD and DELETE methods dictate how your interact with the information "
+"available."
 msgstr ""
-"ای‌پی‌آی با ایجاد درخواست اچ‌تی‌تی‌پی‌اس به یک نشانی اینترنتی آغاز شده و متود‌های GET، POST، "
-"PUT، PATCH، HEAD و DELETE نحوه تعامل شما با اطلاعات موجود را تعیین می کند."
+"ای‌پی‌آی با ایجاد درخواست اچ‌تی‌تی‌پی‌اس به یک نشانی اینترنتی آغاز شده و متود‌های GET، POST، PUT، "
+"PATCH، HEAD و DELETE نحوه تعامل شما با اطلاعات موجود را تعیین می کند."
 
 #: SalamQuran/includes/languages/trans_dash.php:253
 #: dash/addons/includes/languages/trans_dash.php:392
@@ -1234,8 +1221,8 @@ msgid ""
 "Everything (methods, parameters, etc.) is fixed to a version number, and every call must "
 "contain one."
 msgstr ""
-"همه چیز (روش ها، پارامترها، و غیره) به شماره نسخه ثابت شده است، و هر ارتباط باید شامل یک "
-"نسخه باشد."
+"همه چیز (روش ها، پارامترها، و غیره) به شماره نسخه ثابت شده است، و هر ارتباط باید شامل یک نسخه "
+"باشد."
 
 #: SalamQuran/includes/languages/trans_dash.php:255
 #: dash/addons/includes/languages/trans_dash.php:394
@@ -1255,17 +1242,16 @@ msgstr "درخواست‌ها"
 #: SalamQuran/includes/languages/trans_dash.php:260
 #: dash/addons/includes/languages/trans_dash.php:258
 msgid ""
-"Any tool that is fluent in HTTP can communicate with the API simply by requesting the "
-"correct URI."
+"Any tool that is fluent in HTTP can communicate with the API simply by requesting the correct "
+"URI."
 msgstr ""
-"هر درخواستی که در اچ‌تی‌تی‌پی قابل اجرا هست به سادگی می‌تواند با درخواست نشانی اینترنتی صحیح "
-"از ای‌پی‌آی ارتباط برقرار کند."
+"هر درخواستی که در اچ‌تی‌تی‌پی قابل اجرا هست به سادگی می‌تواند با درخواست نشانی اینترنتی صحیح از "
+"ای‌پی‌آی ارتباط برقرار کند."
 
 #: SalamQuran/includes/languages/trans_dash.php:261
 #: dash/addons/includes/languages/trans_dash.php:259
 msgid "Requests should be made using the HTTPS protocol so that traffic is encrypted."
-msgstr ""
-"درخواست ها باید با استفاده از پروتکل اچ‌تی‌تی‌پی‌اس ساخته شوند تا ترافیک رمزگذاری شوند."
+msgstr "درخواست ها باید با استفاده از پروتکل اچ‌تی‌تی‌پی‌اس ساخته شوند تا ترافیک رمزگذاری شوند."
 
 #: SalamQuran/includes/languages/trans_dash.php:262
 #: dash/addons/includes/languages/trans_dash.php:260
@@ -1279,8 +1265,7 @@ msgstr "متود"
 
 #: SalamQuran/includes/languages/trans_dash.php:264
 #: dash/addons/includes/languages/trans_dash.php:262
-msgid ""
-"For simple retrieval of information about your something you should use the GET method."
+msgid "For simple retrieval of information about your something you should use the GET method."
 msgstr "برای دریافت ساده اطلاعات در مورد چیزی،  باید از روش GET استفاده کنید."
 
 #: SalamQuran/includes/languages/trans_dash.php:265
@@ -1296,11 +1281,11 @@ msgstr "مقادیر تعریف شده توسط شی جیسون می تواند 
 #: SalamQuran/includes/languages/trans_dash.php:267
 #: dash/addons/includes/languages/trans_dash.php:265
 msgid ""
-"Any request using the GET method is read-only and will not affect any of the objects you "
-"are querying."
+"Any request using the GET method is read-only and will not affect any of the objects you are "
+"querying."
 msgstr ""
-"هر درخواستی که با استفاده از روش GET فراخوانی می‌شوند تنها خواندنی است و بر روی هیچ یک از "
-"اشیای مورد نظر تاثیر نمی گذارد."
+"هر درخواستی که با استفاده از روش GET فراخوانی می‌شوند تنها خواندنی است و بر روی هیچ یک از اشیای "
+"مورد نظر تاثیر نمی گذارد."
 
 #: SalamQuran/includes/languages/trans_dash.php:268
 #: dash/addons/includes/languages/trans_dash.php:266
@@ -1315,17 +1300,15 @@ msgstr "درخواست POST شامل تمام مقادیر لازم برای ا�
 #: SalamQuran/includes/languages/trans_dash.php:270
 #: dash/addons/includes/languages/trans_dash.php:268
 msgid "When you wish to create a new object, send a POST request to the target endpoint."
-msgstr ""
-"وقتی می خواهید یک شی جدید ایجاد کنید، یک درخواست POST را به نقطه پایانی هدف ارسال کنید."
+msgstr "وقتی می خواهید یک شی جدید ایجاد کنید، یک درخواست POST را به نقطه پایانی هدف ارسال کنید."
 
 #: SalamQuran/includes/languages/trans_dash.php:271
 #: dash/addons/includes/languages/trans_dash.php:269
 msgid ""
-"To destroy a resource and remove it from your account and environment, the DELETE method "
-"should be used."
+"To destroy a resource and remove it from your account and environment, the DELETE method should "
+"be used."
 msgstr ""
-"برای از بین بردن یک منبع و حذف آن از حساب و ناحیه کاربری خود، باید روش DELETE استفاده "
-"شود."
+"برای از بین بردن یک منبع و حذف آن از حساب و ناحیه کاربری خود، باید روش DELETE استفاده شود."
 
 #: SalamQuran/includes/languages/trans_dash.php:272
 #: dash/addons/includes/languages/trans_dash.php:270
@@ -1335,24 +1318,22 @@ msgstr "اگر شی مشخص شده یافت شد، حذف خواهد شد."
 #: SalamQuran/includes/languages/trans_dash.php:273
 #: dash/addons/includes/languages/trans_dash.php:271
 msgid ""
-"If it is not found, the operation will return a response indicating that the object was "
-"not found."
+"If it is not found, the operation will return a response indicating that the object was not "
+"found."
 msgstr "اگر آن شی پیدا نشد، عملیات پاسخی را نشان می‌دهد که شی یافت نشد."
 
 #: SalamQuran/includes/languages/trans_dash.php:274
 #: dash/addons/includes/languages/trans_dash.php:272
 msgid ""
-"This idempotency means that you do not have to check for a resource's availability prior "
-"to issuing a delete command, the final state will be the same regardless of its "
-"existence."
+"This idempotency means that you do not have to check for a resource's availability prior to "
+"issuing a delete command, the final state will be the same regardless of its existence."
 msgstr ""
-"این خودکفایی به این معنی است که شما مجبور نیستید برای دسترسی به منابع قبل از صدور فرمان "
-"حذف، بررسی کنید، حالت نهایی بدون در نظر گرفتن وجود آن، همان خواهد بود."
+"این خودکفایی به این معنی است که شما مجبور نیستید برای دسترسی به منابع قبل از صدور فرمان حذف، "
+"بررسی کنید، حالت نهایی بدون در نظر گرفتن وجود آن، همان خواهد بود."
 
 #: SalamQuran/includes/languages/trans_dash.php:275
 #: dash/addons/includes/languages/trans_dash.php:273
-msgid ""
-"To update the information about a resource in your account, the PUT method is available."
+msgid "To update the information about a resource in your account, the PUT method is available."
 msgstr "برای به روز رسانی اطلاعات مربوط به یک منبع در حسابتان، روش PUT در دسترس است."
 
 #: SalamQuran/includes/languages/trans_dash.php:276
@@ -1363,25 +1344,22 @@ msgstr "مانند روش DELETE، روش PUT خودکفا است."
 #: SalamQuran/includes/languages/trans_dash.php:277
 #: dash/addons/includes/languages/trans_dash.php:275
 msgid ""
-"It sets the state of the target using the provided values, regardless of their current "
-"values."
+"It sets the state of the target using the provided values, regardless of their current values."
 msgstr ""
-"در این روش وضعیت هدف با توجه به مقادیر جدید ارائه شده و بدون در نظر گرفتن مقادیر جاری آن "
-"تنظیم می‌شوند."
+"در این روش وضعیت هدف با توجه به مقادیر جدید ارائه شده و بدون در نظر گرفتن مقادیر جاری آن تنظیم "
+"می‌شوند."
 
 #: SalamQuran/includes/languages/trans_dash.php:278
 #: dash/addons/includes/languages/trans_dash.php:276
-msgid ""
-"Requests using the PUT method do not need to check the current attributes of the object."
+msgid "Requests using the PUT method do not need to check the current attributes of the object."
 msgstr "درخواست ها با استفاده از روش PUT نیازی به بررسی ویژگی های فعلی شی ندارند."
 
 #: SalamQuran/includes/languages/trans_dash.php:279
 #: dash/addons/includes/languages/trans_dash.php:277
 msgid ""
-"To update a portion of the information about a resource in your account, the PATCH "
-"method is available."
-msgstr ""
-"برای به روز رسانی بخشی از اطلاعات مربوط به یک منبع در حسابتان، روش PATCH در دسترس است."
+"To update a portion of the information about a resource in your account, the PATCH method is "
+"available."
+msgstr "برای به روز رسانی بخشی از اطلاعات مربوط به یک منبع در حسابتان، روش PATCH در دسترس است."
 
 #: SalamQuran/includes/languages/trans_dash.php:280
 #: dash/addons/includes/languages/trans_dash.php:278
@@ -1391,42 +1369,37 @@ msgstr "روش PUT و روش PATCH در نوع استفاده یکسان هست�
 #: SalamQuran/includes/languages/trans_dash.php:281
 #: dash/addons/includes/languages/trans_dash.php:279
 msgid ""
-"Finally, to retrieve metadata information, you should use the HEAD method to get the "
-"headers."
-msgstr ""
-"سرانجام، برای بازیابی اطلاعات هدر، باید از HEAD استفاده کنید تا هدرها را دریافت کنید."
+"Finally, to retrieve metadata information, you should use the HEAD method to get the headers."
+msgstr "سرانجام، برای بازیابی اطلاعات هدر، باید از HEAD استفاده کنید تا هدرها را دریافت کنید."
 
 #: SalamQuran/includes/languages/trans_dash.php:282
 #: dash/addons/includes/languages/trans_dash.php:280
-msgid ""
-"This returns only the header of what would be returned with an associated GET request."
+msgid "This returns only the header of what would be returned with an associated GET request."
 msgstr "این فقط بازگشت هدر چیزی است که با درخواست GET دریافت می‌شود."
 
 #: SalamQuran/includes/languages/trans_dash.php:283
 #: dash/addons/includes/languages/trans_dash.php:281
 msgid ""
-"Response headers contain some useful information about your API access and the results "
-"that are available for your request."
+"Response headers contain some useful information about your API access and the results that are "
+"available for your request."
 msgstr ""
-"هدرهای پاسخ حاوی اطلاعات مفید در مورد دسترسی ای‌پی‌آی شما و نتایجی است که برای درخواست شما "
-"در دسترس هستند."
+"هدرهای پاسخ حاوی اطلاعات مفید در مورد دسترسی ای‌پی‌آی شما و نتایجی است که برای درخواست شما در "
+"دسترس هستند."
 
 #: SalamQuran/includes/languages/trans_dash.php:284
 #: dash/addons/includes/languages/trans_dash.php:282
 msgid ""
 "For instance, the headers contain your current rate-limit value and the amount of time "
 "available until the limit resets."
-msgstr ""
-"به عنوان مثال، هدر حاوی مقادیر فعلی میزان و مقدار زمان موجود تا زمان محدود شدن مجاز است."
+msgstr "به عنوان مثال، هدر حاوی مقادیر فعلی میزان و مقدار زمان موجود تا زمان محدود شدن مجاز است."
 
 #: SalamQuran/includes/languages/trans_dash.php:285
 #: dash/addons/includes/languages/trans_dash.php:283
 msgid ""
-"It also contains metrics about the total number of objects found, pagination "
-"information, and the total content length."
+"It also contains metrics about the total number of objects found, pagination information, and "
+"the total content length."
 msgstr ""
-"همچنین شامل معیارهای مربوط به تعداد کل اشیاء پیدا شده، اطلاعات صفحه بندی و طول کل محتوای "
-"است."
+"همچنین شامل معیارهای مربوط به تعداد کل اشیاء پیدا شده، اطلاعات صفحه بندی و طول کل محتوای است."
 
 #: SalamQuran/includes/languages/trans_dash.php:288
 #: dash/addons/includes/languages/trans_dash.php:315
@@ -1447,22 +1420,18 @@ msgstr "داده‌های درخواست شده در قسمت <code>result</code
 #: dash/addons/includes/languages/trans_dash.php:372
 msgid "If you have a response, it will always be within the <code>result</code> field."
 msgstr ""
-"اگر شما درخواست پاسخی از سرور داشتید این پاسخ حتما در قسمت <code>result</code>  قرار "
-"دارد."
+"اگر شما درخواست پاسخی از سرور داشتید این پاسخ حتما در قسمت <code>result</code>  قرار دارد."
 
 #: SalamQuran/includes/languages/trans_dash.php:292
 #: dash/addons/includes/languages/trans_dash.php:373
-msgid ""
-"We also include a <code>ok</code> flag and an array of <code>msg</code> in the response."
+msgid "We also include a <code>ok</code> flag and an array of <code>msg</code> in the response."
 msgstr ""
-"ما همچنین قسمت <code>ok</code> و نیز آرایه‌ای از <code>msg</code> را در پاسخ سرور قرار "
-"می‌دهیم"
+"ما همچنین قسمت <code>ok</code> و نیز آرایه‌ای از <code>msg</code> را در پاسخ سرور قرار می‌دهیم"
 
 #: SalamQuran/includes/languages/trans_dash.php:293
 #: dash/addons/includes/languages/trans_dash.php:374
 msgid "Some responses can have additional pagination info wrapped in the <code>meta</code>"
-msgstr ""
-"بعضی از پاسخ‌ها می‌توانند اطلاعات اضافی خود را در قسمت <code>meta</code> به شما اعلام کنند"
+msgstr "بعضی از پاسخ‌ها می‌توانند اطلاعات اضافی خود را در قسمت <code>meta</code> به شما اعلام کنند"
 
 #: SalamQuran/includes/languages/trans_dash.php:294
 #: dash/addons/includes/languages/trans_dash.php:375
@@ -1726,14 +1695,14 @@ msgstr "پارامترها"
 #: SalamQuran/includes/languages/trans_dash.php:366
 msgid "If you want to set all notif of this user as read notif set this parameters as true"
 msgstr ""
-"اگر میخواهید همه اعلانهای این کاربر را به عنوان خوانده شده علامتگذاری کنید، این "
-"پارامترها را به عنوان TRUE تنظیم کنید"
+"اگر میخواهید همه اعلانهای این کاربر را به عنوان خوانده شده علامتگذاری کنید، این پارامترها را به "
+"عنوان TRUE تنظیم کنید"
 
 #: SalamQuran/includes/languages/trans_dash.php:367
 msgid "If user not read this notif, this response is null else see read date of this notif"
 msgstr ""
-"اگر گاربر این پیام را نخوانده باشید این مقدار خالی است و در غیر این صورت تاریخ خوانده "
-"شدن در این مقدار قرار دارد"
+"اگر گاربر این پیام را نخوانده باشید این مقدار خالی است و در غیر این صورت تاریخ خوانده شدن در "
+"این مقدار قرار دارد"
 
 #: SalamQuran/includes/languages/trans_dash.php:370
 msgid "Get android detail"
@@ -1797,8 +1766,7 @@ msgstr "برای اضافه کردن فایل گالری عکس در اینجا 
 msgid "Maximum file size"
 msgstr "حداکثر اندازه فایل"
 
-#: SalamQuran/includes/languages/trans_dash.php:389
-#: dash/addons/content_cp/terms/view.php:110
+#: SalamQuran/includes/languages/trans_dash.php:389 dash/addons/content_cp/terms/view.php:110
 #: dash/addons/includes/languages/trans_dash.php:78
 #: dash/addons/includes/languages/trans_static.php:112
 msgid "Search"
@@ -1852,11 +1820,9 @@ msgstr "عنوان را اینجا وارد کنید"
 
 #: SalamQuran/includes/languages/trans_dash.php:401
 #: dash/addons/includes/languages/trans_dash.php:25
-msgid ""
-"Recommended being more than 40 character and appear at the beginning of page content"
+msgid "Recommended being more than 40 character and appear at the beginning of page content"
 msgstr ""
-"توصیه می‌شود حداقل بیش از ۴۰ کاراکتر بوده و شامل بخشی از مطالب موجود در خطوط ابتدایی "
-"نوشته باشد"
+"توصیه می‌شود حداقل بیش از ۴۰ کاراکتر بوده و شامل بخشی از مطالب موجود در خطوط ابتدایی نوشته باشد"
 
 #: SalamQuran/includes/languages/trans_dash.php:402
 #: dash/addons/includes/languages/trans_dash.php:26
@@ -1867,8 +1833,7 @@ msgstr "زیرنویس را اینجا وارد کنید"
 #: dash/addons/includes/languages/trans_dash.php:27
 msgid "Subtitle show under title and used on press websites"
 msgstr ""
-"زیرعنوان یا سوتیتر معمولا در زیر عنوان اصلی نمایش داده شده و برای سایت‌های خبری کاربرد "
-"دارد"
+"زیرعنوان یا سوتیتر معمولا در زیر عنوان اصلی نمایش داده شده و برای سایت‌های خبری کاربرد دارد"
 
 #: SalamQuran/includes/languages/trans_dash.php:404
 #: dash/addons/includes/languages/trans_dash.php:28
@@ -1889,8 +1854,8 @@ msgstr "آدرس این نوشته"
 #: dash/addons/includes/languages/trans_dash.php:31
 msgid "You can change by set slug and category or parent for this post"
 msgstr ""
-"شما می‌توانید با تنظیم نامک بخش آخر آدرس و با تغییر دسته‌بندی در اخبار یا والد در صفحات آن "
-"را برای این صفحه سفارشی کنید"
+"شما می‌توانید با تنظیم نامک بخش آخر آدرس و با تغییر دسته‌بندی در اخبار یا والد در صفحات آن را "
+"برای این صفحه سفارشی کنید"
 
 #: SalamQuran/includes/languages/trans_dash.php:408
 #: dash/addons/includes/languages/trans_dash.php:33
@@ -1974,11 +1939,9 @@ msgstr "بدون والد"
 
 #: SalamQuran/includes/languages/trans_dash.php:424
 #: dash/addons/includes/languages/trans_dash.php:55
-msgid ""
-"Choose category for posts is fix url of post relative and help people find it better."
+msgid "Choose category for posts is fix url of post relative and help people find it better."
 msgstr ""
-"انتخاب دسته‌بندی برای نوشته منجر به تصحیح آدرس نوشته و ساختارمند کردن آن برای یافتن بهتر "
-"می‌گردد."
+"انتخاب دسته‌بندی برای نوشته منجر به تصحیح آدرس نوشته و ساختارمند کردن آن برای یافتن بهتر می‌گردد."
 
 #: SalamQuran/includes/languages/trans_dash.php:425
 #: dash/addons/includes/languages/trans_dash.php:56
@@ -2103,16 +2066,14 @@ msgstr "ضمیمه"
 msgid "Comments"
 msgstr "دیدگاه‌ها"
 
-#: SalamQuran/includes/languages/trans_dash.php:453
-#: dash/addons/content_support/home/view.php:9
+#: SalamQuran/includes/languages/trans_dash.php:453 dash/addons/content_support/home/view.php:9
 #: dash/addons/includes/languages/trans_dash.php:18
 msgid "Help center"
 msgstr "مرکز راهنما"
 
 #: SalamQuran/includes/languages/trans_dash.php:454
 #: dash/addons/content_cp/attachment/home/view.php:19
-#: dash/addons/content_cp/posts/home/view.php:23
-#: dash/addons/includes/languages/trans_dash.php:106
+#: dash/addons/content_cp/posts/home/view.php:23 dash/addons/includes/languages/trans_dash.php:106
 #: dash/addons/includes/languages/trans_static.php:94
 #: dash/addons/includes/languages/trans_static.php:977
 msgid "Posts"
@@ -2124,15 +2085,13 @@ msgstr "نوشته‌ها"
 msgid "Page"
 msgstr "صفحه"
 
-#: SalamQuran/includes/languages/trans_dash.php:456
-#: dash/addons/content_support/tag/view.php:10
+#: SalamQuran/includes/languages/trans_dash.php:456 dash/addons/content_support/tag/view.php:10
 #: dash/addons/includes/languages/trans_dash.php:108
 msgid "Category"
 msgstr "دسته‌بندی"
 
-#: SalamQuran/includes/languages/trans_dash.php:457
-#: dash/addons/content_cp/terms/view.php:30 dash/addons/content_cp/terms/view.php:38
-#: dash/addons/content_cp/terms/view.php:47
+#: SalamQuran/includes/languages/trans_dash.php:457 dash/addons/content_cp/terms/view.php:30
+#: dash/addons/content_cp/terms/view.php:38 dash/addons/content_cp/terms/view.php:47
 #: dash/addons/includes/languages/trans_dash.php:16
 #: dash/addons/includes/languages/trans_static.php:979
 msgid "Tags"
@@ -2178,8 +2137,7 @@ msgstr "زباله‌دان"
 msgid "Spam"
 msgstr "هرزنامه"
 
-#: SalamQuran/includes/languages/trans_dash.php:468
-#: dash/addons/content_su/update/view.php:21
+#: SalamQuran/includes/languages/trans_dash.php:468 dash/addons/content_su/update/view.php:21
 #: dash/addons/includes/languages/trans_dash.php:132
 #: dash/addons/includes/languages/trans_static.php:150
 msgid "Update"
@@ -2259,8 +2217,7 @@ msgstr "اخبار"
 
 #: SalamQuran/includes/languages/trans_dash.php:491
 #: dash/addons/content_cp/attachment/home/view.php:29
-#: dash/addons/content_cp/posts/home/view.php:33
-#: dash/addons/includes/languages/trans_dash.php:17
+#: dash/addons/content_cp/posts/home/view.php:33 dash/addons/includes/languages/trans_dash.php:17
 #: dash/addons/includes/languages/trans_static.php:95
 #: dash/addons/includes/languages/trans_static.php:980
 msgid "Pages"
@@ -2281,25 +2238,20 @@ msgstr "کلیدواژه‌های مرکز راهنمایی"
 msgid "Support tags"
 msgstr "کلیدواژه‌های پشتیبانی"
 
-#: SalamQuran/includes/languages/trans_dash.php:495
-#: dash/addons/content_support/home/view.php:13
-#: dash/addons/content_support/message/view.php:35
-#: dash/addons/content_support/tag/view.php:14
+#: SalamQuran/includes/languages/trans_dash.php:495 dash/addons/content_support/home/view.php:13
+#: dash/addons/content_support/message/view.php:35 dash/addons/content_support/tag/view.php:14
 #: dash/addons/content_support/ticket/home/view.php:11
 #: dash/addons/includes/languages/trans_dash.php:142 dash/lib/engine/view.php:305
 msgid "Tickets"
 msgstr "تیکت‌ها"
 
-#: SalamQuran/includes/languages/trans_dash.php:496
-#: dash/addons/content_cp/visitor/home/view.php:9
-#: dash/addons/content_cp/visitor/log/view.php:9
-#: dash/addons/includes/languages/trans_dash.php:143
+#: SalamQuran/includes/languages/trans_dash.php:496 dash/addons/content_cp/visitor/home/view.php:9
+#: dash/addons/content_cp/visitor/log/view.php:9 dash/addons/includes/languages/trans_dash.php:143
 msgid "Visitor"
 msgstr "بازدیدکننده"
 
 #: SalamQuran/includes/languages/trans_dash.php:501 dash/addons/content_cp/home/view.php:14
-#: dash/addons/content_crm/home/view.php:12
-#: dash/addons/includes/languages/trans_dash.php:12
+#: dash/addons/content_crm/home/view.php:12 dash/addons/includes/languages/trans_dash.php:12
 #: dash/addons/includes/languages/trans_static.php:149
 msgid "Control Panel"
 msgstr "کنترل پنل"
@@ -2346,8 +2298,7 @@ msgstr "آیکن"
 msgid "Choose icon"
 msgstr "آیکن را انتخاب کنید"
 
-#: SalamQuran/includes/languages/trans_dash.php:518
-#: dash/addons/content_cp/terms/view.php:22
+#: SalamQuran/includes/languages/trans_dash.php:518 dash/addons/content_cp/terms/view.php:22
 #: dash/addons/includes/languages/trans_dash.php:80
 #: dash/addons/includes/languages/trans_static.php:978
 msgid "Categories"
@@ -2832,8 +2783,7 @@ msgstr "همه‌ کاربران"
 msgid "Active Users"
 msgstr "کاربران فعال"
 
-#: SalamQuran/includes/languages/trans_dash.php:640
-#: dash/addons/content_crm/permission/view.php:11
+#: SalamQuran/includes/languages/trans_dash.php:640 dash/addons/content_crm/permission/view.php:11
 #: dash/addons/includes/languages/trans_dash.php:724
 #: dash/addons/includes/languages/trans_static.php:209
 #: dash/addons/includes/languages/trans_static.php:985
@@ -2879,8 +2829,7 @@ msgid "Users"
 msgstr "کاربران"
 
 #: SalamQuran/includes/languages/trans_dash.php:652
-#: dash/addons/content_crm/android/home/view.php:28
-#: dash/addons/content_crm/member/add/view.php:10
+#: dash/addons/content_crm/android/home/view.php:28 dash/addons/content_crm/member/add/view.php:10
 #: dash/addons/content_crm/member/home/view.php:28
 #: dash/addons/includes/languages/trans_dash.php:723
 msgid "Add new user"
@@ -2926,8 +2875,7 @@ msgid "Notification"
 msgstr "آگاهسازی"
 
 #: SalamQuran/includes/languages/trans_dash.php:664
-#: SalamQuran/includes/languages/trans_project.php:299
-#: dash/addons/content_su/tg/home/view.php:8
+#: SalamQuran/includes/languages/trans_project.php:299 dash/addons/content_su/tg/home/view.php:8
 #: dash/addons/includes/languages/trans_dash.php:666
 msgid "Telegram"
 msgstr "تلگرام"
@@ -3022,8 +2970,7 @@ msgstr "مجرد"
 msgid "Married"
 msgstr "متاهل"
 
-#: SalamQuran/includes/languages/trans_dash.php:697
-#: dash/addons/content_crm/log/caller/view.php:9
+#: SalamQuran/includes/languages/trans_dash.php:697 dash/addons/content_crm/log/caller/view.php:9
 #: dash/addons/content_crm/log/home/view.php:9 dash/addons/content_crm/log/show/view.php:9
 #: dash/addons/includes/languages/trans_dash.php:773
 msgid "Log"
@@ -3102,8 +3049,7 @@ msgstr "سریال"
 msgid "Display Name"
 msgstr "نام نمایشی"
 
-#: SalamQuran/includes/languages/trans_dash.php:713
-#: dash/addons/content_enter/pass/view.php:10
+#: SalamQuran/includes/languages/trans_dash.php:713 dash/addons/content_enter/pass/view.php:10
 #: dash/addons/includes/languages/trans_dash.php:469
 #: dash/addons/includes/languages/trans_static.php:167
 msgid "Password"
@@ -3120,14 +3066,14 @@ msgid "Last Modified"
 msgstr "آخرین به‌روز رسانی"
 
 #: SalamQuran/includes/languages/trans_dash.php:716
-#: dash/addons/includes/languages/trans_dash.php:861 dash/lib/app.php:359
-#: dash/lib/app.php:360 dash/lib/app/user.php:192 dash/lib/user.php:198
+#: dash/addons/includes/languages/trans_dash.php:861 dash/lib/app.php:359 dash/lib/app.php:360
+#: dash/lib/app/user.php:192 dash/lib/user.php:198
 msgid "Mr"
 msgstr "آقای"
 
 #: SalamQuran/includes/languages/trans_dash.php:717
-#: dash/addons/includes/languages/trans_dash.php:862 dash/lib/app.php:364
-#: dash/lib/app.php:365 dash/lib/app/user.php:196 dash/lib/user.php:202
+#: dash/addons/includes/languages/trans_dash.php:862 dash/lib/app.php:364 dash/lib/app.php:365
+#: dash/lib/app/user.php:196 dash/lib/user.php:202
 msgid "Mrs"
 msgstr "خانم"
 
@@ -3551,8 +3497,7 @@ msgstr "آخرین به‌روزرسانی در"
 #: SalamQuran/includes/languages/trans_dash.php:815
 #: dash/addons/includes/languages/trans_dash.php:1004
 msgid ""
-"The permission name should be unique and contain only alphanameric characters and "
-"underscores"
+"The permission name should be unique and contain only alphanameric characters and underscores"
 msgstr "نام سطح دسترسی باید منحصر به فرد باشد و فقط شامل کاراکتر‌های الفبا و زیر خط باشد"
 
 #: SalamQuran/includes/languages/trans_dash.php:816
@@ -3897,8 +3842,7 @@ msgstr "برای ادامه شما باید تلفن‌همراه یا رایا�
 msgid "Choose a gateway"
 msgstr "درگاه پرداخت را انتخاب کنید"
 
-#: SalamQuran/includes/languages/trans_dash.php:940
-#: dash/addons/content_pay/home/view.php:10
+#: SalamQuran/includes/languages/trans_dash.php:940 dash/addons/content_pay/home/view.php:10
 #: dash/addons/includes/languages/trans_dash.php:526
 msgid "Pay"
 msgstr "پرداخت"
@@ -4231,14 +4175,12 @@ msgstr "ابزارها"
 msgid "Translation tools"
 msgstr "ابزارهای ترجمه"
 
-#: SalamQuran/includes/languages/trans_dash.php:1029
-#: dash/addons/content_su/info/controller.php:29
+#: SalamQuran/includes/languages/trans_dash.php:1029 dash/addons/content_su/info/controller.php:29
 #: dash/addons/includes/languages/trans_dash.php:1160
 msgid "First you need to enable COM on windows"
 msgstr "در ابتدا شما باید ویژگی Com را در ویندوز فعال کنید"
 
-#: SalamQuran/includes/languages/trans_dash.php:1030
-#: dash/addons/content_su/info/controller.php:30
+#: SalamQuran/includes/languages/trans_dash.php:1030 dash/addons/content_su/info/controller.php:30
 #: dash/addons/includes/languages/trans_dash.php:1161
 msgid "Read More"
 msgstr "بیشتر بخوانید"
@@ -4420,8 +4362,7 @@ msgstr "آدرس فایل"
 #: dash/addons/includes/languages/trans_dash.php:1269
 msgid "pass an HTTP URL as a String for Telegram to get a photo from the Internet"
 msgstr ""
-"برای دریافت یک عکس از اینترنت یک نشانی اینترنتی HTTP را به عنوان یک رشته برای تلگرام "
-"منتقل کنید"
+"برای دریافت یک عکس از اینترنت یک نشانی اینترنتی HTTP را به عنوان یک رشته برای تلگرام منتقل کنید"
 
 #: SalamQuran/includes/languages/trans_dash.php:1086
 #: dash/addons/includes/languages/trans_dash.php:1270
@@ -4895,10 +4836,9 @@ msgstr "ساعات"
 #: SalamQuran/includes/languages/trans_dash.php:1216
 #: dash/addons/includes/languages/trans_dash.php:641
 msgid ""
-"If your problem is solved or do not need to track, please close this ticket by press "
-"below bottom."
-msgstr ""
-"اگر مشکل شما حل شده و یا نیازی به رهگیری آن نیست، لطفا تیکت را با فشردن دکمه زیر ببندید."
+"If your problem is solved or do not need to track, please close this ticket by press below "
+"bottom."
+msgstr "اگر مشکل شما حل شده و یا نیازی به رهگیری آن نیست، لطفا تیکت را با فشردن دکمه زیر ببندید."
 
 #: SalamQuran/includes/languages/trans_dash.php:1217
 #: dash/addons/includes/languages/trans_dash.php:642
@@ -5030,8 +4970,7 @@ msgstr "<b>آیا می‌دانید</b> می‌توانید حساب کاربر�
 #: SalamQuran/includes/languages/trans_dash.php:1242
 #: dash/addons/includes/languages/trans_dash.php:668
 msgid "Just need to start bot in Telegram and sync your account via /sync."
-msgstr ""
-"تنها کافی‌است ربات را شروع کرده و حساب خود را از طریق دستور /sync به وب‌سایت متصل کنید."
+msgstr "تنها کافی‌است ربات را شروع کرده و حساب خود را از طریق دستور /sync به وب‌سایت متصل کنید."
 
 #: SalamQuran/includes/languages/trans_dash.php:1245
 #: dash/addons/includes/languages/trans_dash.php:690
@@ -5086,8 +5025,7 @@ msgstr "حساب‌کاربری شما"
 
 #: SalamQuran/includes/languages/trans_dash.php:1259
 #: dash/addons/content_cp/attachment/home/view.php:36
-#: dash/addons/content_cp/posts/home/view.php:40
-#: dash/addons/includes/languages/trans_dash.php:415
+#: dash/addons/content_cp/posts/home/view.php:40 dash/addons/includes/languages/trans_dash.php:415
 msgid "Help Center"
 msgstr "مرکز راهنمایی"
 
@@ -5131,14 +5069,10 @@ msgstr "سلام"
 msgid "dear GUEST!"
 msgstr "میهمان عزیز!"
 
-#: SalamQuran/includes/languages/trans_dash.php:1269
-#: dash/addons/content_account/home/view.php:9
-#: dash/addons/content_cp/visitor/log/view.php:16
-#: dash/addons/content_crm/email/home/view.php:16
-#: dash/addons/content_crm/email/send/view.php:16
-#: dash/addons/content_crm/sms/group/view.php:16
-#: dash/addons/content_crm/sms/home/view.php:16
-#: dash/addons/content_crm/sms/send/view.php:16
+#: SalamQuran/includes/languages/trans_dash.php:1269 dash/addons/content_account/home/view.php:9
+#: dash/addons/content_cp/visitor/log/view.php:16 dash/addons/content_crm/email/home/view.php:16
+#: dash/addons/content_crm/email/send/view.php:16 dash/addons/content_crm/sms/group/view.php:16
+#: dash/addons/content_crm/sms/home/view.php:16 dash/addons/content_crm/sms/send/view.php:16
 #: dash/addons/content_crm/sms/verify/view.php:15
 #: dash/addons/includes/languages/trans_dash.php:410
 #: dash/addons/includes/languages/trans_static.php:93
@@ -5290,8 +5224,7 @@ msgstr "نام کامل"
 #: dash/addons/includes/languages/trans_dash.php:482
 #: dash/addons/includes/languages/trans_static.php:409
 #: dash/lib/social/telegram/commands/ermile.php:66
-#: dash/lib/social/telegram/commands/ermileInline.php:49
-#: dash/lib/social/telegram/step.php:332
+#: dash/lib/social/telegram/commands/ermileInline.php:49 dash/lib/social/telegram/step.php:332
 msgid "email"
 msgstr "رایانامه"
 
@@ -5362,8 +5295,7 @@ msgstr "ساخت حساب‌کاربری"
 msgid "Sign Up"
 msgstr "ثبت‌نام"
 
-#: SalamQuran/includes/languages/trans_dash.php:1314
-#: dash/addons/content_enter/pass/view.php:22
+#: SalamQuran/includes/languages/trans_dash.php:1314 dash/addons/content_enter/pass/view.php:22
 #: dash/addons/includes/languages/trans_dash.php:497
 msgid "Set Password"
 msgstr "تنظیم گذرواژه"
@@ -5451,8 +5383,7 @@ msgstr "جاوا اسکریپت برای استفاده از سرویس ما ض�
 #: SalamQuran/includes/languages/trans_dash.php:1333
 #: dash/addons/includes/languages/trans_dash.php:400
 msgid "Enable JavaScript in your browser or use one which supports it."
-msgstr ""
-"جاوا اسکریپت را در مرورگر خود فعال کنید یا از مرورگری استفاده کنید که  آن پشتیبانی می‌کند."
+msgstr "جاوا اسکریپت را در مرورگر خود فعال کنید یا از مرورگری استفاده کنید که  آن پشتیبانی می‌کند."
 
 #: SalamQuran/includes/languages/trans_dash.php:1338
 #: dash/addons/includes/languages/trans_dash.php:428
@@ -5650,27 +5581,27 @@ msgstr "قاری قرآن"
 
 #: SalamQuran/includes/languages/trans_project.php:9
 msgid "mansori"
-msgstr ""
+msgstr "منصوری"
 
 #: SalamQuran/includes/languages/trans_project.php:10
 msgid "parhizgar"
-msgstr ""
+msgstr "پرهیزگار"
 
 #: SalamQuran/includes/languages/trans_project.php:11
 msgid "menshawi"
-msgstr ""
+msgstr "منشاوی"
 
 #: SalamQuran/includes/languages/trans_project.php:12
 msgid "sudais"
-msgstr ""
+msgstr "سدیس"
 
 #: SalamQuran/includes/languages/trans_project.php:13
 msgid "basit"
-msgstr ""
+msgstr "باسط"
 
 #: SalamQuran/includes/languages/trans_project.php:14
 msgid "husary"
-msgstr ""
+msgstr "حصری"
 
 #: SalamQuran/includes/languages/trans_project.php:15
 msgid "Qari"
@@ -5699,8 +5630,8 @@ msgstr "از اینکه ما را انتخاب کردید، متشکریم."
 
 #: SalamQuran/includes/languages/trans_project.php:24
 msgid ""
-"We do our best to improve SalamQuran's quality. So, knowing your valuable comments about "
-"bugs and problems and more importantly your precious offers will help us in this way."
+"We do our best to improve SalamQuran's quality. So, knowing your valuable comments about bugs "
+"and problems and more importantly your precious offers will help us in this way."
 msgstr ""
 
 #: SalamQuran/includes/languages/trans_project.php:25
@@ -5757,899 +5688,899 @@ msgstr "بخش‌ها"
 
 #: SalamQuran/includes/languages/trans_project.php:45
 msgid "Al-Fatihah"
-msgstr ""
+msgstr "فاتحه"
 
 #: SalamQuran/includes/languages/trans_project.php:46
 msgid "The Opener"
-msgstr ""
+msgstr "گشایش‌گر"
 
 #: SalamQuran/includes/languages/trans_project.php:47
 msgid "Al-Baqarah"
-msgstr ""
+msgstr "بقره"
 
 #: SalamQuran/includes/languages/trans_project.php:48
 msgid "The Cow"
-msgstr ""
+msgstr "گاو"
 
 #: SalamQuran/includes/languages/trans_project.php:49
 msgid "Ali 'Imran"
-msgstr ""
+msgstr "آل عمران"
 
 #: SalamQuran/includes/languages/trans_project.php:50
 msgid "Family of Imran"
-msgstr ""
+msgstr "خاندان عمران"
 
 #: SalamQuran/includes/languages/trans_project.php:51
 msgid "An-Nisa"
-msgstr ""
+msgstr "نسا"
 
 #: SalamQuran/includes/languages/trans_project.php:52
 msgid "The Women"
-msgstr ""
+msgstr "زنان"
 
 #: SalamQuran/includes/languages/trans_project.php:53
 msgid "Al-Ma'idah"
-msgstr ""
+msgstr "مائده"
 
 #: SalamQuran/includes/languages/trans_project.php:54
 msgid "The Table Spread"
-msgstr ""
+msgstr "سفره آسمانی"
 
 #: SalamQuran/includes/languages/trans_project.php:55
 msgid "Al-An'am"
-msgstr ""
+msgstr "انعام"
 
 #: SalamQuran/includes/languages/trans_project.php:56
 msgid "The Cattle"
-msgstr ""
+msgstr "چهار پایان"
 
 #: SalamQuran/includes/languages/trans_project.php:57
 msgid "Al-A'raf"
-msgstr ""
+msgstr "اعراف"
 
 #: SalamQuran/includes/languages/trans_project.php:58
 msgid "The Heights"
-msgstr ""
+msgstr "حجاب ها"
 
 #: SalamQuran/includes/languages/trans_project.php:59
 msgid "Al-Anfal"
-msgstr ""
+msgstr "انفال"
 
 #: SalamQuran/includes/languages/trans_project.php:60
 msgid "The Spoils of War"
-msgstr ""
+msgstr "غنیمت ها"
 
 #: SalamQuran/includes/languages/trans_project.php:61
 msgid "At-Tawbah"
-msgstr ""
+msgstr "توبه"
 
 #: SalamQuran/includes/languages/trans_project.php:62
 msgid "The Repentance"
-msgstr ""
+msgstr "بازگشت"
 
 #: SalamQuran/includes/languages/trans_project.php:63
 msgid "Yunus"
-msgstr ""
+msgstr "یونس"
 
 #: SalamQuran/includes/languages/trans_project.php:64
 msgid "Jonah"
-msgstr ""
+msgstr "یونس"
 
 #: SalamQuran/includes/languages/trans_project.php:65
 msgid "Hud"
-msgstr ""
+msgstr "هود"
 
 #: SalamQuran/includes/languages/trans_project.php:66
 msgid "Yusuf"
-msgstr ""
+msgstr "یوسف"
 
 #: SalamQuran/includes/languages/trans_project.php:67
 msgid "Joseph"
-msgstr ""
+msgstr "یوسف"
 
 #: SalamQuran/includes/languages/trans_project.php:68
 msgid "Ar-Ra'd"
-msgstr ""
+msgstr "رعد"
 
 #: SalamQuran/includes/languages/trans_project.php:69
 msgid "The Thunder"
-msgstr ""
+msgstr "بانگ ابر"
 
 #: SalamQuran/includes/languages/trans_project.php:70
 msgid "Ibrahim"
-msgstr ""
+msgstr "ابراهیم"
 
 #: SalamQuran/includes/languages/trans_project.php:71
 msgid "Abrahim"
-msgstr ""
+msgstr "ابراهیم"
 
 #: SalamQuran/includes/languages/trans_project.php:72
 msgid "Al-Hijr"
-msgstr ""
+msgstr "حجر"
 
 #: SalamQuran/includes/languages/trans_project.php:73
 msgid "The Rocky Tract"
-msgstr ""
+msgstr "سنگ"
 
 #: SalamQuran/includes/languages/trans_project.php:74
 msgid "An-Nahl"
-msgstr ""
+msgstr "نحل"
 
 #: SalamQuran/includes/languages/trans_project.php:75
 msgid "The Bee"
-msgstr ""
+msgstr "زنبور"
 
 #: SalamQuran/includes/languages/trans_project.php:76
 msgid "Al-Isra"
-msgstr ""
+msgstr "اسرا"
 
 #: SalamQuran/includes/languages/trans_project.php:77
 msgid "The Night Journey"
-msgstr ""
+msgstr "سفر شبانه"
 
 #: SalamQuran/includes/languages/trans_project.php:78
 msgid "Al-Kahf"
-msgstr ""
+msgstr "کهف"
 
 #: SalamQuran/includes/languages/trans_project.php:79
 msgid "The Cave"
-msgstr ""
+msgstr "غار"
 
 #: SalamQuran/includes/languages/trans_project.php:80
 msgid "Maryam"
-msgstr ""
+msgstr "مریم"
 
 #: SalamQuran/includes/languages/trans_project.php:81
 msgid "Mary"
-msgstr ""
+msgstr "حضرت مریم"
 
 #: SalamQuran/includes/languages/trans_project.php:82
 msgid "Taha"
-msgstr ""
+msgstr "طاها"
 
 #: SalamQuran/includes/languages/trans_project.php:83
 msgid "Ta-Ha"
-msgstr ""
+msgstr "طاها"
 
 #: SalamQuran/includes/languages/trans_project.php:84
 msgid "Al-Anbya"
-msgstr ""
+msgstr "انبیا"
 
 #: SalamQuran/includes/languages/trans_project.php:85
 msgid "The Prophets"
-msgstr ""
+msgstr "پیامبران"
 
 #: SalamQuran/includes/languages/trans_project.php:86
 msgid "Al-Haj"
-msgstr ""
+msgstr "حج"
 
 #: SalamQuran/includes/languages/trans_project.php:87
 msgid "The Pilgrimage"
-msgstr ""
+msgstr "حج"
 
 #: SalamQuran/includes/languages/trans_project.php:88
 msgid "Al-Mu'minun"
-msgstr ""
+msgstr "مومنون"
 
 #: SalamQuran/includes/languages/trans_project.php:89
 msgid "The Believers"
-msgstr ""
+msgstr "ایمان آورندگان"
 
 #: SalamQuran/includes/languages/trans_project.php:90
 msgid "An-Nur"
-msgstr ""
+msgstr "نور"
 
 #: SalamQuran/includes/languages/trans_project.php:91
 msgid "The Light"
-msgstr ""
+msgstr "روشنایی"
 
 #: SalamQuran/includes/languages/trans_project.php:92
 msgid "Al-Furqan"
-msgstr ""
+msgstr "فرقان"
 
 #: SalamQuran/includes/languages/trans_project.php:93
 msgid "The Criterian"
-msgstr ""
+msgstr "جدا کننده"
 
 #: SalamQuran/includes/languages/trans_project.php:94
 msgid "Ash-Shu'ara"
-msgstr ""
+msgstr "شعرا"
 
 #: SalamQuran/includes/languages/trans_project.php:95
 msgid "The Poets"
-msgstr ""
+msgstr "شاعران"
 
 #: SalamQuran/includes/languages/trans_project.php:96
 msgid "An-Naml"
-msgstr ""
+msgstr "نمل"
 
 #: SalamQuran/includes/languages/trans_project.php:97
 msgid "The Ant"
-msgstr ""
+msgstr "مورچه"
 
 #: SalamQuran/includes/languages/trans_project.php:98
 msgid "Al-Qasas"
-msgstr ""
+msgstr "قصص"
 
 #: SalamQuran/includes/languages/trans_project.php:99
 msgid "The Stories"
-msgstr ""
+msgstr "داستان"
 
 #: SalamQuran/includes/languages/trans_project.php:100
 msgid "Al-'Ankabut"
-msgstr ""
+msgstr "عنکبوت"
 
 #: SalamQuran/includes/languages/trans_project.php:101
 msgid "The Spider"
-msgstr ""
+msgstr "عنکبوت"
 
 #: SalamQuran/includes/languages/trans_project.php:102
 msgid "Ar-Rum"
-msgstr ""
+msgstr "روم"
 
 #: SalamQuran/includes/languages/trans_project.php:103
 msgid "The Romans"
-msgstr ""
+msgstr "روم"
 
 #: SalamQuran/includes/languages/trans_project.php:104
 msgid "Luqman"
-msgstr ""
+msgstr "لقمان"
 
 #: SalamQuran/includes/languages/trans_project.php:105
 msgid "As-Sajdah"
-msgstr ""
+msgstr "سجده"
 
 #: SalamQuran/includes/languages/trans_project.php:106
 msgid "The Prostration"
-msgstr ""
+msgstr "سجده"
 
 #: SalamQuran/includes/languages/trans_project.php:107
 msgid "Al-Ahzab"
-msgstr ""
+msgstr "احزاب"
 
 #: SalamQuran/includes/languages/trans_project.php:108
 msgid "The Combined Forces"
-msgstr ""
+msgstr "گروه ها"
 
 #: SalamQuran/includes/languages/trans_project.php:109
 msgid "Saba"
-msgstr ""
+msgstr "سبا"
 
 #: SalamQuran/includes/languages/trans_project.php:110
 msgid "Sheba"
-msgstr ""
+msgstr "سبا"
 
 #: SalamQuran/includes/languages/trans_project.php:111
 msgid "Fatir"
-msgstr ""
+msgstr "فاطر"
 
 #: SalamQuran/includes/languages/trans_project.php:112
 msgid "Originator"
-msgstr ""
+msgstr "خالق"
 
 #: SalamQuran/includes/languages/trans_project.php:113
 msgid "Ya-Sin"
-msgstr ""
+msgstr "یاسین"
 
 #: SalamQuran/includes/languages/trans_project.php:114
 msgid "Ya Sin"
-msgstr ""
+msgstr "یاسین"
 
 #: SalamQuran/includes/languages/trans_project.php:115
 msgid "As-Saffat"
-msgstr ""
+msgstr "صافات"
 
 #: SalamQuran/includes/languages/trans_project.php:116
 msgid "Those who set the Ranks"
-msgstr ""
+msgstr "کسانی که رتبه تعیین میکنند"
 
 #: SalamQuran/includes/languages/trans_project.php:117
 msgid "Sad"
-msgstr ""
+msgstr "صاد"
 
 #: SalamQuran/includes/languages/trans_project.php:118
 msgid "The Letter 'Saad'"
-msgstr ""
+msgstr "ص"
 
 #: SalamQuran/includes/languages/trans_project.php:119
 msgid "Az-Zumar"
-msgstr ""
+msgstr "زمر"
 
 #: SalamQuran/includes/languages/trans_project.php:120
 msgid "The Troops"
-msgstr ""
+msgstr "دسته ها"
 
 #: SalamQuran/includes/languages/trans_project.php:121
 msgid "Ghafir"
-msgstr ""
+msgstr "غافر"
 
 #: SalamQuran/includes/languages/trans_project.php:122
 msgid "The Forgiver"
-msgstr ""
+msgstr "آمرزنده"
 
 #: SalamQuran/includes/languages/trans_project.php:123
 msgid "Fussilat"
-msgstr ""
+msgstr "فصلت"
 
 #: SalamQuran/includes/languages/trans_project.php:124
 msgid "Explained in Detail"
-msgstr ""
+msgstr "شرح دادن"
 
 #: SalamQuran/includes/languages/trans_project.php:125
 msgid "Ash-Shuraa"
-msgstr ""
+msgstr "شوری"
 
 #: SalamQuran/includes/languages/trans_project.php:126
 msgid "The Consultation"
-msgstr ""
+msgstr "مشورت"
 
 #: SalamQuran/includes/languages/trans_project.php:127
 msgid "Az-Zukhruf"
-msgstr ""
+msgstr "زخرف"
 
 #: SalamQuran/includes/languages/trans_project.php:128
 msgid "The Ornaments of Gold"
-msgstr ""
+msgstr "زیور"
 
 #: SalamQuran/includes/languages/trans_project.php:129
 msgid "Ad-Dukhan"
-msgstr ""
+msgstr "دخان"
 
 #: SalamQuran/includes/languages/trans_project.php:130
 msgid "The Smoke"
-msgstr ""
+msgstr "دود"
 
 #: SalamQuran/includes/languages/trans_project.php:131
 msgid "Al-Jathiyah"
-msgstr ""
+msgstr "جاثیه"
 
 #: SalamQuran/includes/languages/trans_project.php:132
 msgid "The Crouching"
-msgstr ""
+msgstr "جمع کردن"
 
 #: SalamQuran/includes/languages/trans_project.php:133
 msgid "Al-Ahqaf"
-msgstr ""
+msgstr "احقاف"
 
 #: SalamQuran/includes/languages/trans_project.php:134
 msgid "The Wind-Curved Sandhills"
-msgstr ""
+msgstr "تپه های شنی به قوس در آمده"
 
 #: SalamQuran/includes/languages/trans_project.php:135
 msgid "Muhammad"
-msgstr ""
+msgstr "محمد"
 
 #: SalamQuran/includes/languages/trans_project.php:136
 msgid "Al-Fath"
-msgstr ""
+msgstr "فتح"
 
 #: SalamQuran/includes/languages/trans_project.php:137
 msgid "The Victory"
-msgstr ""
+msgstr "پیروزی"
 
 #: SalamQuran/includes/languages/trans_project.php:138
 msgid "Al-Hujurat"
-msgstr ""
+msgstr "حجرات"
 
 #: SalamQuran/includes/languages/trans_project.php:139
 msgid "The Rooms"
-msgstr ""
+msgstr "اتاقها"
 
 #: SalamQuran/includes/languages/trans_project.php:140
 msgid "Qaf"
-msgstr ""
+msgstr "قاف"
 
 #: SalamQuran/includes/languages/trans_project.php:141
 msgid "The Letter 'Qaf'"
-msgstr ""
+msgstr "ق"
 
 #: SalamQuran/includes/languages/trans_project.php:142
 msgid "Adh-Dhariyat"
-msgstr ""
+msgstr "ذاریات"
 
 #: SalamQuran/includes/languages/trans_project.php:143
 msgid "The Winnowing Winds"
-msgstr ""
+msgstr "باد ها"
 
 #: SalamQuran/includes/languages/trans_project.php:144
 msgid "At-Tur"
-msgstr ""
+msgstr "طور"
 
 #: SalamQuran/includes/languages/trans_project.php:145
 msgid "The Mount"
-msgstr ""
+msgstr "کوه"
 
 #: SalamQuran/includes/languages/trans_project.php:146
 msgid "An-Najm"
-msgstr ""
+msgstr "نجم"
 
 #: SalamQuran/includes/languages/trans_project.php:147
 msgid "The Star"
-msgstr ""
+msgstr "ستاره"
 
 #: SalamQuran/includes/languages/trans_project.php:148
 msgid "Al-Qamar"
-msgstr ""
+msgstr "قمر"
 
 #: SalamQuran/includes/languages/trans_project.php:149
 msgid "The Moon"
-msgstr ""
+msgstr "ماه"
 
 #: SalamQuran/includes/languages/trans_project.php:150
 msgid "Ar-Rahman"
-msgstr ""
+msgstr "الرحمان"
 
 #: SalamQuran/includes/languages/trans_project.php:151
 msgid "The Beneficent"
-msgstr ""
+msgstr "بخشنده"
 
 #: SalamQuran/includes/languages/trans_project.php:152
 msgid "Al-Waqi'ah"
-msgstr ""
+msgstr "واقعه"
 
 #: SalamQuran/includes/languages/trans_project.php:153
 msgid "The Inevitable"
-msgstr ""
+msgstr "حادثه"
 
 #: SalamQuran/includes/languages/trans_project.php:154
 msgid "Al-Hadid"
-msgstr ""
+msgstr "حدید"
 
 #: SalamQuran/includes/languages/trans_project.php:155
 msgid "The Iron"
-msgstr ""
+msgstr "آهن"
 
 #: SalamQuran/includes/languages/trans_project.php:156
 msgid "Al-Mujadila"
-msgstr ""
+msgstr "مجادله"
 
 #: SalamQuran/includes/languages/trans_project.php:157
 msgid "The Pleading Woman"
-msgstr ""
+msgstr "گفتگو"
 
 #: SalamQuran/includes/languages/trans_project.php:158
 msgid "Al-Hashr"
-msgstr ""
+msgstr "حشر"
 
 #: SalamQuran/includes/languages/trans_project.php:159
 msgid "The Exile"
-msgstr ""
+msgstr "جمع شدن"
 
 #: SalamQuran/includes/languages/trans_project.php:160
 msgid "Al-Mumtahanah"
-msgstr ""
+msgstr "ممتحنه"
 
 #: SalamQuran/includes/languages/trans_project.php:161
 msgid "She that is to be examined"
-msgstr ""
+msgstr "امتحان شده"
 
 #: SalamQuran/includes/languages/trans_project.php:162
 msgid "As-Saf"
-msgstr ""
+msgstr "صف"
 
 #: SalamQuran/includes/languages/trans_project.php:163
 msgid "The Ranks"
-msgstr ""
+msgstr "صف ایستاده"
 
 #: SalamQuran/includes/languages/trans_project.php:164
 msgid "Al-Jumu'ah"
-msgstr ""
+msgstr "جمعه"
 
 #: SalamQuran/includes/languages/trans_project.php:165
 msgid "The Congregation, Friday"
-msgstr ""
+msgstr "جماعت٬ جمعه"
 
 #: SalamQuran/includes/languages/trans_project.php:166
 msgid "Al-Munafiqun"
-msgstr ""
+msgstr "منافقون"
 
 #: SalamQuran/includes/languages/trans_project.php:167
 msgid "The Hypocrites"
-msgstr ""
+msgstr "منافقان"
 
 #: SalamQuran/includes/languages/trans_project.php:168
 msgid "At-Taghabun"
-msgstr ""
+msgstr "تغابن"
 
 #: SalamQuran/includes/languages/trans_project.php:169
 msgid "The Mutual Disillusion"
-msgstr ""
+msgstr "ضرر کردن"
 
 #: SalamQuran/includes/languages/trans_project.php:170
 msgid "At-Talaq"
-msgstr ""
+msgstr "طلاق"
 
 #: SalamQuran/includes/languages/trans_project.php:171
 msgid "The Divorce"
-msgstr ""
+msgstr "جدا شدن"
 
 #: SalamQuran/includes/languages/trans_project.php:172
 msgid "At-Tahrim"
-msgstr ""
+msgstr "تحریم"
 
 #: SalamQuran/includes/languages/trans_project.php:173
 msgid "The Prohibtiion"
-msgstr ""
+msgstr "منع شدن"
 
 #: SalamQuran/includes/languages/trans_project.php:174
 msgid "Al-Mulk"
-msgstr ""
+msgstr "ملک"
 
 #: SalamQuran/includes/languages/trans_project.php:175
 msgid "The Sovereignty"
-msgstr ""
+msgstr "مالکیت"
 
 #: SalamQuran/includes/languages/trans_project.php:176
 msgid "Al-Qalam"
-msgstr ""
+msgstr "قلم"
 
 #: SalamQuran/includes/languages/trans_project.php:177
 msgid "The Pen"
-msgstr ""
+msgstr "قلم"
 
 #: SalamQuran/includes/languages/trans_project.php:178
 msgid "Al-Haqqah"
-msgstr ""
+msgstr "حاقه"
 
 #: SalamQuran/includes/languages/trans_project.php:179
 msgid "The Reality"
-msgstr ""
+msgstr "حقیقت"
 
 #: SalamQuran/includes/languages/trans_project.php:180
 msgid "Al-Ma'arij"
-msgstr ""
+msgstr "معارج"
 
 #: SalamQuran/includes/languages/trans_project.php:181
 msgid "The Ascending Stairways"
-msgstr ""
+msgstr "اوج"
 
 #: SalamQuran/includes/languages/trans_project.php:182
 msgid "Nuh"
-msgstr ""
+msgstr "نوح"
 
 #: SalamQuran/includes/languages/trans_project.php:183
 msgid "Noah"
-msgstr ""
+msgstr "نوح"
 
 #: SalamQuran/includes/languages/trans_project.php:184
 msgid "Al-Jinn"
-msgstr ""
+msgstr "جن"
 
 #: SalamQuran/includes/languages/trans_project.php:185
 msgid "The Jinn"
-msgstr ""
+msgstr "جن"
 
 #: SalamQuran/includes/languages/trans_project.php:186
 msgid "Al-Muzzammil"
-msgstr ""
+msgstr "مزمل"
 
 #: SalamQuran/includes/languages/trans_project.php:187
 msgid "The Enshrouded One"
-msgstr ""
+msgstr "جامه به خود پیچیده"
 
 #: SalamQuran/includes/languages/trans_project.php:188
 msgid "Al-Muddaththir"
-msgstr ""
+msgstr "مدثر"
 
 #: SalamQuran/includes/languages/trans_project.php:189
 msgid "The Cloaked One"
-msgstr ""
+msgstr "جامه به سر کشیده"
 
 #: SalamQuran/includes/languages/trans_project.php:190
 msgid "Al-Qiyamah"
-msgstr ""
+msgstr "قیامت"
 
 #: SalamQuran/includes/languages/trans_project.php:191
 msgid "The Resurrection"
-msgstr ""
+msgstr "رستاخیز"
 
 #: SalamQuran/includes/languages/trans_project.php:192
 msgid "Al-Insan"
-msgstr ""
+msgstr "انسان"
 
 #: SalamQuran/includes/languages/trans_project.php:193
 msgid "The Man"
-msgstr ""
+msgstr "انسان"
 
 #: SalamQuran/includes/languages/trans_project.php:194
 msgid "Al-Mursalat"
-msgstr ""
+msgstr "مرسلات"
 
 #: SalamQuran/includes/languages/trans_project.php:195
 msgid "The Emissaries"
-msgstr ""
+msgstr "ارسال شده"
 
 #: SalamQuran/includes/languages/trans_project.php:196
 msgid "An-Naba"
-msgstr ""
+msgstr "نبا"
 
 #: SalamQuran/includes/languages/trans_project.php:197
 msgid "The Tidings"
-msgstr ""
+msgstr "خبر"
 
 #: SalamQuran/includes/languages/trans_project.php:198
 msgid "An-Nazi'at"
-msgstr ""
+msgstr "نازعات"
 
 #: SalamQuran/includes/languages/trans_project.php:199
 msgid "Those who drag forth"
-msgstr ""
+msgstr "کسانی که بیرون میکشند"
 
 #: SalamQuran/includes/languages/trans_project.php:200
 msgid "'Abasa"
-msgstr ""
+msgstr "عبس"
 
 #: SalamQuran/includes/languages/trans_project.php:201
 msgid "He Frowned"
-msgstr ""
+msgstr "ترش‌رویی"
 
 #: SalamQuran/includes/languages/trans_project.php:202
 msgid "At-Takwir"
-msgstr ""
+msgstr "تکویر"
 
 #: SalamQuran/includes/languages/trans_project.php:203
 msgid "The Overthrowing"
-msgstr ""
+msgstr "پیچیده شدن"
 
 #: SalamQuran/includes/languages/trans_project.php:204
 msgid "Al-Infitar"
-msgstr ""
+msgstr "انفطار"
 
 #: SalamQuran/includes/languages/trans_project.php:205
 msgid "The Cleaving"
-msgstr ""
+msgstr "از هم گسستن"
 
 #: SalamQuran/includes/languages/trans_project.php:206
 msgid "Al-Mutaffifin"
-msgstr ""
+msgstr "مطففین"
 
 #: SalamQuran/includes/languages/trans_project.php:207
 msgid "The Defrauding"
-msgstr ""
+msgstr "کم‌فروشان"
 
 #: SalamQuran/includes/languages/trans_project.php:208
 msgid "Al-Inshiqaq"
-msgstr ""
+msgstr "انشقاق"
 
 #: SalamQuran/includes/languages/trans_project.php:209
 msgid "The Sundering"
-msgstr ""
+msgstr "شکافته شدن"
 
 #: SalamQuran/includes/languages/trans_project.php:210
 msgid "Al-Buruj"
-msgstr ""
+msgstr "بروج"
 
 #: SalamQuran/includes/languages/trans_project.php:211
 msgid "The Mansions of the Stars"
-msgstr ""
+msgstr "قصرها"
 
 #: SalamQuran/includes/languages/trans_project.php:212
 msgid "At-Tariq"
-msgstr ""
+msgstr "طارق"
 
 #: SalamQuran/includes/languages/trans_project.php:213
 msgid "The Nightcommer"
-msgstr ""
+msgstr "ستاره"
 
 #: SalamQuran/includes/languages/trans_project.php:214
 msgid "Al-A'la"
-msgstr ""
+msgstr "اعلی"
 
 #: SalamQuran/includes/languages/trans_project.php:215
 msgid "The Most High"
-msgstr ""
+msgstr "بالا مرتبه"
 
 #: SalamQuran/includes/languages/trans_project.php:216
 msgid "Al-Ghashiyah"
-msgstr ""
+msgstr "غاشیه"
 
 #: SalamQuran/includes/languages/trans_project.php:217
 msgid "The Overwhelming"
-msgstr ""
+msgstr "پوشاندن"
 
 #: SalamQuran/includes/languages/trans_project.php:218
 msgid "Al-Fajr"
-msgstr ""
+msgstr "فجر"
 
 #: SalamQuran/includes/languages/trans_project.php:219
 msgid "The Dawn"
-msgstr ""
+msgstr "سپیده دم"
 
 #: SalamQuran/includes/languages/trans_project.php:220
 msgid "Al-Balad"
-msgstr ""
+msgstr "بلد"
 
 #: SalamQuran/includes/languages/trans_project.php:221
 msgid "The City"
-msgstr ""
+msgstr "سرزمین"
 
 #: SalamQuran/includes/languages/trans_project.php:222
 msgid "Ash-Shams"
-msgstr ""
+msgstr "شمس"
 
 #: SalamQuran/includes/languages/trans_project.php:223
 msgid "The Sun"
-msgstr ""
+msgstr "خورشید"
 
 #: SalamQuran/includes/languages/trans_project.php:224
 msgid "Al-Layl"
-msgstr ""
+msgstr "لیل"
 
 #: SalamQuran/includes/languages/trans_project.php:225
 msgid "The Night"
-msgstr ""
+msgstr "شب"
 
 #: SalamQuran/includes/languages/trans_project.php:226
 msgid "Ad-Duhaa"
-msgstr ""
+msgstr "ضحی"
 
 #: SalamQuran/includes/languages/trans_project.php:227
 msgid "The Morning Hours"
-msgstr ""
+msgstr "ظهر"
 
 #: SalamQuran/includes/languages/trans_project.php:228
 msgid "Ash-Sharh"
-msgstr ""
+msgstr "شرح"
 
 #: SalamQuran/includes/languages/trans_project.php:229
 msgid "The Relief"
-msgstr ""
+msgstr "گشایش"
 
 #: SalamQuran/includes/languages/trans_project.php:230
 msgid "At-Tin"
-msgstr ""
+msgstr "تین"
 
 #: SalamQuran/includes/languages/trans_project.php:231
 msgid "The Fig"
-msgstr ""
+msgstr "انجیر"
 
 #: SalamQuran/includes/languages/trans_project.php:232
 msgid "Al-'Alaq"
-msgstr ""
+msgstr "علق"
 
 #: SalamQuran/includes/languages/trans_project.php:233
 msgid "The Clot"
-msgstr ""
+msgstr "خون بسته شده"
 
 #: SalamQuran/includes/languages/trans_project.php:234
 msgid "Al-Qadr"
-msgstr ""
+msgstr "قدر"
 
 #: SalamQuran/includes/languages/trans_project.php:235
 msgid "The Power"
-msgstr ""
+msgstr "عظمت"
 
 #: SalamQuran/includes/languages/trans_project.php:236
 msgid "Al-Bayyinah"
-msgstr ""
+msgstr "بینه"
 
 #: SalamQuran/includes/languages/trans_project.php:237
 msgid "The Clear Proof"
-msgstr ""
+msgstr "آشکار"
 
 #: SalamQuran/includes/languages/trans_project.php:238
 msgid "Az-Zalzalah"
-msgstr ""
+msgstr "زلزله"
 
 #: SalamQuran/includes/languages/trans_project.php:239
 msgid "The Earthquake"
-msgstr ""
+msgstr "زلزله"
 
 #: SalamQuran/includes/languages/trans_project.php:240
 msgid "Al-'Adiyat"
-msgstr ""
+msgstr "عادیات"
 
 #: SalamQuran/includes/languages/trans_project.php:241
 msgid "The Courser"
-msgstr ""
+msgstr "دویدن"
 
 #: SalamQuran/includes/languages/trans_project.php:242
 msgid "Al-Qari'ah"
-msgstr ""
+msgstr "قارعه"
 
 #: SalamQuran/includes/languages/trans_project.php:243
 msgid "The Calamity"
-msgstr ""
+msgstr "زدن بسیار سخت"
 
 #: SalamQuran/includes/languages/trans_project.php:244
 msgid "At-Takathur"
-msgstr ""
+msgstr "تکاثر"
 
 #: SalamQuran/includes/languages/trans_project.php:245
 msgid "The Rivalry in world increase"
-msgstr ""
+msgstr "چشم و هم چشمی"
 
 #: SalamQuran/includes/languages/trans_project.php:246
 msgid "Al-'Asr"
-msgstr ""
+msgstr "عصر"
 
 #: SalamQuran/includes/languages/trans_project.php:247
 msgid "The Declining Day"
-msgstr ""
+msgstr "زمان"
 
 #: SalamQuran/includes/languages/trans_project.php:248
 msgid "Al-Humazah"
-msgstr ""
+msgstr "همزه"
 
 #: SalamQuran/includes/languages/trans_project.php:249
 msgid "The Traducer"
-msgstr ""
+msgstr "عیب جویی"
 
 #: SalamQuran/includes/languages/trans_project.php:250
 msgid "Al-Fil"
-msgstr ""
+msgstr "فیل"
 
 #: SalamQuran/includes/languages/trans_project.php:251
 msgid "The Elephant"
-msgstr ""
+msgstr "فیل"
 
 #: SalamQuran/includes/languages/trans_project.php:252
 msgid "Quraysh"
-msgstr ""
+msgstr "قریش"
 
 #: SalamQuran/includes/languages/trans_project.php:253
 msgid "Al-Ma'un"
-msgstr ""
+msgstr "ماعون"
 
 #: SalamQuran/includes/languages/trans_project.php:254
 msgid "The Small Kindesses"
-msgstr ""
+msgstr "نفع بردن"
 
 #: SalamQuran/includes/languages/trans_project.php:255
 msgid "Al-Kawthar"
-msgstr ""
+msgstr "کوثر"
 
 #: SalamQuran/includes/languages/trans_project.php:256
 msgid "The Abundance"
-msgstr ""
+msgstr "فراوانی"
 
 #: SalamQuran/includes/languages/trans_project.php:257
 msgid "Al-Kafirun"
-msgstr ""
+msgstr "کافرون"
 
 #: SalamQuran/includes/languages/trans_project.php:258
 msgid "The Disbelievers"
-msgstr ""
+msgstr "کافران"
 
 #: SalamQuran/includes/languages/trans_project.php:259
 msgid "An-Nasr"
-msgstr ""
+msgstr "نصر"
 
 #: SalamQuran/includes/languages/trans_project.php:260
 msgid "The Divine Support"
-msgstr ""
+msgstr "یاری"
 
 #: SalamQuran/includes/languages/trans_project.php:261
 msgid "Al-Masad"
-msgstr ""
+msgstr "مسد"
 
 #: SalamQuran/includes/languages/trans_project.php:262
 msgid "The Palm Fiber"
-msgstr ""
+msgstr "ریسمان بافته شده از خرما"
 
 #: SalamQuran/includes/languages/trans_project.php:263
 msgid "Al-Ikhlas"
-msgstr ""
+msgstr "اخلاص"
 
 #: SalamQuran/includes/languages/trans_project.php:264
 msgid "The Sincerity"
-msgstr ""
+msgstr "یکتا"
 
 #: SalamQuran/includes/languages/trans_project.php:265
 msgid "Al-Falaq"
-msgstr ""
+msgstr "فلق"
 
 #: SalamQuran/includes/languages/trans_project.php:266
 msgid "The Daybreak"
-msgstr ""
+msgstr "صبح"
 
 #: SalamQuran/includes/languages/trans_project.php:267
 msgid "An-Nas"
-msgstr ""
+msgstr "ناس"
 
 #: SalamQuran/includes/languages/trans_project.php:268
 msgid "The Mankind"
-msgstr ""
+msgstr "مردم"
 
 #: SalamQuran/includes/languages/trans_project.php:271
 msgid "List of soreha"
@@ -6743,8 +6674,7 @@ msgstr "مدیریت آدرس‌های شما"
 #: dash/addons/content_account/profile/security/view.php:14
 #: dash/addons/content_account/profile/signature/view.php:14
 #: dash/addons/content_account/profile/social/view.php:14
-#: dash/addons/content_account/profile/view.php:14
-#: dash/addons/content_crm/member/log/view.php:16
+#: dash/addons/content_account/profile/view.php:14 dash/addons/content_crm/member/log/view.php:16
 #: dash/addons/content_crm/member/security/view.php:16
 msgid "Back to dashbaord"
 msgstr "بازگشت به داشبورد"
@@ -6836,8 +6766,7 @@ msgstr "اطلاعات مالی"
 
 #: dash/addons/content_account/billing/view.php:11
 msgid "Check your balance, charge your account, and bill your invoices!"
-msgstr ""
-"موجودی حساب خود را چک کنید، حساب‌کاربری را شارژ کنید و فاکتورهای صادرشده را پرداخت کنید!"
+msgstr "موجودی حساب خود را چک کنید، حساب‌کاربری را شارژ کنید و فاکتورهای صادرشده را پرداخت کنید!"
 
 #: dash/addons/content_account/home/view.php:10
 msgid "Account of your user to change profile details or change billing information"
@@ -6867,8 +6796,7 @@ msgstr "شما می‌توانید پروفایل خود را ویرایش کن�
 #: dash/addons/content_account/profile/security/view.php:20
 #: dash/addons/content_account/profile/signature/view.php:20
 #: dash/addons/content_account/profile/social/view.php:20
-#: dash/addons/content_account/profile/view.php:20
-#: dash/addons/content_crm/member/main/view.php:18
+#: dash/addons/content_account/profile/view.php:20 dash/addons/content_crm/member/main/view.php:18
 #: dash/addons/content_crm/member/main/view.php:25 dash/lib/app/address.php:198
 #: dash/lib/app/user/edit.php:53 dash/lib/app/user_telegram.php:53
 #: dash/lib/app/user_telegram.php:60
@@ -6960,15 +6888,13 @@ msgstr "این متود پشتیبانی نمی‌شود"
 
 #: dash/addons/content_api/v5/enter/controller.php:48
 #: dash/addons/content_api/v5/enter/controller.php:109
-#: dash/addons/content_api/v6/enter/enter.php:179
-#: dash/addons/content_api/v6/enter/enter.php:234
+#: dash/addons/content_api/v6/enter/enter.php:179 dash/addons/content_api/v6/enter/enter.php:234
 msgid "Verification code not set"
 msgstr "کد اعتبارسنجی ارسال نشده است"
 
 #: dash/addons/content_api/v5/enter/controller.php:62
 #: dash/addons/content_api/v5/enter/controller.php:174
-#: dash/addons/content_api/v6/enter/enter.php:59
-#: dash/addons/content_api/v6/enter/enter.php:187
+#: dash/addons/content_api/v6/enter/enter.php:59 dash/addons/content_api/v6/enter/enter.php:187
 msgid "Can not signup this mobile"
 msgstr "ما نمی توانیم این موبایل را ثبت کنیم"
 
@@ -6989,8 +6915,7 @@ msgstr "کد اعتبارسنجی منقضی شده است"
 
 #: dash/addons/content_api/v5/enter/controller.php:121
 #: dash/addons/content_api/v5/enter/controller.php:127
-#: dash/addons/content_api/v6/enter/enter.php:246
-#: dash/addons/content_api/v6/enter/enter.php:252
+#: dash/addons/content_api/v6/enter/enter.php:246 dash/addons/content_api/v6/enter/enter.php:252
 msgid "Verification code not found"
 msgstr "کد اعتبارسنجی یافت نشد"
 
@@ -7012,16 +6937,14 @@ msgid "Invalid usercode and usertoken"
 msgstr "کد کاربر و توکن کاربر باهم همخوانی ندارد"
 
 #: dash/addons/content_api/v5/enter/controller.php:326
-#: dash/addons/content_api/v6/enter/enter.php:133
-#: dash/addons/content_enter/callback/model.php:56
+#: dash/addons/content_api/v6/enter/enter.php:133 dash/addons/content_enter/callback/model.php:56
 #: dash/addons/content_enter/callback/model.php:139
 msgid "Mobile not set"
 msgstr "موبایل تنظیم نشده است"
 
 #: dash/addons/content_api/v5/enter/controller.php:333
-#: dash/addons/content_api/v6/enter/enter.php:140
-#: dash/addons/content_enter/app/model.php:23 dash/lib/app/address.php:161
-#: dash/lib/app/user.php:271
+#: dash/addons/content_api/v6/enter/enter.php:140 dash/addons/content_enter/app/model.php:23
+#: dash/lib/app/address.php:161 dash/lib/app/user.php:271
 msgid "Invalid mobile"
 msgstr "شماره‌ی تلفن همراه نامعتبر است"
 
@@ -7213,21 +7136,16 @@ msgstr "بررسی لیست مقالات موجود در مرکز راهنمای
 msgid "Also add or edit specefic article."
 msgstr "هم‌چنین افزودن یا ویرایش مقاله خاص."
 
-#: dash/addons/content_cp/attachment/home/view.php:38
-#: dash/addons/content_cp/posts/add/view.php:51
-#: dash/addons/content_cp/posts/edit/view.php:61
-#: dash/addons/content_cp/posts/home/view.php:42
+#: dash/addons/content_cp/attachment/home/view.php:38 dash/addons/content_cp/posts/add/view.php:51
+#: dash/addons/content_cp/posts/edit/view.php:61 dash/addons/content_cp/posts/home/view.php:42
 msgid "Back to list of helps"
 msgstr "بازگشت به لیست مرکز راهنمایی"
 
 #: dash/addons/content_cp/attachment/home/view.php:54
-#: dash/addons/content_cp/comments/home/view.php:16
-#: dash/addons/content_cp/dayevent/view.php:13
+#: dash/addons/content_cp/comments/home/view.php:16 dash/addons/content_cp/dayevent/view.php:13
 #: dash/addons/content_cp/posts/home/view.php:58 dash/addons/content_cp/terms/view.php:61
-#: dash/addons/content_crm/log/caller/view.php:13
-#: dash/addons/content_crm/log/home/view.php:13
-#: dash/addons/content_crm/log/show/view.php:13
-#: dash/addons/content_crm/sms/template/view.php:15
+#: dash/addons/content_crm/log/caller/view.php:13 dash/addons/content_crm/log/home/view.php:13
+#: dash/addons/content_crm/log/show/view.php:13 dash/addons/content_crm/sms/template/view.php:15
 #: dash/addons/content_su/android/view.php:11 dash/addons/content_su/tg/log/view.php:14
 #: dash/addons/content_su/tg/system/view.php:14 dash/addons/content_su/tg/users/view.php:14
 msgid "Back to dashboard"
@@ -7239,12 +7157,9 @@ msgid "Add new :val"
 msgstr "افزودن :val جدید"
 
 #: dash/addons/content_cp/attachment/home/view.php:67
-#: dash/addons/content_cp/comments/home/view.php:23
-#: dash/addons/content_cp/posts/home/view.php:71
-#: dash/addons/content_cp/visitor/log/view.php:23
-#: dash/addons/content_crm/android/home/view.php:24
-#: dash/addons/content_crm/log/home/view.php:34
-#: dash/addons/content_crm/member/home/view.php:24
+#: dash/addons/content_cp/comments/home/view.php:23 dash/addons/content_cp/posts/home/view.php:71
+#: dash/addons/content_cp/visitor/log/view.php:23 dash/addons/content_crm/android/home/view.php:24
+#: dash/addons/content_crm/log/home/view.php:34 dash/addons/content_crm/member/home/view.php:24
 #: dash/addons/content_su/dbtables/view.php:22 dash/addons/content_su/tg/log/view.php:22
 #: dash/addons/content_su/tg/system/view.php:22 dash/addons/content_su/tg/users/view.php:22
 #: dash/addons/content_su/transactions/view.php:22
@@ -7306,8 +7221,7 @@ msgstr "شما می‌توانید در صورت نیاز دیدگاه را وی
 
 #: dash/addons/content_cp/comments/edit/view.php:21
 #: dash/addons/content_cp/contact/edit/view.php:21
-msgid ""
-"This is often useful when you notice that a commenter has made a typographical error."
+msgid "This is often useful when you notice that a commenter has made a typographical error."
 msgstr "اغلب برای مواردی که متوجه می‌شوید در یک دیدگاه نویسنده خطای تایپی دارد."
 
 #: dash/addons/content_cp/comments/edit/view.php:24
@@ -7344,8 +7258,7 @@ msgstr "تمام جزئیات وب‌سایت خود را در یک نگاه ب�
 
 #: dash/addons/content_cp/home/view.php:15 dash/addons/content_crm/home/view.php:13
 msgid "You can manage all parts of site from cms and news until user and logs."
-msgstr ""
-"شما می‌توانید تمام بخش‌ها را از مدیریت محتوا و اخبار گرفته تا کاربران و لاگ را مدیریت کنید."
+msgstr "شما می‌توانید تمام بخش‌ها را از مدیریت محتوا و اخبار گرفته تا کاربران و لاگ را مدیریت کنید."
 
 #: dash/addons/content_cp/mycontact/view.php:9 dash/addons/content_cp/mycontact/view.php:10
 msgid "Comment Dashboard"
@@ -7359,8 +7272,7 @@ msgstr "افزودن نوشته جدید"
 msgid "Posts can contain keyword and category with title and descriptions."
 msgstr "پست ها می توانند شامل کلیدی و دسته بندی با عنوان و شرح باشند."
 
-#: dash/addons/content_cp/posts/add/view.php:26
-#: dash/addons/content_cp/posts/edit/view.php:38
+#: dash/addons/content_cp/posts/add/view.php:26 dash/addons/content_cp/posts/edit/view.php:38
 #: dash/addons/content_cp/posts/edit/view.php:75
 msgid "Back to list of posts"
 msgstr "بازگشت به لیست نوشته‌ها"
@@ -7373,8 +7285,7 @@ msgstr "افزودن برگه جدید"
 msgid "Add new static page like about or honors"
 msgstr "اضافه کردن صفحه استاتیک جدید مانند درباره ما یا افتخارات"
 
-#: dash/addons/content_cp/posts/add/view.php:40
-#: dash/addons/content_cp/posts/edit/view.php:50
+#: dash/addons/content_cp/posts/add/view.php:40 dash/addons/content_cp/posts/edit/view.php:50
 msgid "Back to list of pages"
 msgstr "بازگشت به لیست برگه‌ها"
 
@@ -7386,16 +7297,14 @@ msgstr "افزودن راهنمایی جدید"
 msgid "Add new article to help center or new faq."
 msgstr "افزودن سوال متداول یا مقاله‌ای جدید به مرکز راهنمایی."
 
-#: dash/addons/content_cp/posts/edit/view.php:34
-#: dash/addons/content_cp/posts/edit/view.php:74
+#: dash/addons/content_cp/posts/edit/view.php:34 dash/addons/content_cp/posts/edit/view.php:74
 msgid "Edit post"
 msgstr "ویرایش نوشته"
 
 #: dash/addons/content_cp/posts/edit/view.php:35
 msgid "You can change everything, change url and add gallery or some other change"
 msgstr ""
-"شما می توانید همه چیز را تغییر دهید، تغییر آدرس و اضافه کردن گالری و یا برخی از تغییرات "
-"دیگر"
+"شما می توانید همه چیز را تغییر دهید، تغییر آدرس و اضافه کردن گالری و یا برخی از تغییرات دیگر"
 
 #: dash/addons/content_cp/posts/edit/view.php:49
 msgid "Edit page"
@@ -7445,8 +7354,7 @@ msgstr "ترم با موفقتی ویرایش شد"
 msgid "Term successfully added"
 msgstr "عبارت با موفقیت اضافه شد"
 
-#: dash/addons/content_cp/terms/view.php:10
-#: dash/addons/includes/languages/trans_static.php:96
+#: dash/addons/content_cp/terms/view.php:10 dash/addons/includes/languages/trans_static.php:96
 msgid "Terms"
 msgstr "عبارات"
 
@@ -7488,14 +7396,11 @@ msgid "Visitor chart"
 msgstr "نمودار بازدیدکنندگان"
 
 #: dash/addons/content_cp/visitor/chart/view.php:10
-#: dash/addons/content_cp/visitor/home/view.php:10
-#: dash/addons/content_cp/visitor/log/view.php:10
+#: dash/addons/content_cp/visitor/home/view.php:10 dash/addons/content_cp/visitor/log/view.php:10
 msgid "Check list of visitor and search or filter in them to find your visitor."
-msgstr ""
-"بررسی لیست بازدیدکنندگان و جستجو یا فیلتر کردن آنان برای یافتن بازدیدکننده موردنظر."
+msgstr "بررسی لیست بازدیدکنندگان و جستجو یا فیلتر کردن آنان برای یافتن بازدیدکننده موردنظر."
 
-#: dash/addons/content_crm/android/home/view.php:9
-#: dash/addons/content_crm/member/home/view.php:9
+#: dash/addons/content_crm/android/home/view.php:9 dash/addons/content_crm/member/home/view.php:9
 msgid "List of users"
 msgstr "لیست کاربران"
 
@@ -7514,13 +7419,11 @@ msgstr "بررسی لیست کاربران و جستجو یا فیلتر کرد�
 msgid "Also add or edit specefic user."
 msgstr "همچنین کاربر خاصی را اضافه یا ویرایش کنید."
 
-#: dash/addons/content_crm/email/home/view.php:10
-#: dash/addons/content_crm/sms/home/view.php:10
+#: dash/addons/content_crm/email/home/view.php:10 dash/addons/content_crm/sms/home/view.php:10
 msgid "SMS Dashboard"
 msgstr "داشبورد پیامک"
 
-#: dash/addons/content_crm/email/home/view.php:11
-#: dash/addons/content_crm/sms/home/view.php:11
+#: dash/addons/content_crm/email/home/view.php:11 dash/addons/content_crm/sms/home/view.php:11
 msgid "Check your sms setting and balance and quick navigate to every where"
 msgstr "بررسی تنظیمات پیامک و بالانس مالی و دسترسی سریع به بخش‌های مختلف"
 
@@ -7532,8 +7435,7 @@ msgstr "ارسال ایمیل به کاربر"
 msgid "Send every email to every user"
 msgstr "ارسال هر پیامی به کاربر توسط ایمیل"
 
-#: dash/addons/content_crm/log/caller/view.php:10
-#: dash/addons/content_crm/log/home/view.php:10
+#: dash/addons/content_crm/log/caller/view.php:10 dash/addons/content_crm/log/home/view.php:10
 #: dash/addons/content_crm/log/show/view.php:10
 msgid "Check list of log and search or filter in them to find your logs."
 msgstr "بررسی لیست ردپاها و جستجو در آنها و فیلتر کردن بعضی از ردپاها."
@@ -7544,11 +7446,11 @@ msgstr "نمایش عناوین لاگ‌ها"
 
 #: dash/addons/content_crm/member/add/view.php:11
 msgid ""
-"You can add new member and after add with minimal data, we allow you to add extra detail "
-"of member."
+"You can add new member and after add with minimal data, we allow you to add extra detail of "
+"member."
 msgstr ""
-"در این صفحه عضو جدید را با حداقل داده‌ها اضافه کرده و پس از افزودن، داده‌های اضافی مثل عکس "
-"و جزئیات تماس و ... آن عضو را وارد کنید."
+"در این صفحه عضو جدید را با حداقل داده‌ها اضافه کرده و پس از افزودن، داده‌های اضافی مثل عکس و "
+"جزئیات تماس و ... آن عضو را وارد کنید."
 
 #: dash/addons/content_crm/member/add/view.php:15
 msgid "Back to list of users"
@@ -7641,8 +7543,7 @@ msgstr "جزئیات شناسنامه‌ای"
 
 #: dash/addons/content_crm/member/identification/view.php:14
 msgid ""
-"set personal and birth identification detail and some other id detail like passport and "
-"etc"
+"set personal and birth identification detail and some other id detail like passport and etc"
 msgstr "تنظیم جزئيات اطلاعات هویتی شخصی مثل تولد، پاسپورت، کدملی،‌ شناسنامه و غیره"
 
 #: dash/addons/content_crm/member/log/model.php:36
@@ -7826,8 +7727,7 @@ msgstr "سطح دسترسی کاربران را تنظیم کنید و به آن
 msgid "Add new permission"
 msgstr "افزودن سطح دسترسی جدید"
 
-#: dash/addons/content_crm/sms/group/model.php:43
-#: dash/addons/content_crm/sms/send/model.php:27
+#: dash/addons/content_crm/sms/group/model.php:43 dash/addons/content_crm/sms/send/model.php:27
 #: dash/addons/content_su/sendnotify/model.php:64
 msgid "No message was sended"
 msgstr "هیچ پیامی‌ارسال‌نشد"
@@ -7896,14 +7796,12 @@ msgstr "جزئیات ارسال یافت نشد"
 msgid "Alert!"
 msgstr "هشدار!"
 
-#: dash/addons/content_enter/alert/view.php:16
-#: dash/addons/content_enter/verify/model.php:36 dash/lib/utility/enter.php:899
-#: dash/lib/utility/enter.php:910 dash/lib/utility/enter.php:917
+#: dash/addons/content_enter/alert/view.php:16 dash/addons/content_enter/verify/model.php:36
+#: dash/lib/utility/enter.php:899 dash/lib/utility/enter.php:910 dash/lib/utility/enter.php:917
 msgid "What are you doing?"
 msgstr "اینجا چیکار می‌کنی عزیز جان!؟"
 
-#: dash/addons/content_enter/alert/view.php:28
-#: dash/addons/content_enter/callback/model.php:107
+#: dash/addons/content_enter/alert/view.php:28 dash/addons/content_enter/callback/model.php:107
 #: dash/addons/includes/languages/trans_static.php:546
 msgid "OK"
 msgstr "تایید"
@@ -7918,8 +7816,7 @@ msgstr "شما حداکثر تلاش خود را انجام دادید."
 msgid "Try again later!"
 msgstr "بعدا مجددا تلاش کنید!"
 
-#: dash/addons/content_enter/app/model.php:64
-#: dash/addons/content_enter/verify/later/model.php:36
+#: dash/addons/content_enter/app/model.php:64 dash/addons/content_enter/verify/later/model.php:36
 #: dash/addons/content_enter/verify/model.php:80
 msgid "We can not signup you"
 msgstr "ما نمی‌توانیم شما را ثبت‌نام کنیم"
@@ -7964,14 +7861,12 @@ msgstr "ثبت نام شما کامل شد"
 msgid "User signup by sms"
 msgstr "کاربر با ارسال پیامک ثبت نام شد"
 
-#: dash/addons/content_enter/controller.php:24
-#: dash/addons/content_support/ticket/add/model.php:77
+#: dash/addons/content_enter/controller.php:24 dash/addons/content_support/ticket/add/model.php:77
 #: dash/addons/content_support/ticket/contact_ticket/model.php:55
 msgid "Your cookies may have been blocked"
 msgstr "احتمالا کوکی‌های شما بلاک شده است"
 
-#: dash/addons/content_enter/controller.php:24
-#: dash/addons/content_support/ticket/add/model.php:77
+#: dash/addons/content_enter/controller.php:24 dash/addons/content_support/ticket/add/model.php:77
 #: dash/addons/content_support/ticket/contact_ticket/model.php:55
 msgid "You need to enable cookie for usign this service"
 msgstr "برای استفاده از این سرویس شما به کوکی نیاز دارید"
@@ -8032,12 +7927,11 @@ msgstr "با استفاده از گوگل وارد :name شوید"
 msgid "Mobile not found"
 msgstr "موبایل یافت نشد"
 
-#: dash/addons/content_enter/home/model.php:45
-#: dash/addons/content_su/sendnotify/model.php:30 dash/lib/app/address.php:324
-#: dash/lib/app/parent/add.php:50 dash/lib/app/parent/add.php:59
+#: dash/addons/content_enter/home/model.php:45 dash/addons/content_su/sendnotify/model.php:30
+#: dash/lib/app/address.php:324 dash/lib/app/parent/add.php:50 dash/lib/app/parent/add.php:59
 #: dash/lib/app/parent/delete.php:35 dash/lib/app/parent/delete.php:114
-#: dash/lib/app/parent/get.php:35 dash/lib/app/parent/get.php:44
-#: dash/lib/app/posts/add.php:37 dash/lib/app/term.php:357 dash/lib/app/user/add.php:55
+#: dash/lib/app/parent/get.php:35 dash/lib/app/parent/get.php:44 dash/lib/app/posts/add.php:37
+#: dash/lib/app/term.php:357 dash/lib/app/user/add.php:55
 msgid "User not found"
 msgstr "کاربر یافت نشد"
 
@@ -8045,8 +7939,7 @@ msgstr "کاربر یافت نشد"
 msgid "Please set the username or mobile or email"
 msgstr "لطفا نام‌کاربری یا موبایل یا رایانامه معتبری وارد کنید"
 
-#: dash/addons/content_enter/home/model.php:156
-#: dash/addons/content_enter/username/model.php:35
+#: dash/addons/content_enter/home/model.php:156 dash/addons/content_enter/username/model.php:35
 msgid "Username not found"
 msgstr "نام کاربری یافت نشد"
 
@@ -8129,11 +8022,11 @@ msgstr "بازیابی گذرواژه"
 
 #: dash/addons/content_enter/pass/view.php:17
 msgid ""
-"If forget your password, Please enter new password. after pass verification your new "
-"password is usable."
+"If forget your password, Please enter new password. after pass verification your new password "
+"is usable."
 msgstr ""
-"اگر گذرواژه‌ی خود را فراموش کرده‌اید، مقدار جدیدی را وارد کنید. پس از تکمیل اعتبارسنجی، "
-"این گذرواژه قابل استفاده خواهد بود."
+"اگر گذرواژه‌ی خود را فراموش کرده‌اید، مقدار جدیدی را وارد کنید. پس از تکمیل اعتبارسنجی، این "
+"گذرواژه قابل استفاده خواهد بود."
 
 #: dash/addons/content_enter/pass/view.php:23
 msgid "Please set your password to secure signup."
@@ -8155,8 +8048,7 @@ msgstr "لطفا گذرواژه‌ی جدید خود را برای تغییر و
 msgid "You do not have permission to register for up to ten minutes"
 msgstr "شما مجاز به ثبت نام تا ۱۰ دقیقه نیستید"
 
-#: dash/addons/content_enter/signup/model.php:32
-#: dash/addons/content_enter/username/model.php:11
+#: dash/addons/content_enter/signup/model.php:32 dash/addons/content_enter/username/model.php:11
 msgid "Your browser has sent a saved password. Delete it and continue"
 msgstr "مرورگر شما گذرواژه ذخیره شده ای را ارسال کرده است. آن را حذف کنید و ادامه دهید"
 
@@ -8198,8 +8090,7 @@ msgstr "این نام‌کاربری پیش از این گرفته شده است
 
 #: dash/addons/content_enter/signup/model.php:119
 msgid "This mobile is already signuped. You can login by this mobile"
-msgstr ""
-"این شماره تلفن‌همراه پیش از این ثبت‌نام کرده است. شما می‌توانید با این شماره وارد سیستم شوید"
+msgstr "این شماره تلفن‌همراه پیش از این ثبت‌نام کرده است. شما می‌توانید با این شماره وارد سیستم شوید"
 
 #: dash/addons/content_enter/signup/view.php:10
 msgid "Signup in :name"
@@ -8215,13 +8106,10 @@ msgstr "حریم خصوصی"
 
 #: dash/addons/content_enter/signup/view.php:20
 msgid ""
-"By clicking Sign Up, you are indicating that you have read the :privacy and agree to "
-"the :terms."
-msgstr ""
-"با فشردن ثبت‌نام، شما تایید می‌کنید که بخش :privacy را خوانده‌اید و با :terms موافق هستید."
+"By clicking Sign Up, you are indicating that you have read the :privacy and agree to the :terms."
+msgstr "با فشردن ثبت‌نام، شما تایید می‌کنید که بخش :privacy را خوانده‌اید و با :terms موافق هستید."
 
-#: dash/addons/content_enter/twostep/model.php:11
-#: dash/addons/content_enter/twostep/view.php:11
+#: dash/addons/content_enter/twostep/model.php:11 dash/addons/content_enter/twostep/view.php:11
 msgid "Please login to continue"
 msgstr "لطفا برای ادامه مراحل وارد سیستم شوید"
 
@@ -8308,8 +8196,7 @@ msgstr "ما اطلاعات اشتباهی از شما برای ثبت نام د
 msgid "Send \":code\" to :num"
 msgstr "ارسال \":code\" به :num"
 
-#: dash/addons/content_enter/verify/model.php:43
-#: dash/addons/content_enter/verify/model.php:50
+#: dash/addons/content_enter/verify/model.php:43 dash/addons/content_enter/verify/model.php:50
 msgid "Please select one way to send code"
 msgstr "لطفا راهی برای ارسال کد انتخاب کنید"
 
@@ -8344,8 +8231,7 @@ msgstr "لطفا هویت خود را تایید کنید."
 #: dash/addons/content_enter/verify/view.php:37
 msgid "We've sent the code via Telegram. Please enter the code below."
 msgstr ""
-"ما کد اعتبارسنجی را از طریق تلگرام برای شما ارسال کردیم. لطفا کد را در باکس پایین وارد "
-"کنید."
+"ما کد اعتبارسنجی را از طریق تلگرام برای شما ارسال کردیم. لطفا کد را در باکس پایین وارد کنید."
 
 #: dash/addons/content_enter/verify/view.php:41
 msgid "We trying to call you. be patient..."
@@ -8354,16 +8240,16 @@ msgstr "ما در حال تلاش برای تماس با شما هستیم و ت
 #: dash/addons/content_enter/verify/view.php:45
 msgid "Your verification code sended to your mobile number via sms. be patient..."
 msgstr ""
-"کد اعتبارسنجی از طریق پیامک به شماره شما ارسال شده است و بزودی به‌دست شما خواهد رسید. "
-"صبور باشید..."
+"کد اعتبارسنجی از طریق پیامک به شماره شما ارسال شده است و بزودی به‌دست شما خواهد رسید. صبور "
+"باشید..."
 
 #: dash/addons/content_enter/verify/view.php:49
 msgid ""
-"We can't send code to you with our existing methods! For the last chance of verify "
-"yourself you can send code to our number."
+"We can't send code to you with our existing methods! For the last chance of verify yourself you "
+"can send code to our number."
 msgstr ""
-"ما نتوانستیم از طریق روش‌های موجود کد را بدست شما برسانیم! به‌عنوان آخرین شانس برای "
-"اعتبارسنجی شما می‌توانید کد را به ما پیامک کنید."
+"ما نتوانستیم از طریق روش‌های موجود کد را بدست شما برسانیم! به‌عنوان آخرین شانس برای اعتبارسنجی "
+"شما می‌توانید کد را به ما پیامک کنید."
 
 #: dash/addons/content_enter/verify/view.php:61
 msgid "What happend?"
@@ -8572,8 +8458,7 @@ msgid "Send simple text message to selected user"
 msgstr "ارسال سریع پیام متنی به کاربر انتخابی"
 
 #: dash/addons/content_su/tg/sendmessage/view.php:11
-#: dash/addons/content_su/tg/sendphoto/view.php:11
-#: dash/addons/content_su/tg/webhook/view.php:11
+#: dash/addons/content_su/tg/sendphoto/view.php:11 dash/addons/content_su/tg/webhook/view.php:11
 msgid "Back to Telegram dashboard"
 msgstr "بازگشت به داشبورد تلگرام"
 
@@ -8669,8 +8554,7 @@ msgstr "لیست تراکنش‌ها"
 #: dash/addons/content_su/transactions/view.php:11
 msgid "Check list of Transactions and search or filter in them to find your transactions."
 msgstr ""
-"لیست تراکنش‌ها را بررسی کنید و آنها را جستجو کنید یا فیلتر کنید تا پیوست های خود را پیدا "
-"کنید."
+"لیست تراکنش‌ها را بررسی کنید و آنها را جستجو کنید یا فیلتر کنید تا پیوست های خود را پیدا کنید."
 
 #: dash/addons/content_su/transactions/view.php:11
 msgid "Also add or edit specefic transactions."
@@ -8692,18 +8576,16 @@ msgstr "درون پروژه"
 msgid "Global"
 msgstr "سراسری"
 
-#: dash/addons/content_support/controller.php:30
-#: dash/addons/content_support/controller.php:35
+#: dash/addons/content_support/controller.php:30 dash/addons/content_support/controller.php:35
 msgid "Invalid token!"
 msgstr "توکن دسترسی نامعتبر است!"
 
 #: dash/addons/content_support/home/view.php:10 dash/addons/content_support/tag/view.php:11
 msgid ""
-"Easily manage your tickets and monitor or track them to get best answer until fix your "
-"problem"
+"Easily manage your tickets and monitor or track them to get best answer until fix your problem"
 msgstr ""
-"به‌سادگی تیکت‌های خود را مدیریت کنید و با مونیتور و رهگیری آن‌ها به بهترین پاسخ برای رفع "
-"مشکل خود برسید"
+"به‌سادگی تیکت‌های خود را مدیریت کنید و با مونیتور و رهگیری آن‌ها به بهترین پاسخ برای رفع مشکل خود "
+"برسید"
 
 #: dash/addons/content_support/home/view.php:48
 msgid "Return to help center"
@@ -8754,11 +8636,10 @@ msgstr "سامانه پشتیبانی تیکت"
 
 #: dash/addons/content_support/message/view.php:11
 msgid ""
-"Easily manage your message and monitor or track them to get best answer until fix your "
-"problem"
+"Easily manage your message and monitor or track them to get best answer until fix your problem"
 msgstr ""
-"به‌سادگی پیام‌های تیکت‌های خود را مدیریت کنید و با مونیتور و رهگیری آن‌ها به بهترین پاسخ "
-"برای رفع مشکل خود برسید"
+"به‌سادگی پیام‌های تیکت‌های خود را مدیریت کنید و با مونیتور و رهگیری آن‌ها به بهترین پاسخ برای رفع "
+"مشکل خود برسید"
 
 #: dash/addons/content_support/tag/controller.php:18
 msgid "Invalid tag"
@@ -9341,8 +9222,7 @@ msgstr "برای بارگزاری فایل‌های شما"
 
 #: dash/addons/includes/languages/trans_static.php:133
 msgid "If you want to change password enter it, else leave it blank"
-msgstr ""
-"در صورت تمایل به تغییر گذرواژه آن را وارد کنید،‌ در غیر این ‌صورت این فیلد را خالی بگذارید"
+msgstr "در صورت تمایل به تغییر گذرواژه آن را وارد کنید،‌ در غیر این ‌صورت این فیلد را خالی بگذارید"
 
 #: dash/addons/includes/languages/trans_static.php:134
 msgid "Enter password within 5 to 40 character"
@@ -9529,8 +9409,7 @@ msgstr "ظرفیت فایل بیش از حد مجاز"
 msgid "Unknown errors"
 msgstr "خطای نامشخص"
 
-#: dash/addons/includes/languages/trans_static.php:191
-#: dash/lib/utility/upload/check.php:106
+#: dash/addons/includes/languages/trans_static.php:191 dash/lib/utility/upload/check.php:106
 msgid "We don't support this type of file"
 msgstr "ما این نوع فایل را پشتیبانی نمیکنیم"
 
@@ -9650,8 +9529,8 @@ msgstr "کمک"
 #: dash/addons/includes/languages/trans_static.php:232
 msgid "For multilanguage sites enter title in English and translate it"
 msgstr ""
-"برای سایت‌های چندزبانه، این بخش را به انگلیسی وارد نموده و توسط برنامه مترجم آن را به "
-"سایر زبان‌ها ترجمه کنید"
+"برای سایت‌های چندزبانه، این بخش را به انگلیسی وارد نموده و توسط برنامه مترجم آن را به سایر "
+"زبان‌ها ترجمه کنید"
 
 #: dash/addons/includes/languages/trans_static.php:236
 msgid "main URL"
@@ -10129,13 +10008,11 @@ msgstr "ما از این اقدام شما تشکر می‌کنیم."
 msgid "Your phone number registered successfully;)"
 msgstr "شماره موبایل شما با موفقیت ثبت شد;)"
 
-#: dash/addons/includes/languages/trans_static.php:396
-#: dash/lib/social/telegram/user.php:196
+#: dash/addons/includes/languages/trans_static.php:396 dash/lib/social/telegram/user.php:196
 msgid "We dont need another users contact:?)"
 msgstr "ما به مخاطب سایر کاربران نیاز نداریم:؟)"
 
-#: dash/addons/includes/languages/trans_static.php:397
-#: dash/lib/social/telegram/user.php:187
+#: dash/addons/includes/languages/trans_static.php:397 dash/lib/social/telegram/user.php:187
 msgid "We need mobile number!"
 msgstr "ما به شماره موبایل نیاز داریم!"
 
@@ -10161,8 +10038,7 @@ msgstr "گذرواژه"
 
 #: dash/addons/includes/languages/trans_static.php:408
 #: dash/lib/social/telegram/commands/ermile.php:64
-#: dash/lib/social/telegram/commands/ermileInline.php:47
-#: dash/lib/social/telegram/step.php:329
+#: dash/lib/social/telegram/commands/ermileInline.php:47 dash/lib/social/telegram/step.php:329
 msgid "mobile"
 msgstr "موبایل"
 
@@ -10219,10 +10095,9 @@ msgstr "زبان"
 msgid "meta"
 msgstr "متا"
 
-#: dash/addons/includes/languages/trans_static.php:425
-#: dash/lib/app/log/support_tools.php:99 dash/lib/social/telegram/commands/ermile.php:72
-#: dash/lib/social/telegram/commands/ermileInline.php:30
-#: dash/lib/social/telegram/step.php:331
+#: dash/addons/includes/languages/trans_static.php:425 dash/lib/app/log/support_tools.php:99
+#: dash/lib/social/telegram/commands/ermile.php:72
+#: dash/lib/social/telegram/commands/ermileInline.php:30 dash/lib/social/telegram/step.php:331
 msgid "website"
 msgstr "وب سایت"
 
@@ -11867,8 +11742,7 @@ msgstr "حذف اضطراری"
 msgid "removeadmin"
 msgstr "حذف مدیریت"
 
-#: dash/addons/includes/languages/trans_static.php:897
-#: dash/lib/social/telegram/step.php:211
+#: dash/addons/includes/languages/trans_static.php:897 dash/lib/social/telegram/step.php:211
 msgid "cancel"
 msgstr "رد کردن"
 
@@ -12251,13 +12125,12 @@ msgstr "ما یک ورودی جدید را مشاهده کردیم :displayname"
 #: dash/addons/includes/languages/trans_static.php:1016
 #: dash/addons/includes/languages/trans_static.php:1087
 msgid ""
-"If this was you, you can safely disregard this message. If you didn't do this, please "
-"change your password to help secure your account. Learn more about keeping your account "
-"secure."
+"If this was you, you can safely disregard this message. If you didn't do this, please change "
+"your password to help secure your account. Learn more about keeping your account secure."
 msgstr ""
-"اگر این شما هستید، می توانید با خیال راحت این پیام را نادیده بگیرید. اگر این کار را "
-"نکردید، لطفا گذرواژه خود را تغییر دهید تا امنیت حسابتان را تضمین کنید. درباره حفظ امنیت "
-"حساب کاربری بیشتر بدانید."
+"اگر این شما هستید، می توانید با خیال راحت این پیام را نادیده بگیرید. اگر این کار را نکردید، "
+"لطفا گذرواژه خود را تغییر دهید تا امنیت حسابتان را تضمین کنید. درباره حفظ امنیت حساب کاربری "
+"بیشتر بدانید."
 
 #: dash/addons/includes/languages/trans_static.php:1018
 #: dash/addons/includes/languages/trans_static.php:1078
@@ -12458,8 +12331,7 @@ msgstr "اجرای خروجی از ترجمه‌ها"
 
 #: dash/addons/includes/languages/trans_static.php:1071
 #: dash/lib/app/log/caller/su/su_CentralizedGitUpdate.php:13
-#: dash/lib/app/log/caller/su/su_gitUpdate.php:22
-#: dash/lib/app/log/caller/su/su_gitUpdate.php:61
+#: dash/lib/app/log/caller/su/su_gitUpdate.php:22 dash/lib/app/log/caller/su/su_gitUpdate.php:61
 msgid "Git update"
 msgstr "به‌روزرسانی مخازن گیت"
 
@@ -12826,10 +12698,8 @@ msgid "Be careful! if you did not request this code"
 msgstr "مراقب باشید! اگر این کد را درخواست نکردید"
 
 #: dash/lib/app/log/caller/enter/enter_VerificationCode.php:35
-msgid ""
-"Perhaps someone has entered your password correctly and intends to login to your account!"
-msgstr ""
-"شاید کسی رمز ورود شما را به درستی وارد کرده و قصد ورود به حساب کاربری شما را داشته باشد!"
+msgid "Perhaps someone has entered your password correctly and intends to login to your account!"
+msgstr "شاید کسی رمز ورود شما را به درستی وارد کرده و قصد ورود به حساب کاربری شما را داشته باشد!"
 
 #: dash/lib/app/log/caller/enter/enter_VerificationCode.php:36
 msgid "here"
@@ -12878,8 +12748,7 @@ msgstr "سیستم باگ داره!"
 msgid "PHP bug!"
 msgstr "پی‌اچ‌پی باگ!"
 
-#: dash/lib/app/log/caller/su/su_phpBug.php:14
-#: dash/lib/app/log/caller/su/su_sqlError.php:15
+#: dash/lib/app/log/caller/su/su_phpBug.php:14 dash/lib/app/log/caller/su/su_sqlError.php:15
 msgid "Bug"
 msgstr "باگ"
 
@@ -13072,8 +12941,7 @@ msgstr "عنوان دلخواه نمی‌تواند بیشتر از ۵۰ کار�
 
 #: dash/lib/app/parent/add.php:176
 msgid "Your request was sended to user, wait for answer user"
-msgstr ""
-"درخواست شما به کاربر ارسال شده است. منتظر بمانید تا جواب کاربر به درخواست شما مشخص شود"
+msgstr "درخواست شما به کاربر ارسال شده است. منتظر بمانید تا جواب کاربر به درخواست شما مشخص شود"
 
 #: dash/lib/app/parent/add.php:203
 msgid "Are you :title of this user?"
@@ -13932,8 +13800,7 @@ msgid "return"
 msgstr "بازگشت"
 
 #: dash/lib/social/telegram/commands/ermile.php:45
-#: dash/lib/social/telegram/commands/ermileInline.php:29
-#: dash/lib/social/telegram/step.php:323
+#: dash/lib/social/telegram/commands/ermileInline.php:29 dash/lib/social/telegram/step.php:323
 msgid "about"
 msgstr "درباره"
 
@@ -13951,32 +13818,27 @@ msgid "whoami"
 msgstr "کیم"
 
 #: dash/lib/social/telegram/commands/ermile.php:60
-#: dash/lib/social/telegram/commands/ermileInline.php:43
-#: dash/lib/social/telegram/step.php:325
+#: dash/lib/social/telegram/commands/ermileInline.php:43 dash/lib/social/telegram/step.php:325
 msgid "contact"
 msgstr "تماس"
 
 #: dash/lib/social/telegram/commands/ermile.php:61
-#: dash/lib/social/telegram/commands/ermileInline.php:44
-#: dash/lib/social/telegram/step.php:326
+#: dash/lib/social/telegram/commands/ermileInline.php:44 dash/lib/social/telegram/step.php:326
 msgid "address"
 msgstr "آدرس"
 
 #: dash/lib/social/telegram/commands/ermile.php:62
-#: dash/lib/social/telegram/commands/ermileInline.php:45
-#: dash/lib/social/telegram/step.php:327
+#: dash/lib/social/telegram/commands/ermileInline.php:45 dash/lib/social/telegram/step.php:327
 msgid "tel"
 msgstr "تلفن"
 
 #: dash/lib/social/telegram/commands/ermile.php:63
-#: dash/lib/social/telegram/commands/ermileInline.php:46
-#: dash/lib/social/telegram/step.php:328
+#: dash/lib/social/telegram/commands/ermileInline.php:46 dash/lib/social/telegram/step.php:328
 msgid "telephone"
 msgstr "تلفن"
 
 #: dash/lib/social/telegram/commands/ermile.php:65
-#: dash/lib/social/telegram/commands/ermileInline.php:48
-#: dash/lib/social/telegram/step.php:330
+#: dash/lib/social/telegram/commands/ermileInline.php:48 dash/lib/social/telegram/step.php:330
 msgid "phone"
 msgstr "تلفن"
 
@@ -14109,25 +13971,23 @@ msgstr "همگام‌سازی حساب‌کاربری"
 
 #: dash/lib/social/telegram/commands/ermile.php:424
 msgid ""
-"You can connect complete your registeration on :val from telegram by share your mobile "
-"number."
+"You can connect complete your registeration on :val from telegram by share your mobile number."
 msgstr ""
-"شما می‌توانید با به‌اشتراک‌گذاری شماره موبایل خود از طریق تلگرام ثبت‌نام خودتان را در :val "
-"کامل کنید."
+"شما می‌توانید با به‌اشتراک‌گذاری شماره موبایل خود از طریق تلگرام ثبت‌نام خودتان را در :val کامل "
+"کنید."
 
 #: dash/lib/social/telegram/commands/ermile.php:425
 msgid ""
-"By press share contact we get your mobile and after that you can use our website and "
-"your account is synced."
+"By press share contact we get your mobile and after that you can use our website and your "
+"account is synced."
 msgstr ""
-"با فشردن دکمه به‌اشتراک‌گذاری مخاطب خودتان،‌ تلگرام شماره موبایل شما را پس از کسب اجازه "
-"برای ما ارسال می‌کند و بدین ترتیب ما می‌توانیم حساب کاربری شما را همگام‌سازی کرده و اتصال "
-"آن را با وب‌سایت برقرار کنیم تا شما درآینده بتوانید با موبایل خود در ‌وب‌سایت هم وارد شوید."
+"با فشردن دکمه به‌اشتراک‌گذاری مخاطب خودتان،‌ تلگرام شماره موبایل شما را پس از کسب اجازه برای ما "
+"ارسال می‌کند و بدین ترتیب ما می‌توانیم حساب کاربری شما را همگام‌سازی کرده و اتصال آن را با وب‌سایت "
+"برقرار کنیم تا شما درآینده بتوانید با موبایل خود در ‌وب‌سایت هم وارد شوید."
 
 #: dash/lib/social/telegram/commands/ermile.php:426
 msgid "Also you can do it anytime you need with /register command."
-msgstr ""
-"هم‌چنین هر زمانی که مایل باشید می‌توانید از طریق دستور /register این کار را انجام دهید."
+msgstr "هم‌چنین هر زمانی که مایل باشید می‌توانید از طریق دستور /register این کار را انجام دهید."
 
 #: dash/lib/social/telegram/commands/ermile.php:433
 msgid "Register with mobile"
@@ -14153,10 +14013,8 @@ msgstr "منوی اصلی"
 msgid "more"
 msgstr "بیشتر"
 
-#: dash/lib/social/telegram/commands/hafez.php:101
-#: dash/lib/social/telegram/commands/hafez.php:105
-#: dash/lib/social/telegram/commands/hafez.php:147
-#: dash/lib/social/telegram/commands/hafez.php:157
+#: dash/lib/social/telegram/commands/hafez.php:101 dash/lib/social/telegram/commands/hafez.php:105
+#: dash/lib/social/telegram/commands/hafez.php:147 dash/lib/social/telegram/commands/hafez.php:157
 msgid "Fal of Hafez"
 msgstr "فال حافظ"
 
@@ -14444,22 +14302,19 @@ msgstr "نمایش رکورد :min تا :max از :total"
 
 #: dash/lib/utility/pay/api/asanpardakht/back.php:19
 #: dash/lib/utility/pay/api/asanpardakht/back.php:26
-#: dash/lib/utility/pay/api/asanpardakht/go.php:13
-#: dash/lib/utility/pay/api/asanpardakht/go.php:20
+#: dash/lib/utility/pay/api/asanpardakht/go.php:13 dash/lib/utility/pay/api/asanpardakht/go.php:20
 msgid "The asanpardakht payment on this service is locked"
 msgstr "درگاه آسان پرداخت در سرویس شما قفل شده است"
 
-#: dash/lib/utility/pay/api/asanpardakht/back.php:56
-#: dash/lib/utility/pay/api/irkish/back.php:55 dash/lib/utility/pay/api/mellat/back.php:59
-#: dash/lib/utility/pay/api/parsian/back.php:48 dash/lib/utility/pay/api/payir/back.php:49
-#: dash/lib/utility/pay/api/zarinpal/back.php:40
+#: dash/lib/utility/pay/api/asanpardakht/back.php:56 dash/lib/utility/pay/api/irkish/back.php:55
+#: dash/lib/utility/pay/api/mellat/back.php:59 dash/lib/utility/pay/api/parsian/back.php:48
+#: dash/lib/utility/pay/api/payir/back.php:49 dash/lib/utility/pay/api/zarinpal/back.php:40
 msgid "Your session is lost! We can not find your transaction"
 msgstr "اطلاعات سشن از دست رفته است! ما نمی‌توانیم تراکنش شما را بیابیم"
 
 #: dash/lib/utility/pay/api/asanpardakht/back.php:70
-#: dash/lib/utility/pay/api/asanpardakht/back.php:77
-#: dash/lib/utility/pay/api/irkish/back.php:71 dash/lib/utility/pay/api/mellat/back.php:78
-#: dash/lib/utility/pay/api/parsian/back.php:65
+#: dash/lib/utility/pay/api/asanpardakht/back.php:77 dash/lib/utility/pay/api/irkish/back.php:71
+#: dash/lib/utility/pay/api/mellat/back.php:78 dash/lib/utility/pay/api/parsian/back.php:65
 #: dash/lib/utility/pay/api/parsian/back.php:72 dash/lib/utility/pay/api/payir/back.php:67
 #: dash/lib/utility/pay/api/payir/back.php:96
 msgid "Your session is lost! We can not find amount"
@@ -14473,14 +14328,11 @@ msgstr "نمی توانیم به درگاه آسان پرداخت متصل شو�
 msgid "Error in payment (have not result)"
 msgstr "خطا در درگاه پرداخت - هیچ پاسخی گرفته نشد"
 
-#: dash/lib/utility/pay/api/asanpardakht/bank.php:90
-#: dash/lib/utility/pay/api/irkish/bank.php:57 dash/lib/utility/pay/api/irkish/bank.php:110
-#: dash/lib/utility/pay/api/mellat/bank.php:56 dash/lib/utility/pay/api/mellat/bank.php:108
-#: dash/lib/utility/pay/api/parsian/bank.php:55
-#: dash/lib/utility/pay/api/parsian/bank.php:100
-#: dash/lib/utility/pay/api/parsian/bank.php:143
-#: dash/lib/utility/pay/api/zarinpal/bank.php:51
-#: dash/lib/utility/pay/api/zarinpal/bank.php:91
+#: dash/lib/utility/pay/api/asanpardakht/bank.php:90 dash/lib/utility/pay/api/irkish/bank.php:57
+#: dash/lib/utility/pay/api/irkish/bank.php:110 dash/lib/utility/pay/api/mellat/bank.php:56
+#: dash/lib/utility/pay/api/mellat/bank.php:108 dash/lib/utility/pay/api/parsian/bank.php:55
+#: dash/lib/utility/pay/api/parsian/bank.php:100 dash/lib/utility/pay/api/parsian/bank.php:143
+#: dash/lib/utility/pay/api/zarinpal/bank.php:51 dash/lib/utility/pay/api/zarinpal/bank.php:91
 msgid "Error in load web services"
 msgstr "خطا در بارگذاری وب سرویس‌ها"
 
@@ -14516,10 +14368,8 @@ msgstr "نمی‌توان به ورودی ایران کیش متصل شد. نص�
 msgid "Error in connecting to bank service"
 msgstr "خطا در اتصل به سرویس بانک"
 
-#: dash/lib/utility/pay/api/irkish/bank.php:163
-#: dash/lib/utility/pay/api/irkish/bank.php:167
-#: dash/lib/utility/pay/api/mellat/bank.php:176
-#: dash/lib/utility/pay/api/parsian/bank.php:269
+#: dash/lib/utility/pay/api/irkish/bank.php:163 dash/lib/utility/pay/api/irkish/bank.php:167
+#: dash/lib/utility/pay/api/mellat/bank.php:176 dash/lib/utility/pay/api/parsian/bank.php:269
 #: dash/lib/utility/pay/api/parsian/bank.php:274
 msgid "Unkown payment error"
 msgstr "خطای پرداخت ناشناس"
@@ -14760,13 +14610,11 @@ msgstr "کلید اتصال به درگاه پرداخت یافت نشد"
 msgid "The payir payment transId not set"
 msgstr "خطا در درگاه پرداخت  - شناسه تراکنش یافت نشد"
 
-#: dash/lib/utility/pay/api/zarinpal/back.php:18
-#: dash/lib/utility/pay/api/zarinpal/go.php:13
+#: dash/lib/utility/pay/api/zarinpal/back.php:18 dash/lib/utility/pay/api/zarinpal/go.php:13
 msgid "The zarinpal payment on this service is locked"
 msgstr "پرداخت با زرین پال در حال حاضر قفل است"
 
-#: dash/lib/utility/pay/api/zarinpal/back.php:25
-#: dash/lib/utility/pay/api/zarinpal/go.php:20
+#: dash/lib/utility/pay/api/zarinpal/back.php:25 dash/lib/utility/pay/api/zarinpal/go.php:20
 msgid "The zarinpal payment MerchantID not set"
 msgstr "کد مرچنت برای پرداخت با زرین پال تنظیم نشده است"
 
@@ -14836,8 +14684,7 @@ msgstr "عملیات با موفقیت انجام شد"
 
 #: dash/lib/utility/pay/api/zarinpal/bank.php:124
 msgid ""
-"Payment operation was successfull and PatmentVerification of the transaction has already "
-"done"
+"Payment operation was successfull and PatmentVerification of the transaction has already done"
 msgstr "عملیات پرداخت با موفقیت انجام شد و تایید پرداخت تراکنش با موفقیت انجام شد"
 
 #: dash/lib/utility/pay/api/zarinpal/bank.php:125
@@ -15122,18 +14969,17 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "بررسی لیست کاربران و جستجو یا فیلتر کردن آنها برای یافتن کاربر خاص."
 
 #~ msgid ""
-#~ "You can add new user and after add with minimal data, we allow you to add extra "
-#~ "detail of user."
+#~ "You can add new user and after add with minimal data, we allow you to add extra detail of "
+#~ "user."
 #~ msgstr ""
-#~ "شما می توانید کاربر جدید را اضافه کنید و پس از اضافه کردن اطلاعات کم، به شما اجازه می "
-#~ "دهیم جزئیات بیشتری از کاربر اضافه کنید."
+#~ "شما می توانید کاربر جدید را اضافه کنید و پس از اضافه کردن اطلاعات کم، به شما اجازه می دهیم "
+#~ "جزئیات بیشتری از کاربر اضافه کنید."
 
 #~ msgid "Edit profile of :val"
 #~ msgstr "ویرایش پروفایل :val"
 
 #~ msgid "Edit user detail and change all fields of this user, be careful!"
-#~ msgstr ""
-#~ "ویرایش اطلاعات کاربر و تغییر مقادیر این کاربر، در تغییر دقت لازم را به خرج دهید!"
+#~ msgstr "ویرایش اطلاعات کاربر و تغییر مقادیر این کاربر، در تغییر دقت لازم را به خرج دهید!"
 
 #~ msgid "User detail"
 #~ msgstr "جزئیات‌کاربران"
@@ -15469,22 +15315,21 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "استایلی باورنکردنی!"
 
 #~ msgid ""
-#~ "Definitions aren't limited to just buttons on a page. Siftal's components allow "
-#~ "several distinct types of definitions: elements, collections, views, modules and "
-#~ "behaviors which cover the gamut of interface design."
+#~ "Definitions aren't limited to just buttons on a page. Siftal's components allow several "
+#~ "distinct types of definitions: elements, collections, views, modules and behaviors which "
+#~ "cover the gamut of interface design."
 #~ msgstr ""
-#~ "تعاریف فقط به دکمه‌های یک صفحه محدود نمی‌شوند. اجزای سیفتال اجازه میدهد تا چندین نوع از "
-#~ "تعاریف مختلفی از جمله عناصر، مجموعه‌ها، نمایش‌ها، ماژول‌ها و رفتارها در محدوده طراحی "
-#~ "رابط قرار گیرند."
+#~ "تعاریف فقط به دکمه‌های یک صفحه محدود نمی‌شوند. اجزای سیفتال اجازه میدهد تا چندین نوع از تعاریف "
+#~ "مختلفی از جمله عناصر، مجموعه‌ها، نمایش‌ها، ماژول‌ها و رفتارها در محدوده طراحی رابط قرار گیرند."
 
 #~ msgid ""
-#~ "For improved cross-browser rendering, we use <a href='sample/reset'>special reset</a> "
-#~ "to correct inconsistencies across browsers and devices while providing slightly more "
+#~ "For improved cross-browser rendering, we use <a href='sample/reset'>special reset</a> to "
+#~ "correct inconsistencies across browsers and devices while providing slightly more "
 #~ "opinionated resets to common HTML elements."
 #~ msgstr ""
-#~ "برای بهبود رندر متقابل مرورگر‌ها، ما از <a href='sample/reset'> تنظیم مجدد ویژه </a> "
-#~ "برای اصلاح ناسازگاری بین مرورگرها و دستگاه‌ها استفاده می‌کنیم و در عین حال تنظیم مجدد "
-#~ "تنظیمات نسبت به عناصر HTML معمول را بیشتر میکند."
+#~ "برای بهبود رندر متقابل مرورگر‌ها، ما از <a href='sample/reset'> تنظیم مجدد ویژه </a> برای "
+#~ "اصلاح ناسازگاری بین مرورگرها و دستگاه‌ها استفاده می‌کنیم و در عین حال تنظیم مجدد تنظیمات نسبت "
+#~ "به عناصر HTML معمول را بیشتر میکند."
 
 #~ msgid "Button"
 #~ msgstr "دکمه"
@@ -15685,18 +15530,17 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "مثال‌ها"
 
 #~ msgid ""
-#~ "Badges scale to match the size of the immediate parent element by using relative font "
-#~ "sizing and <code class='code1'>em</code> units."
+#~ "Badges scale to match the size of the immediate parent element by using relative font sizing "
+#~ "and <code class='code1'>em</code> units."
 #~ msgstr ""
-#~ "مقیاس مدال‌ها برای مطابقت با اندازه اصلی عنصر با استفاده از اندازه فونت نسبی و واحد "
-#~ "<code class='code1'>em</code> صورت می‌گیرد."
+#~ "مقیاس مدال‌ها برای مطابقت با اندازه اصلی عنصر با استفاده از اندازه فونت نسبی و واحد <code "
+#~ "class='code1'>em</code> صورت می‌گیرد."
 
 #~ msgid "Example heading"
 #~ msgstr "عنوان نمونه"
 
 #~ msgid "Badges can be used as part of links or buttons to provide a counter."
-#~ msgstr ""
-#~ "مدال‌ها را می‌توان بعنوان بخشی از پیوندها یا دکمه‌ها برای ارائه شمارنده استفاده کرد."
+#~ msgstr "مدال‌ها را می‌توان بعنوان بخشی از پیوندها یا دکمه‌ها برای ارائه شمارنده استفاده کرد."
 
 #~ msgid "5"
 #~ msgstr "5"
@@ -15704,29 +15548,28 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgid "Contextual variations"
 #~ msgstr "متغیرهای متنی"
 
-#~ msgid ""
-#~ "Add any of the below mentioned modifier classes to change the appearance of a badge."
+#~ msgid "Add any of the below mentioned modifier classes to change the appearance of a badge."
 #~ msgstr "هر یک از کلاس‌های اصلاح کننده زیر را اضافه کنید تا ظاهر یک نشان را تغییر دهید."
 
 #~ msgid "Rounded badge"
 #~ msgstr "علامت گرد"
 
 #~ msgid ""
-#~ "Use the <code class='code1'>.rounded</code> modifier class to make badges more "
-#~ "rounded (with a larger border-radius and additional horizontal padding)."
+#~ "Use the <code class='code1'>.rounded</code> modifier class to make badges more rounded (with "
+#~ "a larger border-radius and additional horizontal padding)."
 #~ msgstr ""
-#~ "استفاده از‌این کلاس : <code class='code1'>.rounded</code> اشیاء را به منظور‌ ایجاد مدال "
-#~ "گرد می‌کند ‌(‌با شعاع گردی بالاتر (border-radius) و فاصله داخلی افقی بیشتر‌)."
+#~ "استفاده از‌این کلاس : <code class='code1'>.rounded</code> اشیاء را به منظور‌ ایجاد مدال گرد "
+#~ "می‌کند ‌(‌با شعاع گردی بالاتر (border-radius) و فاصله داخلی افقی بیشتر‌)."
 
 #~ msgid "Links"
 #~ msgstr "لینک‌ها"
 
 #~ msgid ""
-#~ "Using the <code class='code1'>.badge</code> classes with the <code class='code1'>&lt;"
-#~ "a&gt;</code> element quickly provide actionable badges with hover and focus states."
+#~ "Using the <code class='code1'>.badge</code> classes with the <code class='code1'>&lt;a&gt;</"
+#~ "code> element quickly provide actionable badges with hover and focus states."
 #~ msgstr ""
-#~ "استفاده از : <code class='code1'>.badge</code> کلاس با اسم : <code class='code1'>&lt;"
-#~ "a&gt;</code> به سرعت حالت‌های شناور و متمرکز را تنظیم می‌کند."
+#~ "استفاده از : <code class='code1'>.badge</code> کلاس با اسم : <code class='code1'>&lt;a&gt;</"
+#~ "code> به سرعت حالت‌های شناور و متمرکز را تنظیم می‌کند."
 
 #~ msgid "Barcode"
 #~ msgstr "بارکد"
@@ -15750,26 +15593,24 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "باکس"
 
 #~ msgid ""
-#~ "Siftal's box provide a flexible and extensible content container for title and "
-#~ "contents."
+#~ "Siftal's box provide a flexible and extensible content container for title and contents."
 #~ msgstr "جعبه‌ها (box) در سیفتال انعطاف و گسترش بذیری برای عنوان و محتوا را ارائه می‌دهند."
 
 #~ msgid ""
-#~ "You can use elements of this page in all part of site and mix them with another "
-#~ "elements."
+#~ "You can use elements of this page in all part of site and mix them with another elements."
 #~ msgstr ""
-#~ "می‌توانید از عناصر‌این صفحه در تمام قسمت‌های سایت استفاده کنید و آنها را با عناصر "
-#~ "دیگر‌ترکیب کنید."
+#~ "می‌توانید از عناصر‌این صفحه در تمام قسمت‌های سایت استفاده کنید و آنها را با عناصر دیگر‌ترکیب "
+#~ "کنید."
 
 #~ msgid "Salam"
 #~ msgstr "سلام"
 
 #~ msgid ""
-#~ "Indicate the current page's location within a navigational hierarchy that "
-#~ "automatically adds separators via CSS."
+#~ "Indicate the current page's location within a navigational hierarchy that automatically adds "
+#~ "separators via CSS."
 #~ msgstr ""
-#~ "محل مکان فعلی را در سلسله مراتب ناوبری نشان می‌دهد که به طور خودکار جدا کننده‌هایی از "
-#~ "طریق سی‌اس‌اس اضافه میکند."
+#~ "محل مکان فعلی را در سلسله مراتب ناوبری نشان می‌دهد که به طور خودکار جدا کننده‌هایی از طریق "
+#~ "سی‌اس‌اس اضافه میکند."
 
 #~ msgid "Separators are automatically added in CSS through ::before and content."
 #~ msgstr "جداساز‌ها به صورت خودکار اضافه‌شده اند از طریق ‌سی‌اس‌اس‌ ::before و محتوا."
@@ -15781,21 +15622,21 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "نوارهای‌ناوبری می‌توانند در اندازه متفاوت باشند"
 
 #~ msgid ""
-#~ "Use Siftal's custom button styles for actions in forms, dialogs, and more with "
-#~ "support for multiple sizes, states, and more."
+#~ "Use Siftal's custom button styles for actions in forms, dialogs, and more with support for "
+#~ "multiple sizes, states, and more."
 #~ msgstr ""
-#~ "استایل‌های سفارشی سیفتال برای اقدامات در فرم‌ها و گفتگوها و‌‌.‌.. با پشتیبانی از سایز‌ها و "
-#~ "حالت‌های مختلف و... استفاده کنید."
+#~ "استایل‌های سفارشی سیفتال برای اقدامات در فرم‌ها و گفتگوها و‌‌.‌.. با پشتیبانی از سایز‌ها و حالت‌های "
+#~ "مختلف و... استفاده کنید."
 
 #~ msgid "Simple Examples"
 #~ msgstr "مثال ساده"
 
 #~ msgid ""
-#~ "Siftal includes several predefined button styles, each serving its own semantic "
-#~ "purpose, with a few extras thrown in for more control."
+#~ "Siftal includes several predefined button styles, each serving its own semantic purpose, "
+#~ "with a few extras thrown in for more control."
 #~ msgstr ""
-#~ "سیفتال عبارت است از : دکمه‌های با استایل‌های از پیش تعریف‌شده‌، هر سرویس برای انجام کار "
-#~ "خواصی تعیین‌شده به همراه جزئیات اضافه‌تر."
+#~ "سیفتال عبارت است از : دکمه‌های با استایل‌های از پیش تعریف‌شده‌، هر سرویس برای انجام کار خواصی "
+#~ "تعیین‌شده به همراه جزئیات اضافه‌تر."
 
 #~ msgid "Default Btn"
 #~ msgstr "دکمه پیش‌فرض"
@@ -15808,27 +15649,26 @@ msgstr "نوع فایل غیرمجاز"
 
 #~ msgid ""
 #~ "The <code class='code1'>.btn</code> classes are designed to be used with the <code "
-#~ "class='code1'>&lt;button&gt;</code> element. However, you can also use these classes "
-#~ "on <code class='code1'>&lt;a&gt;</code> or <code class='code1'>&lt;input&gt;</code> "
-#~ "elements (though some browsers may apply a slightly different rendering)."
+#~ "class='code1'>&lt;button&gt;</code> element. However, you can also use these classes on "
+#~ "<code class='code1'>&lt;a&gt;</code> or <code class='code1'>&lt;input&gt;</code> elements "
+#~ "(though some browsers may apply a slightly different rendering)."
 #~ msgstr ""
 #~ "کلاس‌های <code class='code1'>.btn</code> برای استفاده با عنصر <code class='code1'>&lt;"
 #~ "button&gt;</code> طراحی‌شده اند. با‌این حال، شما می‌توانید از‌این کلاس‌ها در عناصر <code "
-#~ "class='code1'>&lt;input&gt;</code> یا <code class='code1'>&lt;a&gt;</code> استفاده "
-#~ "کنید (اگر چه در برخی از مرورگرها رندر کمی‌متفاوت است)."
+#~ "class='code1'>&lt;input&gt;</code> یا <code class='code1'>&lt;a&gt;</code> استفاده کنید (اگر "
+#~ "چه در برخی از مرورگرها رندر کمی‌متفاوت است)."
 
 #~ msgid ""
-#~ "When using button classes on <code class='code1'>&lt;a&gt;</code> elements that are "
-#~ "used to trigger in-page functionality (like collapsing content), rather than linking "
-#~ "to new pages or sections within the current page, these links should be given a <code "
+#~ "When using button classes on <code class='code1'>&lt;a&gt;</code> elements that are used to "
+#~ "trigger in-page functionality (like collapsing content), rather than linking to new pages or "
+#~ "sections within the current page, these links should be given a <code "
 #~ "class='code1'>role='button'</code> to appropriately convey their purpose to assistive "
 #~ "technologies such as screen readers."
 #~ msgstr ""
-#~ "هنگام استفاده از کلاسهای دکمه در عناصر<code class='code1'>&lt;a&gt;</code> که برای "
-#~ "فعال‌کردن قابلیت صفحه در صفحه (مانند محو شدن محتوا) استفاده می‌شود، به جای پیوند دادن "
-#~ "به صفحات یا بخش‌های جدید در صفحه فعلی،‌این پیوندها باید کد <code "
-#~ "class='code1'>role='button'</code> را به درستی با منظور خود و به فن آوری‌های جانبی "
-#~ "مانند خوانندگان صفحه نمایش منتقل‌کند."
+#~ "هنگام استفاده از کلاسهای دکمه در عناصر<code class='code1'>&lt;a&gt;</code> که برای فعال‌کردن "
+#~ "قابلیت صفحه در صفحه (مانند محو شدن محتوا) استفاده می‌شود، به جای پیوند دادن به صفحات یا "
+#~ "بخش‌های جدید در صفحه فعلی،‌این پیوندها باید کد <code class='code1'>role='button'</code> را به "
+#~ "درستی با منظور خود و به فن آوری‌های جانبی مانند خوانندگان صفحه نمایش منتقل‌کند."
 
 #~ msgid "Link!"
 #~ msgstr "لینک!"
@@ -15837,13 +15677,13 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "دکمه‌های خارجی"
 
 #~ msgid ""
-#~ "In need of a button, but not the hefty background colors they bring? Replace the "
-#~ "default modifier classes with the <code class='code1'>.outline</code> ones to remove "
-#~ "all background images and colors on any button."
+#~ "In need of a button, but not the hefty background colors they bring? Replace the default "
+#~ "modifier classes with the <code class='code1'>.outline</code> ones to remove all background "
+#~ "images and colors on any button."
 #~ msgstr ""
-#~ "به یک دکمه نیاز دارید اما رنگ پس زمینه کثیفی را به ارمغان میاورد‌؟  کلاس‌های اصلاح "
-#~ "کننده پیش فرض را با کد‌های <code class='code1'>.outline</code>  جایگزین کنید تا تمام "
-#~ "تصاویر و رنگ‌های پس‌زمینه بر روی هر دکمه حذف شوند."
+#~ "به یک دکمه نیاز دارید اما رنگ پس زمینه کثیفی را به ارمغان میاورد‌؟  کلاس‌های اصلاح کننده پیش "
+#~ "فرض را با کد‌های <code class='code1'>.outline</code>  جایگزین کنید تا تمام تصاویر و رنگ‌های "
+#~ "پس‌زمینه بر روی هر دکمه حذف شوند."
 
 #~ msgid "Inverted"
 #~ msgstr "معکوس"
@@ -15879,15 +15719,15 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "حالت فعال"
 
 #~ msgid ""
-#~ "Buttons will appear pressed (with a darker background) when active. There’s no need "
-#~ "to add a class to <code class='code1'>&lt;button&gt;</code>s as they use a pseudo-"
-#~ "class. However, you can still force the same active appearance with .active should "
-#~ "you need to replicate the state programmatically."
+#~ "Buttons will appear pressed (with a darker background) when active. There’s no need to add a "
+#~ "class to <code class='code1'>&lt;button&gt;</code>s as they use a pseudo-class. However, you "
+#~ "can still force the same active appearance with .active should you need to replicate the "
+#~ "state programmatically."
 #~ msgstr ""
-#~ "هنگامی‌که دکمه فشرده‌ می‌شود (درپس‌زمینه سیاه) در حالت فعال. شما نیاز‌ندارید که کلاسی را "
-#~ "به <code class='code1'>&lt;button&gt;</code>‌ها اضافه کنید چون از یک کلاس "
-#~ "<code>pseudo</code> استفاده می‌کند.با این حال شما می‌توانید همان ظاهر‌ را با <code>."
-#~ "active</code> فعال‌تر کنید نیازی نیست حالت را دوباره برنامه‌نویسی کنید."
+#~ "هنگامی‌که دکمه فشرده‌ می‌شود (درپس‌زمینه سیاه) در حالت فعال. شما نیاز‌ندارید که کلاسی را به <code "
+#~ "class='code1'>&lt;button&gt;</code>‌ها اضافه کنید چون از یک کلاس <code>pseudo</code> استفاده "
+#~ "می‌کند.با این حال شما می‌توانید همان ظاهر‌ را با <code>.active</code> فعال‌تر کنید نیازی نیست "
+#~ "حالت را دوباره برنامه‌نویسی کنید."
 
 #~ msgid "Disabled state"
 #~ msgstr "حالت غیرفعال"
@@ -15896,19 +15736,19 @@ msgstr "نوع فایل غیرمجاز"
 #~ "Make buttons look inactive by adding the disabled boolean attribute to any <code "
 #~ "class='code1'>&lt;button&gt;</code> element."
 #~ msgstr ""
-#~ "با اضافه‌کردن خاصیبت boolean false به هر یک از عناصر <code class='code1'>&lt;button&gt;"
-#~ "</code> غیرفعال می‌شوند."
+#~ "با اضافه‌کردن خاصیبت boolean false به هر یک از عناصر <code class='code1'>&lt;button&gt;</"
+#~ "code> غیرفعال می‌شوند."
 
 #~ msgid ""
 #~ "Disabled buttons using the <code class='code1'>&lt;a&gt;</code> element behave a bit "
 #~ "different because <code class='code1'>&lt;a&gt;</code>s don’t support the <code "
-#~ "class='code1'>disabled</code> attribute, so you must add the <code class='code1'>."
-#~ "disabled</code> class to make it visually appear disabled."
+#~ "class='code1'>disabled</code> attribute, so you must add the <code class='code1'>.disabled</"
+#~ "code> class to make it visually appear disabled."
 #~ msgstr ""
-#~ "دکمه‌های غیرفعال با استفاده از عناصر <code class='code1'>&lt;a&gt;</code> کمی‌متفاوت "
-#~ "عمل می‌کنند زیرا  <code class='code1'>&lt;a&gt;</code>ها از صفت <code "
-#~ "class='code1'>disabled</code> پشتیبانی نمی‌کنند، پس شما باید کلاس <code class='code1'>."
-#~ "disabled</code> را اضافه کنید تا به‌صورت کامل غیرفعال‌شود."
+#~ "دکمه‌های غیرفعال با استفاده از عناصر <code class='code1'>&lt;a&gt;</code> کمی‌متفاوت عمل "
+#~ "می‌کنند زیرا  <code class='code1'>&lt;a&gt;</code>ها از صفت <code class='code1'>disabled</"
+#~ "code> پشتیبانی نمی‌کنند، پس شما باید کلاس <code class='code1'>.disabled</code> را اضافه کنید "
+#~ "تا به‌صورت کامل غیرفعال‌شود."
 
 #~ msgid "disabled"
 #~ msgstr "غیرفعال"
@@ -15923,28 +15763,26 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "لینک هشدار عملکرد"
 
 #~ msgid ""
-#~ "The <code class='code1'>.disabled</code> class uses <code class='code1'>pointer-"
-#~ "events: none</code> to try to disable the link functionality of <code "
-#~ "class='code1'>&lt;a&gt;</code>s, but that CSS property is not yet standardized. In "
-#~ "addition, even in browsers that do support <code class='code1'>pointer-events: none</"
-#~ "code>, keyboard navigation remains unaffected, meaning that sighted keyboard users "
-#~ "and users of assistive technologies will still be able to activate these links. So to "
-#~ "be safe, add a <code class='code1'>tabindex='-1'</code> attribute on these links (to "
-#~ "prevent them from receiving keyboard focus) and use custom JavaScript to disable "
-#~ "their functionality."
+#~ "The <code class='code1'>.disabled</code> class uses <code class='code1'>pointer-events: "
+#~ "none</code> to try to disable the link functionality of <code class='code1'>&lt;a&gt;</"
+#~ "code>s, but that CSS property is not yet standardized. In addition, even in browsers that do "
+#~ "support <code class='code1'>pointer-events: none</code>, keyboard navigation remains "
+#~ "unaffected, meaning that sighted keyboard users and users of assistive technologies will "
+#~ "still be able to activate these links. So to be safe, add a <code "
+#~ "class='code1'>tabindex='-1'</code> attribute on these links (to prevent them from receiving "
+#~ "keyboard focus) and use custom JavaScript to disable their functionality."
 #~ msgstr ""
-#~ "کلاس : <code class='code1'>.disabled</code> از <code class='code1'>pointer-events: "
-#~ "none</code> استفاده می‌کند تا توابع لینک را در  <code class='code1'> &lt;a&gt; </"
-#~ "code>  غیرفعال‌کند اما آن ویژگی‌های سی‌اس‌اس استاندارد نیستند. هر زمان در مرورگر از<code "
-#~ "class='code1'>pointer-events: none</code> پشتیبانی‌کند، مکان‌نمای صفحه‌کلید باقی می‌ماند، "
-#~ "به این معنی که کاربران با صفحه‌کلید می‌توانند این لینک‌ها را فعال کنند. پس مطمئن باشید "
-#~ "با اضافه‌کردن صفت <code class='code1'>tabindex='-1'</code>  بر روی لینک‌های خود(برای "
-#~ "جلوگیری از دریافت فوکوس صفحه کلید) و همچنین از یکسری قابلیت‌های جاوا‌اسکریپت برای "
-#~ "غیرفعال‌کردن این رویداد‌ها استفاده می‌کند."
+#~ "کلاس : <code class='code1'>.disabled</code> از <code class='code1'>pointer-events: none</"
+#~ "code> استفاده می‌کند تا توابع لینک را در  <code class='code1'> &lt;a&gt; </code>  غیرفعال‌کند "
+#~ "اما آن ویژگی‌های سی‌اس‌اس استاندارد نیستند. هر زمان در مرورگر از<code class='code1'>pointer-"
+#~ "events: none</code> پشتیبانی‌کند، مکان‌نمای صفحه‌کلید باقی می‌ماند، به این معنی که کاربران با "
+#~ "صفحه‌کلید می‌توانند این لینک‌ها را فعال کنند. پس مطمئن باشید با اضافه‌کردن صفت <code "
+#~ "class='code1'>tabindex='-1'</code>  بر روی لینک‌های خود(برای جلوگیری از دریافت فوکوس صفحه "
+#~ "کلید) و همچنین از یکسری قابلیت‌های جاوا‌اسکریپت برای غیرفعال‌کردن این رویداد‌ها استفاده می‌کند."
 
 #~ msgid ""
-#~ "Easily extend form controls by adding text, buttons, or button groups on either side "
-#~ "of textual inputs."
+#~ "Easily extend form controls by adding text, buttons, or button groups on either side of "
+#~ "textual inputs."
 #~ msgstr ""
 #~ "به راحتی کنترلر‌های فرم را با اضافه‌کردن متن‌، دکمه‌ها یا گروه‌های دکمه‌ای در هر دو طرف از "
 #~ "ورودی‌های متنی گسترش دهید."
@@ -16157,13 +15995,12 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "تقسیم بندی صفحه"
 
 #~ msgid "one row will divide to the number of parts, if you just set class='c'"
-#~ msgstr ""
-#~ "یک ردیف به تعداد قطعات تقسیم می‌شود، اگر شما فقط <code>class = 'c'</code> را تنظیم کنید"
+#~ msgstr "یک ردیف به تعداد قطعات تقسیم می‌شود، اگر شما فقط <code>class = 'c'</code> را تنظیم کنید"
 
 #~ msgid "on large screens if you just set class='x', it will take the x class ratio"
 #~ msgstr ""
-#~ "در صفحه نمایش‌های بزرگ اگر ست کنید : <code>class='x',</code> کلاس‌ها را نسبت به کلاس x "
-#~ "خواهد گرفت"
+#~ "در صفحه نمایش‌های بزرگ اگر ست کنید : <code>class='x',</code> کلاس‌ها را نسبت به کلاس x خواهد "
+#~ "گرفت"
 
 #~ msgid "three equal parts"
 #~ msgstr "سه قسمت مساوی"
@@ -16277,11 +16114,11 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "خداحافظ"
 
 #~ msgid ""
-#~ "Provide contextual feedback messages for typical user actions with the handful of "
-#~ "available and flexible alert messages."
+#~ "Provide contextual feedback messages for typical user actions with the handful of available "
+#~ "and flexible alert messages."
 #~ msgstr ""
-#~ "فراهم کننده متنی بازخورد متن برای اقدامات معمولی کاربر به همراه تعداد انگشت شماری از "
-#~ "دسترسی و پیغام‌های هشدار انعطاف پذیر‌‌."
+#~ "فراهم کننده متنی بازخورد متن برای اقدامات معمولی کاربر به همراه تعداد انگشت شماری از دسترسی "
+#~ "و پیغام‌های هشدار انعطاف پذیر‌‌."
 
 #~ msgid "This is a primary message or alert. check it out!"
 #~ msgstr "این یک پیام یا هشدار اصلی است. آنرا بررسی کنید!"
@@ -16338,11 +16175,11 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "رنگ لینک"
 
 #~ msgid ""
-#~ "Use the <code class='code1'>.link</code> utility class to quickly provide matching "
-#~ "colored links within any alert."
+#~ "Use the <code class='code1'>.link</code> utility class to quickly provide matching colored "
+#~ "links within any alert."
 #~ msgstr ""
-#~ "با استفاده از کلاس : <code class='code1'>.link</code> به سرعت لینک‌های رنگی را در هر "
-#~ "هشدار استفاده کنید."
+#~ "با استفاده از کلاس : <code class='code1'>.link</code> به سرعت لینک‌های رنگی را در هر هشدار "
+#~ "استفاده کنید."
 
 #~ msgid "This is a primary alert with"
 #~ msgstr "این یک هشدار اصلی همراه"
@@ -16378,28 +16215,26 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "محتوای اضافی"
 
 #~ msgid ""
-#~ "Alerts can also contain additional HTML elements like headings, paragraphs and "
-#~ "dividers."
+#~ "Alerts can also contain additional HTML elements like headings, paragraphs and dividers."
 #~ msgstr ""
-#~ "همچنین هشدار‌ها می‌توانند شامل عناصر اچ‌تی‌ام‌ال اضافی مانند پاراگراف‌ها، عنوان‌ها و "
-#~ "جداکننده‌ها باشند."
+#~ "همچنین هشدار‌ها می‌توانند شامل عناصر اچ‌تی‌ام‌ال اضافی مانند پاراگراف‌ها، عنوان‌ها و جداکننده‌ها "
+#~ "باشند."
 
 #~ msgid "Well done!"
 #~ msgstr "آفرین!"
 
 #~ msgid ""
-#~ "Aww yeah, you successfully read this important alert message. This example text is "
-#~ "going to run a bit longer so that you can see how spacing within an alert works with "
-#~ "this kind of content."
+#~ "Aww yeah, you successfully read this important alert message. This example text is going to "
+#~ "run a bit longer so that you can see how spacing within an alert works with this kind of "
+#~ "content."
 #~ msgstr ""
-#~ "اوه بله شما موفق به خواندن‌این پیام مهم شدید.این یک متن مثال است تا بتوانید ببینید "
-#~ "فاصله در یک هشدار با‌این محتوا چگونه کار می‌کند."
+#~ "اوه بله شما موفق به خواندن‌این پیام مهم شدید.این یک متن مثال است تا بتوانید ببینید فاصله در "
+#~ "یک هشدار با‌این محتوا چگونه کار می‌کند."
 
-#~ msgid ""
-#~ "Whenever you need to, be sure to use margin utilities to keep things nice and tidy."
+#~ msgid "Whenever you need to, be sure to use margin utilities to keep things nice and tidy."
 #~ msgstr ""
-#~ "هر زمان که نیاز دارید مطمئن از ابزار‌های حاشیه‌ای (margin) استفاده کنیدتا چیزها را "
-#~ "زیباتر و منظم‌تر نگه‌دارید."
+#~ "هر زمان که نیاز دارید مطمئن از ابزار‌های حاشیه‌ای (margin) استفاده کنیدتا چیزها را زیباتر و "
+#~ "منظم‌تر نگه‌دارید."
 
 #~ msgid "Compact"
 #~ msgstr "فشرده"
@@ -16603,27 +16438,27 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "این عنوان ۶ است"
 
 #~ msgid ""
-#~ "Documentation and examples for showing pagination to indicate a series of related "
-#~ "content exists across multiple pages."
+#~ "Documentation and examples for showing pagination to indicate a series of related content "
+#~ "exists across multiple pages."
 #~ msgstr ""
-#~ "مستندات و نمونه‌هایی برای نشان دادن صفحه بندی برای نمایش یک سری از محتوای مرتبط که در "
-#~ "چند صفحه وجود دارد."
+#~ "مستندات و نمونه‌هایی برای نشان دادن صفحه بندی برای نمایش یک سری از محتوای مرتبط که در چند "
+#~ "صفحه وجود دارد."
 
 #~ msgid "Overview"
 #~ msgstr "بررسی اجمالی"
 
 #~ msgid ""
-#~ "We use a large block of connected links for our pagination, making links hard to miss "
-#~ "and easily scalable—all while providing large hit areas. Pagination is built with "
-#~ "list HTML elements so screen readers can announce the number of available links. Use "
-#~ "a wrapping <nav> element to identify it as a navigation section to screen readers and "
-#~ "other assistive technologies."
+#~ "We use a large block of connected links for our pagination, making links hard to miss and "
+#~ "easily scalable—all while providing large hit areas. Pagination is built with list HTML "
+#~ "elements so screen readers can announce the number of available links. Use a wrapping <nav> "
+#~ "element to identify it as a navigation section to screen readers and other assistive "
+#~ "technologies."
 #~ msgstr ""
-#~ "ما از یک بلوک بزرگ از لینک‌های متصل برای صفحه بندی ما استفاده می‌کنیم، که باعث میشود "
-#~ "لینک‌ها به راحتی قابل دسترسی است و به راحتی مقیاس پذیر باشند - در حالی که اماده یک "
-#~ "کلیک هستند.صفحه بندی با عناصر لیست در اچ‌تی‌ام‌ال‌5 ساخته‌شده اند‌، بنابر‌این خوانندگان "
-#~ "میتوانند تعداد لینک‌های موجود دار اعلام کنند‌‌. از یک عنصر<nav> استفاده کنید تا آنرا به "
-#~ "عنوان بخش ناوبری برای نمایش به خوانندگان و سایر تکنیک‌ها شناسایی کنید‌‌."
+#~ "ما از یک بلوک بزرگ از لینک‌های متصل برای صفحه بندی ما استفاده می‌کنیم، که باعث میشود لینک‌ها به "
+#~ "راحتی قابل دسترسی است و به راحتی مقیاس پذیر باشند - در حالی که اماده یک کلیک هستند.صفحه بندی "
+#~ "با عناصر لیست در اچ‌تی‌ام‌ال‌5 ساخته‌شده اند‌، بنابر‌این خوانندگان میتوانند تعداد لینک‌های موجود دار "
+#~ "اعلام کنند‌‌. از یک عنصر<nav> استفاده کنید تا آنرا به عنوان بخش ناوبری برای نمایش به خوانندگان "
+#~ "و سایر تکنیک‌ها شناسایی کنید‌‌."
 
 #~ msgid "A pagination can use in many colors"
 #~ msgstr "یک صفحه بندی می‌تواند از تعداد زیادی رنگ استفاده‌کند‌‌"
@@ -16638,8 +16473,8 @@ msgstr "نوع فایل غیرمجاز"
 #~ "Siftal use html progress and meter and have some styles on them, each serving its own "
 #~ "semantic purpose"
 #~ msgstr ""
-#~ "سیفتال از نوار پیشرفت اچ‌تی‌ام‌ال و متر و برخی استایل‌های همراه استفاده می‌کند‌، هر سرویس "
-#~ "برای منظور خواصی استفاده میشد‌‌"
+#~ "سیفتال از نوار پیشرفت اچ‌تی‌ام‌ال و متر و برخی استایل‌های همراه استفاده می‌کند‌، هر سرویس برای "
+#~ "منظور خواصی استفاده میشد‌‌"
 
 #~ msgid "Meter"
 #~ msgstr "متر"
@@ -16669,11 +16504,11 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "سی‌اس‌اس ریست"
 
 #~ msgid ""
-#~ "Reset, a collection of element-specific CSS changes in a single file, kickstart "
-#~ "Siftal to provide an elegant, consistent, and simple baseline to build upon."
+#~ "Reset, a collection of element-specific CSS changes in a single file, kickstart Siftal to "
+#~ "provide an elegant, consistent, and simple baseline to build upon."
 #~ msgstr ""
-#~ "بازنشانی، مجموعه‌ای از ‌سی‌اس‌اس‌‌های خاص را در یک فایل واحد تغییر می‌دهد‌، kickstart سیفتال "
-#~ "برای ارائه‌ای زیبا‌، استوار و پایه‌ای ساده بر ساختن."
+#~ "بازنشانی، مجموعه‌ای از ‌سی‌اس‌اس‌‌های خاص را در یک فایل واحد تغییر می‌دهد‌، kickstart سیفتال برای "
+#~ "ارائه‌ای زیبا‌، استوار و پایه‌ای ساده بر ساختن."
 
 #~ msgid "should have sans-serif font family (opinionated)"
 #~ msgstr "باید دارای فونت sans-serif باشد (احتیاط)"
@@ -16766,17 +16601,15 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "باید اسکرول را هنگامیکه محتوا برای ابعاد زیاد است حرکت دهد‌‌"
 
 #~ msgid ""
-#~ " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget "
-#~ "dolor. Aenean massa. Cum sociis natoque penatibus et me."
+#~ " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. "
+#~ "Aenean massa. Cum sociis natoque penatibus et me."
 #~ msgstr ""
-#~ " لورم‌ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان "
-#~ "گرافیک است. چاپگرها و متون بلکه روزنامه و مجله."
+#~ " لورم‌ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "
+#~ "چاپگرها و متون بلکه روزنامه و مجله."
 
 #~ msgid ""
-#~ "should render <code>em</code>-unit preformatted text at the same absolute size as "
-#~ "normal text"
-#~ msgstr ""
-#~ "باید متن <code> em </ code> با همان اندازه مطلق به عنوان متن معمولی قالب بندی شود"
+#~ "should render <code>em</code>-unit preformatted text at the same absolute size as normal text"
+#~ msgstr "باید متن <code> em </ code> با همان اندازه مطلق به عنوان متن معمولی قالب بندی شود"
 
 #~ msgid "should inherit <code>color</code> from ancestor"
 #~ msgstr "باید <code>color</code> را از بقیه اجزاء به ارث ببرد"
@@ -16814,8 +16647,7 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgid "should not have padding"
 #~ msgstr "نباید فاصله درونی(padding) داشته باشد"
 
-#~ msgid ""
-#~ "should display a default cursor for the decrement button's click target in Chrome"
+#~ msgid "should display a default cursor for the decrement button's click target in Chrome"
 #~ msgstr "باید یک مکان‌نمای پیشفرض برای کاهش دکمه‌های در کروم"
 
 #~ msgid "should not have a cancel button in Safari or Chrome"
@@ -16941,23 +16773,19 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgid "A table's colors can be changed"
 #~ msgstr "رنگ جداول می‌تواند تغییر‌کند"
 
-#~ msgid ""
-#~ "Similar to colored tables, use one of modifier classes to make rows appear colored."
-#~ msgstr ""
-#~ "مانند جداول رنگی‌، از یکی از کلاس‌های تعیین کننده استفاده کنید تا سطر‌ها رنگی باشد."
+#~ msgid "Similar to colored tables, use one of modifier classes to make rows appear colored."
+#~ msgstr "مانند جداول رنگی‌، از یکی از کلاس‌های تعیین کننده استفاده کنید تا سطر‌ها رنگی باشد."
 
 #~ msgid ""
-#~ "Add <code class='code1'>.bordered</code> for borders on all sides of the table and "
-#~ "cells."
+#~ "Add <code class='code1'>.bordered</code> for borders on all sides of the table and cells."
 #~ msgstr ""
-#~ "کلاس : <code class='code1'>.bordered</code> را برای اضافه‌کردن حاشیه به تمام جداول و "
-#~ "سلول‌ها اضافه کنید."
+#~ "کلاس : <code class='code1'>.bordered</code> را برای اضافه‌کردن حاشیه به تمام جداول و سلول‌ها "
+#~ "اضافه کنید."
 
 #~ msgid "Only add <code class='code1'>.responsive</code> to table."
 #~ msgstr "تنها با افزودن کلاس <code class='code1'>.responsive</code> به جدول."
 
-#~ msgid ""
-#~ "A table may sometimes need to be more compact to make more rows visible at a time"
+#~ msgid "A table may sometimes need to be more compact to make more rows visible at a time"
 #~ msgstr "گاهی اوقات ممکن است یک جدول برای جمع‌کردن ردیف‌های بیشتر در یک زمان باشد"
 
 #~ msgid "A table may sometimes need to be more padded for legibility"
@@ -16970,11 +16798,10 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "گاهی ممکن است یک جدول بزرگ باشد"
 
 #~ msgid ""
-#~ "Add <code class='code1'>data-sort=desc|asc</code> to table header for add icon of "
-#~ "sorting"
+#~ "Add <code class='code1'>data-sort=desc|asc</code> to table header for add icon of sorting"
 #~ msgstr ""
-#~ "کد : <code class='code1'>data-sort=desc|asc</code> را برای اضافه‌کردن‌ایکن مرتب سازی به "
-#~ "عنوان جدول اضافه کنید"
+#~ "کد : <code class='code1'>data-sort=desc|asc</code> را برای اضافه‌کردن‌ایکن مرتب سازی به عنوان "
+#~ "جدول اضافه کنید"
 
 #~ msgid "@evazzadeh"
 #~ msgstr "@evazzadeh"
@@ -17019,25 +16846,23 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "کارت"
 
 #~ msgid ""
-#~ "Siftal's cards provide a flexible and extensible content container with multiple "
-#~ "variants and options."
-#~ msgstr ""
-#~ "کارت‌های سیفتال انعطاف و گسترش پذیری محتوا به همراه گزینه‌ها و تنظیمات را ارائه می‌دهند."
+#~ "Siftal's cards provide a flexible and extensible content container with multiple variants "
+#~ "and options."
+#~ msgstr "کارت‌های سیفتال انعطاف و گسترش پذیری محتوا به همراه گزینه‌ها و تنظیمات را ارائه می‌دهند."
 
 #~ msgid ""
-#~ "A card is a flexible and extensible content container. It includes options for "
-#~ "headers and footers, a wide variety of content, contextual background colors, and "
-#~ "powerful display options."
+#~ "A card is a flexible and extensible content container. It includes options for headers and "
+#~ "footers, a wide variety of content, contextual background colors, and powerful display "
+#~ "options."
 #~ msgstr "کارت یک مخزن با محتوای قابل انعطاف و توسعه پذیر است."
 
 #~ msgid ""
-#~ "Cards are built with as little markup and styles as possible, but still manage to "
-#~ "deliver a ton of control and customization. Built with flexbox, they offer easy "
-#~ "alignment and mix well with other  components."
+#~ "Cards are built with as little markup and styles as possible, but still manage to deliver a "
+#~ "ton of control and customization. Built with flexbox, they offer easy alignment and mix well "
+#~ "with other  components."
 #~ msgstr ""
-#~ "card‌هابا امکان نشانه گذاری و استایل‌های کوچک ساخته‌شده اند اما هنوز امکان کنترل و "
-#~ "سفارشی سازی راه دارد‌‌.  ساخته‌شده با flexbox‌، اغلب هماهنگی و‌ترکیب خوبی با اجزای دیگر "
-#~ "دارند‌‌."
+#~ "card‌هابا امکان نشانه گذاری و استایل‌های کوچک ساخته‌شده اند اما هنوز امکان کنترل و سفارشی سازی "
+#~ "راه دارد‌‌.  ساخته‌شده با flexbox‌، اغلب هماهنگی و‌ترکیب خوبی با اجزای دیگر دارند‌‌."
 
 #~ msgid "10h"
 #~ msgstr "10 ساعت"
@@ -17049,11 +16874,11 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "۱هزار لایک"
 
 #~ msgid ""
-#~ "Cards are designed to be flexible to your content. content blocks can include any "
-#~ "custom elements related to your content."
+#~ "Cards are designed to be flexible to your content. content blocks can include any custom "
+#~ "elements related to your content."
 #~ msgstr ""
-#~ "کارت‌ها طراحی‌شده اند تا محتوای شما انعطاف پذیر باشند. بلوک‌های محتوا می‌تواند شامل هر "
-#~ "عنصر سفارشی مربوط به محتوای شما باشند."
+#~ "کارت‌ها طراحی‌شده اند تا محتوای شما انعطاف پذیر باشند. بلوک‌های محتوا می‌تواند شامل هر عنصر "
+#~ "سفارشی مربوط به محتوای شما باشند."
 
 #~ msgid "Accept"
 #~ msgstr "تایید"
@@ -17062,18 +16887,17 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "کارت می‌تواند دارای یک عنوان باشد."
 
 #~ msgid ""
-#~ "Javad is a CEO and founder of Ermile and start developing Siftal from 2017 and hope "
-#~ "to write documentaion for it!"
+#~ "Javad is a CEO and founder of Ermile and start developing Siftal from 2017 and hope to write "
+#~ "documentaion for it!"
 #~ msgstr ""
-#~ "جواد مدیرعامل و بنیان گذار ارمایل است و از سال 2017 شروع به توسعه سیفتال کرده و "
-#~ "امیدواریم برای آن مستندسازی کنیم!"
+#~ "جواد مدیرعامل و بنیان گذار ارمایل است و از سال 2017 شروع به توسعه سیفتال کرده و امیدواریم "
+#~ "برای آن مستندسازی کنیم!"
 
 #~ msgid "Reza is a back-end developer of Ermile."
 #~ msgstr "رضا توسعه دهنده بک-اند در ارمایل است."
 
 #~ msgid "Hasan is a full-stack developer of Ermile and always trying to be in classrooms!"
-#~ msgstr ""
-#~ "حسن صالحی یک توسعه دهنده کامل در ارمایل است که همیشه سعی می‌کند در کلاس درس آموزش دهد!"
+#~ msgstr "حسن صالحی یک توسعه دهنده کامل در ارمایل است که همیشه سعی می‌کند در کلاس درس آموزش دهد!"
 
 #~ msgid "A card can contain content metadata."
 #~ msgstr "یک کارت می‌تواند شامل متادیتا(metadata)باشد."
@@ -17094,11 +16918,11 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "مدرسه"
 
 #~ msgid ""
-#~ "A card can be formatted so that the entire contents link to another page. Also a card "
-#~ "can contain contain links as images, headers, or inside content."
+#~ "A card can be formatted so that the entire contents link to another page. Also a card can "
+#~ "contain contain links as images, headers, or inside content."
 #~ msgstr ""
-#~ "کارت را می‌توان تغییر داد تا تمام محتوا به صفحه دیگری منتقل شود.همچنین یک کارت "
-#~ "می‌تواندشامل لینک‌ها به عنوان عکس،عنوان،ویا محتوای درونی باشد."
+#~ "کارت را می‌توان تغییر داد تا تمام محتوا به صفحه دیگری منتقل شود.همچنین یک کارت می‌تواندشامل "
+#~ "لینک‌ها به عنوان عکس،عنوان،ویا محتوای درونی باشد."
 
 #~ msgid "Center Card"
 #~ msgstr "کارت مرکزی"
@@ -17215,8 +17039,7 @@ msgstr "نوع فایل غیرمجاز"
 #~ msgstr "نام معتبری بین ۳ تا ۳۰ کاراکتر وارد کنید"
 
 #~ msgid "allowed extentions jpg, png (gif for bussiness plans). Max 500Kb"
-#~ msgstr ""
-#~ "پسوندهای مجاز jpg و png هستند‌(‌gif برای پلن‌های تجاری). حداکثر حجم مجاز ۵۰۰ کیلوبایت"
+#~ msgstr "پسوندهای مجاز jpg و png هستند‌(‌gif برای پلن‌های تجاری). حداکثر حجم مجاز ۵۰۰ کیلوبایت"
 
 #~ msgid "National code"
 #~ msgstr "کد ملی"
