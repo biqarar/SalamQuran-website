@@ -12,12 +12,12 @@ class twigTransTerms
 	echo T_("sudais");                                                                // Line 32
 	echo T_("basit");                                                                 // Line 39
 	echo T_("husary");                                                                // Line 46
-	echo T_("Qari");                                                                  // Line 14
-	echo T_("Reader");                                                                // Line 14
-	echo T_("Type");                                                                  // Line 15
-	echo T_("Translation");                                                           // Line 16
-	echo T_("Sore");                                                                  // Line 17
-	echo T_("Complete");                                                              // Line 18
+	echo T_("Qari");                                                                  // Line 56
+	echo T_("Reader");                                                                // Line 56
+	echo T_("Type");                                                                  // Line 57
+	echo T_("Translation");                                                           // Line 58
+	echo T_("Sore");                                                                  // Line 19
+	echo T_("Complete");                                                              // Line 60
 
 	//---------------------------docs\Projects\SalamQuran\content\contact\display.html
 	echo T_("Thank you for choosing us.");                                            // Line 8
@@ -40,8 +40,7 @@ class twigTransTerms
 	echo T_("Our location on map");                                                   // Line 64
 
 	//----------------------------docs\Projects\SalamQuran\content\home\list-sore.html
-	echo T_("Surahs");                                                                // Line 3
-	echo T_("Chapters");                                                              // Line 3
+	echo T_("Surahs <span class='fs08'>Chapters</span>");                             // Line 3
 	echo T_("Al-Fatihah");                                                            // Line 7
 	echo T_("The Opener");                                                            // Line 7
 	echo T_("Al-Baqarah");                                                            // Line 12
@@ -302,6 +301,15 @@ class twigTransTerms
 	echo T_("Vision");                                                                // Line 33
 
 	//-----------------------------docs\Projects\SalamQuran\content\namaz\display.html
+	echo T_("FAJR5");                                                                 // Line 15
+	echo T_("SUNRISE");                                                               // Line 20
+	echo T_("DHUHR");                                                                 // Line 25
+	echo T_("ASR");                                                                   // Line 30
+	echo T_("MAGHRIB");                                                               // Line 35
+	echo T_("Min");                                                                   // Line 36
+	echo T_("Remain");                                                                // Line 36
+	echo T_("ISHA");                                                                  // Line 42
+	echo T_("QIYAM");                                                                 // Line 47
 
 	//------------------------docs\Projects\SalamQuran\public_html\static\js\script.js
 
