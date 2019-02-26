@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SalamQuran - Persian\n"
 "POT-Creation-Date: 2019-02-26 16:23+0330\n"
-"PO-Revision-Date: 2019-02-26 16:33+0330\n"
+"PO-Revision-Date: 2019-02-26 16:37+0330\n"
 "Last-Translator: Javad <J.Evazzadeh@gmail.com>\n"
 "Language-Team: Ermile <J.Evazzadeh@gmail.com>\n"
 "Language: fa_IR\n"
@@ -1274,8 +1274,7 @@ msgstr ""
 msgid ""
 "Requests should be made using the HTTPS protocol so that traffic is encrypted."
 msgstr ""
-"درخواست ها باید با استفاده از پروتکل اچ‌تی‌تی‌پی‌اس ساخته شوند تا ترافیک رمزگذاری "
-"شوند."
+"درخواست‌ها باید با استفاده از پروتکل اچ‌تی‌تی‌پی‌اس ساخته شوند تا ترافیک رمزگذاری شوند."
 
 #: SalamQuran/includes/languages/trans_dash.php:262
 #: dash/addons/includes/languages/trans_dash.php:260
@@ -1393,7 +1392,7 @@ msgstr ""
 msgid ""
 "Requests using the PUT method do not need to check the current attributes of the "
 "object."
-msgstr "درخواست ها با استفاده از روش PUT نیازی به بررسی ویژگی های فعلی شی ندارند."
+msgstr "درخواست‌ها با استفاده از روش PUT نیازی به بررسی ویژگی های فعلی شی ندارند."
 
 #: SalamQuran/includes/languages/trans_dash.php:279
 #: dash/addons/includes/languages/trans_dash.php:277
@@ -1774,7 +1773,7 @@ msgstr "دریافت اطلاعات اندروید"
 
 #: SalamQuran/includes/languages/trans_dash.php:371
 msgid "Get details like pages, language list, translations, and more."
-msgstr "دریافت جزئیات مثل صفحات، لیست زبان‌ها، ترجمه ها و سایر اطلاعات."
+msgstr "دریافت جزئیات مثل صفحات، لیست زبان‌ها، ترجمه‌ها و سایر اطلاعات."
 
 #: SalamQuran/includes/languages/trans_dash.php:374
 #: dash/addons/includes/languages/trans_dash.php:312
@@ -4160,7 +4159,7 @@ msgstr "حافظه"
 #: SalamQuran/includes/languages/trans_dash.php:999
 #: dash/addons/includes/languages/trans_dash.php:1323
 msgid "Some code was changed!!!"
-msgstr "بخشی از کد ها دستگاری شده!!!"
+msgstr "بخشی از کدها دستگاری شده!!!"
 
 #: SalamQuran/includes/languages/trans_dash.php:1000
 #: SalamQuran/includes/languages/trans_static.php:7
@@ -5859,7 +5858,7 @@ msgstr "اعراف"
 
 #: SalamQuran/includes/languages/trans_project.php:57
 msgid "The Heights"
-msgstr "حجاب ها"
+msgstr "حجاب‌ها"
 
 #: SalamQuran/includes/languages/trans_project.php:58
 msgid "Al-Anfal"
@@ -5867,7 +5866,7 @@ msgstr "انفال"
 
 #: SalamQuran/includes/languages/trans_project.php:59
 msgid "The Spoils of War"
-msgstr "غنیمت ها"
+msgstr "غنیمت‌ها"
 
 #: SalamQuran/includes/languages/trans_project.php:60
 msgid "At-Tawbah"
@@ -6059,7 +6058,7 @@ msgstr "احزاب"
 
 #: SalamQuran/includes/languages/trans_project.php:107
 msgid "The Combined Forces"
-msgstr "گروه ها"
+msgstr "گروه‌ها"
 
 #: SalamQuran/includes/languages/trans_project.php:108
 msgid "Saba"
@@ -6107,7 +6106,7 @@ msgstr "زمر"
 
 #: SalamQuran/includes/languages/trans_project.php:119
 msgid "The Troops"
-msgstr "دسته ها"
+msgstr "دسته‌ها"
 
 #: SalamQuran/includes/languages/trans_project.php:120
 msgid "Ghafir"
@@ -6199,7 +6198,7 @@ msgstr "ذاریات"
 
 #: SalamQuran/includes/languages/trans_project.php:142
 msgid "The Winnowing Winds"
-msgstr "باد ها"
+msgstr "بادها"
 
 #: SalamQuran/includes/languages/trans_project.php:143
 msgid "At-Tur"
@@ -7282,7 +7281,7 @@ msgstr "بازگشت به لیست فایل‌ها"
 #: dash/addons/content_cp/posts/home/view.php:24
 msgid "Check list of posts and search or filter in them to find your posts."
 msgstr ""
-"چک کردن لیست پست ها و جستجو یا فیلتر کردن در آنها برای پیدا کردن پست های خود."
+"چک کردن لیست پست‌ها و جستجو یا فیلتر کردن در آنها برای پیدا کردن پست های خود."
 
 #: dash/addons/content_cp/attachment/home/view.php:20
 #: dash/addons/content_cp/posts/home/view.php:24
@@ -7464,7 +7463,7 @@ msgstr "افزودن نوشته جدید"
 
 #: dash/addons/content_cp/posts/add/view.php:23
 msgid "Posts can contain keyword and category with title and descriptions."
-msgstr "پست ها می توانند شامل کلیدی و دسته بندی با عنوان و شرح باشند."
+msgstr "پست‌ها می توانند شامل کلیدی و دسته بندی با عنوان و شرح باشند."
 
 #: dash/addons/content_cp/posts/add/view.php:26
 #: dash/addons/content_cp/posts/edit/view.php:38
@@ -7539,7 +7538,7 @@ msgstr "اطلاعات با موفقیت حذف شد"
 
 #: dash/addons/content_cp/terms/model.php:63
 msgid "This term or tag used in post and can not delete it!"
-msgstr "این عبارت در خبر ها استفاده شده و امکان حذف آن وجود ندارد!"
+msgstr "این عبارت در خبرها استفاده شده و امکان حذف آن وجود ندارد!"
 
 #: dash/addons/content_cp/terms/model.php:84
 msgid "Invalid tag color"
@@ -7564,12 +7563,12 @@ msgstr "چک کردن شرایط و فیلتر بر اساس نوع یا مشا�
 
 #: dash/addons/content_cp/terms/view.php:23
 msgid "Check categories and add or edit some new category"
-msgstr "دسته بندی ها را بررسی کنید و برخی از دسته های جدید را اضافه یا ویرایش کنید"
+msgstr "دسته بندی‌ها را بررسی کنید و برخی از دسته های جدید را اضافه یا ویرایش کنید"
 
 #: dash/addons/content_cp/terms/view.php:31 dash/addons/content_cp/terms/view.php:39
 #: dash/addons/content_cp/terms/view.php:48
 msgid "Check tags and add or edit some new tag"
-msgstr "برچسب ها را بررسی کنید و برخی از برچسب های جدید را اضافه یا ویرایش کنید"
+msgstr "برچسب‌ها را بررسی کنید و برخی از برچسب‌های جدید را اضافه یا ویرایش کنید"
 
 #: dash/addons/content_cp/terms/view.php:128
 msgid "Id not found"
@@ -8559,7 +8558,7 @@ msgstr "نمایش جزئیات کلید ارتباط با اندروید"
 
 #: dash/addons/content_su/backup/model.php:23
 msgid "Database of logs dose not exists"
-msgstr "پایگاه داده برای لاگ ها وجود ندارد"
+msgstr "پایگاه داده برای لاگ‌ها وجود ندارد"
 
 #: dash/addons/content_su/backup/model.php:54
 msgid "Backup complete"
@@ -14860,7 +14859,7 @@ msgstr "مدت زمان جلسه"
 
 #: dash/lib/utility/pay/api/mellat/bank.php:159
 msgid "Data Access Exception"
-msgstr "استثناء دسترسی به داده ها"
+msgstr "استثناء دسترسی به داده‌ها"
 
 #: dash/lib/utility/pay/api/mellat/bank.php:160
 msgid "Payer Id Is Invalid"
