@@ -91,6 +91,11 @@ class quran
 			$load             = \lib\db\quran::get(['index' => $_id]);
 			$result           = [];
 			$result['aye']    = $load;
+
+			if(isset($load[0]['sura']))
+			{
+				$result['detail'] = \lib\db\sure::get(['index' => $load[0]['sura'], 'limit' => 1]);
+			}
 			return $result;
 		}
 		else
@@ -109,6 +114,12 @@ class quran
 			$load             = \lib\db\quran::get(['page' => $_id]);
 			$result           = [];
 			$result['aye']    = $load;
+
+			if(isset($load[0]['sura']))
+			{
+				$result['detail'] = \lib\db\sure::get(['index' => $load[0]['sura'], 'limit' => 1]);
+			}
+
 			return $result;
 		}
 		else
