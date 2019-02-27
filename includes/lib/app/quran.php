@@ -128,11 +128,28 @@ class quran
 		}
 	}
 
+	private static function joze($_id)
+	{
+		// load joze
+		$_id = intval($_id);
+		if(intval($_id) >= 1 && intval($_id) <= 30 )
+		{
+			$load             = \lib\db\quran::get(['joze' => $_id]);
+			$result           = [];
+			$result['aye']    = $load;
+			return $result;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
 	private static function hezb($_id)
 	{
 		// load hezb
 		$_id = intval($_id);
-		if(intval($_id) >= 1 && intval($_id) <= 604 )
+		if(intval($_id) >= 1 && intval($_id) <= 120 )
 		{
 			$load             = \lib\db\quran::get(['hezb' => $_id]);
 			$result           = [];
