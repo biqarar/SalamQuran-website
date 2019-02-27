@@ -20,7 +20,7 @@ class quran
 			}
 			elseif($first_character === 'j' && ctype_digit($number))
 			{
-				return self::joze($number);
+				return self::juz($number);
 			}
 			elseif($first_character === 'p' && ctype_digit($number))
 			{
@@ -137,13 +137,13 @@ class quran
 		}
 	}
 
-	private static function joze($_id)
+	private static function juz($_id)
 	{
-		// load joze
+		// load juz
 		$_id = intval($_id);
 		if(intval($_id) >= 1 && intval($_id) <= 30 )
 		{
-			$load             = \lib\db\quran::get(['joze' => $_id]);
+			$load             = \lib\db\quran::get(['juz' => $_id]);
 			$result           = [];
 			$result['aye']    = $load;
 
@@ -180,7 +180,27 @@ class quran
 
 	public static function find_translate($_id)
 	{
+		if(!self::$find_by)
+		{
+			return null;
+		}
 
+		switch (self::$find_by)
+		{
+			case 'sure':
+				# code...
+				break;
+
+			case 'aye':
+				break;
+
+			case 'juz':
+				break;
+
+			default:
+				# code...
+				break;
+		}
 	}
 
 }
