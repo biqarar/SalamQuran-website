@@ -10,9 +10,14 @@
         <div class="cauto os links">
           <div class='sidenavHandler cauto'><span></span></div>
           <a href="{{url.kingdom}}/mag">{%trans "Magazine"%}</a>
-          <a href="{{url.kingdom}}/audio">{%trans "Audio"%}</a>
-          <a href="{{url.kingdom}}/namaz">{%trans "Namaz"%}</a>
+          <a href="{{url.kingdom}}/about">{%trans "About"%}</a>
+          <!-- <a href="{{url.kingdom}}/audio">{%trans "Audio"%}</a> -->
+          <!-- <a href="{{url.kingdom}}/namaz">{%trans "Namaz"%}</a> -->
+{%if login.id%}
+          <a href="{{url.kingdom}}/a" class="special">{%trans "Panel"%}</a>
+{%else%}
           <a href="{{url.kingdom}}/enter" class="special" title='{%trans "Enter to your account and use SalamQuran account features"%}'>{%trans "Enter"%}</a>
+{%endif%}
         </div>
       </nav>
 {%block pageTitle%}
