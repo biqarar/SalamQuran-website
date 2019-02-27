@@ -267,7 +267,7 @@ class twigTransTerms
 	echo T_("The Mankind");                                                           // Line 578
 
 	//-------------------------docs\Projects\SalamQuran\content\home\sore-bookTxt.html
-	echo T_("List of soreha");                                                        // Line 28
+	echo T_("List of soreha");                                                        // Line 33
 
 	//---------------------------------docs\Projects\SalamQuran\content\home\sore.html
 	echo T_("Quran");                                                                 // Line 19
