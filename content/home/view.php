@@ -17,14 +17,17 @@ class view
 			$desc  .= ' | '. \dash\utility\human::fitNumber(\dash\data::suraDetail_ayas()). ' '. T_('ayah');
 			// add type
 			$desc  .= ' | '. T_(\dash\data::suraDetail_type());
-
+			// add juz
+			if(\dash\data::suraDetail_alljoze())
+			{
+				$desc  .= ' | '. T_('juz'). \dash\utility\human::fitNumber(\dash\data::suraDetail_ayas());
+			}
 
 			// add translated name
 			$desc  .= ' | '. T_(\dash\data::suraDetail_ename());
 			// add arabic name
 			$desc  .= ' | '. \dash\data::suraDetail_name();
 		}
-
 
 
 		\dash\data::page_title($title);
