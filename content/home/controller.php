@@ -7,15 +7,29 @@ class controller
 	{
 		$module = \dash\url::module();
 
-		$module = intval(str_replace('s', '', $module));
-		if($module >= 1 && $module <= 114)
+		$url    = $module;
+
+		$child  = \dash\url::child();
+
+		if($child)
 		{
-			$load_sura = \lib\app\sura::load($module);
-			\dash\data::sura($load_sura['aye']);
-			\dash\data::suraDetail($load_sura['detail']);
-			\dash\open::get();
+			$url .= '/'. $child;
 		}
 
+		$quran = \lib\app\quran::find($url);
+
+		if($quran)
+		{
+			if(isset($quran['aye']))
+			{
+				\dash\data::sura($quran['aye']);
+			}
+			if(isset($quran['detail']))
+			{
+				\dash\data::suraDetail($quran['detail']);
+			}
+			\dash\open::get();
+		}
 	}
 }
 ?>
