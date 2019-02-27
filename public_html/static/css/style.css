@@ -5902,6 +5902,20 @@ body {
 .Quran.bookTxt .ayeBox .aye:hover {
   background-color: initial; }
 
+/*vcard*/
+.vcard {
+  font-style: normal; }
+
+.vcard .adr {
+  padding: 1em 0; }
+
+.vcard .adr div, .vcard .adr span, .vcard .email, .vcard .tel {
+  display: block;
+  padding: 0.5em; }
+
+.vcard .adr span {
+  display: inline-block; }
+
 #header {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
