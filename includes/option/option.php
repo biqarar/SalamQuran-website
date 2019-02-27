@@ -1,8 +1,12 @@
 <?php
-
 require_once('social.php');
 require_once('payment.php');
 require_once('sms.php');
+
+if(!defined('db_trans_name'))
+{
+	define('db_trans_name', 'SalamQuran_translate');
+}
 
 
 self::$language =
@@ -24,4 +28,5 @@ self::$config['coming'] = true;
 
 self::$config['api_v6']['appkey']   = [];
 self::$config['api_v6']['appkey'][] = null;
+
 ?>
