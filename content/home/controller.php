@@ -20,15 +20,15 @@ class controller
 
 		if($quran)
 		{
-			if(isset($quran['aye']))
+			if(isset($quran['aye']) && $quran['aye'])
 			{
 				\dash\data::sura($quran['aye']);
+				\dash\open::get();
 			}
 			if(isset($quran['detail']))
 			{
 				\dash\data::suraDetail($quran['detail']);
 			}
-			\dash\open::get();
 		}
 	}
 }
