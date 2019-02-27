@@ -26,6 +26,21 @@ class translate
 	}
 
 
+	public static function table_name($_id)
+	{
+		$list = self::translate_list();
+
+		foreach ($list as $key => $value)
+		{
+			if(isset($value['id']) && intval($value['id']) === intval($_id))
+			{
+				return $key;
+			}
+		}
+		return false;
+	}
+
+
 	public static function translate_list()
 	{
 		$translate =

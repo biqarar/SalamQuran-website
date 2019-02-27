@@ -5,9 +5,23 @@ namespace lib\app;
 class quran
 {
 	public static $find_by = null;
+	public static $key1    = null;
+	public static $key2    = null;
 
-	public static function find($_url)
+	public static function find($_url, $_meta = [])
 	{
+		$default_meta =
+		[
+			'translate' => null,
+		];
+
+		if(!is_array($_meta))
+		{
+			$_meta = [];
+		}
+
+		$_meta = array_merge($default_meta, $_meta);
+
 		if(strpos($_url, '/') === false)
 		{
 
@@ -16,23 +30,23 @@ class quran
 
 			if($first_character === 's' && ctype_digit($number))
 			{
-				return self::sure($number);
+				return self::sure($number, null, $_meta);
 			}
 			elseif($first_character === 'j' && ctype_digit($number))
 			{
-				return self::juz($number);
+				return self::juz($number, $_meta);
 			}
 			elseif($first_character === 'p' && ctype_digit($number))
 			{
-				return self::page($number);
+				return self::page($number, $_meta);
 			}
 			elseif($first_character === 'a' && ctype_digit($number))
 			{
-				return self::aye($number);
+				return self::aye($number, $_meta);
 			}
 			elseif($first_character === 'h' && ctype_digit($number))
 			{
-				return self::hezb($number);
+				return self::hezb($number, $_meta);
 			}
 		}
 		else
@@ -48,7 +62,7 @@ class quran
 				$number2         = $split[1];
 				if($first_character === 's' && ctype_digit($number) && ctype_digit($number2))
 				{
-					return self::sure($number, $number2);
+					return self::sure($number, $number2, $_meta);
 				}
 
 			}
@@ -58,15 +72,16 @@ class quran
 	}
 
 
-	private static function sure($_id, $_aye = null)
+	private static function sure($_id, $_aye = null, $_meta = [])
 	{
 		// load sure
 		$_id = intval($_id);
-		if(intval($_id) >= 1 && intval($_id) <= 114 )
+
+		if(intval($_id) >= 1 && intval($_id) <= 114)
 		{
 			if($_aye)
 			{
-				$load = \lib\db\quran::get(['sura' => $_id, 'aya' => $_aye]);
+				$load       = \lib\db\quran::get(['sura' => $_id, 'aya' => $_aye]);
 			}
 			else
 			{
@@ -77,7 +92,9 @@ class quran
 			$result['aye']    = $load;
 			$result['detail'] = \lib\db\sure::get(['index' => $_id, 'limit' => 1]);
 
-			self::$find_by = 'sure';
+			$result['translate'] = self::load_translate($load, $_meta);
+
+			self::$find_by    = 'sure';
 			return $result;
 		}
 		else
@@ -86,7 +103,7 @@ class quran
 		}
 	}
 
-	private static function aye($_id)
+	private static function aye($_id, $_meta = [])
 	{
 		// load aye
 		$_id = intval($_id);
@@ -101,6 +118,8 @@ class quran
 				$result['detail'] = \lib\db\sure::get(['index' => $load[0]['sura'], 'limit' => 1]);
 			}
 
+			$result['translate'] = self::load_translate($load, $_meta);
+
 			self::$find_by = 'aye';
 
 			return $result;
@@ -112,7 +131,7 @@ class quran
 	}
 
 
-	private static function page($_id)
+	private static function page($_id, $_meta = [])
 	{
 		// load page
 		$_id = intval($_id);
@@ -127,6 +146,8 @@ class quran
 				$result['detail'] = \lib\db\sure::get(['index' => $load[0]['sura'], 'limit' => 1]);
 			}
 
+			$result['translate'] = self::load_translate($load, $_meta);
+
 			self::$find_by = 'page';
 
 			return $result;
@@ -137,17 +158,17 @@ class quran
 		}
 	}
 
-	private static function juz($_id)
+	private static function juz($_id, $_meta = [])
 	{
 		// load juz
 		$_id = intval($_id);
 		if(intval($_id) >= 1 && intval($_id) <= 30 )
 		{
-			$load             = \lib\db\quran::get(['juz' => $_id]);
-			$result           = [];
-			$result['aye']    = $load;
-
-			self::$find_by = 'juz';
+			$load                = \lib\db\quran::get(['juz' => $_id]);
+			$result              = [];
+			$result['aye']       = $load;
+			$result['translate'] = self::load_translate($load, $_meta);
+			self::$find_by       = 'juz';
 
 			return $result;
 		}
@@ -157,17 +178,17 @@ class quran
 		}
 	}
 
-	private static function hezb($_id)
+	private static function hezb($_id, $_meta = [])
 	{
 		// load hezb
 		$_id = intval($_id);
 		if(intval($_id) >= 1 && intval($_id) <= 120 )
 		{
-			$load             = \lib\db\quran::get(['hezb' => $_id]);
-			$result           = [];
-			$result['aye']    = $load;
-
-			self::$find_by = 'hezb';
+			$load                = \lib\db\quran::get(['hezb' => $_id]);
+			$result              = [];
+			$result['aye']       = $load;
+			$result['translate'] = self::load_translate($load, $_meta);
+			self::$find_by       = 'hezb';
 
 			return $result;
 		}
@@ -178,30 +199,50 @@ class quran
 	}
 
 
-	public static function find_translate($_id)
+	private static function load_translate($_data, $_meta)
 	{
-		if(!self::$find_by)
+
+		if(!is_array($_data))
 		{
 			return null;
 		}
 
-		switch (self::$find_by)
+		if(!is_array($_meta))
 		{
-			case 'sure':
-				# code...
-				break;
-
-			case 'aye':
-				break;
-
-			case 'juz':
-				break;
-
-			default:
-				# code...
-				break;
+			return null;
 		}
-	}
 
+		if(!isset($_meta['translate']))
+		{
+			return null;
+		}
+
+		if(!$_meta['translate'])
+		{
+			return null;
+		}
+
+		$table_name = \lib\app\translate::table_name($_meta['translate']);
+		if(!$table_name)
+		{
+			return null;
+		}
+
+		$indexs = array_column($_data, 'index');
+		$indexs = array_filter($indexs);
+		$indexs = array_unique($indexs);
+
+		if($indexs)
+		{
+			$load = \lib\db\translate::load($table_name, ['index' => ["IN", "(". implode(',', $indexs).")"]]);
+			if(is_array($load))
+			{
+				$load = array_combine(array_column($load, 'index'), $load);
+			}
+			return $load;
+		}
+
+		return null;
+	}
 }
 ?>

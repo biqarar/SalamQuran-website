@@ -16,7 +16,14 @@ class controller
 			$url .= '/'. $child;
 		}
 
-		$quran = \lib\app\quran::find($url);
+		$meta = [];
+
+		if(\dash\request::get('t') && ctype_digit(\dash\request::get('t')))
+		{
+			$meta['translate'] = \dash\request::get('t');
+		}
+
+		$quran = \lib\app\quran::find($url, $meta);
 
 		if($quran)
 		{
@@ -26,9 +33,16 @@ class controller
 				\dash\data::sura($quran['aye']);
 				\dash\open::get();
 			}
+
 			if(isset($quran['detail']))
 			{
 				\dash\data::suraDetail($quran['detail']);
+			}
+
+
+			if(isset($quran['translate']))
+			{
+				\dash\data::translateList($quran['translate']);
 			}
 		}
 	}

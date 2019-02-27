@@ -15,6 +15,9 @@
       <span class='text' data-kerkere='[data-aye-meta="{{value.aya}}"]'>{{value.text}}</span>
       <a class='ayeNum' href='{{url.kingdom}}/{{value.sura}}#{{value.aya}}'>﴿{{value.aya | fitNumber}}﴾</a>
     </div>
+    {%if translateList[value.index]['text']%}
+    <p>{{translateList[value.index]['text']}}</p>
+    {%endif%}
     <div class='meta' data-aye-meta='{{value.aya}}'>
       <abbr title='{%trans "Quran"%} - {%trans "Sore"%}{{value.sura}} {{value.suraName}} - {%trans "Aye"%}{{value.aya}}'>{{value.simple}}</abbr>
     </div>

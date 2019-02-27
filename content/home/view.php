@@ -44,11 +44,6 @@ class view
 			$translation_list = \lib\app\translate::current_lang_translate();
 			\dash\data::translationList($translation_list);
 		}
-
-		if(\dash\request::get('t') && ctype_digit(\dash\request::get('t')))
-		{
-			$translate = \lib\app\quran::find_translate(\dash\request::get('t'));
-		}
 	}
 }
 ?>
