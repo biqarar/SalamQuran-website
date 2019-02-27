@@ -22,6 +22,7 @@ class controller
 		{
 			if(isset($quran['aye']) && $quran['aye'])
 			{
+				\dash\data::sureLoaded(true);
 				\dash\data::sura($quran['aye']);
 				\dash\open::get();
 			}

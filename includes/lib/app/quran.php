@@ -4,6 +4,8 @@ namespace lib\app;
 
 class quran
 {
+	public static $find_by = null;
+
 	public static function find($_url)
 	{
 		if(strpos($_url, '/') === false)
@@ -74,6 +76,8 @@ class quran
 			$result           = [];
 			$result['aye']    = $load;
 			$result['detail'] = \lib\db\sure::get(['index' => $_id, 'limit' => 1]);
+
+			self::$find_by = 'sure';
 			return $result;
 		}
 		else
@@ -96,6 +100,9 @@ class quran
 			{
 				$result['detail'] = \lib\db\sure::get(['index' => $load[0]['sura'], 'limit' => 1]);
 			}
+
+			self::$find_by = 'aye';
+
 			return $result;
 		}
 		else
@@ -120,6 +127,8 @@ class quran
 				$result['detail'] = \lib\db\sure::get(['index' => $load[0]['sura'], 'limit' => 1]);
 			}
 
+			self::$find_by = 'page';
+
 			return $result;
 		}
 		else
@@ -137,6 +146,9 @@ class quran
 			$load             = \lib\db\quran::get(['joze' => $_id]);
 			$result           = [];
 			$result['aye']    = $load;
+
+			self::$find_by = 'juz';
+
 			return $result;
 		}
 		else
@@ -154,12 +166,21 @@ class quran
 			$load             = \lib\db\quran::get(['hezb' => $_id]);
 			$result           = [];
 			$result['aye']    = $load;
+
+			self::$find_by = 'hezb';
+
 			return $result;
 		}
 		else
 		{
 			return false;
 		}
+	}
+
+
+	public static function find_translate($_id)
+	{
+
 	}
 
 }
