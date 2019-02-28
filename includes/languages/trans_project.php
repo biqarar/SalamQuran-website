@@ -22,6 +22,23 @@ class twigTransTerms
 	echo T_("Sore");                                                                  // Line 22
 	echo T_("Complete");                                                              // Line 60
 
+	//-------------------------docs\Projects\SalamQuran\content\changelog\display.html
+	echo T_("Date");                                                                  // Line 9
+	echo T_("Description");                                                           // Line 10
+	echo T_("Telegram bot");                                                          // Line 19
+	echo T_("iOS app");                                                               // Line 25
+	echo T_("Learning Mechanism");                                                    // Line 31
+	echo T_("Exam");                                                                  // Line 37
+	echo T_("Android App");                                                           // Line 43
+	echo T_("Quran Magazine");                                                        // Line 49
+	echo T_("Quran Audio Database");                                                  // Line 55
+	echo T_("Website of SalamQuran was Launched.");                                   // Line 61
+	echo T_("The name of project selected as SalamQuran and <a href='https://SalamQuran.com'>SalamQuran.com</a> domain are registered.");// Line 67
+	echo T_("Project officially started.");                                           // Line 73
+	echo T_("Primary studies were done.");                                            // Line 79
+	echo T_("The project was initiated and the initial agreement was made.");         // Line 85
+	echo T_("Be patient...");                                                         // Line 92
+
 	//---------------------------docs\Projects\SalamQuran\content\contact\display.html
 	echo T_("We do our best to improve SalamQuran's quality. So, knowing your valuable comments about bugs and problems and more importantly your precious offers will help us in this way.");// Line 8
 	echo T_("You can access the ticketing status through this link");                 // Line 10
@@ -274,6 +291,8 @@ class twigTransTerms
 	//---------------------------------docs\Projects\SalamQuran\content\home\sore.html
 	echo T_("Quran");                                                                 // Line 22
 	echo T_("Aye");                                                                   // Line 22
+
+	//------------------------------docs\Projects\SalamQuran\content\logo\display.html
 
 	//-------------------------------docs\Projects\SalamQuran\content\main\footer.html
 	echo T_("About");                                                                 // Line 31
