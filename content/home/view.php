@@ -5,7 +5,7 @@ class view
 {
 	public static function config()
 	{
-		$title = T_('Quran');
+		$title = \dash\data::site_title();
 		$desc  = T_("Say hello to Quran!"). ' '. T_("Quran is calling you.");
 
 		if(\dash\data::suraDetail())
@@ -32,8 +32,7 @@ class view
 
 		\dash\data::page_title($title);
 		\dash\data::page_desc($desc);
-
-		if(\dash\url::module() === 'home')
+		if(\dash\url::module() === null)
 		{
 			\dash\data::page_special(true);
 		}
