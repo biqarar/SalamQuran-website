@@ -4,6 +4,9 @@ class twigTransTerms
  private function transtext()
  {
 
+	//-----------------------------docs\Projects\SalamQuran\content\about\display.html
+	echo T_("Soon");                                                                  // Line 6
+
 	//-----------------------------docs\Projects\SalamQuran\content\audio\display.html
 	echo T_("Quran Qari");                                                            // Line 45
 	echo T_("mansori");                                                               // Line 11
@@ -15,19 +18,18 @@ class twigTransTerms
 	echo T_("Qari");                                                                  // Line 56
 	echo T_("Reader");                                                                // Line 56
 	echo T_("Type");                                                                  // Line 57
-	echo T_("Translation");                                                           // Line 58
-	echo T_("Sore");                                                                  // Line 19
+	echo T_("Translation");                                                           // Line 34
+	echo T_("Sore");                                                                  // Line 22
 	echo T_("Complete");                                                              // Line 60
 
 	//---------------------------docs\Projects\SalamQuran\content\contact\display.html
-	echo T_("Thank you for choosing us.");                                            // Line 8
 	echo T_("We do our best to improve SalamQuran's quality. So, knowing your valuable comments about bugs and problems and more importantly your precious offers will help us in this way.");// Line 8
 	echo T_("You can access the ticketing status through this link");                 // Line 10
 	echo T_("Name");                                                                  // Line 17
 	echo T_("Full Name");                                                             // Line 18
 	echo T_("Mobile");                                                                // Line 21
 	echo T_("Please enter valid mobile number. `:val` is incorrect");                 // Line 22
-	echo T_("Email");                                                                 // Line 36
+	echo T_("Email");                                                                 // Line 42
 	echo T_("Your Message");                                                          // Line 30
 	echo T_("Send");                                                                  // Line 33
 	echo T_("How to contact us");                                                     // Line 41
@@ -267,29 +269,35 @@ class twigTransTerms
 	echo T_("The Mankind");                                                           // Line 578
 
 	//-------------------------docs\Projects\SalamQuran\content\home\sore-bookTxt.html
-	echo T_("List of soreha");                                                        // Line 33
+	echo T_("List of soreha");                                                        // Line 42
 
 	//---------------------------------docs\Projects\SalamQuran\content\home\sore.html
-	echo T_("Quran");                                                                 // Line 19
-	echo T_("Aye");                                                                   // Line 19
+	echo T_("Quran");                                                                 // Line 22
+	echo T_("Aye");                                                                   // Line 22
 
 	//-------------------------------docs\Projects\SalamQuran\content\main\footer.html
 	echo T_("About");                                                                 // Line 31
+	echo T_("Mission");                                                               // Line 13
+	echo T_("Vision");                                                                // Line 33
 	echo T_("Contact");                                                               // Line 32
-	echo T_("FAQ");                                                                   // Line 14
-	echo T_("Link");                                                                  // Line 26
-	echo T_("Tel");                                                                   // Line 37
-	echo T_("SMS");                                                                   // Line 33
-	echo T_("Website");                                                               // Line 35
-	echo T_("Software Solution Designer");                                            // Line 50
-	echo T_("Developed by Ermile");                                                   // Line 50
+	echo T_("Help Center");                                                           // Line 19
+	echo T_("FAQ");                                                                   // Line 20
+	echo T_("Terms of Use");                                                          // Line 30
+	echo T_("Privacy Policy");                                                        // Line 31
+	echo T_("API");                                                                   // Line 32
+	echo T_("Tel");                                                                   // Line 43
+	echo T_("SMS");                                                                   // Line 39
+	echo T_("Website");                                                               // Line 41
+	echo T_("Software Solution Designer");                                            // Line 56
+	echo T_("Developed by Ermile");                                                   // Line 56
 
 	//-------------------------------docs\Projects\SalamQuran\content\main\header.html
 	echo T_("Magazine");                                                              // Line 12
-	echo T_("Audio");                                                                 // Line 13
-	echo T_("Namaz");                                                                 // Line 14
-	echo T_("Enter to your account and use SalamQuran account features");             // Line 15
-	echo T_("Enter");                                                                 // Line 15
+	echo T_("Audio");                                                                 // Line 14
+	echo T_("Namaz");                                                                 // Line 15
+	echo T_("Panel");                                                                 // Line 17
+	echo T_("Enter to your account and use SalamQuran account features");             // Line 19
+	echo T_("Enter");                                                                 // Line 19
 
 	//------------------------------docs\Projects\SalamQuran\content\main\sidebar.html
 	echo T_("Homepage");                                                              // Line 6
@@ -298,7 +306,8 @@ class twigTransTerms
 	echo T_("Telegram");                                                              // Line 17
 	echo T_("Instagram");                                                             // Line 20
 	echo T_("Linkedin");                                                              // Line 23
-	echo T_("Vision");                                                                // Line 33
+
+	//---------------------------docs\Projects\SalamQuran\content\mission\display.html
 
 	//-----------------------------docs\Projects\SalamQuran\content\namaz\display.html
 	echo T_("FAJR5");                                                                 // Line 15
@@ -310,6 +319,42 @@ class twigTransTerms
 	echo T_("Remain");                                                                // Line 36
 	echo T_("ISHA");                                                                  // Line 42
 	echo T_("QIYAM");                                                                 // Line 47
+
+	//---------------------------docs\Projects\SalamQuran\content\privacy\display.html
+	echo T_("What is Privacy?");                                                      // Line 6
+	echo T_("Privacy means that any individual is entitled to choose the information related to them, and selectively, share it with others.");// Line 7
+	echo T_("privacy is so important for mental peace as well as a peaceful personality that some experts have considered invasion of privacy disrespectful to human dignity.");// Line 8
+	echo T_("Controversies over the Invasion of Privacy");                            // Line 10
+	echo T_("Within e-commerce, privacy has always been from among the most controversial topics and continues to be.");// Line 11
+	echo T_("Accordingly, formulating privacy policies is regarded as one of the crucial concerns of technology companies.");// Line 11
+	echo T_("Meanwhile, widespread controversies have been provoked over invasion of privacy in e-commerce so that, occasionally, the regulations have to be revised to eliminate the existing weaknesses.");// Line 11
+	echo T_("Privacy from Our Point of View");                                        // Line 13
+	echo T_("Let us be straightforward! Cyberspace is not a safe location for personal information.");// Line 14
+	echo T_("For that reason, SalamQuran makes no request for important information of yours and allow to save some general information including age, gender, education, interests, etc is only for private use of your team or company.");// Line 15
+	echo T_("It is worth mentioning that recording the aforementioned points is totally voluntary.");// Line 15
+	echo T_("However, taking the nature of cyberspace into account, we should remember that offering an absolute assurance might not be possible.");// Line 16
+	echo T_("Assuring privacy and security, with that ideal concept we bear in mind, does not exist; and if somebody gives you an assurance of securing your privacy, he has certainly abused your trust.");// Line 16
+	echo T_("Upon buying any digital or the so-called smart device, you have invaded your own privacy yourself.");// Line 17
+	echo T_("If you want your privacy not to be invaded, you should depart from technology and say goodbye to any digital and smart device.");// Line 17
+	echo T_("In fact, we have employed all updated technologies of the world to provide you with the maximum security.");// Line 17
+	echo T_("As the final remark, we wish to assure you that our main concern is to secure your privacy and protect your information against impermissible access.");// Line 19
+
+	//-----------------------------docs\Projects\SalamQuran\content\terms\display.html
+	echo T_("Utilizing SalamQuran's services means the acceptance of and commitment to observing all the tenors of this agreement.");// Line 6
+	echo T_("It is worth mentioning that due to the insecurity of cyberspace, you should never post your vital information on either SalamQuran or any other services!");// Line 9
+	echo T_("User's personal information is strictly confidential in our service. SalamQuran preserves the information as encoded and will not under any conditions transfer it to another person.");// Line 10
+	echo T_("In case there is a request for receiving user's information by the competent authorities, according to the country the user lives in, SalamQuran will cooperate with them only upon receiving the judicial order issued by the country submitting the request.");// Line 11
+	echo T_("SalamQuran will not offer any guarantee as to the quality of the products or services presented by the stores and will not accept any responsibility in this regard!");// Line 12
+	echo T_("Users should assume responsibility for any harm, both material and immaterial, caused by direct, indirect or penal factors and due to their utilization of this service; and, SalamQuran bears no responsibility accordingly.");// Line 13
+	echo T_("SalamQuran accepts no responsibility, under any conditions, for the harms caused by users' mutual trust in each other or by the disclosure of information by users.");// Line 14
+	echo T_("SalamQuran will do its best to protect both the users' information and the service; however, regarding the lack of certainty within the cyberspace, it will not assume any responsibility for the loss of the information entered on the service.");// Line 15
+	echo T_("We will publicize our information and news only via SalamQuran's formal website. Accordingly, those who publicize any attributed news and claims, within social media and networks, must assume the responsibility and SalamQuran will not assume any responsibility.");// Line 16
+	echo T_("SalamQuran will bear no responsibility for whatsoever messages sent to users, including those indicating winning a lottery, and all our information dissemination will be through the ways of SalamQuran's contact with users.");// Line 17
+	echo T_("Any misuse of SalamQuran's trade name is prohibited and will be suable by making a complaint to the legal competent authorities.");// Line 18
+	echo T_("Furthermore, this agreement, under the name Terms and Conditions, will be available and observable, in all pages of the website. Users will be responsible for a lack of information on the most recent changes.");// Line 19
+	echo T_("It should be mentioned that in case there would be any modifications in the above-mentioned tenors, an updated version will be available for the public, and as well, all the users will be informed.");// Line 22
+
+	//----------------------------docs\Projects\SalamQuran\content\vision\display.html
 
 	//------------------------docs\Projects\SalamQuran\public_html\static\js\script.js
 
