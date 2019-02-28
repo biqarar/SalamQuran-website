@@ -301,9 +301,12 @@ class twigTransTerms
 	echo T_("Contact");                                                               // Line 32
 	echo T_("Help Center");                                                           // Line 19
 	echo T_("FAQ");                                                                   // Line 20
-	echo T_("Terms of Use");                                                          // Line 30
-	echo T_("Privacy Policy");                                                        // Line 31
-	echo T_("API");                                                                   // Line 32
+	echo T_("Terms of Use");                                                          // Line 24
+	echo T_("Privacy Policy");                                                        // Line 25
+	echo T_("API");                                                                   // Line 26
+	echo T_("Change log");                                                            // Line 30
+	echo T_("Logo");                                                                  // Line 31
+	echo T_("Magazine");                                                              // Line 12
 	echo T_("Tel");                                                                   // Line 43
 	echo T_("SMS");                                                                   // Line 39
 	echo T_("Website");                                                               // Line 41
@@ -311,7 +314,6 @@ class twigTransTerms
 	echo T_("Developed by Ermile");                                                   // Line 56
 
 	//-------------------------------docs\Projects\SalamQuran\content\main\header.html
-	echo T_("Magazine");                                                              // Line 12
 	echo T_("Audio");                                                                 // Line 14
 	echo T_("Namaz");                                                                 // Line 15
 	echo T_("Panel");                                                                 // Line 17
