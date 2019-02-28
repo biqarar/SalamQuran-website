@@ -20,7 +20,7 @@
 	margin:0;
 }
 .topnav h1 a{
-	display: inline-block;
+	display: block;
 	line-height: 40px;
 	margin: 0 10px;
 	color: rgba(255,255,255,0.8);
@@ -58,12 +58,16 @@
 .topTitle{
 	padding: 100px 1.5rem 40px;
 	text-align: center;
+	overflow:hidden;
 }
 .topTitle h2{
 	font-weight: 900;
-	font-size: 6em;
+	font-size: 4em;
 	line-height: 100px;
 	margin: 0;
+}
+body[data-page="home"] .topTitle h2{
+	font-size: 6em;
 }
 .topTitle h3{
 	line-height: 30px;
