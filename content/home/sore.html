@@ -2,16 +2,19 @@
 
 {%if requestGET.type == 'read' %}
 {%set myLine = 0%}
+  <div class="readerMode">
   {%for key, value in sura%}
 
     {%if value.line != myLine%}
     <br>
     {%set myLine = value.line%}
     {%endif%}
-
-    {{value.code}}
+    <span class="compact {{value.class_name}}">
+      {{value.code | raw}}
+    </span>
 
   {%endfor%}
+  </div>
 {%else%}
 
   {%for key, value in sura%}

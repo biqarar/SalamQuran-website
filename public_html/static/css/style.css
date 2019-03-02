@@ -5902,6 +5902,12 @@ body {
 .Quran.bookTxt .ayeBox .aye:hover {
   background-color: initial; }
 
+.Quran .readerMode {
+  font-size: 2em;
+  line-height: 1.7em;
+  direction: rtl;
+  text-align: center; }
+
 /*vcard*/
 .vcard {
   font-style: normal; }
