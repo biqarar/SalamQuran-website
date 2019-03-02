@@ -82,7 +82,7 @@ class quran_wbw
 
 			if($_aye)
 			{
-				$load       = \lib\db\quran::get(['sura' => $_id, 'aya' => $_aye]);
+				$load       = \lib\db\quran_word::get(['sura' => $_id, 'aya' => $_aye]);
 			}
 			else
 			{
@@ -110,7 +110,7 @@ class quran_wbw
 		$_id = intval($_id);
 		if(intval($_id) >= 1 && intval($_id) <= 6236 )
 		{
-			$load             = \lib\db\quran::get(['index' => $_id]);
+			$load             = \lib\db\quran_word::get(['index' => $_id]);
 			$result           = [];
 			$result['aye']    = $load;
 
@@ -138,7 +138,7 @@ class quran_wbw
 		$_id = intval($_id);
 		if(intval($_id) >= 1 && intval($_id) <= 604 )
 		{
-			$load             = \lib\db\quran::get(['page' => $_id]);
+			$load             = \lib\db\quran_word::get(['page' => $_id]);
 			$result           = [];
 			$result['aye']    = $load;
 
@@ -165,7 +165,7 @@ class quran_wbw
 		$_id = intval($_id);
 		if(intval($_id) >= 1 && intval($_id) <= 30 )
 		{
-			$load                = \lib\db\quran::get(['juz' => $_id]);
+			$load                = \lib\db\quran_word::get(['juz' => $_id]);
 			$result              = [];
 			$result['aye']       = $load;
 			$result['translate'] = self::load_translate($load, $_meta);
@@ -185,7 +185,7 @@ class quran_wbw
 		$_id = intval($_id);
 		if(intval($_id) >= 1 && intval($_id) <= 120 )
 		{
-			$load                = \lib\db\quran::get(['hezb' => $_id]);
+			$load                = \lib\db\quran_word::get(['hezb' => $_id]);
 			$result              = [];
 			$result['aye']       = $load;
 			$result['translate'] = self::load_translate($load, $_meta);
