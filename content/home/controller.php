@@ -32,7 +32,6 @@ class controller
 			$quran = \lib\app\quran::find($url, $meta);
 		}
 
-		j($quran);exit();
 		if($quran)
 		{
 			if(isset($quran['aye']) && $quran['aye'])
