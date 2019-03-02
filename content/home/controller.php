@@ -23,8 +23,16 @@ class controller
 			$meta['translate'] = \dash\request::get('t');
 		}
 
-		$quran = \lib\app\quran::find($url, $meta);
+		if(\dash\request::get('type') && \dash\request::get('type') === 'read')
+		{
+			$quran = \lib\app\quran_wbw::find($url, $meta);
+		}
+		else
+		{
+			$quran = \lib\app\quran::find($url, $meta);
+		}
 
+		j($quran);exit();
 		if($quran)
 		{
 			if(isset($quran['aye']) && $quran['aye'])
