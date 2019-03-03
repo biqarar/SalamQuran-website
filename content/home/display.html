@@ -5,9 +5,17 @@
 {%block page%}
 
     {%if sura%}
+
       {%include 'content/home/sore.html'%}
+
+    {%elseif requesetGET.type == 'read'%}
+
+      {%include 'content/home/sure-font.html'%}
+
     {%else%}
+
       {%include 'content/home/list-sore.html'%}
+
     {%endif%}
 
 {%endblock%}

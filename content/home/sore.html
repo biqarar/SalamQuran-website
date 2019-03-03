@@ -1,46 +1,29 @@
 <div class='Quran'>
 
-{%if requestGET.type == 'read' %}
-{%set myLine = 0%}
-  <div class="readerMode">
-  {%for key, value in sura%}
+{%for key, value in sura%}
 
-    {%if value.line != myLine%}
-    <br>
-    {%set myLine = value.line%}
-    {%endif%}
-    <span class="compact {{value.class_name}}">
-      {{value.code | raw}}
-    </span>
-
-  {%endfor%}
-  </div>
+{%if loop.index == 1%}
+{%if value.sura == 1%}
 {%else%}
-
-  {%for key, value in sura%}
-
-  {%if loop.index == 1%}
-  {%if value.sura == 1%}
-  {%else%}
-    <div class='besmellah'>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
-  {%endif%}
-  {%endif%}
-
-    <div class='ayeBox msg' id='{{value.aya}}'>
-      <div class='aye'>
-        <span class='text' data-kerkere='[data-aye-meta="{{value.aya}}"]'>{{value.text}}</span>
-        <a class='ayeNum' href='{{url.kingdom}}/{{value.sura}}#{{value.aya}}'>﴿{{value.aya | fitNumber}}﴾</a>
-      </div>
-      {%if translateList[value.index]['text']%}
-      <p>{{translateList[value.index]['text']}}</p>
-      {%endif%}
-      <div class='meta' data-aye-meta='{{value.aya}}'>
-        <abbr title='{%trans "Quran"%} - {%trans "Sore"%}{{value.sura}} {{value.suraName}} - {%trans "Aye"%}{{value.aya}}'>{{value.simple}}</abbr>
-      </div>
-
-    </div>
-  {%endfor%}
+  <div class='besmellah'>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
 {%endif%}
+{%endif%}
+
+  <div class='ayeBox msg' id='{{value.aya}}'>
+    <div class='aye'>
+      <span class='text' data-kerkere='[data-aye-meta="{{value.aya}}"]'>{{value.text}}</span>
+      <a class='ayeNum' href='{{url.kingdom}}/{{value.sura}}#{{value.aya}}'>﴿{{value.aya | fitNumber}}﴾</a>
+    </div>
+    {%if translateList[value.index]['text']%}
+    <p>{{translateList[value.index]['text']}}</p>
+    {%endif%}
+    <div class='meta' data-aye-meta='{{value.aya}}'>
+      <abbr title='{%trans "Quran"%} - {%trans "Sore"%}{{value.sura}} {{value.suraName}} - {%trans "Aye"%}{{value.aya}}'>{{value.simple}}</abbr>
+    </div>
+
+  </div>
+{%endfor%}
+
 </div>
 
 {%for key, value in suraDetail%}

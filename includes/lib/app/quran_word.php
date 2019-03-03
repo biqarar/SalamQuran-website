@@ -2,7 +2,7 @@
 namespace lib\app;
 
 
-class quran_wbw
+class quran_word
 {
 	public static $find_by = null;
 	public static $key1    = null;

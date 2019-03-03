@@ -25,7 +25,7 @@ class controller
 
 		if(\dash\request::get('type') && \dash\request::get('type') === 'read')
 		{
-			$quran = \lib\app\quran_wbw::find($url, $meta);
+			$quran = \lib\app\quran_word::find($url, $meta);
 		}
 		else
 		{
