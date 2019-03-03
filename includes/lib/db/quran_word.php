@@ -5,39 +5,19 @@ namespace lib\db;
 class quran_word
 {
 
-	// public static function insert()
-	// {
-	// 	return \dash\db\config::public_insert('quran_word', ...func_get_args());
-	// }
-
-
-	// public static function multi_insert()
-	// {
-	// 	return \dash\db\config::public_multi_insert('quran_word', ...func_get_args());
-	// }
-
-
-	// public static function update()
-	// {
-	// 	return \dash\db\config::public_update('quran_word', ...func_get_args());
-	// }
-
-
-	public static function get()
+	public static function get_db_data_name()
 	{
-		return \dash\db\config::public_get('quran_word', ...func_get_args());
+		if(defined('db_data_name'))
+		{
+			return db_data_name;
+		}
+		return true;
 	}
 
-	public static function get_count()
+	public static function get($_where, $_option = [])
 	{
-		return \dash\db\config::public_get_count('quran_word', ...func_get_args());
-	}
-
-
-	public static function search()
-	{
-		$result = \dash\db\config::public_search('quran_word', ...func_get_args());
-		return $result;
+		$_option['db_name'] = self::get_db_data_name();
+		return \dash\db\config::public_get('1_quran_word', $_where, $_option);
 	}
 
 }

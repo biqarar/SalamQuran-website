@@ -3,9 +3,9 @@ require_once('social.php');
 require_once('payment.php');
 require_once('sms.php');
 
-if(!defined('db_trans_name'))
+if(!defined('db_data_name'))
 {
-	define('db_trans_name', 'SalamQuran_translate');
+	define('db_data_name', 'salamquran_data');
 }
 
 
