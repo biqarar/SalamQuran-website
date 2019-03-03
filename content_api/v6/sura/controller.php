@@ -20,6 +20,21 @@ class controller
 		{
 			\content_api\v6::no(404);
 		}
+
+		$index = \dash\request::get('index');
+		if(!$index)
+		{
+			\content_api\v6::no(400, T_("Index not set"));
+		}
+
+		if(!ctype_digit($index) || intval($index) < 1 || intval($index) > 114)
+		{
+			\content_api\v6::no(400, T_("Invalid index"));
+		}
+
+		$sura = \lib\db\quran::get(['sura' => $index]);
+
+		\content_api\v6::bye($sura);
 	}
 
 
