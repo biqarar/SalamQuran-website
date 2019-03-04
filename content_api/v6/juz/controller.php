@@ -1,5 +1,5 @@
 <?php
-namespace content_api\v6\sura;
+namespace content_api\v6\juz;
 
 
 class controller
