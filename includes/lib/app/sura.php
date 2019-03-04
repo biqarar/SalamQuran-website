@@ -10,7 +10,7 @@ class sura
 		$load             = \lib\db\quran::get(['sura' => $_id]);
 		$result           = [];
 		$result['aye']    = $load;
-		$result['detail'] = \lib\db\sure::get(['index' => $_id, 'limit' => 1]);
+		$result['detail'] = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
 		return $result;
 	}
 }

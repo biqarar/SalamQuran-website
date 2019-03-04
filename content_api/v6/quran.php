@@ -18,6 +18,29 @@ class quran
 		}
 	}
 
+	private static function check_limit()
+	{
+		$limit = \dash\request::get('limit');
+		if($limit && !ctype_digit($limit))
+		{
+			\content_api\v6::no(400, T_("Invalid limit"));
+		}
+
+		if($limit)
+		{
+			$limit = intval($limit);
+
+			if($limit < 0)
+			{
+				\content_api\v6::no(400, T_("Invalid limit"));
+			}
+
+			return $limit;
+		}
+
+		return null;
+	}
+
 
 	private static function sura()
 	{
@@ -60,13 +83,62 @@ class quran
 			\content_api\v6::no(400, T_("Invalid index"));
 		}
 
+		$limit = self::check_limit();
+
+		$count_aya = 0;
+
+		$get_sure_detail = \lib\db\sura::get(['index' => $index, 'limit' => 1]);
+
+		if(isset($get_sure_detail['ayas']))
+		{
+			$count_aya = intval($get_sure_detail['ayas']);
+		}
+
+		if(!$limit || $limit > 20)
+		{
+			if($count_aya < 30 )
+			{
+				$limit = $count_aya;
+			}
+			else
+			{
+				$limit = 20;
+			}
+		}
+
+		$start = \dash\request::get('start');
+		if($start && !ctype_digit($start))
+		{
+			\content_api\v6::no(400, T_("Invalid start"));
+		}
+
+		if(!$start)
+		{
+			$start = 0;
+		}
+
+		if($start)
+		{
+			$start = intval($start);
+			if($start < 0)
+			{
+				\content_api\v6::no(400, T_("Invalid start"));
+			}
+
+			if($start > $count_aya)
+			{
+				\content_api\v6::no(400, T_("Start larger than count aya"));
+			}
+		}
+
+
 		if($wbw)
 		{
-			$sura = \lib\db\quran_word::get(['sura' => $index]);
+			$sura = \lib\db\quran_word::get(['sura' => $index, 'limit' => $limit, '1.1' => [' = 1.1 AND ', " `aya` >= $start "]]);
 		}
 		else
 		{
-			$sura = \lib\db\quran::get(['sura' => $index]);
+			$sura = \lib\db\quran::get(['sura' => $index, 'limit' => $limit, '1.1' => [' = 1.1 AND ', " `aya` >= $start "]]);
 		}
 
 		\content_api\v6::bye($sura);

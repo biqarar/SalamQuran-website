@@ -91,7 +91,7 @@ class quran_word
 
 			$result           = [];
 			$result['aye']    = $load;
-			$result['detail'] = \lib\db\sure::get(['index' => $_id, 'limit' => 1]);
+			$result['detail'] = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
 
 			$result['translate'] = self::load_translate($load, $_meta);
 
@@ -116,7 +116,7 @@ class quran_word
 
 			if(isset($load[0]['sura']))
 			{
-				$result['detail'] = \lib\db\sure::get(['index' => $load[0]['sura'], 'limit' => 1]);
+				$result['detail'] = \lib\db\sura::get(['index' => $load[0]['sura'], 'limit' => 1]);
 			}
 
 			$result['translate'] = self::load_translate($load, $_meta);
@@ -144,7 +144,7 @@ class quran_word
 
 			if(isset($load[0]['sura']))
 			{
-				$result['detail'] = \lib\db\sure::get(['index' => $load[0]['sura'], 'limit' => 1]);
+				$result['detail'] = \lib\db\sura::get(['index' => $load[0]['sura'], 'limit' => 1]);
 			}
 
 			$result['translate'] = self::load_translate($load, $_meta);

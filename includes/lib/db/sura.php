@@ -2,7 +2,7 @@
 namespace lib\db;
 
 
-class sure
+class sura
 {
 	public static function get($_where, $_option = [])
 	{
