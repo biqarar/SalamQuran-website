@@ -8,8 +8,7 @@
           </h1>
         </div>
         <div class="c os links txtRa">
-
-          <a href="{{url.kingdom}}/mag">{{lang.current}}</a>
+          {{langList({'html':true, 'class': 'compact'}) | raw}}
           <a href="{{url.kingdom}}/mag">{%trans "Magazine"%}</a>
           <a href="{{url.kingdom}}/about">{%trans "About"%}</a>
           <!-- <a href="{{url.kingdom}}/audio">{%trans "Audio"%}</a> -->
