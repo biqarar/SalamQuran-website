@@ -3,10 +3,12 @@
 	.rtl #page{margin-right: 0;}
 	.ltr #sidebar{left: -5rem;}
 	.rtl #sidebar{right: -5rem;}
-	#header .sidenavHandler{display: block;}
+	#header {min-height: auto;}
+	#header .sidenavHandler{display: inline-block;}
+	#header .links a{display: none;}
 
 	.topTitle{padding-top:50px; }
-	.topTitle h2{font-size: 2em;line-height:2em;}
-	.topTitle h3{font-size: 1.4em;}
+	.topTitle h2{font-size: 2em!important;line-height:2em;}
+	.topTitle h3{font-size: 1.4em!important;}
 
 }

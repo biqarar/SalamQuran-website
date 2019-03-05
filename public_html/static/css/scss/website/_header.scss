@@ -83,9 +83,6 @@ body[data-page="home"] .topTitle h3{
 
 
 // sidenavHandler
-#header .sidenavHandler{
-	display: none;
-}
 .sidenavHandler{
 	width: 50px;
 	min-width: 50px!important;
@@ -93,13 +90,14 @@ body[data-page="home"] .topTitle h3{
 	height: 50px;
 	line-height: 50px;
 	display: block;
-	color: #777;
+	color: #eee;
 	padding: 1.5rem 1rem;
 	transition: 0.3s;
 	cursor: pointer !important;
+	vertical-align: middle;
 }
 .sidenavHandler:hover{
-	color: #aaa;
+	color: #fff;
 	background-color: rgba(0,0,0,0.5);
 }
 .sidenavHandler:before,
@@ -107,14 +105,20 @@ body[data-page="home"] .topTitle h3{
 {
 	content: '';
 	display: block;
-	background: #aaa;
+	background: #eee;
 	height: 2px;
 }
 .sidenavHandler span{
-	background: #aaa;
+	background: #eee;
 	display: block;
 	height: 2px;
 	margin: 6px 0;
+}
+#header .sidenavHandler{
+	display: none;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 0.25rem;
+	margin-top: -10px;
 }
 
 

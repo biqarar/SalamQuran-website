@@ -6039,9 +6039,6 @@ body[data-page="home"] .topTitle h2 {
 body[data-page="home"] .topTitle h3 {
   font-size: 1.7em; }
 
-#header .sidenavHandler {
-  display: none; }
-
 .sidenavHandler {
   width: 50px;
   min-width: 50px !important;
@@ -6049,27 +6046,34 @@ body[data-page="home"] .topTitle h3 {
   height: 50px;
   line-height: 50px;
   display: block;
-  color: #777;
+  color: #eee;
   padding: 1.5rem 1rem;
   transition: 0.3s;
-  cursor: pointer !important; }
+  cursor: pointer !important;
+  vertical-align: middle; }
 
 .sidenavHandler:hover {
-  color: #aaa;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.5); }
 
 .sidenavHandler:before,
 .sidenavHandler:after {
   content: '';
   display: block;
-  background: #aaa;
+  background: #eee;
   height: 2px; }
 
 .sidenavHandler span {
-  background: #aaa;
+  background: #eee;
   display: block;
   height: 2px;
   margin: 6px 0; }
+
+#header .sidenavHandler {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+  margin-top: -10px; }
 
 #sidebar {
   max-width: 400px;
@@ -6370,18 +6374,24 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   .rtl #sidebar {
     right: -5rem; }
 
+  #header {
+    min-height: auto; }
+
   #header .sidenavHandler {
-    display: block; }
+    display: inline-block; }
+
+  #header .links a {
+    display: none; }
 
   .topTitle {
     padding-top: 50px; }
 
   .topTitle h2 {
-    font-size: 2em;
+    font-size: 2em !important;
     line-height: 2em; }
 
   .topTitle h3 {
-    font-size: 1.4em; } }
+    font-size: 1.4em !important; } }
 /* Design for print */
 
 /*# sourceMappingURL=style.css.map */
