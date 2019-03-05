@@ -17,9 +17,12 @@ body{
 }
 .wrapper{
 	padding: 5rem 0;
-	font-size: 1.3em;
+	font-size: 1.4em;
+	line-height: 1.7em;
 }
-
+.rtl .wrapper{
+	line-height: 2em;
+}
 .ltr #page{
 	margin-left: 5rem;
 }
@@ -108,5 +111,14 @@ body{
 .vcard .adr{padding:1em 0}
 .vcard .adr div, .vcard .adr span, .vcard .email, .vcard .tel{display:block;padding:0.5em}
 .vcard .adr span{display:inline-block;}
+
+
+/*quote design*/
+.quoteBox1{max-width:500px;position:relative;margin:5em auto;min-height:150px;font-size:2rem;color: #333;}
+.quoteBox1 p{font-weight:100}
+/*.quoteBox1:before{position:absolute;top:0;font-size:350px;font-size:17em;color:#2fbfdf;font-family:Arial;font-weight:700;line-height:300px;right:-200px;content:'\201d'}*/
+.quoteBox1:after{position:absolute;top:0;font-size:350px;color:#2fbfdf;font-family:Arial;font-weight:700;line-height:300px;left:-200px;content:'\201c'}
+.quoteBox1 h4{display:block;color:#2fbfdf;font-weight:700;font-size:.9em}
+.quoteBox1 abbr{font-size:.7em;color:#b6b6b6;font-weight:700}
 
 
