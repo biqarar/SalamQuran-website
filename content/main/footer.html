@@ -15,6 +15,27 @@
       </nav>
 
       <nav class="c s6">
+        <a href="{{url.kingdom}}/donate">{%trans "Donate"%}</a>
+        <a href="{{url.kingdom}}/developers">{%trans "Developers"%}</a>
+        <a href="{{url.kingdom}}/blog">{%trans "Blog"%}</a>
+
+{%if login.id%}
+        <a href="{{url.kingdom}}/a">{%trans "Panel"%}</a>
+{%else%}
+        <a href="{{url.kingdom}}/enter" >{%trans "Enter"%}</a>
+{%endif%}
+
+      </nav>
+
+
+      <nav class="c s6">
+        <a href="{{url.kingdom}}/telegram">{%trans "Telegram Bot"%}</a>
+        <a href="{{url.kingdom}}/apps">{%trans "Mobile Apps"%}</a>
+        <a href="{{url.kingdom}}/apps/android">{%trans "Android Apps"%}</a>
+        <a href="{{url.kingdom}}/apps/ios">{%trans "iOS Apps"%}</a>
+      </nav>
+
+      <nav class="c s6">
         <a href="{{url.kingdom}}/contact">{%trans "Contact"%}</a>
         <a href="{{url.kingdom}}/support" data-direct>{%trans "Help Center"%}</a>
         <a href="{{url.kingdom}}/support/faq" data-direct>{%trans "FAQ"%}</a>
