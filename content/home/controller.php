@@ -18,7 +18,7 @@ class controller
 
 		$meta = [];
 
-		if(\dash\request::get('t') && ctype_digit(\dash\request::get('t')))
+		if(\dash\request::get('t'))
 		{
 			$meta['translate'] = \dash\request::get('t');
 		}

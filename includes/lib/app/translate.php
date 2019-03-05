@@ -32,9 +32,12 @@ class translate
 
 		foreach ($list as $key => $value)
 		{
-			if(isset($value['id']) && intval($value['id']) === intval($_id))
+			if(isset($value['index']) && isset($value['language']))
 			{
-				return $key;
+				if(substr($_id, 0, 2) === $value['language'] && intval(substr($_id, 2)) === $value['index'])
+				{
+					return $key;
+				}
 			}
 		}
 		return false;
