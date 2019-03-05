@@ -6031,9 +6031,13 @@ body[data-page="home"] .topTitle h2 {
   font-size: 6em; }
 
 .topTitle h3 {
+  font-size: 1.4em;
   line-height: 30px;
   font-weight: 100;
   margin: 0; }
+
+body[data-page="home"] .topTitle h3 {
+  font-size: 1.7em; }
 
 #header .sidenavHandler {
   display: none; }
