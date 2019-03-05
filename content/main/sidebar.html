@@ -24,12 +24,22 @@
 
     </footer>
   </nav>
-  <nav class="menu">
-    <ul>
-      <li><a href="{{url.kingdom}}">{{site.title}}</a></li>
-      <li><a href="{{url.kingdom}}/about">{%trans "About"%}</a></li>
-      <li><a href="{{url.kingdom}}/contact">{%trans "Contact"%}</a></li>
-      <li><a href="{{url.kingdom}}/vision">{%trans "Vision"%}</a></li>
-    </ul>
-  </nav>
+  <div class="menu">
+    <nav>
+      <a href="{{url.kingdom}}">{{site.title}}</a>
+      <a href="{{url.kingdom}}/about">{%trans "About"%}</a>
+      <a href="{{url.kingdom}}/donate">{%trans "Donate"%}</a>
+      <a href="{{url.kingdom}}/mag">{%trans "Magazine"%}</a>
+      <!-- <a href="{{url.kingdom}}/audio">{%trans "Audio"%}</a> -->
+      <!-- <a href="{{url.kingdom}}/namaz">{%trans "Namaz"%}</a> -->
+
+{%if login.id%}
+          <a class="special" href="{{url.kingdom}}/a">{%trans "Panel"%}</a>
+{%else%}
+          <a class="special" href="{{url.kingdom}}/enter" title='{%trans "Enter to your account and use SalamQuran account features"%}'>{%trans "Enter"%}</a>
+{%endif%}
+
+    </nav>
+
+  </div>
 </aside>
