@@ -8,50 +8,45 @@
     </a>
 
     <div class="f footerNav">
+
       <nav class="c s6">
         <a href="{{url.kingdom}}/about">{%trans "About"%} {{site.title}}</a>
         <a href="{{url.kingdom}}/mission">{%trans "Mission"%}</a>
         <a href="{{url.kingdom}}/vision">{%trans "Vision"%}</a>
-      </nav>
-
-      <nav class="c s6">
-        <a href="{{url.kingdom}}/donate">{%trans "Donate"%}</a>
-        <a href="{{url.kingdom}}/developers">{%trans "Developers"%}</a>
-        <a href="{{url.kingdom}}/blog">{%trans "Blog"%}</a>
-
-{%if login.id%}
-        <a href="{{url.kingdom}}/a">{%trans "Panel"%}</a>
-{%else%}
-        <a href="{{url.kingdom}}/enter" >{%trans "Enter"%}</a>
-{%endif%}
-
-      </nav>
-
-
-      <nav class="c s6">
-        <a href="{{url.kingdom}}/telegram">{%trans "Telegram Bot"%}</a>
-        <a href="{{url.kingdom}}/apps">{%trans "Mobile Apps"%}</a>
-        <a href="{{url.kingdom}}/apps/android">{%trans "Android Apps"%}</a>
-        <a href="{{url.kingdom}}/apps/ios">{%trans "iOS Apps"%}</a>
-      </nav>
-
-      <nav class="c s6">
-        <a href="{{url.kingdom}}/contact">{%trans "Contact"%}</a>
-        <a href="{{url.kingdom}}/support" data-direct>{%trans "Help Center"%}</a>
-        <a href="{{url.kingdom}}/support/faq" data-direct>{%trans "FAQ"%}</a>
-      </nav>
-
-      <nav class="c s6">
         <a href="{{url.kingdom}}/terms">{%trans "Terms of Use"%}</a>
         <a href="{{url.kingdom}}/privacy">{%trans "Privacy Policy"%}</a>
-        <a href="{{url.kingdom}}/api/v6/doc" data-direct>{%trans "API"%}</a>
-      </nav>
-
-      <nav class="c s6">
         <a href="{{url.kingdom}}/changelog">{%trans "Change log"%}</a>
         <a href="{{url.kingdom}}/logo">{%trans "Logo"%}</a>
-        <a href="{{url.kingdom}}/mag">{%trans "Magazine"%}</a>
       </nav>
+
+
+      <nav class="c s6">
+
+        <a href="{{url.kingdom}}/mag">{%trans "Magazine"%}</a>
+        <a href="{{url.kingdom}}/blog">{%trans "Blog"%}</a>
+        <a href="{{url.kingdom}}/support" data-direct>{%trans "Help Center"%}</a>
+        <a href="{{url.kingdom}}/support/faq" data-direct>{%trans "FAQ"%}</a>
+        <a href="{{url.kingdom}}/contact">{%trans "Contact"%}</a>
+      </nav>
+
+{%if false%}
+      <nav class="c s6">
+        <a href="{{url.kingdom}}/donate">{%trans "Donate"%}</a>
+        <a href="{{url.kingdom}}/aye">{%trans "Aye of the day"%}</a>
+        <a href="{{url.kingdom}}/random">{%trans "Random aye"%}</a>
+        <a href="{{url.kingdom}}/page">{%trans "Donate"%}</a>
+      </nav>
+{%endif%}
+
+
+      <nav class="c s6">
+        <a href="{{url.kingdom}}/api/v6/doc" data-direct>{%trans "API"%}</a>
+        <a href="{{url.kingdom}}/developers">{%trans "Developers"%}</a>
+        <a href="{{url.kingdom}}/telegram">{%trans "Telegram Bot"%}</a>
+        <a href="{{url.kingdom}}/apps">{%trans "Mobile Apps"%}</a>
+      </nav>
+
+
 
       <nav class="c3 s12">
 {%if lang.current == "fa"%}
@@ -62,6 +57,12 @@
         <a class="txtLa" href="{{url.kingdom}}"><i class="compact mRa10 sf-envelope"></i><span class="s0">{%trans "Website"%}</span><span class="txtB floatRa">{{url.base}}</span></a>
         <a class="txtLa" href="mailto:info@ermile.com"><i class="compact mRa10 sf-envelope"></i><span class="s0">{%trans "Email"%}</span><span class="txtB floatRa">info@ermile.com</span></a>
         <a class="txtLa" href="tel:00982536505460"><i class="compact mRa10 sf-phone"></i><span class="s0">{%trans "Tel"%}</span><span class="txtB floatRa">{{"0098-025-3650-5460" | fitNumber(false)}}</span></a>
+{%endif%}
+
+{%if login.id%}
+        <a href="{{url.kingdom}}/a">{%trans "Enter to Panel"%}</a>
+{%else%}
+        <a href="{{url.kingdom}}/enter" >{%trans "Enter"%}</a>
 {%endif%}
       </nav>
 
