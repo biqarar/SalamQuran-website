@@ -26,17 +26,17 @@
   </nav>
   <div class="menu">
     <nav>
-      <a href="{{url.kingdom}}">{{site.title}}</a>
-      <a href="{{url.kingdom}}/about">{%trans "About"%}</a>
-      <a href="{{url.kingdom}}/donate">{%trans "Donate"%}</a>
-      <a href="{{url.kingdom}}/mag">{%trans "Magazine"%}</a>
-      <!-- <a href="{{url.kingdom}}/audio">{%trans "Audio"%}</a> -->
-      <!-- <a href="{{url.kingdom}}/namaz">{%trans "Namaz"%}</a> -->
+      <a href="{{url.kingdom}}"><span class="compact pRa10 sf-home"></span>{{site.title}}</a>
+      <a href="{{url.kingdom}}/about"><span class="compact pRa10 sf-quote-right"></span>{%trans "About"%}</a>
+      <a href="{{url.kingdom}}/donate"><span class="compact pRa10 sf-heart"></span>{%trans "Donate"%}</a>
+      <a href="{{url.kingdom}}/mag"><span class="compact pRa10 sf-book"></span>{%trans "Magazine"%}</a>
+      <!-- <a href="{{url.kingdom}}/audio"><span class="compact pRa10 sf-microphone"></span>{%trans "Audio"%}</a> -->
+      <!-- <a href="{{url.kingdom}}/namaz"><span class="compact pRa10 sf-plug"></span>{%trans "Namaz"%}</a> -->
 
 {%if login.id%}
-          <a class="special" href="{{url.kingdom}}/a">{%trans "Panel"%}</a>
+          <a class="special" href="{{url.kingdom}}/a"><span class="compact pRa10 sf-diamond"></span>{%trans "Panel"%}</a>
 {%else%}
-          <a class="special" href="{{url.kingdom}}/enter" title='{%trans "Enter to your account and use SalamQuran account features"%}'>{%trans "Enter"%}</a>
+          <a class="special" href="{{url.kingdom}}/enter"><span class="compact pRa10 sf-enter"></span>{%trans "Enter"%}</a>
 {%endif%}
 
     </nav>
