@@ -93,13 +93,19 @@ class quran_word
 			$translate_raw = self::load_translate($load, $_meta);
 			$translate     = [];
 
-			if($translate_raw && is_array($translate_raw))
+			$translate_detail = $translate_raw;
+			unset($translate_detail['data']);
+			unset($translate_detail['table_name']);
+			unset($translate_detail['id']);
+
+			if(isset($translate_raw['data']) && is_array($translate_raw['data']))
 			{
-				foreach ($translate_raw as $key => $value)
+				foreach ($translate_raw['data'] as $key => $value)
 				{
 					if(!isset($translate[$value['sura'].'_'. $value['aya']]))
 					{
-						$translate[$value['sura'].'_'. $value['aya']]['text'] = $value['text'];
+						$translate[$value['sura'].'_'. $value['aya']]['text']   = $value['text'];
+						$translate[$value['sura'].'_'. $value['aya']]['detail'] = $translate_detail;
 					}
 				}
 			}
@@ -155,7 +161,7 @@ class quran_word
 
 			$result['detail'] = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
 
-			// \dash\notif::api($result);
+			\dash\notif::api($result);
 
 			self::$find_by    = 'sure';
 			return $result;
@@ -285,8 +291,9 @@ class quran_word
 			return null;
 		}
 
-		$table_name = \lib\app\translate::table_name($_meta['translate']);
-		if(!$table_name)
+		$translate = \lib\app\translate::table_name($_meta['translate']);
+
+		if(!isset($translate['table_name']))
 		{
 			return null;
 		}
@@ -301,8 +308,9 @@ class quran_word
 
 		if($sura && $aya)
 		{
-			$load = \lib\db\translate::load($table_name, ['sura' => ["IN", "(". implode(',', $sura).")"], 'aya' => ["IN", "(". implode(',', $aya).")"]]);
-			return $load;
+			$load = \lib\db\translate::load($translate['table_name'], ['sura' => ["IN", "(". implode(',', $sura).")"], 'aya' => ["IN", "(". implode(',', $aya).")"]]);
+			$translate['data'] = $load;
+			return $translate;
 		}
 
 		return null;
