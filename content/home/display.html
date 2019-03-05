@@ -4,13 +4,13 @@
 
 {%block page%}
 
-    {%if sura%}
+    {%if sura and requestGET.type != 'read'%}
 
       {%include 'content/home/sore.html'%}
 
-    {%elseif requesetGET.type == 'read'%}
+    {%elseif sura and requestGET.type == 'read'%}
 
-      {%include 'content/home/sure-font.html'%}
+      {%include 'content/home/sore-font.html'%}
 
     {%else%}
 
