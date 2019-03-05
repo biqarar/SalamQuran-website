@@ -6273,7 +6273,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   text-align: center; }
 
 #footer .footerNav > nav {
-  padding: 0 1em;
+  padding: 0 0.5em;
   margin-bottom: 1em; }
 
 #footer .footerNav a {
