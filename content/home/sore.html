@@ -11,8 +11,10 @@
 
       <a class='ayeNum' href='{{url.kingdom}}/{{value.detail.sura}}#{{value.detail.aya}}'>﴿{{value.detail.aya | fitNumber}}﴾</a>
     </div>
-    {%if translateList[value.detail.index]['text']%}
-    <p>{{translateList[value.detail.index]['text']}}</p>
+    {%if value.detail.translate%}
+      {%for k, v in value.detail.translate%}
+        <p>{{v.text}}</p>
+      {%endfor%}
     {%endif%}
     <div class='meta' data-aye-meta='{{value.detail.aya}}'>
       <abbr title='{%trans "Quran"%} - {%trans "Sore"%}{{value.detail.sura}} {{value.suraName}} - {%trans "Aye"%}{{value.aya}}'>{{value.simple}}</abbr>

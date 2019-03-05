@@ -90,6 +90,20 @@ class quran_word
 				$load = \lib\db\quran_word::get(['sura' => $_id]);
 			}
 
+			$translate_raw = self::load_translate($load, $_meta);
+			$translate     = [];
+
+			if($translate_raw && is_array($translate_raw))
+			{
+				foreach ($translate_raw as $key => $value)
+				{
+					if(!isset($translate[$value['sura'].'_'. $value['aya']]))
+					{
+						$translate[$value['sura'].'_'. $value['aya']]['text'] = $value['text'];
+					}
+				}
+			}
+
 			if(isset($_meta['mode']) && $_meta['mode'] === 'quran')
 			{
 				$quran = [];
@@ -112,6 +126,12 @@ class quran_word
 				{
 					if(!isset($quran['aya'][$value['aya']]['detail']))
 					{
+						$aya_translate = [];
+						if(isset($translate[$value['sura']. '_'. $value['aya']]))
+						{
+							$aya_translate[] = $translate[$value['sura']. '_'. $value['aya']];
+						}
+
 						$quran['aya'][$value['aya']]['detail'] =
 						[
 							'aya'       => $value['aya'],
@@ -119,6 +139,7 @@ class quran_word
 							'verse_key' => $value['verse_key'],
 							'page'      => $value['page'],
 							'audio'     => null,
+							'translate' => $aya_translate,
 						];
 					}
 
@@ -134,7 +155,7 @@ class quran_word
 
 			$result['detail'] = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
 
-			$result['translate'] = self::load_translate($load, $_meta);
+			// \dash\notif::api($result);
 
 			self::$find_by    = 'sure';
 			return $result;
@@ -270,17 +291,17 @@ class quran_word
 			return null;
 		}
 
-		$indexs = array_column($_data, 'index');
-		$indexs = array_filter($indexs);
-		$indexs = array_unique($indexs);
+		$sura = array_column($_data, 'sura');
+		$sura = array_filter($sura);
+		$sura = array_unique($sura);
 
-		if($indexs)
+		$aya = array_column($_data, 'aya');
+		$aya = array_filter($aya);
+		$aya = array_unique($aya);
+
+		if($sura && $aya)
 		{
-			$load = \lib\db\translate::load($table_name, ['index' => ["IN", "(". implode(',', $indexs).")"]]);
-			if(is_array($load))
-			{
-				$load = array_combine(array_column($load, 'index'), $load);
-			}
+			$load = \lib\db\translate::load($table_name, ['sura' => ["IN", "(". implode(',', $sura).")"], 'aya' => ["IN", "(". implode(',', $aya).")"]]);
 			return $load;
 		}
 
