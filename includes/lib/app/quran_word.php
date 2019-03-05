@@ -90,6 +90,7 @@ class quran_word
 				$load = \lib\db\quran_word::get(['sura' => $_id]);
 			}
 
+
 			$translate_raw = self::load_translate($load, $_meta);
 			$translate     = [];
 
@@ -113,16 +114,27 @@ class quran_word
 			if(isset($_meta['mode']) && $_meta['mode'] === 'quran')
 			{
 				$quran = [];
+
 				foreach ($load as $key => $value)
 				{
-					if(!isset($quran['line_'. $value['line']]))
+					if(!isset($quran['line'][$value['page']. '_'. $value['line']]['detail']))
 					{
-						$quran['line_'. $value['line']] = [];
+						$quran['line'][$value['page']. '_'. $value['line']]['detail'] =
+						[
+							'sura'      => $value['sura'],
+							'page'      => $value['page'],
+							'audio'     => null,
+						];
 					}
 
-					$quran['line_'. $value['line']][] = $value;
+					if(!isset($quran['line'][$value['page']. '_'. $value['line']]['word']))
+					{
+						$quran['line'][$value['page']. '_'. $value['line']]['word'] = [];
+					}
+
+					$quran['line'][$value['page']. '_'. $value['line']]['word'][] = $value;
 				}
-				$result['line']    = $quran;
+				$result['text']    = $quran;
 			}
 			else
 			{

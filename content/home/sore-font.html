@@ -1,22 +1,21 @@
 <div class='Quran'>
 
+{%for key, value in quranLoaded.text.line%}
 
-{%set myLine = 0%}
-  <div class="readerMode">
-  {%for key, value in sura%}
+  <div class='readerMode'>
 
-    {%if value.line != myLine%}
-    <br>
-    {%set myLine = value.line%}
-    {%endif%}
-    <span class="compact {{value.class_name}}">
-      {{value.code | raw}}
-    </span>
+    <div class='aye-line block'>
+      {%for k, v in value.word%}
+        <span class='compact {{v.class_name}}'>{{v.code | raw}}</span>
+      {%endfor%}
+    </div>
 
-  {%endfor%}
   </div>
+{%endfor%}
+
 
 </div>
+
 
 {%for key, value in suraDetail%}
 <span class="badge">{{key}} : {{value}}</span>
