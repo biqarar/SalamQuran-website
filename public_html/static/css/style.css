@@ -5459,7 +5459,8 @@ Version       1.0.0
   line-height: 1;
   font-size: 25px;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle; }
 
 .icon-surah59:before {
   content: "\E900"; }
