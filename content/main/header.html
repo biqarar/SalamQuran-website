@@ -8,14 +8,16 @@
           </h1>
         </div>
         <div class="c os links txtRa">
+
+          <a href="{{url.kingdom}}/mag">{{lang.current}}</a>
           <a href="{{url.kingdom}}/mag">{%trans "Magazine"%}</a>
           <a href="{{url.kingdom}}/about">{%trans "About"%}</a>
           <!-- <a href="{{url.kingdom}}/audio">{%trans "Audio"%}</a> -->
           <!-- <a href="{{url.kingdom}}/namaz">{%trans "Namaz"%}</a> -->
 {%if login.id%}
-          <a class="special" href="{{url.kingdom}}/a">{%trans "Panel"%}</a>
+          <a class="special" data-direct href="{{url.kingdom}}/a">{%trans "Panel"%}</a>
 {%else%}
-          <a class="special" href="{{url.kingdom}}/enter" title='{%trans "Enter to your account and use SalamQuran account features"%}'>{%trans "Enter"%}</a>
+          <a class="special" data-direct href="{{url.kingdom}}/enter" title='{%trans "Enter to your account and use SalamQuran account features"%}'>{%trans "Enter"%}</a>
 {%endif%}
           <div class='sidenavHandler'><span></span></div>
         </div>

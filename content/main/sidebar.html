@@ -34,9 +34,9 @@
       <!-- <a href="{{url.kingdom}}/namaz"><span class="compact pRa10 sf-plug"></span>{%trans "Namaz"%}</a> -->
 
 {%if login.id%}
-          <a class="special" href="{{url.kingdom}}/a"><span class="compact pRa10 sf-diamond"></span>{%trans "Panel"%}</a>
+          <a class="special" data-direct href="{{url.kingdom}}/a"><span class="compact pRa10 sf-diamond"></span>{%trans "Panel"%}</a>
 {%else%}
-          <a class="special" href="{{url.kingdom}}/enter"><span class="compact pRa10 sf-enter"></span>{%trans "Enter"%}</a>
+          <a class="special" data-direct href="{{url.kingdom}}/enter"><span class="compact pRa10 sf-enter"></span>{%trans "Enter"%}</a>
 {%endif%}
 
     </nav>

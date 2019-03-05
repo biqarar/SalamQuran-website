@@ -58,9 +58,9 @@
 {%endif%}
 
 {%if login.id%}
-        <a href="{{url.kingdom}}/a">{%trans "Enter to Panel"%}</a>
+        <a data-direct href="{{url.kingdom}}/a">{%trans "Enter to Panel"%}</a>
 {%else%}
-        <a href="{{url.kingdom}}/enter" >{%trans "Enter"%}</a>
+        <a data-direct href="{{url.kingdom}}/enter" >{%trans "Enter"%}</a>
 {%endif%}
       </nav>
 
