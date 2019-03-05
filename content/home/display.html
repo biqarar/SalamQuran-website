@@ -4,11 +4,11 @@
 
 {%block page%}
 
-    {%if sura and requestGET.mode != 'quran'%}
+    {%if quranLoaded and requestGET.mode != 'quran'%}
     	<a class="btn " href="{{url.this}}?mode=quran">{%trans "Quran"%}</a>
       {%include 'content/home/sore.html'%}
 
-    {%elseif sura and requestGET.mode == 'quran'%}
+    {%elseif quranLoaded and requestGET.mode == 'quran'%}
     	<a class="btn " href="{{url.this}}">{%trans "Quran"%}</a>
 
       {%include 'content/home/sore-font.html'%}

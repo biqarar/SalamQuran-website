@@ -1,5 +1,32 @@
 <div class='Quran'>
 
+{%for key, value in quranLoaded.text.aya%}
+
+  <div class='ayeBox msg' id='{{value.detail.aya}}'>
+    <div class='aye'>
+
+      {%for k, v in value.word%}
+        <span class='text' data-kerkere='[data-aye-meta="{{value.detail.aya}}"]'>{{v.text}}</span>
+      {%endfor%}
+
+      <a class='ayeNum' href='{{url.kingdom}}/{{value.detail.sura}}#{{value.detail.aya}}'>﴿{{value.detail.aya | fitNumber}}﴾</a>
+    </div>
+    {%if translateList[value.detail.index]['text']%}
+    <p>{{translateList[value.detail.index]['text']}}</p>
+    {%endif%}
+    <div class='meta' data-aye-meta='{{value.detail.aya}}'>
+      <abbr title='{%trans "Quran"%} - {%trans "Sore"%}{{value.detail.sura}} {{value.suraName}} - {%trans "Aye"%}{{value.aya}}'>{{value.simple}}</abbr>
+    </div>
+
+  </div>
+{%endfor%}
+
+
+</div>
+
+{%if old_false%}
+<div class='Quran'>
+
 {%for key, value in sura%}
 
 {%if loop.index == 1%}
@@ -25,6 +52,7 @@
 {%endfor%}
 
 </div>
+{%endif%}
 
 {%for key, value in suraDetail%}
 <span class="badge">{{key}} : {{value}}</span>

@@ -23,23 +23,20 @@ class controller
 			$meta['translate'] = \dash\request::get('t');
 		}
 
-		if(\dash\request::get('mode') && \dash\request::get('mode') === 'quran')
+		if(\dash\request::get('mode'))
 		{
-			$quran = \lib\app\quran_word::find($url, $meta);
+			$meta['mode'] = \dash\request::get('mode');
 		}
-		else
-		{
-			$quran = \lib\app\quran::find($url, $meta);
-		}
+
+		$quran = \lib\app\quran_word::find($url, $meta);
 
 		if($quran)
 		{
-			if(isset($quran['aye']) && $quran['aye'])
-			{
-				\dash\data::sureLoaded(true);
-				\dash\data::sura($quran['aye']);
-				\dash\open::get();
-			}
+			\dash\data::sureLoaded(true);
+			\dash\data::quranLoaded($quran);
+			\dash\open::get();
+
+
 
 			if(isset($quran['detail']))
 			{

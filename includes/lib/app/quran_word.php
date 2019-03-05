@@ -76,6 +76,7 @@ class quran_word
 	{
 		// load sure
 		$_id = intval($_id);
+		$result           = [];
 
 		if(intval($_id) >= 1 && intval($_id) <= 114)
 		{
@@ -89,8 +90,48 @@ class quran_word
 				$load = \lib\db\quran_word::get(['sura' => $_id]);
 			}
 
-			$result           = [];
-			$result['aye']    = $load;
+			if(isset($_meta['mode']) && $_meta['mode'] === 'quran')
+			{
+				$quran = [];
+				foreach ($load as $key => $value)
+				{
+					if(!isset($quran['line_'. $value['line']]))
+					{
+						$quran['line_'. $value['line']] = [];
+					}
+
+					$quran['line_'. $value['line']][] = $value;
+				}
+				$result['line']    = $quran;
+			}
+			else
+			{
+				$quran = [];
+
+				foreach ($load as $key => $value)
+				{
+					if(!isset($quran['aya'][$value['aya']]['detail']))
+					{
+						$quran['aya'][$value['aya']]['detail'] =
+						[
+							'aya'       => $value['aya'],
+							'sura'      => $value['sura'],
+							'verse_key' => $value['verse_key'],
+							'page'      => $value['page'],
+							'audio'     => null,
+						];
+					}
+
+					if(!isset($quran['aya'][$value['aya']]['word']))
+					{
+						$quran['aya'][$value['aya']]['word'] = [];
+					}
+
+					$quran['aya'][$value['aya']]['word'][] = $value;
+				}
+				$result['text']    = $quran;
+			}
+
 			$result['detail'] = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
 
 			$result['translate'] = self::load_translate($load, $_meta);
