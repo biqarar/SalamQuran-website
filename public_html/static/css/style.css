@@ -6394,7 +6394,22 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
     line-height: 2em; }
 
   .topTitle h3 {
-    font-size: 1.4em !important; } }
+    font-size: 1.4em !important; }
+
+  #soreha a {
+    padding: 0 1rem 1rem; }
+
+  #soreha .c7 span {
+    display: inline-block; }
+
+  .ltr #soreha .c7 span {
+    margin-right: 0.5em; }
+
+  .rtl #soreha .c7 span {
+    margin-left: 0.5em; }
+
+  #soreha .c7 abbr {
+    display: inline-block; } }
 /* Design for print */
 
 /*# sourceMappingURL=style.css.map */
