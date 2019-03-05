@@ -68,8 +68,8 @@
 #sidebar .menu{
 	background-color: #f1f1f1;
 	display: block;
-	width: 300px;
-	min-width: 200px;
+	width: 280px;
+	min-width: 240px;
 	max-width: 350px;
 	height: 100%;
 	position: absolute;
@@ -98,10 +98,10 @@ body[data-sidebar="dada"].rtl #sidebar .menu{
 #sidebar .menu a:hover{
 	background-color: rgba(0,0,0,0.05);
 }
-#sidebar .menu ul{
+#sidebar .menu nav{
 	margin-top: 5rem;
 }
-#sidebar .menu ul a:before{
+#sidebar .menu nav a:before{
 	content: '';
 	border-color: rgba(0,0,0,0.1);
 	border-bottom-width: 1px;
@@ -111,13 +111,13 @@ body[data-sidebar="dada"].rtl #sidebar .menu{
 	right: 0;
 	bottom: 0;
 }
-.ltr #sidebar .menu ul a:before{
+.ltr #sidebar .menu nav a:before{
 	left: 20px;
 }
-.rtl #sidebar .menu ul a:before{
+.rtl #sidebar .menu nav a:before{
 	right: 20px;
 }
-#sidebar .menu ul a:after{
+#sidebar .menu nav a:after{
 	content: '';
 	border-color: rgba(0,0,0,0.5);
 	border-bottom-width: 1px;
@@ -127,18 +127,18 @@ body[data-sidebar="dada"].rtl #sidebar .menu{
 	bottom: 0;
 	transition: 0.3s;
 }
-.ltr #sidebar .menu ul a:after{
+.ltr #sidebar .menu nav a:after{
 	left: 100%;
 	right: 0;
 }
-.rtl #sidebar .menu ul a:after{
+.rtl #sidebar .menu nav a:after{
 	right: 100%;
 	left: 0;
 }
-.ltr #sidebar .menu ul a:hover:after{
+.ltr #sidebar .menu nav a:hover:after{
 	left: 20px;
 }
-.rtl #sidebar .menu ul a:hover:after{
+.rtl #sidebar .menu nav a:hover:after{
 	right: 20px;
 }
 #sidebar .menu footer{
