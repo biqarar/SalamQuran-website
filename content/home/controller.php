@@ -23,7 +23,7 @@ class controller
 			$meta['translate'] = \dash\request::get('t');
 		}
 
-		if(\dash\request::get('type') && \dash\request::get('type') === 'read')
+		if(\dash\request::get('mode') && \dash\request::get('mode') === 'quran')
 		{
 			$quran = \lib\app\quran_word::find($url, $meta);
 		}

@@ -25,7 +25,7 @@
 <br>
 <h6>{%trans "Translation"%}</h6>
 {%for key, value in translationList%}
-<span class="btn primary"><a href="{{url.this}}?t={{value.id}}">{{value.localname}}</a></span>
+<span class="btn primary"><a href="{{url.this}}?t={{value.language}}{{value.index}}">{{value.localname}}</a></span>
 {%endfor%}
 
 <div class='f'>
