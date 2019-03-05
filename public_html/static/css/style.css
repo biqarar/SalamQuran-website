@@ -6175,7 +6175,10 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   background-color: rgba(0, 0, 0, 0.05); }
 
 #sidebar .menu nav {
-  margin-top: 5rem; }
+  margin-top: 1rem; }
+
+#sidebar .menu nav.langlist {
+  margin-top: 3rem; }
 
 #sidebar .menu nav a:before {
   content: '';
