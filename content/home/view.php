@@ -5,7 +5,7 @@ class view
 {
 	public static function config()
 	{
-		$title = \dash\data::site_title();
+		$title = T_('Quran');
 		$desc  = T_("Say hello to Quran!"). ' '. T_("Quran is calling you.");
 
 		if(\dash\data::suraDetail())
