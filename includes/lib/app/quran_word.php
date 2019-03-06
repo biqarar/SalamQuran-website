@@ -141,7 +141,7 @@ class quran_word
 
 		$result['detail'] = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
 
-		\dash\notif::api($result);
+		// \dash\notif::api($result);
 
 		self::$find_by    = 'sure';
 		return $result;
