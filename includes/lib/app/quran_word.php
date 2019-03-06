@@ -4,9 +4,10 @@ namespace lib\app;
 
 class quran_word
 {
-	public static $find_by = null;
-	public static $key1    = null;
-	public static $key2    = null;
+	public static $find_by        = null;
+	public static $load_translate = false;
+	public static $translate      = [];
+
 
 	public static function find($_url, $_meta = [])
 	{
@@ -93,25 +94,7 @@ class quran_word
 
 		$load = \lib\db\quran_word::get($get_quran);
 
-		$translate_raw = self::load_translate($load, $_meta);
-		$translate     = [];
-
-		$translate_detail = $translate_raw;
-		unset($translate_detail['data']);
-		unset($translate_detail['table_name']);
-		unset($translate_detail['id']);
-
-		if(isset($translate_raw['data']) && is_array($translate_raw['data']))
-		{
-			foreach ($translate_raw['data'] as $key => $value)
-			{
-				if(!isset($translate[$value['sura'].'_'. $value['aya']]))
-				{
-					$translate[$value['sura'].'_'. $value['aya']]['text']   = $value['text'];
-					$translate[$value['sura'].'_'. $value['aya']]['detail'] = $translate_detail;
-				}
-			}
-		}
+		self::load_translate($load, $_meta);
 
 		$quran = [];
 
@@ -119,12 +102,6 @@ class quran_word
 		{
 			if(!isset($quran['aya'][$value['aya']]['detail']))
 			{
-				$aya_translate = [];
-				if(isset($translate[$value['sura']. '_'. $value['aya']]))
-				{
-					$aya_translate[] = $translate[$value['sura']. '_'. $value['aya']];
-				}
-
 				$quran['aya'][$value['aya']]['detail'] =
 				[
 					'aya'       => $value['aya'],
@@ -132,7 +109,7 @@ class quran_word
 					'verse_key' => $value['verse_key'],
 					'page'      => $value['page'],
 					'audio'     => self::get_aya_audio($value['sura'], $value['aya']),
-					'translate' => $aya_translate,
+					'translate' => self::get_translation($value['sura'], $value['aya'], $_meta),
 				];
 			}
 
@@ -442,7 +419,6 @@ class quran_word
 
 	private static function load_translate($_data, $_meta)
 	{
-
 		if(!is_array($_data))
 		{
 			return null;
@@ -463,29 +439,70 @@ class quran_word
 			return null;
 		}
 
-		$translate = \lib\app\translate::table_name($_meta['translate']);
-
-		if(!isset($translate['table_name']))
+		$get = explode('-', $_meta['translate']);
+		$result = [];
+		foreach ($get as $key => $value)
 		{
-			return null;
+			$translate = \lib\app\translate::table_name($value);
+
+			if(!isset($translate['table_name']))
+			{
+				continue;
+			}
+
+			$sura = array_column($_data, 'sura');
+			$sura = array_filter($sura);
+			$sura = array_unique($sura);
+
+			$aya = array_column($_data, 'aya');
+			$aya = array_filter($aya);
+			$aya = array_unique($aya);
+
+			if($sura && $aya)
+			{
+				$load = \lib\db\translate::load($translate['table_name'], ['sura' => ["IN", "(". implode(',', $sura).")"], 'aya' => ["IN", "(". implode(',', $aya).")"]]);
+				$data = [];
+
+				unset($translate['table_name']);
+				unset($translate['id']);
+
+				foreach ($load as $key => $value)
+				{
+					if(!isset($data[$value['sura'].'_'. $value['aya']]))
+					{
+						$data[$value['sura'].'_'. $value['aya']]['text']   = $value['text'];
+						$data[$value['sura'].'_'. $value['aya']]['detail'] = $translate;
+					}
+				}
+
+				$translate['data'] = $data;
+
+				$result[] = $translate;
+			}
+		}
+		self::$load_translate = true;
+		self::$translate = $result;
+
+	}
+
+
+	private static function get_translation($_sura, $_aya, $_meta = null)
+	{
+		if(!self::$load_translate)
+		{
+			return false;
 		}
 
-		$sura = array_column($_data, 'sura');
-		$sura = array_filter($sura);
-		$sura = array_unique($sura);
-
-		$aya = array_column($_data, 'aya');
-		$aya = array_filter($aya);
-		$aya = array_unique($aya);
-
-		if($sura && $aya)
+		$result = [];
+		foreach (self::$translate as $key => $value)
 		{
-			$load = \lib\db\translate::load($translate['table_name'], ['sura' => ["IN", "(". implode(',', $sura).")"], 'aya' => ["IN", "(". implode(',', $aya).")"]]);
-			$translate['data'] = $load;
-			return $translate;
+			if(isset($value['data'][$_sura. '_'. $_aya]))
+			{
+				$result[] = $value['data'][$_sura. '_'. $_aya];
+			}
 		}
 
-		return null;
+		return $result;
 	}
 }
 ?>
