@@ -5878,10 +5878,21 @@ body {
   margin-bottom: 2em; }
 
 .ayeBox {
-  margin-bottom: 1em; }
+  position: relative;
+  transition: 0.3s;
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  min-height: 1em;
+  line-height: 1.5;
+  opacity: 0.7;
+  background-color: #f7f7f7;
+  color: #333; }
 
 .ayeBox:hover {
-  background-color: rgba(0, 200, 255, 0.05); }
+  background-color: rgba(0, 200, 255, 0.05);
+  border-color: rgba(0, 0, 0, 0.2); }
 
 .ayeBox .aye {
   direction: rtl;
@@ -5901,7 +5912,9 @@ body {
   color: #07b7dd; }
 
 .ayeBox .aye .ayeNum {
-  font-family: "Traditional Arabic", "Times New Roman"; }
+  font-family: "Traditional Arabic", "Times New Roman";
+  letter-spacing: 2px;
+  color: #777; }
 
 .ayeBox .ayeSimple {
   direction: rtl;
