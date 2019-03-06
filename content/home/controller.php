@@ -36,8 +36,6 @@ class controller
 			\dash\data::quranLoaded($quran);
 			\dash\open::get();
 
-
-
 			if(isset($quran['detail']))
 			{
 				\dash\data::suraDetail($quran['detail']);

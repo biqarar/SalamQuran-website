@@ -91,6 +91,92 @@ class quran_word
 			$get_quran['aya'] = $_aye;
 		}
 
+		$load = \lib\db\quran_word::get($get_quran);
+
+		$translate_raw = self::load_translate($load, $_meta);
+		$translate     = [];
+
+		$translate_detail = $translate_raw;
+		unset($translate_detail['data']);
+		unset($translate_detail['table_name']);
+		unset($translate_detail['id']);
+
+		if(isset($translate_raw['data']) && is_array($translate_raw['data']))
+		{
+			foreach ($translate_raw['data'] as $key => $value)
+			{
+				if(!isset($translate[$value['sura'].'_'. $value['aya']]))
+				{
+					$translate[$value['sura'].'_'. $value['aya']]['text']   = $value['text'];
+					$translate[$value['sura'].'_'. $value['aya']]['detail'] = $translate_detail;
+				}
+			}
+		}
+
+		$quran = [];
+
+		foreach ($load as $key => $value)
+		{
+			if(!isset($quran['aya'][$value['aya']]['detail']))
+			{
+				$aya_translate = [];
+				if(isset($translate[$value['sura']. '_'. $value['aya']]))
+				{
+					$aya_translate[] = $translate[$value['sura']. '_'. $value['aya']];
+				}
+
+				$quran['aya'][$value['aya']]['detail'] =
+				[
+					'aya'       => $value['aya'],
+					'sura'      => $value['sura'],
+					'verse_key' => $value['verse_key'],
+					'page'      => $value['page'],
+					'audio'     => null,
+					'translate' => $aya_translate,
+				];
+			}
+
+			if(!isset($quran['aya'][$value['aya']]['word']))
+			{
+				$quran['aya'][$value['aya']]['word'] = [];
+			}
+
+			$quran['aya'][$value['aya']]['word'][] = $value;
+		}
+
+		$result['text']    = $quran;
+
+		$result['mode_quran'] = false;
+
+		$result['detail'] = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
+
+		// \dash\notif::api($result);
+
+		self::$find_by    = 'sure';
+		return $result;
+
+	}
+
+
+	private static function sure_old($_id, $_aye = null, $_meta = [])
+	{
+		// load sure
+		$_id = intval($_id);
+		$result           = [];
+
+		if(intval($_id) < 1 && intval($_id) > 114)
+		{
+			return false;
+		}
+
+		$get_quran         = [];
+		$get_quran['sura'] = $_id;
+
+		if($_aye)
+		{
+			$get_quran['aya'] = $_aye;
+		}
+
 		$mode_quran = false;
 
 		if(isset($_meta['mode']) && $_meta['mode'] === 'quran')
