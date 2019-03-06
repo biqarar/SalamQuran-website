@@ -1,16 +1,30 @@
 <div class='Quran'>
 
 {%for key, value in quranLoaded.text.aya%}
-
   <div class='ayeBox msg' id='{{value.detail.aya}}'>
+
     <div class='aye'>
-
-      {%for k, v in value.word%}
-        <span class='text' data-kerkere='[data-aye-meta="{{value.detail.aya}}"]'>{{v.text}}</span>
-      {%endfor%}
-
+{%for wordIndex, myWord in value.word%}
+{%if myWord.char_type == 'word'%}
+      <span data-wbw='{{myWord.audio}}' title='{{myWord.translation}}'>{{myWord.text}}</span>
+{%else%}
       <a class='ayeNum' href='{{url.kingdom}}/{{value.detail.sura}}#{{value.detail.aya}}'>﴿{{value.detail.aya | fitNumber}}﴾</a>
+{%endif%}
+{%endfor%}
     </div>
+
+    <div class='ayeSimple'>
+{%for wordIndex, myWord in value.word%}
+{%if myWord.char_type == 'word'%}
+      {{myWord.simple}}
+{%else%}
+      <a class='ayeNum' href='{{url.kingdom}}/{{value.detail.sura}}#{{value.detail.aya}}'>{{value.detail.aya | fitNumber}}</a>
+{%endif%}
+{%endfor%}
+    </div>
+
+
+
     {%if value.detail.translate%}
       {%for k, v in value.detail.translate%}
         <p>{{v.text}}</p>
