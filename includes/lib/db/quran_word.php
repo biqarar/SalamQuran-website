@@ -11,5 +11,17 @@ class quran_word
 		return \dash\db\config::public_get('1_quran_word', $_where, $_option);
 	}
 
+
+	public static function sura_first_word($_id)
+	{
+		if(is_numeric($_id) && intval($_id) >= 1 && intval($_id) <= 114 )
+		{
+			$_id = intval($_id);
+			return self::get(['sura' => $_id, 'limit' => 1]);
+		}
+
+		return false;
+	}
+
 }
 ?>

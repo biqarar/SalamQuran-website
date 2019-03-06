@@ -1,19 +1,24 @@
 <div class='Quran'>
+<div class="f">
 
-{%for key, value in quranLoaded.text.line%}
-
+{%for key, value in quranLoaded.text%}
+<div class="c6">
+  {%for page_number, page_line in value%}
   <div class='readerMode'>
 
     <div class='aye-line block'>
-      {%for k, v in value.word%}
+      {%for k, v in page_line.word%}
         <span class='compact {{v.class_name}}'>{{v.code | raw}}</span>
       {%endfor%}
     </div>
 
   </div>
+  {%endfor%}
+</div>
 {%endfor%}
 
 
+</div>
 </div>
 
 
