@@ -5889,6 +5889,11 @@ body {
   line-height: 2.5em;
   transition: 0.3s; }
 
+.ayeBox .ayeSimple {
+  direction: rtl;
+  text-align: right;
+  display: none; }
+
 .ayeBox .aye:hover {
   background-color: rgba(0, 200, 255, 0.05); }
 
