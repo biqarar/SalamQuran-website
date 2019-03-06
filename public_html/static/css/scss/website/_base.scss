@@ -124,19 +124,29 @@ body{
 .ayeBox .meta{
 
 }
-.ayeBox .meta .ayeLink{
+.ayeBox .meta .opr{
 	display: block;
 	background-color: #eee;
 	transition: 0.3s;
-	font-family: monospace;
-	padding: 5px 10px;
+	line-height: 30px;
+	font-size: 0.8em;
+	padding: 0 10px;
 	margin-bottom: 5px;
+	cursor: pointer;
+	text-align: center;
 }
-.ayeBox .meta .ayeLink:hover{
+.ayeBox .meta .opr:hover{
 	background-color: #e5e5f5;
 }
-.ayeBox .meta .ayeLink:focus{
+.ayeBox .meta .opr:focus{
 	background-color: #ddd;
+}
+.ayeBox .meta a.opr{
+	font-family: monospace;
+}
+.ayeBox .meta .opr span{
+	display: inline-block;
+	margin:0 5px;
 }
 
 
