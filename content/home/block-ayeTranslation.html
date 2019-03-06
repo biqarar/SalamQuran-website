@@ -1,7 +1,9 @@
 {%if myAye.detail.translate%}
     <div class="translate">
 {%for k, myTranslation in myAye.detail.translate%}
-        <p>{{myTranslation.text}}</p>
+        <p>
+        	<span class="badge primary mRa10">{{myTranslation.detail.localname}}</span>
+        {{myTranslation.text}}</p>
 {%endfor%}
     </div>
 {%endif%}
