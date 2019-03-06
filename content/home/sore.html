@@ -1,7 +1,9 @@
 <div class='Quran'>
 
 {%for myAyeKey, myAye in quranLoaded.text.aya%}
+      {%include 'content/home/block-besmellah.html'%}
   <div class='ayeBox' id='{{myAye.detail.aya}}'>
+
       {%include 'content/home/block-aye.html'%}
       {%include 'content/home/block-ayeSimple.html'%}
       {%include 'content/home/block-ayeTranslation.html'%}
@@ -40,6 +42,9 @@
 
 </div>
 {%endif%}
+
+
+
 
 {%for key, myAye in suraDetail%}
 <span class="badge">{{key}} : {{myAye}}</span>
