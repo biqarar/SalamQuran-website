@@ -1,9 +1,16 @@
+html{
+	min-height: 100%;
+}
 body{
 	min-height: 100%;
 	background-color: #fff;
 	background: linear-gradient( 20deg, rgb(0,215,220) 0%, rgb(10,165,220) 100%);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 }
 #main{

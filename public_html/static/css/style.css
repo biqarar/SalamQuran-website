@@ -5807,12 +5807,19 @@ Version       1.0.0
 .icon-surah114:before {
   content: "\E972"; }
 
+html {
+  min-height: 100%; }
+
 body {
   min-height: 100%;
   background-color: #fff;
   background: linear-gradient(20deg, #00d7dc 0%, #0aa5dc 100%);
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 #main {
   z-index: 10;
