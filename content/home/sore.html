@@ -1,6 +1,6 @@
 <div class='Quran'>
 
-{%for key, myAye in quranLoaded.text.aya%}
+{%for myAyeKey, myAye in quranLoaded.text.aya%}
   <div class='ayeBox' id='{{myAye.detail.aya}}'>
 
     <div class='aye'>
@@ -8,7 +8,7 @@
 {%if myWord.char_type == 'word'%}
       <span data-wbw='{{myWord.audio}}' title='{{myWord.translation}}'>{{myWord.text}}</span>
 {%else%}
-      <span data-ayeAudio='{{myAye.detail.audio}}' class='ayeNum'>﴿{{myAye.detail.aya | fitNumber}}﴾</span>
+      <span data-ayeAudio='{{myAye.detail.audio}}' class='ayeNum' title='{%trans "Quran"%} - {%trans "Sore"%} {{myAye.detail.sura}} {{myAye.suraName}} - {%trans "Aye"%} {{myAye.aya}}'>﴿{{myAye.detail.aya | fitNumber}}﴾</span>
 {%endif%}
 {%endfor%}
     </div>
@@ -26,15 +26,12 @@
 
 {%if myAye.detail.translate%}
     <div class="translate">
-{%for k, v in myAye.detail.translate%}
-        <p>{{v.text}}</p>
+{%for k, myTranslation in myAye.detail.translate%}
+        <p>{{myTranslation.text}}</p>
 {%endfor%}
     </div>
 {%endif%}
 
-    <div class='meta' data-aye-meta='{{myAye.detail.aya}}'>
-      <abbr title='{%trans "Quran"%} - {%trans "Sore"%}{{myAye.detail.sura}} {{myAye.suraName}} - {%trans "Aye"%}{{myAye.aya}}'>{{myAye.simple}}</abbr>
-    </div>
 
   </div>
 {%endfor%}
