@@ -133,6 +133,25 @@ AnimatoriJS('nodes',
 }
 );
 
+function handlePlayWbw()
+{
+    $(".aye span").off('click');
+    $(".aye span").on('click', function()
+    {
+      wbwAddr = $(this).attr('data-wbw');
+      if(wbwAddr)
+      {
+        var myWord = new Audio("https://dl.salamquran.com/audio/wbw/" + wbwAddr);
+        myWord.play();
+      }
+    });
 
+}
+
+function pushState()
+{
+  handlePlayWbw();
+
+}
 
 
