@@ -2,7 +2,7 @@
 
 {%for myAyeKey, myAye in quranLoaded.text.aya%}
       {%include 'content/home/block-besmellah.html'%}
-  <div class='ayeBox f' id='{{myAye.detail.verse_key}}'>
+  <div class='ayeBox f' id='{{myAye.detail.verse_key}}' data-ayeAudio='{{myAye.detail.audio}}'>
     <div class="c">
 {%include 'content/home/block-aye.html'%}
 {%include 'content/home/block-ayeSimple.html'%}

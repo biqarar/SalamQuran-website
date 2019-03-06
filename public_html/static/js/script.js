@@ -144,9 +144,9 @@ function handlePlayWbw()
         var myWord = new Audio("https://dl.salamquran.com/audio/wbw/" + wbwAddr);
         myWord.play();
       }
-      else if($(this).attr('data-ayeAudio'))
+      else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
       {
-        var myWord = new Audio($(this).attr('data-ayeAudio'));
+        var myWord = new Audio($(this).parents('.ayeBox').attr('data-ayeAudio'));
         myWord.play();
       }
     });
