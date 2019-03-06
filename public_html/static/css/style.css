@@ -5869,9 +5869,6 @@ body {
   overflow: hidden;
   z-index: 1; }
 
-.Quran {
-  font-size: 1.4em; }
-
 .besmellah {
   font-size: 1.5em;
   text-align: center;
@@ -5895,6 +5892,7 @@ body {
   border-color: rgba(0, 0, 0, 0.2); }
 
 .ayeBox .aye {
+  font-size: 1.4em;
   direction: rtl;
   text-align: right;
   line-height: 2.5em;
