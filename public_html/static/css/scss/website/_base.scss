@@ -122,12 +122,22 @@ body{
 	margin: 0 5px;
 }
 .ayeBox .meta{
-	display: none;
-}
-.ayeBox .meta abbr{
-	display: none;
-}
 
+}
+.ayeBox .meta .ayeLink{
+	display: block;
+	background-color: #eee;
+	transition: 0.3s;
+	font-family: monospace;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+}
+.ayeBox .meta .ayeLink:hover{
+	background-color: #e5e5f5;
+}
+.ayeBox .meta .ayeLink:focus{
+	background-color: #ddd;
+}
 
 
 // Quran design like book

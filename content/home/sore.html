@@ -2,11 +2,16 @@
 
 {%for myAyeKey, myAye in quranLoaded.text.aya%}
       {%include 'content/home/block-besmellah.html'%}
-  <div class='ayeBox' id='{{myAye.detail.verse_key}}'>
+  <div class='ayeBox f' id='{{myAye.detail.verse_key}}'>
+    <div class="c">
+{%include 'content/home/block-aye.html'%}
+{%include 'content/home/block-ayeSimple.html'%}
+{%include 'content/home/block-ayeTranslation.html'%}
+    </div>
+    <div class="cauto pLa10">
+{%include 'content/home/block-ayeActions.html'%}
+    </div>
 
-      {%include 'content/home/block-aye.html'%}
-      {%include 'content/home/block-ayeSimple.html'%}
-      {%include 'content/home/block-ayeTranslation.html'%}
   </div>
 {%endfor%}
 
