@@ -141,7 +141,7 @@ class quran_word
 
 		$result['detail'] = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
 
-		// \dash\notif::api($result);
+		\dash\notif::api($result);
 
 		self::$find_by    = 'sure';
 		return $result;
@@ -149,7 +149,7 @@ class quran_word
 	}
 
 
-	private static function get_aya_audio($_sura, $_aya, $_meta)
+	private static function get_aya_audio($_sura, $_aya, $_meta = [])
 	{
 		if(!isset($_meta['qari']))
 		{
@@ -161,34 +161,10 @@ class quran_word
 			$_meta['qari'] = 1;
 		}
 
-		// $get_url = \lib\app\qari::get_aya_url($_meta['qary'], $_sura, $_aya);
-		// return $get_url;
+		$get_url = \lib\app\qari::get_aya_url($_meta['qari'], $_sura, $_aya);
+		return $get_url;
 
 
-		$_sura = intval($_sura);
-		$_aya  = intval($_aya);
-
-		if($_sura < 10)
-		{
-			$_sura = '00'. $_sura;
-		}
-		elseif($_sura < 100)
-		{
-			$_sura = '0'. $_sura;
-		}
-
-		if($_aya < 10)
-		{
-			$_aya = '00'. $_aya;
-		}
-		elseif($_aya < 100)
-		{
-			$_aya = '0'. $_aya;
-		}
-
-
-		$url = '/'. $_sura.$_aya. '.mp3';
-		return $url;
 	}
 
 
