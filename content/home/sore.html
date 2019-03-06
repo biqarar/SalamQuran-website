@@ -1,14 +1,14 @@
 <div class='Quran'>
 
 {%for key, value in quranLoaded.text.aya%}
-  <div class='ayeBox msg' id='{{value.detail.aya}}'>
+  <div class='ayeBox' id='{{value.detail.aya}}'>
 
     <div class='aye'>
 {%for wordIndex, myWord in value.word%}
 {%if myWord.char_type == 'word'%}
       <span data-wbw='{{myWord.audio}}' title='{{myWord.translation}}'>{{myWord.text}}</span>
 {%else%}
-      <a class='ayeNum' href='{{url.kingdom}}/{{value.detail.sura}}#{{value.detail.aya}}'>﴿{{value.detail.aya | fitNumber}}﴾</a>
+      <span data-ayeAudio='{{value.detail.audio}}' class='ayeNum'>﴿{{value.detail.aya | fitNumber}}﴾</span>
 {%endif%}
 {%endfor%}
     </div>
@@ -18,7 +18,7 @@
 {%if myWord.char_type == 'word'%}
       {{myWord.simple}}
 {%else%}
-      <a class='ayeNum' href='{{url.kingdom}}/{{value.detail.sura}}#{{value.detail.aya}}'>{{value.detail.aya | fitNumber}}</a>
+      {{value.detail.aya | fitNumber}}
 {%endif%}
 {%endfor%}
     </div>
