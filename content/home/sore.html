@@ -2,37 +2,9 @@
 
 {%for myAyeKey, myAye in quranLoaded.text.aya%}
   <div class='ayeBox' id='{{myAye.detail.aya}}'>
-
-    <div class='aye'>
-{%for wordIndex, myWord in myAye.word%}
-{%if myWord.char_type == 'word'%}
-      <span data-wbw='{{myWord.audio}}' title='{{myWord.translation}}'>{{myWord.text}}</span>
-{%else%}
-      <span data-ayeAudio='{{myAye.detail.audio}}' class='ayeNum' title='{%trans "Quran"%} - {%trans "Sore"%} {{myAye.detail.sura}} {{myAye.suraName}} - {%trans "Aye"%} {{myAye.aya}}'>﴿{{myAye.detail.aya | fitNumber}}﴾</span>
-{%endif%}
-{%endfor%}
-    </div>
-
-    <div class='ayeSimple'>
-{%for wordIndex, myWord in myAye.word%}
-{%if myWord.char_type == 'word'%}
-      {{myWord.simple}}
-{%else%}
-      {{myAye.detail.aya | fitNumber}}
-{%endif%}
-{%endfor%}
-    </div>
-
-
-{%if myAye.detail.translate%}
-    <div class="translate">
-{%for k, myTranslation in myAye.detail.translate%}
-        <p>{{myTranslation.text}}</p>
-{%endfor%}
-    </div>
-{%endif%}
-
-
+      {%include 'content/home/block-aye.html'%}
+      {%include 'content/home/block-ayeSimple.html'%}
+      {%include 'content/home/block-ayeTranslation.html'%}
   </div>
 {%endfor%}
 

@@ -1,0 +1,7 @@
+{%if myAye.detail.translate%}
+    <div class="translate">
+{%for k, myTranslation in myAye.detail.translate%}
+        <p>{{myTranslation.text}}</p>
+{%endfor%}
+    </div>
+{%endif%}
