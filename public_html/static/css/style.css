@@ -5904,7 +5904,8 @@ body {
 .ayeBox .aye span {
   cursor: help;
   display: inline-block;
-  padding: 0 1px; }
+  padding: 0 1px;
+  transition: 0.3s; }
 
 .ayeBox .aye span:hover {
   color: #07b7dd; }
