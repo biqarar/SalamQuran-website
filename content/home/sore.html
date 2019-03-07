@@ -1,4 +1,5 @@
 <div class='Quran'>
+{%include 'content/home/block-detail.html'%}
 
 {%for myAyeKey, myAye in quranLoaded.text.aya%}
       {%include 'content/home/block-besmellah.html'%}
@@ -22,19 +23,3 @@
 
 
 
-{%for key, myAye in suraDetail%}
-<span class="badge">{{key}} : {{myAye}}</span>
-{%endfor%}
-
-<br>
-<h6>{%trans "Translation"%}</h6>
-{%for key, myAye in translationList%}
-<span class="btn primary"><a href="{{url.this}}?t={{myAye.language}}{{myAye.index}}">{{myAye.localname}}</a></span>
-{%endfor%}
-
-<div class='f'>
-  <div class='c'></div>
-  <div class='cauto os'>
-    <a href='{{url.kingdom}}' class="btn block mTB10">{%trans "List of soreha"%}</a>
-  </div>
-</div>
