@@ -147,7 +147,7 @@ function handlePlayWbw()
     }
     else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
     {
-      playAye(this);
+      playAye(this, false);
       // var myWord = new Audio($(this).parents('.ayeBox').attr('data-ayeAudio'));
       // myWord.play();
     }
@@ -162,7 +162,7 @@ function bindAudioTools()
   $(".ayeBox .play").off('click');
   $(".ayeBox .play").on('click', function()
   {
-    playAye(this);
+    playAye(this, false);
   });
 
   // show if quran exist in this page
@@ -203,10 +203,22 @@ function playAye(_this, _continue)
 
   var ayeAudioURL = myAyeBox.attr('data-ayeAudio');
   var ayeTitle    = myAyeBox.find('.aye .ayeNum').attr('data-original-title');
+  var talavat     = document.getElementById('talavat');
+  var talavatEl   = $('#talavat');
 
+  if(_continue)
+  {
+    // do nothing, on default play continuesly
+    talavatEl.attr('data-continue', true);
+  }
+  else
+  {
+    // only play one record
+    talavatEl.attr('data-continue', false);
+  }
+  // set title oa aye
   $('.player .title').text(ayeTitle);
-
-  var talavat = document.getElementById('talavat');
+  // if talavat exist, set it
   if(talavat)
   {
     // set class for current aye
@@ -214,7 +226,7 @@ function playAye(_this, _continue)
     myAyeBox.addClass('active');
     if(myAyeBox.attr('id'))
     {
-      $('#talavat').attr('data-aye-id', myAyeBox.attr('id'));
+      talavatEl.attr('data-aye-id', myAyeBox.attr('id'));
     }
 
     // set new source
@@ -228,11 +240,16 @@ function playAye(_this, _continue)
 
 function detectNextAye(_this)
 {
-  // if need to get next
   var currentId     = $(_this).attr('data-aye-id');
   var currentAyeBox = $('.ayeBox#'+ currentId);
   var nextAyeBox    = currentAyeBox.next();
-  playAye(nextAyeBox);
+  var continueMode  = $('#talavat').attr('data-continue');
+  // if need to get next
+  console.log(continueMode);
+  if(continueMode && continueMode === 'true')
+  {
+    playAye(nextAyeBox);
+  }
 }
 
 
