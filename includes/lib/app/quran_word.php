@@ -92,7 +92,15 @@ class quran_word
 			$get_quran['aya'] = $_aye;
 		}
 
-		$load = \lib\db\quran_word::get($get_quran);
+		$load           = \lib\db\quran_word::get($get_quran);
+		$load_quran_aya = \lib\db\quran::get($get_quran);
+		$quran_aya      = [];
+
+		foreach ($load_quran_aya as $key => $value)
+		{
+			$quran_aya[$value['sura']. '_'. $value['aya']] = $value;
+		}
+
 
 		self::load_translate($load, $_meta);
 
@@ -102,14 +110,38 @@ class quran_word
 		{
 			if(!isset($quran['aya'][$value['aya']]['detail']))
 			{
+				$quran_aya_key = $value['sura']. '_'. $value['aya'];
+
+				$verse_title = null;
+				$verse_title .= T_("Quran");
+				$verse_title .= ' - ';
+				$verse_title .= T_("Sura");
+				$verse_title .= ' ';
+				$verse_title .= \dash\utility\human::fitNumber($value['sura']);
+				$verse_title .= ' - ';
+				$verse_title .= T_("Aya");
+				$verse_title .= ' ';
+				$verse_title .= \dash\utility\human::fitNumber($value['aya']);
+
 				$quran['aya'][$value['aya']]['detail'] =
 				[
-					'aya'       => $value['aya'],
-					'sura'      => $value['sura'],
-					'verse_key' => $value['verse_key'],
-					'page'      => $value['page'],
-					'audio'     => self::get_aya_audio($value['sura'], $value['aya'], $_meta),
-					'translate' => self::get_translation($value['sura'], $value['aya'], $_meta),
+					'index'         => isset($quran_aya[$quran_aya_key]['index']) ? $quran_aya[$quran_aya_key]['index'] : null,
+					'text'          => isset($quran_aya[$quran_aya_key]['text']) ? $quran_aya[$quran_aya_key]['text'] : null,
+					'simple'        => isset($quran_aya[$quran_aya_key]['simple']) ? $quran_aya[$quran_aya_key]['simple'] : null,
+					'juz'           => isset($quran_aya[$quran_aya_key]['juz']) ? $quran_aya[$quran_aya_key]['juz'] : null,
+					'hizb'          => isset($quran_aya[$quran_aya_key]['hizb']) ? $quran_aya[$quran_aya_key]['hizb'] : null,
+					'word'          => isset($quran_aya[$quran_aya_key]['word']) ? $quran_aya[$quran_aya_key]['word'] : null,
+					'sajdah'        => isset($quran_aya[$quran_aya_key]['sajdah']) ? $quran_aya[$quran_aya_key]['sajdah'] : null,
+					'sajdah_number' => isset($quran_aya[$quran_aya_key]['sajdah_number']) ? $quran_aya[$quran_aya_key]['sajdah_number'] : null,
+					'rub'           => isset($quran_aya[$quran_aya_key]['rub']) ? $quran_aya[$quran_aya_key]['rub'] : null,
+					'word'          => isset($quran_aya[$quran_aya_key]['word']) ? $quran_aya[$quran_aya_key]['word'] : null,
+					'aya'           => $value['aya'],
+					'sura'          => $value['sura'],
+					'verse_key'     => $value['verse_key'],
+					'verse_title'   => $verse_title,
+					'page'          => $value['page'],
+					'audio'         => self::get_aya_audio($value['sura'], $value['aya'], $_meta),
+					'translate'     => self::get_translation($value['sura'], $value['aya'], $_meta),
 				];
 			}
 

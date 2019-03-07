@@ -3,7 +3,7 @@
 {%if myWord.char_type == 'word'%}
       <span data-wbw='{{myWord.audio}}' title='{{myWord.translation}}'>{{myWord.text}}</span>
 {%else%}
-      <span class='ayeNum' title='{%trans "Quran"%} - {%trans "Sore"%} {{myAye.detail.sura}} {{myAye.suraName}} - {%trans "Aye"%} {{myAye.aya}}'>﴿{{myAye.detail.aya | fitNumber}}﴾</span>
+      <span class='ayeNum' title='{{myAye.detail.verse_title}}'>﴿{{myAye.detail.aya | fitNumber}}﴾</span>
 {%endif%}
 {%endfor%}
     </div>
