@@ -147,7 +147,7 @@ function handlePlayWbw()
     }
     else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
     {
-      playAye(this, false);
+      playAye(this, true);
       // var myWord = new Audio($(this).parents('.ayeBox').attr('data-ayeAudio'));
       // myWord.play();
     }
@@ -162,7 +162,7 @@ function bindAudioTools()
   $(".ayeBox .play").off('click');
   $(".ayeBox .play").on('click', function()
   {
-    playAye(this, false);
+    playAye(this, true);
   });
 
   // show if quran exist in this page
@@ -184,7 +184,7 @@ function bindAudioTools()
 }
 
 
-function playAye(_this, _continue)
+function playAye(_this, _playOneAye)
 {
   var myAyeBox = $(_this);
   if($(_this).is('.ayeBox'))
@@ -206,15 +206,15 @@ function playAye(_this, _continue)
   var talavat     = document.getElementById('talavat');
   var talavatEl   = $('#talavat');
 
-  if(_continue)
+  if(_playOneAye)
   {
     // do nothing, on default play continuesly
-    talavatEl.attr('data-continue', true);
+    talavatEl.attr('data-oneaye', true);
   }
   else
   {
     // only play one record
-    talavatEl.attr('data-continue', false);
+    talavatEl.attr('data-oneaye', null);
   }
   // set title oa aye
   $('.player .title').text(ayeTitle);
@@ -243,10 +243,13 @@ function detectNextAye(_this)
   var currentId     = $(_this).attr('data-aye-id');
   var currentAyeBox = $('.ayeBox#'+ currentId);
   var nextAyeBox    = currentAyeBox.next();
-  var continueMode  = $('#talavat').attr('data-continue');
+  var oneAye        = $('#talavat').attr('data-oneaye');
   // if need to get next
-  console.log(continueMode);
-  if(continueMode && continueMode === 'true')
+  if(oneAye === 'true')
+  {
+    // do nothing, dont need to play next
+  }
+  else
   {
     playAye(nextAyeBox);
   }
