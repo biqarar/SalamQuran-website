@@ -162,6 +162,16 @@ function bindPlayAyeBtn()
   {
     loadAyeDetail(this);
   });
+
+  if($('.Quran').length === 0)
+  {
+    $('.player').addClass('nothing');
+  }
+  else
+  {
+    $('.player').removeClass('nothing');
+  }
+
 }
 
 
@@ -172,10 +182,10 @@ function loadAyeDetail(_this)
   var ayeTitle    = myAyeBox.find('.aye .ayeNum').attr('data-original-title');
 
   $('.player .title').text(ayeTitle);
-  var talavat = $('.player #talavat');
+
+  var talavat = document.getElementById('talavat');
   if(talavat)
   {
-    talavat = talavat.get(0);
     // set new source
     talavat.src = ayeAudioURL;
     // load audio
@@ -190,8 +200,8 @@ function pushState()
 {
   handlePlayWbw();
   bindPlayAyeBtn();
-
 }
+
 
 
 
