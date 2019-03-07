@@ -72,7 +72,7 @@ class qari
 		{
 			$_aya = '0'. $_aya;
 		}
-		$url = 'salamquran.com/audio/alafasy/ayat/mp3/'. $_sura.$_aya. '.mp3';
+		$url = 'https://dl.salamquran.com/audio/alafasy/ayat/mp3/'. $_sura.$_aya. '.mp3';
 		return $url;
 	}
 }
