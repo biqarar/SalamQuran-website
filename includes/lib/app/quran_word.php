@@ -132,7 +132,7 @@ class quran_word
 				$quran['aya'][$value['aya']]['detail'] =
 				[
 					'index'         => isset($quran_aya[$quran_aya_key]['index']) ? $quran_aya[$quran_aya_key]['index'] : null,
-					'text'          => isset($quran_aya[$quran_aya_key]['text']) ? $quran_aya[$quran_aya_key]['text'] : null,
+					'text'          => isset($quran_aya[$quran_aya_key]['text']) ? \Normalizer::normalize($quran_aya[$quran_aya_key]['text']) : null,
 					'simple'        => isset($quran_aya[$quran_aya_key]['simple']) ? $quran_aya[$quran_aya_key]['simple'] : null,
 					'juz'           => isset($quran_aya[$quran_aya_key]['juz']) ? $quran_aya[$quran_aya_key]['juz'] : null,
 					'hizb'          => isset($quran_aya[$quran_aya_key]['hizb']) ? $quran_aya[$quran_aya_key]['hizb'] : null,
@@ -171,6 +171,12 @@ class quran_word
 
 				$value['audio'] = $my_sura. $value['audio'];
 			}
+
+			if(isset($value['text']))
+			{
+				$value['text'] = \Normalizer::normalize($value['text']);
+			}
+
 			$quran['aya'][$value['aya']]['word'][] = $value;
 		}
 
