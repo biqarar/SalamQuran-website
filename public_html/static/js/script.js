@@ -27,136 +27,167 @@ AnimatoriJS.load('particles-js', 'particles.json', function() {
 AnimatoriJS('nodes',
 {
   "particles": {
-    "number": {
-      "value": 100,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      // "value": "#0f7070"
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-    },
-    "opacity": {
-      "value": 1,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 0,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 5,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 4,
-        "size_min": 0.3,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 1,
-      "direction": "top-right",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
+  "number": {
+    "value": 100,
+    "density": {
+    "enable": true,
+    "value_area": 800
     }
   },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "remove"
-      },
-      "resize": true
+  "color": {
+    // "value": "#0f7070"
+    "value": "#ffffff"
+  },
+  "shape": {
+    "type": "circle",
+    "stroke": {
+    "width": 0,
+    "color": "#000000"
     },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 250,
-        "size": 0,
-        "duration": 2,
-        "opacity": 0,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
+    "polygon": {
+    "nb_sides": 5
+    },
+  },
+  "opacity": {
+    "value": 1,
+    "random": true,
+    "anim": {
+    "enable": true,
+    "speed": 1,
+    "opacity_min": 0,
+    "sync": false
     }
+  },
+  "size": {
+    "value": 5,
+    "random": true,
+    "anim": {
+    "enable": false,
+    "speed": 4,
+    "size_min": 0.3,
+    "sync": false
+    }
+  },
+  "line_linked": {
+    "enable": false,
+    "distance": 150,
+    "color": "#ffffff",
+    "opacity": 0.4,
+    "width": 1
+  },
+  "move": {
+    "enable": true,
+    "speed": 1,
+    "direction": "top-right",
+    "random": true,
+    "straight": false,
+    "out_mode": "out",
+    "bounce": false,
+    "attract": {
+    "enable": false,
+    "rotateX": 600,
+    "rotateY": 1200
+    }
+  }
+  },
+  "interactivity": {
+  "detect_on": "canvas",
+  "events": {
+    "onhover": {
+    "enable": true,
+    "mode": "bubble"
+    },
+    "onclick": {
+    "enable": true,
+    "mode": "remove"
+    },
+    "resize": true
+  },
+  "modes": {
+    "grab": {
+    "distance": 400,
+    "line_linked": {
+      "opacity": 1
+    }
+    },
+    "bubble": {
+    "distance": 250,
+    "size": 0,
+    "duration": 2,
+    "opacity": 0,
+    "speed": 3
+    },
+    "repulse": {
+    "distance": 400,
+    "duration": 0.4
+    },
+    "push": {
+    "particles_nb": 4
+    },
+    "remove": {
+    "particles_nb": 2
+    }
+  }
   },
   "retina_detect": true
 }
 );
 
+
 function handlePlayWbw()
 {
-    $(".aye span").off('click');
-    $(".aye span").on('click', function()
+  $(".aye span").off('click');
+  $(".aye span").on('click', function()
+  {
+    wbwAddr = $(this).attr('data-wbw');
+    if(wbwAddr)
     {
-      wbwAddr = $(this).attr('data-wbw');
-      if(wbwAddr)
-      {
-        var myWord = new Audio("https://dl.salamquran.com/audio/wbw/" + wbwAddr);
-        myWord.play();
-      }
-      else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
-      {
-        var myWord = new Audio($(this).parents('.ayeBox').attr('data-ayeAudio'));
-        myWord.play();
-      }
-    });
+      var myWord = new Audio("https://dl.salamquran.com/audio/wbw/" + wbwAddr);
+      myWord.play();
+    }
+    else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
+    {
+      var myWord = new Audio($(this).parents('.ayeBox').attr('data-ayeAudio'));
+      myWord.play();
+    }
+  });
 
 }
+
+
+function bindPlayAyeBtn()
+{
+  $(".ayeBox .play").off('click');
+  $(".ayeBox .play").on('click', function()
+  {
+    loadAyeDetail(this);
+  });
+}
+
+
+function loadAyeDetail(_this)
+{
+  var myAyeBox    = $(_this).parents('.ayeBox');
+  var ayeAudioURL = myAyeBox.attr('data-ayeAudio');
+  var ayeTitle    = myAyeBox.find('.aye .ayeNum').attr('data-original-title');
+
+  $('.player .title').text(ayeTitle);
+  var myAudio = $('.player audio');
+
+  $('.player audio source').attr('src', ayeAudioURL);
+  myAudio.load();
+
+
+}
+
+
 
 function pushState()
 {
   handlePlayWbw();
+  bindPlayAyeBtn();
 
 }
+
 
 
