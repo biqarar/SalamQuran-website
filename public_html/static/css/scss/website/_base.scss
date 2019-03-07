@@ -197,13 +197,16 @@ body{
 	z-index: 20;
 	font-size: 1.2em;
 	opacity: 0.9;
-	transition: 0.3s;
+	transition: 0.3s ease;
 }
 .ltr .player{
 	left: 50px;
 }
 .rtl .player{
 	right: 50px;
+}
+.player.nothing{
+	bottom: -60px;
 }
 .player .qari{
 	display: block;
