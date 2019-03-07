@@ -172,12 +172,16 @@ function loadAyeDetail(_this)
   var ayeTitle    = myAyeBox.find('.aye .ayeNum').attr('data-original-title');
 
   $('.player .title').text(ayeTitle);
-  var myAudio = $('.player audio');
-
-  $('.player audio source').attr('src', ayeAudioURL);
-  myAudio.load();
-
-
+  var talavat = $('.player #talavat');
+  if(talavat)
+  {
+    talavat = talavat.get(0);
+    // set new source
+    talavat.src = ayeAudioURL;
+    // load audio
+    talavat.load();
+    talavat.play();
+  }
 }
 
 
