@@ -44,7 +44,14 @@ class view
 			\dash\data::translationList($translation_list);
 		}
 
-		\dash\data::qariList(\lib\app\qari::list());
+		$list = \lib\app\qari::list();
+
+		\dash\data::qariList($list);
+
+		if(isset($list[1]))
+		{
+			\dash\data::qariLoaded($list[1]);
+		}
 	}
 }
 ?>

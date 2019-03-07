@@ -10,13 +10,13 @@ class qari
 
 		$list               =
 		[
-			1  => 	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/abdulbaset/ayat/murattal/mp3/', 'qari' => 'AbdulBaset AbdulSamad',],
+			100  => ['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/abdulbaset/ayat/murattal/mp3/', 'qari' => 'AbdulBaset AbdulSamad',],
 			2  =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/abdulbaset/ayat/Abdul_Basit_Murattal_192kbps/', 'qari' => 'AbdulBaset AbdulSamad',],
 			3  =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/abdulbaset/ayat/Abdul_Basit_Murattal_64kbps/', 'qari' => 'AbdulBaset AbdulSamad',],
 			4  =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/abdulbaset/ayat/mujawwad/mp3/', 'qari' => 'AbdulBaset AbdulSamad',],
 			5  =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/abdulbaset/ayat/Abdul_Basit_Mujawwad_128kbps/', 'qari' => 'AbdulBaset AbdulSamad',],
 			6  =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/alafasy/ayat/Alafasy_128kbps/', 'qari' => 'Mishari Rashid al-`Afasy',],
-			7  =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/alafasy/ayat/mp3/', 'qari' => 'Mishari Rashid al-`Afasy',],
+			1  =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/alafasy/ayat/mp3/', 'qari' => 'Mishari Rashid al-`Afasy',],
 			8  =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/alafasy/ayat/ogg/', 'qari' => 'Mishari Rashid al-`Afasy',],
 			9  =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/husary/ayat/Husary_128kbps/', 'qari' => 'Mahmoud Khalil Al-Husary',],
 			10 =>	['type' => 'murattal', 'play_type' => 'aya', 'audio_type' => 'mp3', 'addr' => $master_path. 'audio/husary/ayat/Husary_128kbps_Mujawwad/', 'qari' => 'Mahmoud Khalil Al-Husary',],

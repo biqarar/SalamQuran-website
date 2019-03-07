@@ -5,15 +5,15 @@
         <figcaption>
           <div class="title">Quran - Nas - Aye 1</div>
           <div class="meta">
-            <span class="artist">Parhizgar</span>
-            <span class="album">Tartil</span>
+            <span class="artist">{{qariLoaded.qari}}</span>
+            <span class="album">{{qariLoaded.type}}</span>
           </div>
         </figcaption>
       </a>
     </figure>
     <div class="c">
       <audio controls>
-        <source src="https://dl.salamquran.com/audio/abdulbaset/ayat/Abdul_Basit_Murattal_64kbps/001001.mp3" type="audio/mpeg">
+        <source src="{{qariLoaded.addr}}001001.mp3" type="audio/mpeg">
       </audio>
     </div>
   </div>
