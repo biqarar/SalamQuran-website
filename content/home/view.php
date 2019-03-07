@@ -43,6 +43,8 @@ class view
 			$translation_list = \lib\app\translate::current_lang_translate();
 			\dash\data::translationList($translation_list);
 		}
+
+		\dash\data::qariList(\lib\app\qari::list());
 	}
 }
 ?>
