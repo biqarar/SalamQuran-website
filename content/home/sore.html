@@ -20,37 +20,6 @@
 
 {%include 'content/home/block-player.html'%}
 
-{%if old_false%}
-<div class='Quran'>
-
-{%for key, myAye in sura%}
-
-{%if loop.index == 1%}
-{%if myAye.sura == 1%}
-{%else%}
-  <div class='besmellah'>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
-{%endif%}
-{%endif%}
-
-  <div class='ayeBox msg' id='{{myAye.aya}}'>
-    <div class='aye'>
-      <span class='text' data-kerkere='[data-aye-meta="{{myAye.aya}}"]'>{{myAye.text}}</span>
-      <a class='ayeNum' href='{{url.kingdom}}/{{myAye.sura}}#{{myAye.aya}}'>﴿{{myAye.aya | fitNumber}}﴾</a>
-    </div>
-    {%if translateList[myAye.index]['text']%}
-    <p>{{translateList[myAye.index]['text']}}</p>
-    {%endif%}
-    <div class='meta' data-aye-meta='{{myAye.aya}}'>
-      <abbr title='{%trans "Quran"%} - {%trans "Sore"%}{{myAye.sura}} {{myAye.suraName}} - {%trans "Aye"%}{{myAye.aya}}'>{{myAye.simple}}</abbr>
-    </div>
-
-  </div>
-{%endfor%}
-
-</div>
-{%endif%}
-
-
 
 
 {%for key, myAye in suraDetail%}
