@@ -256,8 +256,22 @@ function playAye(_this, _playOneAye)
       talavat.load();
     }
 
-    talavat.play();
+    togglePlay(talavat);
   }
+}
+
+
+function togglePlay(_player)
+{
+  // change icon
+   if (_player.paused)
+   {
+       _player.play();
+   }
+   else
+   {
+       _player.pause();
+   }
 }
 
 
