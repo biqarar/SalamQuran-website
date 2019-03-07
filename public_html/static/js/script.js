@@ -195,6 +195,11 @@ function playAye(_this, _continue)
   {
     myAyeBox = $(_this).parents('.ayeBox');
   }
+  // for last aye, return if next is not exist
+  if(!myAyeBox.is('.ayeBox'))
+  {
+    return false;
+  }
 
   var ayeAudioURL = myAyeBox.attr('data-ayeAudio');
   var ayeTitle    = myAyeBox.find('.aye .ayeNum').attr('data-original-title');
