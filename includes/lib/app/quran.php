@@ -244,5 +244,41 @@ class quran
 
 		return null;
 	}
+
+
+	public static function day_aya()
+	{
+		return self::random_aya();
+	}
+
+
+	public static function day_page()
+	{
+		return self::random_page();
+	}
+
+
+	public static function random_aya()
+	{
+		$get = \lib\db\quran::get(['1.1' => 1.1, 'limit' => 1], ['order' => ' ORDER BY RAND() ']);
+		if(isset($get['sura']) && isset($get['aya']))
+		{
+			$get['url'] = \dash\url::kingdom(). '/s'. $get['sura']. '/'. $get['aya'];
+			return $get;
+		}
+
+		return null;
+	}
+
+
+	public static function random_page()
+	{
+		$page = rand(1, 604);
+		$get = [];
+		$get['url'] = \dash\url::kingdom(). '/p'. $page;
+		return $get;
+	}
+
+
 }
 ?>

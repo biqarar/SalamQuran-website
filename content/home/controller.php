@@ -16,6 +16,11 @@ class controller
 			$url .= '/'. $child;
 		}
 
+		if(in_array($module, ['aye', 'random','page', 'randompage']) && !$child)
+		{
+			self::random_quran($module);
+		}
+
 		$meta = [];
 
 		if(\dash\request::get('t'))
@@ -46,6 +51,38 @@ class controller
 			{
 				\dash\data::translateList($quran['translate']);
 			}
+		}
+	}
+
+
+	private static function random_quran($_type)
+	{
+		switch ($_type)
+		{
+			case 'aye':
+				$detail = \lib\app\quran::day_aya();
+				break;
+
+			case 'page':
+				$detail = \lib\app\quran::day_page();
+				break;
+
+			case 'random':
+				$detail = \lib\app\quran::random_aya();
+				break;
+
+			case 'randompage':
+				$detail = \lib\app\quran::random_page();
+				break;
+
+			default:
+				return false;
+				break;
+		}
+
+		if(isset($detail['url']))
+		{
+			\dash\redirect::to($detail['url']);
 		}
 	}
 }
