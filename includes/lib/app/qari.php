@@ -345,6 +345,21 @@ class qari
 		return $list;
 	}
 
+	public static function load($_id)
+	{
+		if(!$_id || !ctype_digit($_id))
+		{
+			$_id = 1;
+		}
+
+		$list = self::list();
+		if(!isset($list[$_id]))
+		{
+			return $list[1];
+		}
+
+		return $list[$_id];
+	}
 
 	public static function get_aya_url($_gari, $_sura, $_aya)
 	{

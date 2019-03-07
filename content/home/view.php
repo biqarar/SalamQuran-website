@@ -45,13 +45,11 @@ class view
 		}
 
 		$list = \lib\app\qari::list();
-
 		\dash\data::qariList($list);
 
-		if(isset($list[1]))
-		{
-			\dash\data::qariLoaded($list[1]);
-		}
+		$qariLoaded = \lib\app\qari::load(\dash\request::get('qari'));
+		\dash\data::qariLoaded($qariLoaded);
+
 	}
 }
 ?>
