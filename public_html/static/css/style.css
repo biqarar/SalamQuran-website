@@ -5829,7 +5829,9 @@ body {
 
 #page {
   min-height: 100%;
-  margin: 0; }
+  margin: 0;
+  position: relative;
+  overflow: hidden; }
 
 .wrapper {
   padding: 5rem 0;
@@ -5992,8 +5994,8 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 30px;
-  background-color: rgba(44, 44, 44, 0.5);
+  height: 60px;
+  background-color: rgba(44, 44, 44, 0.9);
   z-index: 20; }
 
 .postPreview img.thumb {

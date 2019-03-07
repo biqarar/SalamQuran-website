@@ -8,18 +8,19 @@
 
 {%block content%}
   <main id="main">
-    <div class="cn">
-      <div class="wrapper" data-xhr='wrapper'>
+  <div class="cn">
+    <div class="wrapper" data-xhr='wrapper'>
 {%block page%}{%endblock%}
-      </div>
     </div>
+  </div>
   </main>
 {%endblock%}
 {%block pageExtra%}{%endblock%}
 
 {%include 'content/main/footer.html'%}
-</div>
+{%include 'content/main/player.html'%}
 
+</div>
 {%include 'content/main/sidebar.html'%}
 
 
