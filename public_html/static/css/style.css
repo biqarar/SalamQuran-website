@@ -5987,6 +5987,15 @@ body {
   direction: rtl;
   text-align: center; }
 
+.player {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 30px;
+  background-color: rgba(44, 44, 44, 0.5);
+  z-index: 20; }
+
 .postPreview img.thumb {
   width: 200px;
   height: auto;
