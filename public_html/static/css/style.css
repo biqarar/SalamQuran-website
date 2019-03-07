@@ -5946,7 +5946,8 @@ body {
   margin-bottom: 5px;
   cursor: pointer;
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  user-select: none; }
 
 .ayeBox .meta .opr:hover {
   background-color: #e5e5f5; }

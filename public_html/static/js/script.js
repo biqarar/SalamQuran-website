@@ -254,8 +254,9 @@ function playAye(_this, _playOneAye)
       talavat.src = ayeAudioURL;
       // load audio
       talavat.load();
-      talavat.play();
     }
+
+    talavat.play();
   }
 }
 
@@ -264,6 +265,7 @@ function detectNextAye(_this)
 {
   var currentId     = $(_this).attr('data-aye-id');
   var currentAyeBox = $('.ayeBox#'+ currentId);
+  currentAyeBox.removeClass('active');
   var nextAyeBox    = currentAyeBox.next();
   var oneAye        = $('#talavat').attr('data-oneaye');
   // if need to get next

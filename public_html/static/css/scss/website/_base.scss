@@ -141,6 +141,7 @@ body{
 	cursor: pointer;
 	text-align: center;
 	overflow: hidden;
+	user-select:none;
 }
 .ayeBox .meta .opr:hover{
 	background-color: #e5e5f5;
