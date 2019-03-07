@@ -84,6 +84,10 @@ body{
 	background-color: rgba(0,200,255,0.05);
 	border-color: rgba(0,0,0,0.2);
 }
+.ayeBox.active{
+	background-color: rgba(0,200,255,0.05);
+	border-color: #2080d0;
+}
 .ayeBox .aye{
 	font-size: 1.4em;
 	direction: rtl;
