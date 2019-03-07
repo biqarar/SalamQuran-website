@@ -127,18 +127,6 @@ class quran_word
 				$verse_url .= '/s'. $value['sura'];
 				$verse_url .= '/'. $value['aya'];
 
-				$next_sura = intval($value['sura']) + 1;
-				$prev_sura = intval($value['sura']) - 1;
-
-				if($next_sura > 114)
-				{
-					$next_sura = null;
-				}
-
-				if($prev_sura < 1)
-				{
-					$prev_sura = null;
-				}
 
 
 				$quran['aya'][$value['aya']]['detail'] =
@@ -158,8 +146,6 @@ class quran_word
 					'verse_key'     => $value['verse_key'],
 					'verse_title'   => $verse_title,
 					'verse_url'     => $verse_url,
-					'next_sura'     => $next_sura,
-					'prev_sura'     => $prev_sura,
 					'page'          => $value['page'],
 					'audio'         => self::get_aya_audio($value['sura'], $value['aya'], $_meta),
 					'translate'     => self::get_translation($value['sura'], $value['aya'], $_meta),
@@ -192,7 +178,23 @@ class quran_word
 
 		$result['mode_quran'] = false;
 
-		$result['detail'] = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
+		$next_sura = intval($_id) + 1;
+		$prev_sura = intval($_id) - 1;
+
+		if($next_sura > 114)
+		{
+			$next_sura = null;
+		}
+
+		if($prev_sura < 1)
+		{
+			$prev_sura = null;
+		}
+
+		$sura_detail              = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
+		$sura_detail['next_sura'] = $next_sura;
+		$sura_detail['prev_sura'] = $prev_sura;
+		$result['detail']         = $sura_detail;
 
 		// \dash\notif::api($result);
 
