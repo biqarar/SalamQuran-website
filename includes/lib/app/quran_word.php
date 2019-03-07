@@ -132,7 +132,7 @@ class quran_word
 				$quran['aya'][$value['aya']]['detail'] =
 				[
 					'index'         => isset($quran_aya[$quran_aya_key]['index']) ? $quran_aya[$quran_aya_key]['index'] : null,
-					'text'          => isset($quran_aya[$quran_aya_key]['text']) ? \Normalizer::normalize($quran_aya[$quran_aya_key]['text']) : null,
+					'text'          => isset($quran_aya[$quran_aya_key]['text']) ? self::normalize($quran_aya[$quran_aya_key]['text']) : null,
 					'simple'        => isset($quran_aya[$quran_aya_key]['simple']) ? $quran_aya[$quran_aya_key]['simple'] : null,
 					'juz'           => isset($quran_aya[$quran_aya_key]['juz']) ? $quran_aya[$quran_aya_key]['juz'] : null,
 					'hizb'          => isset($quran_aya[$quran_aya_key]['hizb']) ? $quran_aya[$quran_aya_key]['hizb'] : null,
@@ -174,7 +174,7 @@ class quran_word
 
 			if(isset($value['text']))
 			{
-				$value['text'] = \Normalizer::normalize($value['text']);
+				$value['text'] = self::normalize($value['text']);
 			}
 
 			$quran['aya'][$value['aya']]['word'][] = $value;
@@ -228,6 +228,15 @@ class quran_word
 
 	}
 
+	public static function normalize($_text)
+	{
+		if(is_callable(['Normalizer', 'normalize']))
+		{
+			return \Normalizer::normalize($_text);
+		}
+		return $_text;
+
+	}
 
 	private static function sure_old($_id, $_aye = null, $_meta = [])
 	{
