@@ -134,6 +134,7 @@ body{
 	margin-bottom: 5px;
 	cursor: pointer;
 	text-align: center;
+	overflow: hidden;
 }
 .ayeBox .meta .opr:hover{
 	background-color: #e5e5f5;
@@ -150,6 +151,15 @@ body{
 .ayeBox .meta .opr span{
 	display: inline-block;
 	margin:0 5px;
+}
+.ayeBox .meta .copy input{
+  padding:0;
+  margin:0;
+  position:absolute;
+  z-index:-1;
+  width:5px;
+  height:0;
+  opacity:0;
 }
 
 
