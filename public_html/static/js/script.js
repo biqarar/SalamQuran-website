@@ -176,9 +176,19 @@ function bindAudioTools()
   }
 
   // after end one audio goto next
-  document.getElementById('talavat').onended = function()
+  var talavatEl = document.getElementById('talavat');
+  // on end
+  talavatEl.onended = function()
   {
     detectNextAye(this);
+  };
+  // on start
+  talavatEl.onplay = function()
+  {
+    if($(talavatEl).attr('data-aye-id') === undefined)
+    {
+      playAye();
+    }
   };
 
 }
@@ -187,7 +197,11 @@ function bindAudioTools()
 function playAye(_this, _playOneAye)
 {
   var myAyeBox = $(_this);
-  if($(_this).is('.ayeBox'))
+  if(_this === undefined)
+  {
+    myAyeBox = $('.ayeBox:first');
+  }
+  if(myAyeBox.is('.ayeBox'))
   {
     // this is Aye
   }
@@ -229,11 +243,19 @@ function playAye(_this, _playOneAye)
       talavatEl.attr('data-aye-id', myAyeBox.attr('id'));
     }
 
+    // if souce is changed, change it, else do nothing
     // set new source
-    talavat.src = ayeAudioURL;
-    // load audio
-    talavat.load();
-    talavat.play();
+    if(ayeAudioURL === talavat.src)
+    {
+      // do something on design to show it not changed
+    }
+    else
+    {
+      talavat.src = ayeAudioURL;
+      // load audio
+      talavat.load();
+      talavat.play();
+    }
   }
 }
 
