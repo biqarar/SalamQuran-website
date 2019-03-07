@@ -178,7 +178,7 @@ function bindAudioTools()
   // after end one audio goto next
   document.getElementById('talavat').onended = function()
   {
-    playNextAye(this);
+    detectNextAye(this);
   };
 
 }
@@ -186,7 +186,16 @@ function bindAudioTools()
 
 function playAye(_this, _continue)
 {
-  var myAyeBox    = $(_this).parents('.ayeBox');
+  var myAyeBox = $(_this);
+  if($(_this).is('.ayeBox'))
+  {
+    // this is Aye
+  }
+  else
+  {
+    myAyeBox = $(_this).parents('.ayeBox');
+  }
+
   var ayeAudioURL = myAyeBox.attr('data-ayeAudio');
   var ayeTitle    = myAyeBox.find('.aye .ayeNum').attr('data-original-title');
 
@@ -212,16 +221,13 @@ function playAye(_this, _continue)
 }
 
 
-function playNextAye(_this)
+function detectNextAye(_this)
 {
+  // if need to get next
   var currentId     = $(_this).attr('data-aye-id');
   var currentAyeBox = $('.ayeBox#'+ currentId);
-  var nextAyeBox    = $('.ayeBox#'+ parseInt(currentId) + 1);
-
-    console.log(_this);
-    console.log(currentId);
-    console.log(currentAyeBox);
-    console.log(nextAyeBox);
+  var nextAyeBox    = currentAyeBox.next();
+  playAye(nextAyeBox);
 }
 
 
