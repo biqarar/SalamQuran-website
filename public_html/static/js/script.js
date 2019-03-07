@@ -147,8 +147,9 @@ function handlePlayWbw()
     }
     else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
     {
-      var myWord = new Audio($(this).parents('.ayeBox').attr('data-ayeAudio'));
-      myWord.play();
+      loadAyeDetail(this);
+      // var myWord = new Audio($(this).parents('.ayeBox').attr('data-ayeAudio'));
+      // myWord.play();
     }
   });
 
