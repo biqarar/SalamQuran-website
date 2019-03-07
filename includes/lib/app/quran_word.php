@@ -123,6 +123,11 @@ class quran_word
 				$verse_title .= ' ';
 				$verse_title .= \dash\utility\human::fitNumber($value['aya']);
 
+				$verse_url = \dash\url::kingdom();
+				$verse_url .= '/s'. $value['sura'];
+				$verse_url .= '/'. $value['aya'];
+
+
 				$quran['aya'][$value['aya']]['detail'] =
 				[
 					'index'         => isset($quran_aya[$quran_aya_key]['index']) ? $quran_aya[$quran_aya_key]['index'] : null,
@@ -139,6 +144,7 @@ class quran_word
 					'sura'          => $value['sura'],
 					'verse_key'     => $value['verse_key'],
 					'verse_title'   => $verse_title,
+					'verse_url'     => $verse_url,
 					'page'          => $value['page'],
 					'audio'         => self::get_aya_audio($value['sura'], $value['aya'], $_meta),
 					'translate'     => self::get_translation($value['sura'], $value['aya'], $_meta),
