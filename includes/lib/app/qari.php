@@ -6,7 +6,8 @@ class qari
 {
 	public static function list()
 	{
-		$master_path        = 'https://dl.salamquran.com/';
+		$master_path = 'https://dl.salamquran.com/';
+		$qari_image  = \dash\url::site(). '/static/images/qariyan/';
 
 		$list               =
 		[
@@ -17,7 +18,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/abdulbaset/ayat/murattal/mp3/',
 					'qari_slug'  => 'abdulbaset',
-					'image'      => \dash\url::site(). '/static/images/qariyan/basit.png',
+					'image'      => $qari_image. 'basit.png',
 					'qari'       => 'AbdulBaset AbdulSamad',
 				],
 			2  =>
@@ -27,7 +28,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/abdulbaset/ayat/Abdul_Basit_Murattal_192kbps/',
 					'qari_slug'  => 'abdulbaset',
-					'image'      => \dash\url::site(). '/static/images/qariyan/basit.png',
+					'image'      => $qari_image. 'basit.png',
 					'qari'       => 'AbdulBaset AbdulSamad',
 				],
 			3  =>
@@ -37,7 +38,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/abdulbaset/ayat/Abdul_Basit_Murattal_64kbps/',
 					'qari_slug'  => 'abdulbaset',
-					'image'      => \dash\url::site(). '/static/images/qariyan/basit.png',
+					'image'      => $qari_image. 'basit.png',
 					'qari'       => 'AbdulBaset AbdulSamad',
 				],
 			4  =>
@@ -47,7 +48,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/abdulbaset/ayat/mujawwad/mp3/',
 					'qari_slug'  => 'abdulbaset',
-					'image'      => \dash\url::site(). '/static/images/qariyan/basit.png',
+					'image'      => $qari_image. 'basit.png',
 					'qari'       => 'AbdulBaset AbdulSamad',
 				],
 			5  =>
@@ -57,7 +58,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/abdulbaset/ayat/Abdul_Basit_Mujawwad_128kbps/',
 					'qari_slug'  => 'abdulbaset',
-					'image'      => \dash\url::site(). '/static/images/qariyan/basit.png',
+					'image'      => $qari_image. 'basit.png',
 					'qari'       => 'AbdulBaset AbdulSamad',
 				],
 			6  =>
@@ -67,7 +68,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/alafasy/ayat/Alafasy_128kbps/',
 					'qari_slug'  => 'afasy',
-					'image'      => \dash\url::site(). '/static/images/qariyan/mashari.png',
+					'image'      => $qari_image. 'mashari.png',
 					'qari'       => 'Mishari Rashid al-`Afasy',
 				],
 			1  =>
@@ -77,7 +78,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/alafasy/ayat/mp3/',
 					'qari_slug'  => 'afasy',
-					'image'      => \dash\url::site(). '/static/images/qariyan/mashari.png',
+					'image'      => $qari_image. 'mashari.png',
 					'qari'       => 'Mishari Rashid al-`Afasy',
 				],
 			8  =>
@@ -87,7 +88,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/alafasy/ayat/ogg/',
 					'qari_slug'  => 'afasy',
-					'image'      => \dash\url::site(). '/static/images/qariyan/mashari.png',
+					'image'      => $qari_image. 'mashari.png',
 					'qari'       => 'Mishari Rashid al-`Afasy',
 				],
 			9  =>
@@ -97,7 +98,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/husary/ayat/Husary_128kbps/',
 					'qari_slug'  => 'husary',
-					'image'      => \dash\url::site(). '/static/images/qariyan/husary.png',
+					'image'      => $qari_image. 'husary.png',
 					'qari'       => 'Mahmoud Khalil Al-Husary',
 				],
 			10 =>
@@ -107,7 +108,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/husary/ayat/Husary_128kbps_Mujawwad/',
 					'qari_slug'  => 'husary',
-					'image'      => \dash\url::site(). '/static/images/qariyan/husary.png',
+					'image'      => $qari_image. 'husary.png',
 					'qari'       => 'Mahmoud Khalil Al-Husary',
 				],
 			11 =>
@@ -117,7 +118,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/husary/ayat/Husary_64kbps/',
 					'qari_slug'  => 'husary',
-					'image'      => \dash\url::site(). '/static/images/qariyan/husary.png',
+					'image'      => $qari_image. 'husary.png',
 					'qari'       => 'Mahmoud Khalil Al-Husary',
 				],
 			12 =>
@@ -127,7 +128,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/husary/ayat/Husary_Muallim_128kbps/',
 					'qari_slug'  => 'husary',
-					'image'      => \dash\url::site(). '/static/images/qariyan/husary.png',
+					'image'      => $qari_image. 'husary.png',
 					'qari'       => 'Mahmoud Khalil Al-Husary',
 				],
 			13 =>
@@ -137,7 +138,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/husary/ayat/mujawwad/ogg/',
 					'qari_slug'  => 'husary',
-					'image'      => \dash\url::site(). '/static/images/qariyan/husary.png',
+					'image'      => $qari_image. 'husary.png',
 					'qari'       => 'Mahmoud Khalil Al-Husary',
 				],
 			14 =>
@@ -147,7 +148,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/husary/ayat/murattal/ogg/',
 					'qari_slug'  => 'husary',
-					'image'      => \dash\url::site(). '/static/images/qariyan/husary.png',
+					'image'      => $qari_image. 'husary.png',
 					'qari'       => 'Mahmoud Khalil Al-Husary',
 				],
 			15 =>
@@ -157,7 +158,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/minshawi/ayat/Minshawy_Murattal_128kbps/',
 					'qari_slug'  => 'minshawi',
-					'image'      => \dash\url::site(). '/static/images/qariyan/menshawi.png',
+					'image'      => $qari_image. 'menshawi.png',
 					'qari'       => 'Mohamed Siddiq al-Minshawi',
 				],
 			16 =>
@@ -167,7 +168,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/minshawi/ayat/mujawwad/mp3-192kbps/',
 					'qari_slug'  => 'minshawi',
-					'image'      => \dash\url::site(). '/static/images/qariyan/menshawi.png',
+					'image'      => $qari_image. 'menshawi.png',
 					'qari'       => 'Mohamed Siddiq al-Minshawi',
 				],
 			17 =>
@@ -177,7 +178,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/minshawi/ayat/mujawwad/ogg/',
 					'qari_slug'  => 'minshawi',
-					'image'      => \dash\url::site(). '/static/images/qariyan/menshawi.png',
+					'image'      => $qari_image. 'menshawi.png',
 					'qari'       => 'Mohamed Siddiq al-Minshawi',
 				],
 			18 =>
@@ -187,7 +188,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/minshawi/ayat/murattal/mp3/',
 					'qari_slug'  => 'minshawi',
-					'image'      => \dash\url::site(). '/static/images/qariyan/menshawi.png',
+					'image'      => $qari_image. 'menshawi.png',
 					'qari'       => 'Mohamed Siddiq al-Minshawi',
 				],
 			19 =>
@@ -197,7 +198,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/minshawi/ayat/murattal/ogg/',
 					'qari_slug'  => 'minshawi',
-					'image'      => \dash\url::site(). '/static/images/qariyan/menshawi.png',
+					'image'      => $qari_image. 'menshawi.png',
 					'qari'       => 'Mohamed Siddiq al-Minshawi',
 				],
 			20 =>
@@ -207,7 +208,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/rifai/ayat/Hani_Rifai_192kbps/',
 					'qari_slug'  => 'rifai',
-					'image'      => \dash\url::site(). '/static/images/qariyan/rifai.png',
+					'image'      => $qari_image. 'rifai.png',
 					'qari'       => 'Hani ar-Rifai',
 				],
 			21 =>
@@ -217,7 +218,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/rifai/ayat/murattal/mp3/',
 					'qari_slug'  => 'rifai',
-					'image'      => \dash\url::site(). '/static/images/qariyan/rifai.png',
+					'image'      => $qari_image. 'rifai.png',
 					'qari'       => 'Hani ar-Rifai',
 				],
 			22 =>
@@ -227,7 +228,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/rifai/ayat/murattal/ogg/',
 					'qari_slug'  => 'rifai',
-					'image'      => \dash\url::site(). '/static/images/qariyan/rifai.png',
+					'image'      => $qari_image. 'rifai.png',
 					'qari'       => 'Hani ar-Rifai',
 				],
 			23 =>
@@ -237,7 +238,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/shatri/ayat/Abu_Bakr_Ash-Shaatree_128kbps/',
 					'qari_slug'  => 'shatri',
-					'image'      => \dash\url::site(). '/static/images/qariyan/shateri.png',
+					'image'      => $qari_image. 'shateri.png',
 					'qari'       => 'Abu Bakr al-Shatri',
 				],
 			24 =>
@@ -247,7 +248,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/shatri/ayat/murattal/mp3/',
 					'qari_slug'  => 'shatri',
-					'image'      => \dash\url::site(). '/static/images/qariyan/shateri.png',
+					'image'      => $qari_image. 'shateri.png',
 					'qari'       => 'Abu Bakr al-Shatri',
 				],
 			25 =>
@@ -257,7 +258,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/shatri/ayat/murattal/ogg/',
 					'qari_slug'  => 'shatri',
-					'image'      => \dash\url::site(). '/static/images/qariyan/shateri.png',
+					'image'      => $qari_image. 'shateri.png',
 					'qari'       => 'Abu Bakr al-Shatri',
 				],
 			26 =>
@@ -267,7 +268,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/shuraym/Saood_ash-Shuraym_128kbps/',
 					'qari_slug'  => 'shuraym',
-					'image'      => \dash\url::site(). '/static/images/qariyan/sharim.png',
+					'image'      => $qari_image. 'sharim.png',
 					'qari'       => 'Sa`ud ash-Shuraym',
 				],
 			27 =>
@@ -277,7 +278,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/shuraym/mp3/',
 					'qari_slug'  => 'shuraym',
-					'image'      => \dash\url::site(). '/static/images/qariyan/sharim.png',
+					'image'      => $qari_image. 'sharim.png',
 					'qari'       => 'Sa`ud ash-Shuraym',
 				],
 			28 =>
@@ -287,7 +288,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/shuraym/ogg/',
 					'qari_slug'  => 'shuraym',
-					'image'      => \dash\url::site(). '/static/images/qariyan/sharim.png',
+					'image'      => $qari_image. 'sharim.png',
 					'qari'       => 'Sa`ud ash-Shuraym',
 				],
 			29 =>
@@ -297,7 +298,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/sudais/ayat/Abdurrahmaan_As-Sudais_192kbps/',
 					'qari_slug'  => 'sudais',
-					'image'      => \dash\url::site(). '/static/images/qariyan/sudais.png',
+					'image'      => $qari_image. 'sudais.png',
 					'qari'       => 'Abdur-Rahman as-Sudais',
 				],
 			30 =>
@@ -307,7 +308,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/sudais/ayat/murattal/mp3/',
 					'qari_slug'  => 'sudais',
-					'image'      => \dash\url::site(). '/static/images/qariyan/sudais.png',
+					'image'      => $qari_image. 'sudais.png',
 					'qari'       => 'Abdur-Rahman as-Sudais',
 				],
 			31 =>
@@ -317,7 +318,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/sudais/ayat/murattal/ogg/',
 					'qari_slug'  => 'sudais',
-					'image'      => \dash\url::site(). '/static/images/qariyan/sudais.png',
+					'image'      => $qari_image. 'sudais.png',
 					'qari'       => 'Abdur-Rahman as-Sudais',
 				],
 			32 =>
@@ -327,7 +328,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/sudais/ayat/murattal/mp3/',
 					'qari_slug'  => 'sudais',
-					'image'      => \dash\url::site(). '/static/images/qariyan/sudais.png',
+					'image'      => $qari_image. 'sudais.png',
 					'qari'       => 'Abdur-Rahman as-Sudais',
 				],
 			33 =>
@@ -337,7 +338,7 @@ class qari
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/sudais/ayat/murattal/ogg/',
 					'qari_slug'  => 'sudais',
-					'image'      => \dash\url::site(). '/static/images/qariyan/sudais.png',
+					'image'      => $qari_image. 'sudais.png',
 					'qari'       => 'Abdur-Rahman as-Sudais',
 				],
 		];
