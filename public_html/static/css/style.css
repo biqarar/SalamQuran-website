@@ -6653,7 +6653,8 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   .player {
     left: 0 !important;
     right: 0 !important;
-    height: 40px; }
+    height: 41px;
+    bottom: -1px; }
 
   .player .qari figcaption {
     display: none; }
@@ -6666,7 +6667,9 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   .player audio {
     padding: 0 3px;
     margin: 2px 0;
-    height: 36px; } }
+    height: 36px;
+    min-height: 36px;
+    max-height: 36px; } }
 /* Design for print */
 
 /*# sourceMappingURL=style.css.map */
