@@ -384,8 +384,18 @@ class qari
 		{
 			$_aya = '0'. $_aya;
 		}
-		$url = 'https://dl.salamquran.com/audio/alafasy/ayat/mp3/'. $_sura.$_aya. '.mp3';
-		return $url;
+
+		$load = self::load($_gari);
+		if(isset($load['addr']))
+		{
+			$addr = $load['addr'];
+			$url = $addr. $_sura.$_aya. '.mp3';
+			return $url;
+		}
+		else
+		{
+			return false;
+		}
 	}
 }
 ?>
