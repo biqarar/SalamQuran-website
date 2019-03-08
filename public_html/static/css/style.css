@@ -6558,17 +6558,17 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 
 .player .qari {
   display: block;
-  margin: 5px 20px;
+  margin: 0;
   overflow: hidden; }
 
 .player .qari img {
   display: inline-block;
   border-radius: 50%;
   max-width: 50px;
-  min-width: 50px;
+  min-width: 30px;
   width: 50px;
   height: 50px;
-  margin: 0 5px;
+  margin: 5px;
   background-color: #fff;
   vertical-align: middle; }
 
@@ -6577,7 +6577,8 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   display: inline-block;
   color: #fff;
   height: 50px;
-  padding: 5px 0 0; }
+  padding: 5px 0 0;
+  margin: 5px 0; }
 
 .player .qari .title {
   height: 25px;
@@ -6587,7 +6588,9 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 .player .qari .meta {
   height: 15px;
   line-height: 15px;
-  color: #ccc; }
+  color: #ccc;
+  max-width: 200px;
+  overflow: hidden; }
 
 .player .qari .meta span {
   display: inline-block; }
@@ -6645,7 +6648,25 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
     margin-left: 0.5em; }
 
   #soreha .c7 abbr {
-    display: inline-block; } }
+    display: inline-block; }
+
+  .player {
+    left: 0 !important;
+    right: 0 !important;
+    height: 40px; }
+
+  .player .qari figcaption {
+    display: none; }
+
+  .player .qari img {
+    height: 36px;
+    width: 36px;
+    margin: 2px; }
+
+  .player audio {
+    padding: 0 3px;
+    margin: 2px 0;
+    height: 36px; } }
 /* Design for print */
 
 /*# sourceMappingURL=style.css.map */

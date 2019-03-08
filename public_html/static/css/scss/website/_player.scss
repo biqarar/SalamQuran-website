@@ -22,17 +22,17 @@
 }
 .player .qari{
 	display: block;
-	margin:5px 20px;
+	margin:0;
 	overflow: hidden;
 }
 .player .qari img{
 	display: inline-block;
 	border-radius: 50%;
 	max-width: 50px;
-	min-width: 50px;
+	min-width: 30px;
 	width: 50px;
 	height: 50px;
-	margin:0 5px;
+	margin:5px;
 	background-color: #fff;
 	vertical-align: middle;
 }
@@ -42,6 +42,7 @@
 	color: #fff;
 	height: 50px;
 	padding:5px 0 0;
+	margin:5px 0;
 }
 .player .qari .title{
 	height: 25px;
@@ -52,6 +53,8 @@
 	height: 15px;
 	line-height: 15px;
 	color: #ccc;
+	max-width: 200px;
+	overflow: hidden;
 }
 .player .qari .meta span{
 	display: inline-block

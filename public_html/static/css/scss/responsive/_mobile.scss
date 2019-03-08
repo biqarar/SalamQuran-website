@@ -27,4 +27,23 @@
 		display: inline-block;
 	}
 
+	// player
+	.player{
+		left: 0!important;
+		right: 0!important;
+		height: 40px;
+	}
+	.player .qari figcaption{
+		display: none;
+	}
+	.player .qari img{
+		height: 36px;
+		width: 36px;
+		margin: 2px;
+	}
+	.player audio{
+		padding: 0 3px;
+		margin:2px 0;
+		height: 36px;
+	}
 }
