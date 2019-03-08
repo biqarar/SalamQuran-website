@@ -85,7 +85,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/alafasy/ayat/ogg/',
 					'qari_slug'  => 'afasy',
 					'image'      => $qari_image. 'mashari.png',
@@ -135,7 +135,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/husary/ayat/mujawwad/ogg/',
 					'qari_slug'  => 'husary',
 					'image'      => $qari_image. 'husary.png',
@@ -145,7 +145,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/husary/ayat/murattal/ogg/',
 					'qari_slug'  => 'husary',
 					'image'      => $qari_image. 'husary.png',
@@ -175,7 +175,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/minshawi/ayat/mujawwad/ogg/',
 					'qari_slug'  => 'minshawi',
 					'image'      => $qari_image. 'menshawi.png',
@@ -195,7 +195,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/minshawi/ayat/murattal/ogg/',
 					'qari_slug'  => 'minshawi',
 					'image'      => $qari_image. 'menshawi.png',
@@ -225,7 +225,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/rifai/ayat/murattal/ogg/',
 					'qari_slug'  => 'rifai',
 					'image'      => $qari_image. 'rifai.png',
@@ -255,7 +255,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/shatri/ayat/murattal/ogg/',
 					'qari_slug'  => 'shatri',
 					'image'      => $qari_image. 'shateri.png',
@@ -285,7 +285,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/shuraym/ogg/',
 					'qari_slug'  => 'shuraym',
 					'image'      => $qari_image. 'sharim.png',
@@ -315,7 +315,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/sudais/ayat/murattal/ogg/',
 					'qari_slug'  => 'sudais',
 					'image'      => $qari_image. 'sudais.png',
@@ -335,7 +335,7 @@ class qari
 				[
 					'type'       => 'murattal',
 					'play_type'  => 'aya',
-					'audio_type' => 'mp3',
+					'audio_type' => 'ogg',
 					'addr'       => $master_path. 'audio/sudais/ayat/murattal/ogg/',
 					'qari_slug'  => 'sudais',
 					'image'      => $qari_image. 'sudais.png',
@@ -390,7 +390,7 @@ class qari
 		if(isset($load['addr']))
 		{
 			$addr = $load['addr'];
-			$url = $addr. $_sura.$_aya. '.mp3';
+			$url = $addr. $_sura. $_aya. '.'. $load['audio_type'];
 			return $url;
 		}
 		else
