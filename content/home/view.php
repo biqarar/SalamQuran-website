@@ -51,6 +51,12 @@ class view
 		$qariLoaded = \lib\app\qari::load(\dash\request::get('qari'));
 		\dash\data::qariLoaded($qariLoaded);
 
+		$readMode = \lib\app\read_mode::site_list();
+		\dash\data::readModeList($readMode);
+
+		$readModeLoaded = \lib\app\read_mode::load(\dash\request::get('mode'));
+		\dash\data::readModeLoaded($readModeLoaded);
+
 	}
 }
 ?>
