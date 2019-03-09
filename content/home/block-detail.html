@@ -1,6 +1,6 @@
 
 <div class="f mB25">
-  <div class="c4 s12 pLa10">
+  <div class="cauto s12 pLa10">
     <div class="ui floating search dropdown button" id='chooseQari'>
       <i class="sf-microphone"></i>
       <span class="text">
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="c4 s12 pLa10">
+  <div class="cauto s12 pLa10">
     <div class="ui floating search dropdown button" id='chooseTranslate'>
       <i class="sf-language"></i>
       <span class="text">
@@ -46,9 +46,9 @@
     </div>
   </div>
 
-  <div class="c4 s12 pLa10">
+  <div class="cauto s12 pLa10">
     <div class="ui floating search dropdown button" id='chooseReadMode'>
-      <i class="sf-language"></i>
+      <i class="sf-monitor-screen-1"></i>
       <span class="text">
         <img src="{{qariLoaded.image}}" class="avatar">
         <span>{{qariLoaded.qari}}</span>
@@ -67,6 +67,26 @@
     </div>
   </div>
 
+  <div class="cauto s12 pLa10">
+    <div class="ui floating search dropdown button" id='chooseStyle'>
+      <i class="sf-font"></i>
+      <span class="text">
+        <img src="{{qariLoaded.image}}" class="avatar">
+        <span>{{qariLoaded.qari}}</span>
+        <span class="type">{{qariLoaded.type_title}}</span>
+      </span>
+      <div class="menu">
+        <div class="header">{%trans "Change Style"%}</div>
+{%for key, value in translationList%}
+          <a class="item" href="{{value.url}}">
+            <i class="flag {{value.flag}}"></i>
+            <span>{{value.localname}}</span>
+            <span class="type">{{value.language_name}}</span>
+          </a>
+{%endfor%}
+      </div>
+    </div>
+  </div>
 
   <div class="cauto os">
     <a href='{{url.kingdom}}' class="btn block secondary outline"><span class="compact mRa5 sf-eject"></span>{%trans "Back to list of suras"%}</a>
