@@ -196,10 +196,22 @@ function bindAudioTools()
 
 function playAye(_this, _playOneAye)
 {
-  var myAyeBox = $(_this);
+  var talavat    = document.getElementById('talavat');
+  var talavatObj = $('#talavat');
+  var myAyeBox   = $(_this);
+
   if(_this === undefined)
   {
-    myAyeBox = $('.ayeBox:first');
+    if(talavatObj.attr('data-aye-id'))
+    {
+      // select that one
+      myAyeBox = $('#'+ talavatObj.attr('data-aye-id'));
+    }
+    else
+    {
+      // if aye id is not set, get first one
+      myAyeBox = $('.ayeBox:first');
+    }
   }
   if(myAyeBox.is('.ayeBox'))
   {
@@ -217,18 +229,16 @@ function playAye(_this, _playOneAye)
 
   var ayeAudioURL = myAyeBox.attr('data-ayeAudio');
   var ayeTitle    = myAyeBox.find('.aye .ayeNum').attr('data-original-title');
-  var talavat     = document.getElementById('talavat');
-  var talavatEl   = $('#talavat');
 
   if(_playOneAye)
   {
     // do nothing, on default play continuesly
-    talavatEl.attr('data-oneaye', true);
+    talavatObj.attr('data-oneaye', true);
   }
   else
   {
     // only play one record
-    talavatEl.attr('data-oneaye', null);
+    talavatObj.attr('data-oneaye', null);
   }
   // set title oa aye
   $('.player .title').text(ayeTitle);
@@ -240,7 +250,7 @@ function playAye(_this, _playOneAye)
     myAyeBox.addClass('active');
     if(myAyeBox.attr('id'))
     {
-      talavatEl.attr('data-aye-id', myAyeBox.attr('id'));
+      talavatObj.attr('data-aye-id', myAyeBox.attr('id'));
     }
 
     // if souce is changed, change it, else do nothing
