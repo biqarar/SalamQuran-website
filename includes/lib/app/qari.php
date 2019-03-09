@@ -49,8 +49,8 @@ class qari
 				],
 			4  =>
 				[
-					'type'       => 'murattal',
-					'type_title' => T_('murattal'),
+					'type'       => 'mujawwad',
+					'type_title' => T_('mujawwad'),
 					'play_type'  => 'aya',
 					'visible'    => true,
 					'audio_type' => 'mp3',
@@ -61,8 +61,8 @@ class qari
 				],
 			5  =>
 				[
-					'type'       => 'murattal',
-					'type_title' => T_('murattal'),
+					'type'       => 'mujawwad',
+					'type_title' => T_('mujawwad'),
 					'play_type'  => 'aya',
 					'visible'    => false,
 					'audio_type' => 'mp3',
@@ -121,8 +121,8 @@ class qari
 				],
 			10 =>
 				[
-					'type'       => 'murattal',
-					'type_title' => T_('murattal'),
+					'type'       => 'mujawwad',
+					'type_title' => T_('mujawwad'),
 					'play_type'  => 'aya',
 					'visible'    => false,
 					'audio_type' => 'mp3',
@@ -145,8 +145,8 @@ class qari
 				],
 			12 =>
 				[
-					'type'       => 'murattal',
-					'type_title' => T_('murattal'),
+					'type'       => 'muallim',
+					'type_title' => T_('muallim'),
 					'play_type'  => 'aya',
 					'visible'    => false,
 					'audio_type' => 'mp3',
@@ -157,8 +157,8 @@ class qari
 				],
 			13 =>
 				[
-					'type'       => 'murattal',
-					'type_title' => T_('murattal'),
+					'type'       => 'mujawwad',
+					'type_title' => T_('mujawwad'),
 					'play_type'  => 'aya',
 					'visible'    => true,
 					'audio_type' => 'ogg',
@@ -193,8 +193,8 @@ class qari
 				],
 			16 =>
 				[
-					'type'       => 'murattal',
-					'type_title' => T_('murattal'),
+					'type'       => 'mujawwad',
+					'type_title' => T_('mujawwad'),
 					'play_type'  => 'aya',
 					'visible'    => false,
 					'audio_type' => 'mp3',
@@ -205,8 +205,8 @@ class qari
 				],
 			17 =>
 				[
-					'type'       => 'murattal',
-					'type_title' => T_('murattal'),
+					'type'       => 'mujawwad',
+					'type_title' => T_('mujawwad'),
 					'play_type'  => 'aya',
 					'visible'    => true,
 					'audio_type' => 'ogg',
