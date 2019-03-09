@@ -148,7 +148,7 @@ class qari
 					'type'       => 'muallim',
 					'type_title' => T_('muallim'),
 					'play_type'  => 'aya',
-					'visible'    => false,
+					'visible'    => true,
 					'audio_type' => 'mp3',
 					'addr'       => $master_path. 'audio/husary/ayat/Husary_Muallim_128kbps/',
 					'qari_slug'  => 'husary',
