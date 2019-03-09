@@ -415,12 +415,16 @@ class qari
 
 	public static function site_list()
 	{
-		$list = self::list();
+		$list      = self::list();
 		$site_list = [];
+		$get       = \dash\request::get();
+
 		foreach ($list as $key => $value)
 		{
 			if(isset($value['visible']) && $value['visible'])
 			{
+				$get['qari']     = $key;
+				$value['url']    = \dash\url::that(). '?'. http_build_query($get);
 				$site_list[$key] = $value;
 			}
 		}
