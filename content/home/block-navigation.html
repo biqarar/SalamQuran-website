@@ -1,0 +1,7 @@
+{%if quranLoaded.detail.next_sura%}
+<a class="btn primary" href="{{quranLoaded.detail.next_sura.url}}">{{quranLoaded.detail.next_sura.title}}</a>
+{%endif%}
+
+{%if quranLoaded.detail.prev_sura%}
+<a class="btn primary" href="{{quranLoaded.detail.prev_sura.url}}">{{quranLoaded.detail.prev_sura.title}}</a>
+{%endif%}

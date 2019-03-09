@@ -197,9 +197,28 @@ class quran_word
 			$prev_sura = null;
 		}
 
-		$sura_detail              = \lib\db\sura::get(['index' => $_id, 'limit' => 1]);
-		$sura_detail['next_sura'] = $next_sura;
-		$sura_detail['prev_sura'] = $prev_sura;
+		$sura_detail = \lib\app\sura::detail($_id);
+
+		if($next_sura)
+		{
+			$sura_detail['next_sura'] =
+			[
+				'index' => $next_sura,
+				'url'   => \dash\url::kingdom(). '/s'. $next_sura,
+				'title' => T_(\lib\app\sura::detail($next_sura, 'tname')),
+			];
+		}
+
+		if($prev_sura)
+		{
+			$sura_detail['prev_sura'] =
+			[
+				'index' => $prev_sura,
+				'url'   => \dash\url::kingdom(). '/s'. $prev_sura,
+				'title' => T_(\lib\app\sura::detail($prev_sura, 'tname')),
+			];
+		}
+
 		$result['detail']         = $sura_detail;
 
 		// \dash\notif::api($result);
