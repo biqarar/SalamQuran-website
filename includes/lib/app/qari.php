@@ -421,7 +421,7 @@ class qari
 		{
 			if(isset($value['visible']) && $value['visible'])
 			{
-				$list[$key] = $value;
+				$site_list[$key] = $value;
 			}
 		}
 
