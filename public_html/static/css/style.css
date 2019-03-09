@@ -6510,12 +6510,12 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   font-family: "siftal","tahoma" !important;
   display: inline-block;
   vertical-align: middle;
-  transition: none; }
+  transition: none;
+  margin: 0 5px; }
 
 .ayeBox .meta .opr.play::after {
   content: attr(data-play);
   display: inline-block;
-  margin: 0 5px;
   vertical-align: middle;
   transition: none; }
 
@@ -6526,14 +6526,21 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 
 .ayeBox .meta .opr.play.pause::after {
   content: attr(data-pause);
+  display: inline-block; }
+
+.ayeBox .meta .opr.copy::before {
+  content: "\75";
+  font-family: "siftal","tahoma" !important;
   display: inline-block;
+  vertical-align: middle;
+  transition: none;
   margin: 0 5px; }
 
 .ayeBox .meta .opr span {
   display: inline-block;
   margin: 0 5px; }
 
-.ayeBox .meta .copy input {
+.ayeBox .meta input {
   padding: 0;
   margin: 0;
   position: absolute;
