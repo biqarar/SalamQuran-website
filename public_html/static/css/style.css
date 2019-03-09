@@ -6486,7 +6486,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   transition: 0.3s;
   line-height: 30px;
   font-size: 0.8em;
-  padding: 0 10px;
+  padding: 0;
   margin-bottom: 5px;
   cursor: pointer;
   text-align: center;
@@ -6504,6 +6504,30 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 
 .ayeBox .meta a.opr {
   font-family: monospace; }
+
+.ayeBox .meta .opr.play::before {
+  content: "\e110";
+  font-family: "siftal","tahoma" !important;
+  display: inline-block;
+  vertical-align: middle;
+  transition: none; }
+
+.ayeBox .meta .opr.play::after {
+  content: attr(data-play);
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+  transition: none; }
+
+.ayeBox .meta .opr.play.pause::before {
+  content: "\e232";
+  font-family: "siftal","tahoma" !important;
+  display: inline-block; }
+
+.ayeBox .meta .opr.play.pause::after {
+  content: attr(data-pause);
+  display: inline-block;
+  margin: 0 5px; }
 
 .ayeBox .meta .opr span {
   display: inline-block;
