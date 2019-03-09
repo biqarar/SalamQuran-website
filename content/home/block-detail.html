@@ -21,16 +21,14 @@
     </div>
   </div>
 
-  <div class="c3 s12">
+  <div class="cauto s12">
     <div class="ui floating search dropdown button" id='chooseTranslate'>
       <i class="sf-language"></i>
       <span class="text">
-        <img src="{{qariLoaded.image}}" class="avatar">
-        <span>{{qariLoaded.qari}}</span>
-        <span class="type">{{qariLoaded.type_title}}</span>
+        <span>{%trans "Add Translations"%}</span>
       </span>
       <div class="menu">
-        <div class="header">{%trans "Change Translation"%}</div>
+        <div class="header">{%trans "Add new translation"%}</div>
 {%for key, myTrans in translationList%}
 {%if myTrans.detail.count > 1%}
     <div class="header"><i class="tags icon"></i>{{myTrans.detail.language_name}} <i class="flag {{myTrans.detail.flag}}"></i></div>

@@ -20,7 +20,7 @@
     vertical-align: baseline;
     background: rgba(0,100,255,0.05);
     color: rgba(0,0,0,.6);
-    padding: 0 5px 0 50px;
+    padding: 0 10px 0 50px;
     text-transform: none;
     text-shadow: none;
     font-weight: 700;
@@ -56,6 +56,10 @@
     vertical-align: middle;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.Quran .ui.dropdown#chooseTranslate > .text span{
+    line-height: 36px;
+	max-width: 100%;
 }
 .Quran .ui.dropdown > .text span.type{
 	height: 10px;
