@@ -6658,7 +6658,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   height: 60px;
   background-color: #333;
   z-index: 20;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   opacity: 0.9;
   transition: 0.3s ease;
   user-select: none; }
