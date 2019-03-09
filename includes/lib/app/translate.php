@@ -54,14 +54,26 @@ class translate
 		$language  = array_flip($language);
 		$language  = array_map(function(){return [];}, $language);
 
-		$get       = \dash\request::get();
-		$getTrans  = isset($get['t']) ? $get['t'] : '';
-		$getTrans  = explode('-', $getTrans);
-		$getTrans  = array_filter($getTrans);
-		$getTrans  = array_unique($getTrans);
 
 		foreach ($list as $key => $value)
 		{
+			$get       = \dash\request::get();
+			$getTrans  = isset($get['t']) ? $get['t'] : '';
+			$getTrans  = explode('-', $getTrans);
+			$getTrans  = array_filter($getTrans);
+			$getTrans  = array_unique($getTrans);
+			if(empty($language[$value['language']]))
+			{
+				$language[$value['language']]['detail'] =
+				[
+					'language_name' => $value['language_name'],
+					'flag'          => $value['flag'],
+
+				];
+
+				$language[$value['language']]['list'] = [];
+			}
+
 			$thisTransKey = $value['language']. $value['index'];
 			if(!in_array($thisTransKey, $getTrans))
 			{
@@ -71,11 +83,12 @@ class translate
 			$get['t']                       = implode('-', $getTrans);
 			$url                            = \dash\url::that(). '?'. http_build_query($get);
 			$value['url']                   = $url;
-			$language[$value['language']][] = $value;
+
+			$language[$value['language']]['list'][] = $value;
 
 		}
 
-		return $site_list;
+		return $language;
 
 	}
 

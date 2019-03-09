@@ -31,16 +31,16 @@
       </span>
       <div class="menu">
         <div class="header">{%trans "Change Translation"%}</div>
-{%for key, value in translationList%}
-{%if loop.index == 4%}
-          <div class="header"><i class="tags icon"></i>Tag Label</div>
-{%else%}
-          <a class="item" href="{{value.url}}">
-            <i class="flag {{value.flag}}"></i>
-            <span>{{value.localname}}</span>
-            <span class="type">{{value.language_name}}</span>
+{%for key, myTrans in translationList%}
+    <div class="header"><i class="tags icon"></i>{{myTrans.detail.language_name}} <i class="flag {{myTrans.detail.flag}}"></i></div>
+{%for k, v in myTrans.list%}
+          <a class="item" href="{{v.url}}">
+            <i class="flag {{v.flag}}"></i>
+            <span>{{v.localname}}</span>
           </a>
-{%endif%}
+{%endfor%}
+
+
 {%endfor%}
       </div>
     </div>

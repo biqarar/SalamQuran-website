@@ -41,6 +41,7 @@ class view
 		if(\dash\data::sureLoaded())
 		{
 			$translation_list = \lib\app\translate::translate_site_list();
+
 			\dash\data::translationList($translation_list);
 		}
 
