@@ -227,6 +227,7 @@ function getAyeData(_callMode, _playOneAye)
     {
       myAyeBox = myAyeBox.parents('.ayeBox');
     }
+    $('.ayeBox[data-playing]').attr('data-playing', null);
   }
 
   // check ayeBox selected from one way
