@@ -117,7 +117,7 @@ class quran_word
 				$verse_title .= ' - ';
 				$verse_title .= T_("Sura");
 				$verse_title .= ' ';
-				$verse_title .= \dash\utility\human::fitNumber($value['sura']);
+				$verse_title .= \dash\utility\human::fitNumber($value['sura']). ' '. T_(\lib\app\sura::detail($value['sura'], 'tname'));
 				$verse_title .= ' - ';
 				$verse_title .= T_("Aya");
 				$verse_title .= ' ';
