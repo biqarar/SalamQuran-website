@@ -4,16 +4,68 @@ class twigTransTerms
  private function transtext()
  {
 
-	//-----------------------------docs\Projects\SalamQuran\content\about\display.html
-	echo T_("The Qur'ān (Arabic: القرآن) is the Muslim sacred scripture, believed to be revealed by God to Prophet Muhammad through Jibril (Gabriel) during 23 years;");// Line 7
-	echo T_("the Prophet recited it to a group of his companions and scribes of revelation wrote it down under direct and constant supervision of the Prophet.");// Line 7
-	echo T_("Muslims regard the Quran as Muhammad's most important miracle, a proof of his prophethood, and the culmination of a series of divine messages starting with those revealed to Adam and ending with Muhammad.");// Line 9
-	echo T_("Salam Quran is created to share Quran for anyone anywhere anytime.");    // Line 12
-	echo T_("Indeed I am leaving two things among you, to which if you hold yourself, you will never astray: the book of Allah –who is all mighty and great- and my ahl al-bayt (household), my 'itra (family). O people hear! And I have announced to you that: indeed you will enter my presence and I will ask you about what you did to the thaqalayn (two weighty things) and the thaqalayn are the book of Allah and my ahl al-bayt.");// Line 21
-	echo T_("Islamic prophet Muhammad");                                              // Line 23
-	echo T_("Hadith al-Thaqalayn");                                                   // Line 24
+	//------------------------projects/SalamQuran/content_api/v6/doc/105-page-wbw.html
+	echo T_("Get aya in one page word by word");                                      // Line 5
+	echo T_("Get list of aya from one page word by word");                            // Line 8
+	echo T_("Parameters");                                                            // Line 16
+	echo T_("Name");                                                                  // Line 17
+	echo T_("type");                                                                  // Line 20
+	echo T_("Description");                                                           // Line 10
+	echo T_("example");                                                               // Line 20
+	echo T_("Constraints");                                                           // Line 22
+	echo T_("You must set index between 1 and 604");                                  // Line 35
+	echo T_("Required");                                                              // Line 39
+	echo T_("cURL");                                                                  // Line 17
+	echo T_("Response");                                                              // Line 20
 
-	//-----------------------------docs\Projects\SalamQuran\content\audio\display.html
+	//----------------------------projects/SalamQuran/content_api/v6/doc/104-page.html
+	echo T_("Get aya in one page");                                                   // Line 5
+	echo T_("Get list of aya from one page");                                         // Line 8
+
+	//----------------------------projects/SalamQuran/content_api/v6/doc/101-sura.html
+	echo T_("Get list of sura");                                                      // Line 5
+	echo T_("Get sura list by some detail like aya count, type, index and more.");    // Line 10
+
+	//-----------------------projects/SalamQuran/content_api/v6/doc/102-sure-ayat.html
+	echo T_("Get aya of sura");                                                       // Line 5
+	echo T_("Get list of aya from one sura");                                         // Line 8
+	echo T_("You must set index between 1 and 114");                                  // Line 35
+	echo T_("Start aya number");                                                      // Line 51
+	echo T_("Maximum");                                                               // Line 74
+	echo T_("Max aya count of sura");                                                 // Line 54
+	echo T_("Optional");                                                              // Line 78
+	echo T_("Count record to show");                                                  // Line 71
+
+	//--------------------projects/SalamQuran/content_api/v6/doc/103-sure-aya-wbw.html
+	echo T_("Get aya of sura word by word");                                          // Line 5
+	echo T_("Get list of aya from one sura word by word");                            // Line 8
+
+	//----------------------------projects/SalamQuran/content_api/v6/doc/100-ayat.html
+	echo T_("Get Aye detail");                                                        // Line 5
+	echo T_("Get details like pages, language list, translations, and more.");        // Line 10
+
+	//-----------------------------projects/SalamQuran/content_api/v6/doc/sidebar.html
+	echo T_("Sura list");                                                             // Line 3
+	echo T_("Sura");                                                                  // Line 4
+	echo T_("Page");                                                                  // Line 5
+	echo T_("Page word by word");                                                     // Line 6
+
+	//-projects/SalamQuran/public_html/static/siftal/fonts/siftal/icons-reference.html
+
+	//------------------projects/SalamQuran/public_html/static/siftal/js/siftal.min.js
+
+	//---projects/SalamQuran/public_html/static/siftal/js/highcharts/highcharts.min.js
+
+	//---------------projects/SalamQuran/public_html/static/siftal/js/highlight.min.js
+
+	//------------------projects/SalamQuran/public_html/static/siftal/js/error_page.js
+
+	//-----------------------------projects/SalamQuran/public_html/static/js/script.js
+
+	//---------------------------------projects/SalamQuran/content/vision/display.html
+	echo T_("Covering all Quranic information of Muslims");                           // Line 6
+
+	//----------------------------------projects/SalamQuran/content/audio/display.html
 	echo T_("Quran Qari");                                                            // Line 45
 	echo T_("mansori");                                                               // Line 11
 	echo T_("parhizgar");                                                             // Line 18
@@ -24,37 +76,82 @@ class twigTransTerms
 	echo T_("Qari");                                                                  // Line 56
 	echo T_("Reader");                                                                // Line 56
 	echo T_("Type");                                                                  // Line 57
-	echo T_("Translation");                                                           // Line 64
-	echo T_("Sore");                                                                  // Line 50
+	echo T_("Translation");                                                           // Line 7
+	echo T_("Sore");                                                                  // Line 59
 	echo T_("Complete");                                                              // Line 60
 
-	//-------------------------docs\Projects\SalamQuran\content\changelog\display.html
-	echo T_("Date");                                                                  // Line 9
-	echo T_("Description");                                                           // Line 21
-	echo T_("Telegram bot");                                                          // Line 19
-	echo T_("iOS app");                                                               // Line 25
-	echo T_("Learning Mechanism");                                                    // Line 31
-	echo T_("Exam");                                                                  // Line 37
-	echo T_("Android App");                                                           // Line 43
-	echo T_("Quran Magazine");                                                        // Line 49
-	echo T_("Quran Audio Database");                                                  // Line 55
-	echo T_("Website of SalamQuran was Launched.");                                   // Line 61
-	echo T_("The name of project selected as SalamQuran and <a href='https://SalamQuran.com'>SalamQuran.com</a> domain are registered.");// Line 67
-	echo T_("Project officially started.");                                           // Line 73
-	echo T_("Primary studies were done.");                                            // Line 79
-	echo T_("The project was initiated and the initial agreement was made.");         // Line 85
-	echo T_("Be patient...");                                                         // Line 92
+	//--------------------------------projects/SalamQuran/content/mission/display.html
+	echo T_("We are define below missions for SalamQuran on start of project and extend it later.");// Line 6
+	echo T_("Collect all original and valid information about Quran like Qiraats, translations and ...");// Line 9
+	echo T_("Helping Quranic activists to better publish the Quran in the electronic world");// Line 10
+	echo T_("Facilitate Muslim access to the main source of Islam");                  // Line 11
+	echo T_("Helping Quran educators and distributing valid Quranic educational resources");// Line 12
 
-	//---------------------------docs\Projects\SalamQuran\content\contact\display.html
-	echo T_("We do our best to improve SalamQuran's quality. So, knowing your valuable comments about bugs and problems and more importantly your precious offers will help us in this way.");// Line 8
-	echo T_("You can access the ticketing status through this link");                 // Line 10
-	echo T_("Name");                                                                  // Line 20
+	//-----------------------------projects/SalamQuran/content/developers/display.html
+	echo T_("Soon");                                                                  // Line 6
+
+	//-------------------------------projects/SalamQuran/content/template/dafault.html
+	echo T_("For share via social networks");                                         // Line 41
+	echo T_("News Code");                                                             // Line 41
+	echo T_("Download");                                                              // Line 78
+	echo T_("PDF");                                                                   // Line 78
+	echo T_("Comment");                                                               // Line 124
 	echo T_("Full Name");                                                             // Line 18
 	echo T_("Mobile");                                                                // Line 21
 	echo T_("Please enter valid mobile number. `:val` is incorrect");                 // Line 22
-	echo T_("Email");                                                                 // Line 56
 	echo T_("Your Message");                                                          // Line 30
 	echo T_("Send");                                                                  // Line 33
+
+	//------------------------------------projects/SalamQuran/content/main/footer.html
+	echo T_("About");                                                                 // Line 30
+	echo T_("Mission");                                                               // Line 14
+	echo T_("Vision");                                                                // Line 15
+	echo T_("Terms of Use");                                                          // Line 16
+	echo T_("Privacy Policy");                                                        // Line 17
+	echo T_("Change log");                                                            // Line 18
+	echo T_("Logo");                                                                  // Line 19
+	echo T_("Magazine");                                                              // Line 32
+	echo T_("Blog");                                                                  // Line 26
+	echo T_("Help Center");                                                           // Line 27
+	echo T_("FAQ");                                                                   // Line 28
+	echo T_("Contact");                                                               // Line 29
+	echo T_("Donate");                                                                // Line 31
+	echo T_("Aye of the day");                                                        // Line 34
+	echo T_("Random aye");                                                            // Line 35
+	echo T_("Page of the day");                                                       // Line 36
+	echo T_("Random Page");                                                           // Line 37
+	echo T_("API");                                                                   // Line 42
+	echo T_("Developers");                                                            // Line 43
+	echo T_("Telegram Bot");                                                          // Line 44
+	echo T_("Mobile Apps");                                                           // Line 45
+	echo T_("Email");                                                                 // Line 25
+	echo T_("Tel");                                                                   // Line 58
+	echo T_("SMS");                                                                   // Line 54
+	echo T_("Website");                                                               // Line 56
+	echo T_("Enter to Panel");                                                        // Line 62
+	echo T_("Enter");                                                                 // Line 39
+	echo T_("Software Solution Designer");                                            // Line 77
+	echo T_("Developed by Ermile");                                                   // Line 77
+
+	//------------------------------------projects/SalamQuran/content/main/header.html
+	echo T_("Audio");                                                                 // Line 33
+	echo T_("Namaz");                                                                 // Line 34
+	echo T_("Panel");                                                                 // Line 37
+	echo T_("Enter to your account and use SalamQuran account features");             // Line 19
+
+	//-----------------------------------projects/SalamQuran/content/main/sidebar.html
+	echo T_("Homepage");                                                              // Line 5
+	echo T_("Twitter");                                                               // Line 10
+	echo T_("Facebook");                                                              // Line 13
+	echo T_("Telegram");                                                              // Line 16
+	echo T_("Instagram");                                                             // Line 19
+	echo T_("Linkedin");                                                              // Line 22
+
+	//---------------------------------projects/SalamQuran/content/donate/display.html
+
+	//--------------------------------projects/SalamQuran/content/contact/display.html
+	echo T_("We do our best to improve SalamQuran's quality. So, knowing your valuable comments about bugs and problems and more importantly your precious offers will help us in this way.");// Line 8
+	echo T_("You can access the ticketing status through this link");                 // Line 10
 	echo T_("How to contact us");                                                     // Line 41
 	echo T_("SalamQuran");                                                            // Line 45
 	echo T_("Ermile, Floor2, Yas Building");                                          // Line 48
@@ -64,10 +161,37 @@ class twigTransTerms
 	echo T_("Floor2, Yas Building");                                                  // Line 56
 	echo T_("Our location on map");                                                   // Line 64
 
-	//------------------------------docs\Projects\SalamQuran\content\home\display.html
-	echo T_("Quran");                                                                 // Line 50
+	//----------------------------------projects/SalamQuran/content/namaz/display.html
+	echo T_("FAJR5");                                                                 // Line 15
+	echo T_("SUNRISE");                                                               // Line 20
+	echo T_("DHUHR");                                                                 // Line 25
+	echo T_("ASR");                                                                   // Line 30
+	echo T_("MAGHRIB");                                                               // Line 35
+	echo T_("Min");                                                                   // Line 36
+	echo T_("Remain");                                                                // Line 36
+	echo T_("ISHA");                                                                  // Line 42
+	echo T_("QIYAM");                                                                 // Line 47
 
-	//----------------------------docs\Projects\SalamQuran\content\home\list-sore.html
+	//------------------------------------projects/SalamQuran/content/mag/display.html
+
+	//-----------------------------------projects/SalamQuran/content/apps/display.html
+
+	//-----------------------------------projects/SalamQuran/content/blog/display.html
+	echo T_("View your current location and navigate to parent of it");               // Line 7
+
+	//----------------------------------projects/SalamQuran/content/about/display.html
+	echo T_("The Qur'ān (Arabic: القرآن) is the Muslim sacred scripture, believed to be revealed by God to Prophet Muhammad through Jibril (Gabriel) during 23 years;");// Line 7
+	echo T_("the Prophet recited it to a group of his companions and scribes of revelation wrote it down under direct and constant supervision of the Prophet.");// Line 7
+	echo T_("Muslims regard the Quran as Muhammad's most important miracle, a proof of his prophethood, and the culmination of a series of divine messages starting with those revealed to Adam and ending with Muhammad.");// Line 9
+	echo T_("Salam Quran is created to share Quran for anyone anywhere anytime.");    // Line 12
+	echo T_("Indeed I am leaving two things among you, to which if you hold yourself, you will never astray: the book of Allah –who is all mighty and great- and my ahl al-bayt (household), my 'itra (family). O people hear! And I have announced to you that: indeed you will enter my presence and I will ask you about what you did to the thaqalayn (two weighty things) and the thaqalayn are the book of Allah and my ahl al-bayt.");// Line 21
+	echo T_("Islamic prophet Muhammad");                                              // Line 23
+	echo T_("Hadith al-Thaqalayn");                                                   // Line 24
+
+	//---------------------------------projects/SalamQuran/content/home/sore-font.html
+	echo T_("List of soreha");                                                        // Line 25
+
+	//---------------------------------projects/SalamQuran/content/home/list-sore.html
 	echo T_("Surahs <span class='fs08'>Chapters</span>");                             // Line 3
 	echo T_("Al-Fatihah");                                                            // Line 7
 	echo T_("The Opener");                                                            // Line 7
@@ -294,78 +418,38 @@ class twigTransTerms
 	echo T_("An-Nas");                                                                // Line 578
 	echo T_("The Mankind");                                                           // Line 578
 
-	//-------------------------docs\Projects\SalamQuran\content\home\sore-bookTxt.html
-	echo T_("List of soreha");                                                        // Line 72
+	//----------------------projects/SalamQuran/content/home/block-ayeTranslation.html
 
-	//----------------------------docs\Projects\SalamQuran\content\home\sore-font.html
+	//---------------------------------projects/SalamQuran/content/home/block-aye.html
 
-	//---------------------------------docs\Projects\SalamQuran\content\home\sore.html
-	echo T_("Aye");                                                                   // Line 50
+	//-----------------------------------projects/SalamQuran/content/home/display.html
+	echo T_("Quran");                                                                 // Line 12
 
-	//------------------------------docs\Projects\SalamQuran\content\logo\display.html
-	echo T_("Soon");                                                                  // Line 6
+	//--------------------------projects/SalamQuran/content/home/block-ayeActions.html
+	echo T_("Play");                                                                  // Line 29
+	echo T_("Pause");                                                                 // Line 6
+	echo T_("Copy");                                                                  // Line 9
 
-	//-------------------------------docs\Projects\SalamQuran\content\main\footer.html
-	echo T_("About");                                                                 // Line 30
-	echo T_("Mission");                                                               // Line 14
-	echo T_("Vision");                                                                // Line 15
-	echo T_("Terms of Use");                                                          // Line 16
-	echo T_("Privacy Policy");                                                        // Line 17
-	echo T_("Change log");                                                            // Line 18
-	echo T_("Logo");                                                                  // Line 19
-	echo T_("Magazine");                                                              // Line 32
-	echo T_("Blog");                                                                  // Line 26
-	echo T_("Help Center");                                                           // Line 27
-	echo T_("FAQ");                                                                   // Line 28
-	echo T_("Contact");                                                               // Line 29
-	echo T_("Donate");                                                                // Line 31
-	echo T_("Aye of the day");                                                        // Line 34
-	echo T_("Random aye");                                                            // Line 35
-	echo T_("API");                                                                   // Line 41
-	echo T_("Developers");                                                            // Line 42
-	echo T_("Telegram Bot");                                                          // Line 43
-	echo T_("Mobile Apps");                                                           // Line 44
-	echo T_("Tel");                                                                   // Line 57
-	echo T_("SMS");                                                                   // Line 53
-	echo T_("Website");                                                               // Line 55
-	echo T_("Enter to Panel");                                                        // Line 61
-	echo T_("Enter");                                                                 // Line 39
-	echo T_("Software Solution Designer");                                            // Line 76
-	echo T_("Developed by Ermile");                                                   // Line 76
+	//------------------------------projects/SalamQuran/content/home/block-detail.html
+	echo T_("Qari list");                                                             // Line 23
 
-	//-------------------------------docs\Projects\SalamQuran\content\main\header.html
-	echo T_("Audio");                                                                 // Line 33
-	echo T_("Namaz");                                                                 // Line 34
-	echo T_("Panel");                                                                 // Line 37
-	echo T_("Enter to your account and use SalamQuran account features");             // Line 19
+	//------------------------------projects/SalamQuran/content/home/sore-bookTxt.html
 
-	//------------------------------docs\Projects\SalamQuran\content\main\sidebar.html
-	echo T_("Homepage");                                                              // Line 5
-	echo T_("Twitter");                                                               // Line 10
-	echo T_("Facebook");                                                              // Line 13
-	echo T_("Telegram");                                                              // Line 16
-	echo T_("Instagram");                                                             // Line 19
-	echo T_("Linkedin");                                                              // Line 22
+	//----------------------------------projects/SalamQuran/content/terms/display.html
+	echo T_("Utilizing SalamQuran's services means the acceptance of and commitment to observing all the tenors of this agreement.");// Line 6
+	echo T_("It is worth mentioning that due to the insecurity of cyberspace, you should never post your vital information on either SalamQuran or any other services!");// Line 9
+	echo T_("User's personal information is strictly confidential in our service. SalamQuran preserves the information as encoded and will not under any conditions transfer it to another person.");// Line 11
+	echo T_("In case there is a request for receiving user's information by the competent authorities, according to the country the user lives in, SalamQuran will cooperate with them only upon receiving the judicial order issued by the country submitting the request.");// Line 13
+	echo T_("Users should assume responsibility for any harm, both material and immaterial, caused by direct, indirect or penal factors and due to their utilization of this service; and, SalamQuran bears no responsibility accordingly.");// Line 16
+	echo T_("SalamQuran accepts no responsibility, under any conditions, for the harms caused by users' mutual trust in each other or by the disclosure of information by users.");// Line 18
+	echo T_("SalamQuran will do its best to protect both the users' information and the service; however, regarding the lack of certainty within the cyberspace, it will not assume any responsibility for the loss of the information entered on the service.");// Line 20
+	echo T_("We will publicize our information and news only via SalamQuran's formal website. Accordingly, those who publicize any attributed news and claims, within social media and networks, must assume the responsibility and SalamQuran will not assume any responsibility.");// Line 22
+	echo T_("SalamQuran will bear no responsibility for whatsoever messages sent to users, including those indicating winning a lottery, and all our information dissemination will be through the ways of SalamQuran's contact with users.");// Line 24
+	echo T_("Any misuse of SalamQuran's trade name is prohibited and will be suable by making a complaint to the legal competent authorities.");// Line 26
+	echo T_("Furthermore, this agreement, under the name Terms and Conditions, will be available and observable, in all pages of the website. Users will be responsible for a lack of information on the most recent changes.");// Line 28
+	echo T_("It should be mentioned that in case there would be any modifications in the above-mentioned tenors, an updated version will be available for the public, and as well, all the users will be informed.");// Line 32
 
-	//---------------------------docs\Projects\SalamQuran\content\mission\display.html
-	echo T_("We are define below missions for SalamQuran on start of project and extend it later.");// Line 6
-	echo T_("Collect all original and valid information about Quran like Qiraats, translations and ...");// Line 9
-	echo T_("Helping Quranic activists to better publish the Quran in the electronic world");// Line 10
-	echo T_("Facilitate Muslim access to the main source of Islam");                  // Line 11
-	echo T_("Helping Quran educators and distributing valid Quranic educational resources");// Line 12
-
-	//-----------------------------docs\Projects\SalamQuran\content\namaz\display.html
-	echo T_("FAJR5");                                                                 // Line 15
-	echo T_("SUNRISE");                                                               // Line 20
-	echo T_("DHUHR");                                                                 // Line 25
-	echo T_("ASR");                                                                   // Line 30
-	echo T_("MAGHRIB");                                                               // Line 35
-	echo T_("Min");                                                                   // Line 36
-	echo T_("Remain");                                                                // Line 36
-	echo T_("ISHA");                                                                  // Line 42
-	echo T_("QIYAM");                                                                 // Line 47
-
-	//---------------------------docs\Projects\SalamQuran\content\privacy\display.html
+	//--------------------------------projects/SalamQuran/content/privacy/display.html
 	echo T_("What is Privacy?");                                                      // Line 6
 	echo T_("Privacy means that any individual is entitled to choose the information related to them, and selectively, share it with others.");// Line 7
 	echo T_("privacy is so important for mental peace as well as a peaceful personality that some experts have considered invasion of privacy disrespectful to human dignity.");// Line 8
@@ -384,78 +468,25 @@ class twigTransTerms
 	echo T_("In fact, we have employed all updated technologies of the world to provide you with the maximum security.");// Line 17
 	echo T_("As the final remark, we wish to assure you that our main concern is to secure your privacy and protect your information against impermissible access.");// Line 19
 
-	//-----------------------------docs\Projects\SalamQuran\content\terms\display.html
-	echo T_("Utilizing SalamQuran's services means the acceptance of and commitment to observing all the tenors of this agreement.");// Line 6
-	echo T_("It is worth mentioning that due to the insecurity of cyberspace, you should never post your vital information on either SalamQuran or any other services!");// Line 9
-	echo T_("User's personal information is strictly confidential in our service. SalamQuran preserves the information as encoded and will not under any conditions transfer it to another person.");// Line 11
-	echo T_("In case there is a request for receiving user's information by the competent authorities, according to the country the user lives in, SalamQuran will cooperate with them only upon receiving the judicial order issued by the country submitting the request.");// Line 13
-	echo T_("Users should assume responsibility for any harm, both material and immaterial, caused by direct, indirect or penal factors and due to their utilization of this service; and, SalamQuran bears no responsibility accordingly.");// Line 16
-	echo T_("SalamQuran accepts no responsibility, under any conditions, for the harms caused by users' mutual trust in each other or by the disclosure of information by users.");// Line 18
-	echo T_("SalamQuran will do its best to protect both the users' information and the service; however, regarding the lack of certainty within the cyberspace, it will not assume any responsibility for the loss of the information entered on the service.");// Line 20
-	echo T_("We will publicize our information and news only via SalamQuran's formal website. Accordingly, those who publicize any attributed news and claims, within social media and networks, must assume the responsibility and SalamQuran will not assume any responsibility.");// Line 22
-	echo T_("SalamQuran will bear no responsibility for whatsoever messages sent to users, including those indicating winning a lottery, and all our information dissemination will be through the ways of SalamQuran's contact with users.");// Line 24
-	echo T_("Any misuse of SalamQuran's trade name is prohibited and will be suable by making a complaint to the legal competent authorities.");// Line 26
-	echo T_("Furthermore, this agreement, under the name Terms and Conditions, will be available and observable, in all pages of the website. Users will be responsible for a lack of information on the most recent changes.");// Line 28
-	echo T_("It should be mentioned that in case there would be any modifications in the above-mentioned tenors, an updated version will be available for the public, and as well, all the users will be informed.");// Line 32
+	//-------------------------------projects/SalamQuran/content/telegram/display.html
 
-	//----------------------------docs\Projects\SalamQuran\content\vision\display.html
-	echo T_("Covering all Quranic information of Muslims");                           // Line 6
+	//-----------------------------------projects/SalamQuran/content/logo/display.html
 
-	//-----------------------docs\Projects\SalamQuran\content_api\v6\doc\100-ayat.html
-	echo T_("Get Aye detail");                                                        // Line 5
-	echo T_("Get details like pages, language list, translations, and more.");        // Line 10
-	echo T_("cURL");                                                                  // Line 49
-	echo T_("example");                                                               // Line 54
-	echo T_("Response");                                                              // Line 54
-
-	//-----------------------docs\Projects\SalamQuran\content_api\v6\doc\101-sura.html
-	echo T_("Get list of sura");                                                      // Line 5
-	echo T_("Get sura list by some detail like aya count, type, index and more.");    // Line 10
-
-	//------------------docs\Projects\SalamQuran\content_api\v6\doc\102-sure-ayat.html
-	echo T_("Get aya of sura");                                                       // Line 5
-	echo T_("Get list of aya from one sura");                                         // Line 8
-	echo T_("Parameters");                                                            // Line 16
-	echo T_("type");                                                                  // Line 20
-	echo T_("Constraints");                                                           // Line 22
-	echo T_("You must set index between 1 and 114");                                  // Line 35
-	echo T_("Required");                                                              // Line 39
-	echo T_("Start aya number");                                                      // Line 51
-	echo T_("Maximum");                                                               // Line 74
-	echo T_("Max aya count of sura");                                                 // Line 54
-	echo T_("Optional");                                                              // Line 78
-	echo T_("Count record to show");                                                  // Line 71
-
-	//---------------docs\Projects\SalamQuran\content_api\v6\doc\103-sure-aya-wbw.html
-	echo T_("Get aya of sura word by word");                                          // Line 5
-	echo T_("Get list of aya from one sura word by word");                            // Line 8
-
-	//-----------------------docs\Projects\SalamQuran\content_api\v6\doc\104-page.html
-	echo T_("Get aya in one page");                                                   // Line 5
-	echo T_("Get list of aya from one page");                                         // Line 8
-	echo T_("You must set index between 1 and 604");                                  // Line 35
-
-	//-------------------docs\Projects\SalamQuran\content_api\v6\doc\105-page-wbw.html
-	echo T_("Get aya in one page word by word");                                      // Line 5
-	echo T_("Get list of aya from one page word by word");                            // Line 8
-
-	//------------------------docs\Projects\SalamQuran\content_api\v6\doc\sidebar.html
-	echo T_("Sura list");                                                             // Line 3
-	echo T_("Sura");                                                                  // Line 4
-	echo T_("Page");                                                                  // Line 5
-	echo T_("Page word by word");                                                     // Line 6
-
-	//------------------------docs\Projects\SalamQuran\public_html\static\js\script.js
-
-	//docs\Projects\SalamQuran\public_html\static\siftal\fonts\siftal\icons-reference.html
-
-	//-------------docs\Projects\SalamQuran\public_html\static\siftal\js\error_page.js
-
-	//docs\Projects\SalamQuran\public_html\static\siftal\js\highcharts\highcharts.min.js
-
-	//----------docs\Projects\SalamQuran\public_html\static\siftal\js\highlight.min.js
-
-	//-------------docs\Projects\SalamQuran\public_html\static\siftal\js\siftal.min.js
+	//------------------------------projects/SalamQuran/content/changelog/display.html
+	echo T_("Date");                                                                  // Line 9
+	echo T_("Telegram bot");                                                          // Line 19
+	echo T_("iOS app");                                                               // Line 25
+	echo T_("Learning Mechanism");                                                    // Line 31
+	echo T_("Exam");                                                                  // Line 37
+	echo T_("Android App");                                                           // Line 43
+	echo T_("Quran Magazine");                                                        // Line 49
+	echo T_("Quran Audio Database");                                                  // Line 55
+	echo T_("Website of SalamQuran was Launched.");                                   // Line 61
+	echo T_("The name of project selected as SalamQuran and <a href='https://SalamQuran.com'>SalamQuran.com</a> domain are registered.");// Line 67
+	echo T_("Project officially started.");                                           // Line 73
+	echo T_("Primary studies were done.");                                            // Line 79
+	echo T_("The project was initiated and the initial agreement was made.");         // Line 85
+	echo T_("Be patient...");                                                         // Line 92
 
  }
 }
