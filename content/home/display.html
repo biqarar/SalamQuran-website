@@ -5,7 +5,7 @@
 {%block page%}
 
     {%if quranLoaded and requestGET.mode != 'quran'%}
-    	<a class="btn mB50" href="{{url.this}}?mode=quran">{%trans "Quran"%}</a>
+    	<a class="btn mB50 hide" href="{{url.this}}?mode=quran">{%trans "Quran"%}</a>
       {%include 'content/home/sore.html'%}
 
     {%elseif quranLoaded and requestGET.mode == 'quran'%}
