@@ -185,13 +185,10 @@ function bindAudioTools()
   // on start
   talavatEl.onplay = function()
   {
-    // iqra('player', true);
-    getAyeData('player');
-    // console.log(fetchPlayerData());
-    // if($(talavatEl).attr('data-aye-id') === undefined)
-    // {
-    //   playAye();
-    // }
+    if($('.player').attr('data-aye') === undefined)
+    {
+      iqra('player');
+    }
   };
 
 }
@@ -369,11 +366,13 @@ function getAyeData(_callMode, _playOneAye)
   // define result variable
   var ayeResult =
   {
-    ayeBox: myAyeBox,
-    id:     myAyeBox.attr('id'),
-    title:  myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
-    audio:  myAyeBox.attr('data-ayeaudio'),
-    oneAye: _playOneAye
+    ayeBox:     myAyeBox,
+    id:         myAyeBox.attr('id'),
+    title:      myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
+    audio:      myAyeBox.attr('data-ayeaudio'),
+    oneAye:     _playOneAye,
+    fromPlayer: (_callMode === 'player'? true: false),
+    init:       ($('.player').attr('data-aye')? false: true)
   }
 
   console.log(ayeResult);
