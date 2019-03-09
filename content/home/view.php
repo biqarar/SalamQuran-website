@@ -44,7 +44,7 @@ class view
 			\dash\data::translationList($translation_list);
 		}
 
-		$list = \lib\app\qari::list();
+		$list = \lib\app\qari::site_list();
 		\dash\data::qariList($list);
 
 		$qariLoaded = \lib\app\qari::load(\dash\request::get('qari'));
