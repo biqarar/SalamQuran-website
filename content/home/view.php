@@ -40,7 +40,7 @@ class view
 
 		if(\dash\data::sureLoaded())
 		{
-			$translation_list = \lib\app\translate::current_lang_translate();
+			$translation_list = \lib\app\translate::translate_list();
 			\dash\data::translationList($translation_list);
 		}
 
