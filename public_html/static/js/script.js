@@ -191,6 +191,11 @@ function bindAudioTools()
       iqra('player');
     }
   };
+  // on pause
+  talavatEl.onpause = function()
+  {
+    iqra('player');
+  };
 
 }
 
@@ -304,7 +309,7 @@ function updatePlayer(_ayeData)
   // playerTogglePlay if audio exist
   if(talavatEl.src)
   {
-    playerTogglePlay(talavatEl, _ayeData);
+    playerTogglePlay(_ayeData);
   }
   else
   {
@@ -325,25 +330,26 @@ function highlightAye(_ayeData)
 }
 
 
-function playerTogglePlay(_player, _ayeData)
+function playerTogglePlay(_ayeData)
 {
+  var talavatEl = document.getElementById('talavat');
   // change icon
-   if (_player.paused)
-   {
-      _player.play();
-      _ayeData.ayeBox.attr('data-playing', '');
-   }
-   else if(_player.readyState == 1)
-   {
-      _player.currentTime = 0;
-      _player.play();
-      _ayeData.ayeBox.attr('data-playing', '');
-   }
-   else
-   {
-      _player.pause();
-      _ayeData.ayeBox.attr('data-playing', null);
-   }
+  if (talavatEl.paused)
+  {
+    talavatEl.play();
+    _ayeData.ayeBox.attr('data-playing', '');
+  }
+  else if(talavatEl.readyState == 1)
+  {
+    talavatEl.currentTime = 0;
+    talavatEl.play();
+    _ayeData.ayeBox.attr('data-playing', '');
+  }
+  else
+  {
+    talavatEl.pause();
+    _ayeData.ayeBox.attr('data-playing', null);
+  }
 }
 
 
