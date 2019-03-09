@@ -147,9 +147,7 @@ function handlePlayWbw()
     }
     else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
     {
-      playAye(this, true);
-      // var myWord = new Audio($(this).parents('.ayeBox').attr('data-ayeAudio'));
-      // myWord.play();
+      updatePlayer(getAyeData(this, true));
     }
   });
 
@@ -162,7 +160,7 @@ function bindAudioTools()
   $(".ayeBox .play").off('click');
   $(".ayeBox .play").on('click', function()
   {
-    playAye(this, true);
+    updatePlayer(getAyeData(this, true));
   });
 
   // show if quran exist in this page
@@ -185,10 +183,12 @@ function bindAudioTools()
   // on start
   talavatEl.onplay = function()
   {
-    if($(talavatEl).attr('data-aye-id') === undefined)
-    {
-      playAye();
-    }
+    getAyeData('player');
+    // console.log(fetchPlayerData());
+    // if($(talavatEl).attr('data-aye-id') === undefined)
+    // {
+    //   playAye();
+    // }
   };
 
 }
@@ -266,12 +266,132 @@ function playAye(_this, _playOneAye)
       talavat.load();
     }
 
-    togglePlay(talavat);
+    playerTogglePlay(talavat);
   }
 }
 
 
-function togglePlay(_player)
+
+function highlightAye(_ayeData)
+{
+    $('.Quran .ayeBox').removeClass('active');
+    if(_ayeData.ayeBox)
+    {
+      _ayeData.ayeBox.addClass('active');
+    }
+    // change scroll to start of this aye
+    scrollSmoothTo($('#'+ _ayeData.id))
+}
+
+
+function updatePlayer(_ayeData)
+{
+  // check player exist or not
+  var myPlayer  = $('.player');
+  var talavatEl = document.getElementById('talavat');
+
+  if(!talavatEl)
+  {
+    say('Player is not exist!');
+    return false;
+  }
+
+  // update design to highlight this aye
+  highlightAye(_ayeData);
+
+  // set id to player
+  myPlayer.attr('data-aye', _ayeData.id);
+  // set oneAye status
+  myPlayer.attr('data-oneAye', _ayeData.oneAye);
+  // set title of aye
+  myPlayer.find('.title').text(_ayeData.title);
+
+  // set player new audio
+  if(talavatEl.src === _ayeData.audio)
+  {
+    // do nothing, because it's exist before
+  }
+  else
+  {
+    talavatEl.src = _ayeData.audio;
+    // load new audio
+    talavatEl.load();
+  }
+  // playerTogglePlay if audio exist
+  if(talavatEl.src)
+  {
+    playerTogglePlay(talavatEl);
+  }
+  else
+  {
+    say('Error on load audio');
+  }
+}
+
+
+function getAyeData(_this, _playOneAye)
+{
+  var myAyeBox;
+  if(_this === 'player')
+  {
+    myAyeBox = fetchPlayerData();
+  }
+  else
+  {
+    myAyeBox = $(_this);
+
+    if(myAyeBox.is('.ayeBox'))
+    {
+      // this is AyeBox el, do nothing
+    }
+    else
+    {
+      myAyeBox = myAyeBox.parents('.ayeBox');
+    }
+  }
+
+  // check ayeBox selected from one way
+  if(!myAyeBox.is('.ayeBox'))
+  {
+    return false;
+  }
+
+  // define result variable
+  var ayeResult =
+  {
+    ayeBox: myAyeBox,
+    id:     myAyeBox.attr('id'),
+    title:  myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
+    audio:  myAyeBox.attr('data-ayeaudio'),
+    oneAye: _playOneAye
+  }
+
+  console.log(ayeResult);
+  // on default return id of ayebox
+  return ayeResult;
+}
+
+
+function fetchPlayerData()
+{
+  var myPlayer       = $('.player');
+  var detectedAyeBox = null;
+  if(myPlayer.attr('data-aye'))
+  {
+    // we have aye id, get it from ayebox
+    detectedAyeBox = $('.ayeBox#'+ myPlayer.attr('data-aye'));
+  }
+  else
+  {
+    // player is not loaded, use first aye
+    detectedAyeBox = $('.ayeBox:first');
+  }
+
+  return detectedAyeBox;
+}
+
+
+function playerTogglePlay(_player)
 {
   // change icon
    if (_player.paused)
@@ -283,6 +403,7 @@ function togglePlay(_player)
        _player.pause();
    }
 }
+
 
 
 function detectNextAye(_this)
