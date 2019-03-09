@@ -162,7 +162,7 @@ function bindAudioTools()
   $(".ayeBox .play").off('click');
   $(".ayeBox .play").on('click', function()
   {
-    iqra(this, true);
+    iqra(this);
   });
 
   // show if quran exist in this page
@@ -235,7 +235,7 @@ function getAyeData(_callMode, _playOneAye)
     id:         myAyeBox.attr('id'),
     title:      myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
     audio:      myAyeBox.attr('data-ayeaudio'),
-    oneAye:     _playOneAye,
+    oneAye:     (_playOneAye? true: null),
     fromPlayer: (_callMode === 'player'? true: false),
     init:       ($('.player').attr('data-aye')? false: true)
   }
