@@ -6412,7 +6412,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 .vcard .adr span {
   display: inline-block; }
 
-.chooseQari {
+.chooseQari.dropdown {
   cursor: pointer;
   display: inline-block;
   min-height: 1em;
@@ -6422,23 +6422,37 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   background: #e0e1e2;
   color: rgba(0, 0, 0, 0.6);
   margin: 0;
-  padding: 0 1rem 0 50px;
+  padding: 0 10px 0 50px;
   text-transform: none;
   text-shadow: none;
   font-weight: 700;
+  height: 36px;
   line-height: 36px;
   font-style: normal;
   text-align: center;
   text-decoration: none;
   border-radius: .28rem;
-  transition: 0.3s; }
+  transition: 0.3s;
+  min-width: 290px; }
 
-.chooseQari:hover {
+.chooseQari.dropdown:hover {
   background-color: #ddd; }
 
 .chooseQari.dropdown > .text {
   display: inline-block;
-  line-height: 36px; }
+  height: 36px;
+  line-height: 36px;
+  min-width: 230px;
+  overflow: hidden; }
+
+.chooseQari.dropdown > .text span {
+  display: inline-block;
+  height: 36px;
+  min-width: 190px;
+  overflow: hidden;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 .chooseQari i {
   position: absolute;
