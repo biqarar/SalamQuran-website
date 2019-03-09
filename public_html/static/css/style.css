@@ -6468,11 +6468,12 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 .rtl #chooseQari.dropdown > .text span.type {
   right: 40px; }
 
-#chooseQari i {
+#chooseQari > i {
   position: absolute;
   width: 36px;
   height: 36px;
   line-height: 36px;
+  font-size: 1.5em;
   border-radius: 0;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;

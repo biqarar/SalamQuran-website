@@ -1,7 +1,7 @@
 
 <div class="f mB25">
   <div class="c4 s12 pLa10">
-    <div class="ui floating dropdown button" id='chooseQari'>
+    <div class="ui floating search dropdown button" id='chooseQari'>
       <i class="sf-microphone"></i>
       <span class="text">
         <img src="{{qariLoaded.image}}" class="avatar">
@@ -20,21 +20,34 @@
       </div>
     </div>
   </div>
-  <div class="cauto os">
-    <a href='{{url.kingdom}}' class="btn block secondary mTB10"><span class="compact mRa5 sf-eject"></span>{%trans "Back to list of suras"%}</a>
+
+  <div class="c4 s12 pLa10">
+    <div class="ui floating search dropdown button" id='chooseQari'>
+      <i class="sf-language"></i>
+      <span class="text">
+        <img src="{{qariLoaded.image}}" class="avatar">
+        <span>{{qariLoaded.qari}}</span>
+        <span class="type">{{qariLoaded.type_title}}</span>
+      </span>
+      <div class="menu">
+        <div class="header">{%trans "Change Qari"%}</div>
+{%for key, value in translationList%}
+          <a class="item" href="{{value.url}}">
+            <i class="flag {{value.flag}}"></i>
+            <span>{{value.localname}}</span>
+            <span class="type">{{value.language_name}}</span>
+          </a>
+{%endfor%}
+      </div>
+    </div>
   </div>
 
-</div>
 
 
-<h4 data-kerkere='.soreDetail' data-kerkere-icon='close'>{%trans "Detail"%}</h4>
-<div class="soreDetail" data-kerkere-content='hide'>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="cauto os">
+    <a href='{{url.kingdom}}' class="btn block secondary outline"><span class="compact mRa5 sf-eject"></span>{%trans "Back to list of suras"%}</a>
+  </div>
+
 </div>
 
 
@@ -42,11 +55,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <span class="badge"></span>
 {%endfor%}
 
-<br>
-<h6>{%trans "Translation"%}</h6>
-{%for key, myAye in translationList%}
-<span class="btn primary"><a href="{{url.this}}?t={{myAye.language}}{{myAye.index}}">{{myAye.localname}}</a></span>
-{%endfor%}
 
 
 
