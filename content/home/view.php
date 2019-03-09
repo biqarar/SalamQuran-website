@@ -63,6 +63,9 @@ class view
 		$fontStyleLoaded = \lib\app\font_style::load(\dash\request::get('font'));
 		\dash\data::fontStyleLoaded($fontStyleLoaded);
 
+		\dash\data::zoomInUrl(\lib\app\font_style::zoom_in_url());
+		\dash\data::zoomOutUrl(\lib\app\font_style::zoom_out_url());
+
 	}
 }
 ?>

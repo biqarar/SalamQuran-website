@@ -4,6 +4,51 @@ namespace lib\app;
 
 class font_style
 {
+	public static function zoom_in_url()
+	{
+		$get = \dash\request::get();
+		if(isset($get['zoom']) && is_numeric($get['zoom']))
+		{
+			$zoom = intval($get['zoom']) + 1;
+			if($zoom < 50)
+			{
+				$get['zoom'] = $zoom;
+			}
+			else
+			{
+				$get['zoom'] = 50;
+			}
+		}
+		else
+		{
+			$get['zoom'] = 2;
+		}
+		return \dash\url::that() . '?'. http_build_query($get);
+	}
+
+	public static function zoom_out_url()
+	{
+		$get = \dash\request::get();
+		if(isset($get['zoom']) && is_numeric($get['zoom']))
+		{
+			$zoom = intval($get['zoom']) - 1;
+			if($zoom > 1)
+			{
+				$get['zoom'] = $zoom;
+			}
+			else
+			{
+				$get['zoom'] = 1;
+			}
+		}
+		else
+		{
+			$get['zoom'] = 1;
+		}
+		return \dash\url::that() . '?'. http_build_query($get);
+	}
+
+
 
 	public static function site_list()
 	{
