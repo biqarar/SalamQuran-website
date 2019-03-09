@@ -57,6 +57,12 @@ class view
 		$readModeLoaded = \lib\app\read_mode::load(\dash\request::get('mode'));
 		\dash\data::readModeLoaded($readModeLoaded);
 
+		$fontStyle = \lib\app\font_style::site_list();
+		\dash\data::fontStyleList($fontStyle);
+
+		$fontStyleLoaded = \lib\app\font_style::load(\dash\request::get('font'));
+		\dash\data::fontStyleLoaded($fontStyleLoaded);
+
 	}
 }
 ?>

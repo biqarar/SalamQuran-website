@@ -71,21 +71,21 @@
     </div>
   </div>
 
+
   <div class="c2 s6">
     <div class="ui floating search dropdown button" id='chooseStyle'>
       <i class="sf-font"></i>
       <span class="text">
-        <img src="{{qariLoaded.image}}" class="avatar" alt="{{qariLoaded.qari}}">
-        <span>{{qariLoaded.qari}}</span>
+        <span>{{fontStyleLoaded.name}}</span>
       </span>
       <div class="menu">
         <div class="header">{%trans "Change Style"%}</div>
-{%for key, value in translationList%}
+{%for key, value in fontStyleList%}
           <a class="item" href="{{value.url}}">
-            <i class="flag {{value.flag}}"></i>
-            <span>{{value.localname}}</span>
-            <span class="type">{{value.language_name}}</span>
+            <i class="sf-{{value.class}}"></i>
+            <span>{{value.name}}</span>
           </a>
+
 {%endfor%}
       </div>
     </div>
