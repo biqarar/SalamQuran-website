@@ -190,11 +190,12 @@ function bindAudioTools()
       // if not on play, stary play from player
       iqra('player');
     }
+    $('.ayeBox.active').attr('data-playing', '');
   };
   // on pause
   talavatEl.onpause = function()
   {
-    iqra('player');
+    $('.ayeBox.active').attr('data-playing', null);
   };
 
 }
