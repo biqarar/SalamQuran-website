@@ -6650,6 +6650,10 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   #soreha .c7 abbr {
     display: inline-block; }
 
+  .ayeBox .meta .opr {
+    display: inline-block;
+    margin: 0; }
+
   .player {
     left: 0 !important;
     right: 0 !important;
