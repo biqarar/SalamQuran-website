@@ -84,7 +84,34 @@ class translate
 			$value['url']                   = $url;
 
 			$language[$value['language']]['list'][] = $value;
+		}
 
+		foreach ($language as $key => $value)
+		{
+			$count = count($value['list']);
+			$language[$key]['detail']['count'] = $count;
+			if($count > 1)
+			{
+				$get       = \dash\request::get();
+				$getTrans  = isset($get['t']) ? $get['t'] : '';
+				$getTrans  = explode('-', $getTrans);
+				$getTrans  = array_filter($getTrans);
+				$getTrans  = array_unique($getTrans);
+
+				$index = array_column($value['list'], 'index');
+				foreach ($index as $k => $myIndex)
+				{
+					if(!in_array($key.$myIndex, $getTrans))
+					{
+						$getTrans[] = $key.$myIndex;
+					}
+				}
+
+				$get['t']                       = implode('-', $getTrans);
+				$all_url                         = \dash\url::that(). '?'. http_build_query($get);
+
+				$language[$key]['detail']['allLink'] = ['title' => T_("Show all translate for this language"), 'link' => $all_url];
+			}
 		}
 
 		return $language;
