@@ -330,11 +330,16 @@ function playerTogglePlay(_player)
   // change icon
    if (_player.paused)
    {
-       _player.play();
+      _player.play();
+   }
+   else if(_player.readyState == 1)
+   {
+      _player.currentTime = 0;
+      _player.play();
    }
    else
    {
-       _player.pause();
+      _player.pause();
    }
 }
 
@@ -351,7 +356,11 @@ function detectNextAye(_this)
   // if need to get next
   if(oneAye === undefined)
   {
-    iqra(nextAyeBox);
+    if(nextAyeBox.length)
+    {
+      console.log(nextAyeBox);
+      iqra(nextAyeBox);
+    }
   }
   else
   {
