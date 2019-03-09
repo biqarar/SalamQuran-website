@@ -6,13 +6,15 @@
       <span class="text">
         <img src="{{qariLoaded.image}}" class="avatar">
         <span>{{qariLoaded.qari}}</span>
+        <span class="type">{{qariLoaded.type_title}}</span>
       </span>
       <div class="menu">
         <div class="header">{%trans "Choose Qari"%}</div>
 {%for key, value in qariList%}
-          <a class="item" href="{{url.this}}?qari={{key}}">
+          <a class="item" href2="{{url.this}}?qari={{key}}">
             <img src="{{value.image}}" class="avatar">
             <span>{{value.qari}}</span>
+            <span class="type">{{value.type_title}}</span>
           </a>
 {%endfor%}
       </div>

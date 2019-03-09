@@ -20,7 +20,6 @@
     height: 36px;
 	line-height: 36px;
     font-style: normal;
-    text-align: center;
     text-decoration: none;
     border-radius: .28rem;
     transition: 0.3s;
@@ -39,11 +38,20 @@
 .chooseQari.dropdown > .text span{
     display: inline-block;
     height: 36px;
+    line-height: 25px;
 	min-width: 190px;
     overflow: hidden;
     vertical-align: middle;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.chooseQari.dropdown > .text span.type{
+	height: 10px;
+    line-height: 10px;
+	color: #999;
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
 }
 .chooseQari i{
     position: absolute;
@@ -59,7 +67,13 @@
     top:0;
     left: 0;
 }
-
+.chooseQari.dropdown .item .type{
+	float: right;
+	color: #999;
+}
+.rtl .chooseQari.dropdown .item .type{
+	float: left;
+}
 
 .besmellah{
 	font-size: 1.5em;
