@@ -149,7 +149,7 @@ function handlePlayWbw()
     }
     else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
     {
-      updatePlayer(getAyeData(this, true));
+      iqra(this, true);
     }
   });
 
@@ -162,7 +162,7 @@ function bindAudioTools()
   $(".ayeBox .play").off('click');
   $(".ayeBox .play").on('click', function()
   {
-    updatePlayer(getAyeData(this, true));
+    iqra(this, true);
   });
 
   // show if quran exist in this page
@@ -180,11 +180,12 @@ function bindAudioTools()
   // on end
   talavatEl.onended = function()
   {
-    detectNextAye(this);
+    detectNextAye();
   };
   // on start
   talavatEl.onplay = function()
   {
+    // iqra('player', true);
     getAyeData('player');
     // console.log(fetchPlayerData());
     // if($(talavatEl).attr('data-aye-id') === undefined)
@@ -274,6 +275,13 @@ function playAye(_this, _playOneAye)
 
 
 
+function iqra(_callMode, _playOneAye)
+{
+  var ayeDetail = getAyeData(_callMode, _playOneAye);
+  updatePlayer(ayeDetail);
+}
+
+
 function highlightAye(_ayeData)
 {
     $('.Quran .ayeBox').removeClass('active');
@@ -331,16 +339,16 @@ function updatePlayer(_ayeData)
 }
 
 
-function getAyeData(_this, _playOneAye)
+function getAyeData(_callMode, _playOneAye)
 {
   var myAyeBox;
-  if(_this === 'player')
+  if(_callMode === 'player')
   {
     myAyeBox = fetchPlayerData();
   }
   else
   {
-    myAyeBox = $(_this);
+    myAyeBox = $(_callMode);
 
     if(myAyeBox.is('.ayeBox'))
     {
@@ -410,7 +418,7 @@ function playerTogglePlay(_player)
 
 function detectNextAye(_this)
 {
-  var currentId     = $(_this).attr('data-aye-id');
+  var currentId     = $('.player').attr('data-aye');
   var currentAyeBox = $('.ayeBox#'+ currentId);
   currentAyeBox.removeClass('active');
   var nextAyeBox    = currentAyeBox.next();
