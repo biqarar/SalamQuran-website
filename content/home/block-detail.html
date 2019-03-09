@@ -30,21 +30,19 @@
       <div class="menu">
         <div class="header">{%trans "Add new translation"%}</div>
 {%for key, myTrans in translationList%}
-{%if myTrans.detail.count > 1%}
-    <div class="header"><i class="tags icon"></i>{{myTrans.detail.language_name}} <i class="flag {{myTrans.detail.flag}}"></i></div>
-{%endif%}
+        <a class="item" href="{{myTrans.detail.allLink.link}}">
+          <i class="flag {{myTrans.detail.flag}}"></i>
+          <span>{{myTrans.detail.language_name}}</span>
+          <span class="floatRa badge">{%trans "All"%}</span>
+        </a>
+
 {%for k, v in myTrans.list%}
-          <a class="item" href="{{v.url}}">
-            <i class="flag {{v.flag}}"></i>
-            <span>{{v.localname}}</span>
-          </a>
+        <a class="item" href="{{v.url}}">
+          <i class="flag {{v.flag}}"></i>
+          <img src="https://salamquran.com/static/images/qariyan/mashari.png" class="avatar">
+          <span>{{v.localname}}</span>
+        </a>
 {%endfor%}
-{%if myTrans.detail.count > 1%}
-     <a class="item" href="{{myTrans.detail.allLink.link}}">
-            <i class="flag {{myTrans.detail.flag}}"></i>
-            <span>{{myTrans.detail.allLink.title}}</span>
-          </a>
-{%endif%}
 
 {%endfor%}
       </div>
