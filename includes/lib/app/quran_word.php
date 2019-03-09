@@ -106,6 +106,8 @@ class quran_word
 
 		$quran = [];
 
+		$first_verse_title = null;
+
 		foreach ($load as $key => $value)
 		{
 			if(!isset($quran['aya'][$value['aya']]['detail']))
@@ -127,7 +129,10 @@ class quran_word
 				$verse_url .= '/s'. $value['sura'];
 				$verse_url .= '/'. $value['aya'];
 
-
+				if(!$first_verse_title)
+				{
+					$first_verse_title = $verse_title;
+				}
 
 				$quran['aya'][$value['aya']]['detail'] =
 				[
@@ -219,7 +224,8 @@ class quran_word
 			];
 		}
 
-		$result['detail']         = $sura_detail;
+		$sura_detail['first_title'] = $first_verse_title;
+		$result['detail']      = $sura_detail;
 
 		// \dash\notif::api($result);
 
