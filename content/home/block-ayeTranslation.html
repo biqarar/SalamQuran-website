@@ -3,7 +3,7 @@
 {%for k, myTranslation in myAye.detail.translate%}
     <blockquote class="{{myTranslation.detail.name}}">
       <div class="badge primary">
-        <i class="flag ir"></i>
+        <i class="flag {{myTranslation.detail.flag}}"></i>
         <abbr>{{myTranslation.detail.localname}}</abbr>
       </div>
       <span>{{myTranslation.text}}</span>
