@@ -76,7 +76,7 @@ class twigTransTerms
 	echo T_("Qari");                                                                  // Line 56
 	echo T_("Reader");                                                                // Line 56
 	echo T_("Type");                                                                  // Line 57
-	echo T_("Translation");                                                           // Line 44
+	echo T_("Translation");                                                           // Line 30
 	echo T_("Sore");                                                                  // Line 59
 	echo T_("Complete");                                                              // Line 60
 
@@ -426,14 +426,13 @@ class twigTransTerms
 	echo T_("Quran");                                                                 // Line 12
 
 	//--------------------------projects/SalamQuran/content/home/block-ayeActions.html
-	echo T_("Play");                                                                  // Line 66
+	echo T_("Play");                                                                  // Line 6
 	echo T_("Pause");                                                                 // Line 6
 	echo T_("Copy");                                                                  // Line 9
 
 	//------------------------------projects/SalamQuran/content/home/block-detail.html
-	echo T_("Change Qari");                                                           // Line 12
-	echo T_("Detail");                                                                // Line 28
-	echo T_("Qari list");                                                             // Line 60
+	echo T_("Change Qari");                                                           // Line 33
+	echo T_("Back to list of suras");                                                 // Line 48
 
 	//------------------------------projects/SalamQuran/content/home/sore-bookTxt.html
 
