@@ -20,7 +20,9 @@
       </div>
     </div>
   </div>
-  <div></div>
+  <div class="cauto os">
+    <a href='{{url.kingdom}}' class="btn block secondary mTB10"><span class="compact mRa5 sf-eject"></span>{%trans "Back to list of suras"%}</a>
+  </div>
 
 </div>
 
@@ -46,38 +48,5 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <span class="btn primary"><a href="{{url.this}}?t={{myAye.language}}{{myAye.index}}">{{myAye.localname}}</a></span>
 {%endfor%}
 
-<div class='f'>
-  <div class='c'></div>
-  <div class='cauto os'>
-    <a href='{{url.kingdom}}' class="btn block mTB10">{%trans "List of soreha"%}</a>
-  </div>
-</div>
-
-
-
-
-{%if qariList%}
-<h5 data-kerkere='.tableQariList' data-kerkere-icon>{%trans "Qari list"%}</h5>
-<table class="tbl1 v2 tableQariList" data-kerkere-content='hide'>
-  <thead>
-    <tr>
-      <th>name</th>
-      <th>qari</th>
-      <th>{%trans "Play"%}</th>
-    </tr>
-  </thead>
-  <tbody>
-    {%for key, value in qariList%}
-      <tr>
-        <td><img src="{{value.image}}" class="avatar"></td>
-        <td>{{value.name}}</td>
-        <td>{{value.qari}}</td>
-        <td><a href="{{url.this}}?qari={{key}}"><i class="sf-play"></i></a></td>
-      </tr>
-    {%endfor%}
-  </tbody>
-</table>
-
-{%endif%}
 
 
