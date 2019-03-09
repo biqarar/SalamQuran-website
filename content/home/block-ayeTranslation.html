@@ -2,10 +2,13 @@
   <div class="translate">
 {%for k, myTranslation in myAye.detail.translate%}
     <blockquote class="{{myTranslation.detail.name}}">
-      <div class="badge primary">
+      <div class="badge light">
         <a href="{{myTranslation.detail.remove_url}}"><span class="sf-times fc-red" title='{%trans "Remove this translate"%}'></span></a>
         <i class="flag {{myTranslation.detail.flag}}"></i>
         <abbr>{{myTranslation.detail.localname}}</abbr>
+{%if myTranslation.detail.image%}
+        <img src="{{myTranslation.detail.image}}" alt="{{myTranslation.detail.localname}}" class="avatar">
+{%endif%}
       </div>
       <span>{{myTranslation.text}}</span>
     </blockquote>

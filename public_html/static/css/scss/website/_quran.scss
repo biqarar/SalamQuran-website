@@ -20,7 +20,7 @@
     vertical-align: baseline;
     background: rgba(0,100,255,0.05);
     color: rgba(0,0,0,.6);
-    padding: 0 10px 0 50px;
+    padding: 0 20px 0 50px;
     text-transform: none;
     text-shadow: none;
     font-weight: 700;
@@ -166,12 +166,15 @@
 .ayeBox .translate .badge{
 	margin:0 5px;
 	padding: 3px 10px;
+	line-height: 21px;
+	border: 1px solid #ddd;
 }
 .ayeBox .translate blockquote{
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
 .ayeBox .translate .flag{
 	margin: 0 5px;
+	vertical-align: middle;
 }
 .ayeBox .meta{
 	width: 70px;
