@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SalamQuran - Persian\n"
-"POT-Creation-Date: 2019-03-09 15:31+0330\n"
-"PO-Revision-Date: 2019-03-09 15:38+0330\n"
+"POT-Creation-Date: 2019-03-09 16:02+0330\n"
+"PO-Revision-Date: 2019-03-09 16:03+0330\n"
 "Last-Translator: Javad <J.Evazzadeh@gmail.com>\n"
 "Language-Team: Ermile <J.Evazzadeh@gmail.com>\n"
 "Language: fa_IR\n"
@@ -7520,6 +7520,70 @@ msgstr "مکی"
 #: SalamQuran/includes/languages/trans_static.php:12
 msgid "Meccan"
 msgstr "مکی"
+
+#: SalamQuran/includes/lib/app/qari.php:17 SalamQuran/includes/lib/app/qari.php:28
+#: SalamQuran/includes/lib/app/qari.php:39 SalamQuran/includes/lib/app/qari.php:50
+#: SalamQuran/includes/lib/app/qari.php:61 SalamQuran/includes/lib/app/qari.php:72
+#: SalamQuran/includes/lib/app/qari.php:83 SalamQuran/includes/lib/app/qari.php:94
+#: SalamQuran/includes/lib/app/qari.php:105 SalamQuran/includes/lib/app/qari.php:116
+#: SalamQuran/includes/lib/app/qari.php:127 SalamQuran/includes/lib/app/qari.php:138
+#: SalamQuran/includes/lib/app/qari.php:149 SalamQuran/includes/lib/app/qari.php:160
+#: SalamQuran/includes/lib/app/qari.php:171 SalamQuran/includes/lib/app/qari.php:182
+#: SalamQuran/includes/lib/app/qari.php:193 SalamQuran/includes/lib/app/qari.php:204
+#: SalamQuran/includes/lib/app/qari.php:215 SalamQuran/includes/lib/app/qari.php:226
+#: SalamQuran/includes/lib/app/qari.php:237 SalamQuran/includes/lib/app/qari.php:248
+#: SalamQuran/includes/lib/app/qari.php:259 SalamQuran/includes/lib/app/qari.php:270
+#: SalamQuran/includes/lib/app/qari.php:281 SalamQuran/includes/lib/app/qari.php:292
+#: SalamQuran/includes/lib/app/qari.php:303 SalamQuran/includes/lib/app/qari.php:314
+#: SalamQuran/includes/lib/app/qari.php:325 SalamQuran/includes/lib/app/qari.php:336
+#: SalamQuran/includes/lib/app/qari.php:347 SalamQuran/includes/lib/app/qari.php:358
+#: SalamQuran/includes/lib/app/qari.php:369
+msgid "murattal"
+msgstr "مرتل"
+
+#: SalamQuran/includes/lib/app/qari.php:23 SalamQuran/includes/lib/app/qari.php:34
+#: SalamQuran/includes/lib/app/qari.php:45 SalamQuran/includes/lib/app/qari.php:56
+#: SalamQuran/includes/lib/app/qari.php:67
+msgid "AbdulBaset AbdulSamad"
+msgstr "عبد الباسط عبد الصمد"
+
+#: SalamQuran/includes/lib/app/qari.php:78 SalamQuran/includes/lib/app/qari.php:89
+#: SalamQuran/includes/lib/app/qari.php:100
+msgid "Mishary Rashid Alafasy"
+msgstr "مشاری راشد العفاسی"
+
+#: SalamQuran/includes/lib/app/qari.php:111 SalamQuran/includes/lib/app/qari.php:122
+#: SalamQuran/includes/lib/app/qari.php:133 SalamQuran/includes/lib/app/qari.php:144
+#: SalamQuran/includes/lib/app/qari.php:155 SalamQuran/includes/lib/app/qari.php:166
+msgid "Mahmoud Khalil Al-Husary"
+msgstr "محمود خلیل الحصری"
+
+#: SalamQuran/includes/lib/app/qari.php:177 SalamQuran/includes/lib/app/qari.php:188
+#: SalamQuran/includes/lib/app/qari.php:199 SalamQuran/includes/lib/app/qari.php:210
+#: SalamQuran/includes/lib/app/qari.php:221
+msgid "Mohamed Siddiq al-Minshawi"
+msgstr "محمد صدیق المنشاوری"
+
+#: SalamQuran/includes/lib/app/qari.php:232 SalamQuran/includes/lib/app/qari.php:243
+#: SalamQuran/includes/lib/app/qari.php:254
+msgid "Hani ar-Rifai"
+msgstr "هانی الرفاعی"
+
+#: SalamQuran/includes/lib/app/qari.php:265 SalamQuran/includes/lib/app/qari.php:276
+#: SalamQuran/includes/lib/app/qari.php:287
+msgid "Abu Bakr al-Shatri"
+msgstr "ابوبکر الشاطری"
+
+#: SalamQuran/includes/lib/app/qari.php:298 SalamQuran/includes/lib/app/qari.php:309
+#: SalamQuran/includes/lib/app/qari.php:320
+msgid "Sa`ud ash-Shuraym"
+msgstr "سعود الشریم"
+
+#: SalamQuran/includes/lib/app/qari.php:331 SalamQuran/includes/lib/app/qari.php:342
+#: SalamQuran/includes/lib/app/qari.php:353 SalamQuran/includes/lib/app/qari.php:364
+#: SalamQuran/includes/lib/app/qari.php:375
+msgid "Abdur-Rahman as-Sudais"
+msgstr "عبدالرحمان السدیس"
 
 #: SalamQuran/includes/lib/app/quran_word.php:122
 msgid "Aya"
@@ -15824,6 +15888,9 @@ msgstr "نام فایل غیرمجاز"
 #: dash/lib/utility/upload/check.php:91
 msgid "Exceeded file extension limit"
 msgstr "نوع فایل غیرمجاز"
+
+#~ msgid "Mishari Rashid al-`Afasy"
+#~ msgstr "مشاری راشد العفاسی"
 
 #~ msgid "Aye"
 #~ msgstr "آیه"
