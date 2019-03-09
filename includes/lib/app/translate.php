@@ -93,7 +93,8 @@ class translate
 			if($count > 1)
 			{
 				$get       = \dash\request::get();
-				$getTrans  = isset($get['t']) ? $get['t'] : '';
+				// in all link remove all trans
+				$getTrans  = '';
 				$getTrans  = explode('-', $getTrans);
 				$getTrans  = array_filter($getTrans);
 				$getTrans  = array_unique($getTrans);
