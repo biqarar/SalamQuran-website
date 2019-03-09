@@ -6412,7 +6412,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 .vcard .adr span {
   display: inline-block; }
 
-#chooseQari.dropdown {
+.Quran .ui.dropdown {
   cursor: pointer;
   display: inline-block;
   min-height: 1em;
@@ -6434,10 +6434,10 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   transition: 0.3s;
   min-width: 290px; }
 
-#chooseQari.dropdown:hover {
+.Quran .ui.dropdown:hover {
   background-color: #ddd; }
 
-#chooseQari.dropdown > .text {
+.Quran .ui.dropdown > .text {
   display: block;
   height: 36px;
   line-height: 36px;
@@ -6445,7 +6445,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   overflow: hidden;
   position: relative; }
 
-#chooseQari.dropdown > .text span {
+.Quran .ui.dropdown > .text span {
   display: inline-block;
   height: 36px;
   line-height: 25px;
@@ -6455,7 +6455,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-#chooseQari.dropdown > .text span.type {
+.Quran .ui.dropdown > .text span.type {
   height: 10px;
   line-height: 10px;
   color: #999;
@@ -6465,10 +6465,10 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   right: 10px;
   left: 40px; }
 
-.rtl #chooseQari.dropdown > .text span.type {
+.rtl .Quran .ui.dropdown > .text span.type {
   right: 40px; }
 
-#chooseQari > i {
+.Quran .ui.dropdown > i {
   position: absolute;
   width: 36px;
   height: 36px;
@@ -6483,14 +6483,14 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   top: 0;
   left: 0; }
 
-.ui.dropdown .menu > .header {
+.Quran .ui.dropdown .menu > .header {
   line-height: 20px; }
 
-#chooseQari.dropdown .item .type {
+.Quran .ui.dropdown .item .type {
   float: right;
   color: #999; }
 
-.rtl #chooseQari.dropdown .item .type {
+.rtl .Quran .ui.dropdown .item .type {
   float: left; }
 
 .besmellah {
