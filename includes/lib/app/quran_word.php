@@ -225,7 +225,7 @@ class quran_word
 		}
 
 		$sura_detail['first_title'] = $first_verse_title;
-		$result['detail']      = $sura_detail;
+		$result['detail']           = $sura_detail;
 
 		// \dash\notif::api($result);
 
@@ -315,11 +315,6 @@ class quran_word
 			$get_quran['1.1'] = [' = 1.1 AND ', " page IN ($start_page, $other_page)"];
 			unset($get_quran['sura']);
 
-			// $load_sura_detail = \lib\db\sura::get_id($_id);
-			// if(!$load_sura_detail)
-			// {
-			// 	return;
-			// }
 		}
 
 		$load = \lib\db\quran_word::get($get_quran);
@@ -565,6 +560,27 @@ class quran_word
 
 				unset($translate['table_name']);
 				unset($translate['id']);
+
+				if(!\dash\url::content())
+				{
+					$get       = \dash\request::get();
+					$getTrans  = isset($get['t']) ? $get['t'] : '';
+					$getTrans  = explode('-', $getTrans);
+					$getTrans  = array_filter($getTrans);
+					$getTrans  = array_unique($getTrans);
+
+					$thisTransKey = $translate['language']. $translate['index'];
+
+					if(in_array($thisTransKey, $getTrans))
+					{
+						unset($getTrans[array_search($thisTransKey, $getTrans)]);
+					}
+
+					$get['t']        = implode('-', $getTrans);
+					$url             = \dash\url::that(). '?'. http_build_query($get);
+					$translate['remove_url'] = $url;
+
+				}
 
 				foreach ($load as $key => $value)
 				{

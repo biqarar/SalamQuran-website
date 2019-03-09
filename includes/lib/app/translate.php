@@ -48,14 +48,31 @@ class translate
 	{
 		$list      = self::translate_list();
 		$site_list = [];
-		$get = \dash\request::get();
+		$language  = array_column($list, 'language');
+		$language  = array_filter($language);
+		$language  = array_unique($language);
+		$language  = array_flip($language);
+		$language  = array_map(function(){return [];}, $language);
+
+		$get       = \dash\request::get();
+		$getTrans  = isset($get['t']) ? $get['t'] : '';
+		$getTrans  = explode('-', $getTrans);
+		$getTrans  = array_filter($getTrans);
+		$getTrans  = array_unique($getTrans);
 
 		foreach ($list as $key => $value)
 		{
-			$get['t']        = $value['language']. $value['index'];
-			$url             = \dash\url::that(). '?'. http_build_query($get);
-			$value['url']    = $url;
-			$site_list[$key] = $value;
+			$thisTransKey = $value['language']. $value['index'];
+			if(!in_array($thisTransKey, $getTrans))
+			{
+				$getTrans[] = $thisTransKey;
+			}
+
+			$get['t']                       = implode('-', $getTrans);
+			$url                            = \dash\url::that(). '?'. http_build_query($get);
+			$value['url']                   = $url;
+			$language[$value['language']][] = $value;
+
 		}
 
 		return $site_list;
