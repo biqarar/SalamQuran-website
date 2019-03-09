@@ -244,7 +244,18 @@ function getAyeData(_callMode, _playOneAye)
     audio:      myAyeBox.attr('data-ayeaudio'),
     oneAye:     (_playOneAye? '': null),
     fromPlayer: (_callMode === 'player'? true: false),
-    init:       ($('.player').attr('data-aye')? false: true)
+    init:       ($('.player').attr('data-aye')? false: true),
+    nextAudio:  null
+  }
+
+  var nextAudio = myAyeBox.next();
+  if(nextAudio.length)
+  {
+    nextAudio = nextAudio.attr('data-ayeaudio');
+    if(nextAudio)
+    {
+      ayeResult.nextAudio = nextAudio;
+    }
   }
 
   console.log(ayeResult);
@@ -315,6 +326,13 @@ function updatePlayer(_ayeData)
   else
   {
     say('Error on load audio');
+  }
+
+  if(_ayeData.nextAudio)
+  {
+    // try to load next audio
+    var next = new Audio();
+    next.src = _ayeData.nextAudio;
   }
 }
 
