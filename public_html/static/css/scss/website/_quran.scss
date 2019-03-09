@@ -6,6 +6,9 @@
 .Quran .fullCommand{
 
 }
+.Quran .fullCommand .btn{
+	background: rgba(0,100,255,0.05);
+}
 
 // dropdowns
 .Quran .ui.dropdown{
@@ -15,7 +18,7 @@
     outline: 0;
     border: none;
     vertical-align: baseline;
-    background: #e0e1e2;
+    background: rgba(0,100,255,0.05);
     color: rgba(0,0,0,.6);
     padding: 0 5px 0 50px;
     text-transform: none;
@@ -31,7 +34,7 @@
     width: auto;
 }
 .Quran .ui.dropdown:hover{
-	background-color: #ddd;
+	background-color: #eee;
 }
 .Quran .ui.dropdown > .text{
 	display: block;
@@ -39,6 +42,7 @@
 	line-height: 36px;
 	overflow: hidden;
 	position: relative;
+	cursor: pointer;
 }
 .ui.dropdown > .text > img{
 

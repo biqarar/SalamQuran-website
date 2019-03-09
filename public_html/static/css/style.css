@@ -6412,6 +6412,9 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 .vcard .adr span {
   display: inline-block; }
 
+.Quran .fullCommand .btn {
+  background: rgba(0, 100, 255, 0.05); }
+
 .Quran .ui.dropdown {
   cursor: pointer;
   display: block;
@@ -6419,7 +6422,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   outline: 0;
   border: none;
   vertical-align: baseline;
-  background: #e0e1e2;
+  background: rgba(0, 100, 255, 0.05);
   color: rgba(0, 0, 0, 0.6);
   padding: 0 5px 0 50px;
   text-transform: none;
@@ -6435,14 +6438,15 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   width: auto; }
 
 .Quran .ui.dropdown:hover {
-  background-color: #ddd; }
+  background-color: #eee; }
 
 .Quran .ui.dropdown > .text {
   display: block;
   height: 36px;
   line-height: 36px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .Quran .ui.dropdown > .text span {
   display: inline-block;
