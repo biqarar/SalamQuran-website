@@ -2,19 +2,22 @@
 <div class="f fix txtC mTB25">
   <div class="cauto os">
 {%if quranLoaded.detail.prev_sura%}
-    <a class="btn outline" href="{{quranLoaded.detail.prev_sura.url}}"><i class="compact sf-chevron-left"></i> {%trans "Previous Surah"%} <span class="badge mLa5">{{quranLoaded.detail.prev_sura.index | fitNumber}}</span> {{quranLoaded.detail.prev_sura.title}}</a>
+    <a class="btn outline" href="{{quranLoaded.detail.prev_sura.url}}"><i class="compact floatL mR10 sf-chevron-left"></i> {%trans "Previous Surah"%} <span class="badge mLR5">{{quranLoaded.detail.prev_sura.index | fitNumber}}</span> {{quranLoaded.detail.prev_sura.title}}</a>
 {%endif%}
   </div>
 
   <div class="c">
-  	{%if navPosition == 'bottom'%}
-    <a class="btn outline" href="{{url.pwd}}#iqra">{%trans "Beginning of Surah"%}</a>
-  	{%endif%}
+{%if navPosition == 'top'%}
+    <a class="link" href="{{url.pwd}}">{{quranLoaded.detail.name}}</a>
+{%elseif navPosition == 'bottom'%}
+    <a class="btn outline" href="{{url.pwd}}#iqra"><span class="compact mRa5 sf-eject"></span>{%trans "Beginning of Surah"%}</a>
+    <a href='{{url.kingdom}}' class="btn outline"><span class="compact mRa5 sf-level-up"></span>{%trans "Back to list of suras"%}</a>
+{%endif%}
   </div>
 
   <div class="cauto">
 {%if quranLoaded.detail.next_sura%}
-    <a class="btn outline" href="{{quranLoaded.detail.next_sura.url}}">{%trans "Next Surah"%} <span class="badge mLa5">{{quranLoaded.detail.next_sura.index | fitNumber}}</span> {{quranLoaded.detail.next_sura.title}} <i class="compact sf-chevron-right"></i></a>
+    <a class="btn outline" href="{{quranLoaded.detail.next_sura.url}}">{%trans "Next Surah"%} <span class="badge mLR5">{{quranLoaded.detail.next_sura.index | fitNumber}}</span> {{quranLoaded.detail.next_sura.title}} <i class="compact floatR mL10 sf-chevron-right"></i></a>
 {%endif%}
   </div>
 </div>
