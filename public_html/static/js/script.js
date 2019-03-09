@@ -185,8 +185,9 @@ function bindAudioTools()
   // on start
   talavatEl.onplay = function()
   {
-    if($('.player').attr('data-aye') === undefined)
+    if($('.player').attr('data-play') === undefined)
     {
+      // if not on play, stary play from player
       iqra('player');
     }
   };
