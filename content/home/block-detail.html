@@ -1,6 +1,6 @@
 
 <div class="f mB25">
-  <div class="c3 s12 pLa10">
+  <div class="c4 s12 pLa10">
     <div class="ui floating dropdown button chooseQari">
       <i class="sf-microphone"></i>
       <span class="text">
@@ -9,9 +9,9 @@
         <span class="type">{{qariLoaded.type_title}}</span>
       </span>
       <div class="menu">
-        <div class="header">{%trans "Choose Qari"%}</div>
+        <div class="header">{%trans "Change Qari"%}</div>
 {%for key, value in qariList%}
-          <a class="item" href2="{{url.this}}?qari={{key}}">
+          <a class="item" href="{{value.url}}">
             <img src="{{value.image}}" class="avatar">
             <span>{{value.qari}}</span>
             <span class="type">{{value.type_title}}</span>
@@ -20,6 +20,7 @@
       </div>
     </div>
   </div>
+  <div></div>
 
 </div>
 
@@ -78,4 +79,5 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </table>
 
 {%endif%}
+
 
