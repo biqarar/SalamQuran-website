@@ -6653,8 +6653,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   .player {
     left: 0 !important;
     right: 0 !important;
-    height: 41px;
-    bottom: -1px; }
+    height: 40px; }
 
   .player .qari figcaption {
     display: none; }
