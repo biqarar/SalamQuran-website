@@ -358,7 +358,6 @@ function detectNextAye(_this)
   {
     if(nextAyeBox.length)
     {
-      console.log(nextAyeBox);
       iqra(nextAyeBox);
     }
   }

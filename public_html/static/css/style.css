@@ -6481,6 +6481,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   width: 70px; }
 
 .ayeBox .meta .opr {
+  display: block;
   background-color: #eee;
   transition: 0.3s;
   line-height: 30px;
@@ -6498,7 +6499,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 .ayeBox .meta .opr:focus {
   background-color: #ddd; }
 
-.ayeBox .meta .opr:last-child {
+.ayeBox .meta .c12:last-child .opr {
   margin-bottom: 0; }
 
 .ayeBox .meta a.opr {
@@ -6547,7 +6548,8 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   z-index: 20;
   font-size: 1.2em;
   opacity: 0.9;
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+  user-select: none; }
 
 .ltr .player {
   left: 50px; }
@@ -6662,7 +6664,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
     width: 100%; }
 
   .ayeBox .meta .opr {
-    margin: 0 2px; }
+    margin: 0 2px !important; }
 
   .player {
     left: 0 !important;

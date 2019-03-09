@@ -1,8 +1,16 @@
 <div class="meta f">
-  <a class="c12 sauto opr ayeLink" href="{{myAye.detail.verse_url}}">{{myAye.detail.verse_key}}</a>
-  <div class="c12 sauto opr play"><span class="sf-play"></span>{%trans "Play"%}</div>
-  <div class="c12 sauto opr copy" data-copy='#aya-{{myAye.detail.index}}'><span class="sf-clone"></span>{%trans "Copy"%}
-    <input type="text" id="aya-{{myAye.detail.index}}" value="{{myAye.detail.text}}" contenteditable="true">
+  <div class="c12 sauto">
+    <a class="opr ayeLink" href="{{myAye.detail.verse_url}}">{{myAye.detail.verse_key}}</a>
+  </div>
+  <div class="c12 sauto">
+    <div class="opr play">
+      <span class="sf-play"></span>{%trans "Play"%}
+    </div>
+  </div>
+  <div class="c12 sauto">
+    <div class="opr copy" data-copy='#aya-{{myAye.detail.index}}'><span class="sf-clone"></span>{%trans "Copy"%}
+      <input type="text" id="aya-{{myAye.detail.index}}" value="{{myAye.detail.text}}" contenteditable="true">
+    </div>
   </div>
 </div>
 

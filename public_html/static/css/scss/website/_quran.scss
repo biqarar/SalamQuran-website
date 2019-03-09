@@ -72,6 +72,7 @@
 	width: 70px;
 }
 .ayeBox .meta .opr{
+	display: block;
 	background-color: #eee;
 	transition: 0.3s;
 	line-height: 30px;
@@ -89,7 +90,7 @@
 .ayeBox .meta .opr:focus{
 	background-color: #ddd;
 }
-.ayeBox .meta .opr:last-child{
+.ayeBox .meta .c12:last-child .opr{
 	margin-bottom: 0;
 }
 .ayeBox .meta a.opr{
