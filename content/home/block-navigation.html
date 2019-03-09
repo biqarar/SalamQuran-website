@@ -1,7 +1,19 @@
-{%if quranLoaded.detail.next_sura%}
-<a class="btn primary" href="{{quranLoaded.detail.next_sura.url}}">{{quranLoaded.detail.next_sura.title}}</a>
-{%endif%}
 
+<div class="f fix txtC mTB25">
+  <div class="cauto os">
 {%if quranLoaded.detail.prev_sura%}
-<a class="btn primary" href="{{quranLoaded.detail.prev_sura.url}}">{{quranLoaded.detail.prev_sura.title}}</a>
+    <a class="btn outline" href="{{quranLoaded.detail.prev_sura.url}}"><i class="compact sf-chevron-left"></i> {%trans "Previous Surah"%} <span class="badge mLa5">{{quranLoaded.detail.prev_sura.index | fitNumber}}</span> {{quranLoaded.detail.prev_sura.title}}</a>
 {%endif%}
+  </div>
+
+  <div class="c">
+    <a class="btn outline" href="{{url.pwd}}#iqra">{%trans "Beginning of Surah"%}</a>
+  </div>
+
+  <div class="cauto">
+{%if quranLoaded.detail.next_sura%}
+    <a class="btn outline" href="{{quranLoaded.detail.next_sura.url}}">{%trans "Next Surah"%} <span class="badge mLa5">{{quranLoaded.detail.next_sura.index | fitNumber}}</span> {{quranLoaded.detail.next_sura.title}} <i class="compact sf-chevron-right"></i></a>
+{%endif%}
+  </div>
+</div>
+
