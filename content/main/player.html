@@ -13,7 +13,7 @@
     </figure>
     <div class="c">
       <audio controls preload id="talavat" controlsList="nodownload">
-        <source src="{{qariLoaded.addr}}001001.{{qariLoaded.audio_type}}" type="audio/mpeg">
+        <source src="{{qariLoaded.addr}}001001.{{qariLoaded.audio_type}}" type="{%if qariLoaded.audio_type== 'ogg'%}audio/ogg{%else%}audio/mpeg{%endif%}">
       </audio>
     </div>
   </div>
