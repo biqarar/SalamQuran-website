@@ -110,12 +110,12 @@
 	vertical-align: middle;
 	transition: none;
 }
-.ayeBox .meta .opr.play.pause::before{
+.ayeBox[data-playing] .meta .opr.play::before{
 	content: "\e232";
 	font-family: "siftal","tahoma" !important;
 	display: inline-block;
 }
-.ayeBox .meta .opr.play.pause::after{
+.ayeBox[data-playing] .meta .opr.play::after{
 	content: attr(data-pause);
 	display: inline-block;
 }

@@ -304,7 +304,7 @@ function updatePlayer(_ayeData)
   // playerTogglePlay if audio exist
   if(talavatEl.src)
   {
-    playerTogglePlay(talavatEl);
+    playerTogglePlay(talavatEl, _ayeData);
   }
   else
   {
@@ -325,21 +325,24 @@ function highlightAye(_ayeData)
 }
 
 
-function playerTogglePlay(_player)
+function playerTogglePlay(_player, _ayeData)
 {
   // change icon
    if (_player.paused)
    {
       _player.play();
+      _ayeData.ayeBox.attr('data-playing', '');
    }
    else if(_player.readyState == 1)
    {
       _player.currentTime = 0;
       _player.play();
+      _ayeData.ayeBox.attr('data-playing', '');
    }
    else
    {
       _player.pause();
+      _ayeData.ayeBox.attr('data-playing', null);
    }
 }
 
