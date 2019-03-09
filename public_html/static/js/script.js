@@ -235,7 +235,7 @@ function getAyeData(_callMode, _playOneAye)
     id:         myAyeBox.attr('id'),
     title:      myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
     audio:      myAyeBox.attr('data-ayeaudio'),
-    oneAye:     (_playOneAye? true: null),
+    oneAye:     (_playOneAye? '': null),
     fromPlayer: (_callMode === 'player'? true: false),
     init:       ($('.player').attr('data-aye')? false: true)
   }
@@ -284,6 +284,8 @@ function updatePlayer(_ayeData)
   myPlayer.attr('data-aye', _ayeData.id);
   // set oneAye status
   myPlayer.attr('data-oneAye', _ayeData.oneAye);
+  // set play mode
+  myPlayer.attr('data-play', '');
   // set title of aye
   myPlayer.find('.title').text(_ayeData.title);
 
@@ -341,17 +343,18 @@ function detectNextAye(_this)
   var myPlayer      = $('.player');
   var currentId     = myPlayer.attr('data-aye');
   var currentAyeBox = $('.ayeBox#'+ currentId);
+  myPlayer.attr('data-play', null);
   currentAyeBox.removeClass('active');
   var nextAyeBox    = currentAyeBox.next();
   var oneAye        = myPlayer.attr('data-oneAye');
   // if need to get next
-  if(oneAye === 'true')
+  if(oneAye === undefined)
   {
-    // do nothing, dont need to play next
+    iqra(nextAyeBox);
   }
   else
   {
-    iqra(nextAyeBox);
+    // do nothing, dont need to play next
   }
 }
 
