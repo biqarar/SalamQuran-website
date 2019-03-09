@@ -30,7 +30,32 @@
         <span class="type">{{qariLoaded.type_title}}</span>
       </span>
       <div class="menu">
-        <div class="header">{%trans "Change Qari"%}</div>
+        <div class="header">{%trans "Change Translation"%}</div>
+{%for key, value in translationList%}
+{%if loop.index == 4%}
+          <div class="header"><i class="tags icon"></i>Tag Label</div>
+{%else%}
+          <a class="item" href="{{value.url}}">
+            <i class="flag {{value.flag}}"></i>
+            <span>{{value.localname}}</span>
+            <span class="type">{{value.language_name}}</span>
+          </a>
+{%endif%}
+{%endfor%}
+      </div>
+    </div>
+  </div>
+
+  <div class="c4 s12 pLa10">
+    <div class="ui floating search dropdown button" id='chooseReadMode'>
+      <i class="sf-language"></i>
+      <span class="text">
+        <img src="{{qariLoaded.image}}" class="avatar">
+        <span>{{qariLoaded.qari}}</span>
+        <span class="type">{{qariLoaded.type_title}}</span>
+      </span>
+      <div class="menu">
+        <div class="header">{%trans "Change Read Mode"%}</div>
 {%for key, value in translationList%}
           <a class="item" href="{{value.url}}">
             <i class="flag {{value.flag}}"></i>
@@ -41,7 +66,6 @@
       </div>
     </div>
   </div>
-
 
 
   <div class="cauto os">
