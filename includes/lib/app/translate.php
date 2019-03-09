@@ -55,6 +55,7 @@ class translate
 		$language  = array_map(function(){return [];}, $language);
 
 
+
 		foreach ($list as $key => $value)
 		{
 			$get       = \dash\request::get();
@@ -113,6 +114,17 @@ class translate
 
 				$language[$key]['detail']['allLink'] = ['title' => T_("Show all translate for this language"), 'link' => $all_url];
 			}
+		}
+
+		$current = \dash\language::current();
+		if(isset($language[$current]))
+		{
+			$temp           = [];
+			$temp[$current] = $language[$current];
+			unset($language[$current]);
+			$temp           = array_merge($temp, $language);
+			$language       = $temp;
+
 		}
 
 		return $language;
