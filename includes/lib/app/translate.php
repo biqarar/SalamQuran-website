@@ -44,6 +44,24 @@ class translate
 	}
 
 
+	public static function translate_site_list()
+	{
+		$list      = self::translate_list();
+		$site_list = [];
+		$get = \dash\request::get();
+
+		foreach ($list as $key => $value)
+		{
+			$get['t']        = $value['language']. $value['index'];
+			$url             = \dash\url::that(). '?'. http_build_query($get);
+			$value['url']    = $url;
+			$site_list[$key] = $value;
+		}
+
+		return $site_list;
+
+	}
+
 	public static function translate_list()
 	{
 		$translate =
