@@ -13,7 +13,7 @@
     vertical-align: baseline;
     background: #e0e1e2;
     color: rgba(0,0,0,.6);
-    padding: 0 10px 0 50px;
+    padding: 0 5px 0 50px;
     text-transform: none;
     text-shadow: none;
     font-weight: 700;
@@ -33,15 +33,17 @@
 	display: block;
 	height: 36px;
 	line-height: 36px;
-	min-width: 230px;
 	overflow: hidden;
 	position: relative;
+}
+.ui.dropdown > .text > img{
+
 }
 .Quran .ui.dropdown > .text span{
     display: inline-block;
     height: 36px;
     line-height: 25px;
-	min-width: 190px;
+	max-width: calc(100% - 40px);
     overflow: hidden;
     vertical-align: middle;
     text-overflow: ellipsis;
