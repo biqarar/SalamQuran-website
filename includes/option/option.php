@@ -29,4 +29,8 @@ self::$config['coming'] = true;
 self::$config['api_v6']['appkey']   = [];
 self::$config['api_v6']['appkey'][] = null;
 
+
+// temporary use siftal
+self::$config['dev']['siftal'] = true;
+
 ?>
