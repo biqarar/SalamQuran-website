@@ -6477,8 +6477,10 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 .ayeBox .translate .flag {
   margin: 0 5px; }
 
+.ayeBox .meta {
+  width: 70px; }
+
 .ayeBox .meta .opr {
-  display: block;
   background-color: #eee;
   transition: 0.3s;
   line-height: 30px;
@@ -6650,9 +6652,17 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   #soreha .c7 abbr {
     display: inline-block; }
 
+  .ayeBox {
+    padding: 0.5em; }
+
+  .ayeBox .aye {
+    font-size: 1.2em; }
+
+  .ayeBox .meta {
+    width: 100%; }
+
   .ayeBox .meta .opr {
-    display: inline-block;
-    margin: 0; }
+    margin: 0 2px; }
 
   .player {
     left: 0 !important;

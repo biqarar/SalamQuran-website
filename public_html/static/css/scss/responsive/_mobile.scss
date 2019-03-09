@@ -28,9 +28,17 @@
 	}
 
 	// quran
+	.ayeBox{
+		padding: 0.5em;
+	}
+	.ayeBox .aye{
+		font-size: 1.2em;
+	}
+	.ayeBox .meta{
+		width: 100%;
+	}
 	.ayeBox .meta .opr{
-		display: inline-block;
-		margin: 0;
+		margin: 0 2px;
 	}
 
 	// player
