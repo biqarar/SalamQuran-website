@@ -122,7 +122,6 @@ class translate
 	{
 		$translate =
 		[
-
 			'am_sadiq'           => [ 'default' => true,  'id' => 1, 'index' => 1, 'language' => 'am', 'name' => 'sadiq', 'localname' => 'sadiq', 'table_name' => 'am_sadiq', 'flag' => 'et', 'language_name' => 'Amharic', 'local_name' => 'ሳዲቅ ሳኒ ሐቢብ', 'ename' => 'Muhammed Sadiq and Muhammed Sani Habib', ],
 			'ar_jalalayn'        => [ 'default' => true,  'id' => 2, 'index' => 1, 'language' => 'ar', 'name' => 'jalalayn', 'localname' => 'jalalayn', 'table_name' => 'ar_jalalayn', 'flag' => 'sa', 'language_name' => 'Arabic', 'local_name' => 'تفسير الجلالين', 'ename' => 'Jalal ad-Din al-Mahalli and Jalal ad-Din as-Suyuti', ],
 			'ar_muyassar'        => [ 'default' => false, 'id' => 3, 'index' => 2, 'language' => 'ar', 'name' => 'muyassar', 'localname' => 'muyassar', 'table_name' => 'ar_muyassar', 'flag' => 'sa', 'language_name' => 'Arabic', 'local_name' => 'تفسير المیسر', 'ename' => 'King Fahad Quran Complex', ],
