@@ -536,6 +536,8 @@ class quran_word
 
 		$get = explode('-', $_meta['translate']);
 		$result = [];
+		$i         = 0;
+
 		foreach ($get as $key => $value)
 		{
 			$translate = \lib\app\translate::table_name($value);
@@ -545,6 +547,12 @@ class quran_word
 				continue;
 			}
 
+			$i++;
+			if($i > 20)
+			{
+				\dash\notif::warn(T_("Only 20 translate can be show"));
+				break;
+			}
 			$sura = array_column($_data, 'sura');
 			$sura = array_filter($sura);
 			$sura = array_unique($sura);
