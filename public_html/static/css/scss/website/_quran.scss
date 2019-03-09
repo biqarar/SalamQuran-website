@@ -3,7 +3,7 @@
 .Quran{
 
 }
-.chooseQari.dropdown{
+#chooseQari.dropdown{
     cursor: pointer;
     display: inline-block;
     min-height: 1em;
@@ -25,10 +25,10 @@
     transition: 0.3s;
     min-width: 290px;
 }
-.chooseQari.dropdown:hover{
+#chooseQari.dropdown:hover{
 	background-color: #ddd;
 }
-.chooseQari.dropdown > .text{
+#chooseQari.dropdown > .text{
 	display: block;
 	height: 36px;
 	line-height: 36px;
@@ -36,7 +36,7 @@
 	overflow: hidden;
 	position: relative;
 }
-.chooseQari.dropdown > .text span{
+#chooseQari.dropdown > .text span{
     display: inline-block;
     height: 36px;
     line-height: 25px;
@@ -46,7 +46,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.chooseQari.dropdown > .text span.type{
+#chooseQari.dropdown > .text span.type{
 	height: 10px;
     line-height: 10px;
 	color: #999;
@@ -56,10 +56,10 @@
 	right: 10px;
 	left:40px;
 }
-.rtl .chooseQari.dropdown > .text span.type{
+.rtl #chooseQari.dropdown > .text span.type{
 	right:40px;
 }
-.chooseQari i{
+#chooseQari i{
     position: absolute;
     width: 36px;
     height: 36px;
@@ -76,11 +76,11 @@
 .ui.dropdown .menu > .header{
 	line-height: 20px;
 }
-.chooseQari.dropdown .item .type{
+#chooseQari.dropdown .item .type{
 	float: right;
 	color: #999;
 }
-.rtl .chooseQari.dropdown .item .type{
+.rtl #chooseQari.dropdown .item .type{
 	float: left;
 }
 
