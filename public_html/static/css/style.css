@@ -6481,6 +6481,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   width: 70px; }
 
 .ayeBox .meta .opr {
+  min-width: 60px;
   display: block;
   background-color: #eee;
   transition: 0.3s;
