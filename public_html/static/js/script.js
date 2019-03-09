@@ -194,145 +194,10 @@ function bindAudioTools()
 }
 
 
-function playAye(_this, _playOneAye)
-{
-  var talavat    = document.getElementById('talavat');
-  var talavatObj = $('#talavat');
-  var myAyeBox   = $(_this);
-
-  if(_this === undefined)
-  {
-    if(talavatObj.attr('data-aye-id'))
-    {
-      // select that one
-      myAyeBox = $('#'+ talavatObj.attr('data-aye-id'));
-    }
-    else
-    {
-      // if aye id is not set, get first one
-      myAyeBox = $('.ayeBox:first');
-    }
-  }
-  if(myAyeBox.is('.ayeBox'))
-  {
-    // this is Aye
-  }
-  else
-  {
-    myAyeBox = $(_this).parents('.ayeBox');
-  }
-  // for last aye, return if next is not exist
-  if(!myAyeBox.is('.ayeBox'))
-  {
-    return false;
-  }
-
-  var ayeAudioURL = myAyeBox.attr('data-ayeAudio');
-  var ayeTitle    = myAyeBox.find('.aye .ayeNum').attr('data-original-title');
-
-  if(_playOneAye)
-  {
-    // do nothing, on default play continuesly
-    talavatObj.attr('data-oneaye', true);
-  }
-  else
-  {
-    // only play one record
-    talavatObj.attr('data-oneaye', null);
-  }
-  // set title oa aye
-  $('.player .title').text(ayeTitle);
-  // if talavat exist, set it
-  if(talavat)
-  {
-    // set class for current aye
-    $('.Quran .ayeBox').removeClass('active');
-    myAyeBox.addClass('active');
-    if(myAyeBox.attr('id'))
-    {
-      talavatObj.attr('data-aye-id', myAyeBox.attr('id'));
-    }
-
-    // if souce is changed, change it, else do nothing
-    // set new source
-    if(ayeAudioURL === talavat.src)
-    {
-      // do something on design to show it not changed
-    }
-    else
-    {
-      talavat.src = ayeAudioURL;
-      // load audio
-      talavat.load();
-    }
-
-    playerTogglePlay(talavat);
-  }
-}
-
-
-
 function iqra(_callMode, _playOneAye)
 {
   var ayeDetail = getAyeData(_callMode, _playOneAye);
   updatePlayer(ayeDetail);
-}
-
-
-function highlightAye(_ayeData)
-{
-    $('.Quran .ayeBox').removeClass('active');
-    if(_ayeData.ayeBox)
-    {
-      _ayeData.ayeBox.addClass('active');
-    }
-    // change scroll to start of this aye
-    scrollSmoothTo($('#'+ _ayeData.id))
-}
-
-
-function updatePlayer(_ayeData)
-{
-  // check player exist or not
-  var myPlayer  = $('.player');
-  var talavatEl = document.getElementById('talavat');
-
-  if(!talavatEl)
-  {
-    say('Player is not exist!');
-    return false;
-  }
-
-  // update design to highlight this aye
-  highlightAye(_ayeData);
-
-  // set id to player
-  myPlayer.attr('data-aye', _ayeData.id);
-  // set oneAye status
-  myPlayer.attr('data-oneAye', _ayeData.oneAye);
-  // set title of aye
-  myPlayer.find('.title').text(_ayeData.title);
-
-  // set player new audio
-  if(talavatEl.src === _ayeData.audio)
-  {
-    // do nothing, because it's exist before
-  }
-  else
-  {
-    talavatEl.src = _ayeData.audio;
-    // load new audio
-    talavatEl.load();
-  }
-  // playerTogglePlay if audio exist
-  if(talavatEl.src)
-  {
-    playerTogglePlay(talavatEl);
-  }
-  else
-  {
-    say('Error on load audio');
-  }
 }
 
 
@@ -400,6 +265,63 @@ function fetchPlayerData()
 }
 
 
+function updatePlayer(_ayeData)
+{
+  // check player exist or not
+  var myPlayer  = $('.player');
+  var talavatEl = document.getElementById('talavat');
+
+  if(!talavatEl)
+  {
+    say('Player is not exist!');
+    return false;
+  }
+
+  // update design to highlight this aye
+  highlightAye(_ayeData);
+
+  // set id to player
+  myPlayer.attr('data-aye', _ayeData.id);
+  // set oneAye status
+  myPlayer.attr('data-oneAye', _ayeData.oneAye);
+  // set title of aye
+  myPlayer.find('.title').text(_ayeData.title);
+
+  // set player new audio
+  if(talavatEl.src === _ayeData.audio)
+  {
+    // do nothing, because it's exist before
+  }
+  else
+  {
+    talavatEl.src = _ayeData.audio;
+    // load new audio
+    talavatEl.load();
+  }
+  // playerTogglePlay if audio exist
+  if(talavatEl.src)
+  {
+    playerTogglePlay(talavatEl);
+  }
+  else
+  {
+    say('Error on load audio');
+  }
+}
+
+
+function highlightAye(_ayeData)
+{
+    $('.Quran .ayeBox').removeClass('active');
+    if(_ayeData.ayeBox)
+    {
+      _ayeData.ayeBox.addClass('active');
+    }
+    // change scroll to start of this aye
+    scrollSmoothTo($('#'+ _ayeData.id))
+}
+
+
 function playerTogglePlay(_player)
 {
   // change icon
@@ -414,14 +336,14 @@ function playerTogglePlay(_player)
 }
 
 
-
 function detectNextAye(_this)
 {
-  var currentId     = $('.player').attr('data-aye');
+  var myPlayer      = $('.player');
+  var currentId     = myPlayer.attr('data-aye');
   var currentAyeBox = $('.ayeBox#'+ currentId);
   currentAyeBox.removeClass('active');
   var nextAyeBox    = currentAyeBox.next();
-  var oneAye        = $('#talavat').attr('data-oneaye');
+  var oneAye        = myPlayer.attr('data-oneAye');
   // if need to get next
   if(oneAye === 'true')
   {
@@ -429,7 +351,7 @@ function detectNextAye(_this)
   }
   else
   {
-    playAye(nextAyeBox);
+    iqra(nextAyeBox);
   }
 }
 
