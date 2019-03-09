@@ -4,7 +4,7 @@
     <div class="ui floating search dropdown button" id='chooseQari'>
       <i class="sf-microphone"></i>
       <span class="text">
-        <img src="{{qariLoaded.image}}" class="avatar">
+        <img src="{{qariLoaded.image}}" class="avatar" alt="{{qariLoaded.qari}}">
         <span>{{qariLoaded.qari}}</span>
         <span class="type">{{qariLoaded.type_title}}</span>
       </span>
@@ -12,7 +12,7 @@
         <div class="header">{%trans "Change Qari"%}</div>
 {%for key, value in qariList%}
           <a class="item" href="{{value.url}}">
-            <img src="{{value.image}}" class="avatar">
+            <img src="{{value.image}}" class="avatar" alt="{{value.type_title}}">
             <span>{{value.qari}}</span>
             <span class="type">{{value.type_title}}</span>
           </a>
@@ -55,9 +55,8 @@
     <div class="ui floating search dropdown button" id='chooseReadMode'>
       <i class="sf-monitor-screen-1"></i>
       <span class="text">
-        <img src="{{qariLoaded.image}}" class="avatar">
+        <img src="{{qariLoaded.image}}" class="avatar" alt="{{qariLoaded.qari}}">
         <span>{{qariLoaded.qari}}</span>
-        <span class="type">{{qariLoaded.type_title}}</span>
       </span>
       <div class="menu">
         <div class="header">{%trans "Change Read Mode"%}</div>
@@ -76,9 +75,8 @@
     <div class="ui floating search dropdown button" id='chooseStyle'>
       <i class="sf-font"></i>
       <span class="text">
-        <img src="{{qariLoaded.image}}" class="avatar">
+        <img src="{{qariLoaded.image}}" class="avatar" alt="{{qariLoaded.qari}}">
         <span>{{qariLoaded.qari}}</span>
-        <span class="type">{{qariLoaded.type_title}}</span>
       </span>
       <div class="menu">
         <div class="header">{%trans "Change Style"%}</div>
@@ -93,9 +91,10 @@
     </div>
   </div>
 
-  <div class="c2">
+  <div class="c">
     <a class="btn fs12 mTB5" href=""><i class="block sf-search-plus"></i></a>
     <a class="btn fs12 mTB5" href=""><i class="block sf-search-minus"></i></a>
+    <a class="btn fs12 mTB5" href=""><i class="block sf-eraser"></i></a>
   </div>
 
 </div>

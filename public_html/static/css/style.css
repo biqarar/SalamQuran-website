@@ -6473,6 +6473,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   left: 40px; }
 
 .rtl .Quran .ui.dropdown > .text span.type {
+  left: 10px;
   right: 40px; }
 
 .Quran .ui.dropdown > i {
