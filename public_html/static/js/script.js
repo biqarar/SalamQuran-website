@@ -353,22 +353,31 @@ function highlightAye(_ayeData)
 function playerTogglePlay(_ayeData)
 {
   var talavatEl = document.getElementById('talavat');
+  var myAyeBox = _ayeData.ayeBox;
+  if(!talavatEl)
+  {
+  	return false;
+  }
+  if(!myAyeBox)
+  {
+  	return false;
+  }
   // change icon
   if (talavatEl.paused)
   {
     talavatEl.play();
-    _ayeData.ayeBox.attr('data-playing', '');
+    myAyeBox.attr('data-playing', '');
   }
   else if(talavatEl.readyState == 1)
   {
     talavatEl.currentTime = 0;
     talavatEl.play();
-    _ayeData.ayeBox.attr('data-playing', '');
+    myAyeBox.attr('data-playing', '');
   }
   else
   {
     talavatEl.pause();
-    _ayeData.ayeBox.attr('data-playing', null);
+    myAyeBox.attr('data-playing', null);
   }
 }
 
