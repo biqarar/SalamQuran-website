@@ -1,1 +1,5 @@
+    <div class='aye' data-style='{{requestGET.font}}'>
+{%for wordIndex, myWord in myAye.word%}
       <span data-wbw='{{myWord.audio}}' title='{{myWord.translation}}' class="{{myWord.class_name}}">{{myWord.code | raw}}</span>
+{%endfor%}
+    </div>

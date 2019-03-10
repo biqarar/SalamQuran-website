@@ -10,7 +10,12 @@
 {%include 'content/home/blocks/block-ayeActions.html'%}
     </div>
     <div class="c s12">
-{%include 'content/home/blocks/block-aye.html'%}
+{%if requestGET.font == 'uthmani'%}
+	{%include 'content/home/blocks/block-aye-uthmani.html'%}
+{%else%}
+	{%include 'content/home/blocks/block-aye-text.html'%}
+{%endif%}
+
 {%include 'content/home/blocks/block-ayeSimple.html'%}
 {%include 'content/home/blocks/block-ayeTranslation.html'%}
     </div>
