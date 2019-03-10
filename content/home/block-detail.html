@@ -1,100 +1,23 @@
 
 <div class="f fullCommand">
   <div class="c3 s12">
-    <div class="ui floating search dropdown button" id='chooseQari'>
-      <i class="sf-microphone"></i>
-      <span class="text">
-        <img src="{{qariLoaded.image}}" class="avatar" alt="{{qariLoaded.qari}}">
-        <span>{{qariLoaded.qari}}</span>
-        <span class="type">{{qariLoaded.type_title}}</span>
-      </span>
-      <div class="menu">
-        <div class="header">{%trans "Change Qari"%}</div>
-{%for key, value in qariList%}
-          <a class="item" href="{{value.url}}">
-            <img src="{{value.image}}" class="avatar" alt="{{value.type_title}}">
-            <span>{{value.qari}}</span>
-            <span class="type">{{value.type_title}}</span>
-          </a>
-{%endfor%}
-      </div>
-    </div>
+{%include 'content/home/block-cmd-qari.html'%}
   </div>
 
   <div class="cauto s12">
-    <div class="ui floating search dropdown button" id='chooseTranslate'>
-      <i class="sf-language"></i>
-      <span class="text">
-        <span>{%trans "Add Translations"%}</span>
-      </span>
-      <div class="menu">
-        <div class="header">{%trans "Add new translation"%}</div>
-{%for key, myTrans in translationList%}
-        <a class="item" href="{{myTrans.detail.allLink.link}}">
-          <i class="flag {{myTrans.detail.flag}}"></i>
-          <span>{{myTrans.detail.language_name}}</span>
-          <span class="floatRa badge">{%trans "* All"%}</span>
-        </a>
-
-{%for k, v in myTrans.list%}
-        <a class="item" href="{{v.url}}">
-          <i class="flag {{v.flag}}"></i>
-{%if v.image%}
-          <img src="{{v.image}}" alt="{{v.localname}}" class="avatar">
-{%endif%}
-          <span>{{v.localname}}</span>
-        </a>
-{%endfor%}
-
-{%endfor%}
-      </div>
-    </div>
+{%include 'content/home/block-cmd-translator.html'%}
   </div>
 
-
   <div class="c2 s6">
-    <div class="ui floating search dropdown button" id='chooseReadMode'>
-      <i class="sf-monitor-screen-1"></i>
-      <span class="text">
-        <i class="sf-{{readModeLoaded.class}}"></i>
-        <span>{{readModeLoaded.name}}</span>
-      </span>
-      <div class="menu">
-        <div class="header">{%trans "Change Read Mode"%}</div>
-{%for key, value in readModeList%}
-          <a class="item" href="{{value.url}}">
-            <i class="sf-{{value.class}}"></i>
-            <span>{{value.name}}</span>
-          </a>
-{%endfor%}
-      </div>
-    </div>
+{%include 'content/home/block-cmd-mode.html'%}
   </div>
 
-
   <div class="c2 s6">
-    <div class="ui floating search dropdown button" id='chooseStyle'>
-      <i class="sf-font"></i>
-      <span class="text">
-        <span>{{fontStyleLoaded.name}}</span>
-      </span>
-      <div class="menu">
-        <div class="header">{%trans "Change Style"%}</div>
-{%for key, value in fontStyleList%}
-          <a class="item" href="{{value.url}}">
-            <i class="sf-{{value.class}}"></i>
-            <span>{{value.name}}</span>
-          </a>
-
-{%endfor%}
-      </div>
-    </div>
+{%include 'content/home/block-cmd-style.html'%}
   </div>
 
   <div class="c">
-    <a class="btn fs12 mTB5" href="{{zoomInUrl}}"><i class="block sf-search-plus"></i></a>
-    <a class="btn fs12 mTB5" href="{{zoomOutUrl}}"><i class="block sf-search-minus"></i></a>
-    <a class="btn fs12 mTB5" href="{{url.that}}"><i class="block sf-eraser"></i></a>
+{%include 'content/home/block-cmd-extra.html'%}
   </div>
 
 </div>

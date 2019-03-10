@@ -1,0 +1,16 @@
+    <div class="ui floating search dropdown button" id='chooseStyle'>
+      <i class="sf-font"></i>
+      <span class="text">
+        <span>{{fontStyleLoaded.name}}</span>
+      </span>
+      <div class="menu">
+        <div class="header">{%trans "Change Style"%}</div>
+{%for key, value in fontStyleList%}
+          <a class="item" href="{{value.url}}">
+            <i class="sf-{{value.class}}"></i>
+            <span>{{value.name}}</span>
+          </a>
+
+{%endfor%}
+      </div>
+    </div>
