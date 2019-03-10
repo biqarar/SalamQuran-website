@@ -41,6 +41,9 @@
 .ayeBox .aye span:hover{
     color:#07b7dd;
 }
+.ayeBox .aye[data-style='uthmani'] span{
+    padding:0;
+}
 .ayeBox .aye .ayeNum{
     font-family: "Traditional Arabic", "Times New Roman";
     letter-spacing: 2px;

@@ -1,6 +1,1 @@
-{%if myWord.char_type != 'end'%}
       <span data-wbw='{{myWord.audio}}' title='{{myWord.translation}}' class="{{myWord.class_name}}">{{myWord.code | raw}}</span>
-
-{%else%}
-      <span class='ayeNum {{myWord.class_name}}' title='{{myAye.detail.verse_title}}'>﴿{{myAye.detail.aya | fitNumber}}﴾</span>
-{%endif%}
