@@ -1,0 +1,104 @@
+.Quran .fullCommand{
+
+}
+.Quran .fullCommand .btn{
+	background: rgba(0,100,255,0.05);
+}
+
+// dropdowns
+.Quran .ui.dropdown{
+    cursor: pointer;
+    display: block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: rgba(0,100,255,0.05);
+    color: rgba(0,0,0,.6);
+    padding: 0 20px 0 50px;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 700;
+    height: 36px;
+	line-height: 36px;
+    font-style: normal;
+    text-decoration: none;
+    border-radius: .28rem;
+    transition: 0.3s;
+    margin: 5px;
+    width: auto;
+}
+.Quran .ui.dropdown:hover{
+	background-color: #eee;
+}
+.Quran .ui.dropdown > .text{
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.ui.dropdown > .text > img{
+
+}
+.Quran .ui.dropdown > .text span{
+    display: inline-block;
+    height: 36px;
+    line-height: 25px;
+	max-width: calc(100% - 40px);
+    overflow: hidden;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.Quran .ui.dropdown#chooseTranslate > .text span{
+    line-height: 36px;
+	max-width: 100%;
+}
+.Quran .ui.dropdown > .text span.type{
+	height: 10px;
+    line-height: 10px;
+	color: #999;
+	font-size: 0.8em;
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	left:40px;
+}
+.rtl .Quran .ui.dropdown > .text span.type{
+	left:10px;
+	right:40px;
+}
+.Quran .ui.dropdown > i{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 1.5em;
+    border-radius: 0;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    text-align: center;
+    margin: 0;
+    background-color: rgba(0,0,0,.05);
+    top:0;
+    left: 0;
+}
+.Quran .ui.dropdown .menu > .header{
+    background-color: rgba(0,0,0,.05);
+	line-height: 20px;
+	cursor: not-allowed;
+	margin:0;
+	padding: 1em 0.5em;
+}
+.Quran .ui.dropdown .menu > .item{
+	overflow: hidden;
+}
+.Quran .ui.dropdown .item .type{
+	float: right;
+	color: #999;
+}
+.rtl .Quran .ui.dropdown .item .type{
+	float: left;
+}

@@ -1,0 +1,136 @@
+.ayeBox{
+    position: relative;
+    transition: 0.3s;
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    min-height: 1em;
+    line-height: 1.5;
+    opacity: 0.7;
+    background-color: #f7f7f7;
+    color: #333;
+}
+.ayeBox:hover{
+    background-color: rgba(0,200,255,0.05);
+    border-color: rgba(0,0,0,0.2);
+}
+.ayeBox.active{
+    background-color: rgba(0,200,255,0.05);
+    border-color: #2080d0;
+}
+.ayeBox .aye{
+    font-size: 1.4em;
+    direction: rtl;
+    text-align: right;
+    line-height: 2.5em;
+    transition: 0.3s;
+}
+.ayeBox .aye:hover{
+    background-color: rgba(0,200,255,0.05);
+}
+.ayeBox .aye span{
+    cursor: help;
+    display: inline-block;
+    padding:0 1px;
+    transition: 0.3s;
+}
+.ayeBox .aye span:hover{
+    color:#07b7dd;
+}
+.ayeBox .aye .ayeNum{
+    font-family: "Traditional Arabic", "Times New Roman";
+    letter-spacing: 2px;
+    color: #777;
+}
+.ayeBox .ayeSimple{
+    direction: rtl;
+    text-align: right;
+    display: none;
+}
+.ayeBox .translate .badge{
+    margin:0 5px;
+    padding: 3px 10px;
+    line-height: 21px;
+    border: 1px solid #ddd;
+}
+.ayeBox .translate blockquote{
+    margin-bottom: 1em;
+}
+.ayeBox .translate .flag{
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.ayeBox .meta{
+    width: 70px;
+}
+.ayeBox .meta .opr{
+    min-width: 60px;
+    display: block;
+    background-color: #eee;
+    transition: 0.3s;
+    line-height: 30px;
+    font-size: 0.8em;
+    padding: 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    user-select:none;
+}
+.ayeBox .meta .opr:hover{
+    background-color: #e5e5f5;
+}
+.ayeBox .meta .opr:focus{
+    background-color: #ddd;
+}
+.ayeBox .meta .c12:last-child .opr{
+    margin-bottom: 0;
+}
+.ayeBox .meta a.opr{
+    font-family: monospace;
+}
+.ayeBox .meta .opr.play::before{
+    content: "\e110";
+    font-family: "siftal","tahoma" !important;
+    display: inline-block;
+    vertical-align: middle;
+    transition: none;
+    margin:0 5px;
+}
+.ayeBox .meta .opr.play::after{
+    content: attr(data-play);
+    display: inline-block;
+    vertical-align: middle;
+    transition: none;
+}
+.ayeBox[data-playing] .meta .opr.play::before{
+    content: "\e232";
+    font-family: "siftal","tahoma" !important;
+    display: inline-block;
+}
+.ayeBox[data-playing] .meta .opr.play::after{
+    content: attr(data-pause);
+    display: inline-block;
+}
+.ayeBox .meta .opr.copy::before{
+    content: "\75";
+    font-family: "siftal","tahoma" !important;
+    display: inline-block;
+    vertical-align: middle;
+    transition: none;
+    margin:0 5px;
+}
+.ayeBox .meta .opr span{
+    display: inline-block;
+    margin:0 5px;
+}
+.ayeBox .meta input{
+  padding:0;
+  margin:0;
+  position:absolute;
+  z-index:-1;
+  width:5px;
+  height:0;
+  opacity:0;
+}
