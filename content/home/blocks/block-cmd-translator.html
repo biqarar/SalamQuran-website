@@ -6,21 +6,29 @@
       <div class="menu">
         <div class="header">{%trans "Add new translation"%}</div>
 {%for key, myTrans in translationList%}
-        <a class="item" href="{{myTrans.detail.allLink.link}}">
-          <i class="flag {{myTrans.detail.flag}}"></i>
+
+        <div class="header lang">
+          <i class="compact mRa5-f flag {{myTrans.detail.flag}}"></i>
           <span>{{myTrans.detail.language_name}}</span>
-          <span class="floatRa badge">{%trans "* All"%}</span>
-        </a>
+        </div>
 
 {%for k, v in myTrans.list%}
-        <a class="item" href2="{{v.url}}">
-          <i class="flag {{v.flag}}"></i>
+        <a class="item" href="{{v.url}}">
+          <i class="flag {{v.flag}} hide"></i>
 {%if v.image%}
-          <img src="{{v.image}}" alt="{{v.localname}}" class="avatar floatRa-f">
+          <img src="{{v.image}}" alt="{{v.localname}}" class="avatar">
 {%endif%}
           <span>{{v.localname}}</span>
         </a>
 {%endfor%}
+
+
+{%if myTrans.detail.count > 1%}
+        <a class="item" href="{{myTrans.detail.allLink.link}}">
+          <i class="hide flag {{myTrans.detail.flag}}"></i>
+          <span>{%trans "All Translations"%} {{myTrans.detail.language_name}}</span>
+        </a>
+{%endif%}
 
 {%endfor%}
       </div>

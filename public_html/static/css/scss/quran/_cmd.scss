@@ -114,10 +114,13 @@
 }
 .Quran .ui.dropdown .menu > .header{
     background-color: rgba(0,0,0,.05);
-	line-height: 20px;
-	cursor: not-allowed;
-	margin:0;
-	padding: 1em 0.5em;
+    line-height: 20px;
+    cursor: not-allowed;
+    margin:0;
+    padding: 1em 0.5em;
+}
+.Quran .ui.dropdown .menu > .header.lang{
+    background-color: rgba(0,100,255,0.05);
 }
 .Quran .ui.dropdown .menu > .item{
 	overflow: hidden;

@@ -6550,6 +6550,9 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   margin: 0;
   padding: 1em 0.5em; }
 
+.Quran .ui.dropdown .menu > .header.lang {
+  background-color: rgba(0, 100, 255, 0.05); }
+
 .Quran .ui.dropdown .menu > .item {
   overflow: hidden; }
 
