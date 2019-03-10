@@ -440,6 +440,78 @@ class qari
 					'image'      => $qari_image. 'sudais.png',
 					'qari'       => T_('Abdur-Rahman as-Sudais'),
 				],
+			500 =>
+				[
+					'addr'       => $master_path. 'audio/translation-az-balayev/',
+					'type'       => 'translate',
+					'type_title' => T_("Translate"),
+					'play_type'  => 'aya',
+					'visible'    => true,
+					'audio_type' => 'mp3',
+					'qari_slug'  => 'balayev',
+					'short_name' => T_("Balayev"),
+					'qari'       => T_("Balayev"),
+				],
+			501 =>
+				[
+					'addr'       => $master_path. 'audio/translation-en-sahih-IbrahimWalk/',
+					'type'       => 'translate',
+					'type_title' => T_("Translate"),
+					'play_type'  => 'aya',
+					'visible'    => true,
+					'audio_type' => 'mp3',
+					'qari_slug'  => null,
+					'short_name' => null,
+					'qari'       => null,
+				],
+			502 =>
+				[
+					'addr'       => $master_path. 'audio/translation-fa-foladvand/',
+					'type'       => 'translate',
+					'type_title' => T_("Translate"),
+					'play_type'  => 'aya',
+					'visible'    => true,
+					'audio_type' => 'mp3',
+					'qari_slug'  => null,
+					'short_name' => null,
+					'qari'       => null,
+				],
+			503 =>
+				[
+					'addr'       => $master_path. 'audio/translation-fa-kabiri/',
+					'type'       => 'translate',
+					'type_title' => T_("Translate"),
+					'play_type'  => 'aya',
+					'visible'    => true,
+					'audio_type' => 'mp3',
+					'qari_slug'  => null,
+					'short_name' => null,
+					'qari'       => null,
+				],
+			504 =>
+				[
+					'addr'       => $master_path. 'audio/translation-fa-kabiri1/',
+					'type'       => 'translate',
+					'type_title' => T_("Translate"),
+					'play_type'  => 'aya',
+					'visible'    => true,
+					'audio_type' => 'mp3',
+					'qari_slug'  => null,
+					'short_name' => null,
+					'qari'       => null,
+				],
+			505 =>
+				[
+					'addr'       => $master_path. 'audio/translation-fa-qaraati/',
+					'type'       => 'translate',
+					'type_title' => T_("Translate"),
+					'play_type'  => 'aya',
+					'visible'    => true,
+					'audio_type' => 'mp3',
+					'qari_slug'  => null,
+					'short_name' => null,
+					'qari'       => null,
+				],
 		];
 
 		return $list;
