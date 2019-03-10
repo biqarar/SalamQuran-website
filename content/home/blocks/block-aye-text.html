@@ -1,0 +1,5 @@
+{%if myWord.char_type != 'end'%}
+      <span data-wbw='{{myWord.audio}}' title='{{myWord.translation}}'>{{myWord.text}}</span>
+{%else%}
+      <span class='ayeNum' title='{{myAye.detail.verse_title}}'>﴿{{myAye.detail.aya | fitNumber}}﴾</span>
+{%endif%}

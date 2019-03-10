@@ -1,9 +1,10 @@
     <div class='aye'>
 {%for wordIndex, myWord in myAye.word%}
-{%if myWord.char_type != 'end'%}
-      <span data-wbw='{{myWord.audio}}' title='{{myWord.translation}}'>{{myWord.text}}</span>
+{%if requestGET.font == 'uthmani'%}
+{%include 'content/home/blocks/block-aye-uthmani.html'%}
 {%else%}
-      <span class='ayeNum' title='{{myAye.detail.verse_title}}'>﴿{{myAye.detail.aya | fitNumber}}﴾</span>
+{%include 'content/home/blocks/block-aye-text.html'%}
 {%endif%}
+
 {%endfor%}
     </div>
