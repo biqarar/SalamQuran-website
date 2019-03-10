@@ -11,19 +11,18 @@ class qari
 
 		$list               =
 		[
+			// ----------------- abdoabaset
+
 			100  =>
 				[
-					'type'       => 'murattal',
-					'type_title' => T_('murattal'),
-					'play_type'  => 'aya',
-					'visible'    => true,
-					'audio_type' => 'mp3',
-					'addr'       => $master_path. 'audio/abdulbaset/ayat/murattal/mp3/',
+					'type'       => T_('murattal'),
+					'addr'       => '/abdulbaset-mujawwad-128/',
 					'qari_slug'  => 'abdulbaset',
-					'short_name' => T_('abdulbaset'),
-					'image'      => $qari_image. 'basit.png',
 					'qari'       => T_('AbdulBaset AbdulSamad'),
 				],
+
+
+			// ----------------- abdoabaset
 			2  =>
 				[
 					'type'       => 'murattal',
@@ -37,6 +36,8 @@ class qari
 					'image'      => $qari_image. 'basit.png',
 					'qari'       => T_('AbdulBaset AbdulSamad'),
 				],
+
+			// ----------------- abdoabaset
 			3  =>
 				[
 					'type'       => 'murattal',
