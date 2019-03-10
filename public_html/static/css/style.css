@@ -6594,6 +6594,9 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 .ayeBox .aye:hover {
   background-color: rgba(0, 200, 255, 0.05); }
 
+.ayeBox .aye[data-style='uthmani'] {
+  font-size: 2.5em; }
+
 .ayeBox .aye span {
   cursor: help;
   display: inline-block;
