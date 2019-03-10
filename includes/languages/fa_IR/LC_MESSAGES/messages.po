@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SalamQuran - Persian\n"
-"POT-Creation-Date: 2019-03-10 09:54+0330\n"
-"PO-Revision-Date: 2019-03-10 09:55+0330\n"
+"POT-Creation-Date: 2019-03-10 09:59+0330\n"
+"PO-Revision-Date: 2019-03-10 09:59+0330\n"
 "Last-Translator: Javad <J.Evazzadeh@gmail.com>\n"
 "Language-Team: Ermile <J.Evazzadeh@gmail.com>\n"
 "Language: fa_IR\n"
@@ -122,8 +122,8 @@ msgid "SalamQuran mag"
 msgstr "مجله سلام قرآن"
 
 #: SalamQuran/content/mag/view.php:10
-msgid "Need know more about SalamQuran mag? We are not choose our final logo yet!"
-msgstr ""
+msgid "Need know more about SalamQuran mag?"
+msgstr "نیاز به دانستن بیشتر در مورد مجله سلام قرآن دارید؟"
 
 #: SalamQuran/content/mission/view.php:9
 msgid "Salam Quran Mission"
