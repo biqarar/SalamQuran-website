@@ -36,7 +36,7 @@ class read_mode
 					'default' => true,
 					'name'    => T_('Default'),
 					'font'    => null,
-					'class'   => 'list',
+					'class'   => 'align-right',
 					'url'     => $master. http_build_query(array_merge($get, [])),
 				],
 

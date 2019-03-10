@@ -1,14 +1,14 @@
-    <div class="ui floating search dropdown button" id='chooseReadMode'>
+    <div class="ui floating dropdown button" id='chooseReadMode'>
       <i class="sf-monitor-screen-1"></i>
       <span class="text">
-        <i class="sf-{{readModeLoaded.class}}"></i>
+        <i class="compact mRa5 sf-{{readModeLoaded.class}}"></i>
         <span>{{readModeLoaded.name}}</span>
       </span>
       <div class="menu">
         <div class="header">{%trans "Change Read Mode"%}</div>
 {%for key, value in readModeList%}
-          <a class="item" href="{{value.url}}">
-            <i class="sf-{{value.class}}"></i>
+          <a class="item" href2="{{value.url}}">
+            <i class="compact mRa5 sf-{{value.class}}"></i>
             <span>{{value.name}}</span>
           </a>
 {%endfor%}
