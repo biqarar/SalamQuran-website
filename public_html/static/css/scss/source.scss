@@ -17,10 +17,12 @@ Version       1.0.0
 @import 'website/header';
 @import 'website/sidebar';
 @import 'website/footer';
-@import 'website/homepage';
 @import 'website/blog';
-@import 'website/quran';
-@import 'website/player';
+
+// add style of quran
+@import 'quran/soreha';
+@import 'quran/quran';
+@import 'quran/player';
 
 // add libs
 
