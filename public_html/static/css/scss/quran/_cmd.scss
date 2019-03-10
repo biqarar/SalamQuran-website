@@ -54,6 +54,9 @@
     line-height: 25px;
     max-width: calc(100% - 40px);
 }
+.Quran .ui.dropdown#chooseTranslate .text img{
+    display: none;
+}
 .Quran .ui.dropdown > .text span.type{
 	height: 10px;
     line-height: 10px!important;
@@ -83,6 +86,31 @@
     background-color: rgba(0,0,0,.05);
     top:0;
     left: 0;
+}
+.Quran .ui.dropdown .menu{
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.rtl .Quran .ui.dropdown .menu{
+    right: 0;
+    left: auto;
+}
+.Quran .ui.dropdown#chooseQari .menu{
+    height: 50vh;
+    min-height: 200px;
+}
+.Quran .ui.dropdown#chooseTranslate .menu{
+    height: 50vh;
+    min-height: 200px;
+    min-width: 200px;
+}
+.rtl .Quran .ui.dropdown .menu > .item > .flag{
+    margin-right: 0;
+    margin-left: 1rem;
 }
 .Quran .ui.dropdown .menu > .header{
     background-color: rgba(0,0,0,.05);
