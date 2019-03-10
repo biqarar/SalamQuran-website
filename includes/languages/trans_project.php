@@ -433,17 +433,19 @@ class twigTransTerms
 
 	//------------------------------projects/SalamQuran/content/home/block-detail.html
 	echo T_("Change Qari");                                                           // Line 12
-	echo T_("Change Translation");                                                    // Line 33
-	echo T_("Change Read Mode");                                                      // Line 65
-	echo T_("Change Style");                                                          // Line 86
-	echo T_("Back to list of suras");                                                 // Line 104
+	echo T_("Add Translations");                                                      // Line 28
+	echo T_("Add new translation");                                                   // Line 31
+	echo T_("* All");                                                                 // Line 36
+	echo T_("Change Read Mode");                                                      // Line 63
+	echo T_("Change Style");                                                          // Line 82
 
 	//------------------------------projects/SalamQuran/content/home/sore-bookTxt.html
 
 	//--------------------------projects/SalamQuran/content/home/block-navigation.html
 	echo T_("Previous Surah");                                                        // Line 5
-	echo T_("Beginning of Surah");                                                    // Line 10
-	echo T_("Next Surah");                                                            // Line 15
+	echo T_("Beginning of Surah");                                                    // Line 13
+	echo T_("Back to list of suras");                                                 // Line 14
+	echo T_("Next Surah");                                                            // Line 20
 
 	//----------------------------------projects/SalamQuran/content/terms/display.html
 	echo T_("Utilizing SalamQuran's services means the acceptance of and commitment to observing all the tenors of this agreement.");// Line 6

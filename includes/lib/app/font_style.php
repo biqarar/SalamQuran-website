@@ -86,7 +86,7 @@ class font_style
 			'default' =>
 				[
 					'default' => true,
-					'name'    => 'default',
+					'name'    => T_('Default'),
 					'font'    => null,
 					'class'   => 'list',
 					'url'     => $master. http_build_query(array_merge($get, [])),
@@ -95,7 +95,7 @@ class font_style
 			'uthmani' =>
 				[
 					'default' => false,
-					'name'    => 'uthmani',
+					'name'    => T_('Uthmani'),
 					'font'    => null,
 					'class'   => 'book',
 					'url'     => $master. http_build_query(array_merge($get, ['font' => 'uthmani'])),
@@ -103,7 +103,7 @@ class font_style
 			'vazeh' =>
 				[
 					'default' => false,
-					'name'    => 'vazeh',
+					'name'    => T_('Vazeh font'),
 					'font'    => null,
 					'class'   => 'magic',
 					'url'     => $master. http_build_query(array_merge($get, ['font' => 'vazeh'])),
