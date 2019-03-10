@@ -10,11 +10,11 @@ class font_style
 		if(isset($get['zoom']) && is_numeric($get['zoom']))
 		{
 			$zoom = intval($get['zoom']) + 1;
-			if($zoom < 50)
+			if($zoom < 10)
 			{
 				if($zoom < 1)
 				{
-					$get['zoom'] = 2;
+					$get['zoom'] = 6;
 				}
 				else
 				{
@@ -23,12 +23,12 @@ class font_style
 			}
 			else
 			{
-				$get['zoom'] = 50;
+				$get['zoom'] = 10;
 			}
 		}
 		else
 		{
-			$get['zoom'] = 2;
+			$get['zoom'] = 6;
 		}
 		return \dash\url::that() . '?'. http_build_query($get);
 	}
@@ -39,18 +39,18 @@ class font_style
 		if(isset($get['zoom']) && is_numeric($get['zoom']))
 		{
 			$zoom = intval($get['zoom']) - 1;
-			if($zoom > 1)
+			if($zoom <= 1)
 			{
-				$get['zoom'] = $zoom;
+				$get['zoom'] = 1;
 			}
 			else
 			{
-				$get['zoom'] = 1;
+				$get['zoom'] = $zoom;
 			}
 		}
 		else
 		{
-			$get['zoom'] = 1;
+			$get['zoom'] = 4;
 		}
 		return \dash\url::that() . '?'. http_build_query($get);
 	}
