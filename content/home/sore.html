@@ -1,24 +1,24 @@
 <div class='Quran' id="iqra">
-{%include 'content/home/block-cmd.html'%}
-{%include 'content/home/block-navigation.html' with {'navPosition': 'top'}%}
+{%include 'content/home/blocks/block-cmd.html'%}
+{%include 'content/home/blocks/block-navigation.html' with {'navPosition': 'top'}%}
 
 
 {%for myAyeKey, myAye in quranLoaded.text.aya%}
-      {%include 'content/home/block-besmellah.html'%}
+      {%include 'content/home/blocks/block-besmellah.html'%}
   <div class='ayeBox f fix' id='{{myAye.detail.index}}' data-ayeAudio='{{myAye.detail.audio}}'>
     <div class="cauto s12 pR10">
-{%include 'content/home/block-ayeActions.html'%}
+{%include 'content/home/blocks/block-ayeActions.html'%}
     </div>
     <div class="c s12">
-{%include 'content/home/block-aye.html'%}
-{%include 'content/home/block-ayeSimple.html'%}
-{%include 'content/home/block-ayeTranslation.html'%}
+{%include 'content/home/blocks/block-aye.html'%}
+{%include 'content/home/blocks/block-ayeSimple.html'%}
+{%include 'content/home/blocks/block-ayeTranslation.html'%}
     </div>
 
   </div>
 {%endfor%}
 
-{%include 'content/home/block-navigation.html' with {'navPosition': 'bottom'}%}
+{%include 'content/home/blocks/block-navigation.html' with {'navPosition': 'bottom'}%}
 
 </div>
 
