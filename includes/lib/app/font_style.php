@@ -12,7 +12,14 @@ class font_style
 			$zoom = intval($get['zoom']) + 1;
 			if($zoom < 50)
 			{
-				$get['zoom'] = $zoom;
+				if($zoom < 1)
+				{
+					$get['zoom'] = 2;
+				}
+				else
+				{
+					$get['zoom'] = $zoom;
+				}
 			}
 			else
 			{
@@ -92,6 +99,14 @@ class font_style
 					'font'    => null,
 					'class'   => 'book',
 					'url'     => $master. http_build_query(array_merge($get, ['font' => 'uthmani'])),
+				],
+			'vazeh' =>
+				[
+					'default' => false,
+					'name'    => 'vazeh',
+					'font'    => null,
+					'class'   => 'magic',
+					'url'     => $master. http_build_query(array_merge($get, ['font' => 'vazeh'])),
 				],
 		];
 		return $font_style;
