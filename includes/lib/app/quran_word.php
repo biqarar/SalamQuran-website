@@ -71,247 +71,60 @@ class quran_word
 
 		return false;
 	}
-
-
-	private static function make($_type = null, $_page_number = null)
+	private static function sura_pagination_current($_id, $_meta)
 	{
-
-		$page   = $_page_number;
-		$text   = $_page_number;
-		$title  = null;
-		$class  = null;
-		$link   = true;
-
-		switch ($_type)
+		$pagination = self::sura_pagination(...func_get_args());
+		foreach ($pagination as $key => $value)
 		{
-			case 'first':
-				$class  = 'first';
-				break;
-
-			case 'spliter':
-				$link   = false;
-				$page   = null;
-				$text   = '...';
-				$class  = 'spliter';
-				break;
-
-			case 'end':
-				$class  = 'end';
-				break;
-
-			case 'current':
-				$link   = false;
-				$class  = 'active';
-				break;
-
-			case 'next':
-				if(\dash\language::dir() === 'ltr')
-				{
-					$text = '<span class="sf-chevron-right"></span>';
-				}
-				else
-				{
-					$text = '<span class="sf-chevron-left"></span>';
-				}
-				$class  = 'next s0';
-				break;
-
-			case 'prev':
-				if(\dash\language::dir() === 'ltr')
-				{
-					$text = '<span class="sf-chevron-left"></span>';
-				}
-				else
-				{
-					$text = '<span class="sf-chevron-right"></span>';
-				}
-				$class  = 'prev s0';
-				break;
-
+			if(isset($value['current']) && $value['current'])
+			{
+				return $value['limit_array'];
+			}
 		}
-
-		$result =
-		[
-			'page'   => $page,
-			'link'	 => $link,
-			'text'   => $text ? \dash\utility\human::fitNumber($text) : null,
-			'title'  => $title,
-			'class'  => $class,
-		];
-		return $result;
+		return [1, 20];
 	}
 
 	private static function sura_pagination($_id, $_meta)
 	{
-		$startpage = intval(\lib\app\sura::detail($_id, 'startpage'));
-		$endpage   = intval(\lib\app\sura::detail($_id, 'endpage'));
+		$ayas = intval(\lib\app\sura::detail($_id, 'ayas'));
+		$ayas_split = ceil($ayas / 20);
 
-		$p         = isset($_meta['p']) && is_numeric($_meta['p']) ? intval($_meta['p']) : 0;
+		$pagination = [];
 
-		// $sura_pagination = [];
-
-		// $get = \dash\request::get();
-		// unset($get['p']);
-		// for ($page = $startpage; $page <= $endpage ; $page++)
-		// {
-		// 	$get['p'] = $page;
-		// 	$link = \dash\url::that(). '?'. http_build_query($get);
-		// 	$result =
-		// 	[
-		// 		'page'   => $page,
-		// 		'link'	 => $link,
-		// 		'text'   => $page ? \dash\utility\human::fitNumber($page) : null,
-		// 		'title'  => null,
-		// 		'class'  => null,
-		// 	];
-		// 	$sura_pagination[] = $result;
-		// }
-
-		// return $sura_pagination;
-
-
-		$current    = $p ? $p : $startpage;
-		$first      = $startpage;
-		$count_link = 5;
-		$total_page = $endpage - $startpage;
-
-		$result = [];
-
-		if($total_page <= 1)
-		{
-			// no pagination needed
-		}
-		elseif($total_page === 2)
-		{
-			if($current === $startpage)
-			{
-				$result[] = self::make('current', $current);
-				$result[] = self::make(null, $endpage);
-			}
-			elseif ($current === $endpage)
-			{
-				$result[] = self::make(null, $startpage);
-				$result[] = self::make('current', $current);
-			}
-		}
-		else
-		{
-			$count_link_fill = 0;
-			$sb              = [];
-			$sa              = [];
-			$i               = 0;
-			$pages           = [];
-
-			while ($count_link_fill < $count_link)
-			{
-				$i++;
-
-				if($i > $count_link)
-				{
-					break;
-				}
-
-				if($current - $i + $startpage > 0)
-				{
-					if($current - $i +$startpage !== $current)
-					{
-						array_push($pages, $current - $i + $startpage);
-						array_push($sb, $current - $i + $startpage);
-					}
-					$count_link_fill++;
-				}
-
-				if($count_link_fill < $count_link)
-				{
-					if($current + $i <= $total_page)
-					{
-						array_push($pages, $current + $i);
-						array_push($sa, $current + $i );
-						$count_link_fill++;
-					}
-				}
-			}
-
-			asort($pages);
-
-			$sb = array_reverse($sb);
-
-			if($current !== $startpage)
-			{
-				$result[] = self::make('prev', $current -$startpage);
-			}
-
-			if(current($pages) - $startpage == $startpage)
-			{
-				if(in_array($startpage, $pages) || $current === $startpage)
-				{
-					// needless to make first page
-				}
-				else
-				{
-					$result[] = self::make(null, $startpage);
-				}
-			}
-			elseif(current($pages) - $startpage >= 2)
-			{
-				$result[] = self::make('first', $startpage);
-				$result[] = self::make('spliter');
-			}
-
-			foreach ($sb as $key => $value)
-			{
-				$result[] = self::make(null, $value);
-			}
-
-			$result[] = self::make('current', $current);
-
-			foreach ($sa as $key => $value)
-			{
-				$result[] = self::make(null, $value);
-			}
-
-			if(end($pages) + $startpage <= $total_page)
-			{
-				if(in_array($total_page, $pages) || $current === $total_page)
-				{
-					// needless to make end page
-				}
-				else
-				{
-					if(end($pages) + $startpage < $total_page)
-					{
-						$result[] = self::make('spliter');
-					}
-
-					$result[] = self::make('end', $total_page);
-				}
-			}
-
-			if($current !== $total_page)
-			{
-				$result[] = self::make('next', $current + 1);
-			}
-
-
-		}
-
-		$this_link = \dash\url::current();
+		$this_link = \dash\url::that();
 		$get       = \dash\request::get();
-		unset($get['p']);
-
-		foreach ($result as $key => $value)
+		$currnet_get = isset($get['a']) ? intval($get['a']) : 1;
+		if($currnet_get > $ayas_split || $currnet_get < 1)
 		{
-			if(isset($value['link']) && $value['link'])
-			{
-				$temp_get             = $get;
-				$temp_get['p']     = $value['page'];
-				$temp_link            = $this_link . '?'. http_build_query($temp_get);
-				$result[$key]['link'] = $temp_link;
-			}
-			// $result[$key]['total_rows'] = self::detail('total_rows');
+			$currnet_get = 1;
 		}
 
-		return $result;
+		unset($get['a']);
+
+		for ($myAya = 0; $myAya < $ayas_split; $myAya++)
+		{
+			$end   = ($myAya + 1) * 20;
+			$end   = $end > $ayas ? $ayas : $end;
+			$start = ($myAya * 20) + 1;
+
+			$title = $start;
+			$title .= '-';
+			$title .= $end;
+
+			$get['a'] = $myAya + 1;
+			$link     = $this_link. '?'. http_build_query($get);
+			$current = $myAya + 1 === $currnet_get ? true : false;
+			$pagination[] =
+			[
+				'current'     => $current,
+				'class'       => $current ? 'active' : null,
+				'limit_array' => [$start, $end],
+				'link'        => $link,
+				'text'        => \dash\utility\human::fitNumber($title),
+			];
+		}
+
+		return $pagination;
 	}
 
 
@@ -346,10 +159,14 @@ class quran_word
 			$mode = null;
 		}
 
-		$startpage = intval(\lib\app\sura::detail($_id, 'startpage'));
-		$endpage   = intval(\lib\app\sura::detail($_id, 'endpage'));
+		$startpage               = intval(\lib\app\sura::detail($_id, 'startpage'));
+		$endpage                 = intval(\lib\app\sura::detail($_id, 'endpage'));
 
-		$p         = isset($_meta['p']) && is_numeric($_meta['p']) ? intval($_meta['p']) : 0;
+		$a                       = isset($_meta['a']) && is_numeric($_meta['a']) ? intval($_meta['a']) : 0;
+
+		$sura_pagination_current = self::sura_pagination_current($_id, $_meta);
+
+		$pagination              = self::sura_pagination($_id, $_meta);
 
 		if($mode === 'quran')
 		{
@@ -370,18 +187,11 @@ class quran_word
 		}
 		else
 		{
-			if($p >= $startpage && $p <= $endpage)
-			{
-				// nothing
-			}
-			else
-			{
-				$p = $startpage;
-			}
 
-			$get_quran['page'] = $p;
+			$get_quran['2.2'] = [' = 2.2 AND', " `aya` >= $sura_pagination_current[0] AND `aya` <= $sura_pagination_current[1] "];
 
 			$load           = \lib\db\quran_word::get($get_quran);
+
 			$load_quran_aya = \lib\db\quran::get($get_quran);
 		}
 		$quran_aya      = [];
@@ -527,7 +337,7 @@ class quran_word
 
 		$sura_detail['first_title'] = $first_verse_title;
 		$result['detail']           = $sura_detail;
-		$result['sura_pagination'] = self::sura_pagination($_id, $_meta);
+		$result['sura_pagination'] = $pagination;
 		// \dash\notif::api($result);
 
 		self::$find_by    = 'sure';
