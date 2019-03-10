@@ -8,7 +8,7 @@ Version       1.0.0
 /* font of each page*/
 @font-face {
   font-family: p1;
-  src: url(../fonts/quran-page/ttf/p1.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p1.ttf) format("truetype"); }
 .p1 {
   font-family: p1; }
 
@@ -17,7 +17,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p2;
-  src: url(../fonts/quran-page/ttf/p2.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p2.ttf) format("truetype"); }
 .p2 {
   font-family: p2; }
 
@@ -26,7 +26,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p3;
-  src: url(../fonts/quran-page/ttf/p3.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p3.ttf) format("truetype"); }
 .p3 {
   font-family: p3; }
 
@@ -35,7 +35,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p4;
-  src: url(../fonts/quran-page/ttf/p4.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p4.ttf) format("truetype"); }
 .p4 {
   font-family: p4; }
 
@@ -44,7 +44,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p5;
-  src: url(../fonts/quran-page/ttf/p5.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p5.ttf) format("truetype"); }
 .p5 {
   font-family: p5; }
 
@@ -53,7 +53,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p6;
-  src: url(../fonts/quran-page/ttf/p6.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p6.ttf) format("truetype"); }
 .p6 {
   font-family: p6; }
 
@@ -62,7 +62,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p7;
-  src: url(../fonts/quran-page/ttf/p7.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p7.ttf) format("truetype"); }
 .p7 {
   font-family: p7; }
 
@@ -71,7 +71,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p8;
-  src: url(../fonts/quran-page/ttf/p8.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p8.ttf) format("truetype"); }
 .p8 {
   font-family: p8; }
 
@@ -80,7 +80,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p9;
-  src: url(../fonts/quran-page/ttf/p9.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p9.ttf) format("truetype"); }
 .p9 {
   font-family: p9; }
 
@@ -89,7 +89,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p10;
-  src: url(../fonts/quran-page/ttf/p10.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p10.ttf) format("truetype"); }
 .p10 {
   font-family: p10; }
 
@@ -98,7 +98,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p11;
-  src: url(../fonts/quran-page/ttf/p11.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p11.ttf) format("truetype"); }
 .p11 {
   font-family: p11; }
 
@@ -107,7 +107,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p12;
-  src: url(../fonts/quran-page/ttf/p12.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p12.ttf) format("truetype"); }
 .p12 {
   font-family: p12; }
 
@@ -116,7 +116,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p13;
-  src: url(../fonts/quran-page/ttf/p13.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p13.ttf) format("truetype"); }
 .p13 {
   font-family: p13; }
 
@@ -125,7 +125,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p14;
-  src: url(../fonts/quran-page/ttf/p14.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p14.ttf) format("truetype"); }
 .p14 {
   font-family: p14; }
 
@@ -134,7 +134,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p15;
-  src: url(../fonts/quran-page/ttf/p15.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p15.ttf) format("truetype"); }
 .p15 {
   font-family: p15; }
 
@@ -143,7 +143,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p16;
-  src: url(../fonts/quran-page/ttf/p16.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p16.ttf) format("truetype"); }
 .p16 {
   font-family: p16; }
 
@@ -152,7 +152,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p17;
-  src: url(../fonts/quran-page/ttf/p17.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p17.ttf) format("truetype"); }
 .p17 {
   font-family: p17; }
 
@@ -161,7 +161,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p18;
-  src: url(../fonts/quran-page/ttf/p18.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p18.ttf) format("truetype"); }
 .p18 {
   font-family: p18; }
 
@@ -170,7 +170,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p19;
-  src: url(../fonts/quran-page/ttf/p19.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p19.ttf) format("truetype"); }
 .p19 {
   font-family: p19; }
 
@@ -179,7 +179,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p20;
-  src: url(../fonts/quran-page/ttf/p20.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p20.ttf) format("truetype"); }
 .p20 {
   font-family: p20; }
 
@@ -188,7 +188,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p21;
-  src: url(../fonts/quran-page/ttf/p21.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p21.ttf) format("truetype"); }
 .p21 {
   font-family: p21; }
 
@@ -197,7 +197,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p22;
-  src: url(../fonts/quran-page/ttf/p22.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p22.ttf) format("truetype"); }
 .p22 {
   font-family: p22; }
 
@@ -206,7 +206,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p23;
-  src: url(../fonts/quran-page/ttf/p23.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p23.ttf) format("truetype"); }
 .p23 {
   font-family: p23; }
 
@@ -215,7 +215,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p24;
-  src: url(../fonts/quran-page/ttf/p24.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p24.ttf) format("truetype"); }
 .p24 {
   font-family: p24; }
 
@@ -224,7 +224,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p25;
-  src: url(../fonts/quran-page/ttf/p25.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p25.ttf) format("truetype"); }
 .p25 {
   font-family: p25; }
 
@@ -233,7 +233,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p26;
-  src: url(../fonts/quran-page/ttf/p26.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p26.ttf) format("truetype"); }
 .p26 {
   font-family: p26; }
 
@@ -242,7 +242,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p27;
-  src: url(../fonts/quran-page/ttf/p27.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p27.ttf) format("truetype"); }
 .p27 {
   font-family: p27; }
 
@@ -251,7 +251,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p28;
-  src: url(../fonts/quran-page/ttf/p28.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p28.ttf) format("truetype"); }
 .p28 {
   font-family: p28; }
 
@@ -260,7 +260,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p29;
-  src: url(../fonts/quran-page/ttf/p29.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p29.ttf) format("truetype"); }
 .p29 {
   font-family: p29; }
 
@@ -269,7 +269,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p30;
-  src: url(../fonts/quran-page/ttf/p30.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p30.ttf) format("truetype"); }
 .p30 {
   font-family: p30; }
 
@@ -278,7 +278,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p31;
-  src: url(../fonts/quran-page/ttf/p31.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p31.ttf) format("truetype"); }
 .p31 {
   font-family: p31; }
 
@@ -287,7 +287,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p32;
-  src: url(../fonts/quran-page/ttf/p32.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p32.ttf) format("truetype"); }
 .p32 {
   font-family: p32; }
 
@@ -296,7 +296,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p33;
-  src: url(../fonts/quran-page/ttf/p33.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p33.ttf) format("truetype"); }
 .p33 {
   font-family: p33; }
 
@@ -305,7 +305,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p34;
-  src: url(../fonts/quran-page/ttf/p34.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p34.ttf) format("truetype"); }
 .p34 {
   font-family: p34; }
 
@@ -314,7 +314,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p35;
-  src: url(../fonts/quran-page/ttf/p35.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p35.ttf) format("truetype"); }
 .p35 {
   font-family: p35; }
 
@@ -323,7 +323,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p36;
-  src: url(../fonts/quran-page/ttf/p36.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p36.ttf) format("truetype"); }
 .p36 {
   font-family: p36; }
 
@@ -332,7 +332,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p37;
-  src: url(../fonts/quran-page/ttf/p37.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p37.ttf) format("truetype"); }
 .p37 {
   font-family: p37; }
 
@@ -341,7 +341,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p38;
-  src: url(../fonts/quran-page/ttf/p38.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p38.ttf) format("truetype"); }
 .p38 {
   font-family: p38; }
 
@@ -350,7 +350,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p39;
-  src: url(../fonts/quran-page/ttf/p39.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p39.ttf) format("truetype"); }
 .p39 {
   font-family: p39; }
 
@@ -359,7 +359,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p40;
-  src: url(../fonts/quran-page/ttf/p40.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p40.ttf) format("truetype"); }
 .p40 {
   font-family: p40; }
 
@@ -368,7 +368,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p41;
-  src: url(../fonts/quran-page/ttf/p41.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p41.ttf) format("truetype"); }
 .p41 {
   font-family: p41; }
 
@@ -377,7 +377,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p42;
-  src: url(../fonts/quran-page/ttf/p42.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p42.ttf) format("truetype"); }
 .p42 {
   font-family: p42; }
 
@@ -386,7 +386,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p43;
-  src: url(../fonts/quran-page/ttf/p43.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p43.ttf) format("truetype"); }
 .p43 {
   font-family: p43; }
 
@@ -395,7 +395,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p44;
-  src: url(../fonts/quran-page/ttf/p44.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p44.ttf) format("truetype"); }
 .p44 {
   font-family: p44; }
 
@@ -404,7 +404,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p45;
-  src: url(../fonts/quran-page/ttf/p45.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p45.ttf) format("truetype"); }
 .p45 {
   font-family: p45; }
 
@@ -413,7 +413,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p46;
-  src: url(../fonts/quran-page/ttf/p46.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p46.ttf) format("truetype"); }
 .p46 {
   font-family: p46; }
 
@@ -422,7 +422,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p47;
-  src: url(../fonts/quran-page/ttf/p47.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p47.ttf) format("truetype"); }
 .p47 {
   font-family: p47; }
 
@@ -431,7 +431,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p48;
-  src: url(../fonts/quran-page/ttf/p48.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p48.ttf) format("truetype"); }
 .p48 {
   font-family: p48; }
 
@@ -440,7 +440,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p49;
-  src: url(../fonts/quran-page/ttf/p49.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p49.ttf) format("truetype"); }
 .p49 {
   font-family: p49; }
 
@@ -449,7 +449,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p50;
-  src: url(../fonts/quran-page/ttf/p50.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p50.ttf) format("truetype"); }
 .p50 {
   font-family: p50; }
 
@@ -458,7 +458,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p51;
-  src: url(../fonts/quran-page/ttf/p51.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p51.ttf) format("truetype"); }
 .p51 {
   font-family: p51; }
 
@@ -467,7 +467,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p52;
-  src: url(../fonts/quran-page/ttf/p52.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p52.ttf) format("truetype"); }
 .p52 {
   font-family: p52; }
 
@@ -476,7 +476,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p53;
-  src: url(../fonts/quran-page/ttf/p53.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p53.ttf) format("truetype"); }
 .p53 {
   font-family: p53; }
 
@@ -485,7 +485,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p54;
-  src: url(../fonts/quran-page/ttf/p54.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p54.ttf) format("truetype"); }
 .p54 {
   font-family: p54; }
 
@@ -494,7 +494,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p55;
-  src: url(../fonts/quran-page/ttf/p55.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p55.ttf) format("truetype"); }
 .p55 {
   font-family: p55; }
 
@@ -503,7 +503,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p56;
-  src: url(../fonts/quran-page/ttf/p56.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p56.ttf) format("truetype"); }
 .p56 {
   font-family: p56; }
 
@@ -512,7 +512,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p57;
-  src: url(../fonts/quran-page/ttf/p57.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p57.ttf) format("truetype"); }
 .p57 {
   font-family: p57; }
 
@@ -521,7 +521,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p58;
-  src: url(../fonts/quran-page/ttf/p58.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p58.ttf) format("truetype"); }
 .p58 {
   font-family: p58; }
 
@@ -530,7 +530,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p59;
-  src: url(../fonts/quran-page/ttf/p59.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p59.ttf) format("truetype"); }
 .p59 {
   font-family: p59; }
 
@@ -539,7 +539,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p60;
-  src: url(../fonts/quran-page/ttf/p60.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p60.ttf) format("truetype"); }
 .p60 {
   font-family: p60; }
 
@@ -548,7 +548,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p61;
-  src: url(../fonts/quran-page/ttf/p61.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p61.ttf) format("truetype"); }
 .p61 {
   font-family: p61; }
 
@@ -557,7 +557,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p62;
-  src: url(../fonts/quran-page/ttf/p62.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p62.ttf) format("truetype"); }
 .p62 {
   font-family: p62; }
 
@@ -566,7 +566,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p63;
-  src: url(../fonts/quran-page/ttf/p63.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p63.ttf) format("truetype"); }
 .p63 {
   font-family: p63; }
 
@@ -575,7 +575,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p64;
-  src: url(../fonts/quran-page/ttf/p64.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p64.ttf) format("truetype"); }
 .p64 {
   font-family: p64; }
 
@@ -584,7 +584,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p65;
-  src: url(../fonts/quran-page/ttf/p65.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p65.ttf) format("truetype"); }
 .p65 {
   font-family: p65; }
 
@@ -593,7 +593,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p66;
-  src: url(../fonts/quran-page/ttf/p66.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p66.ttf) format("truetype"); }
 .p66 {
   font-family: p66; }
 
@@ -602,7 +602,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p67;
-  src: url(../fonts/quran-page/ttf/p67.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p67.ttf) format("truetype"); }
 .p67 {
   font-family: p67; }
 
@@ -611,7 +611,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p68;
-  src: url(../fonts/quran-page/ttf/p68.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p68.ttf) format("truetype"); }
 .p68 {
   font-family: p68; }
 
@@ -620,7 +620,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p69;
-  src: url(../fonts/quran-page/ttf/p69.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p69.ttf) format("truetype"); }
 .p69 {
   font-family: p69; }
 
@@ -629,7 +629,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p70;
-  src: url(../fonts/quran-page/ttf/p70.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p70.ttf) format("truetype"); }
 .p70 {
   font-family: p70; }
 
@@ -638,7 +638,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p71;
-  src: url(../fonts/quran-page/ttf/p71.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p71.ttf) format("truetype"); }
 .p71 {
   font-family: p71; }
 
@@ -647,7 +647,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p72;
-  src: url(../fonts/quran-page/ttf/p72.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p72.ttf) format("truetype"); }
 .p72 {
   font-family: p72; }
 
@@ -656,7 +656,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p73;
-  src: url(../fonts/quran-page/ttf/p73.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p73.ttf) format("truetype"); }
 .p73 {
   font-family: p73; }
 
@@ -665,7 +665,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p74;
-  src: url(../fonts/quran-page/ttf/p74.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p74.ttf) format("truetype"); }
 .p74 {
   font-family: p74; }
 
@@ -674,7 +674,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p75;
-  src: url(../fonts/quran-page/ttf/p75.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p75.ttf) format("truetype"); }
 .p75 {
   font-family: p75; }
 
@@ -683,7 +683,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p76;
-  src: url(../fonts/quran-page/ttf/p76.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p76.ttf) format("truetype"); }
 .p76 {
   font-family: p76; }
 
@@ -692,7 +692,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p77;
-  src: url(../fonts/quran-page/ttf/p77.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p77.ttf) format("truetype"); }
 .p77 {
   font-family: p77; }
 
@@ -701,7 +701,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p78;
-  src: url(../fonts/quran-page/ttf/p78.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p78.ttf) format("truetype"); }
 .p78 {
   font-family: p78; }
 
@@ -710,7 +710,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p79;
-  src: url(../fonts/quran-page/ttf/p79.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p79.ttf) format("truetype"); }
 .p79 {
   font-family: p79; }
 
@@ -719,7 +719,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p80;
-  src: url(../fonts/quran-page/ttf/p80.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p80.ttf) format("truetype"); }
 .p80 {
   font-family: p80; }
 
@@ -728,7 +728,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p81;
-  src: url(../fonts/quran-page/ttf/p81.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p81.ttf) format("truetype"); }
 .p81 {
   font-family: p81; }
 
@@ -737,7 +737,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p82;
-  src: url(../fonts/quran-page/ttf/p82.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p82.ttf) format("truetype"); }
 .p82 {
   font-family: p82; }
 
@@ -746,7 +746,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p83;
-  src: url(../fonts/quran-page/ttf/p83.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p83.ttf) format("truetype"); }
 .p83 {
   font-family: p83; }
 
@@ -755,7 +755,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p84;
-  src: url(../fonts/quran-page/ttf/p84.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p84.ttf) format("truetype"); }
 .p84 {
   font-family: p84; }
 
@@ -764,7 +764,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p85;
-  src: url(../fonts/quran-page/ttf/p85.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p85.ttf) format("truetype"); }
 .p85 {
   font-family: p85; }
 
@@ -773,7 +773,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p86;
-  src: url(../fonts/quran-page/ttf/p86.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p86.ttf) format("truetype"); }
 .p86 {
   font-family: p86; }
 
@@ -782,7 +782,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p87;
-  src: url(../fonts/quran-page/ttf/p87.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p87.ttf) format("truetype"); }
 .p87 {
   font-family: p87; }
 
@@ -791,7 +791,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p88;
-  src: url(../fonts/quran-page/ttf/p88.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p88.ttf) format("truetype"); }
 .p88 {
   font-family: p88; }
 
@@ -800,7 +800,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p89;
-  src: url(../fonts/quran-page/ttf/p89.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p89.ttf) format("truetype"); }
 .p89 {
   font-family: p89; }
 
@@ -809,7 +809,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p90;
-  src: url(../fonts/quran-page/ttf/p90.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p90.ttf) format("truetype"); }
 .p90 {
   font-family: p90; }
 
@@ -818,7 +818,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p91;
-  src: url(../fonts/quran-page/ttf/p91.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p91.ttf) format("truetype"); }
 .p91 {
   font-family: p91; }
 
@@ -827,7 +827,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p92;
-  src: url(../fonts/quran-page/ttf/p92.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p92.ttf) format("truetype"); }
 .p92 {
   font-family: p92; }
 
@@ -836,7 +836,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p93;
-  src: url(../fonts/quran-page/ttf/p93.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p93.ttf) format("truetype"); }
 .p93 {
   font-family: p93; }
 
@@ -845,7 +845,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p94;
-  src: url(../fonts/quran-page/ttf/p94.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p94.ttf) format("truetype"); }
 .p94 {
   font-family: p94; }
 
@@ -854,7 +854,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p95;
-  src: url(../fonts/quran-page/ttf/p95.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p95.ttf) format("truetype"); }
 .p95 {
   font-family: p95; }
 
@@ -863,7 +863,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p96;
-  src: url(../fonts/quran-page/ttf/p96.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p96.ttf) format("truetype"); }
 .p96 {
   font-family: p96; }
 
@@ -872,7 +872,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p97;
-  src: url(../fonts/quran-page/ttf/p97.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p97.ttf) format("truetype"); }
 .p97 {
   font-family: p97; }
 
@@ -881,7 +881,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p98;
-  src: url(../fonts/quran-page/ttf/p98.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p98.ttf) format("truetype"); }
 .p98 {
   font-family: p98; }
 
@@ -890,7 +890,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p99;
-  src: url(../fonts/quran-page/ttf/p99.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p99.ttf) format("truetype"); }
 .p99 {
   font-family: p99; }
 
@@ -899,7 +899,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p100;
-  src: url(../fonts/quran-page/ttf/p100.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p100.ttf) format("truetype"); }
 .p100 {
   font-family: p100; }
 
@@ -908,7 +908,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p101;
-  src: url(../fonts/quran-page/ttf/p101.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p101.ttf) format("truetype"); }
 .p101 {
   font-family: p101; }
 
@@ -917,7 +917,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p102;
-  src: url(../fonts/quran-page/ttf/p102.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p102.ttf) format("truetype"); }
 .p102 {
   font-family: p102; }
 
@@ -926,7 +926,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p103;
-  src: url(../fonts/quran-page/ttf/p103.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p103.ttf) format("truetype"); }
 .p103 {
   font-family: p103; }
 
@@ -935,7 +935,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p104;
-  src: url(../fonts/quran-page/ttf/p104.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p104.ttf) format("truetype"); }
 .p104 {
   font-family: p104; }
 
@@ -944,7 +944,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p105;
-  src: url(../fonts/quran-page/ttf/p105.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p105.ttf) format("truetype"); }
 .p105 {
   font-family: p105; }
 
@@ -953,7 +953,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p106;
-  src: url(../fonts/quran-page/ttf/p106.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p106.ttf) format("truetype"); }
 .p106 {
   font-family: p106; }
 
@@ -962,7 +962,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p107;
-  src: url(../fonts/quran-page/ttf/p107.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p107.ttf) format("truetype"); }
 .p107 {
   font-family: p107; }
 
@@ -971,7 +971,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p108;
-  src: url(../fonts/quran-page/ttf/p108.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p108.ttf) format("truetype"); }
 .p108 {
   font-family: p108; }
 
@@ -980,7 +980,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p109;
-  src: url(../fonts/quran-page/ttf/p109.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p109.ttf) format("truetype"); }
 .p109 {
   font-family: p109; }
 
@@ -989,7 +989,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p110;
-  src: url(../fonts/quran-page/ttf/p110.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p110.ttf) format("truetype"); }
 .p110 {
   font-family: p110; }
 
@@ -998,7 +998,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p111;
-  src: url(../fonts/quran-page/ttf/p111.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p111.ttf) format("truetype"); }
 .p111 {
   font-family: p111; }
 
@@ -1007,7 +1007,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p112;
-  src: url(../fonts/quran-page/ttf/p112.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p112.ttf) format("truetype"); }
 .p112 {
   font-family: p112; }
 
@@ -1016,7 +1016,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p113;
-  src: url(../fonts/quran-page/ttf/p113.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p113.ttf) format("truetype"); }
 .p113 {
   font-family: p113; }
 
@@ -1025,7 +1025,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p114;
-  src: url(../fonts/quran-page/ttf/p114.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p114.ttf) format("truetype"); }
 .p114 {
   font-family: p114; }
 
@@ -1034,7 +1034,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p115;
-  src: url(../fonts/quran-page/ttf/p115.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p115.ttf) format("truetype"); }
 .p115 {
   font-family: p115; }
 
@@ -1043,7 +1043,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p116;
-  src: url(../fonts/quran-page/ttf/p116.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p116.ttf) format("truetype"); }
 .p116 {
   font-family: p116; }
 
@@ -1052,7 +1052,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p117;
-  src: url(../fonts/quran-page/ttf/p117.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p117.ttf) format("truetype"); }
 .p117 {
   font-family: p117; }
 
@@ -1061,7 +1061,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p118;
-  src: url(../fonts/quran-page/ttf/p118.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p118.ttf) format("truetype"); }
 .p118 {
   font-family: p118; }
 
@@ -1070,7 +1070,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p119;
-  src: url(../fonts/quran-page/ttf/p119.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p119.ttf) format("truetype"); }
 .p119 {
   font-family: p119; }
 
@@ -1079,7 +1079,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p120;
-  src: url(../fonts/quran-page/ttf/p120.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p120.ttf) format("truetype"); }
 .p120 {
   font-family: p120; }
 
@@ -1088,7 +1088,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p121;
-  src: url(../fonts/quran-page/ttf/p121.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p121.ttf) format("truetype"); }
 .p121 {
   font-family: p121; }
 
@@ -1097,7 +1097,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p122;
-  src: url(../fonts/quran-page/ttf/p122.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p122.ttf) format("truetype"); }
 .p122 {
   font-family: p122; }
 
@@ -1106,7 +1106,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p123;
-  src: url(../fonts/quran-page/ttf/p123.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p123.ttf) format("truetype"); }
 .p123 {
   font-family: p123; }
 
@@ -1115,7 +1115,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p124;
-  src: url(../fonts/quran-page/ttf/p124.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p124.ttf) format("truetype"); }
 .p124 {
   font-family: p124; }
 
@@ -1124,7 +1124,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p125;
-  src: url(../fonts/quran-page/ttf/p125.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p125.ttf) format("truetype"); }
 .p125 {
   font-family: p125; }
 
@@ -1133,7 +1133,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p126;
-  src: url(../fonts/quran-page/ttf/p126.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p126.ttf) format("truetype"); }
 .p126 {
   font-family: p126; }
 
@@ -1142,7 +1142,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p127;
-  src: url(../fonts/quran-page/ttf/p127.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p127.ttf) format("truetype"); }
 .p127 {
   font-family: p127; }
 
@@ -1151,7 +1151,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p128;
-  src: url(../fonts/quran-page/ttf/p128.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p128.ttf) format("truetype"); }
 .p128 {
   font-family: p128; }
 
@@ -1160,7 +1160,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p129;
-  src: url(../fonts/quran-page/ttf/p129.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p129.ttf) format("truetype"); }
 .p129 {
   font-family: p129; }
 
@@ -1169,7 +1169,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p130;
-  src: url(../fonts/quran-page/ttf/p130.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p130.ttf) format("truetype"); }
 .p130 {
   font-family: p130; }
 
@@ -1178,7 +1178,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p131;
-  src: url(../fonts/quran-page/ttf/p131.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p131.ttf) format("truetype"); }
 .p131 {
   font-family: p131; }
 
@@ -1187,7 +1187,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p132;
-  src: url(../fonts/quran-page/ttf/p132.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p132.ttf) format("truetype"); }
 .p132 {
   font-family: p132; }
 
@@ -1196,7 +1196,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p133;
-  src: url(../fonts/quran-page/ttf/p133.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p133.ttf) format("truetype"); }
 .p133 {
   font-family: p133; }
 
@@ -1205,7 +1205,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p134;
-  src: url(../fonts/quran-page/ttf/p134.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p134.ttf) format("truetype"); }
 .p134 {
   font-family: p134; }
 
@@ -1214,7 +1214,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p135;
-  src: url(../fonts/quran-page/ttf/p135.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p135.ttf) format("truetype"); }
 .p135 {
   font-family: p135; }
 
@@ -1223,7 +1223,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p136;
-  src: url(../fonts/quran-page/ttf/p136.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p136.ttf) format("truetype"); }
 .p136 {
   font-family: p136; }
 
@@ -1232,7 +1232,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p137;
-  src: url(../fonts/quran-page/ttf/p137.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p137.ttf) format("truetype"); }
 .p137 {
   font-family: p137; }
 
@@ -1241,7 +1241,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p138;
-  src: url(../fonts/quran-page/ttf/p138.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p138.ttf) format("truetype"); }
 .p138 {
   font-family: p138; }
 
@@ -1250,7 +1250,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p139;
-  src: url(../fonts/quran-page/ttf/p139.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p139.ttf) format("truetype"); }
 .p139 {
   font-family: p139; }
 
@@ -1259,7 +1259,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p140;
-  src: url(../fonts/quran-page/ttf/p140.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p140.ttf) format("truetype"); }
 .p140 {
   font-family: p140; }
 
@@ -1268,7 +1268,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p141;
-  src: url(../fonts/quran-page/ttf/p141.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p141.ttf) format("truetype"); }
 .p141 {
   font-family: p141; }
 
@@ -1277,7 +1277,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p142;
-  src: url(../fonts/quran-page/ttf/p142.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p142.ttf) format("truetype"); }
 .p142 {
   font-family: p142; }
 
@@ -1286,7 +1286,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p143;
-  src: url(../fonts/quran-page/ttf/p143.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p143.ttf) format("truetype"); }
 .p143 {
   font-family: p143; }
 
@@ -1295,7 +1295,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p144;
-  src: url(../fonts/quran-page/ttf/p144.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p144.ttf) format("truetype"); }
 .p144 {
   font-family: p144; }
 
@@ -1304,7 +1304,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p145;
-  src: url(../fonts/quran-page/ttf/p145.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p145.ttf) format("truetype"); }
 .p145 {
   font-family: p145; }
 
@@ -1313,7 +1313,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p146;
-  src: url(../fonts/quran-page/ttf/p146.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p146.ttf) format("truetype"); }
 .p146 {
   font-family: p146; }
 
@@ -1322,7 +1322,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p147;
-  src: url(../fonts/quran-page/ttf/p147.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p147.ttf) format("truetype"); }
 .p147 {
   font-family: p147; }
 
@@ -1331,7 +1331,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p148;
-  src: url(../fonts/quran-page/ttf/p148.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p148.ttf) format("truetype"); }
 .p148 {
   font-family: p148; }
 
@@ -1340,7 +1340,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p149;
-  src: url(../fonts/quran-page/ttf/p149.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p149.ttf) format("truetype"); }
 .p149 {
   font-family: p149; }
 
@@ -1349,7 +1349,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p150;
-  src: url(../fonts/quran-page/ttf/p150.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p150.ttf) format("truetype"); }
 .p150 {
   font-family: p150; }
 
@@ -1358,7 +1358,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p151;
-  src: url(../fonts/quran-page/ttf/p151.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p151.ttf) format("truetype"); }
 .p151 {
   font-family: p151; }
 
@@ -1367,7 +1367,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p152;
-  src: url(../fonts/quran-page/ttf/p152.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p152.ttf) format("truetype"); }
 .p152 {
   font-family: p152; }
 
@@ -1376,7 +1376,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p153;
-  src: url(../fonts/quran-page/ttf/p153.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p153.ttf) format("truetype"); }
 .p153 {
   font-family: p153; }
 
@@ -1385,7 +1385,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p154;
-  src: url(../fonts/quran-page/ttf/p154.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p154.ttf) format("truetype"); }
 .p154 {
   font-family: p154; }
 
@@ -1394,7 +1394,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p155;
-  src: url(../fonts/quran-page/ttf/p155.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p155.ttf) format("truetype"); }
 .p155 {
   font-family: p155; }
 
@@ -1403,7 +1403,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p156;
-  src: url(../fonts/quran-page/ttf/p156.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p156.ttf) format("truetype"); }
 .p156 {
   font-family: p156; }
 
@@ -1412,7 +1412,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p157;
-  src: url(../fonts/quran-page/ttf/p157.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p157.ttf) format("truetype"); }
 .p157 {
   font-family: p157; }
 
@@ -1421,7 +1421,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p158;
-  src: url(../fonts/quran-page/ttf/p158.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p158.ttf) format("truetype"); }
 .p158 {
   font-family: p158; }
 
@@ -1430,7 +1430,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p159;
-  src: url(../fonts/quran-page/ttf/p159.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p159.ttf) format("truetype"); }
 .p159 {
   font-family: p159; }
 
@@ -1439,7 +1439,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p160;
-  src: url(../fonts/quran-page/ttf/p160.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p160.ttf) format("truetype"); }
 .p160 {
   font-family: p160; }
 
@@ -1448,7 +1448,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p161;
-  src: url(../fonts/quran-page/ttf/p161.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p161.ttf) format("truetype"); }
 .p161 {
   font-family: p161; }
 
@@ -1457,7 +1457,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p162;
-  src: url(../fonts/quran-page/ttf/p162.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p162.ttf) format("truetype"); }
 .p162 {
   font-family: p162; }
 
@@ -1466,7 +1466,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p163;
-  src: url(../fonts/quran-page/ttf/p163.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p163.ttf) format("truetype"); }
 .p163 {
   font-family: p163; }
 
@@ -1475,7 +1475,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p164;
-  src: url(../fonts/quran-page/ttf/p164.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p164.ttf) format("truetype"); }
 .p164 {
   font-family: p164; }
 
@@ -1484,7 +1484,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p165;
-  src: url(../fonts/quran-page/ttf/p165.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p165.ttf) format("truetype"); }
 .p165 {
   font-family: p165; }
 
@@ -1493,7 +1493,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p166;
-  src: url(../fonts/quran-page/ttf/p166.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p166.ttf) format("truetype"); }
 .p166 {
   font-family: p166; }
 
@@ -1502,7 +1502,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p167;
-  src: url(../fonts/quran-page/ttf/p167.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p167.ttf) format("truetype"); }
 .p167 {
   font-family: p167; }
 
@@ -1511,7 +1511,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p168;
-  src: url(../fonts/quran-page/ttf/p168.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p168.ttf) format("truetype"); }
 .p168 {
   font-family: p168; }
 
@@ -1520,7 +1520,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p169;
-  src: url(../fonts/quran-page/ttf/p169.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p169.ttf) format("truetype"); }
 .p169 {
   font-family: p169; }
 
@@ -1529,7 +1529,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p170;
-  src: url(../fonts/quran-page/ttf/p170.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p170.ttf) format("truetype"); }
 .p170 {
   font-family: p170; }
 
@@ -1538,7 +1538,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p171;
-  src: url(../fonts/quran-page/ttf/p171.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p171.ttf) format("truetype"); }
 .p171 {
   font-family: p171; }
 
@@ -1547,7 +1547,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p172;
-  src: url(../fonts/quran-page/ttf/p172.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p172.ttf) format("truetype"); }
 .p172 {
   font-family: p172; }
 
@@ -1556,7 +1556,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p173;
-  src: url(../fonts/quran-page/ttf/p173.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p173.ttf) format("truetype"); }
 .p173 {
   font-family: p173; }
 
@@ -1565,7 +1565,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p174;
-  src: url(../fonts/quran-page/ttf/p174.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p174.ttf) format("truetype"); }
 .p174 {
   font-family: p174; }
 
@@ -1574,7 +1574,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p175;
-  src: url(../fonts/quran-page/ttf/p175.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p175.ttf) format("truetype"); }
 .p175 {
   font-family: p175; }
 
@@ -1583,7 +1583,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p176;
-  src: url(../fonts/quran-page/ttf/p176.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p176.ttf) format("truetype"); }
 .p176 {
   font-family: p176; }
 
@@ -1592,7 +1592,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p177;
-  src: url(../fonts/quran-page/ttf/p177.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p177.ttf) format("truetype"); }
 .p177 {
   font-family: p177; }
 
@@ -1601,7 +1601,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p178;
-  src: url(../fonts/quran-page/ttf/p178.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p178.ttf) format("truetype"); }
 .p178 {
   font-family: p178; }
 
@@ -1610,7 +1610,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p179;
-  src: url(../fonts/quran-page/ttf/p179.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p179.ttf) format("truetype"); }
 .p179 {
   font-family: p179; }
 
@@ -1619,7 +1619,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p180;
-  src: url(../fonts/quran-page/ttf/p180.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p180.ttf) format("truetype"); }
 .p180 {
   font-family: p180; }
 
@@ -1628,7 +1628,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p181;
-  src: url(../fonts/quran-page/ttf/p181.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p181.ttf) format("truetype"); }
 .p181 {
   font-family: p181; }
 
@@ -1637,7 +1637,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p182;
-  src: url(../fonts/quran-page/ttf/p182.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p182.ttf) format("truetype"); }
 .p182 {
   font-family: p182; }
 
@@ -1646,7 +1646,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p183;
-  src: url(../fonts/quran-page/ttf/p183.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p183.ttf) format("truetype"); }
 .p183 {
   font-family: p183; }
 
@@ -1655,7 +1655,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p184;
-  src: url(../fonts/quran-page/ttf/p184.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p184.ttf) format("truetype"); }
 .p184 {
   font-family: p184; }
 
@@ -1664,7 +1664,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p185;
-  src: url(../fonts/quran-page/ttf/p185.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p185.ttf) format("truetype"); }
 .p185 {
   font-family: p185; }
 
@@ -1673,7 +1673,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p186;
-  src: url(../fonts/quran-page/ttf/p186.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p186.ttf) format("truetype"); }
 .p186 {
   font-family: p186; }
 
@@ -1682,7 +1682,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p187;
-  src: url(../fonts/quran-page/ttf/p187.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p187.ttf) format("truetype"); }
 .p187 {
   font-family: p187; }
 
@@ -1691,7 +1691,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p188;
-  src: url(../fonts/quran-page/ttf/p188.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p188.ttf) format("truetype"); }
 .p188 {
   font-family: p188; }
 
@@ -1700,7 +1700,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p189;
-  src: url(../fonts/quran-page/ttf/p189.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p189.ttf) format("truetype"); }
 .p189 {
   font-family: p189; }
 
@@ -1709,7 +1709,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p190;
-  src: url(../fonts/quran-page/ttf/p190.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p190.ttf) format("truetype"); }
 .p190 {
   font-family: p190; }
 
@@ -1718,7 +1718,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p191;
-  src: url(../fonts/quran-page/ttf/p191.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p191.ttf) format("truetype"); }
 .p191 {
   font-family: p191; }
 
@@ -1727,7 +1727,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p192;
-  src: url(../fonts/quran-page/ttf/p192.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p192.ttf) format("truetype"); }
 .p192 {
   font-family: p192; }
 
@@ -1736,7 +1736,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p193;
-  src: url(../fonts/quran-page/ttf/p193.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p193.ttf) format("truetype"); }
 .p193 {
   font-family: p193; }
 
@@ -1745,7 +1745,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p194;
-  src: url(../fonts/quran-page/ttf/p194.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p194.ttf) format("truetype"); }
 .p194 {
   font-family: p194; }
 
@@ -1754,7 +1754,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p195;
-  src: url(../fonts/quran-page/ttf/p195.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p195.ttf) format("truetype"); }
 .p195 {
   font-family: p195; }
 
@@ -1763,7 +1763,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p196;
-  src: url(../fonts/quran-page/ttf/p196.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p196.ttf) format("truetype"); }
 .p196 {
   font-family: p196; }
 
@@ -1772,7 +1772,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p197;
-  src: url(../fonts/quran-page/ttf/p197.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p197.ttf) format("truetype"); }
 .p197 {
   font-family: p197; }
 
@@ -1781,7 +1781,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p198;
-  src: url(../fonts/quran-page/ttf/p198.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p198.ttf) format("truetype"); }
 .p198 {
   font-family: p198; }
 
@@ -1790,7 +1790,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p199;
-  src: url(../fonts/quran-page/ttf/p199.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p199.ttf) format("truetype"); }
 .p199 {
   font-family: p199; }
 
@@ -1799,7 +1799,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p200;
-  src: url(../fonts/quran-page/ttf/p200.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p200.ttf) format("truetype"); }
 .p200 {
   font-family: p200; }
 
@@ -1808,7 +1808,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p201;
-  src: url(../fonts/quran-page/ttf/p201.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p201.ttf) format("truetype"); }
 .p201 {
   font-family: p201; }
 
@@ -1817,7 +1817,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p202;
-  src: url(../fonts/quran-page/ttf/p202.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p202.ttf) format("truetype"); }
 .p202 {
   font-family: p202; }
 
@@ -1826,7 +1826,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p203;
-  src: url(../fonts/quran-page/ttf/p203.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p203.ttf) format("truetype"); }
 .p203 {
   font-family: p203; }
 
@@ -1835,7 +1835,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p204;
-  src: url(../fonts/quran-page/ttf/p204.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p204.ttf) format("truetype"); }
 .p204 {
   font-family: p204; }
 
@@ -1844,7 +1844,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p205;
-  src: url(../fonts/quran-page/ttf/p205.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p205.ttf) format("truetype"); }
 .p205 {
   font-family: p205; }
 
@@ -1853,7 +1853,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p206;
-  src: url(../fonts/quran-page/ttf/p206.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p206.ttf) format("truetype"); }
 .p206 {
   font-family: p206; }
 
@@ -1862,7 +1862,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p207;
-  src: url(../fonts/quran-page/ttf/p207.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p207.ttf) format("truetype"); }
 .p207 {
   font-family: p207; }
 
@@ -1871,7 +1871,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p208;
-  src: url(../fonts/quran-page/ttf/p208.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p208.ttf) format("truetype"); }
 .p208 {
   font-family: p208; }
 
@@ -1880,7 +1880,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p209;
-  src: url(../fonts/quran-page/ttf/p209.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p209.ttf) format("truetype"); }
 .p209 {
   font-family: p209; }
 
@@ -1889,7 +1889,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p210;
-  src: url(../fonts/quran-page/ttf/p210.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p210.ttf) format("truetype"); }
 .p210 {
   font-family: p210; }
 
@@ -1898,7 +1898,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p211;
-  src: url(../fonts/quran-page/ttf/p211.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p211.ttf) format("truetype"); }
 .p211 {
   font-family: p211; }
 
@@ -1907,7 +1907,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p212;
-  src: url(../fonts/quran-page/ttf/p212.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p212.ttf) format("truetype"); }
 .p212 {
   font-family: p212; }
 
@@ -1916,7 +1916,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p213;
-  src: url(../fonts/quran-page/ttf/p213.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p213.ttf) format("truetype"); }
 .p213 {
   font-family: p213; }
 
@@ -1925,7 +1925,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p214;
-  src: url(../fonts/quran-page/ttf/p214.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p214.ttf) format("truetype"); }
 .p214 {
   font-family: p214; }
 
@@ -1934,7 +1934,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p215;
-  src: url(../fonts/quran-page/ttf/p215.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p215.ttf) format("truetype"); }
 .p215 {
   font-family: p215; }
 
@@ -1943,7 +1943,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p216;
-  src: url(../fonts/quran-page/ttf/p216.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p216.ttf) format("truetype"); }
 .p216 {
   font-family: p216; }
 
@@ -1952,7 +1952,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p217;
-  src: url(../fonts/quran-page/ttf/p217.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p217.ttf) format("truetype"); }
 .p217 {
   font-family: p217; }
 
@@ -1961,7 +1961,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p218;
-  src: url(../fonts/quran-page/ttf/p218.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p218.ttf) format("truetype"); }
 .p218 {
   font-family: p218; }
 
@@ -1970,7 +1970,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p219;
-  src: url(../fonts/quran-page/ttf/p219.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p219.ttf) format("truetype"); }
 .p219 {
   font-family: p219; }
 
@@ -1979,7 +1979,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p220;
-  src: url(../fonts/quran-page/ttf/p220.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p220.ttf) format("truetype"); }
 .p220 {
   font-family: p220; }
 
@@ -1988,7 +1988,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p221;
-  src: url(../fonts/quran-page/ttf/p221.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p221.ttf) format("truetype"); }
 .p221 {
   font-family: p221; }
 
@@ -1997,7 +1997,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p222;
-  src: url(../fonts/quran-page/ttf/p222.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p222.ttf) format("truetype"); }
 .p222 {
   font-family: p222; }
 
@@ -2006,7 +2006,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p223;
-  src: url(../fonts/quran-page/ttf/p223.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p223.ttf) format("truetype"); }
 .p223 {
   font-family: p223; }
 
@@ -2015,7 +2015,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p224;
-  src: url(../fonts/quran-page/ttf/p224.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p224.ttf) format("truetype"); }
 .p224 {
   font-family: p224; }
 
@@ -2024,7 +2024,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p225;
-  src: url(../fonts/quran-page/ttf/p225.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p225.ttf) format("truetype"); }
 .p225 {
   font-family: p225; }
 
@@ -2033,7 +2033,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p226;
-  src: url(../fonts/quran-page/ttf/p226.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p226.ttf) format("truetype"); }
 .p226 {
   font-family: p226; }
 
@@ -2042,7 +2042,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p227;
-  src: url(../fonts/quran-page/ttf/p227.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p227.ttf) format("truetype"); }
 .p227 {
   font-family: p227; }
 
@@ -2051,7 +2051,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p228;
-  src: url(../fonts/quran-page/ttf/p228.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p228.ttf) format("truetype"); }
 .p228 {
   font-family: p228; }
 
@@ -2060,7 +2060,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p229;
-  src: url(../fonts/quran-page/ttf/p229.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p229.ttf) format("truetype"); }
 .p229 {
   font-family: p229; }
 
@@ -2069,7 +2069,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p230;
-  src: url(../fonts/quran-page/ttf/p230.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p230.ttf) format("truetype"); }
 .p230 {
   font-family: p230; }
 
@@ -2078,7 +2078,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p231;
-  src: url(../fonts/quran-page/ttf/p231.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p231.ttf) format("truetype"); }
 .p231 {
   font-family: p231; }
 
@@ -2087,7 +2087,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p232;
-  src: url(../fonts/quran-page/ttf/p232.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p232.ttf) format("truetype"); }
 .p232 {
   font-family: p232; }
 
@@ -2096,7 +2096,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p233;
-  src: url(../fonts/quran-page/ttf/p233.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p233.ttf) format("truetype"); }
 .p233 {
   font-family: p233; }
 
@@ -2105,7 +2105,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p234;
-  src: url(../fonts/quran-page/ttf/p234.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p234.ttf) format("truetype"); }
 .p234 {
   font-family: p234; }
 
@@ -2114,7 +2114,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p235;
-  src: url(../fonts/quran-page/ttf/p235.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p235.ttf) format("truetype"); }
 .p235 {
   font-family: p235; }
 
@@ -2123,7 +2123,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p236;
-  src: url(../fonts/quran-page/ttf/p236.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p236.ttf) format("truetype"); }
 .p236 {
   font-family: p236; }
 
@@ -2132,7 +2132,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p237;
-  src: url(../fonts/quran-page/ttf/p237.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p237.ttf) format("truetype"); }
 .p237 {
   font-family: p237; }
 
@@ -2141,7 +2141,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p238;
-  src: url(../fonts/quran-page/ttf/p238.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p238.ttf) format("truetype"); }
 .p238 {
   font-family: p238; }
 
@@ -2150,7 +2150,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p239;
-  src: url(../fonts/quran-page/ttf/p239.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p239.ttf) format("truetype"); }
 .p239 {
   font-family: p239; }
 
@@ -2159,7 +2159,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p240;
-  src: url(../fonts/quran-page/ttf/p240.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p240.ttf) format("truetype"); }
 .p240 {
   font-family: p240; }
 
@@ -2168,7 +2168,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p241;
-  src: url(../fonts/quran-page/ttf/p241.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p241.ttf) format("truetype"); }
 .p241 {
   font-family: p241; }
 
@@ -2177,7 +2177,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p242;
-  src: url(../fonts/quran-page/ttf/p242.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p242.ttf) format("truetype"); }
 .p242 {
   font-family: p242; }
 
@@ -2186,7 +2186,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p243;
-  src: url(../fonts/quran-page/ttf/p243.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p243.ttf) format("truetype"); }
 .p243 {
   font-family: p243; }
 
@@ -2195,7 +2195,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p244;
-  src: url(../fonts/quran-page/ttf/p244.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p244.ttf) format("truetype"); }
 .p244 {
   font-family: p244; }
 
@@ -2204,7 +2204,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p245;
-  src: url(../fonts/quran-page/ttf/p245.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p245.ttf) format("truetype"); }
 .p245 {
   font-family: p245; }
 
@@ -2213,7 +2213,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p246;
-  src: url(../fonts/quran-page/ttf/p246.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p246.ttf) format("truetype"); }
 .p246 {
   font-family: p246; }
 
@@ -2222,7 +2222,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p247;
-  src: url(../fonts/quran-page/ttf/p247.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p247.ttf) format("truetype"); }
 .p247 {
   font-family: p247; }
 
@@ -2231,7 +2231,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p248;
-  src: url(../fonts/quran-page/ttf/p248.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p248.ttf) format("truetype"); }
 .p248 {
   font-family: p248; }
 
@@ -2240,7 +2240,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p249;
-  src: url(../fonts/quran-page/ttf/p249.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p249.ttf) format("truetype"); }
 .p249 {
   font-family: p249; }
 
@@ -2249,7 +2249,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p250;
-  src: url(../fonts/quran-page/ttf/p250.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p250.ttf) format("truetype"); }
 .p250 {
   font-family: p250; }
 
@@ -2258,7 +2258,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p251;
-  src: url(../fonts/quran-page/ttf/p251.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p251.ttf) format("truetype"); }
 .p251 {
   font-family: p251; }
 
@@ -2267,7 +2267,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p252;
-  src: url(../fonts/quran-page/ttf/p252.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p252.ttf) format("truetype"); }
 .p252 {
   font-family: p252; }
 
@@ -2276,7 +2276,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p253;
-  src: url(../fonts/quran-page/ttf/p253.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p253.ttf) format("truetype"); }
 .p253 {
   font-family: p253; }
 
@@ -2285,7 +2285,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p254;
-  src: url(../fonts/quran-page/ttf/p254.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p254.ttf) format("truetype"); }
 .p254 {
   font-family: p254; }
 
@@ -2294,7 +2294,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p255;
-  src: url(../fonts/quran-page/ttf/p255.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p255.ttf) format("truetype"); }
 .p255 {
   font-family: p255; }
 
@@ -2303,7 +2303,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p256;
-  src: url(../fonts/quran-page/ttf/p256.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p256.ttf) format("truetype"); }
 .p256 {
   font-family: p256; }
 
@@ -2312,7 +2312,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p257;
-  src: url(../fonts/quran-page/ttf/p257.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p257.ttf) format("truetype"); }
 .p257 {
   font-family: p257; }
 
@@ -2321,7 +2321,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p258;
-  src: url(../fonts/quran-page/ttf/p258.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p258.ttf) format("truetype"); }
 .p258 {
   font-family: p258; }
 
@@ -2330,7 +2330,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p259;
-  src: url(../fonts/quran-page/ttf/p259.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p259.ttf) format("truetype"); }
 .p259 {
   font-family: p259; }
 
@@ -2339,7 +2339,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p260;
-  src: url(../fonts/quran-page/ttf/p260.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p260.ttf) format("truetype"); }
 .p260 {
   font-family: p260; }
 
@@ -2348,7 +2348,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p261;
-  src: url(../fonts/quran-page/ttf/p261.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p261.ttf) format("truetype"); }
 .p261 {
   font-family: p261; }
 
@@ -2357,7 +2357,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p262;
-  src: url(../fonts/quran-page/ttf/p262.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p262.ttf) format("truetype"); }
 .p262 {
   font-family: p262; }
 
@@ -2366,7 +2366,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p263;
-  src: url(../fonts/quran-page/ttf/p263.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p263.ttf) format("truetype"); }
 .p263 {
   font-family: p263; }
 
@@ -2375,7 +2375,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p264;
-  src: url(../fonts/quran-page/ttf/p264.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p264.ttf) format("truetype"); }
 .p264 {
   font-family: p264; }
 
@@ -2384,7 +2384,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p265;
-  src: url(../fonts/quran-page/ttf/p265.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p265.ttf) format("truetype"); }
 .p265 {
   font-family: p265; }
 
@@ -2393,7 +2393,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p266;
-  src: url(../fonts/quran-page/ttf/p266.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p266.ttf) format("truetype"); }
 .p266 {
   font-family: p266; }
 
@@ -2402,7 +2402,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p267;
-  src: url(../fonts/quran-page/ttf/p267.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p267.ttf) format("truetype"); }
 .p267 {
   font-family: p267; }
 
@@ -2411,7 +2411,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p268;
-  src: url(../fonts/quran-page/ttf/p268.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p268.ttf) format("truetype"); }
 .p268 {
   font-family: p268; }
 
@@ -2420,7 +2420,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p269;
-  src: url(../fonts/quran-page/ttf/p269.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p269.ttf) format("truetype"); }
 .p269 {
   font-family: p269; }
 
@@ -2429,7 +2429,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p270;
-  src: url(../fonts/quran-page/ttf/p270.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p270.ttf) format("truetype"); }
 .p270 {
   font-family: p270; }
 
@@ -2438,7 +2438,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p271;
-  src: url(../fonts/quran-page/ttf/p271.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p271.ttf) format("truetype"); }
 .p271 {
   font-family: p271; }
 
@@ -2447,7 +2447,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p272;
-  src: url(../fonts/quran-page/ttf/p272.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p272.ttf) format("truetype"); }
 .p272 {
   font-family: p272; }
 
@@ -2456,7 +2456,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p273;
-  src: url(../fonts/quran-page/ttf/p273.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p273.ttf) format("truetype"); }
 .p273 {
   font-family: p273; }
 
@@ -2465,7 +2465,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p274;
-  src: url(../fonts/quran-page/ttf/p274.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p274.ttf) format("truetype"); }
 .p274 {
   font-family: p274; }
 
@@ -2474,7 +2474,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p275;
-  src: url(../fonts/quran-page/ttf/p275.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p275.ttf) format("truetype"); }
 .p275 {
   font-family: p275; }
 
@@ -2483,7 +2483,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p276;
-  src: url(../fonts/quran-page/ttf/p276.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p276.ttf) format("truetype"); }
 .p276 {
   font-family: p276; }
 
@@ -2492,7 +2492,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p277;
-  src: url(../fonts/quran-page/ttf/p277.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p277.ttf) format("truetype"); }
 .p277 {
   font-family: p277; }
 
@@ -2501,7 +2501,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p278;
-  src: url(../fonts/quran-page/ttf/p278.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p278.ttf) format("truetype"); }
 .p278 {
   font-family: p278; }
 
@@ -2510,7 +2510,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p279;
-  src: url(../fonts/quran-page/ttf/p279.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p279.ttf) format("truetype"); }
 .p279 {
   font-family: p279; }
 
@@ -2519,7 +2519,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p280;
-  src: url(../fonts/quran-page/ttf/p280.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p280.ttf) format("truetype"); }
 .p280 {
   font-family: p280; }
 
@@ -2528,7 +2528,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p281;
-  src: url(../fonts/quran-page/ttf/p281.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p281.ttf) format("truetype"); }
 .p281 {
   font-family: p281; }
 
@@ -2537,7 +2537,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p282;
-  src: url(../fonts/quran-page/ttf/p282.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p282.ttf) format("truetype"); }
 .p282 {
   font-family: p282; }
 
@@ -2546,7 +2546,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p283;
-  src: url(../fonts/quran-page/ttf/p283.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p283.ttf) format("truetype"); }
 .p283 {
   font-family: p283; }
 
@@ -2555,7 +2555,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p284;
-  src: url(../fonts/quran-page/ttf/p284.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p284.ttf) format("truetype"); }
 .p284 {
   font-family: p284; }
 
@@ -2564,7 +2564,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p285;
-  src: url(../fonts/quran-page/ttf/p285.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p285.ttf) format("truetype"); }
 .p285 {
   font-family: p285; }
 
@@ -2573,7 +2573,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p286;
-  src: url(../fonts/quran-page/ttf/p286.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p286.ttf) format("truetype"); }
 .p286 {
   font-family: p286; }
 
@@ -2582,7 +2582,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p287;
-  src: url(../fonts/quran-page/ttf/p287.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p287.ttf) format("truetype"); }
 .p287 {
   font-family: p287; }
 
@@ -2591,7 +2591,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p288;
-  src: url(../fonts/quran-page/ttf/p288.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p288.ttf) format("truetype"); }
 .p288 {
   font-family: p288; }
 
@@ -2600,7 +2600,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p289;
-  src: url(../fonts/quran-page/ttf/p289.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p289.ttf) format("truetype"); }
 .p289 {
   font-family: p289; }
 
@@ -2609,7 +2609,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p290;
-  src: url(../fonts/quran-page/ttf/p290.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p290.ttf) format("truetype"); }
 .p290 {
   font-family: p290; }
 
@@ -2618,7 +2618,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p291;
-  src: url(../fonts/quran-page/ttf/p291.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p291.ttf) format("truetype"); }
 .p291 {
   font-family: p291; }
 
@@ -2627,7 +2627,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p292;
-  src: url(../fonts/quran-page/ttf/p292.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p292.ttf) format("truetype"); }
 .p292 {
   font-family: p292; }
 
@@ -2636,7 +2636,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p293;
-  src: url(../fonts/quran-page/ttf/p293.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p293.ttf) format("truetype"); }
 .p293 {
   font-family: p293; }
 
@@ -2645,7 +2645,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p294;
-  src: url(../fonts/quran-page/ttf/p294.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p294.ttf) format("truetype"); }
 .p294 {
   font-family: p294; }
 
@@ -2654,7 +2654,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p295;
-  src: url(../fonts/quran-page/ttf/p295.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p295.ttf) format("truetype"); }
 .p295 {
   font-family: p295; }
 
@@ -2663,7 +2663,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p296;
-  src: url(../fonts/quran-page/ttf/p296.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p296.ttf) format("truetype"); }
 .p296 {
   font-family: p296; }
 
@@ -2672,7 +2672,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p297;
-  src: url(../fonts/quran-page/ttf/p297.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p297.ttf) format("truetype"); }
 .p297 {
   font-family: p297; }
 
@@ -2681,7 +2681,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p298;
-  src: url(../fonts/quran-page/ttf/p298.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p298.ttf) format("truetype"); }
 .p298 {
   font-family: p298; }
 
@@ -2690,7 +2690,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p299;
-  src: url(../fonts/quran-page/ttf/p299.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p299.ttf) format("truetype"); }
 .p299 {
   font-family: p299; }
 
@@ -2699,7 +2699,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p300;
-  src: url(../fonts/quran-page/ttf/p300.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p300.ttf) format("truetype"); }
 .p300 {
   font-family: p300; }
 
@@ -2708,7 +2708,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p301;
-  src: url(../fonts/quran-page/ttf/p301.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p301.ttf) format("truetype"); }
 .p301 {
   font-family: p301; }
 
@@ -2717,7 +2717,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p302;
-  src: url(../fonts/quran-page/ttf/p302.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p302.ttf) format("truetype"); }
 .p302 {
   font-family: p302; }
 
@@ -2726,7 +2726,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p303;
-  src: url(../fonts/quran-page/ttf/p303.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p303.ttf) format("truetype"); }
 .p303 {
   font-family: p303; }
 
@@ -2735,7 +2735,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p304;
-  src: url(../fonts/quran-page/ttf/p304.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p304.ttf) format("truetype"); }
 .p304 {
   font-family: p304; }
 
@@ -2744,7 +2744,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p305;
-  src: url(../fonts/quran-page/ttf/p305.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p305.ttf) format("truetype"); }
 .p305 {
   font-family: p305; }
 
@@ -2753,7 +2753,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p306;
-  src: url(../fonts/quran-page/ttf/p306.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p306.ttf) format("truetype"); }
 .p306 {
   font-family: p306; }
 
@@ -2762,7 +2762,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p307;
-  src: url(../fonts/quran-page/ttf/p307.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p307.ttf) format("truetype"); }
 .p307 {
   font-family: p307; }
 
@@ -2771,7 +2771,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p308;
-  src: url(../fonts/quran-page/ttf/p308.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p308.ttf) format("truetype"); }
 .p308 {
   font-family: p308; }
 
@@ -2780,7 +2780,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p309;
-  src: url(../fonts/quran-page/ttf/p309.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p309.ttf) format("truetype"); }
 .p309 {
   font-family: p309; }
 
@@ -2789,7 +2789,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p310;
-  src: url(../fonts/quran-page/ttf/p310.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p310.ttf) format("truetype"); }
 .p310 {
   font-family: p310; }
 
@@ -2798,7 +2798,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p311;
-  src: url(../fonts/quran-page/ttf/p311.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p311.ttf) format("truetype"); }
 .p311 {
   font-family: p311; }
 
@@ -2807,7 +2807,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p312;
-  src: url(../fonts/quran-page/ttf/p312.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p312.ttf) format("truetype"); }
 .p312 {
   font-family: p312; }
 
@@ -2816,7 +2816,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p313;
-  src: url(../fonts/quran-page/ttf/p313.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p313.ttf) format("truetype"); }
 .p313 {
   font-family: p313; }
 
@@ -2825,7 +2825,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p314;
-  src: url(../fonts/quran-page/ttf/p314.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p314.ttf) format("truetype"); }
 .p314 {
   font-family: p314; }
 
@@ -2834,7 +2834,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p315;
-  src: url(../fonts/quran-page/ttf/p315.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p315.ttf) format("truetype"); }
 .p315 {
   font-family: p315; }
 
@@ -2843,7 +2843,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p316;
-  src: url(../fonts/quran-page/ttf/p316.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p316.ttf) format("truetype"); }
 .p316 {
   font-family: p316; }
 
@@ -2852,7 +2852,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p317;
-  src: url(../fonts/quran-page/ttf/p317.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p317.ttf) format("truetype"); }
 .p317 {
   font-family: p317; }
 
@@ -2861,7 +2861,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p318;
-  src: url(../fonts/quran-page/ttf/p318.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p318.ttf) format("truetype"); }
 .p318 {
   font-family: p318; }
 
@@ -2870,7 +2870,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p319;
-  src: url(../fonts/quran-page/ttf/p319.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p319.ttf) format("truetype"); }
 .p319 {
   font-family: p319; }
 
@@ -2879,7 +2879,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p320;
-  src: url(../fonts/quran-page/ttf/p320.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p320.ttf) format("truetype"); }
 .p320 {
   font-family: p320; }
 
@@ -2888,7 +2888,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p321;
-  src: url(../fonts/quran-page/ttf/p321.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p321.ttf) format("truetype"); }
 .p321 {
   font-family: p321; }
 
@@ -2897,7 +2897,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p322;
-  src: url(../fonts/quran-page/ttf/p322.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p322.ttf) format("truetype"); }
 .p322 {
   font-family: p322; }
 
@@ -2906,7 +2906,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p323;
-  src: url(../fonts/quran-page/ttf/p323.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p323.ttf) format("truetype"); }
 .p323 {
   font-family: p323; }
 
@@ -2915,7 +2915,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p324;
-  src: url(../fonts/quran-page/ttf/p324.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p324.ttf) format("truetype"); }
 .p324 {
   font-family: p324; }
 
@@ -2924,7 +2924,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p325;
-  src: url(../fonts/quran-page/ttf/p325.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p325.ttf) format("truetype"); }
 .p325 {
   font-family: p325; }
 
@@ -2933,7 +2933,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p326;
-  src: url(../fonts/quran-page/ttf/p326.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p326.ttf) format("truetype"); }
 .p326 {
   font-family: p326; }
 
@@ -2942,7 +2942,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p327;
-  src: url(../fonts/quran-page/ttf/p327.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p327.ttf) format("truetype"); }
 .p327 {
   font-family: p327; }
 
@@ -2951,7 +2951,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p328;
-  src: url(../fonts/quran-page/ttf/p328.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p328.ttf) format("truetype"); }
 .p328 {
   font-family: p328; }
 
@@ -2960,7 +2960,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p329;
-  src: url(../fonts/quran-page/ttf/p329.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p329.ttf) format("truetype"); }
 .p329 {
   font-family: p329; }
 
@@ -2969,7 +2969,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p330;
-  src: url(../fonts/quran-page/ttf/p330.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p330.ttf) format("truetype"); }
 .p330 {
   font-family: p330; }
 
@@ -2978,7 +2978,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p331;
-  src: url(../fonts/quran-page/ttf/p331.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p331.ttf) format("truetype"); }
 .p331 {
   font-family: p331; }
 
@@ -2987,7 +2987,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p332;
-  src: url(../fonts/quran-page/ttf/p332.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p332.ttf) format("truetype"); }
 .p332 {
   font-family: p332; }
 
@@ -2996,7 +2996,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p333;
-  src: url(../fonts/quran-page/ttf/p333.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p333.ttf) format("truetype"); }
 .p333 {
   font-family: p333; }
 
@@ -3005,7 +3005,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p334;
-  src: url(../fonts/quran-page/ttf/p334.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p334.ttf) format("truetype"); }
 .p334 {
   font-family: p334; }
 
@@ -3014,7 +3014,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p335;
-  src: url(../fonts/quran-page/ttf/p335.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p335.ttf) format("truetype"); }
 .p335 {
   font-family: p335; }
 
@@ -3023,7 +3023,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p336;
-  src: url(../fonts/quran-page/ttf/p336.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p336.ttf) format("truetype"); }
 .p336 {
   font-family: p336; }
 
@@ -3032,7 +3032,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p337;
-  src: url(../fonts/quran-page/ttf/p337.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p337.ttf) format("truetype"); }
 .p337 {
   font-family: p337; }
 
@@ -3041,7 +3041,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p338;
-  src: url(../fonts/quran-page/ttf/p338.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p338.ttf) format("truetype"); }
 .p338 {
   font-family: p338; }
 
@@ -3050,7 +3050,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p339;
-  src: url(../fonts/quran-page/ttf/p339.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p339.ttf) format("truetype"); }
 .p339 {
   font-family: p339; }
 
@@ -3059,7 +3059,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p340;
-  src: url(../fonts/quran-page/ttf/p340.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p340.ttf) format("truetype"); }
 .p340 {
   font-family: p340; }
 
@@ -3068,7 +3068,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p341;
-  src: url(../fonts/quran-page/ttf/p341.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p341.ttf) format("truetype"); }
 .p341 {
   font-family: p341; }
 
@@ -3077,7 +3077,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p342;
-  src: url(../fonts/quran-page/ttf/p342.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p342.ttf) format("truetype"); }
 .p342 {
   font-family: p342; }
 
@@ -3086,7 +3086,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p343;
-  src: url(../fonts/quran-page/ttf/p343.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p343.ttf) format("truetype"); }
 .p343 {
   font-family: p343; }
 
@@ -3095,7 +3095,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p344;
-  src: url(../fonts/quran-page/ttf/p344.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p344.ttf) format("truetype"); }
 .p344 {
   font-family: p344; }
 
@@ -3104,7 +3104,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p345;
-  src: url(../fonts/quran-page/ttf/p345.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p345.ttf) format("truetype"); }
 .p345 {
   font-family: p345; }
 
@@ -3113,7 +3113,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p346;
-  src: url(../fonts/quran-page/ttf/p346.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p346.ttf) format("truetype"); }
 .p346 {
   font-family: p346; }
 
@@ -3122,7 +3122,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p347;
-  src: url(../fonts/quran-page/ttf/p347.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p347.ttf) format("truetype"); }
 .p347 {
   font-family: p347; }
 
@@ -3131,7 +3131,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p348;
-  src: url(../fonts/quran-page/ttf/p348.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p348.ttf) format("truetype"); }
 .p348 {
   font-family: p348; }
 
@@ -3140,7 +3140,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p349;
-  src: url(../fonts/quran-page/ttf/p349.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p349.ttf) format("truetype"); }
 .p349 {
   font-family: p349; }
 
@@ -3149,7 +3149,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p350;
-  src: url(../fonts/quran-page/ttf/p350.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p350.ttf) format("truetype"); }
 .p350 {
   font-family: p350; }
 
@@ -3158,7 +3158,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p351;
-  src: url(../fonts/quran-page/ttf/p351.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p351.ttf) format("truetype"); }
 .p351 {
   font-family: p351; }
 
@@ -3167,7 +3167,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p352;
-  src: url(../fonts/quran-page/ttf/p352.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p352.ttf) format("truetype"); }
 .p352 {
   font-family: p352; }
 
@@ -3176,7 +3176,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p353;
-  src: url(../fonts/quran-page/ttf/p353.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p353.ttf) format("truetype"); }
 .p353 {
   font-family: p353; }
 
@@ -3185,7 +3185,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p354;
-  src: url(../fonts/quran-page/ttf/p354.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p354.ttf) format("truetype"); }
 .p354 {
   font-family: p354; }
 
@@ -3194,7 +3194,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p355;
-  src: url(../fonts/quran-page/ttf/p355.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p355.ttf) format("truetype"); }
 .p355 {
   font-family: p355; }
 
@@ -3203,7 +3203,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p356;
-  src: url(../fonts/quran-page/ttf/p356.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p356.ttf) format("truetype"); }
 .p356 {
   font-family: p356; }
 
@@ -3212,7 +3212,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p357;
-  src: url(../fonts/quran-page/ttf/p357.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p357.ttf) format("truetype"); }
 .p357 {
   font-family: p357; }
 
@@ -3221,7 +3221,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p358;
-  src: url(../fonts/quran-page/ttf/p358.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p358.ttf) format("truetype"); }
 .p358 {
   font-family: p358; }
 
@@ -3230,7 +3230,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p359;
-  src: url(../fonts/quran-page/ttf/p359.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p359.ttf) format("truetype"); }
 .p359 {
   font-family: p359; }
 
@@ -3239,7 +3239,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p360;
-  src: url(../fonts/quran-page/ttf/p360.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p360.ttf) format("truetype"); }
 .p360 {
   font-family: p360; }
 
@@ -3248,7 +3248,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p361;
-  src: url(../fonts/quran-page/ttf/p361.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p361.ttf) format("truetype"); }
 .p361 {
   font-family: p361; }
 
@@ -3257,7 +3257,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p362;
-  src: url(../fonts/quran-page/ttf/p362.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p362.ttf) format("truetype"); }
 .p362 {
   font-family: p362; }
 
@@ -3266,7 +3266,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p363;
-  src: url(../fonts/quran-page/ttf/p363.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p363.ttf) format("truetype"); }
 .p363 {
   font-family: p363; }
 
@@ -3275,7 +3275,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p364;
-  src: url(../fonts/quran-page/ttf/p364.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p364.ttf) format("truetype"); }
 .p364 {
   font-family: p364; }
 
@@ -3284,7 +3284,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p365;
-  src: url(../fonts/quran-page/ttf/p365.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p365.ttf) format("truetype"); }
 .p365 {
   font-family: p365; }
 
@@ -3293,7 +3293,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p366;
-  src: url(../fonts/quran-page/ttf/p366.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p366.ttf) format("truetype"); }
 .p366 {
   font-family: p366; }
 
@@ -3302,7 +3302,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p367;
-  src: url(../fonts/quran-page/ttf/p367.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p367.ttf) format("truetype"); }
 .p367 {
   font-family: p367; }
 
@@ -3311,7 +3311,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p368;
-  src: url(../fonts/quran-page/ttf/p368.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p368.ttf) format("truetype"); }
 .p368 {
   font-family: p368; }
 
@@ -3320,7 +3320,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p369;
-  src: url(../fonts/quran-page/ttf/p369.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p369.ttf) format("truetype"); }
 .p369 {
   font-family: p369; }
 
@@ -3329,7 +3329,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p370;
-  src: url(../fonts/quran-page/ttf/p370.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p370.ttf) format("truetype"); }
 .p370 {
   font-family: p370; }
 
@@ -3338,7 +3338,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p371;
-  src: url(../fonts/quran-page/ttf/p371.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p371.ttf) format("truetype"); }
 .p371 {
   font-family: p371; }
 
@@ -3347,7 +3347,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p372;
-  src: url(../fonts/quran-page/ttf/p372.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p372.ttf) format("truetype"); }
 .p372 {
   font-family: p372; }
 
@@ -3356,7 +3356,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p373;
-  src: url(../fonts/quran-page/ttf/p373.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p373.ttf) format("truetype"); }
 .p373 {
   font-family: p373; }
 
@@ -3365,7 +3365,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p374;
-  src: url(../fonts/quran-page/ttf/p374.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p374.ttf) format("truetype"); }
 .p374 {
   font-family: p374; }
 
@@ -3374,7 +3374,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p375;
-  src: url(../fonts/quran-page/ttf/p375.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p375.ttf) format("truetype"); }
 .p375 {
   font-family: p375; }
 
@@ -3383,7 +3383,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p376;
-  src: url(../fonts/quran-page/ttf/p376.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p376.ttf) format("truetype"); }
 .p376 {
   font-family: p376; }
 
@@ -3392,7 +3392,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p377;
-  src: url(../fonts/quran-page/ttf/p377.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p377.ttf) format("truetype"); }
 .p377 {
   font-family: p377; }
 
@@ -3401,7 +3401,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p378;
-  src: url(../fonts/quran-page/ttf/p378.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p378.ttf) format("truetype"); }
 .p378 {
   font-family: p378; }
 
@@ -3410,7 +3410,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p379;
-  src: url(../fonts/quran-page/ttf/p379.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p379.ttf) format("truetype"); }
 .p379 {
   font-family: p379; }
 
@@ -3419,7 +3419,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p380;
-  src: url(../fonts/quran-page/ttf/p380.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p380.ttf) format("truetype"); }
 .p380 {
   font-family: p380; }
 
@@ -3428,7 +3428,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p381;
-  src: url(../fonts/quran-page/ttf/p381.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p381.ttf) format("truetype"); }
 .p381 {
   font-family: p381; }
 
@@ -3437,7 +3437,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p382;
-  src: url(../fonts/quran-page/ttf/p382.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p382.ttf) format("truetype"); }
 .p382 {
   font-family: p382; }
 
@@ -3446,7 +3446,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p383;
-  src: url(../fonts/quran-page/ttf/p383.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p383.ttf) format("truetype"); }
 .p383 {
   font-family: p383; }
 
@@ -3455,7 +3455,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p384;
-  src: url(../fonts/quran-page/ttf/p384.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p384.ttf) format("truetype"); }
 .p384 {
   font-family: p384; }
 
@@ -3464,7 +3464,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p385;
-  src: url(../fonts/quran-page/ttf/p385.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p385.ttf) format("truetype"); }
 .p385 {
   font-family: p385; }
 
@@ -3473,7 +3473,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p386;
-  src: url(../fonts/quran-page/ttf/p386.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p386.ttf) format("truetype"); }
 .p386 {
   font-family: p386; }
 
@@ -3482,7 +3482,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p387;
-  src: url(../fonts/quran-page/ttf/p387.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p387.ttf) format("truetype"); }
 .p387 {
   font-family: p387; }
 
@@ -3491,7 +3491,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p388;
-  src: url(../fonts/quran-page/ttf/p388.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p388.ttf) format("truetype"); }
 .p388 {
   font-family: p388; }
 
@@ -3500,7 +3500,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p389;
-  src: url(../fonts/quran-page/ttf/p389.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p389.ttf) format("truetype"); }
 .p389 {
   font-family: p389; }
 
@@ -3509,7 +3509,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p390;
-  src: url(../fonts/quran-page/ttf/p390.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p390.ttf) format("truetype"); }
 .p390 {
   font-family: p390; }
 
@@ -3518,7 +3518,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p391;
-  src: url(../fonts/quran-page/ttf/p391.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p391.ttf) format("truetype"); }
 .p391 {
   font-family: p391; }
 
@@ -3527,7 +3527,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p392;
-  src: url(../fonts/quran-page/ttf/p392.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p392.ttf) format("truetype"); }
 .p392 {
   font-family: p392; }
 
@@ -3536,7 +3536,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p393;
-  src: url(../fonts/quran-page/ttf/p393.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p393.ttf) format("truetype"); }
 .p393 {
   font-family: p393; }
 
@@ -3545,7 +3545,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p394;
-  src: url(../fonts/quran-page/ttf/p394.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p394.ttf) format("truetype"); }
 .p394 {
   font-family: p394; }
 
@@ -3554,7 +3554,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p395;
-  src: url(../fonts/quran-page/ttf/p395.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p395.ttf) format("truetype"); }
 .p395 {
   font-family: p395; }
 
@@ -3563,7 +3563,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p396;
-  src: url(../fonts/quran-page/ttf/p396.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p396.ttf) format("truetype"); }
 .p396 {
   font-family: p396; }
 
@@ -3572,7 +3572,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p397;
-  src: url(../fonts/quran-page/ttf/p397.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p397.ttf) format("truetype"); }
 .p397 {
   font-family: p397; }
 
@@ -3581,7 +3581,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p398;
-  src: url(../fonts/quran-page/ttf/p398.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p398.ttf) format("truetype"); }
 .p398 {
   font-family: p398; }
 
@@ -3590,7 +3590,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p399;
-  src: url(../fonts/quran-page/ttf/p399.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p399.ttf) format("truetype"); }
 .p399 {
   font-family: p399; }
 
@@ -3599,7 +3599,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p400;
-  src: url(../fonts/quran-page/ttf/p400.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p400.ttf) format("truetype"); }
 .p400 {
   font-family: p400; }
 
@@ -3608,7 +3608,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p401;
-  src: url(../fonts/quran-page/ttf/p401.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p401.ttf) format("truetype"); }
 .p401 {
   font-family: p401; }
 
@@ -3617,7 +3617,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p402;
-  src: url(../fonts/quran-page/ttf/p402.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p402.ttf) format("truetype"); }
 .p402 {
   font-family: p402; }
 
@@ -3626,7 +3626,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p403;
-  src: url(../fonts/quran-page/ttf/p403.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p403.ttf) format("truetype"); }
 .p403 {
   font-family: p403; }
 
@@ -3635,7 +3635,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p404;
-  src: url(../fonts/quran-page/ttf/p404.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p404.ttf) format("truetype"); }
 .p404 {
   font-family: p404; }
 
@@ -3644,7 +3644,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p405;
-  src: url(../fonts/quran-page/ttf/p405.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p405.ttf) format("truetype"); }
 .p405 {
   font-family: p405; }
 
@@ -3653,7 +3653,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p406;
-  src: url(../fonts/quran-page/ttf/p406.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p406.ttf) format("truetype"); }
 .p406 {
   font-family: p406; }
 
@@ -3662,7 +3662,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p407;
-  src: url(../fonts/quran-page/ttf/p407.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p407.ttf) format("truetype"); }
 .p407 {
   font-family: p407; }
 
@@ -3671,7 +3671,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p408;
-  src: url(../fonts/quran-page/ttf/p408.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p408.ttf) format("truetype"); }
 .p408 {
   font-family: p408; }
 
@@ -3680,7 +3680,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p409;
-  src: url(../fonts/quran-page/ttf/p409.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p409.ttf) format("truetype"); }
 .p409 {
   font-family: p409; }
 
@@ -3689,7 +3689,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p410;
-  src: url(../fonts/quran-page/ttf/p410.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p410.ttf) format("truetype"); }
 .p410 {
   font-family: p410; }
 
@@ -3698,7 +3698,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p411;
-  src: url(../fonts/quran-page/ttf/p411.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p411.ttf) format("truetype"); }
 .p411 {
   font-family: p411; }
 
@@ -3707,7 +3707,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p412;
-  src: url(../fonts/quran-page/ttf/p412.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p412.ttf) format("truetype"); }
 .p412 {
   font-family: p412; }
 
@@ -3716,7 +3716,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p413;
-  src: url(../fonts/quran-page/ttf/p413.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p413.ttf) format("truetype"); }
 .p413 {
   font-family: p413; }
 
@@ -3725,7 +3725,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p414;
-  src: url(../fonts/quran-page/ttf/p414.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p414.ttf) format("truetype"); }
 .p414 {
   font-family: p414; }
 
@@ -3734,7 +3734,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p415;
-  src: url(../fonts/quran-page/ttf/p415.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p415.ttf) format("truetype"); }
 .p415 {
   font-family: p415; }
 
@@ -3743,7 +3743,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p416;
-  src: url(../fonts/quran-page/ttf/p416.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p416.ttf) format("truetype"); }
 .p416 {
   font-family: p416; }
 
@@ -3752,7 +3752,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p417;
-  src: url(../fonts/quran-page/ttf/p417.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p417.ttf) format("truetype"); }
 .p417 {
   font-family: p417; }
 
@@ -3761,7 +3761,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p418;
-  src: url(../fonts/quran-page/ttf/p418.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p418.ttf) format("truetype"); }
 .p418 {
   font-family: p418; }
 
@@ -3770,7 +3770,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p419;
-  src: url(../fonts/quran-page/ttf/p419.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p419.ttf) format("truetype"); }
 .p419 {
   font-family: p419; }
 
@@ -3779,7 +3779,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p420;
-  src: url(../fonts/quran-page/ttf/p420.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p420.ttf) format("truetype"); }
 .p420 {
   font-family: p420; }
 
@@ -3788,7 +3788,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p421;
-  src: url(../fonts/quran-page/ttf/p421.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p421.ttf) format("truetype"); }
 .p421 {
   font-family: p421; }
 
@@ -3797,7 +3797,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p422;
-  src: url(../fonts/quran-page/ttf/p422.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p422.ttf) format("truetype"); }
 .p422 {
   font-family: p422; }
 
@@ -3806,7 +3806,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p423;
-  src: url(../fonts/quran-page/ttf/p423.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p423.ttf) format("truetype"); }
 .p423 {
   font-family: p423; }
 
@@ -3815,7 +3815,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p424;
-  src: url(../fonts/quran-page/ttf/p424.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p424.ttf) format("truetype"); }
 .p424 {
   font-family: p424; }
 
@@ -3824,7 +3824,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p425;
-  src: url(../fonts/quran-page/ttf/p425.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p425.ttf) format("truetype"); }
 .p425 {
   font-family: p425; }
 
@@ -3833,7 +3833,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p426;
-  src: url(../fonts/quran-page/ttf/p426.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p426.ttf) format("truetype"); }
 .p426 {
   font-family: p426; }
 
@@ -3842,7 +3842,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p427;
-  src: url(../fonts/quran-page/ttf/p427.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p427.ttf) format("truetype"); }
 .p427 {
   font-family: p427; }
 
@@ -3851,7 +3851,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p428;
-  src: url(../fonts/quran-page/ttf/p428.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p428.ttf) format("truetype"); }
 .p428 {
   font-family: p428; }
 
@@ -3860,7 +3860,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p429;
-  src: url(../fonts/quran-page/ttf/p429.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p429.ttf) format("truetype"); }
 .p429 {
   font-family: p429; }
 
@@ -3869,7 +3869,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p430;
-  src: url(../fonts/quran-page/ttf/p430.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p430.ttf) format("truetype"); }
 .p430 {
   font-family: p430; }
 
@@ -3878,7 +3878,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p431;
-  src: url(../fonts/quran-page/ttf/p431.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p431.ttf) format("truetype"); }
 .p431 {
   font-family: p431; }
 
@@ -3887,7 +3887,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p432;
-  src: url(../fonts/quran-page/ttf/p432.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p432.ttf) format("truetype"); }
 .p432 {
   font-family: p432; }
 
@@ -3896,7 +3896,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p433;
-  src: url(../fonts/quran-page/ttf/p433.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p433.ttf) format("truetype"); }
 .p433 {
   font-family: p433; }
 
@@ -3905,7 +3905,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p434;
-  src: url(../fonts/quran-page/ttf/p434.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p434.ttf) format("truetype"); }
 .p434 {
   font-family: p434; }
 
@@ -3914,7 +3914,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p435;
-  src: url(../fonts/quran-page/ttf/p435.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p435.ttf) format("truetype"); }
 .p435 {
   font-family: p435; }
 
@@ -3923,7 +3923,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p436;
-  src: url(../fonts/quran-page/ttf/p436.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p436.ttf) format("truetype"); }
 .p436 {
   font-family: p436; }
 
@@ -3932,7 +3932,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p437;
-  src: url(../fonts/quran-page/ttf/p437.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p437.ttf) format("truetype"); }
 .p437 {
   font-family: p437; }
 
@@ -3941,7 +3941,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p438;
-  src: url(../fonts/quran-page/ttf/p438.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p438.ttf) format("truetype"); }
 .p438 {
   font-family: p438; }
 
@@ -3950,7 +3950,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p439;
-  src: url(../fonts/quran-page/ttf/p439.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p439.ttf) format("truetype"); }
 .p439 {
   font-family: p439; }
 
@@ -3959,7 +3959,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p440;
-  src: url(../fonts/quran-page/ttf/p440.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p440.ttf) format("truetype"); }
 .p440 {
   font-family: p440; }
 
@@ -3968,7 +3968,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p441;
-  src: url(../fonts/quran-page/ttf/p441.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p441.ttf) format("truetype"); }
 .p441 {
   font-family: p441; }
 
@@ -3977,7 +3977,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p442;
-  src: url(../fonts/quran-page/ttf/p442.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p442.ttf) format("truetype"); }
 .p442 {
   font-family: p442; }
 
@@ -3986,7 +3986,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p443;
-  src: url(../fonts/quran-page/ttf/p443.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p443.ttf) format("truetype"); }
 .p443 {
   font-family: p443; }
 
@@ -3995,7 +3995,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p444;
-  src: url(../fonts/quran-page/ttf/p444.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p444.ttf) format("truetype"); }
 .p444 {
   font-family: p444; }
 
@@ -4004,7 +4004,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p445;
-  src: url(../fonts/quran-page/ttf/p445.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p445.ttf) format("truetype"); }
 .p445 {
   font-family: p445; }
 
@@ -4013,7 +4013,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p446;
-  src: url(../fonts/quran-page/ttf/p446.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p446.ttf) format("truetype"); }
 .p446 {
   font-family: p446; }
 
@@ -4022,7 +4022,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p447;
-  src: url(../fonts/quran-page/ttf/p447.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p447.ttf) format("truetype"); }
 .p447 {
   font-family: p447; }
 
@@ -4031,7 +4031,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p448;
-  src: url(../fonts/quran-page/ttf/p448.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p448.ttf) format("truetype"); }
 .p448 {
   font-family: p448; }
 
@@ -4040,7 +4040,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p449;
-  src: url(../fonts/quran-page/ttf/p449.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p449.ttf) format("truetype"); }
 .p449 {
   font-family: p449; }
 
@@ -4049,7 +4049,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p450;
-  src: url(../fonts/quran-page/ttf/p450.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p450.ttf) format("truetype"); }
 .p450 {
   font-family: p450; }
 
@@ -4058,7 +4058,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p451;
-  src: url(../fonts/quran-page/ttf/p451.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p451.ttf) format("truetype"); }
 .p451 {
   font-family: p451; }
 
@@ -4067,7 +4067,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p452;
-  src: url(../fonts/quran-page/ttf/p452.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p452.ttf) format("truetype"); }
 .p452 {
   font-family: p452; }
 
@@ -4076,7 +4076,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p453;
-  src: url(../fonts/quran-page/ttf/p453.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p453.ttf) format("truetype"); }
 .p453 {
   font-family: p453; }
 
@@ -4085,7 +4085,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p454;
-  src: url(../fonts/quran-page/ttf/p454.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p454.ttf) format("truetype"); }
 .p454 {
   font-family: p454; }
 
@@ -4094,7 +4094,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p455;
-  src: url(../fonts/quran-page/ttf/p455.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p455.ttf) format("truetype"); }
 .p455 {
   font-family: p455; }
 
@@ -4103,7 +4103,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p456;
-  src: url(../fonts/quran-page/ttf/p456.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p456.ttf) format("truetype"); }
 .p456 {
   font-family: p456; }
 
@@ -4112,7 +4112,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p457;
-  src: url(../fonts/quran-page/ttf/p457.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p457.ttf) format("truetype"); }
 .p457 {
   font-family: p457; }
 
@@ -4121,7 +4121,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p458;
-  src: url(../fonts/quran-page/ttf/p458.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p458.ttf) format("truetype"); }
 .p458 {
   font-family: p458; }
 
@@ -4130,7 +4130,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p459;
-  src: url(../fonts/quran-page/ttf/p459.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p459.ttf) format("truetype"); }
 .p459 {
   font-family: p459; }
 
@@ -4139,7 +4139,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p460;
-  src: url(../fonts/quran-page/ttf/p460.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p460.ttf) format("truetype"); }
 .p460 {
   font-family: p460; }
 
@@ -4148,7 +4148,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p461;
-  src: url(../fonts/quran-page/ttf/p461.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p461.ttf) format("truetype"); }
 .p461 {
   font-family: p461; }
 
@@ -4157,7 +4157,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p462;
-  src: url(../fonts/quran-page/ttf/p462.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p462.ttf) format("truetype"); }
 .p462 {
   font-family: p462; }
 
@@ -4166,7 +4166,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p463;
-  src: url(../fonts/quran-page/ttf/p463.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p463.ttf) format("truetype"); }
 .p463 {
   font-family: p463; }
 
@@ -4175,7 +4175,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p464;
-  src: url(../fonts/quran-page/ttf/p464.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p464.ttf) format("truetype"); }
 .p464 {
   font-family: p464; }
 
@@ -4184,7 +4184,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p465;
-  src: url(../fonts/quran-page/ttf/p465.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p465.ttf) format("truetype"); }
 .p465 {
   font-family: p465; }
 
@@ -4193,7 +4193,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p466;
-  src: url(../fonts/quran-page/ttf/p466.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p466.ttf) format("truetype"); }
 .p466 {
   font-family: p466; }
 
@@ -4202,7 +4202,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p467;
-  src: url(../fonts/quran-page/ttf/p467.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p467.ttf) format("truetype"); }
 .p467 {
   font-family: p467; }
 
@@ -4211,7 +4211,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p468;
-  src: url(../fonts/quran-page/ttf/p468.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p468.ttf) format("truetype"); }
 .p468 {
   font-family: p468; }
 
@@ -4220,7 +4220,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p469;
-  src: url(../fonts/quran-page/ttf/p469.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p469.ttf) format("truetype"); }
 .p469 {
   font-family: p469; }
 
@@ -4229,7 +4229,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p470;
-  src: url(../fonts/quran-page/ttf/p470.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p470.ttf) format("truetype"); }
 .p470 {
   font-family: p470; }
 
@@ -4238,7 +4238,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p471;
-  src: url(../fonts/quran-page/ttf/p471.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p471.ttf) format("truetype"); }
 .p471 {
   font-family: p471; }
 
@@ -4247,7 +4247,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p472;
-  src: url(../fonts/quran-page/ttf/p472.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p472.ttf) format("truetype"); }
 .p472 {
   font-family: p472; }
 
@@ -4256,7 +4256,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p473;
-  src: url(../fonts/quran-page/ttf/p473.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p473.ttf) format("truetype"); }
 .p473 {
   font-family: p473; }
 
@@ -4265,7 +4265,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p474;
-  src: url(../fonts/quran-page/ttf/p474.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p474.ttf) format("truetype"); }
 .p474 {
   font-family: p474; }
 
@@ -4274,7 +4274,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p475;
-  src: url(../fonts/quran-page/ttf/p475.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p475.ttf) format("truetype"); }
 .p475 {
   font-family: p475; }
 
@@ -4283,7 +4283,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p476;
-  src: url(../fonts/quran-page/ttf/p476.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p476.ttf) format("truetype"); }
 .p476 {
   font-family: p476; }
 
@@ -4292,7 +4292,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p477;
-  src: url(../fonts/quran-page/ttf/p477.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p477.ttf) format("truetype"); }
 .p477 {
   font-family: p477; }
 
@@ -4301,7 +4301,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p478;
-  src: url(../fonts/quran-page/ttf/p478.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p478.ttf) format("truetype"); }
 .p478 {
   font-family: p478; }
 
@@ -4310,7 +4310,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p479;
-  src: url(../fonts/quran-page/ttf/p479.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p479.ttf) format("truetype"); }
 .p479 {
   font-family: p479; }
 
@@ -4319,7 +4319,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p480;
-  src: url(../fonts/quran-page/ttf/p480.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p480.ttf) format("truetype"); }
 .p480 {
   font-family: p480; }
 
@@ -4328,7 +4328,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p481;
-  src: url(../fonts/quran-page/ttf/p481.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p481.ttf) format("truetype"); }
 .p481 {
   font-family: p481; }
 
@@ -4337,7 +4337,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p482;
-  src: url(../fonts/quran-page/ttf/p482.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p482.ttf) format("truetype"); }
 .p482 {
   font-family: p482; }
 
@@ -4346,7 +4346,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p483;
-  src: url(../fonts/quran-page/ttf/p483.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p483.ttf) format("truetype"); }
 .p483 {
   font-family: p483; }
 
@@ -4355,7 +4355,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p484;
-  src: url(../fonts/quran-page/ttf/p484.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p484.ttf) format("truetype"); }
 .p484 {
   font-family: p484; }
 
@@ -4364,7 +4364,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p485;
-  src: url(../fonts/quran-page/ttf/p485.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p485.ttf) format("truetype"); }
 .p485 {
   font-family: p485; }
 
@@ -4373,7 +4373,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p486;
-  src: url(../fonts/quran-page/ttf/p486.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p486.ttf) format("truetype"); }
 .p486 {
   font-family: p486; }
 
@@ -4382,7 +4382,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p487;
-  src: url(../fonts/quran-page/ttf/p487.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p487.ttf) format("truetype"); }
 .p487 {
   font-family: p487; }
 
@@ -4391,7 +4391,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p488;
-  src: url(../fonts/quran-page/ttf/p488.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p488.ttf) format("truetype"); }
 .p488 {
   font-family: p488; }
 
@@ -4400,7 +4400,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p489;
-  src: url(../fonts/quran-page/ttf/p489.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p489.ttf) format("truetype"); }
 .p489 {
   font-family: p489; }
 
@@ -4409,7 +4409,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p490;
-  src: url(../fonts/quran-page/ttf/p490.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p490.ttf) format("truetype"); }
 .p490 {
   font-family: p490; }
 
@@ -4418,7 +4418,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p491;
-  src: url(../fonts/quran-page/ttf/p491.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p491.ttf) format("truetype"); }
 .p491 {
   font-family: p491; }
 
@@ -4427,7 +4427,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p492;
-  src: url(../fonts/quran-page/ttf/p492.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p492.ttf) format("truetype"); }
 .p492 {
   font-family: p492; }
 
@@ -4436,7 +4436,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p493;
-  src: url(../fonts/quran-page/ttf/p493.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p493.ttf) format("truetype"); }
 .p493 {
   font-family: p493; }
 
@@ -4445,7 +4445,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p494;
-  src: url(../fonts/quran-page/ttf/p494.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p494.ttf) format("truetype"); }
 .p494 {
   font-family: p494; }
 
@@ -4454,7 +4454,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p495;
-  src: url(../fonts/quran-page/ttf/p495.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p495.ttf) format("truetype"); }
 .p495 {
   font-family: p495; }
 
@@ -4463,7 +4463,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p496;
-  src: url(../fonts/quran-page/ttf/p496.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p496.ttf) format("truetype"); }
 .p496 {
   font-family: p496; }
 
@@ -4472,7 +4472,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p497;
-  src: url(../fonts/quran-page/ttf/p497.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p497.ttf) format("truetype"); }
 .p497 {
   font-family: p497; }
 
@@ -4481,7 +4481,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p498;
-  src: url(../fonts/quran-page/ttf/p498.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p498.ttf) format("truetype"); }
 .p498 {
   font-family: p498; }
 
@@ -4490,7 +4490,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p499;
-  src: url(../fonts/quran-page/ttf/p499.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p499.ttf) format("truetype"); }
 .p499 {
   font-family: p499; }
 
@@ -4499,7 +4499,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p500;
-  src: url(../fonts/quran-page/ttf/p500.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p500.ttf) format("truetype"); }
 .p500 {
   font-family: p500; }
 
@@ -4508,7 +4508,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p501;
-  src: url(../fonts/quran-page/ttf/p501.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p501.ttf) format("truetype"); }
 .p501 {
   font-family: p501; }
 
@@ -4517,7 +4517,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p502;
-  src: url(../fonts/quran-page/ttf/p502.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p502.ttf) format("truetype"); }
 .p502 {
   font-family: p502; }
 
@@ -4526,7 +4526,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p503;
-  src: url(../fonts/quran-page/ttf/p503.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p503.ttf) format("truetype"); }
 .p503 {
   font-family: p503; }
 
@@ -4535,7 +4535,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p504;
-  src: url(../fonts/quran-page/ttf/p504.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p504.ttf) format("truetype"); }
 .p504 {
   font-family: p504; }
 
@@ -4544,7 +4544,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p505;
-  src: url(../fonts/quran-page/ttf/p505.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p505.ttf) format("truetype"); }
 .p505 {
   font-family: p505; }
 
@@ -4553,7 +4553,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p506;
-  src: url(../fonts/quran-page/ttf/p506.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p506.ttf) format("truetype"); }
 .p506 {
   font-family: p506; }
 
@@ -4562,7 +4562,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p507;
-  src: url(../fonts/quran-page/ttf/p507.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p507.ttf) format("truetype"); }
 .p507 {
   font-family: p507; }
 
@@ -4571,7 +4571,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p508;
-  src: url(../fonts/quran-page/ttf/p508.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p508.ttf) format("truetype"); }
 .p508 {
   font-family: p508; }
 
@@ -4580,7 +4580,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p509;
-  src: url(../fonts/quran-page/ttf/p509.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p509.ttf) format("truetype"); }
 .p509 {
   font-family: p509; }
 
@@ -4589,7 +4589,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p510;
-  src: url(../fonts/quran-page/ttf/p510.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p510.ttf) format("truetype"); }
 .p510 {
   font-family: p510; }
 
@@ -4598,7 +4598,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p511;
-  src: url(../fonts/quran-page/ttf/p511.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p511.ttf) format("truetype"); }
 .p511 {
   font-family: p511; }
 
@@ -4607,7 +4607,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p512;
-  src: url(../fonts/quran-page/ttf/p512.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p512.ttf) format("truetype"); }
 .p512 {
   font-family: p512; }
 
@@ -4616,7 +4616,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p513;
-  src: url(../fonts/quran-page/ttf/p513.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p513.ttf) format("truetype"); }
 .p513 {
   font-family: p513; }
 
@@ -4625,7 +4625,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p514;
-  src: url(../fonts/quran-page/ttf/p514.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p514.ttf) format("truetype"); }
 .p514 {
   font-family: p514; }
 
@@ -4634,7 +4634,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p515;
-  src: url(../fonts/quran-page/ttf/p515.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p515.ttf) format("truetype"); }
 .p515 {
   font-family: p515; }
 
@@ -4643,7 +4643,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p516;
-  src: url(../fonts/quran-page/ttf/p516.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p516.ttf) format("truetype"); }
 .p516 {
   font-family: p516; }
 
@@ -4652,7 +4652,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p517;
-  src: url(../fonts/quran-page/ttf/p517.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p517.ttf) format("truetype"); }
 .p517 {
   font-family: p517; }
 
@@ -4661,7 +4661,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p518;
-  src: url(../fonts/quran-page/ttf/p518.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p518.ttf) format("truetype"); }
 .p518 {
   font-family: p518; }
 
@@ -4670,7 +4670,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p519;
-  src: url(../fonts/quran-page/ttf/p519.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p519.ttf) format("truetype"); }
 .p519 {
   font-family: p519; }
 
@@ -4679,7 +4679,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p520;
-  src: url(../fonts/quran-page/ttf/p520.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p520.ttf) format("truetype"); }
 .p520 {
   font-family: p520; }
 
@@ -4688,7 +4688,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p521;
-  src: url(../fonts/quran-page/ttf/p521.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p521.ttf) format("truetype"); }
 .p521 {
   font-family: p521; }
 
@@ -4697,7 +4697,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p522;
-  src: url(../fonts/quran-page/ttf/p522.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p522.ttf) format("truetype"); }
 .p522 {
   font-family: p522; }
 
@@ -4706,7 +4706,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p523;
-  src: url(../fonts/quran-page/ttf/p523.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p523.ttf) format("truetype"); }
 .p523 {
   font-family: p523; }
 
@@ -4715,7 +4715,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p524;
-  src: url(../fonts/quran-page/ttf/p524.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p524.ttf) format("truetype"); }
 .p524 {
   font-family: p524; }
 
@@ -4724,7 +4724,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p525;
-  src: url(../fonts/quran-page/ttf/p525.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p525.ttf) format("truetype"); }
 .p525 {
   font-family: p525; }
 
@@ -4733,7 +4733,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p526;
-  src: url(../fonts/quran-page/ttf/p526.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p526.ttf) format("truetype"); }
 .p526 {
   font-family: p526; }
 
@@ -4742,7 +4742,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p527;
-  src: url(../fonts/quran-page/ttf/p527.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p527.ttf) format("truetype"); }
 .p527 {
   font-family: p527; }
 
@@ -4751,7 +4751,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p528;
-  src: url(../fonts/quran-page/ttf/p528.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p528.ttf) format("truetype"); }
 .p528 {
   font-family: p528; }
 
@@ -4760,7 +4760,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p529;
-  src: url(../fonts/quran-page/ttf/p529.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p529.ttf) format("truetype"); }
 .p529 {
   font-family: p529; }
 
@@ -4769,7 +4769,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p530;
-  src: url(../fonts/quran-page/ttf/p530.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p530.ttf) format("truetype"); }
 .p530 {
   font-family: p530; }
 
@@ -4778,7 +4778,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p531;
-  src: url(../fonts/quran-page/ttf/p531.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p531.ttf) format("truetype"); }
 .p531 {
   font-family: p531; }
 
@@ -4787,7 +4787,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p532;
-  src: url(../fonts/quran-page/ttf/p532.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p532.ttf) format("truetype"); }
 .p532 {
   font-family: p532; }
 
@@ -4796,7 +4796,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p533;
-  src: url(../fonts/quran-page/ttf/p533.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p533.ttf) format("truetype"); }
 .p533 {
   font-family: p533; }
 
@@ -4805,7 +4805,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p534;
-  src: url(../fonts/quran-page/ttf/p534.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p534.ttf) format("truetype"); }
 .p534 {
   font-family: p534; }
 
@@ -4814,7 +4814,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p535;
-  src: url(../fonts/quran-page/ttf/p535.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p535.ttf) format("truetype"); }
 .p535 {
   font-family: p535; }
 
@@ -4823,7 +4823,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p536;
-  src: url(../fonts/quran-page/ttf/p536.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p536.ttf) format("truetype"); }
 .p536 {
   font-family: p536; }
 
@@ -4832,7 +4832,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p537;
-  src: url(../fonts/quran-page/ttf/p537.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p537.ttf) format("truetype"); }
 .p537 {
   font-family: p537; }
 
@@ -4841,7 +4841,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p538;
-  src: url(../fonts/quran-page/ttf/p538.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p538.ttf) format("truetype"); }
 .p538 {
   font-family: p538; }
 
@@ -4850,7 +4850,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p539;
-  src: url(../fonts/quran-page/ttf/p539.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p539.ttf) format("truetype"); }
 .p539 {
   font-family: p539; }
 
@@ -4859,7 +4859,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p540;
-  src: url(../fonts/quran-page/ttf/p540.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p540.ttf) format("truetype"); }
 .p540 {
   font-family: p540; }
 
@@ -4868,7 +4868,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p541;
-  src: url(../fonts/quran-page/ttf/p541.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p541.ttf) format("truetype"); }
 .p541 {
   font-family: p541; }
 
@@ -4877,7 +4877,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p542;
-  src: url(../fonts/quran-page/ttf/p542.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p542.ttf) format("truetype"); }
 .p542 {
   font-family: p542; }
 
@@ -4886,7 +4886,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p543;
-  src: url(../fonts/quran-page/ttf/p543.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p543.ttf) format("truetype"); }
 .p543 {
   font-family: p543; }
 
@@ -4895,7 +4895,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p544;
-  src: url(../fonts/quran-page/ttf/p544.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p544.ttf) format("truetype"); }
 .p544 {
   font-family: p544; }
 
@@ -4904,7 +4904,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p545;
-  src: url(../fonts/quran-page/ttf/p545.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p545.ttf) format("truetype"); }
 .p545 {
   font-family: p545; }
 
@@ -4913,7 +4913,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p546;
-  src: url(../fonts/quran-page/ttf/p546.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p546.ttf) format("truetype"); }
 .p546 {
   font-family: p546; }
 
@@ -4922,7 +4922,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p547;
-  src: url(../fonts/quran-page/ttf/p547.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p547.ttf) format("truetype"); }
 .p547 {
   font-family: p547; }
 
@@ -4931,7 +4931,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p548;
-  src: url(../fonts/quran-page/ttf/p548.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p548.ttf) format("truetype"); }
 .p548 {
   font-family: p548; }
 
@@ -4940,7 +4940,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p549;
-  src: url(../fonts/quran-page/ttf/p549.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p549.ttf) format("truetype"); }
 .p549 {
   font-family: p549; }
 
@@ -4949,7 +4949,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p550;
-  src: url(../fonts/quran-page/ttf/p550.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p550.ttf) format("truetype"); }
 .p550 {
   font-family: p550; }
 
@@ -4958,7 +4958,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p551;
-  src: url(../fonts/quran-page/ttf/p551.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p551.ttf) format("truetype"); }
 .p551 {
   font-family: p551; }
 
@@ -4967,7 +4967,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p552;
-  src: url(../fonts/quran-page/ttf/p552.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p552.ttf) format("truetype"); }
 .p552 {
   font-family: p552; }
 
@@ -4976,7 +4976,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p553;
-  src: url(../fonts/quran-page/ttf/p553.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p553.ttf) format("truetype"); }
 .p553 {
   font-family: p553; }
 
@@ -4985,7 +4985,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p554;
-  src: url(../fonts/quran-page/ttf/p554.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p554.ttf) format("truetype"); }
 .p554 {
   font-family: p554; }
 
@@ -4994,7 +4994,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p555;
-  src: url(../fonts/quran-page/ttf/p555.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p555.ttf) format("truetype"); }
 .p555 {
   font-family: p555; }
 
@@ -5003,7 +5003,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p556;
-  src: url(../fonts/quran-page/ttf/p556.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p556.ttf) format("truetype"); }
 .p556 {
   font-family: p556; }
 
@@ -5012,7 +5012,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p557;
-  src: url(../fonts/quran-page/ttf/p557.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p557.ttf) format("truetype"); }
 .p557 {
   font-family: p557; }
 
@@ -5021,7 +5021,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p558;
-  src: url(../fonts/quran-page/ttf/p558.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p558.ttf) format("truetype"); }
 .p558 {
   font-family: p558; }
 
@@ -5030,7 +5030,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p559;
-  src: url(../fonts/quran-page/ttf/p559.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p559.ttf) format("truetype"); }
 .p559 {
   font-family: p559; }
 
@@ -5039,7 +5039,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p560;
-  src: url(../fonts/quran-page/ttf/p560.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p560.ttf) format("truetype"); }
 .p560 {
   font-family: p560; }
 
@@ -5048,7 +5048,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p561;
-  src: url(../fonts/quran-page/ttf/p561.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p561.ttf) format("truetype"); }
 .p561 {
   font-family: p561; }
 
@@ -5057,7 +5057,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p562;
-  src: url(../fonts/quran-page/ttf/p562.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p562.ttf) format("truetype"); }
 .p562 {
   font-family: p562; }
 
@@ -5066,7 +5066,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p563;
-  src: url(../fonts/quran-page/ttf/p563.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p563.ttf) format("truetype"); }
 .p563 {
   font-family: p563; }
 
@@ -5075,7 +5075,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p564;
-  src: url(../fonts/quran-page/ttf/p564.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p564.ttf) format("truetype"); }
 .p564 {
   font-family: p564; }
 
@@ -5084,7 +5084,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p565;
-  src: url(../fonts/quran-page/ttf/p565.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p565.ttf) format("truetype"); }
 .p565 {
   font-family: p565; }
 
@@ -5093,7 +5093,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p566;
-  src: url(../fonts/quran-page/ttf/p566.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p566.ttf) format("truetype"); }
 .p566 {
   font-family: p566; }
 
@@ -5102,7 +5102,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p567;
-  src: url(../fonts/quran-page/ttf/p567.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p567.ttf) format("truetype"); }
 .p567 {
   font-family: p567; }
 
@@ -5111,7 +5111,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p568;
-  src: url(../fonts/quran-page/ttf/p568.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p568.ttf) format("truetype"); }
 .p568 {
   font-family: p568; }
 
@@ -5120,7 +5120,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p569;
-  src: url(../fonts/quran-page/ttf/p569.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p569.ttf) format("truetype"); }
 .p569 {
   font-family: p569; }
 
@@ -5129,7 +5129,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p570;
-  src: url(../fonts/quran-page/ttf/p570.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p570.ttf) format("truetype"); }
 .p570 {
   font-family: p570; }
 
@@ -5138,7 +5138,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p571;
-  src: url(../fonts/quran-page/ttf/p571.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p571.ttf) format("truetype"); }
 .p571 {
   font-family: p571; }
 
@@ -5147,7 +5147,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p572;
-  src: url(../fonts/quran-page/ttf/p572.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p572.ttf) format("truetype"); }
 .p572 {
   font-family: p572; }
 
@@ -5156,7 +5156,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p573;
-  src: url(../fonts/quran-page/ttf/p573.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p573.ttf) format("truetype"); }
 .p573 {
   font-family: p573; }
 
@@ -5165,7 +5165,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p574;
-  src: url(../fonts/quran-page/ttf/p574.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p574.ttf) format("truetype"); }
 .p574 {
   font-family: p574; }
 
@@ -5174,7 +5174,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p575;
-  src: url(../fonts/quran-page/ttf/p575.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p575.ttf) format("truetype"); }
 .p575 {
   font-family: p575; }
 
@@ -5183,7 +5183,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p576;
-  src: url(../fonts/quran-page/ttf/p576.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p576.ttf) format("truetype"); }
 .p576 {
   font-family: p576; }
 
@@ -5192,7 +5192,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p577;
-  src: url(../fonts/quran-page/ttf/p577.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p577.ttf) format("truetype"); }
 .p577 {
   font-family: p577; }
 
@@ -5201,7 +5201,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p578;
-  src: url(../fonts/quran-page/ttf/p578.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p578.ttf) format("truetype"); }
 .p578 {
   font-family: p578; }
 
@@ -5210,7 +5210,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p579;
-  src: url(../fonts/quran-page/ttf/p579.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p579.ttf) format("truetype"); }
 .p579 {
   font-family: p579; }
 
@@ -5219,7 +5219,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p580;
-  src: url(../fonts/quran-page/ttf/p580.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p580.ttf) format("truetype"); }
 .p580 {
   font-family: p580; }
 
@@ -5228,7 +5228,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p581;
-  src: url(../fonts/quran-page/ttf/p581.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p581.ttf) format("truetype"); }
 .p581 {
   font-family: p581; }
 
@@ -5237,7 +5237,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p582;
-  src: url(../fonts/quran-page/ttf/p582.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p582.ttf) format("truetype"); }
 .p582 {
   font-family: p582; }
 
@@ -5246,7 +5246,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p583;
-  src: url(../fonts/quran-page/ttf/p583.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p583.ttf) format("truetype"); }
 .p583 {
   font-family: p583; }
 
@@ -5255,7 +5255,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p584;
-  src: url(../fonts/quran-page/ttf/p584.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p584.ttf) format("truetype"); }
 .p584 {
   font-family: p584; }
 
@@ -5264,7 +5264,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p585;
-  src: url(../fonts/quran-page/ttf/p585.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p585.ttf) format("truetype"); }
 .p585 {
   font-family: p585; }
 
@@ -5273,7 +5273,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p586;
-  src: url(../fonts/quran-page/ttf/p586.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p586.ttf) format("truetype"); }
 .p586 {
   font-family: p586; }
 
@@ -5282,7 +5282,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p587;
-  src: url(../fonts/quran-page/ttf/p587.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p587.ttf) format("truetype"); }
 .p587 {
   font-family: p587; }
 
@@ -5291,7 +5291,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p588;
-  src: url(../fonts/quran-page/ttf/p588.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p588.ttf) format("truetype"); }
 .p588 {
   font-family: p588; }
 
@@ -5300,7 +5300,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p589;
-  src: url(../fonts/quran-page/ttf/p589.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p589.ttf) format("truetype"); }
 .p589 {
   font-family: p589; }
 
@@ -5309,7 +5309,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p590;
-  src: url(../fonts/quran-page/ttf/p590.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p590.ttf) format("truetype"); }
 .p590 {
   font-family: p590; }
 
@@ -5318,7 +5318,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p591;
-  src: url(../fonts/quran-page/ttf/p591.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p591.ttf) format("truetype"); }
 .p591 {
   font-family: p591; }
 
@@ -5327,7 +5327,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p592;
-  src: url(../fonts/quran-page/ttf/p592.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p592.ttf) format("truetype"); }
 .p592 {
   font-family: p592; }
 
@@ -5336,7 +5336,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p593;
-  src: url(../fonts/quran-page/ttf/p593.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p593.ttf) format("truetype"); }
 .p593 {
   font-family: p593; }
 
@@ -5345,7 +5345,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p594;
-  src: url(../fonts/quran-page/ttf/p594.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p594.ttf) format("truetype"); }
 .p594 {
   font-family: p594; }
 
@@ -5354,7 +5354,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p595;
-  src: url(../fonts/quran-page/ttf/p595.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p595.ttf) format("truetype"); }
 .p595 {
   font-family: p595; }
 
@@ -5363,7 +5363,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p596;
-  src: url(../fonts/quran-page/ttf/p596.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p596.ttf) format("truetype"); }
 .p596 {
   font-family: p596; }
 
@@ -5372,7 +5372,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p597;
-  src: url(../fonts/quran-page/ttf/p597.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p597.ttf) format("truetype"); }
 .p597 {
   font-family: p597; }
 
@@ -5381,7 +5381,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p598;
-  src: url(../fonts/quran-page/ttf/p598.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p598.ttf) format("truetype"); }
 .p598 {
   font-family: p598; }
 
@@ -5390,7 +5390,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p599;
-  src: url(../fonts/quran-page/ttf/p599.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p599.ttf) format("truetype"); }
 .p599 {
   font-family: p599; }
 
@@ -5399,7 +5399,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p600;
-  src: url(../fonts/quran-page/ttf/p600.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p600.ttf) format("truetype"); }
 .p600 {
   font-family: p600; }
 
@@ -5408,7 +5408,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p601;
-  src: url(../fonts/quran-page/ttf/p601.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p601.ttf) format("truetype"); }
 .p601 {
   font-family: p601; }
 
@@ -5417,7 +5417,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p602;
-  src: url(../fonts/quran-page/ttf/p602.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p602.ttf) format("truetype"); }
 .p602 {
   font-family: p602; }
 
@@ -5426,7 +5426,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p603;
-  src: url(../fonts/quran-page/ttf/p603.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p603.ttf) format("truetype"); }
 .p603 {
   font-family: p603; }
 
@@ -5435,7 +5435,7 @@ Version       1.0.0
 
 @font-face {
   font-family: p604;
-  src: url(../fonts/quran-page/ttf/p604.ttf) format("truetype"); }
+  src: url(../fonts/quran-page-v1/ttf/p604.ttf) format("truetype"); }
 .p604 {
   font-family: p604; }
 
@@ -6589,7 +6589,8 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   direction: rtl;
   text-align: right;
   line-height: 2.5em;
-  transition: 0.3s; }
+  transition: 0.3s;
+  cursor: default; }
 
 .ayeBox .aye:hover {
   background-color: rgba(0, 200, 255, 0.05); }
@@ -6601,10 +6602,12 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   cursor: help;
   display: inline-block;
   padding: 0 1px;
-  transition: 0.3s; }
+  transition: 0.3s;
+  border-bottom: 1px solid transparent; }
 
 .ayeBox .aye span:hover {
-  color: #07b7dd; }
+  color: #07b7dd;
+  border-bottom-color: #999; }
 
 .ayeBox .aye[data-style='uthmani'] span {
   padding: 0; }

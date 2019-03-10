@@ -25,6 +25,7 @@
     text-align: right;
     line-height: 2.5em;
     transition: 0.3s;
+    cursor: default;
 }
 .ayeBox .aye:hover{
     background-color: rgba(0,200,255,0.05);
@@ -37,9 +38,11 @@
     display: inline-block;
     padding:0 1px;
     transition: 0.3s;
+    border-bottom: 1px solid transparent;
 }
 .ayeBox .aye span:hover{
     color:#07b7dd;
+    border-bottom-color:#999;
 }
 .ayeBox .aye[data-style='uthmani'] span{
     padding:0;
