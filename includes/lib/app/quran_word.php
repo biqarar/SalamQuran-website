@@ -92,8 +92,42 @@ class quran_word
 			$get_quran['aya'] = $_aye;
 		}
 
-		$load           = \lib\db\quran_word::get($get_quran);
-		$load_quran_aya = \lib\db\quran::get($get_quran);
+		$mode              = null;
+
+		if(isset($_meta['mode']))
+		{
+			$mode = $_meta['mode'];
+		}
+
+		if(!in_array($mode, ['quran', 'default']))
+		{
+			$mode = null;
+		}
+
+		if($mode === 'quran')
+		{
+			$startpage = intval(\lib\app\sura::detail($_id, 'startpage'));
+			$endpage   = intval(\lib\app\sura::detail($_id, 'endpage'));
+
+			unset($get_quran['sura']);
+			if($startpage != $endpage)
+			{
+				$startpagePlus = $startpage + 1;
+				$get_quran['1.1'] = ['= 1.1 AND', " `page` IN ($startpage, $startpagePlus)"];
+			}
+			else
+			{
+				$get_quran['page'] = $startpage;
+			}
+
+			$load           = \lib\db\quran_word::get($get_quran);
+			$load_quran_aya = \lib\db\quran::get($get_quran);
+		}
+		else
+		{
+			$load           = \lib\db\quran_word::get($get_quran);
+			$load_quran_aya = \lib\db\quran::get($get_quran);
+		}
 		$quran_aya      = [];
 
 		foreach ($load_quran_aya as $key => $value)
@@ -104,13 +138,24 @@ class quran_word
 
 		self::load_translate($load, $_meta);
 
-		$quran = [];
+		$quran             = [];
 
 		$first_verse_title = null;
 
 		foreach ($load as $key => $value)
 		{
-			if(!isset($quran['aya'][$value['aya']]['detail']))
+			if($mode === 'quran')
+			{
+				$myKey      = 'line';
+				$myArrayKey = $value['sura']. '_'. $value['line'];
+			}
+			else
+			{
+				$myKey      = 'aya';
+				$myArrayKey = $value['sura']. '_'. $value['aya'];
+			}
+
+			if(!isset($quran[$myKey][$myArrayKey]['detail']))
 			{
 				$quran_aya_key = $value['sura']. '_'. $value['aya'];
 
@@ -134,7 +179,7 @@ class quran_word
 					$first_verse_title = $verse_title;
 				}
 
-				$quran['aya'][$value['aya']]['detail'] =
+				$quran[$myKey][$myArrayKey]['detail'] =
 				[
 					'index'         => isset($quran_aya[$quran_aya_key]['index']) ? $quran_aya[$quran_aya_key]['index'] : null,
 					'text'          => isset($quran_aya[$quran_aya_key]['text']) ? self::normalize($quran_aya[$quran_aya_key]['text']) : null,
@@ -157,9 +202,9 @@ class quran_word
 				];
 			}
 
-			if(!isset($quran['aya'][$value['aya']]['word']))
+			if(!isset($quran[$myKey][$myArrayKey]['word']))
 			{
-				$quran['aya'][$value['aya']]['word'] = [];
+				$quran[$myKey][$myArrayKey]['word'] = [];
 			}
 			if(isset($value['audio']))
 			{
@@ -182,7 +227,7 @@ class quran_word
 				$value['text'] = self::normalize($value['text']);
 			}
 
-			$quran['aya'][$value['aya']]['word'][] = $value;
+			$quran[$myKey][$myArrayKey]['word'][] = $value;
 		}
 
 		$result['text']    = $quran;
