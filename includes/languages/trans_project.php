@@ -418,34 +418,44 @@ class twigTransTerms
 	echo T_("An-Nas");                                                                // Line 578
 	echo T_("The Mankind");                                                           // Line 578
 
-	//----------------------projects/SalamQuran/content/home/block-ayeTranslation.html
-	echo T_("Remove this translate");                                                 // Line 6
-
-	//---------------------------------projects/SalamQuran/content/home/block-aye.html
-
 	//-----------------------------------projects/SalamQuran/content/home/display.html
 	echo T_("Quran");                                                                 // Line 12
 
-	//--------------------------projects/SalamQuran/content/home/block-ayeActions.html
+	//--------------------------projects/SalamQuran/content/home/blocks/block-cmd.html
+
+	//---------------------projects/SalamQuran/content/home/blocks/block-aye-text.html
+
+	//---------------projects/SalamQuran/content/home/blocks/block-ayeTranslation.html
+	echo T_("Remove this translate");                                                 // Line 6
+
+	//---------------projects/SalamQuran/content/home/blocks/block-cmd-translator.html
+	echo T_("Add Translations");                                                      // Line 4
+	echo T_("Add new translation");                                                   // Line 7
+	echo T_("All Translations");                                                      // Line 29
+
+	//------------------projects/SalamQuran/content/home/blocks/block-aye-uthmani.html
+
+	//---------------------projects/SalamQuran/content/home/blocks/block-cmd-mode.html
+	echo T_("Change Read Mode");                                                      // Line 8
+
+	//---------------------projects/SalamQuran/content/home/blocks/block-cmd-qari.html
+	echo T_("Change Qari");                                                           // Line 9
+
+	//--------------------projects/SalamQuran/content/home/blocks/block-cmd-style.html
+	echo T_("Change Font of texts");                                                  // Line 8
+
+	//-------------------projects/SalamQuran/content/home/blocks/block-ayeActions.html
 	echo T_("Play");                                                                  // Line 6
 	echo T_("Pause");                                                                 // Line 6
 	echo T_("Copy");                                                                  // Line 9
 
-	//------------------------------projects/SalamQuran/content/home/block-detail.html
-	echo T_("Change Qari");                                                           // Line 12
-	echo T_("Add Translations");                                                      // Line 28
-	echo T_("Add new translation");                                                   // Line 31
-	echo T_("* All");                                                                 // Line 36
-	echo T_("Change Read Mode");                                                      // Line 63
-	echo T_("Change Style");                                                          // Line 82
+	//-------------------projects/SalamQuran/content/home/blocks/block-navigation.html
+	echo T_("Previous Surah");                                                        // Line 7
+	echo T_("Beginning of Surah");                                                    // Line 20
+	echo T_("Back to list of suras");                                                 // Line 24
+	echo T_("Next Surah");                                                            // Line 32
 
 	//------------------------------projects/SalamQuran/content/home/sore-bookTxt.html
-
-	//--------------------------projects/SalamQuran/content/home/block-navigation.html
-	echo T_("Previous Surah");                                                        // Line 5
-	echo T_("Beginning of Surah");                                                    // Line 13
-	echo T_("Back to list of suras");                                                 // Line 14
-	echo T_("Next Surah");                                                            // Line 20
 
 	//----------------------------------projects/SalamQuran/content/terms/display.html
 	echo T_("Utilizing SalamQuran's services means the acceptance of and commitment to observing all the tenors of this agreement.");// Line 6
