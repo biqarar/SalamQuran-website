@@ -1,0 +1,10 @@
+{%if quranLoaded.sura_pagination %}
+	<nav class="pagination f fs11 mTB5" data-xhr='pagination'>
+
+		<div class="c flex justify-center">
+	{%for key, value in quranLoaded.sura_pagination%}
+			<a {%if value.link%} href="{{value.link}}" {%endif%} title="{{value.title}}" class="{{value.class}}">{{value.text | raw}}</a>
+	{%endfor%}
+		</div>
+	</nav>
+{%endif%}

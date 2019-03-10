@@ -33,6 +33,11 @@ class controller
 			$meta['qari'] = \dash\request::get('qari');
 		}
 
+		if(\dash\request::get('p'))
+		{
+			$meta['p'] = \dash\request::get('p');
+		}
+
 		if(\dash\request::get('mode'))
 		{
 			$meta['mode'] = \dash\request::get('mode');
