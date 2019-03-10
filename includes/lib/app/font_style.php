@@ -86,9 +86,9 @@ class font_style
 			'default' =>
 				[
 					'default' => true,
-					'name'    => T_('Default'),
+					'name'    => T_('IRANSans'),
 					'font'    => null,
-					'class'   => 'list',
+					'class'   => 'file-1',
 					'url'     => $master. http_build_query(array_merge($get, [])),
 				],
 
@@ -97,17 +97,17 @@ class font_style
 					'default' => false,
 					'name'    => T_('Uthmani'),
 					'font'    => null,
-					'class'   => 'book',
+					'class'   => 'checkbox',
 					'url'     => $master. http_build_query(array_merge($get, ['font' => 'uthmani'])),
 				],
-			'vazeh' =>
-				[
-					'default' => false,
-					'name'    => T_('Vazeh font'),
-					'font'    => null,
-					'class'   => 'magic',
-					'url'     => $master. http_build_query(array_merge($get, ['font' => 'vazeh'])),
-				],
+			// 'vazeh' =>
+			// 	[
+			// 		'default' => false,
+			// 		'name'    => T_('Vazeh font'),
+			// 		'font'    => null,
+			// 		'class'   => 'magic',
+			// 		'url'     => $master. http_build_query(array_merge($get, ['font' => 'vazeh'])),
+			// 	],
 		];
 		return $font_style;
 	}

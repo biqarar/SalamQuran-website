@@ -34,7 +34,7 @@ class read_mode
 			'default' =>
 				[
 					'default' => true,
-					'name'    => T_('Default'),
+					'name'    => T_('Aye Block'),
 					'font'    => null,
 					'class'   => 'align-right',
 					'url'     => $master. http_build_query(array_merge($get, [])),
@@ -43,7 +43,7 @@ class read_mode
 			'quran' =>
 				[
 					'default' => false,
-					'name'    => T_('Quran'),
+					'name'    => T_('Quran Book'),
 					'font'    => null,
 					'class'   => 'book',
 					'url'     => $master. http_build_query(array_merge($get, ['mode' => 'quran'])),
