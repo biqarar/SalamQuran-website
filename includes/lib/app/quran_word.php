@@ -741,7 +741,7 @@ class quran_word
 			}
 
 			$quran_detail              = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of nim"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of half of hizb"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
 
 			if($next_nim)
 			{
