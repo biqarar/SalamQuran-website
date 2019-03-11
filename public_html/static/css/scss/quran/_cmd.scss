@@ -1,8 +1,8 @@
 .Quran .fullCommand{
-
+    user-select: none;
 }
 .Quran .fullCommand .btn{
-	background: rgba(0,100,255,0.05);
+    background: rgba(0,100,255,0.05);
 }
 
 // dropdowns
@@ -20,7 +20,7 @@
     text-shadow: none;
     font-weight: 700;
     height: 36px;
-	line-height: 36px;
+    line-height: 36px;
     font-style: normal;
     text-decoration: none;
     border-radius: .28rem;

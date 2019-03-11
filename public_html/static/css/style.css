@@ -6432,6 +6432,11 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   text-align: right;
   display: none; }
 
+.quranNav {
+  text-align: center;
+  margin: 25px 0;
+  user-select: none; }
+
 .Quran.bookTxt {
   max-width: 412px;
   margin: 0 auto;
@@ -6451,6 +6456,9 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   line-height: 1.7em;
   direction: rtl;
   text-align: center; }
+
+.Quran .fullCommand {
+  user-select: none; }
 
 .Quran .fullCommand .btn {
   background: rgba(0, 100, 255, 0.05); }
