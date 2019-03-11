@@ -5,7 +5,7 @@
         <figcaption>
           <div class="title">{{quranLoaded.detail.first_title}}</div>
           <div class="meta">
-            <span class="artist">{{qariLoaded.qari}}</span>
+            <span class="artist">{{qariLoaded.name}}</span>
             <span class="album">{{qariLoaded.type}}</span>
           </div>
         </figcaption>
@@ -13,7 +13,7 @@
     </figure>
     <div class="c">
       <audio controls preload id="talavat" controlsList="nodownload">
-        <source src="{{qariLoaded.addr}}001001.{{qariLoaded.audio_type}}" type="{%if qariLoaded.audio_type== 'ogg'%}audio/ogg{%else%}audio/mpeg{%endif%}">
+        <source src="{{qariLoaded.addr}}001001.mp3" type="audio/mpeg">
       </audio>
     </div>
   </div>
