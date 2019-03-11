@@ -110,7 +110,13 @@ class quran_word
 
 				if($first_character === 's' && ctype_digit($number) && ctype_digit($number2))
 				{
-					return self::load_quran('sura',$number, $number2, $_meta);
+					if(intval($number) >= 1 && intval($number) <= 114)
+					{
+						if(intval($number2) >= 1 && intval($number2) <= intval(\lib\app\sura::detail($number, 'ayas')))
+						{
+							return self::load_quran('sura',$number, $number2, $_meta);
+						}
+					}
 				}
 
 			}
