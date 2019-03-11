@@ -40,6 +40,10 @@
 	.ayeBox .aye{
 		font-size: 1.2em;
 	}
+	.ayeBox .aye[data-style='uthmani']{
+	    font-size: 1.5em;
+	    line-height: 2.5em;
+	}
 	.ayeBox .meta{
 		width: 100%;
 	}

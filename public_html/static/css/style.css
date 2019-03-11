@@ -6605,7 +6605,8 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   text-align: right;
   line-height: 2em;
   transition: 0.3s;
-  cursor: default; }
+  cursor: default;
+  margin: 0.5rem 0; }
 
 .ayeBox .aye:hover {
   background-color: rgba(0, 200, 255, 0.05); }
@@ -6620,11 +6621,13 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   font-size: 1.2em; }
 
 .ayeBox .aye span {
-  cursor: help;
   display: inline-block;
   padding: 0 1px;
   transition: 0.3s;
   border-bottom: 1px solid transparent; }
+
+.ayeBox .aye span[title], .ayeBox .aye span[data-tippy-title] {
+  cursor: help; }
 
 .ayeBox .aye span:hover {
   color: #07b7dd;
@@ -6678,7 +6681,8 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   margin-bottom: 0; }
 
 .ayeBox .meta a.opr {
-  font-family: monospace; }
+  font-family: monospace;
+  font-size: 1.1em; }
 
 .ayeBox .meta .opr.play::before {
   content: "\e110";
@@ -6851,6 +6855,10 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 
   .ayeBox .aye {
     font-size: 1.2em; }
+
+  .ayeBox .aye[data-style='uthmani'] {
+    font-size: 1.5em;
+    line-height: 2.5em; }
 
   .ayeBox .meta {
     width: 100%; }
