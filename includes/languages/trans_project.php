@@ -418,9 +418,6 @@ class twigTransTerms
 	echo T_("An-Nas");                                                                // Line 578
 	echo T_("The Mankind");                                                           // Line 578
 
-	//-----------------------------------projects/SalamQuran/content/home/display.html
-	echo T_("Quran");                                                                 // Line 12
-
 	//--------------------------projects/SalamQuran/content/home/blocks/block-cmd.html
 
 	//---------------------projects/SalamQuran/content/home/blocks/block-aye-text.html
@@ -429,20 +426,20 @@ class twigTransTerms
 	echo T_("Remove this translate");                                                 // Line 6
 
 	//---------------projects/SalamQuran/content/home/blocks/block-cmd-translator.html
-	echo T_("Add Translations");                                                      // Line 4
-	echo T_("Add new translation");                                                   // Line 7
-	echo T_("All Translations");                                                      // Line 29
+	echo T_("Add Translations");                                                      // Line 3
+	echo T_("Add new translation");                                                   // Line 5
+	echo T_("All Translations");                                                      // Line 13
 
 	//------------------projects/SalamQuran/content/home/blocks/block-aye-uthmani.html
 
 	//---------------------projects/SalamQuran/content/home/blocks/block-cmd-mode.html
-	echo T_("Change Read Mode");                                                      // Line 8
+	echo T_("Change Read Mode");                                                      // Line 5
 
 	//---------------------projects/SalamQuran/content/home/blocks/block-cmd-qari.html
-	echo T_("Change Qari");                                                           // Line 9
+	echo T_("Change Qari");                                                           // Line 6
 
 	//--------------------projects/SalamQuran/content/home/blocks/block-cmd-style.html
-	echo T_("Change Font of texts");                                                  // Line 8
+	echo T_("Change Font of texts");                                                  // Line 5
 
 	//-------------------projects/SalamQuran/content/home/blocks/block-ayeActions.html
 	echo T_("Play");                                                                  // Line 6
@@ -450,7 +447,7 @@ class twigTransTerms
 	echo T_("Copy");                                                                  // Line 9
 
 	//-------------------projects/SalamQuran/content/home/blocks/block-navigation.html
-	echo T_("Back to list of suras");                                                 // Line 24
+	echo T_("Back to list of suras");                                                 // Line 25
 
 	//------------------------------projects/SalamQuran/content/home/sore-bookTxt.html
 
