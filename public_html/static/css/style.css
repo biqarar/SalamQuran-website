@@ -6603,7 +6603,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   font-size: 1.4em;
   direction: rtl;
   text-align: right;
-  line-height: 2.5em;
+  line-height: 2em;
   transition: 0.3s;
   cursor: default; }
 
