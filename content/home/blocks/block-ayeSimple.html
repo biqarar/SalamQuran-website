@@ -1,6 +1,6 @@
     <div class='ayeSimple'>
 {%for wordIndex, myWord in myAye.word%}
-{%if myWord.char_type == 'word'%}
+{%if myWord.char_type != 'end'%}
       {{myWord.simple}}
 {%else%}
       {{myAye.detail.aya | fitNumber}}
