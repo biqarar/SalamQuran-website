@@ -66,7 +66,7 @@ class qari
 			['index' => 1085, 'lang' => 'fa', 'type' => T_('Translate'), 'addr'  => 'audio/translation-fa-makarem/', 'slug'  => 'makarem', 'name'  => T_('Naser makarem shirazi'),],
 
 			// ----------------- trnaslate - fa - qeraati
-			['index' => 1086, 'lang' => 'fa', 'type' => T_('Translate'), 'addr'  => 'audio/translation-fa-qaraati/', 'slug'  => 'qaraati', 'name'  => T_('Mohsen Qaraati'),],
+			['index' => 1086, 'lang' => 'fa', 'type' => T_('Translate'), 'addr'  => 'audio/translation-fa-qaraati/', 'slug'  => 'qaraati', 'name'  => T_('Mohsen Qaraati'), 'default_lang' => true],
 
 		];
 
@@ -86,8 +86,25 @@ class qari
 
 	public static function site_list()
 	{
-		$list      = self::list();
-		$site_list = array_map(['self', 'ready'], $list);
+		$list         = self::list();
+		$list         = array_map(['self', 'ready'], $list);
+		$current_lang = \dash\language::current();
+		$lang_list    = [];
+		$all_list     = [];
+
+		foreach ($list as $key => $value)
+		{
+			if(isset($value['lang']) && $value['lang'] === $current_lang)
+			{
+				$lang_list[] = $value;
+			}
+			else
+			{
+				$all_list[] = $value;
+			}
+		}
+
+		$site_list = array_merge($lang_list, $all_list);
 
 		return $site_list;
 	}
@@ -101,14 +118,21 @@ class qari
 
 		$list    = self::list();
 
-		$default = null;
-		$load    = null;
+		$current_lang = \dash\language::current();
+		$default_lang = null;
+		$default      = null;
+		$load         = null;
 
 		foreach ($list as $key => $value)
 		{
 			if(intval($value['index']) === intval($_id))
 			{
 				$load = $value;
+			}
+
+			if(isset($value['default_lang']) && $value['default_lang'] && isset($value['lang']) && $value['lang'] === $current_lang)
+			{
+				$default_lang = $value;
 			}
 
 			if(isset($value['default']) && $value['default'])
@@ -119,7 +143,14 @@ class qari
 
 		if(!$load)
 		{
-			$load = $default;
+			if(!$default_lang)
+			{
+				$load = $default;
+			}
+			else
+			{
+				$load = $default_lang;
+			}
 		}
 
 		$load = self::ready($load);
