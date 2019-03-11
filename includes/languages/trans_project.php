@@ -450,10 +450,7 @@ class twigTransTerms
 	echo T_("Copy");                                                                  // Line 9
 
 	//-------------------projects/SalamQuran/content/home/blocks/block-navigation.html
-	echo T_("Previous Surah");                                                        // Line 7
-	echo T_("Beginning of Surah");                                                    // Line 20
 	echo T_("Back to list of suras");                                                 // Line 24
-	echo T_("Next Surah");                                                            // Line 32
 
 	//------------------------------projects/SalamQuran/content/home/sore-bookTxt.html
 
