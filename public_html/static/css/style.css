@@ -6489,13 +6489,13 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   display: none; }
 
 .Quran .ui.dropdown > .text span.type {
-  height: 10px;
-  line-height: 10px !important;
+  height: 15px;
+  line-height: 12px !important;
   width: 100% !important;
   color: #999;
   font-size: 0.8em;
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   right: 10px;
   left: 40px; }
 
@@ -6829,6 +6829,9 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 
   #soreha .c7 abbr {
     display: inline-block; }
+
+  .Quran .ui.dropdown {
+    padding: 0 10px 0 40px; }
 
   .ayeBox {
     padding: 0.5em; }
