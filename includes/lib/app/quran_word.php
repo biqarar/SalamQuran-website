@@ -652,10 +652,9 @@ class quran_word
 			}
 		}
 
-		$sura_detail['first_verse'] = $first_verse;
-
-		$result['detail']           = $quran_detail;
-		$result['pagination']  = $pagination;
+		$quran_detail['first_verse'] = $first_verse;
+		$result['detail']            = $quran_detail;
+		$result['pagination']        = $pagination;
 
 		// \dash\notif::api($result);
 
@@ -688,84 +687,6 @@ class quran_word
 			return \Normalizer::normalize($_text);
 		}
 		return $_text;
-	}
-
-
-	private static function aye($_id, $_meta = [])
-	{
-		// load aye
-		$_id = intval($_id);
-		if(intval($_id) >= 1 && intval($_id) <= 6236 )
-		{
-			$load             = \lib\db\quran_word::get(['index' => $_id]);
-			$result           = [];
-			$result['aye']    = $load;
-
-			if(isset($load[0]['sura']))
-			{
-				$result['detail'] = \lib\db\sura::get(['index' => $load[0]['sura'], 'limit' => 1]);
-			}
-
-			$result['translate'] = self::load_translate($load, $_meta);
-
-			self::$find_by = 'aye';
-
-			return $result;
-		}
-		else
-		{
-			return false;
-		}
-	}
-
-
-	private static function page($_id, $_meta = [])
-	{
-		// load page
-		$_id = intval($_id);
-		if(intval($_id) >= 1 && intval($_id) <= 604 )
-		{
-			$load             = \lib\db\quran_word::get(['page' => $_id]);
-			$result           = [];
-			$result['aye']    = $load;
-
-			if(isset($load[0]['sura']))
-			{
-				$result['detail'] = \lib\db\sura::get(['index' => $load[0]['sura'], 'limit' => 1]);
-			}
-
-			$result['translate'] = self::load_translate($load, $_meta);
-
-			self::$find_by = 'page';
-
-			return $result;
-		}
-		else
-		{
-			return false;
-		}
-	}
-
-
-
-	private static function hezb($_id, $_meta = [])
-	{
-		// load hezb
-		$_id = intval($_id);
-		if(intval($_id) >= 1 && intval($_id) <= 120 )
-		{
-			$load                = \lib\db\quran_word::get(['hezb' => $_id]);
-			$result              = [];
-			$result['aye']       = $load;
-			$result['translate'] = self::load_translate($load, $_meta);
-			self::$find_by       = 'hezb';
-
-			return $result;
-		}
-		else
-		{
-			return false;
-		}
 	}
 
 
