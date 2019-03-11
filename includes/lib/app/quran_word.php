@@ -14,6 +14,8 @@ class quran_word
 		$default_meta =
 		[
 			'translate' => null,
+			'qari'      => null,
+			'mode'      => null,
 		];
 
 		if(!is_array($_meta))
@@ -219,6 +221,11 @@ class quran_word
 
 	private static function load_quran($_type, $_id, $_aye = null, $_meta = [])
 	{
+		if($_meta['mode'] === 'quran')
+		{
+			return self::quran_mode(...func_get_args());
+		}
+
 		// load sure
 		$_id = intval($_id);
 		$result           = [];
@@ -880,6 +887,188 @@ class quran_word
 		}
 
 		return $result;
+	}
+
+	private static function quran_mode($_type, $_id, $_aya, $_meta)
+	{
+		$first_page = null;
+		$endpage   = null;
+
+		switch ($_type)
+		{
+			case 'sura':
+				if(!$_aya)
+				{
+					$first_page = self::find_first_page($_type, $_id);
+				}
+				else
+				{
+					$first_page = self::find_first_page($_type, $_id, $_aya);
+				}
+				break;
+
+			case 'juz':
+			case 'hizb':
+			case 'rub':
+				$first_page = self::find_first_page($_type, $_id);
+				break;
+
+			case 'page':
+				$first_page = intval($_id);
+				break;
+
+			default:
+				return false;
+				break;
+		}
+
+		$page1 = null;
+		$page2 = null;
+
+		if($first_page % 2 === 0)
+		{
+			$page1 = $first_page - 1;
+			$page2 = $first_page;
+		}
+		else
+		{
+			$page1 = $first_page;
+			$page2 = $first_page + 1;
+		}
+
+
+
+		$get_quran = [];
+		$get_quran['1.1'] = ['= 1.1 AND', " `page` IN ($page1, $page2)"];
+		$load           = \lib\db\quran_word::get($get_quran);
+		$load_quran_aya = \lib\db\quran::get($get_quran);
+
+		$quran             = [];
+		$quran['page1']     = [];
+		$quran['page2']     = [];
+
+		$first_verse = [];
+
+		foreach ($load as $key => $value)
+		{
+
+			$myKey      = 'line';
+			$myArrayKey = $value['sura']. '_'. $value['line'];
+
+			$myPageKey = intval($value['page']) === $page1 ? 'page1' : 'page2';
+
+			if(!isset($quran[$myPageKey][$myKey][$myArrayKey]['detail']))
+			{
+				$quran_aya_key = $value['sura']. '_'. $value['aya'];
+
+				$verse_title = null;
+				$verse_title .= T_("Quran");
+				$verse_title .= ' - ';
+				$verse_title .= T_("Sura");
+				$verse_title .= ' ';
+				$verse_title .= \dash\utility\human::fitNumber($value['sura']). ' '. T_(\lib\app\sura::detail($value['sura'], 'tname'));
+				$verse_title .= ' - ';
+				$verse_title .= T_("Aya");
+				$verse_title .= ' ';
+				$verse_title .= \dash\utility\human::fitNumber($value['aya']);
+
+				$verse_url = \dash\url::kingdom();
+				$verse_url .= '/s'. $value['sura'];
+				$verse_url .= '/'. $value['aya'];
+
+				if(!$first_verse)
+				{
+					$first_verse['title'] = $verse_title;
+					$first_verse['url']   = $verse_url;
+					$first_verse['audio'] = self::get_aya_audio($value['sura'], $value['aya'], $_meta);
+				}
+
+				$quran[$myPageKey][$myKey][$myArrayKey]['detail'] =
+				[
+					'index'         => isset($quran_aya[$quran_aya_key]['index']) ? $quran_aya[$quran_aya_key]['index'] : null,
+					'text'          => isset($quran_aya[$quran_aya_key]['text']) ? self::normalize($quran_aya[$quran_aya_key]['text']) : null,
+					'simple'        => isset($quran_aya[$quran_aya_key]['simple']) ? $quran_aya[$quran_aya_key]['simple'] : null,
+					'juz'           => isset($quran_aya[$quran_aya_key]['juz']) ? $quran_aya[$quran_aya_key]['juz'] : null,
+					'hizb'          => isset($quran_aya[$quran_aya_key]['hizb']) ? $quran_aya[$quran_aya_key]['hizb'] : null,
+					'word'          => isset($quran_aya[$quran_aya_key]['word']) ? $quran_aya[$quran_aya_key]['word'] : null,
+					'sajdah'        => isset($quran_aya[$quran_aya_key]['sajdah']) ? $quran_aya[$quran_aya_key]['sajdah'] : null,
+					'sajdah_number' => isset($quran_aya[$quran_aya_key]['sajdah_number']) ? $quran_aya[$quran_aya_key]['sajdah_number'] : null,
+					'rub'           => isset($quran_aya[$quran_aya_key]['rub']) ? $quran_aya[$quran_aya_key]['rub'] : null,
+					'word'          => isset($quran_aya[$quran_aya_key]['word']) ? $quran_aya[$quran_aya_key]['word'] : null,
+					'aya'           => $value['aya'],
+					'sura'          => $value['sura'],
+					'verse_key'     => $value['verse_key'],
+					'verse_title'   => $verse_title,
+					'verse_url'     => $verse_url,
+					'page'          => $value['page'],
+					'audio'         => self::get_aya_audio($value['sura'], $value['aya'], $_meta),
+					'translate'     => self::get_translation($value['sura'], $value['aya'], $_meta),
+				];
+			}
+
+			if(!isset($quran[$myPageKey][$myKey][$myArrayKey]['word']))
+			{
+				$quran[$myPageKey][$myKey][$myArrayKey]['word'] = [];
+			}
+			if(isset($value['audio']))
+			{
+				$my_sura = intval($value['sura']);
+
+				if($my_sura < 10)
+				{
+					$my_sura = '00'. $my_sura;
+				}
+				elseif($my_sura < 100)
+				{
+					$my_sura = '0'. $my_sura;
+				}
+
+				$value['audio'] = $my_sura. $value['audio'];
+			}
+
+			if(isset($value['text']))
+			{
+				$value['text'] = self::normalize($value['text']);
+			}
+
+			$quran[$myPageKey][$myKey][$myArrayKey]['word'][] = $value;
+		}
+
+		$result['text']    = $quran;
+
+		$result['mode_quran'] = false;
+
+
+
+		$quran_detail['first_verse'] = $first_verse;
+		$result['detail']            = $quran_detail;
+		// $result['pagination']        = $pagination;
+
+		// \dash\notif::api($result);
+
+		self::$find_by    = $_type;
+		return $result;
+
+		j([$page1, $page2]);
+	}
+
+
+	private static function find_first_page($_field, $_value, $_aya = null)
+	{
+		if(!$_aya)
+		{
+			$result = \lib\db\quran_word::get([$_field => $_value, 'limit' => 1]);
+		}
+		else
+		{
+			$result = \lib\db\quran_word::get([$_field => $_value, 'aya' => $_aya, 'limit' => 1]);
+		}
+
+		if(isset($result['page']))
+		{
+			return intval($result['page']);
+		}
+		return null;
 	}
 }
 ?>
