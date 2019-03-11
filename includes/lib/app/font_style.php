@@ -96,7 +96,7 @@ class font_style
 					'name'    => T_('IRANSans'),
 					'font'    => null,
 					'class'   => 'file-1',
-					'url'     => $master. http_build_query(array_merge($get, [])),
+					'url'     => $master. http_build_query(array_merge($get, ['font' => 'iransans'])),
 				],
 
 			'uthmani' =>
