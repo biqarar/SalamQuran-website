@@ -368,27 +368,29 @@ class quran_word
 			$prev_sura = null;
 		}
 
-		$sura_detail = \lib\app\sura::detail($_id);
+		$quran_detail = \lib\app\sura::detail($_id);
 
 		if($_type === 'sura')
 		{
 			if($next_sura)
 			{
-				$sura_detail['next_sura'] =
+				$quran_detail['next'] =
 				[
-					'index' => $next_sura,
-					'url'   => \dash\url::kingdom(). '/s'. $next_sura,
-					'title' => T_(\lib\app\sura::detail($next_sura, 'tname')),
+					'index'    => $next_sura,
+					'url'      => \dash\url::kingdom(). '/s'. $next_sura,
+					'title'    => T_("Next Surah"),
+					'subtitle' => T_(\lib\app\sura::detail($next_sura, 'tname')),
 				];
 			}
 
 			if($prev_sura)
 			{
-				$sura_detail['prev_sura'] =
+				$quran_detail['prev'] =
 				[
 					'index' => $prev_sura,
 					'url'   => \dash\url::kingdom(). '/s'. $prev_sura,
-					'title' => T_(\lib\app\sura::detail($prev_sura, 'tname')),
+					'title' => T_("Previous Surah"),
+					'subtitle' => T_(\lib\app\sura::detail($prev_sura, 'tname')),
 				];
 			}
 		}
@@ -407,25 +409,27 @@ class quran_word
 				$prev_juz = null;
 			}
 
-			$juz_detail = [];
+			$quran_detail = [];
 
 			if($next_juz)
 			{
-				$juz_detail['next_juz'] =
+				$quran_detail['next'] =
 				[
-					'index' => $next_juz,
-					'url'   => \dash\url::kingdom(). '/j'. $next_juz,
-					'title' => T_('juz') . ' '. \dash\utility\human::fitNumber($next_juz),
+					'index'    => $next_juz,
+					'url'      => \dash\url::kingdom(). '/j'. $next_juz,
+					'title'    => T_("Next juz"),
+					'subtitle' => T_('juz') . ' '. \dash\utility\human::fitNumber($next_juz),
 				];
 			}
 
 			if($prev_juz)
 			{
-				$juz_detail['prev_juz'] =
+				$quran_detail['prev'] =
 				[
-					'index' => $prev_juz,
-					'url'   => \dash\url::kingdom(). '/j'. $prev_juz,
-					'title' => T_('juz') . ' '. \dash\utility\human::fitNumber($prev_juz),
+					'index'    => $prev_juz,
+					'url'      => \dash\url::kingdom(). '/j'. $prev_juz,
+					'title'    => T_("Previous sura"),
+					'subtitle' => T_('juz') . ' '. \dash\utility\human::fitNumber($prev_juz),
 				];
 			}
 
@@ -433,7 +437,7 @@ class quran_word
 
 		$sura_detail['first_verse'] = $first_verse;
 
-		$result['detail']           = $sura_detail;
+		$result['detail']           = $quran_detail;
 		$result['sura_pagination']  = $pagination;
 
 		// \dash\notif::api($result);

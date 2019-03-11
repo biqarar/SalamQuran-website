@@ -1,12 +1,12 @@
 
 <div class="f fix txtC mTB25">
   <div class="c sauto os txtL">
-{%if quranLoaded.detail.prev_sura%}
-    <a class="btn outline" href="{{quranLoaded.detail.prev_sura.url}}">
+{%if quranLoaded.detail.prev%}
+    <a class="btn outline" href="{{quranLoaded.detail.prev.url}}">
       <i class="compact floatL mR10 sf-chevron-left"></i>
-      <span class="s0">{%trans "Previous Surah"%}</span>
-      <span class="badge mLR5">{{quranLoaded.detail.prev_sura.index | fitNumber}}</span>
-      <span class="s0">{{quranLoaded.detail.prev_sura.title}}</span>
+      <span class="s0">{{quranLoaded.detail.prev.title}}</span>
+      <span class="badge mLR5">{{quranLoaded.detail.prev.index | fitNumber}}</span>
+      <span class="s0">{{quranLoaded.detail.prev.subtitle}}</span>
     </a>
 {%endif%}
   </div>
@@ -27,11 +27,11 @@
   </div>
 
   <div class="c sauto txtR">
-{%if quranLoaded.detail.next_sura%}
-    <a class="btn outline" href="{{quranLoaded.detail.next_sura.url}}">
-      <span class="s0">{%trans "Next Surah"%}</span>
-      <span class="badge mLR5">{{quranLoaded.detail.next_sura.index | fitNumber}}</span>
-      <span class="s0">{{quranLoaded.detail.next_sura.title}}</span>
+{%if quranLoaded.detail.next%}
+    <a class="btn outline" href="{{quranLoaded.detail.next.url}}">
+      <span class="s0">{{quranLoaded.detail.next.title}}</span>
+      <span class="badge mLR5">{{quranLoaded.detail.next.index | fitNumber}}</span>
+      <span class="s0">{{quranLoaded.detail.next.subtitle}}</span>
       <i class="compact floatR mL10 sf-chevron-right"></i>
     </a>
 {%endif%}
