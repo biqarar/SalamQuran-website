@@ -4,16 +4,10 @@
 
 {%block page%}
 
-    {%if quranLoaded and requestGET.mode != 'quran'%}
-
-      {%include 'content/home/theme-ayeBox.html'%}
-
-    {%elseif quranLoaded and requestGET.mode == 'quran'%}
-
-      {%include 'content/home/theme-onePage.html'%}
+    {%if quranLoaded%}
+      {%include 'content/home/theme.html'%}
 
     {%else%}
-
       {%include 'content/home/list-sore.html'%}
 
     {%endif%}

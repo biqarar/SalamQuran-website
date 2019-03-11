@@ -1,7 +1,3 @@
-<div class='Quran' id="iqra">
-{%include 'content/home/blocks/block-cmd.html'%}
-{%include 'content/home/blocks/block-navigation.html' with {'navPosition': 'top'}%}
-
 
 {%for myAyeKey, myAye in quranLoaded.text.aya%}
       {%include 'content/home/blocks/block-besmellah.html'%}
@@ -23,8 +19,3 @@
 
   </div>
 {%endfor%}
-
-{%include 'content/home/blocks/block-navigation.html' with {'navPosition': 'bottom'}%}
-{%include 'content/home/blocks/block-sura-pagination.html'%}
-</div>
-
