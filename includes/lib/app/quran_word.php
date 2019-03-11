@@ -64,7 +64,14 @@ class quran_word
 			}
 			elseif($first_character === 'p' && ctype_digit($number))
 			{
-				return self::page($number, $_meta);
+				if(intval($number) >= 1 && intval($number) <= 60 )
+				{
+					return self::load_quran('page', $number, null, $_meta);
+				}
+				else
+				{
+					return false;
+				}
 			}
 			elseif($first_character === 'a' && ctype_digit($number))
 			{
@@ -250,7 +257,11 @@ class quran_word
 			}
 			elseif($_type === 'hizb')
 			{
-				// $get_quran['2.2'] = [' = 2.2 AND', " `page` >= $pagination_current[0] AND `page` <= $pagination_current[1] "];
+				// nothing
+			}
+			elseif($_type === 'page')
+			{
+				// nothing
 			}
 
 			$load           = \lib\db\quran_word::get($get_quran);
@@ -484,6 +495,46 @@ class quran_word
 					'url'      => \dash\url::kingdom(). '/h'. $prev_hizb. '?'. \dash\url::query(),
 					'title'    => T_("Previous hizb"),
 					'subtitle' => T_('hizb') . ' '. \dash\utility\human::fitNumber($prev_hizb),
+				];
+			}
+		}
+		elseif($_type === 'page')
+		{
+			$next_page = intval($_id) + 1;
+			$prev_page = intval($_id) - 1;
+
+			if($next_page > 604)
+			{
+				$next_page = null;
+			}
+
+			if($prev_page < 1)
+			{
+				$prev_page = null;
+			}
+
+			$quran_detail = [];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of page"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+
+			if($next_page)
+			{
+				$quran_detail['next'] =
+				[
+					'index'    => $next_page,
+					'url'      => \dash\url::kingdom(). '/p'. $next_page. '?'. \dash\url::query(),
+					'title'    => T_("Next page"),
+					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($next_page),
+				];
+			}
+
+			if($prev_page)
+			{
+				$quran_detail['prev'] =
+				[
+					'index'    => $prev_page,
+					'url'      => \dash\url::kingdom(). '/p'. $prev_page. '?'. \dash\url::query(),
+					'title'    => T_("Previous page"),
+					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($prev_page),
 				];
 			}
 		}
