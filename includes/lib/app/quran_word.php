@@ -107,9 +107,10 @@ class quran_word
 				$first_character = mb_strtolower(substr($split[0], 0, 1));
 				$number          = substr($split[0], 1);
 				$number2         = $split[1];
+
 				if($first_character === 's' && ctype_digit($number) && ctype_digit($number2))
 				{
-					return self::sure($number, $number2, $_meta);
+					return self::load_quran('sura',$number, $number2, $_meta);
 				}
 
 			}
@@ -249,9 +250,14 @@ class quran_word
 
 		$a                       = isset($_meta['a']) && is_numeric($_meta['a']) ? intval($_meta['a']) : 0;
 
-		$pagination_current = self::pagination_current($_type, $_id, $_meta);
+		$pagination_current = null;
+		$pagination         = null;
 
-		$pagination              = self::pagination($_type, $_id, $_meta);
+		if(!$_aye)
+		{
+			$pagination_current = self::pagination_current($_type, $_id, $_meta);
+			$pagination              = self::pagination($_type, $_id, $_meta);
+		}
 
 		if($mode === 'quran')
 		{
@@ -274,7 +280,10 @@ class quran_word
 		{
 			if($_type === 'sura')
 			{
-				$get_quran['2.2'] = [' = 2.2 AND', " `aya` >= $pagination_current[0] AND `aya` <= $pagination_current[1] "];
+				if(!$_aye)
+				{
+					$get_quran['2.2'] = [' = 2.2 AND', " `aya` >= $pagination_current[0] AND `aya` <= $pagination_current[1] "];
+				}
 			}
 			elseif($_type === 'juz')
 			{
@@ -409,45 +418,105 @@ class quran_word
 
 		$result['mode_quran'] = false;
 
-		$next_sura = intval($_id) + 1;
-		$prev_sura = intval($_id) - 1;
-
-		if($next_sura > 114)
-		{
-			$next_sura = null;
-		}
-
-		if($prev_sura < 1)
-		{
-			$prev_sura = null;
-		}
-
-		$quran_detail = \lib\app\sura::detail($_id);
-
-		$quran_detail['beginning'] = ['title' => T_("Beginning of Surah"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
 
 		if($_type === 'sura')
 		{
-			if($next_sura)
+			$next_sura = intval($_id) + 1;
+			$prev_sura = intval($_id) - 1;
+
+			if($next_sura > 114)
 			{
-				$quran_detail['next'] =
-				[
-					'index'    => $next_sura,
-					'url'      => \dash\url::kingdom(). '/s'. $next_sura. '?'. \dash\url::query(),
-					'title'    => T_("Next Surah"),
-					'subtitle' => T_(\lib\app\sura::detail($next_sura, 'tname')),
-				];
+				$next_sura = null;
 			}
 
-			if($prev_sura)
+			if($prev_sura < 1)
 			{
-				$quran_detail['prev'] =
-				[
-					'index' => $prev_sura,
-					'url'   => \dash\url::kingdom(). '/s'. $prev_sura. '?'. \dash\url::query(),
-					'title' => T_("Previous Surah"),
-					'subtitle' => T_(\lib\app\sura::detail($prev_sura, 'tname')),
-				];
+				$prev_sura = null;
+			}
+
+			$quran_detail = \lib\app\sura::detail($_id);
+
+			$quran_detail['beginning'] = ['title' => T_("Beginning of Surah"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+
+			if($_aye)
+			{
+				$start_aya = 1;
+				$end_aya   = intval(\lib\app\sura::detail($_id, 'ayas'));
+
+				$next_aya = intval($_aye) + 1;
+				$prev_aya = intval($_aye) - 1;
+
+				if($next_aya > $end_aya)
+				{
+					if($next_sura)
+					{
+						$quran_detail['next'] =
+						[
+							'index'    => $next_aya,
+							'url'      => \dash\url::kingdom(). '/s'. $next_sura. '/1?'. \dash\url::query(),
+							'title'    => T_("Next Surah"),
+							'subtitle' => T_(\lib\app\sura::detail($next_sura, 'tname')),
+						];
+					}
+				}
+				else
+				{
+					$quran_detail['next'] =
+					[
+						'index'    => $next_aya,
+						'url'      => \dash\url::kingdom(). '/s'. $_id. '/'. $next_aya. '?'. \dash\url::query(),
+						'title'    => T_("Next aya"),
+						'subtitle' => \dash\utility\human::fitNumber($next_aya),
+					];
+				}
+
+				if($prev_aya < 1)
+				{
+					if($prev_sura)
+					{
+						$quran_detail['prev'] =
+						[
+							'index' => $prev_sura,
+							'url'   => \dash\url::kingdom(). '/s'. $prev_sura. '/'. \lib\app\sura::detail($prev_sura, 'ayas') .'?'. \dash\url::query(),
+							'title' => T_("Previous Surah"),
+							'subtitle' => T_(\lib\app\sura::detail($prev_sura, 'tname')),
+						];
+					}
+				}
+				else
+				{
+					$quran_detail['prev'] =
+					[
+						'index'    => $prev_aya,
+						'url'      => \dash\url::kingdom(). '/s'. $_id. '/'. $prev_aya .'?'. \dash\url::query(),
+						'title'    => T_("Previous aya"),
+						'subtitle' => \dash\utility\human::fitNumber($prev_aya),
+					];
+				}
+			}
+			else
+			{
+				if($next_sura)
+				{
+					$quran_detail['next'] =
+					[
+						'index'    => $next_sura,
+						'url'      => \dash\url::kingdom(). '/s'. $next_sura. '?'. \dash\url::query(),
+						'title'    => T_("Next Surah"),
+						'subtitle' => T_(\lib\app\sura::detail($next_sura, 'tname')),
+					];
+				}
+
+				if($prev_sura)
+				{
+					$quran_detail['prev'] =
+					[
+						'index' => $prev_sura,
+						'url'   => \dash\url::kingdom(). '/s'. $prev_sura. '?'. \dash\url::query(),
+						'title' => T_("Previous Surah"),
+						'subtitle' => T_(\lib\app\sura::detail($prev_sura, 'tname')),
+					];
+				}
 			}
 		}
 		elseif($_type === 'juz')
