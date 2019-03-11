@@ -1,5 +1,5 @@
 
-<div class="f fix txtC mTB25">
+<div class="f align-center fix txtC mTB25">
   <div class="c sauto os txtL">
 {%if quranLoaded.detail.prev%}
     <a class="btn outline" href="{{quranLoaded.detail.prev.url}}">
@@ -13,7 +13,8 @@
 
   <div class="c">
 {%if navPosition == 'top'%}
-    <a class="link" href="{{url.pwd}}">{{quranLoaded.detail.name}}</a>
+    <a class="link" href="{{url.pwd}}"><span class="icon-surah{{quranLoaded.detail.index}}"></span></a>
+
 {%elseif navPosition == 'bottom'%}
     <a class="btn outline" href="{{quranLoaded.detail.beginning.link}}#iqra">
       <span class="compact mRa5 sf-eject"></span>
