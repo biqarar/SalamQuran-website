@@ -206,7 +206,7 @@ class quran_word
 
 		$quran             = [];
 
-		$first_verse_title = null;
+		$first_verse = [];
 
 		foreach ($load as $key => $value)
 		{
@@ -240,9 +240,11 @@ class quran_word
 				$verse_url .= '/s'. $value['sura'];
 				$verse_url .= '/'. $value['aya'];
 
-				if(!$first_verse_title)
+				if(!$first_verse)
 				{
-					$first_verse_title = $verse_title;
+					$first_verse['title'] = $verse_title;
+					$first_verse['url']   = $verse_url;
+					$first_verse['audio'] = self::get_aya_audio($value['sura'], $value['aya'], $_meta);
 				}
 
 				$quran[$myKey][$myArrayKey]['detail'] =
@@ -335,7 +337,7 @@ class quran_word
 			];
 		}
 
-		$sura_detail['first_title'] = $first_verse_title;
+		$sura_detail['first_verse'] = $first_verse;
 		$result['detail']           = $sura_detail;
 		$result['sura_pagination'] = $pagination;
 		// \dash\notif::api($result);
@@ -373,7 +375,7 @@ class quran_word
 
 		$quran = [];
 
-		$first_verse_title = null;
+		$first_verse = null;
 
 		foreach ($load as $key => $value)
 		{
@@ -396,9 +398,9 @@ class quran_word
 				$verse_url .= '/s'. $value['sura'];
 				$verse_url .= '/'. $value['aya'];
 
-				if(!$first_verse_title)
+				if(!$first_verse)
 				{
-					$first_verse_title = $verse_title;
+					$first_verse = $verse_title;
 				}
 
 				$quran['aya'][$value['sura'] . '_'. $value['aya']]['detail'] =
@@ -490,7 +492,7 @@ class quran_word
 			];
 		}
 
-		$sura_detail['first_title'] = $first_verse_title;
+		$sura_detail['first_title'] = $first_verse;
 		$result['detail']           = $juz_detail;
 
 		// \dash\notif::api($result);
