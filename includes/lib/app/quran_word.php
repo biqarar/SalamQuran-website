@@ -769,6 +769,8 @@ class quran_word
 		$quran_detail['first_verse'] = $first_verse;
 		$result['detail']            = $quran_detail;
 		$result['pagination']        = $pagination;
+		$result['find_by']           = $_type;
+		$result['find_id']           = $_id;
 
 		// \dash\notif::api($result);
 

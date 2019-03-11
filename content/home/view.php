@@ -8,30 +8,8 @@ class view
 		$title = T_('Quran');
 		$desc  = T_("Say hello to Quran!"). ' '. T_("Quran is calling you.");
 
-		if(\dash\data::suraDetail())
-		{
-			$title = T_('Surah'). ' '. T_(\dash\data::suraDetail_tname());
-			// add surah name
-			$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber(\dash\data::suraDetail_index()). ' '. T_('surah');
-			// add total ayah number
-			$desc  .= ' | '. \dash\utility\human::fitNumber(\dash\data::suraDetail_ayas()). ' '. T_('ayah');
-			// add type
-			$desc  .= ' | '. T_(\dash\data::suraDetail_type());
-			// add juz
-			if(\dash\data::suraDetail_alljuz())
-			{
-				$desc  .= ' | '. T_('juz'). \dash\utility\human::fitNumber(\dash\data::suraDetail_ayas());
-			}
+		self::set_best_title();
 
-			// add translated name
-			$desc  .= ' | '. T_(\dash\data::suraDetail_ename());
-			// add arabic name
-			$desc  .= ' | '. \dash\data::suraDetail_name();
-		}
-
-
-		\dash\data::page_title($title);
-		\dash\data::page_desc($desc);
 		if(\dash\url::module() === null)
 		{
 			\dash\data::page_special(true);
@@ -75,6 +53,78 @@ class view
 
 		\dash\data::zoomInUrl(\lib\app\font_style::zoom_in_url());
 		\dash\data::zoomOutUrl(\lib\app\font_style::zoom_out_url());
+
+	}
+
+
+	private static function set_best_title()
+	{
+		$type  = \dash\data::quranLoaded_find_by();
+		$title = null;
+		$desc  = null;
+
+		$find_id = \dash\data::quranLoaded_find_id();
+
+		switch ($type)
+		{
+			case 'juz':
+				$title = T_('Juz'). ' '. \dash\utility\human::fitNumber($find_id);
+				$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($find_id). ' '. T_('juz');
+				break;
+
+			case 'hizb':
+				$title = T_('Hizb'). ' '. \dash\utility\human::fitNumber($find_id);
+				$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($find_id). ' '. T_('hizb');
+				break;
+
+			case 'rub':
+				$title = T_('Rub'). ' '. \dash\utility\human::fitNumber($find_id);
+				$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($find_id). ' '. T_('rub');
+				break;
+
+			case 'nim':
+				$title = T_('Half of hizb'). ' '. \dash\utility\human::fitNumber($find_id);
+				$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($find_id). ' '. T_('Half of hizb');
+				break;
+
+			case 'aya':
+				$title = T_('Aya'). ' '. \dash\utility\human::fitNumber($find_id);
+				$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($find_id). ' '. T_('aya');
+				break;
+
+			case 'page':
+				$title = T_('Page'). ' '. \dash\utility\human::fitNumber($find_id);
+				$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($find_id). ' '. T_('page');
+				break;
+
+			case 'sura':
+			default:
+				if(\dash\data::suraDetail())
+				{
+					$title = T_('Surah'). ' '. T_(\dash\data::suraDetail_tname());
+					// add surah name
+					$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber(\dash\data::suraDetail_index()). ' '. T_('surah');
+					// add total ayah number
+					$desc  .= ' | '. \dash\utility\human::fitNumber(\dash\data::suraDetail_ayas()). ' '. T_('ayah');
+					// add type
+					$desc  .= ' | '. T_(\dash\data::suraDetail_type());
+					// add juz
+					if(\dash\data::suraDetail_alljuz())
+					{
+						$desc  .= ' | '. T_('juz'). \dash\utility\human::fitNumber(\dash\data::suraDetail_ayas());
+					}
+
+					// add translated name
+					$desc  .= ' | '. T_(\dash\data::suraDetail_ename());
+					// add arabic name
+					$desc  .= ' | '. \dash\data::suraDetail_name();
+				}
+				break;
+		}
+
+
+		\dash\data::page_title($title);
+		\dash\data::page_desc($desc);
 
 	}
 }
