@@ -5442,6 +5442,21 @@ Version       1.0.0
 .text-p604 {
   font-family: text604; }
 
+/* bismillah fotn*/
+@font-face {
+  font-family: bismillah;
+  src: url(../fonts/bismillah/bismillah.eot);
+  src: url(../fonts/bismillah/bismillah.eot) format("embedded-opentype"), url(../fonts/bismillah/bismillah.ttf) format("truetype"), url(../fonts/bismillah/bismillah.woff) format("woff"), url(../images/bismillah/bismillah.svg) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+.bismillah {
+  font-family: bismillah;
+  font-size: 6em;
+  text-align: center;
+  color: #000;
+  padding: 25px 0;
+  margin-bottom: 2rem; }
+
 /* homepage surah_names*/
 @font-face {
   font-family: surah_names;
@@ -6412,10 +6427,10 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   display: block;
   font-size: 0.8em; }
 
-.besmellah {
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 2em; }
+.ayeSimple {
+  direction: rtl;
+  text-align: right;
+  display: none; }
 
 .Quran.bookTxt {
   max-width: 412px;
@@ -6623,11 +6638,6 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   letter-spacing: 2px;
   color: #777; }
 
-.ayeBox .ayeSimple {
-  direction: rtl;
-  text-align: right;
-  display: none; }
-
 .ayeBox .translate .badge {
   margin: 0 5px;
   padding: 3px 10px;
@@ -6832,6 +6842,9 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 
   .Quran .ui.dropdown {
     padding: 0 10px 0 40px; }
+
+  .bismillah {
+    font-size: 3.3em; }
 
   .ayeBox {
     padding: 0.5em; }
