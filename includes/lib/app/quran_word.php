@@ -97,6 +97,17 @@ class quran_word
 					return false;
 				}
 			}
+			elseif($first_character === 'n' && ctype_digit($number))
+			{
+				if(intval($number) >= 1 && intval($number) <= 120 )
+				{
+					return self::load_quran('nim', $number, null, $_meta);
+				}
+				else
+				{
+					return false;
+				}
+			}
 		}
 		else
 		{
@@ -269,60 +280,41 @@ class quran_word
 		if(!$_aye)
 		{
 			$pagination_current = self::pagination_current($_type, $_id, $_meta);
-			$pagination              = self::pagination($_type, $_id, $_meta);
+			$pagination         = self::pagination($_type, $_id, $_meta);
 		}
 
-		if($mode === 'quran')
-		{
+		// if($_type === 'sura')
+		// {
+		// 	if(!$_aye)
+		// 	{
+		// 		$get_quran['2.2'] = [' = 2.2 AND', " `aya` >= $pagination_current[0] AND `aya` <= $pagination_current[1] "];
+		// 	}
+		// }
+		// elseif($_type === 'juz')
+		// {
+		// 	$get_quran['2.2'] = [' = 2.2 AND', " `page` >= $pagination_current[0] AND `page` <= $pagination_current[1] "];
+		// }
+		// elseif($_type === 'hizb')
+		// {
+		// 	// nothing
+		// }
+		// elseif($_type === 'page')
+		// {
+		// 	// nothing
+		// }
+		// elseif($_type === 'aya')
+		// {
+		// 	// nothing
+		// }
+		// elseif($_type === 'rub')
+		// {
+		// 	// nothing
+		// }
 
-			unset($get_quran['sura']);
-			if($startpage != $endpage)
-			{
-				$startpagePlus = $startpage + 1;
-				$get_quran['1.1'] = ['= 1.1 AND', " `page` IN ($startpage, $startpagePlus)"];
-			}
-			else
-			{
-				$get_quran['page'] = $startpage;
-			}
+		$load           = \lib\db\quran_word::get($get_quran);
 
-			$load           = \lib\db\quran_word::get($get_quran);
-			$load_quran_aya = \lib\db\quran::get($get_quran);
-		}
-		else
-		{
-			if($_type === 'sura')
-			{
-				if(!$_aye)
-				{
-					$get_quran['2.2'] = [' = 2.2 AND', " `aya` >= $pagination_current[0] AND `aya` <= $pagination_current[1] "];
-				}
-			}
-			elseif($_type === 'juz')
-			{
-				$get_quran['2.2'] = [' = 2.2 AND', " `page` >= $pagination_current[0] AND `page` <= $pagination_current[1] "];
-			}
-			elseif($_type === 'hizb')
-			{
-				// nothing
-			}
-			elseif($_type === 'page')
-			{
-				// nothing
-			}
-			elseif($_type === 'aya')
-			{
-				// nothing
-			}
-			elseif($_type === 'rub')
-			{
-				// nothing
-			}
+		$load_quran_aya = \lib\db\quran::get($get_quran);
 
-			$load           = \lib\db\quran_word::get($get_quran);
-
-			$load_quran_aya = \lib\db\quran::get($get_quran);
-		}
 		$quran_aya      = [];
 
 		foreach ($load_quran_aya as $key => $value)
@@ -730,6 +722,46 @@ class quran_word
 					'url'      => \dash\url::kingdom(). '/p'. $prev_rub. '?'. \dash\url::query(),
 					'title'    => T_("Previous rub"),
 					'subtitle' => T_('rub') . ' '. \dash\utility\human::fitNumber($prev_rub),
+				];
+			}
+		}
+		elseif($_type === 'nim')
+		{
+			$next_nim = intval($_id) + 1;
+			$prev_nim = intval($_id) - 1;
+
+			if($next_nim > 240)
+			{
+				$next_nim = null;
+			}
+
+			if($prev_nim < 1)
+			{
+				$prev_nim = null;
+			}
+
+			$quran_detail              = [];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of nim"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+
+			if($next_nim)
+			{
+				$quran_detail['next'] =
+				[
+					'index'    => $next_nim,
+					'url'      => \dash\url::kingdom(). '/n'. $next_nim. '?'. \dash\url::query(),
+					'title'    => T_("Next Half of hizb"),
+					'subtitle' => T_('Half of hizb') . ' '. \dash\utility\human::fitNumber($next_nim),
+				];
+			}
+
+			if($prev_nim)
+			{
+				$quran_detail['prev'] =
+				[
+					'index'    => $prev_nim,
+					'url'      => \dash\url::kingdom(). '/n'. $prev_nim. '?'. \dash\url::query(),
+					'title'    => T_("Previous Half of hizb"),
+					'subtitle' => T_('Half of hizb') . ' '. \dash\utility\human::fitNumber($prev_nim),
 				];
 			}
 		}
