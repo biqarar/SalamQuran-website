@@ -431,7 +431,7 @@ class quran_word
 				[
 					'index'    => $prev_juz,
 					'url'      => \dash\url::kingdom(). '/j'. $prev_juz,
-					'title'    => T_("Previous sura"),
+					'title'    => T_("Previous juz"),
 					'subtitle' => T_('juz') . ' '. \dash\utility\human::fitNumber($prev_juz),
 				];
 			}

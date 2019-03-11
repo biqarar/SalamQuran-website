@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SalamQuran - Persian\n"
-"POT-Creation-Date: 2019-03-11 12:06+0330\n"
-"PO-Revision-Date: 2019-03-11 12:06+0330\n"
+"POT-Creation-Date: 2019-03-11 12:07+0330\n"
+"PO-Revision-Date: 2019-03-11 12:08+0330\n"
 "Last-Translator: Javad <J.Evazzadeh@gmail.com>\n"
 "Language-Team: Ermile <J.Evazzadeh@gmail.com>\n"
 "Language: fa_IR\n"
@@ -7836,8 +7836,8 @@ msgid "Next juz"
 msgstr "جزء بعد"
 
 #: SalamQuran/includes/lib/app/quran_word.php:434
-msgid "Previous sura"
-msgstr "سوره قبل"
+msgid "Previous juz"
+msgstr "جزء قبل"
 
 #: SalamQuran/includes/lib/app/quran_word.php:596
 msgid "Only 20 translate can be show"
@@ -16154,6 +16154,9 @@ msgstr "نام فایل غیرمجاز"
 #: dash/lib/utility/upload/check.php:91
 msgid "Exceeded file extension limit"
 msgstr "نوع فایل غیرمجاز"
+
+#~ msgid "Previous sura"
+#~ msgstr "سوره قبل"
 
 #~ msgid "murattal"
 #~ msgstr "ترتیل"
