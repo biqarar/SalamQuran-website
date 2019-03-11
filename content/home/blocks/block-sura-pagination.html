@@ -1,4 +1,4 @@
-{%if quranLoaded.sura_pagination %}
+{%if quranLoaded.sura_pagination | length > 1 %}
 	<nav class="f">
 	{%for key, value in quranLoaded.sura_pagination%}
 			<a {%if value.link%} href="{{value.link}}"{%endif%} class="btn cauto mA5 {{value.class}}">{{value.text | raw}}</a>
