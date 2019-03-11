@@ -108,8 +108,8 @@ class quran_word
 
 	private static function pagination($_type, $_id, $_meta)
 	{
-		$this_link = \dash\url::that();
-
+		$this_link  = \dash\url::that();
+		$pagination = [];
 		if($_type === 'sura')
 		{
 			$ayas = intval(\lib\app\sura::detail($_id, 'ayas'));
@@ -179,7 +179,6 @@ class quran_word
 					'text'        => \dash\utility\human::fitNumber($title),
 				];
 			}
-
 		}
 
 		return $pagination;
@@ -248,6 +247,10 @@ class quran_word
 			elseif($_type === 'juz')
 			{
 				$get_quran['2.2'] = [' = 2.2 AND', " `page` >= $pagination_current[0] AND `page` <= $pagination_current[1] "];
+			}
+			elseif($_type === 'hizb')
+			{
+				// $get_quran['2.2'] = [' = 2.2 AND', " `page` >= $pagination_current[0] AND `page` <= $pagination_current[1] "];
 			}
 
 			$load           = \lib\db\quran_word::get($get_quran);
@@ -443,6 +446,46 @@ class quran_word
 				];
 			}
 
+		}
+		elseif($_type === 'hizb')
+		{
+			$next_hizb = intval($_id) + 1;
+			$prev_hizb = intval($_id) - 1;
+
+			if($next_hizb > 60)
+			{
+				$next_hizb = null;
+			}
+
+			if($prev_hizb < 1)
+			{
+				$prev_hizb = null;
+			}
+
+			$quran_detail = [];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of Hizb"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+
+			if($next_hizb)
+			{
+				$quran_detail['next'] =
+				[
+					'index'    => $next_hizb,
+					'url'      => \dash\url::kingdom(). '/h'. $next_hizb. '?'. \dash\url::query(),
+					'title'    => T_("Next hizb"),
+					'subtitle' => T_('hizb') . ' '. \dash\utility\human::fitNumber($next_hizb),
+				];
+			}
+
+			if($prev_hizb)
+			{
+				$quran_detail['prev'] =
+				[
+					'index'    => $prev_hizb,
+					'url'      => \dash\url::kingdom(). '/h'. $prev_hizb. '?'. \dash\url::query(),
+					'title'    => T_("Previous hizb"),
+					'subtitle' => T_('hizb') . ' '. \dash\utility\human::fitNumber($prev_hizb),
+				];
+			}
 		}
 
 		$sura_detail['first_verse'] = $first_verse;
