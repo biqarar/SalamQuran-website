@@ -15,9 +15,9 @@
 {%if navPosition == 'top'%}
     <a class="link" href="{{url.pwd}}">{{quranLoaded.detail.name}}</a>
 {%elseif navPosition == 'bottom'%}
-    <a class="btn outline" href="{{url.pwd}}#iqra">
+    <a class="btn outline" href="{{quranLoaded.detail.beginning.link}}#iqra">
       <span class="compact mRa5 sf-eject"></span>
-      <span class="s0">{%trans "Beginning of Surah"%}</span>
+      <span class="s0">{{quranLoaded.detail.beginning.title}}</span>
     </a>
     <a href='{{url.kingdom}}' class="btn outline">
       <span class="compact mRa5 sf-level-up"></span>

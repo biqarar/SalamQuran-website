@@ -370,6 +370,8 @@ class quran_word
 
 		$quran_detail = \lib\app\sura::detail($_id);
 
+		$quran_detail['beginning'] = ['title' => T_("Beginning of Surah"), 'link' => \dash\url::that()];
+
 		if($_type === 'sura')
 		{
 			if($next_sura)
@@ -410,6 +412,7 @@ class quran_word
 			}
 
 			$quran_detail = [];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of Juz"), 'link' => \dash\url::that()];
 
 			if($next_juz)
 			{
