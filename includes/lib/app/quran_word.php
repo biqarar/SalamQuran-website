@@ -64,7 +64,7 @@ class quran_word
 			}
 			elseif($first_character === 'p' && ctype_digit($number))
 			{
-				if(intval($number) >= 1 && intval($number) <= 60 )
+				if(intval($number) >= 1 && intval($number) <= 604 )
 				{
 					return self::load_quran('page', $number, null, $_meta);
 				}
@@ -75,7 +75,25 @@ class quran_word
 			}
 			elseif($first_character === 'a' && ctype_digit($number))
 			{
-				return self::aye($number, $_meta);
+				if(intval($number) >= 1 && intval($number) <= 6236 )
+				{
+					return self::load_quran('aya', $number, null, $_meta);
+				}
+				else
+				{
+					return false;
+				}
+			}
+			elseif($first_character === 'r' && ctype_digit($number))
+			{
+				if(intval($number) >= 1 && intval($number) <= 240 )
+				{
+					return self::load_quran('rub', $number, null, $_meta);
+				}
+				else
+				{
+					return false;
+				}
 			}
 		}
 		else
@@ -200,7 +218,14 @@ class quran_word
 
 		$get_quran         = [];
 
-		$get_quran[$_type] = $_id;
+		if($_type === 'aya')
+		{
+			$get_quran['index'] = $_id;
+		}
+		else
+		{
+			$get_quran[$_type] = $_id;
+		}
 
 		if($_aye)
 		{
@@ -260,6 +285,14 @@ class quran_word
 				// nothing
 			}
 			elseif($_type === 'page')
+			{
+				// nothing
+			}
+			elseif($_type === 'aya')
+			{
+				// nothing
+			}
+			elseif($_type === 'rub')
 			{
 				// nothing
 			}
@@ -535,6 +568,86 @@ class quran_word
 					'url'      => \dash\url::kingdom(). '/p'. $prev_page. '?'. \dash\url::query(),
 					'title'    => T_("Previous page"),
 					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($prev_page),
+				];
+			}
+		}
+		elseif($_type === 'aya')
+		{
+			$next_aya = intval($_id) + 1;
+			$prev_aya = intval($_id) - 1;
+
+			if($next_aya > 6236)
+			{
+				$next_aya = null;
+			}
+
+			if($prev_aya < 1)
+			{
+				$prev_aya = null;
+			}
+
+			$quran_detail = [];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of aya"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+
+			if($next_aya)
+			{
+				$quran_detail['next'] =
+				[
+					'index'    => $next_aya,
+					'url'      => \dash\url::kingdom(). '/a'. $next_aya. '?'. \dash\url::query(),
+					'title'    => T_("Next aya"),
+					'subtitle' => T_('aya') . ' '. \dash\utility\human::fitNumber($next_aya),
+				];
+			}
+
+			if($prev_aya)
+			{
+				$quran_detail['prev'] =
+				[
+					'index'    => $prev_aya,
+					'url'      => \dash\url::kingdom(). '/a'. $prev_aya. '?'. \dash\url::query(),
+					'title'    => T_("Previous aya"),
+					'subtitle' => T_('aya') . ' '. \dash\utility\human::fitNumber($prev_aya),
+				];
+			}
+		}
+		elseif($_type === 'rub')
+		{
+			$next_rub = intval($_id) + 1;
+			$prev_rub = intval($_id) - 1;
+
+			if($next_rub > 240)
+			{
+				$next_rub = null;
+			}
+
+			if($prev_rub < 1)
+			{
+				$prev_rub = null;
+			}
+
+			$quran_detail = [];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of rub"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+
+			if($next_rub)
+			{
+				$quran_detail['next'] =
+				[
+					'index'    => $next_rub,
+					'url'      => \dash\url::kingdom(). '/p'. $next_rub. '?'. \dash\url::query(),
+					'title'    => T_("Next rub"),
+					'subtitle' => T_('rub') . ' '. \dash\utility\human::fitNumber($next_rub),
+				];
+			}
+
+			if($prev_rub)
+			{
+				$quran_detail['prev'] =
+				[
+					'index'    => $prev_rub,
+					'url'      => \dash\url::kingdom(). '/p'. $prev_rub. '?'. \dash\url::query(),
+					'title'    => T_("Previous rub"),
+					'subtitle' => T_('rub') . ' '. \dash\utility\human::fitNumber($prev_rub),
 				];
 			}
 		}
