@@ -1,0 +1,182 @@
+{
+  "1": {
+    "startsura": 1,
+    "startaya": 1,
+    "startpage": 1,
+    "endpage": 21
+  },
+  "2": {
+    "startsura": 2,
+    "startaya": 142,
+    "startpage": 22,
+    "endpage": 41
+  },
+  "3": {
+    "startsura": 2,
+    "startaya": 253,
+    "startpage": 42,
+    "endpage": 61
+  },
+  "4": {
+    "startsura": 3,
+    "startaya": 93,
+    "startpage": 62,
+    "endpage": 81
+  },
+  "5": {
+    "startsura": 4,
+    "startaya": 24,
+    "startpage": 82,
+    "endpage": 101
+  },
+  "6": {
+    "startsura": 4,
+    "startaya": 148,
+    "startpage": 102,
+    "endpage": 121
+  },
+  "7": {
+    "startsura": 5,
+    "startaya": 82,
+    "startpage": 122,
+    "endpage": 141
+  },
+  "8": {
+    "startsura": 6,
+    "startaya": 111,
+    "startpage": 142,
+    "endpage": 161
+  },
+  "9": {
+    "startsura": 7,
+    "startaya": 88,
+    "startpage": 162,
+    "endpage": 181
+  },
+  "10": {
+    "startsura": 8,
+    "startaya": 41,
+    "startpage": 182,
+    "endpage": 201
+  },
+  "11": {
+    "startsura": 9,
+    "startaya": 93,
+    "startpage": 202,
+    "endpage": 221
+  },
+  "12": {
+    "startsura": 11,
+    "startaya": 6,
+    "startpage": 222,
+    "endpage": 241
+  },
+  "13": {
+    "startsura": 12,
+    "startaya": 53,
+    "startpage": 242,
+    "endpage": 261
+  },
+  "14": {
+    "startsura": 15,
+    "startaya": 1,
+    "startpage": 262,
+    "endpage": 281
+  },
+  "15": {
+    "startsura": 17,
+    "startaya": 1,
+    "startpage": 282,
+    "endpage": 301
+  },
+  "16": {
+    "startsura": 18,
+    "startaya": 75,
+    "startpage": 302,
+    "endpage": 321
+  },
+  "17": {
+    "startsura": 21,
+    "startaya": 1,
+    "startpage": 322,
+    "endpage": 341
+  },
+  "18": {
+    "startsura": 23,
+    "startaya": 1,
+    "startpage": 342,
+    "endpage": 361
+  },
+  "19": {
+    "startsura": 25,
+    "startaya": 21,
+    "startpage": 362,
+    "endpage": 381
+  },
+  "20": {
+    "startsura": 27,
+    "startaya": 56,
+    "startpage": 382,
+    "endpage": 401
+  },
+  "21": {
+    "startsura": 29,
+    "startaya": 46,
+    "startpage": 402,
+    "endpage": 421
+  },
+  "22": {
+    "startsura": 33,
+    "startaya": 31,
+    "startpage": 422,
+    "endpage": 441
+  },
+  "23": {
+    "startsura": 36,
+    "startaya": 28,
+    "startpage": 442,
+    "endpage": 461
+  },
+  "24": {
+    "startsura": 39,
+    "startaya": 32,
+    "startpage": 462,
+    "endpage": 481
+  },
+  "25": {
+    "startsura": 41,
+    "startaya": 47,
+    "startpage": 482,
+    "endpage": 501
+  },
+  "26": {
+    "startsura": 46,
+    "startaya": 1,
+    "startpage": 502,
+    "endpage": 521
+  },
+  "27": {
+    "startsura": 51,
+    "startaya": 31,
+    "startpage": 522,
+    "endpage": 541
+  },
+  "28": {
+    "startsura": 58,
+    "startaya": 1,
+    "startpage": 542,
+    "endpage": 561
+  },
+  "29": {
+    "startsura": 67,
+    "startaya": 1,
+    "startpage": 562,
+    "endpage": 581
+  },
+  "30": {
+    "startsura": 78,
+    "startaya": 1,
+    "startpage": 582,
+    "endpage": 604
+  }
+}
