@@ -811,22 +811,24 @@ class quran_word
 			return null;
 		}
 
-		if(!is_array($_meta))
+		$get = \dash\request::get();
+		if(array_key_exists('t', $get))
 		{
-			return null;
+			if(!$get['t'])
+			{
+				return false;
+			}
 		}
 
-		if(!isset($_meta['translate']))
+		if(!isset($_meta['translate']) || (isset($_meta['translate']) && !$_meta['translate']))
 		{
-			return null;
+			$get = [\lib\app\translate::get_default_lang_key()];
+		}
+		else
+		{
+			$get = explode('-', $_meta['translate']);
 		}
 
-		if(!$_meta['translate'])
-		{
-			return null;
-		}
-
-		$get = explode('-', $_meta['translate']);
 		$result = [];
 		$i         = 0;
 

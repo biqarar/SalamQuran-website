@@ -19,6 +19,19 @@ class translate
 		return $result;
 	}
 
+	public static function get_default_lang_key()
+	{
+		$get = self::current_lang_translate();
+
+		foreach ($get as $key => $value)
+		{
+			if(isset($value['default']) && $value['default'])
+			{
+				return $value['language']. $value['index'];
+			}
+		}
+		return null;
+	}
 
 	public static function current_lang_translate()
 	{
