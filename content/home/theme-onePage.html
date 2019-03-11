@@ -3,10 +3,6 @@
 {%include 'content/home/blocks/block-navigation.html' with {'navPosition': 'top'}%}
 
 
-
-<div class="f">
-
-<div class="c12">
 {%for key, value in quranLoaded.text.page1%}
   {%for page_number, page_line in value%}
   <div class='readerMode'>
@@ -20,33 +16,8 @@
   </div>
   {%endfor%}
 {%endfor%}
-</div>
 
-
-</div>
-
-{%for myAyeKey, myAye in quranLoaded.text.aya%}
-      {%include 'content/home/blocks/block-besmellah.html'%}
-  <div class='ayeBox f fix' id='{{myAye.detail.index}}' data-ayeAudio='{{myAye.detail.audio}}'>
-    <div class="cauto s12 pR10">
-{%include 'content/home/blocks/block-ayeActions.html'%}
-    </div>
-    <div class="c s12">
-{%if requestGET.font == 'uthmani'%}
-	{%include 'content/home/blocks/block-aye-uthmani.html'%}
-{%else%}
-	{%include 'content/home/blocks/block-aye-text.html'%}
-{%endif%}
-
-{%include 'content/home/blocks/block-ayeSimple.html'%}
-{%include 'content/home/blocks/block-ayeTranslation.html'%}
-    </div>
-
-  </div>
-{%endfor%}
 
 {%include 'content/home/blocks/block-navigation.html' with {'navPosition': 'bottom'}%}
 {%include 'content/home/blocks/block-sura-pagination.html'%}
-
 </div>
-
