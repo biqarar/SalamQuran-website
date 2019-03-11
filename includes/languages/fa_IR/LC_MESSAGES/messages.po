@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SalamQuran - Persian\n"
-"POT-Creation-Date: 2019-03-10 15:44+0330\n"
-"PO-Revision-Date: 2019-03-10 15:45+0330\n"
+"POT-Creation-Date: 2019-03-11 10:34+0330\n"
+"PO-Revision-Date: 2019-03-11 10:35+0330\n"
 "Last-Translator: Javad <J.Evazzadeh@gmail.com>\n"
 "Language-Team: Ermile <J.Evazzadeh@gmail.com>\n"
 "Language: fa_IR\n"
@@ -78,8 +78,8 @@ msgstr "اهدای کمک نقدی به سلام قرآن"
 
 #: SalamQuran/content/home/view.php:8 SalamQuran/content/home/view.php:15
 #: SalamQuran/includes/languages/trans_project.php:422
-#: SalamQuran/includes/lib/app/quran_word.php:118
-#: SalamQuran/includes/lib/app/quran_word.php:274
+#: SalamQuran/includes/lib/app/quran_word.php:229
+#: SalamQuran/includes/lib/app/quran_word.php:387
 msgid "Quran"
 msgstr "قرآن"
 
@@ -104,8 +104,8 @@ msgid "ayah"
 msgstr "آیه"
 
 #: SalamQuran/content/home/view.php:23
-#: SalamQuran/includes/lib/app/quran_word.php:368
-#: SalamQuran/includes/lib/app/quran_word.php:378
+#: SalamQuran/includes/lib/app/quran_word.php:481
+#: SalamQuran/includes/lib/app/quran_word.php:491
 msgid "juz"
 msgstr "جزء"
 
@@ -5531,6 +5531,9 @@ msgid "Inner system notification"
 msgstr "پیام داخل سیستمی"
 
 #: SalamQuran/includes/languages/trans_dash.php:1279
+#: SalamQuran/includes/lib/app/qari.php:56 SalamQuran/includes/lib/app/qari.php:59
+#: SalamQuran/includes/lib/app/qari.php:62 SalamQuran/includes/lib/app/qari.php:65
+#: SalamQuran/includes/lib/app/qari.php:66
 #: dash/addons/includes/languages/trans_dash.php:1277
 msgid "Translate"
 msgstr "ترجمه"
@@ -5967,8 +5970,8 @@ msgid "Sura list"
 msgstr "لیست سوره‌ها"
 
 #: SalamQuran/includes/languages/trans_project.php:49
-#: SalamQuran/includes/lib/app/quran_word.php:120
-#: SalamQuran/includes/lib/app/quran_word.php:276
+#: SalamQuran/includes/lib/app/quran_word.php:231
+#: SalamQuran/includes/lib/app/quran_word.php:389
 msgid "Sura"
 msgstr "سوره"
 
@@ -5993,9 +5996,6 @@ msgid "menshawi"
 msgstr "منشاوی"
 
 #: SalamQuran/includes/languages/trans_project.php:73
-#: SalamQuran/includes/lib/app/qari.php:387 SalamQuran/includes/lib/app/qari.php:400
-#: SalamQuran/includes/lib/app/qari.php:413 SalamQuran/includes/lib/app/qari.php:426
-#: SalamQuran/includes/lib/app/qari.php:439
 msgid "sudais"
 msgstr "سدیس"
 
@@ -6004,9 +6004,6 @@ msgid "basit"
 msgstr "باسط"
 
 #: SalamQuran/includes/languages/trans_project.php:75
-#: SalamQuran/includes/lib/app/qari.php:127 SalamQuran/includes/lib/app/qari.php:140
-#: SalamQuran/includes/lib/app/qari.php:153 SalamQuran/includes/lib/app/qari.php:166
-#: SalamQuran/includes/lib/app/qari.php:179 SalamQuran/includes/lib/app/qari.php:192
 msgid "husary"
 msgstr "حصری"
 
@@ -7755,114 +7752,85 @@ msgstr "ایران‌سنز"
 msgid "Uthmani"
 msgstr "عثمانی"
 
-#: SalamQuran/includes/lib/app/qari.php:17 SalamQuran/includes/lib/app/qari.php:30
-#: SalamQuran/includes/lib/app/qari.php:43 SalamQuran/includes/lib/app/qari.php:82
-#: SalamQuran/includes/lib/app/qari.php:95 SalamQuran/includes/lib/app/qari.php:108
-#: SalamQuran/includes/lib/app/qari.php:121 SalamQuran/includes/lib/app/qari.php:147
-#: SalamQuran/includes/lib/app/qari.php:186 SalamQuran/includes/lib/app/qari.php:199
-#: SalamQuran/includes/lib/app/qari.php:238 SalamQuran/includes/lib/app/qari.php:251
-#: SalamQuran/includes/lib/app/qari.php:264 SalamQuran/includes/lib/app/qari.php:277
-#: SalamQuran/includes/lib/app/qari.php:290 SalamQuran/includes/lib/app/qari.php:303
-#: SalamQuran/includes/lib/app/qari.php:316 SalamQuran/includes/lib/app/qari.php:329
-#: SalamQuran/includes/lib/app/qari.php:342 SalamQuran/includes/lib/app/qari.php:355
-#: SalamQuran/includes/lib/app/qari.php:368 SalamQuran/includes/lib/app/qari.php:381
-#: SalamQuran/includes/lib/app/qari.php:394 SalamQuran/includes/lib/app/qari.php:407
-#: SalamQuran/includes/lib/app/qari.php:420 SalamQuran/includes/lib/app/qari.php:433
-msgid "murattal"
-msgstr "ترتیل"
+#: SalamQuran/includes/lib/app/qari.php:28 SalamQuran/includes/lib/app/qari.php:36
+#: SalamQuran/includes/lib/app/qari.php:41
+msgid "Mujawwad"
+msgstr "فصیح"
 
-#: SalamQuran/includes/lib/app/qari.php:23 SalamQuran/includes/lib/app/qari.php:36
-#: SalamQuran/includes/lib/app/qari.php:49 SalamQuran/includes/lib/app/qari.php:62
-#: SalamQuran/includes/lib/app/qari.php:75
-msgid "abdulbaset"
-msgstr "عبدالباسط"
-
-#: SalamQuran/includes/lib/app/qari.php:25 SalamQuran/includes/lib/app/qari.php:38
-#: SalamQuran/includes/lib/app/qari.php:51 SalamQuran/includes/lib/app/qari.php:64
-#: SalamQuran/includes/lib/app/qari.php:77
+#: SalamQuran/includes/lib/app/qari.php:28 SalamQuran/includes/lib/app/qari.php:29
 msgid "AbdulBaset AbdulSamad"
 msgstr "عبد الباسط عبد الصمد"
 
-#: SalamQuran/includes/lib/app/qari.php:56 SalamQuran/includes/lib/app/qari.php:69
-#: SalamQuran/includes/lib/app/qari.php:134 SalamQuran/includes/lib/app/qari.php:173
-#: SalamQuran/includes/lib/app/qari.php:212 SalamQuran/includes/lib/app/qari.php:225
-msgid "mujawwad"
-msgstr "فصیح"
+#: SalamQuran/includes/lib/app/qari.php:29 SalamQuran/includes/lib/app/qari.php:32
+#: SalamQuran/includes/lib/app/qari.php:35 SalamQuran/includes/lib/app/qari.php:40
+#: SalamQuran/includes/lib/app/qari.php:44 SalamQuran/includes/lib/app/qari.php:47
+#: SalamQuran/includes/lib/app/qari.php:50 SalamQuran/includes/lib/app/qari.php:53
+msgid "Murattal"
+msgstr "ترتیل"
 
-#: SalamQuran/includes/lib/app/qari.php:88 SalamQuran/includes/lib/app/qari.php:101
-#: SalamQuran/includes/lib/app/qari.php:114
-msgid "afasy"
-msgstr "عفاسی"
-
-#: SalamQuran/includes/lib/app/qari.php:90 SalamQuran/includes/lib/app/qari.php:103
-#: SalamQuran/includes/lib/app/qari.php:116
+#: SalamQuran/includes/lib/app/qari.php:32
 msgid "Mishary Rashid Alafasy"
 msgstr "مشاری راشد العفاسی"
 
-#: SalamQuran/includes/lib/app/qari.php:129 SalamQuran/includes/lib/app/qari.php:142
-#: SalamQuran/includes/lib/app/qari.php:155 SalamQuran/includes/lib/app/qari.php:168
-#: SalamQuran/includes/lib/app/qari.php:181 SalamQuran/includes/lib/app/qari.php:194
+#: SalamQuran/includes/lib/app/qari.php:35 SalamQuran/includes/lib/app/qari.php:36
+#: SalamQuran/includes/lib/app/qari.php:37
 msgid "Mahmoud Khalil Al-Husary"
 msgstr "محمود خلیل الحصری"
 
-#: SalamQuran/includes/lib/app/qari.php:160
-msgid "muallim"
+#: SalamQuran/includes/lib/app/qari.php:37
+msgid "Muallim"
 msgstr "آموزشی"
 
-#: SalamQuran/includes/lib/app/qari.php:205 SalamQuran/includes/lib/app/qari.php:218
-#: SalamQuran/includes/lib/app/qari.php:231 SalamQuran/includes/lib/app/qari.php:244
-#: SalamQuran/includes/lib/app/qari.php:257
-msgid "minshawi"
-msgstr "منشاوری"
-
-#: SalamQuran/includes/lib/app/qari.php:207 SalamQuran/includes/lib/app/qari.php:220
-#: SalamQuran/includes/lib/app/qari.php:233 SalamQuran/includes/lib/app/qari.php:246
-#: SalamQuran/includes/lib/app/qari.php:259
+#: SalamQuran/includes/lib/app/qari.php:40 SalamQuran/includes/lib/app/qari.php:41
 msgid "Mohamed Siddiq al-Minshawi"
 msgstr "محمد صدیق المنشاوری"
 
-#: SalamQuran/includes/lib/app/qari.php:270 SalamQuran/includes/lib/app/qari.php:283
-#: SalamQuran/includes/lib/app/qari.php:296
-msgid "rifai"
-msgstr "رفاعی"
-
-#: SalamQuran/includes/lib/app/qari.php:272 SalamQuran/includes/lib/app/qari.php:285
-#: SalamQuran/includes/lib/app/qari.php:298
+#: SalamQuran/includes/lib/app/qari.php:44
 msgid "Hani ar-Rifai"
 msgstr "هانی الرفاعی"
 
-#: SalamQuran/includes/lib/app/qari.php:309 SalamQuran/includes/lib/app/qari.php:322
-#: SalamQuran/includes/lib/app/qari.php:335
-msgid "shatri"
-msgstr "شاطری"
-
-#: SalamQuran/includes/lib/app/qari.php:311 SalamQuran/includes/lib/app/qari.php:324
-#: SalamQuran/includes/lib/app/qari.php:337
+#: SalamQuran/includes/lib/app/qari.php:47
 msgid "Abu Bakr al-Shatri"
 msgstr "ابوبکر الشاطری"
 
-#: SalamQuran/includes/lib/app/qari.php:348 SalamQuran/includes/lib/app/qari.php:361
-#: SalamQuran/includes/lib/app/qari.php:374
-msgid "shuraym"
-msgstr "شریم"
-
-#: SalamQuran/includes/lib/app/qari.php:350 SalamQuran/includes/lib/app/qari.php:363
-#: SalamQuran/includes/lib/app/qari.php:376
+#: SalamQuran/includes/lib/app/qari.php:50
 msgid "Sa`ud ash-Shuraym"
 msgstr "سعود الشریم"
 
-#: SalamQuran/includes/lib/app/qari.php:389 SalamQuran/includes/lib/app/qari.php:402
-#: SalamQuran/includes/lib/app/qari.php:415 SalamQuran/includes/lib/app/qari.php:428
-#: SalamQuran/includes/lib/app/qari.php:441
+#: SalamQuran/includes/lib/app/qari.php:53
 msgid "Abdur-Rahman as-Sudais"
 msgstr "عبدالرحمان السدیس"
 
-#: SalamQuran/includes/lib/app/quran_word.php:124
-#: SalamQuran/includes/lib/app/quran_word.php:280
+#: SalamQuran/includes/lib/app/qari.php:56
+msgid "Rasim Balayev"
+msgstr "رسیم بالایو"
+
+#: SalamQuran/includes/lib/app/qari.php:59
+msgid "Ibrahim Walk"
+msgstr "ابراهیم واک"
+
+#: SalamQuran/includes/lib/app/qari.php:62
+msgid "Mohammad mahdi fouladvand"
+msgstr "محمد مهدی فولادوند"
+
+#: SalamQuran/includes/lib/app/qari.php:65 SalamQuran/includes/lib/app/qari.php:66
+msgid "Naser makarem shirazi"
+msgstr "ناصر مکارم شیرازی"
+
+#: SalamQuran/includes/lib/app/qari.php:69
+msgid "Commentary"
+msgstr "تفسیر"
+
+#: SalamQuran/includes/lib/app/qari.php:69
+msgid "Mohsen Qaraati"
+msgstr "محسن قرائتی"
+
+#: SalamQuran/includes/lib/app/quran_word.php:235
+#: SalamQuran/includes/lib/app/quran_word.php:393
 msgid "Aya"
 msgstr "آیه"
 
-#: SalamQuran/includes/lib/app/quran_word.php:540
+#: SalamQuran/includes/lib/app/quran_word.php:653
 msgid "Only 20 translate can be show"
 msgstr "تنها ۲۰ ترجمه به صورت همزمان قابل مشاهده است"
 
@@ -16177,6 +16145,33 @@ msgstr "نام فایل غیرمجاز"
 #: dash/lib/utility/upload/check.php:91
 msgid "Exceeded file extension limit"
 msgstr "نوع فایل غیرمجاز"
+
+#~ msgid "murattal"
+#~ msgstr "ترتیل"
+
+#~ msgid "abdulbaset"
+#~ msgstr "عبدالباسط"
+
+#~ msgid "mujawwad"
+#~ msgstr "فصیح"
+
+#~ msgid "afasy"
+#~ msgstr "عفاسی"
+
+#~ msgid "muallim"
+#~ msgstr "آموزشی"
+
+#~ msgid "minshawi"
+#~ msgstr "منشاوری"
+
+#~ msgid "rifai"
+#~ msgstr "رفاعی"
+
+#~ msgid "shatri"
+#~ msgstr "شاطری"
+
+#~ msgid "shuraym"
+#~ msgstr "شریم"
 
 #~ msgid "* All"
 #~ msgstr "* همه"

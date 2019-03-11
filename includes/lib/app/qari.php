@@ -66,7 +66,7 @@ class qari
 			['index' => 1085, 'lang' => 'fa', 'type' => T_('Translate'), 'addr'  => 'audio/translation-fa-makarem/', 'slug'  => 'makarem', 'name'  => T_('Naser makarem shirazi'),],
 
 			// ----------------- trnaslate - fa - qeraati
-			['index' => 1086, 'lang' => 'fa', 'type' => T_('Translate'), 'addr'  => 'audio/translation-fa-qaraati/', 'slug'  => 'qaraati', 'name'  => T_('Mohsen Qaraati'), 'default_lang' => true],
+			['index' => 1086, 'lang' => 'fa', 'type' => T_('Commentary'), 'addr'  => 'audio/translation-fa-qaraati/', 'slug'  => 'qaraati', 'name'  => T_('Mohsen Qaraati'), 'default_lang' => true],
 
 		];
 
