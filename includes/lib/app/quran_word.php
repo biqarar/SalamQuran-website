@@ -370,7 +370,7 @@ class quran_word
 
 		$quran_detail = \lib\app\sura::detail($_id);
 
-		$quran_detail['beginning'] = ['title' => T_("Beginning of Surah"), 'link' => \dash\url::that()];
+		$quran_detail['beginning'] = ['title' => T_("Beginning of Surah"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
 
 		if($_type === 'sura')
 		{
@@ -379,7 +379,7 @@ class quran_word
 				$quran_detail['next'] =
 				[
 					'index'    => $next_sura,
-					'url'      => \dash\url::kingdom(). '/s'. $next_sura,
+					'url'      => \dash\url::kingdom(). '/s'. $next_sura. '?'. \dash\url::query(),
 					'title'    => T_("Next Surah"),
 					'subtitle' => T_(\lib\app\sura::detail($next_sura, 'tname')),
 				];
@@ -390,7 +390,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index' => $prev_sura,
-					'url'   => \dash\url::kingdom(). '/s'. $prev_sura,
+					'url'   => \dash\url::kingdom(). '/s'. $prev_sura. '?'. \dash\url::query(),
 					'title' => T_("Previous Surah"),
 					'subtitle' => T_(\lib\app\sura::detail($prev_sura, 'tname')),
 				];
@@ -412,14 +412,14 @@ class quran_word
 			}
 
 			$quran_detail = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of Juz"), 'link' => \dash\url::that()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of Juz"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
 
 			if($next_juz)
 			{
 				$quran_detail['next'] =
 				[
 					'index'    => $next_juz,
-					'url'      => \dash\url::kingdom(). '/j'. $next_juz,
+					'url'      => \dash\url::kingdom(). '/j'. $next_juz. '?'. \dash\url::query(),
 					'title'    => T_("Next juz"),
 					'subtitle' => T_('juz') . ' '. \dash\utility\human::fitNumber($next_juz),
 				];
@@ -430,7 +430,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index'    => $prev_juz,
-					'url'      => \dash\url::kingdom(). '/j'. $prev_juz,
+					'url'      => \dash\url::kingdom(). '/j'. $prev_juz. '?'. \dash\url::query(),
 					'title'    => T_("Previous juz"),
 					'subtitle' => T_('juz') . ' '. \dash\utility\human::fitNumber($prev_juz),
 				];
