@@ -69,7 +69,14 @@ class font_style
 		$list = self::list();
 		if(!isset($list[$_mode]) || !$_mode)
 		{
-			return $list['default'];
+			foreach ($list as $key => $value)
+			{
+				if($value['default'])
+				{
+					return $value;
+				}
+			}
+			return null;
 		}
 
 		return $list[$_mode];
@@ -83,9 +90,9 @@ class font_style
 
 		$font_style =
 		[
-			'default' =>
+			'iransans' =>
 				[
-					'default' => true,
+					'default' => false,
 					'name'    => T_('IRANSans'),
 					'font'    => null,
 					'class'   => 'file-1',
@@ -94,7 +101,7 @@ class font_style
 
 			'uthmani' =>
 				[
-					'default' => false,
+					'default' => true,
 					'name'    => T_('Uthmani'),
 					'font'    => null,
 					'class'   => 'checkbox',
