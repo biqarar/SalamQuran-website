@@ -59,7 +59,7 @@ class qari
 			['index' => 1082, 'lang' => 'en', 'type' => T_('Translate'), 'addr'  => 'audio/translation-en-sahih-IbrahimWalk/', 'slug'  => 'ibrahimwalk', 'name'  => T_('Ibrahim Walk'),],
 
 			// ----------------- trnaslate - fa - qeraati
-			['index' => 1086, 'lang' => 'fa', 'type' => T_('Commentary'), 'addr'  => 'audio/translation-fa-qaraati/', 'slug'  => 'qaraati', 'name'  => T_('Mohsen Qaraati'), 'default_lang' => true],
+			['index' => 1086, 'lang' => 'fa', 'type' => T_('Commentary'), 'addr'  => 'audio/translation-fa-qaraati/', 'slug'  => 'qaraati', 'name'  => T_('Mohsen Qaraati'), 'default_lang' => false],
 
 			// ----------------- trnaslate - fa - fouladvand
 			['index' => 1083, 'lang' => 'fa', 'type' => T_('Translate'), 'addr'  => 'audio/translation-en-sahih-foladvand/', 'slug'  => 'fouladvand', 'name'  => T_('Mohammad mahdi fouladvand'),],
