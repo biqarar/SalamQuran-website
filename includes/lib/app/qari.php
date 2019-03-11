@@ -58,6 +58,12 @@ class qari
 			// ----------------- trnaslate - en - ibrahimwalk
 			['index' => 1082, 'lang' => 'en', 'type' => T_('Translate'), 'addr'  => 'translation-en-sahih_international-32/', 'slug'  => 'ibrahimwalk', 'name'  => T_('Ibrahim Walk'),],
 
+			// ----------------- parhizgar
+			['index' => 1090, 'lang' => 'fa', 'type' => T_('Murattal'), 'addr'  => 'parhizgar-murattal-48/', 'slug'  => 'parhizgar', 'name'  => T_('Shahriyar parhizgar'), 'default_lang' => true],
+
+			// ----------------- mansouri
+			['index' => 1090, 'lang' => 'fa', 'type' => T_('Murattal'), 'addr'  => 'mansouri-murattal-40/', 'slug'  => 'mansouri', 'name'  => T_('Karim mansouri'),],
+
 			// ----------------- trnaslate - fa - qeraati
 			['index' => 1086, 'lang' => 'fa', 'type' => T_('Commentary'), 'addr'  => 'translation-fa-qaraati-16/', 'slug'  => 'qaraati', 'name'  => T_('Mohsen Qaraati'), 'default_lang' => false],
 
@@ -66,6 +72,7 @@ class qari
 
 			// ----------------- trnaslate - fa - makarem
 			['index' => 1084, 'lang' => 'fa', 'type' => T_('Translate'), 'addr'  => 'translation-fa-makarem-16/', 'slug'  => 'makarem', 'name'  => T_('Naser makarem shirazi'),],
+
 
 		];
 
