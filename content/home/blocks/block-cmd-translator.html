@@ -22,12 +22,13 @@
         </a>
 {%endfor%}
 
-
+{%if false%}
 {%if myTrans.detail.count > 1%}
         <a class="item" href="{{myTrans.detail.allLink.link}}">
           <i class="hide flag {{myTrans.detail.flag}}"></i>
           <span>{%trans "All Translations"%} {{myTrans.detail.language_name}}</span>
         </a>
+{%endif%}
 {%endif%}
 
 {%endfor%}
