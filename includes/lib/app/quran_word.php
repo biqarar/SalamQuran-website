@@ -51,6 +51,17 @@ class quran_word
 					return false;
 				}
 			}
+			elseif($first_character === 'h' && ctype_digit($number))
+			{
+				if(intval($number) >= 1 && intval($number) <= 60 )
+				{
+					return self::load_quran('hizb', $number, null, $_meta);
+				}
+				else
+				{
+					return false;
+				}
+			}
 			elseif($first_character === 'p' && ctype_digit($number))
 			{
 				return self::page($number, $_meta);
@@ -58,10 +69,6 @@ class quran_word
 			elseif($first_character === 'a' && ctype_digit($number))
 			{
 				return self::aye($number, $_meta);
-			}
-			elseif($first_character === 'h' && ctype_digit($number))
-			{
-				return self::hezb($number, $_meta);
 			}
 		}
 		else
@@ -86,9 +93,9 @@ class quran_word
 		return false;
 	}
 
-	private static function sura_pagination_current()
+	private static function pagination_current()
 	{
-		$pagination = self::sura_pagination(...func_get_args());
+		$pagination = self::pagination(...func_get_args());
 		foreach ($pagination as $key => $value)
 		{
 			if(isset($value['current']) && $value['current'])
@@ -99,7 +106,7 @@ class quran_word
 		return [1, 2];
 	}
 
-	private static function sura_pagination($_type, $_id, $_meta)
+	private static function pagination($_type, $_id, $_meta)
 	{
 		$this_link = \dash\url::that();
 
@@ -211,9 +218,9 @@ class quran_word
 
 		$a                       = isset($_meta['a']) && is_numeric($_meta['a']) ? intval($_meta['a']) : 0;
 
-		$sura_pagination_current = self::sura_pagination_current($_type, $_id, $_meta);
+		$pagination_current = self::pagination_current($_type, $_id, $_meta);
 
-		$pagination              = self::sura_pagination($_type, $_id, $_meta);
+		$pagination              = self::pagination($_type, $_id, $_meta);
 
 		if($mode === 'quran')
 		{
@@ -236,11 +243,11 @@ class quran_word
 		{
 			if($_type === 'sura')
 			{
-				$get_quran['2.2'] = [' = 2.2 AND', " `aya` >= $sura_pagination_current[0] AND `aya` <= $sura_pagination_current[1] "];
+				$get_quran['2.2'] = [' = 2.2 AND', " `aya` >= $pagination_current[0] AND `aya` <= $pagination_current[1] "];
 			}
 			elseif($_type === 'juz')
 			{
-				$get_quran['2.2'] = [' = 2.2 AND', " `page` >= $sura_pagination_current[0] AND `page` <= $sura_pagination_current[1] "];
+				$get_quran['2.2'] = [' = 2.2 AND', " `page` >= $pagination_current[0] AND `page` <= $pagination_current[1] "];
 			}
 
 			$load           = \lib\db\quran_word::get($get_quran);
@@ -441,7 +448,7 @@ class quran_word
 		$sura_detail['first_verse'] = $first_verse;
 
 		$result['detail']           = $quran_detail;
-		$result['sura_pagination']  = $pagination;
+		$result['pagination']  = $pagination;
 
 		// \dash\notif::api($result);
 
