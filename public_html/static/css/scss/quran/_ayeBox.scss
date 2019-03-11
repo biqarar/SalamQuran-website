@@ -1,4 +1,19 @@
 .ayeBox{
+    // align center
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    -moz-box-align: center !important;
+    align-items: center !important;
+    // fix
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -webkit-flex-direction: row-reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    -moz-box-orient: horizontal !important;
+    -moz-box-direction: reverse !important;
+    flex-direction: row-reverse !important;
+
     position: relative;
     transition: 0.3s;
     padding: 1em 1.5em;
