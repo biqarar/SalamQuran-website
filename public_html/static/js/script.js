@@ -144,7 +144,7 @@ function handlePlayWbw()
     wbwAddr = $(this).attr('data-wbw');
     if(wbwAddr)
     {
-      var myWord = new Audio("https://dl.salamquran.com/audio/wbw/" + wbwAddr);
+      var myWord = new Audio("https://dl.salamquran.com/wbw/" + wbwAddr);
       myWord.play();
     }
     else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
