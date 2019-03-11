@@ -6,11 +6,11 @@
 
     {%if quranLoaded and requestGET.mode != 'quran'%}
 
-      {%include 'content/home/sore.html'%}
+      {%include 'content/home/theme-ayeBox.html'%}
 
     {%elseif quranLoaded and requestGET.mode == 'quran'%}
 
-      {%include 'content/home/quran.html'%}
+      {%include 'content/home/theme-onePage.html'%}
 
     {%else%}
 
