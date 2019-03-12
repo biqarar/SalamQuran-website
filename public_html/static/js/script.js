@@ -27,6 +27,10 @@ AnimatoriJS.load('particles-js', 'particles.json', function() {
 
 function CreateBubbles()
 {
+
+ var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+ if(deviceWidth > 600)
+ {
   AnimatoriJS('nodes',
   {
     "particles":
@@ -137,6 +141,7 @@ function CreateBubbles()
   );
 
   checkFPS();
+ }
 }
 
 
