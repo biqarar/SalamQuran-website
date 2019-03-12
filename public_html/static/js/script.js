@@ -25,115 +25,117 @@ AnimatoriJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-
-AnimatoriJS('nodes',
+function CreateBubbles()
 {
-  "particles": {
-  "number": {
-    "value": 100,
-    "density": {
-    "enable": true,
-    "value_area": 800
-    }
-  },
-  "color": {
-    // "value": "#0f7070"
-    "value": "#ffffff"
-  },
-  "shape": {
-    "type": "circle",
-    "stroke": {
-    "width": 0,
-    "color": "#000000"
+  AnimatoriJS('nodes',
+  {
+    "particles":
+    {
+    "number": {
+      "value": 100,
+      "density": {
+      "enable": true,
+      "value_area": 800
+      }
     },
-    "polygon": {
-    "nb_sides": 5
+    "color": {
+      "value": "#ffffff"
     },
-  },
-  "opacity": {
-    "value": 1,
-    "random": true,
-    "anim": {
-    "enable": true,
-    "speed": 1,
-    "opacity_min": 0,
-    "sync": false
-    }
-  },
-  "size": {
-    "value": 5,
-    "random": true,
-    "anim": {
-    "enable": false,
-    "speed": 4,
-    "size_min": 0.3,
-    "sync": false
-    }
-  },
-  "line_linked": {
-    "enable": false,
-    "distance": 150,
-    "color": "#ffffff",
-    "opacity": 0.4,
-    "width": 1
-  },
-  "move": {
-    "enable": true,
-    "speed": 1,
-    "direction": "top-right",
-    "random": true,
-    "straight": false,
-    "out_mode": "out",
-    "bounce": false,
-    "attract": {
-    "enable": false,
-    "rotateX": 600,
-    "rotateY": 1200
-    }
-  }
-  },
-  "interactivity": {
-  "detect_on": "canvas",
-  "events": {
-    "onhover": {
-    "enable": true,
-    "mode": "bubble"
+    "shape": {
+      "type": "circle",
+      "stroke": {
+      "width": 0,
+      "color": "#000000"
+      },
+      "polygon": {
+      "nb_sides": 5
+      },
     },
-    "onclick": {
-    "enable": true,
-    "mode": "remove"
+    "opacity": {
+      "value": 0.8,
+      "random": true,
+      "anim": {
+      "enable": false,
+      "speed": 1,
+      "opacity_min": 0,
+      "sync": false
+      }
     },
-    "resize": true
-  },
-  "modes": {
-    "grab": {
-    "distance": 400,
+    "size": {
+      "value": 5,
+      "random": true,
+      "anim": {
+      "enable": false,
+      "speed": 4,
+      "size_min": 0.3,
+      "sync": false
+      }
+    },
     "line_linked": {
-      "opacity": 1
+      "enable": false,
+      "distance": 50,
+      "color": "#ffffff",
+      "opacity": 0.2,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "top-right",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+      "enable": false,
+      "rotateX": 600,
+      "rotateY": 1200
+      }
     }
     },
-    "bubble": {
-    "distance": 250,
-    "size": 0,
-    "duration": 2,
-    "opacity": 0,
-    "speed": 3
+    "interactivity": {
+    "detect_on": "window",
+    "events": {
+      "onhover": {
+      "enable": true,
+      "mode": "bubble"
+      },
+      "onclick": {
+      "enable": true,
+      "mode": "remove"
+      },
+      "resize": true
     },
-    "repulse": {
-    "distance": 400,
-    "duration": 0.4
-    },
-    "push": {
-    "particles_nb": 4
-    },
-    "remove": {
-    "particles_nb": 2
+    "modes": {
+      "grab": {
+      "distance": 400,
+      "line_linked": {
+        "opacity": 1
+      }
+      },
+      "bubble": {
+      "distance": 150,
+      "size": 2,
+      "duration": 2,
+      "opacity": 0.5,
+      "speed": 3
+      },
+      "repulse": {
+      "distance": 400,
+      "duration": 0.4
+      },
+      "push": {
+      "particles_nb": 4
+      },
+      "remove": {
+      "particles_nb": 2
+      }
     }
+    },
+    "retina_detect": true
   }
-  },
-  "retina_detect": true
+  );
 }
-);
 
 
 function handlePlayWbw()
@@ -356,11 +358,11 @@ function playerTogglePlay(_ayeData)
   var myAyeBox = _ayeData.ayeBox;
   if(!talavatEl)
   {
-  	return false;
+    return false;
   }
   if(!myAyeBox)
   {
-  	return false;
+    return false;
   }
   // change icon
   if (talavatEl.paused)
@@ -413,6 +415,7 @@ function pushState()
   bindAudioTools();
 }
 
+CreateBubbles();
 
 
 
