@@ -5827,11 +5827,7 @@ html {
   background-color: #fff;
   background: linear-gradient(20deg, #00d7dc 0%, #0aa5dc 100%);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background-attachment: fixed; }
 
 body {
   min-height: 100%; }
