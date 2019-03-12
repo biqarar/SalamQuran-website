@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SalamQuran - Persian\n"
-"POT-Creation-Date: 2019-03-11 21:13+0330\n"
-"PO-Revision-Date: 2019-03-11 21:13+0330\n"
+"POT-Creation-Date: 2019-03-12 17:14+0330\n"
+"PO-Revision-Date: 2019-03-12 17:15+0330\n"
 "Last-Translator: Javad <J.Evazzadeh@gmail.com>\n"
 "Language-Team: Ermile <J.Evazzadeh@gmail.com>\n"
 "Language: fa_IR\n"
@@ -81,7 +81,7 @@ msgstr "اهدای کمک نقدی به سلام قرآن"
 #: SalamQuran/content/home/view.php:87 SalamQuran/content/home/view.php:92
 #: SalamQuran/content/home/view.php:97 SalamQuran/content/home/view.php:106
 #: SalamQuran/includes/lib/app/quran_word.php:350
-#: SalamQuran/includes/lib/app/quran_word.php:1001
+#: SalamQuran/includes/lib/app/quran_word.php:1021
 msgid "Quran"
 msgstr "قرآن"
 
@@ -98,8 +98,8 @@ msgid "Juz"
 msgstr "جزء"
 
 #: SalamQuran/content/home/view.php:72 SalamQuran/content/home/view.php:114
-#: SalamQuran/includes/lib/app/quran_word.php:552
-#: SalamQuran/includes/lib/app/quran_word.php:563
+#: SalamQuran/includes/lib/app/quran_word.php:551
+#: SalamQuran/includes/lib/app/quran_word.php:562
 msgid "juz"
 msgstr "جزء"
 
@@ -108,8 +108,8 @@ msgid "Hizb"
 msgstr "حزب"
 
 #: SalamQuran/content/home/view.php:77
-#: SalamQuran/includes/lib/app/quran_word.php:593
-#: SalamQuran/includes/lib/app/quran_word.php:604
+#: SalamQuran/includes/lib/app/quran_word.php:592
+#: SalamQuran/includes/lib/app/quran_word.php:603
 msgid "hizb"
 msgstr "حزب"
 
@@ -118,26 +118,26 @@ msgid "Rub"
 msgstr "ربع حزب"
 
 #: SalamQuran/content/home/view.php:82
-#: SalamQuran/includes/lib/app/quran_word.php:713
-#: SalamQuran/includes/lib/app/quran_word.php:724
+#: SalamQuran/includes/lib/app/quran_word.php:712
+#: SalamQuran/includes/lib/app/quran_word.php:723
 msgid "rub"
 msgstr "ربع حزب"
 
 #: SalamQuran/content/home/view.php:86 SalamQuran/content/home/view.php:87
-#: SalamQuran/includes/lib/app/quran_word.php:753
-#: SalamQuran/includes/lib/app/quran_word.php:764
+#: SalamQuran/includes/lib/app/quran_word.php:752
+#: SalamQuran/includes/lib/app/quran_word.php:763
 msgid "Half of hizb"
 msgstr "نصف حزب"
 
 #: SalamQuran/content/home/view.php:91
 #: SalamQuran/includes/lib/app/quran_word.php:356
-#: SalamQuran/includes/lib/app/quran_word.php:1007
+#: SalamQuran/includes/lib/app/quran_word.php:1027
 msgid "Aya"
 msgstr "آیه"
 
 #: SalamQuran/content/home/view.php:92
-#: SalamQuran/includes/lib/app/quran_word.php:673
-#: SalamQuran/includes/lib/app/quran_word.php:684
+#: SalamQuran/includes/lib/app/quran_word.php:672
+#: SalamQuran/includes/lib/app/quran_word.php:683
 msgid "aya"
 msgstr "آیه"
 
@@ -151,8 +151,12 @@ msgstr "صفحه"
 
 #: SalamQuran/content/home/view.php:97
 #: SalamQuran/includes/languages/trans_dash.php:242
-#: SalamQuran/includes/lib/app/quran_word.php:633
-#: SalamQuran/includes/lib/app/quran_word.php:644
+#: SalamQuran/includes/lib/app/quran_word.php:632
+#: SalamQuran/includes/lib/app/quran_word.php:643
+#: SalamQuran/includes/lib/app/quran_word.php:1121
+#: SalamQuran/includes/lib/app/quran_word.php:1132
+#: SalamQuran/includes/lib/app/quran_word.php:1161
+#: SalamQuran/includes/lib/app/quran_word.php:1172
 #: dash/addons/includes/languages/trans_dash.php:242
 #: dash/addons/includes/languages/trans_static.php:132
 msgid "page"
@@ -6018,7 +6022,7 @@ msgstr "لیست سوره‌ها"
 
 #: SalamQuran/includes/languages/trans_project.php:49
 #: SalamQuran/includes/lib/app/quran_word.php:352
-#: SalamQuran/includes/lib/app/quran_word.php:1003
+#: SalamQuran/includes/lib/app/quran_word.php:1023
 msgid "Sura"
 msgstr "سوره"
 
@@ -7869,105 +7873,115 @@ msgstr "محمد مهدی فولادوند"
 msgid "Naser makarem shirazi"
 msgstr "ناصر مکارم شیرازی"
 
-#: SalamQuran/includes/lib/app/quran_word.php:444
+#: SalamQuran/includes/lib/app/quran_word.php:443
 msgid "Beginning of Surah"
 msgstr "ابتدای سوره"
 
-#: SalamQuran/includes/lib/app/quran_word.php:462
-#: SalamQuran/includes/lib/app/quran_word.php:510
+#: SalamQuran/includes/lib/app/quran_word.php:461
+#: SalamQuran/includes/lib/app/quran_word.php:509
 msgid "Next Surah"
 msgstr "سوره بعد"
 
-#: SalamQuran/includes/lib/app/quran_word.php:473
-#: SalamQuran/includes/lib/app/quran_word.php:672
+#: SalamQuran/includes/lib/app/quran_word.php:472
+#: SalamQuran/includes/lib/app/quran_word.php:671
 msgid "Next aya"
 msgstr "آیه بعد"
 
-#: SalamQuran/includes/lib/app/quran_word.php:486
-#: SalamQuran/includes/lib/app/quran_word.php:521
+#: SalamQuran/includes/lib/app/quran_word.php:485
+#: SalamQuran/includes/lib/app/quran_word.php:520
 msgid "Previous Surah"
 msgstr "سوره قبل"
 
-#: SalamQuran/includes/lib/app/quran_word.php:497
-#: SalamQuran/includes/lib/app/quran_word.php:683
+#: SalamQuran/includes/lib/app/quran_word.php:496
+#: SalamQuran/includes/lib/app/quran_word.php:682
 msgid "Previous aya"
 msgstr "آیه قبل"
 
-#: SalamQuran/includes/lib/app/quran_word.php:543
+#: SalamQuran/includes/lib/app/quran_word.php:542
 msgid "Beginning of Juz"
 msgstr "ابتدای جزء"
 
-#: SalamQuran/includes/lib/app/quran_word.php:551
+#: SalamQuran/includes/lib/app/quran_word.php:550
 msgid "Next juz"
 msgstr "جزء بعد"
 
-#: SalamQuran/includes/lib/app/quran_word.php:562
+#: SalamQuran/includes/lib/app/quran_word.php:561
 msgid "Previous juz"
 msgstr "جزء قبل"
 
-#: SalamQuran/includes/lib/app/quran_word.php:584
+#: SalamQuran/includes/lib/app/quran_word.php:583
 msgid "Beginning of Hizb"
 msgstr "ابتدای حزب"
 
-#: SalamQuran/includes/lib/app/quran_word.php:592
+#: SalamQuran/includes/lib/app/quran_word.php:591
 msgid "Next hizb"
 msgstr "حزب بعد"
 
-#: SalamQuran/includes/lib/app/quran_word.php:603
+#: SalamQuran/includes/lib/app/quran_word.php:602
 msgid "Previous hizb"
 msgstr "حزب قبل"
 
-#: SalamQuran/includes/lib/app/quran_word.php:624
+#: SalamQuran/includes/lib/app/quran_word.php:623
+#: SalamQuran/includes/lib/app/quran_word.php:1112
+#: SalamQuran/includes/lib/app/quran_word.php:1152
 msgid "Beginning of page"
 msgstr "ابتدای صفحه"
 
-#: SalamQuran/includes/lib/app/quran_word.php:632
+#: SalamQuran/includes/lib/app/quran_word.php:631
+#: SalamQuran/includes/lib/app/quran_word.php:1120
+#: SalamQuran/includes/lib/app/quran_word.php:1160
 msgid "Next page"
 msgstr "صفحه بعد"
 
-#: SalamQuran/includes/lib/app/quran_word.php:643
+#: SalamQuran/includes/lib/app/quran_word.php:642
+#: SalamQuran/includes/lib/app/quran_word.php:1131
+#: SalamQuran/includes/lib/app/quran_word.php:1171
 msgid "Previous page"
 msgstr "صفحه قبل"
 
-#: SalamQuran/includes/lib/app/quran_word.php:664
+#: SalamQuran/includes/lib/app/quran_word.php:663
 msgid "Beginning of aya"
 msgstr "ابتدای آیه"
 
-#: SalamQuran/includes/lib/app/quran_word.php:704
+#: SalamQuran/includes/lib/app/quran_word.php:703
 msgid "Beginning of rub"
 msgstr "ابتدای ربع حزب"
 
-#: SalamQuran/includes/lib/app/quran_word.php:712
+#: SalamQuran/includes/lib/app/quran_word.php:711
 msgid "Next rub"
 msgstr "ربع حزب بعد"
 
-#: SalamQuran/includes/lib/app/quran_word.php:723
+#: SalamQuran/includes/lib/app/quran_word.php:722
 msgid "Previous rub"
 msgstr "ربع حزب قبل"
 
-#: SalamQuran/includes/lib/app/quran_word.php:744
+#: SalamQuran/includes/lib/app/quran_word.php:743
 msgid "Beginning of half of hizb"
 msgstr "ابتدای نیم حزب"
 
-#: SalamQuran/includes/lib/app/quran_word.php:752
+#: SalamQuran/includes/lib/app/quran_word.php:751
 msgid "Next Half of hizb"
 msgstr "نیم حزب بعد"
 
-#: SalamQuran/includes/lib/app/quran_word.php:763
+#: SalamQuran/includes/lib/app/quran_word.php:762
 msgid "Previous Half of hizb"
 msgstr "نیم حزب قبل"
 
-#: SalamQuran/includes/lib/app/quran_word.php:849
+#: SalamQuran/includes/lib/app/quran_word.php:848
 msgid "Only 20 translate can be show"
 msgstr "تنها ۲۰ ترجمه به صورت همزمان قابل مشاهده است"
 
-#: SalamQuran/includes/lib/app/read_mode.php:37
+#: SalamQuran/includes/lib/app/read_mode.php:44
 msgid "Aye Block"
 msgstr "آیه به آیه"
 
-#: SalamQuran/includes/lib/app/read_mode.php:46
-msgid "Quran Book"
-msgstr "کتاب قرآن"
+#: SalamQuran/includes/lib/app/read_mode.php:53
+msgid "One page"
+msgstr "تک صفحه"
+
+#: SalamQuran/includes/lib/app/read_mode.php:62
+msgid "Two page"
+msgstr "دو صفحه"
 
 #: SalamQuran/includes/lib/app/translate.php:128
 msgid "Show all translate for this language"
@@ -16272,6 +16286,9 @@ msgstr "نام فایل غیرمجاز"
 #: dash/lib/utility/upload/check.php:91
 msgid "Exceeded file extension limit"
 msgstr "نوع فایل غیرمجاز"
+
+#~ msgid "Quran Book"
+#~ msgstr "کتاب قرآن"
 
 #~ msgid "Previous sura"
 #~ msgstr "سوره قبل"
