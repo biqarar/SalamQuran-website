@@ -78,14 +78,17 @@
 .ayeBox .translate{
     color: #333;
 }
-.ayeBox .translate .badge{
-    margin:0 5px;
-    padding: 3px 10px;
-    line-height: 21px;
-    border: 1px solid #ddd;
+.ayeBox .translate .v5{
+    font-size: 1em;
+    background: none;
+    padding: 0;
 }
-.ayeBox .translate blockquote{
-    margin-bottom: 1em;
+.ayeBox .translate .v5 th{
+    width: 1px;
+    white-space: nowrap;
+}
+.ayeBox .translate a{
+    display: block;
 }
 .ayeBox .translate .flag{
     margin: 0 5px;
