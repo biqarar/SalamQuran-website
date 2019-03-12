@@ -157,7 +157,8 @@ function checkFPS()
       if(fps < 30)
       {
         lessFPS.push(fps);
-        if(lessFPS.length > 60)
+        console.log('low fps ', lessFPS.length, fps);
+        if(lessFPS.length > 100)
         {
           console.log('Your fps is low and we are remove animation to improve performace');
           $('#nodes').remove();
