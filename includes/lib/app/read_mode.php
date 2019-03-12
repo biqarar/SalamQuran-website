@@ -17,7 +17,14 @@ class read_mode
 		$list = self::list();
 		if(!isset($list[$_mode]) || !$_mode)
 		{
-			return $list['default'];
+			foreach ($list as $key => $value)
+			{
+				if($value['default'])
+				{
+					return $value;
+				}
+			}
+			return null;
 		}
 
 		return $list[$_mode];
@@ -31,23 +38,32 @@ class read_mode
 
 		$read_mode =
 		[
-			'default' =>
-				[
-					'default' => true,
-					'name'    => T_('Aye Block'),
-					'font'    => null,
-					'class'   => 'align-right',
-					'url'     => $master. http_build_query(array_merge($get, [])),
-				],
+			'aye' =>
+			[
+				'default' => true,
+				'name'    => T_('Aye Block'),
+				'font'    => null,
+				'class'   => 'align-right',
+				'url'     => $master. http_build_query(array_merge($get, ['mode' => 'aye'])),
+			],
 
-			'quran' =>
-				[
-					'default' => false,
-					'name'    => T_('Quran Book'),
-					'font'    => null,
-					'class'   => 'book',
-					'url'     => $master. http_build_query(array_merge($get, ['mode' => 'quran'])),
-				],
+			'onepage' =>
+			[
+				'default' => false,
+				'name'    => T_('One page'),
+				'font'    => null,
+				'class'   => 'book',
+				'url'     => $master. http_build_query(array_merge($get, ['mode' => 'onepage'])),
+			],
+
+			'twopage' =>
+			[
+				'default' => false,
+				'name'    => T_('Two page'),
+				'font'    => null,
+				'class'   => 'book',
+				'url'     => $master. http_build_query(array_merge($get, ['mode' => 'twopage'])),
+			],
 		];
 		return $read_mode;
 	}

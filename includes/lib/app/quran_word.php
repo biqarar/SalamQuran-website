@@ -232,7 +232,7 @@ class quran_word
 
 	private static function load_quran($_type, $_id, $_aye = null, $_meta = [])
 	{
-		if($_meta['mode'] === 'quran')
+		if($_meta['mode'] === 'onepage')
 		{
 			return self::quran_mode(...func_get_args());
 		}
@@ -421,7 +421,6 @@ class quran_word
 
 		$result['text']    = $quran;
 
-		$result['mode_quran'] = false;
 
 
 		if($_type === 'sura')
@@ -972,16 +971,29 @@ class quran_word
 			$page2 = $first_page + 1;
 		}
 
-
-
+		$mode      = $_meta['mode'];
 		$get_quran = [];
-		$get_quran['1.1'] = ['= 1.1 AND', " `page` IN ($page1, $page2)"];
-		$load           = \lib\db\quran_word::get($get_quran);
-		$load_quran_aya = \lib\db\quran::get($get_quran);
 
-		$quran             = [];
-		$quran['page1']     = [];
-		$quran['page2']     = [];
+		if($mode === 'onepage')
+		{
+			$get_quran['page'] = $first_page;
+		}
+		elseif($mode === 'twopage')
+		{
+			$get_quran['1.1'] = ['= 1.1 AND', " `page` IN ($page1, $page2)"];
+		}
+		else
+		{
+			return false;
+		}
+
+
+		$load             = \lib\db\quran_word::get($get_quran);
+		$load_quran_aya   = \lib\db\quran::get($get_quran);
+
+		$quran            = [];
+		$quran['page1']   = [];
+		$quran['page2']   = [];
 
 		$first_verse = [];
 
@@ -990,8 +1002,14 @@ class quran_word
 
 			$myKey      = 'line';
 			$myArrayKey = $value['sura']. '_'. $value['line'];
-
-			$myPageKey = intval($value['page']) === $page1 ? 'page1' : 'page2';
+			if($_meta['mode'] === 'onepage')
+			{
+				$myPageKey = 'page1';
+			}
+			elseif($_meta['mode'] === 'twopage')
+			{
+				$myPageKey = intval($value['page']) === $page1 ? 'page1' : 'page2';
+			}
 
 			if(!isset($quran[$myPageKey][$myKey][$myArrayKey]['detail']))
 			{
@@ -1072,9 +1090,87 @@ class quran_word
 
 		$result['text']    = $quran;
 
-		$result['mode_quran'] = false;
 
+		if($_meta['mode'] === 'onepage')
+		{
+			$next_page = intval($first_page) + 1;
+			$prev_page = intval($first_page) - 1;
 
+			if($next_page > 604)
+			{
+				$next_page = null;
+			}
+
+			if($prev_page < 1)
+			{
+				$prev_page = null;
+			}
+
+			$quran_detail              = [];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of page"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+
+			if($next_page)
+			{
+				$quran_detail['next'] =
+				[
+					'index'    => $next_page,
+					'url'      => \dash\url::kingdom(). '/p'. $next_page. '?'. \dash\url::query(),
+					'title'    => T_("Next page"),
+					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($next_page),
+				];
+			}
+
+			if($prev_page)
+			{
+				$quran_detail['prev'] =
+				[
+					'index'    => $prev_page,
+					'url'      => \dash\url::kingdom(). '/p'. $prev_page. '?'. \dash\url::query(),
+					'title'    => T_("Previous page"),
+					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($prev_page),
+				];
+			}
+		}
+		elseif($_meta['mode'] === 'twopage')
+		{
+			$next_page = intval($first_page) + 2;
+			$prev_page = intval($first_page) - 1;
+
+			if($next_page > 604)
+			{
+				$next_page = null;
+			}
+
+			if($prev_page < 1)
+			{
+				$prev_page = null;
+			}
+
+			$quran_detail              = [];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of page"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+
+			if($next_page)
+			{
+				$quran_detail['next'] =
+				[
+					'index'    => $next_page,
+					'url'      => \dash\url::kingdom(). '/p'. $next_page. '?'. \dash\url::query(),
+					'title'    => T_("Next page"),
+					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($next_page),
+				];
+			}
+
+			if($prev_page)
+			{
+				$quran_detail['prev'] =
+				[
+					'index'    => $prev_page,
+					'url'      => \dash\url::kingdom(). '/p'. $prev_page. '?'. \dash\url::query(),
+					'title'    => T_("Previous page"),
+					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($prev_page),
+				];
+			}
+		}
 
 		$quran_detail['first_verse'] = $first_verse;
 		$result['detail']            = $quran_detail;
