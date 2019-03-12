@@ -6587,13 +6587,6 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   -ms-flex-align: center !important;
   -moz-box-align: center !important;
   align-items: center !important;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: reverse !important;
-  -webkit-flex-direction: row-reverse !important;
-  -ms-flex-direction: row-reverse !important;
-  -moz-box-orient: horizontal !important;
-  -moz-box-direction: reverse !important;
-  flex-direction: row-reverse !important;
   position: relative;
   transition: 0.3s;
   padding: 1em 1.5em;
