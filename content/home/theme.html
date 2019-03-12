@@ -6,6 +6,9 @@
 {%if requestGET.mode == 'onepage'%}
       {%include 'content/home/theme-onePage.html'%}
 
+{%elseif requestGET.mode == 'twopage'%}
+      {%include 'content/home/theme-twoPage.html'%}
+
 {%else%}
       {%include 'content/home/theme-ayeBox.html'%}
 

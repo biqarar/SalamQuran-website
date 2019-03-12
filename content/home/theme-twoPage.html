@@ -1,0 +1,33 @@
+<div class="f">
+	<div class="c6 s12">
+		{%for key, value in quranLoaded.text.page1%}
+		  {%for page_number, page_line in value%}
+		  <div class='readerMode'>
+
+		    <div class='aye-line block'>
+		      {%for k, v in page_line.word%}
+		        <span class='compact {{v.class_name}}'>{{v.code | raw}}</span>
+		      {%endfor%}
+		    </div>
+
+		  </div>
+		  {%endfor%}
+		{%endfor%}
+	</div>
+
+	<div class="c6 s12">
+		{%for key, value in quranLoaded.text.page2%}
+		  {%for page_number, page_line in value%}
+		  <div class='readerMode'>
+
+		    <div class='aye-line block'>
+		      {%for k, v in page_line.word%}
+		        <span class='compact {{v.class_name}}'>{{v.code | raw}}</span>
+		      {%endfor%}
+		    </div>
+
+		  </div>
+		  {%endfor%}
+		{%endfor%}
+	</div>
+</div>

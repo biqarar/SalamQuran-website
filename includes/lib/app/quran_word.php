@@ -232,7 +232,7 @@ class quran_word
 
 	private static function load_quran($_type, $_id, $_aye = null, $_meta = [])
 	{
-		if($_meta['mode'] === 'onepage')
+		if(in_array($_meta['mode'], ['onepage', 'twopage']))
 		{
 			return self::quran_mode(...func_get_args());
 		}
@@ -440,7 +440,7 @@ class quran_word
 
 			$quran_detail = \lib\app\sura::detail($_id);
 
-			$quran_detail['beginning'] = ['title' => T_("Beginning of Surah"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of Surah"), 'link' => \dash\url::that(). self::url_query()];
 
 			if($_aye)
 			{
@@ -468,7 +468,7 @@ class quran_word
 					$quran_detail['next'] =
 					[
 						'index'    => $next_aya,
-						'url'      => \dash\url::kingdom(). '/s'. $_id. '/'. $next_aya. '?'. \dash\url::query(),
+						'url'      => \dash\url::kingdom(). '/s'. $_id. '/'. $next_aya. self::url_query(),
 						'title'    => T_("Next aya"),
 						'subtitle' => \dash\utility\human::fitNumber($next_aya),
 					];
@@ -481,7 +481,7 @@ class quran_word
 						$quran_detail['prev'] =
 						[
 							'index' => $prev_sura,
-							'url'   => \dash\url::kingdom(). '/s'. $prev_sura. '/'. \lib\app\sura::detail($prev_sura, 'ayas') .'?'. \dash\url::query(),
+							'url'   => \dash\url::kingdom(). '/s'. $prev_sura. '/'. \lib\app\sura::detail($prev_sura, 'ayas') .self::url_query(),
 							'title' => T_("Previous Surah"),
 							'subtitle' => T_(\lib\app\sura::detail($prev_sura, 'tname')),
 						];
@@ -492,7 +492,7 @@ class quran_word
 					$quran_detail['prev'] =
 					[
 						'index'    => $prev_aya,
-						'url'      => \dash\url::kingdom(). '/s'. $_id. '/'. $prev_aya .'?'. \dash\url::query(),
+						'url'      => \dash\url::kingdom(). '/s'. $_id. '/'. $prev_aya .self::url_query(),
 						'title'    => T_("Previous aya"),
 						'subtitle' => \dash\utility\human::fitNumber($prev_aya),
 					];
@@ -505,7 +505,7 @@ class quran_word
 					$quran_detail['next'] =
 					[
 						'index'    => $next_sura,
-						'url'      => \dash\url::kingdom(). '/s'. $next_sura. '?'. \dash\url::query(),
+						'url'      => \dash\url::kingdom(). '/s'. $next_sura. self::url_query(),
 						'title'    => T_("Next Surah"),
 						'subtitle' => T_(\lib\app\sura::detail($next_sura, 'tname')),
 					];
@@ -516,7 +516,7 @@ class quran_word
 					$quran_detail['prev'] =
 					[
 						'index' => $prev_sura,
-						'url'   => \dash\url::kingdom(). '/s'. $prev_sura. '?'. \dash\url::query(),
+						'url'   => \dash\url::kingdom(). '/s'. $prev_sura. self::url_query(),
 						'title' => T_("Previous Surah"),
 						'subtitle' => T_(\lib\app\sura::detail($prev_sura, 'tname')),
 					];
@@ -539,14 +539,14 @@ class quran_word
 			}
 
 			$quran_detail = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of Juz"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of Juz"), 'link' => \dash\url::that(). self::url_query()];
 
 			if($next_juz)
 			{
 				$quran_detail['next'] =
 				[
 					'index'    => $next_juz,
-					'url'      => \dash\url::kingdom(). '/j'. $next_juz. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/j'. $next_juz. self::url_query(),
 					'title'    => T_("Next juz"),
 					'subtitle' => T_('juz') . ' '. \dash\utility\human::fitNumber($next_juz),
 				];
@@ -557,7 +557,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index'    => $prev_juz,
-					'url'      => \dash\url::kingdom(). '/j'. $prev_juz. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/j'. $prev_juz. self::url_query(),
 					'title'    => T_("Previous juz"),
 					'subtitle' => T_('juz') . ' '. \dash\utility\human::fitNumber($prev_juz),
 				];
@@ -580,14 +580,14 @@ class quran_word
 			}
 
 			$quran_detail = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of Hizb"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of Hizb"), 'link' => \dash\url::that(). self::url_query()];
 
 			if($next_hizb)
 			{
 				$quran_detail['next'] =
 				[
 					'index'    => $next_hizb,
-					'url'      => \dash\url::kingdom(). '/h'. $next_hizb. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/h'. $next_hizb. self::url_query(),
 					'title'    => T_("Next hizb"),
 					'subtitle' => T_('hizb') . ' '. \dash\utility\human::fitNumber($next_hizb),
 				];
@@ -598,7 +598,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index'    => $prev_hizb,
-					'url'      => \dash\url::kingdom(). '/h'. $prev_hizb. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/h'. $prev_hizb. self::url_query(),
 					'title'    => T_("Previous hizb"),
 					'subtitle' => T_('hizb') . ' '. \dash\utility\human::fitNumber($prev_hizb),
 				];
@@ -620,14 +620,14 @@ class quran_word
 			}
 
 			$quran_detail = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of page"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of page"), 'link' => \dash\url::that(). self::url_query()];
 
 			if($next_page)
 			{
 				$quran_detail['next'] =
 				[
 					'index'    => $next_page,
-					'url'      => \dash\url::kingdom(). '/p'. $next_page. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/p'. $next_page. self::url_query(),
 					'title'    => T_("Next page"),
 					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($next_page),
 				];
@@ -638,7 +638,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index'    => $prev_page,
-					'url'      => \dash\url::kingdom(). '/p'. $prev_page. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/p'. $prev_page. self::url_query(),
 					'title'    => T_("Previous page"),
 					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($prev_page),
 				];
@@ -660,14 +660,14 @@ class quran_word
 			}
 
 			$quran_detail = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of aya"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of aya"), 'link' => \dash\url::that(). self::url_query()];
 
 			if($next_aya)
 			{
 				$quran_detail['next'] =
 				[
 					'index'    => $next_aya,
-					'url'      => \dash\url::kingdom(). '/a'. $next_aya. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/a'. $next_aya. self::url_query(),
 					'title'    => T_("Next aya"),
 					'subtitle' => T_('aya') . ' '. \dash\utility\human::fitNumber($next_aya),
 				];
@@ -678,7 +678,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index'    => $prev_aya,
-					'url'      => \dash\url::kingdom(). '/a'. $prev_aya. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/a'. $prev_aya. self::url_query(),
 					'title'    => T_("Previous aya"),
 					'subtitle' => T_('aya') . ' '. \dash\utility\human::fitNumber($prev_aya),
 				];
@@ -700,14 +700,14 @@ class quran_word
 			}
 
 			$quran_detail = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of rub"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of rub"), 'link' => \dash\url::that(). self::url_query()];
 
 			if($next_rub)
 			{
 				$quran_detail['next'] =
 				[
 					'index'    => $next_rub,
-					'url'      => \dash\url::kingdom(). '/p'. $next_rub. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/p'. $next_rub. self::url_query(),
 					'title'    => T_("Next rub"),
 					'subtitle' => T_('rub') . ' '. \dash\utility\human::fitNumber($next_rub),
 				];
@@ -718,7 +718,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index'    => $prev_rub,
-					'url'      => \dash\url::kingdom(). '/p'. $prev_rub. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/p'. $prev_rub. self::url_query(),
 					'title'    => T_("Previous rub"),
 					'subtitle' => T_('rub') . ' '. \dash\utility\human::fitNumber($prev_rub),
 				];
@@ -740,14 +740,14 @@ class quran_word
 			}
 
 			$quran_detail              = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of half of hizb"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of half of hizb"), 'link' => \dash\url::that(). self::url_query()];
 
 			if($next_nim)
 			{
 				$quran_detail['next'] =
 				[
 					'index'    => $next_nim,
-					'url'      => \dash\url::kingdom(). '/n'. $next_nim. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/n'. $next_nim. self::url_query(),
 					'title'    => T_("Next Half of hizb"),
 					'subtitle' => T_('Half of hizb') . ' '. \dash\utility\human::fitNumber($next_nim),
 				];
@@ -758,7 +758,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index'    => $prev_nim,
-					'url'      => \dash\url::kingdom(). '/n'. $prev_nim. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/n'. $prev_nim. self::url_query(),
 					'title'    => T_("Previous Half of hizb"),
 					'subtitle' => T_('Half of hizb') . ' '. \dash\utility\human::fitNumber($prev_nim),
 				];
@@ -988,6 +988,8 @@ class quran_word
 		}
 
 
+
+
 		$load             = \lib\db\quran_word::get($get_quran);
 		$load_quran_aya   = \lib\db\quran::get($get_quran);
 
@@ -1107,14 +1109,14 @@ class quran_word
 			}
 
 			$quran_detail              = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of page"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of page"), 'link' => \dash\url::that(). self::url_query()];
 
 			if($next_page)
 			{
 				$quran_detail['next'] =
 				[
 					'index'    => $next_page,
-					'url'      => \dash\url::kingdom(). '/p'. $next_page. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/p'. $next_page. self::url_query(),
 					'title'    => T_("Next page"),
 					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($next_page),
 				];
@@ -1125,7 +1127,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index'    => $prev_page,
-					'url'      => \dash\url::kingdom(). '/p'. $prev_page. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/p'. $prev_page. self::url_query(),
 					'title'    => T_("Previous page"),
 					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($prev_page),
 				];
@@ -1147,14 +1149,14 @@ class quran_word
 			}
 
 			$quran_detail              = [];
-			$quran_detail['beginning'] = ['title' => T_("Beginning of page"), 'link' => \dash\url::that(). '?'. \dash\url::query()];
+			$quran_detail['beginning'] = ['title' => T_("Beginning of page"), 'link' => \dash\url::that(). self::url_query()];
 
 			if($next_page)
 			{
 				$quran_detail['next'] =
 				[
 					'index'    => $next_page,
-					'url'      => \dash\url::kingdom(). '/p'. $next_page. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/p'. $next_page. self::url_query(),
 					'title'    => T_("Next page"),
 					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($next_page),
 				];
@@ -1165,7 +1167,7 @@ class quran_word
 				$quran_detail['prev'] =
 				[
 					'index'    => $prev_page,
-					'url'      => \dash\url::kingdom(). '/p'. $prev_page. '?'. \dash\url::query(),
+					'url'      => \dash\url::kingdom(). '/p'. $prev_page. self::url_query(),
 					'title'    => T_("Previous page"),
 					'subtitle' => T_('page') . ' '. \dash\utility\human::fitNumber($prev_page),
 				];
@@ -1182,6 +1184,19 @@ class quran_word
 		return $result;
 
 		j([$page1, $page2]);
+	}
+
+	private static function url_query()
+	{
+		$query = \dash\url::query();
+		if($query)
+		{
+			return '?'. $query;
+		}
+		else
+		{
+			return null;
+		}
 	}
 
 
