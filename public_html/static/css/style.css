@@ -5453,7 +5453,7 @@ Version       1.0.0
   font-family: bismillah;
   font-size: 6em;
   text-align: center;
-  color: #000;
+  color: #333;
   padding: 25px 0;
   margin-bottom: 2rem; }
 
@@ -6604,7 +6604,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   line-height: 1.5;
   opacity: 0.7;
   background-color: #f7f7f7;
-  color: #333; }
+  color: #000; }
 
 .ayeBox:hover {
   background-color: rgba(0, 200, 255, 0.05);
@@ -6655,6 +6655,9 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   font-family: "Traditional Arabic", "Times New Roman";
   letter-spacing: 2px;
   color: #777; }
+
+.ayeBox .translate {
+  color: #222; }
 
 .ayeBox .translate .badge {
   margin: 0 5px;

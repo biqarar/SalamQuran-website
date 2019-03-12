@@ -24,7 +24,7 @@
     line-height: 1.5;
     opacity: 0.7;
     background-color: #f7f7f7;
-    color: #333;
+    color: #000;
 }
 .ayeBox:hover{
     background-color: rgba(0,200,255,0.05);
@@ -75,6 +75,9 @@
     font-family: "Traditional Arabic", "Times New Roman";
     letter-spacing: 2px;
     color: #777;
+}
+.ayeBox .translate{
+    color: #222;
 }
 .ayeBox .translate .badge{
     margin:0 5px;
