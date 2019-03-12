@@ -6602,7 +6602,6 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   border-radius: 0.25rem;
   min-height: 1em;
   line-height: 1.5;
-  opacity: 0.7;
   background-color: #f7f7f7;
   color: #000; }
 
@@ -6657,7 +6656,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
   color: #777; }
 
 .ayeBox .translate {
-  color: #222; }
+  color: #333; }
 
 .ayeBox .translate .badge {
   margin: 0 5px;
