@@ -1176,14 +1176,12 @@ class quran_word
 
 		$quran_detail['first_verse'] = $first_verse;
 		$result['detail']            = $quran_detail;
-		// $result['pagination']        = $pagination;
+		$result['find_by']           = $_meta['mode'];
+		$result['find_id']           = ['page1' => $page1, 'page2' => $page2];
 
 		// \dash\notif::api($result);
 
-		self::$find_by    = $_type;
 		return $result;
-
-		j([$page1, $page2]);
 	}
 
 	private static function url_query()

@@ -97,6 +97,47 @@ class view
 				$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($find_id). ' '. T_('page');
 				break;
 
+			case 'twopage':
+				$page  = \dash\data::quranLoaded_find_id();
+				$page1 = null;
+				$page2 = null;
+				if(isset($page['page1']))
+				{
+					$page1 = $page['page1'];
+				}
+
+				if(isset($page['page2']))
+				{
+					$page2 = $page['page2'];
+				}
+
+				if($page1 && $page2)
+				{
+					$title = T_('Pages'). ' '. \dash\utility\human::fitNumber($page1). ' '. T_("and"). ' '. \dash\utility\human::fitNumber($page2);
+					$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($page1). ' '. T_('page'). ' '. T_("and"). ' '. \dash\utility\human::fitNumber($page2);
+				}
+				elseif($page1)
+				{
+					$title = T_('Page'). ' '. \dash\utility\human::fitNumber($page1);
+					$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($page1). ' '. T_('page');
+				}
+				break;
+
+			case 'onepage':
+				$page  = \dash\data::quranLoaded_find_id();
+				$page1 = null;
+
+				if(isset($page['page1']))
+				{
+					$page1 = $page['page1'];
+				}
+
+				$title = T_('Page'). ' '. \dash\utility\human::fitNumber($page1);
+				$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($page1). ' '. T_('page');
+
+				break;
+
+
 			case 'sura':
 			default:
 				if(\dash\data::suraDetail())
