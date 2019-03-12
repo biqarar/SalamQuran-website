@@ -167,6 +167,8 @@ function checkFPS()
         {
           console.log('Your fps is low and we are remove animation to improve performace');
           $('#nodes').remove();
+          $('html').css('background', '#0aa5dc');
+
           return false;
         }
         else
