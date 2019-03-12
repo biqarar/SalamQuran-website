@@ -135,6 +135,45 @@ function CreateBubbles()
     "retina_detect": true
   }
   );
+
+  checkFPS();
+}
+
+
+
+function checkFPS()
+{
+  var before    = Date.now();
+  var fps       = 0;
+  var now       = 0;
+  const lessFPS = [];
+
+  requestAnimationFrame(
+    function loop()
+    {
+      now    = Date.now();
+      fps    = Math.round(1000 / (now - before));
+      before = now;
+      if(fps < 30)
+      {
+        lessFPS.push(fps);
+        if(lessFPS.length > 60)
+        {
+          console.log('Your fps is low and we are remove animation to improve performace');
+          $('#nodes').remove();
+          return false;
+        }
+        else
+        {
+          requestAnimationFrame(loop);
+        }
+      }
+      else
+      {
+        requestAnimationFrame(loop);
+      }
+    }
+  );
 }
 
 
