@@ -5822,6 +5822,9 @@ Version       1.0.0
 .icon-surah114:before {
   content: "\E972"; }
 
+@font-face {
+  font-family: Noorehuda;
+  src: url(../fonts/noorehuda/noorehuda_latest.ttf); }
 html {
   min-height: 100%;
   background-color: #0aa5dc; }
@@ -6644,6 +6647,14 @@ html[lang="ar"] #soreha .c7 span {
 
 .ayeBox .aye[data-style='uthmani'] .p2 {
   font-size: 1.2em; }
+
+.ayeBox .aye[data-style='noorehuda'] {
+  font-family: Noorehuda;
+  direction: rtl;
+  line-height: 1.8;
+  word-wrap: break-word;
+  font-size: 4rem;
+  word-break: keep-all; }
 
 .ayeBox .aye span {
   display: inline-block;

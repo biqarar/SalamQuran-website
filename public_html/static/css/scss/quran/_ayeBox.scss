@@ -46,6 +46,14 @@
 .ayeBox .aye[data-style='uthmani'] .p2{
     font-size: 1.2em;
 }
+.ayeBox .aye[data-style='noorehuda']{
+    font-family: Noorehuda;
+    direction: rtl;
+    line-height: 1.8;
+    word-wrap: break-word;
+    font-size: 4rem;
+    word-break: keep-all
+}
 .ayeBox .aye span{
     display: inline-block;
     padding:0 1px;
