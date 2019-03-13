@@ -110,7 +110,8 @@ class controller
 
 	private static function list()
 	{
-		$dir = __DIR__. '/sura/sura.json';
+		$dir = __DIR__. '/sura.json';
+
 		if(is_file($dir))
 		{
 			$get = \dash\file::read($dir);
