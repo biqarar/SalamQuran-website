@@ -196,7 +196,7 @@ function handlePlayWbw()
       var myWord = new Audio("https://dl.salamquran.com/wbw/" + wbwAddr);
       myWord.play();
     }
-    else if($(this).parents('.ayeBox').attr('data-ayeAudio'))
+    else if($(this).attr('data-qiraat'))
     {
       iqra(this, true);
     }
@@ -291,7 +291,7 @@ function getAyeData(_callMode, _playOneAye)
     ayeBox:     myAyeBox,
     id:         myAyeBox.attr('id'),
     title:      myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
-    audio:      myAyeBox.attr('data-ayeaudio'),
+    audio:      myAyeBox.find('.aye .ayeNum').attr('data-qiraat'),
     oneAye:     (_playOneAye? '': null),
     fromPlayer: (_callMode === 'player'? true: false),
     init:       ($('.player').attr('data-aye')? false: true),
@@ -301,7 +301,7 @@ function getAyeData(_callMode, _playOneAye)
   var nextAudio = myAyeBox.next();
   if(nextAudio.length)
   {
-    nextAudio = nextAudio.attr('data-ayeaudio');
+    nextAudio = nextAudio.find('.aye .ayeNum').attr('data-qiraat');
     if(nextAudio)
     {
       ayeResult.nextAudio = nextAudio;

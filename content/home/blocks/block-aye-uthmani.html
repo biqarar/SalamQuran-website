@@ -3,7 +3,7 @@
 {%if myWord.char_type != 'end'%}
       <span class="{{myWord.class_name}}" data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</span>
 {%else%}
-      <span class='ayeNum {{myWord.class_name}}' title='{{myAye.detail.verse_title}}' data-ayeAudio='{{myAye.detail.audio}}'>{{myWord.code | raw}}</span>
+      <span class='ayeNum {{myWord.class_name}}' title='{{myAye.detail.verse_title}}' data-qiraat='{{myAye.detail.audio}}'>{{myWord.code | raw}}</span>
 {%endif%}
 {%endfor%}
     </div>

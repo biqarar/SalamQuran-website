@@ -6643,7 +6643,7 @@ body[data-sidebar="dada"].rtl #sidebar .menu {
 .ayeBox .aye[data-style='uthmani'] span {
   padding: 0; }
 
-.ayeBox .aye .ayeNum {
+.ayeBox .aye[data-style='iransans'] .ayeNum {
   font-family: "Traditional Arabic", "Times New Roman";
   letter-spacing: 2px;
   color: #777; }
