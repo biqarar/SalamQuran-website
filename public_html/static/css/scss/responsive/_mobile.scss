@@ -50,12 +50,21 @@
 	.ayeBox .meta .opr{
 		margin: 0 2px!important;
 	}
+	.ayeBox .translate .v5 th{
+		display: block;
+		padding: 0.5em!important;
+	}
+	.ayeBox .translate .v5 td{
+		display: block;
+		padding: 0.5em!important;
+	}
 
 	// player
 	.player{
 		left: 0!important;
 		right: 0!important;
 		height: 40px;
+		max-height: 40px;
 	}
 	.player .qari figcaption{
 		display: none;
@@ -69,5 +78,6 @@
 		padding: 0 3px;
 		margin:2px 0;
 		height: 36px;
+		max-height: 36px;
 	}
 }

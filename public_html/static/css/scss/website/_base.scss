@@ -1,13 +1,18 @@
 html{
 	min-height: 100%;
-	background-color: #fff;
+	background-color: #0aa5dc;
+}
+html:before{
+	content: "";
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-size: cover;
+    will-change: transform;
+	background: #0aa5dc;
 	background: linear-gradient( 20deg, rgb(0,215,220) 0%, rgb(10,165,220) 100%);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
 }
 body{
 	min-height: 100%;
