@@ -90,23 +90,30 @@ class font_style
 
 		$font_style =
 		[
-			'iransans' =>
-				[
-					'default' => false,
-					'name'    => T_('IRANSans'),
-					'font'    => null,
-					'class'   => 'file-1',
-					'url'     => $master. http_build_query(array_merge($get, ['font' => 'iransans'])),
-				],
-
 			'uthmani' =>
-				[
-					'default' => true,
-					'name'    => T_('Uthmani'),
-					'font'    => null,
-					'class'   => 'checkbox',
-					'url'     => $master. http_build_query(array_merge($get, ['font' => 'uthmani'])),
-				],
+			[
+				'default' => true,
+				'name'    => T_('Uthmani'),
+				'font'    => null,
+				'class'   => 'checkbox',
+				'url'     => $master. http_build_query(array_merge($get, ['font' => 'uthmani'])),
+			],
+			'noorehuda' =>
+			[
+				'default' => false,
+				'name'    => T_('Urdu'),
+				'font'    => null,
+				'class'   => 'checkbox',
+				'url'     => $master. http_build_query(array_merge($get, ['font' => 'noorehuda'])),
+			],
+			'iransans' =>
+			[
+				'default' => false,
+				'name'    => T_('IRANSans'),
+				'font'    => null,
+				'class'   => 'file-1',
+				'url'     => $master. http_build_query(array_merge($get, ['font' => 'iransans'])),
+			],
 			// 'vazeh' =>
 			// 	[
 			// 		'default' => false,
