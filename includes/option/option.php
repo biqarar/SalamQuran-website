@@ -12,7 +12,7 @@ if(!defined('db_data_name'))
 self::$language =
 [
 	'default' => 'en',
-	'list'    => ['fa','en',],
+	'list'    => ['fa','en','ar'],
 ];
 /**
  * system default lanuage
