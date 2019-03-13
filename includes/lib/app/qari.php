@@ -25,11 +25,11 @@ class qari
 		$list =
 		[
 			// ----------------- abdoabaset
-			['index' => 1000, 'lang' => 'ar', 'type' => T_('Mujawwad'), 'addr'  => 'abdulbasit-mujawwad-128/', 'slug'  => 'abdulbaset', 'name'  => T_('AbdulBaset AbdulSamad'), 'default' => true],
+			['index' => 1000, 'lang' => 'ar', 'type' => T_('Mujawwad'), 'addr'  => 'abdulbasit-mujawwad-128/', 'slug'  => 'abdulbaset', 'name'  => T_('AbdulBaset AbdulSamad'), 'default' => false],
 			['index' => 1001, 'lang' => 'ar', 'type' => T_('Murattal'), 'addr'  => 'abdulbasit-murattal-192/', 'slug'  => 'abdulbaset', 'name'  => T_('AbdulBaset AbdulSamad'),],
 
 			// ----------------- afasy
-			['index' => 1020, 'lang' => 'ar', 'type' => T_('Murattal'), 'addr'  => 'afasy-murattal-192/', 'slug'  => 'afasy', 'name'  => T_('Mishary Rashid Alafasy'),],
+			['index' => 1020, 'lang' => 'ar', 'type' => T_('Murattal'), 'addr'  => 'afasy-murattal-192/', 'slug'  => 'afasy', 'name'  => T_('Mishary Rashid Alafasy'), 'default' => true],
 
 			// ----------------- husary
 			['index' => 1030, 'lang' => 'ar', 'type' => T_('Murattal'), 'addr'  => 'husary-murattal-128/', 'slug'  => 'husary', 'name'  => T_('Mahmoud Khalil Al-Husary'),],
