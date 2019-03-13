@@ -159,11 +159,11 @@ function checkFPS()
       now    = Date.now();
       fps    = Math.round(1000 / (now - before));
       before = now;
-      if(fps < 30)
+      if(fps < 20)
       {
         lessFPS.push(fps);
         console.log('low fps ', lessFPS.length, fps);
-        if(lessFPS.length > 100)
+        if(lessFPS.length > 70)
         {
           console.log('Your fps is low and we are remove animation to improve performace');
           $('#nodes').remove();
