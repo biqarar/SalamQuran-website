@@ -272,10 +272,20 @@ function setPlayerStatus(_mode)
 }
 
 
-function iqra(_callMode, _playOneAye)
+function iqra(_ayeNumEl, _playOneAye)
 {
-  var ayeDetail = getAyeData(_callMode, _playOneAye);
-  updatePlayer(ayeDetail);
+  // get detail of aye
+  var ayeDetail = getAyeData(_ayeNumEl, _playOneAye);
+  // update player detail and if all thing is okay
+  if(updatePlayer(ayeDetail))
+  {
+    // press play btn
+    playerTogglePlay(ayeDetail);
+    // highlight
+    highlightAye();
+    // load next audio
+    loadNextAudio(ayeDetail.nextAudio);
+  }
 }
 
 
@@ -286,10 +296,14 @@ function getAyeData(_ayeNumEl, _playOneAye)
   {
     myAyeNum = fetchPlayerData();
   }
-  else
+  else if(_ayeNumEl.is('.ayeNum'))
   {
     myAyeNum = _ayeNumEl;
-    // $('.ayeBox[data-playing]').attr('data-playing', null);
+  }
+  else
+  {
+    console.log('wrong ayeNum Element');
+    return false;
   }
 
   // define result variable
@@ -351,18 +365,20 @@ function updatePlayer(_ayeData)
     say('Player is not exist!');
     return false;
   }
+  if(!_ayeData.audio)
+  {
+    say('Player audtio address is not exist!');
+    return false;
+  }
 
   // set id to player
   myPlayer.attr('data-aye', _ayeData.id);
   // set oneAye status
   myPlayer.attr('data-oneAye', _ayeData.oneAye);
   // set play mode
-  myPlayer.attr('data-play', '');
+  // myPlayer.attr('data-play', '');
   // set title of aye
   myPlayer.find('.title').text(_ayeData.title);
-
-  // update design to highlight this aye
-  highlightAye(_ayeData);
 
   // set player new audio
   if(talavatEl.src === _ayeData.audio)
@@ -378,18 +394,22 @@ function updatePlayer(_ayeData)
   // playerTogglePlay if audio exist
   if(talavatEl.src)
   {
-    playerTogglePlay(_ayeData);
+    return true;
   }
   else
   {
     say('Error on load audio');
   }
+}
 
-  if(_ayeData.nextAudio)
+
+function loadNextAudio(_nextUrl)
+{
+  if(_nextUrl)
   {
     // try to load next audio
     var next = new Audio();
-    next.src = _ayeData.nextAudio;
+    next.src = _nextUrl;
   }
 }
 
