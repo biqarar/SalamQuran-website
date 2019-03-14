@@ -260,6 +260,7 @@ function iqra(_callMode, _playOneAye)
 function getAyeData(_callMode, _playOneAye)
 {
   var myAyeBox;
+  var myAyeNum;
   if(_callMode === 'player')
   {
     myAyeBox = fetchPlayerData();
@@ -267,9 +268,12 @@ function getAyeData(_callMode, _playOneAye)
   else
   {
     myAyeBox = $(_callMode);
-    console.log(myAyeBox);
-
-    if(myAyeBox.is('.ayeBox'))
+    myAyeNum = $(_callMode);
+    if(myAyeNum.is('.ayeNum'))
+    {
+      // do nothing, get ayeNum
+    }
+    else if(myAyeBox.is('.ayeBox'))
     {
       // this is AyeBox el, do nothing
     }
@@ -281,33 +285,49 @@ function getAyeData(_callMode, _playOneAye)
   }
 
   // check ayeBox selected from one way
-  if(!myAyeBox.is('.ayeBox'))
-  {
-    return false;
-  }
+  // if(!myAyeBox.is('.ayeBox'))
+  // {
+  //   return false;
+  // }
+  console.log(myAyeNum);
+
 
   // define result variable
   var ayeResult =
   {
-    ayeBox:     myAyeBox,
-    id:         myAyeBox.find('.aye .ayeNum').attr('data-id'),
-    title:      myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
-    audio:      myAyeBox.find('.aye .ayeNum').attr('data-qiraat'),
+    ayeNumEl:   myAyeNum,
+    id:         myAyeNum.attr('data-id'),
+    title:      myAyeNum.attr('data-original-title'),
+    audio:      myAyeNum.attr('data-qiraat'),
     oneAye:     (_playOneAye? '': null),
     fromPlayer: (_callMode === 'player'? true: false),
     init:       ($('.player').attr('data-aye')? false: true),
     nextAudio:  null
   }
 
-  var nextAudio = myAyeBox.next();
-  if(nextAudio.length)
-  {
-    nextAudio = nextAudio.find('.aye .ayeNum').attr('data-qiraat');
-    if(nextAudio)
-    {
-      ayeResult.nextAudio = nextAudio;
-    }
-  }
+
+  // // define result variable
+  // var ayeResult =
+  // {
+  //   ayeBox:     myAyeBox,
+  //   id:         myAyeBox.find('.aye .ayeNum').attr('data-id'),
+  //   title:      myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
+  //   audio:      myAyeBox.find('.aye .ayeNum').attr('data-qiraat'),
+  //   oneAye:     (_playOneAye? '': null),
+  //   fromPlayer: (_callMode === 'player'? true: false),
+  //   init:       ($('.player').attr('data-aye')? false: true),
+  //   nextAudio:  null
+  // }
+
+  // var nextAudio = myAyeBox.next();
+  // if(nextAudio.length)
+  // {
+  //   nextAudio = nextAudio.find('.aye .ayeNum').attr('data-qiraat');
+  //   if(nextAudio)
+  //   {
+  //     ayeResult.nextAudio = nextAudio;
+  //   }
+  // }
 
   console.log(ayeResult);
   // on default return id of ayebox
@@ -434,24 +454,18 @@ function playerTogglePlay(_ayeData)
 
 function detectNextAye(_this)
 {
-  var myPlayer      = $('.player');
-  var currentId     = myPlayer.attr('data-aye');
-  var currentAyeBox = $('.ayeBox#'+ currentId);
-  myPlayer.attr('data-play', null);
-  currentAyeBox.removeClass('active');
-  var nextAyeBox    = currentAyeBox.next();
-  var oneAye        = myPlayer.attr('data-oneAye');
-  // if need to get next
+  var myPlayer  = $('.player');
+  var oneAye    = myPlayer.attr('data-oneAye');
+  var idCurrent = myPlayer.attr('data-aye');
   if(oneAye === undefined)
   {
-    if(nextAyeBox.length)
+    var idNext        = idCurrent = parseInt(idCurrent) + 1;
+    var nextAyeNumEl  = $('.Quran .ayeNum[data-id="' + idNext + '"]');
+    if(nextAyeNumEl.length > 0)
     {
-      iqra(nextAyeBox);
+      iqra(nextAyeNumEl);
     }
-  }
-  else
-  {
-    // do nothing, dont need to play next
+  // currentAyeBox.removeClass('active');
   }
 }
 
