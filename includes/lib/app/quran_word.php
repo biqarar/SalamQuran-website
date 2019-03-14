@@ -416,6 +416,13 @@ class quran_word
 				$value['text'] = self::normalize($value['text']);
 			}
 
+			if(isset($value['audio']))
+			{
+				$audio_key = $value['audio'];
+
+				$value['audio_key'] = substr($audio_key, 4, 11);
+			}
+
 			$quran[$myKey][$myArrayKey]['word'][] = $value;
 		}
 
@@ -1086,6 +1093,14 @@ class quran_word
 			{
 				$value['text'] = self::normalize($value['text']);
 			}
+
+			if(isset($value['audio']))
+			{
+				$audio_key = $value['audio'];
+
+				$value['audio_key'] = substr($audio_key, 4, 11);
+			}
+
 
 			$quran[$myPageKey][$myKey][$myArrayKey]['word'][] = $value;
 		}
