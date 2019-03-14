@@ -198,8 +198,8 @@ function handlePlayWbw()
     }
     else if($(this).attr('data-qiraat'))
     {
-      // iqra($(this), true);
-      iqra($(this));
+      iqra($(this), true);
+      // iqra($(this));
     }
   });
 
@@ -231,17 +231,21 @@ function bindAudioTools()
   // on end
   talavatEl.onended = function()
   {
+    setPlayerStatus('end');
+    highlightAye();
     detectNextAye();
   };
   // on start
   talavatEl.onplay = function()
   {
     setPlayerStatus('play');
+    highlightAye();
   };
   // on pause
   talavatEl.onpause = function()
   {
     setPlayerStatus('pause');
+    highlightAye();
   };
 
 }
@@ -255,11 +259,15 @@ function setPlayerStatus(_mode)
       // if not on play, stary play from player
       iqra('player');
     }
-    $('.ayeBox.active').attr('data-playing', '');
+    $('.player').attr('data-play', '');
   }
   else if(_mode === 'pause')
   {
-    $('.ayeBox.active').attr('data-playing', null);
+    $('.player').attr('data-play', null);
+  }
+  else if(_mode === 'end')
+  {
+    $('.player').attr('data-play', null);
   }
 }
 
@@ -388,7 +396,7 @@ function updatePlayer(_ayeData)
 
 function highlightAye()
 {
-  var ayeNum = $('.player').attr('data-aye');
+  var ayeNum   = $('.player').attr('data-aye');
   var ayeNumEl = $('.Quran .ayeNum[data-id="' + ayeNum + '"]');
 
   parentAyeBox = ayeNumEl.parents('.ayeBox');
@@ -422,18 +430,18 @@ function playerTogglePlay(_ayeData)
   if (talavatEl.paused)
   {
     talavatEl.play();
-    myPlayer.attr('data-playing', '');
+    myPlayer.attr('data-play', '');
   }
   else if(talavatEl.readyState == 1)
   {
     talavatEl.currentTime = 0;
     talavatEl.play();
-    myPlayer.attr('data-playing', '');
+    myPlayer.attr('data-play', '');
   }
   else
   {
     talavatEl.pause();
-    myPlayer.attr('data-playing', null);
+    myPlayer.attr('data-play', null);
   }
 }
 
