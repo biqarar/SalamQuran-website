@@ -165,7 +165,7 @@ class qari
 	}
 
 
-	public static function get_aya_url($_gari, $_sura, $_aya)
+	public static function get_aya_url($_gari, $_sura, $_aya, $_get_key = false)
 	{
 
 		$_sura = intval($_sura);
@@ -189,16 +189,25 @@ class qari
 			$_aya = '0'. $_aya;
 		}
 
-		$load = self::load($_gari);
-		if(isset($load['addr']))
+		if($_get_key)
 		{
-			$addr = $load['addr'];
-			$url = $addr. $_sura. $_aya. '.mp3';
-			return $url;
+			$key = $_sura. '_'. $_aya;
+			return $key;
 		}
 		else
 		{
-			return false;
+			$load = self::load($_gari);
+			if(isset($load['addr']))
+			{
+				$addr = $load['addr'];
+				$url = $addr. $_sura. $_aya. '.mp3';
+				return $url;
+			}
+			else
+			{
+				return false;
+			}
+
 		}
 	}
 }

@@ -785,7 +785,7 @@ class quran_word
 	}
 
 
-	private static function get_aya_audio($_sura, $_aya, $_meta = [])
+	private static function get_aya_audio($_sura, $_aya, $_meta = [], $_get_key = false)
 	{
 		if(!isset($_meta['qari']))
 		{
@@ -797,7 +797,7 @@ class quran_word
 			$_meta['qari'] = 1;
 		}
 
-		$get_url = \lib\app\qari::get_aya_url($_meta['qari'], $_sura, $_aya);
+		$get_url = \lib\app\qari::get_aya_url($_meta['qari'], $_sura, $_aya, $_get_key);
 		return $get_url;
 	}
 
@@ -1111,7 +1111,6 @@ class quran_word
 
 		$result['text']    = $quran;
 
-
 		if($_meta['mode'] === 'onepage')
 		{
 			$next_page = intval($first_page) + 1;
@@ -1236,6 +1235,7 @@ class quran_word
 		$_value['verse_title'] = $verse_title;
 		$_value['verse_url']   = $verse_url;
 		$_value['audio']       = self::get_aya_audio($_value['sura'], $_value['aya'], $_meta);
+		$_value['audio_key']   = self::get_aya_audio($_value['sura'], $_value['aya'], $_meta, true);
 
 		return $_value;
 	}
