@@ -130,6 +130,10 @@ class audiobank
 
 			switch ($key)
 			{
+				case 'id':
+					$result[$key] = \dash\coding::encode($value);
+					break;
+
 				case 'country':
 					$result[$key] = $value;
 					$result['country_name'] = \dash\utility\location\countres::get_localname($value, true);

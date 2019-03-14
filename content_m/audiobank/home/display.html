@@ -88,7 +88,7 @@
     <tbody>
       {%for key, value in dataTable%}
       <tr>
-        <td>{{value.qari}}</td>
+        <td><a href="{{url.this}}/edit?id={{value.id}}"> <i class="sf-edit"></i> {{value.qari}}</a></td>
         <td>{{value.avatar}}</td>
         <td>{{value.type}}</td>
         <td>{{value.readtype}}</td>
