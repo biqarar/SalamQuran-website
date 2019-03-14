@@ -346,8 +346,9 @@ function fetchPlayerData()
 function updatePlayer(_ayeData)
 {
   // check player exist or not
-  var myPlayer  = $('.player');
-  var talavatEl = document.getElementById('talavat');
+  var myPlayer       = $('.player');
+  var talavatInitSrc = myPlayer.find('audio source');
+  var talavatEl      = document.getElementById('talavat');
 
   if(!_ayeData)
   {
@@ -366,6 +367,11 @@ function updatePlayer(_ayeData)
     return false;
   }
 
+  if(talavatInitSrc && talavatInitSrc.attr('src'))
+  {
+    talavatInitSrc = talavatInitSrc.attr('src');
+  }
+
   // set id to player
   myPlayer.attr('data-aye', _ayeData.id);
   // set oneAye status
@@ -378,7 +384,12 @@ function updatePlayer(_ayeData)
   // set player new audio
   if(talavatEl.src === _ayeData.audio)
   {
+    console.log('source is not new!');
     // do nothing, because it's exist before
+  }
+  else if(talavatInitSrc === _ayeData.audio)
+  {
+    console.log('source is not new for the first time!');
   }
   else
   {
@@ -388,6 +399,10 @@ function updatePlayer(_ayeData)
   }
 
   if(talavatEl.src)
+  {
+    return true;
+  }
+  else if(talavatInitSrc)
   {
     return true;
   }
