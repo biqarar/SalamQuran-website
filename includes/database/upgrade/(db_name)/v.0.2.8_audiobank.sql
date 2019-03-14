@@ -9,6 +9,7 @@ CREATE TABLE `audiobank` (
 `quality` smallint(4) UNSIGNED NULL DEFAULT NULL,
 `time` int(10) UNSIGNED NULL DEFAULT NULL,
 `size` int(10) UNSIGNED NULL DEFAULT NULL,
+`status` enum('enable', 'disable', 'awaiting', 'deleted', 'review', 'filter')  NULL DEFAULT NULL,
 `datecreated` datetime  NOT NULL DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
