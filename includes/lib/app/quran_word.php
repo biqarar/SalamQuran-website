@@ -1218,7 +1218,25 @@ class quran_word
 
 	private static function load_aya_detail($_value, $_meta)
 	{
-		$_value['audio']         = self::get_aya_audio($_value['sura'], $_value['aya'], $_meta);
+		$verse_title           = null;
+		$verse_title           .= T_("Quran");
+		$verse_title           .= ' - ';
+		$verse_title           .= T_("Sura");
+		$verse_title           .= ' ';
+		$verse_title           .= \dash\utility\human::fitNumber($_value['sura']). ' '. T_(\lib\app\sura::detail($_value['sura'], 'tname'));
+		$verse_title           .= ' - ';
+		$verse_title           .= T_("Aya");
+		$verse_title           .= ' ';
+		$verse_title           .= \dash\utility\human::fitNumber($_value['aya']);
+
+		$verse_url             = \dash\url::kingdom();
+		$verse_url             .= '/s'. $_value['sura'];
+		$verse_url             .= '/'. $_value['aya'];
+
+		$_value['verse_title'] = $verse_title;
+		$_value['verse_url']   = $verse_url;
+		$_value['audio']       = self::get_aya_audio($_value['sura'], $_value['aya'], $_meta);
+
 		return $_value;
 	}
 
