@@ -6443,8 +6443,28 @@ html[lang="ar"] #soreha .c7 span {
   display: block;
   font-size: 0.8em; }
 
-.Quran b {
-  font-weight: 400; }
+.Quran i {
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  padding: 0 1px;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent; }
+
+.Quran i[title], .Quran i[data-tippy-title] {
+  cursor: help; }
+
+.Quran i:hover {
+  color: #07b7dd;
+  border-bottom-color: #999; }
+
+.Quran[data-style='uthmani'] i {
+  padding: 0; }
+
+.Quran[data-style='iransans'] .ayeNum {
+  font-family: "Traditional Arabic", "Times New Roman";
+  letter-spacing: 2px;
+  color: #777; }
 
 .ayeSimple {
   direction: rtl;
@@ -6659,20 +6679,20 @@ html[lang="ar"] #soreha .c7 span {
   font-size: 4rem;
   word-break: keep-all; }
 
-.ayeBox .aye b {
+.ayeBox .aye i {
   display: inline-block;
   padding: 0 1px;
   transition: 0.3s;
   border-bottom: 1px solid transparent; }
 
-.ayeBox .aye b[title], .ayeBox .aye b[data-tippy-title] {
+.ayeBox .aye i[title], .ayeBox .aye i[data-tippy-title] {
   cursor: help; }
 
-.ayeBox .aye b:hover {
+.ayeBox .aye i:hover {
   color: #07b7dd;
   border-bottom-color: #999; }
 
-.ayeBox .aye[data-style='uthmani'] b {
+.ayeBox .aye[data-style='uthmani'] i {
   padding: 0; }
 
 .ayeBox .aye[data-style='iransans'] .ayeNum {
