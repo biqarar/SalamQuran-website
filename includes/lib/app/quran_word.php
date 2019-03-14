@@ -423,6 +423,11 @@ class quran_word
 				$value['audio_key'] = substr($audio_key, 4, 11);
 			}
 
+			if(isset($value['char_type']) && $value['char_type'] === 'end')
+			{
+				$value = self::load_aya_detail($value, $_meta);
+			}
+
 			$quran[$myKey][$myArrayKey]['word'][] = $value;
 		}
 
