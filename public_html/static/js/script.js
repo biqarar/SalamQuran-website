@@ -187,8 +187,8 @@ function checkFPS()
 
 function handlePlayWbw()
 {
-  $(".aye i").off('click');
-  $(".aye i").on('click', function()
+  $(".Quran i").off('click');
+  $(".Quran i").on('click', function()
   {
     wbwAddr = $(this).attr('data-wbw');
     if(wbwAddr)
