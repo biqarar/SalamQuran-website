@@ -1010,6 +1010,8 @@ class quran_word
 		$quran['page2']   = [];
 
 		$first_verse = [];
+		$check_sura = 0;
+		$check_line = 0;
 
 		foreach ($load as $key => $value)
 		{
@@ -1024,6 +1026,64 @@ class quran_word
 			{
 				$myPageKey = intval($value['page']) === $page1 ? 'page1' : 'page2';
 			}
+
+			if($check_sura === 0)
+			{
+				$check_sura = intval($value['sura']);
+			}
+
+			if(intval($value['sura']) !== $check_sura)
+			{
+				$check_sura = intval($value['sura']);
+
+				if($check_line === 13)
+				{
+					// load besmellah and next sura detail
+					$sura_detail = \lib\app\sura::detail($check_sura);
+					$quran[$myPageKey][$myKey][$check_sura. '_14']['detail'] = array_merge(['char_type' => 'start_sura', ], $sura_detail);
+					$quran[$myPageKey][$myKey][$check_sura. '_15']['detail'] = ['char_type' => 'besmellah'];
+				}
+				elseif($check_line === 14)
+				{
+					// load next sura detail
+					$sura_detail = \lib\app\sura::detail($check_sura);
+					$quran[$myPageKey][$myKey][$check_sura. '_15']['detail'] = array_merge(['char_type' => 'start_sura', ], $sura_detail);
+				}
+				else
+				{
+					$sura_detail = \lib\app\sura::detail($check_sura);
+					$quran[$myPageKey][$myKey][$check_sura. '_'. (string) ($check_line + 1)]['detail'] = array_merge(['char_type' => 'start_sura', ], $sura_detail);
+					$quran[$myPageKey][$myKey][$check_sura. '_'. (string) ($check_line + 2)]['detail'] = ['char_type' => 'besmellah'];
+				}
+			}
+
+			if(!$check_line)
+			{
+				$check_line = intval($value['line']);
+				if($check_line === 1)
+				{
+					// nothing
+				}
+				elseif($check_line === 2)
+				{
+					// load besmellah
+					$quran[$myPageKey][$myKey][$value['sura']. '_1']['detail'] = ['char_type' => 'besmellah'];
+
+				}
+				elseif($check_line === 3)
+				{
+					// load sura title and besmellah
+					$sura_detail = \lib\app\sura::detail($value['sura']);
+					$quran[$myPageKey][$myKey][$value['sura']. '_1']['detail'] = array_merge(['char_type' => 'start_sura', ], $sura_detail);
+					$quran[$myPageKey][$myKey][$value['sura']. '_2']['detail'] = ['char_type' => 'besmellah'];
+				}
+			}
+			else
+			{
+				$check_line = intval($value['line']);
+			}
+
+
 
 			if(!isset($quran[$myPageKey][$myKey][$myArrayKey]['detail']))
 			{

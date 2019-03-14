@@ -5,17 +5,23 @@
 		<!-- load page number once for each page -->
 		  <div class='readerMode'>
 		{%for page_number, page_line in value%}
-		    <div class='ayeLine'>
-		{%for k, myWord in page_line.word%}
 
-		{%if myWord.char_type != 'end'%}
-		      <i class="{{myWord.class_name}}" data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</i>
+		{%if page_line.detail.char_type == 'besmellah'%}
+			<div>بسم الله الرحمن الرحیم</div>
+		{%elseif page_line.detail.char_type == 'start_sura'%}
+			<div>{{page_line.detail.name}}</div>
 		{%else%}
-		      <i class='{{myWord.class_name}} ayeNum' data-id='{{myWord.audio_key}}' title='{{myWord.verse_title}}' data-qiraat='{{myWord.audio}}'>{{myWord.code | raw}}</i>
-		{%endif%}
+		    <div class='ayeLine'>
+			{%for k, myWord in page_line.word%}
+			{%if myWord.char_type != 'end'%}
+			      <i class="{{myWord.class_name}}" data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</i>
+			{%else%}
+			      <i class='{{myWord.class_name}} ayeNum' data-id='{{myWord.audio_key}}' title='{{myWord.verse_title}}' data-qiraat='{{myWord.audio}}'>{{myWord.code | raw}}</i>
+			{%endif%}
 
-		{%endfor%}
+			{%endfor%}
 		    </div>
+		{%endif%}
 		{%endfor%}
 
 		  </div>
@@ -29,17 +35,23 @@
 		<!-- load page number once for each page -->
 		  <div class='readerMode'>
 		{%for page_number, page_line in value%}
-		    <div class='ayeLine'>
-		{%for k, myWord in page_line.word%}
 
-		{%if myWord.char_type != 'end'%}
-		      <i class="{{myWord.class_name}}" data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</i>
+		{%if page_line.detail.char_type == 'besmellah'%}
+			<div>بسم الله الرحمن الرحیم</div>
+		{%elseif page_line.detail.char_type == 'start_sura'%}
+			<div>{{page_line.detail.name}}</div>
 		{%else%}
-		      <i class='{{myWord.class_name}} ayeNum' data-id='{{myWord.audio_key}}' title='{{myWord.verse_title}}' data-qiraat='{{myWord.audio}}'>{{myWord.code | raw}}</i>
-		{%endif%}
+		    <div class='ayeLine'>
+			{%for k, myWord in page_line.word%}
+			{%if myWord.char_type != 'end'%}
+			      <i class="{{myWord.class_name}}" data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</i>
+			{%else%}
+			      <i class='{{myWord.class_name}} ayeNum' data-id='{{myWord.audio_key}}' title='{{myWord.verse_title}}' data-qiraat='{{myWord.audio}}'>{{myWord.code | raw}}</i>
+			{%endif%}
 
-		{%endfor%}
+			{%endfor%}
 		    </div>
+		{%endif%}
 		{%endfor%}
 
 		  </div>
