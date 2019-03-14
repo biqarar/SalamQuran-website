@@ -236,19 +236,31 @@ function bindAudioTools()
   // on start
   talavatEl.onplay = function()
   {
+    setPlayerStatus('play');
+  };
+  // on pause
+  talavatEl.onpause = function()
+  {
+    setPlayerStatus('pause');
+  };
+
+}
+
+function setPlayerStatus(_mode)
+{
+  if(_mode === 'play')
+  {
     if($('.player').attr('data-play') === undefined)
     {
       // if not on play, stary play from player
       iqra('player');
     }
     $('.ayeBox.active').attr('data-playing', '');
-  };
-  // on pause
-  talavatEl.onpause = function()
+  }
+  else if(_mode === 'pause')
   {
     $('.ayeBox.active').attr('data-playing', null);
-  };
-
+  }
 }
 
 
@@ -272,14 +284,6 @@ function getAyeData(_ayeNumEl, _playOneAye)
     // $('.ayeBox[data-playing]').attr('data-playing', null);
   }
 
-  // check ayeBox selected from one way
-  // if(!myAyeBox.is('.ayeBox'))
-  // {
-  //   return false;
-  // }
-  // console.log(myAyeNum);
-
-
   // define result variable
   var ayeResult =
   {
@@ -293,29 +297,16 @@ function getAyeData(_ayeNumEl, _playOneAye)
     nextAudio:  null
   }
 
-
-  // // define result variable
-  // var ayeResult =
-  // {
-  //   ayeBox:     myAyeBox,
-  //   id:         myAyeBox.find('.aye .ayeNum').attr('data-id'),
-  //   title:      myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
-  //   audio:      myAyeBox.find('.aye .ayeNum').attr('data-qiraat'),
-  //   oneAye:     (_playOneAye? '': null),
-  //   fromPlayer: (_callMode === 'player'? true: false),
-  //   init:       ($('.player').attr('data-aye')? false: true),
-  //   nextAudio:  null
-  // }
-
-  // var nextAudio = myAyeBox.next();
-  // if(nextAudio.length)
-  // {
-  //   nextAudio = nextAudio.find('.aye .ayeNum').attr('data-qiraat');
-  //   if(nextAudio)
-  //   {
-  //     ayeResult.nextAudio = nextAudio;
-  //   }
-  // }
+  // detect and preload next audio
+  var nextAudio = detectNextAye(true);
+  if(nextAudio)
+  {
+    nextAudio = nextAudio.attr('data-qiraat');
+    if(nextAudio)
+    {
+      ayeResult.nextAudio = nextAudio;
+    }
+  }
 
   // console.log(ayeResult);
   // on default return id of ayebox
@@ -415,10 +406,10 @@ function playerTogglePlay(_ayeData)
   {
     return false;
   }
-  if(!myAyeBox)
-  {
-    return false;
-  }
+  // if(!myAyeBox)
+  // {
+  //   return false;
+  // }
   // change icon
   if (talavatEl.paused)
   {
@@ -439,7 +430,7 @@ function playerTogglePlay(_ayeData)
 }
 
 
-function detectNextAye(_this)
+function detectNextAye(_check)
 {
   var myPlayer  = $('.player');
   var oneAye    = myPlayer.attr('data-oneAye');
@@ -450,7 +441,14 @@ function detectNextAye(_this)
     var nextAyeNumEl  = $('.Quran .ayeNum[data-id="' + idNext + '"]');
     if(nextAyeNumEl.length > 0)
     {
-      iqra(nextAyeNumEl);
+      if(_check)
+      {
+        return nextAyeNumEl;
+      }
+      else
+      {
+        iqra(nextAyeNumEl);
+      }
     }
   // currentAyeBox.removeClass('active');
   }
