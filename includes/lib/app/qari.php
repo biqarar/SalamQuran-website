@@ -62,7 +62,7 @@ class qari
 			['index' => 1090, 'lang' => 'fa', 'type' => T_('Murattal'), 'addr'  => 'parhizgar-murattal-48/', 'slug'  => 'parhizgar', 'name'  => T_('Shahriyar parhizgar'), 'default_lang' => true],
 
 			// ----------------- mansouri
-			['index' => 1090, 'lang' => 'fa', 'type' => T_('Murattal'), 'addr'  => 'mansouri-murattal-40/', 'slug'  => 'mansouri', 'name'  => T_('Karim mansouri'),],
+			['index' => 1091, 'lang' => 'fa', 'type' => T_('Murattal'), 'addr'  => 'mansouri-murattal-40/', 'slug'  => 'mansouri', 'name'  => T_('Karim mansouri'),],
 
 			// ----------------- trnaslate - fa - qeraati
 			['index' => 1086, 'lang' => 'fa', 'type' => T_('Commentary'), 'addr'  => 'translation-fa-qaraati-16/', 'slug'  => 'qaraati', 'name'  => T_('Mohsen Qaraati'), 'default_lang' => false],
