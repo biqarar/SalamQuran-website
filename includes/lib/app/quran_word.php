@@ -1060,14 +1060,25 @@ class quran_word
 			if(!$check_line)
 			{
 				$check_line = intval($value['line']);
+
 				if($check_line === 1)
 				{
 					// nothing
 				}
 				elseif($check_line === 2)
 				{
-					// load besmellah
-					$quran[$myPageKey][$myKey][$value['sura']. '_1']['detail'] = ['char_type' => 'besmellah'];
+					// in fatiha sura needless to load besmellah
+					if($check_sura !== 1)
+					{
+						// load besmellah
+						$quran[$myPageKey][$myKey][$value['sura']. '_1']['detail'] = ['char_type' => 'besmellah'];
+					}
+					else
+					{
+						// load fatiha sura detail
+						$sura_detail = \lib\app\sura::detail(1);
+						$quran[$myPageKey][$myKey][$value['sura']. '_1']['detail'] = array_merge(['char_type' => 'start_sura', ], $sura_detail);
+					}
 
 				}
 				elseif($check_line === 3)
