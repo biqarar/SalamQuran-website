@@ -231,34 +231,47 @@ function bindAudioTools()
   // on end
   talavatEl.onended = function()
   {
-    highlightAye();
+    highlightAye('end');
     detectNextAye();
   };
   // on start
   talavatEl.onplay = function()
   {
-    highlightAye();
+    if($(this).attr('data-play') === undefined)
+    {
+      iqra('player', false, true);
+    }
+    highlightAye('play');
   };
   // on pause
   talavatEl.onpause = function()
   {
-    highlightAye();
+    highlightAye('pause');
   };
 }
 
 
 
-function iqra(_ayeNumEl, _playOneAye)
+function iqra(_ayeNumEl, _playOneAye, _forceByPlayer)
 {
   // get detail of aye
   var ayeDetail = getAyeData(_ayeNumEl, _playOneAye);
+  console.log(ayeDetail);
   // update player detail and if all thing is okay
   if(updatePlayer(ayeDetail))
   {
-    // press play btn
-    playerTogglePlay(ayeDetail);
-    // highlight
-    highlightAye();
+    if(_forceByPlayer)
+    {
+      // do nothing
+    }
+    else
+    {
+      // press play btn
+      playerTogglePlay(ayeDetail);
+      // highlight
+      highlightAye();
+    }
+
     // load next audio
     loadNextAudio(ayeDetail.nextAudio);
   }
@@ -335,6 +348,12 @@ function updatePlayer(_ayeData)
   // check player exist or not
   var myPlayer  = $('.player');
   var talavatEl = document.getElementById('talavat');
+
+  if(!_ayeData)
+  {
+    say('Aye data is not exist!');
+    return false;
+  }
 
   if(!talavatEl)
   {
@@ -429,7 +448,7 @@ function highlightAye(_mode)
 }
 
 
-function playerTogglePlay(_force)
+function playerTogglePlay()
 {
   var talavatEl = document.getElementById('talavat');
   var myPlayer  = $('.player');
