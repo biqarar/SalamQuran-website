@@ -283,33 +283,33 @@ class quran_word
 			$pagination         = self::pagination($_type, $_id, $_meta);
 		}
 
-		// if($_type === 'sura')
-		// {
-		// 	if(!$_aye)
-		// 	{
-		// 		$get_quran['2.2'] = [' = 2.2 AND', " `aya` >= $pagination_current[0] AND `aya` <= $pagination_current[1] "];
-		// 	}
-		// }
-		// elseif($_type === 'juz')
-		// {
-		// 	$get_quran['2.2'] = [' = 2.2 AND', " `page` >= $pagination_current[0] AND `page` <= $pagination_current[1] "];
-		// }
-		// elseif($_type === 'hizb')
-		// {
-		// 	// nothing
-		// }
-		// elseif($_type === 'page')
-		// {
-		// 	// nothing
-		// }
-		// elseif($_type === 'aya')
-		// {
-		// 	// nothing
-		// }
-		// elseif($_type === 'rub')
-		// {
-		// 	// nothing
-		// }
+		if($_type === 'sura')
+		{
+			if(!$_aye)
+			{
+				$get_quran['2.2'] = [' = 2.2 AND', " `aya` >= $pagination_current[0] AND `aya` <= $pagination_current[1] "];
+			}
+		}
+		elseif($_type === 'juz')
+		{
+			$get_quran['2.2'] = [' = 2.2 AND', " `page` >= $pagination_current[0] AND `page` <= $pagination_current[1] "];
+		}
+		elseif($_type === 'hizb')
+		{
+			// nothing
+		}
+		elseif($_type === 'page')
+		{
+			// nothing
+		}
+		elseif($_type === 'aya')
+		{
+			// nothing
+		}
+		elseif($_type === 'rub')
+		{
+			// nothing
+		}
 
 		$load           = \lib\db\quran_word::get($get_quran);
 
