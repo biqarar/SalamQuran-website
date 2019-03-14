@@ -289,7 +289,7 @@ function getAyeData(_callMode, _playOneAye)
   var ayeResult =
   {
     ayeBox:     myAyeBox,
-    id:         myAyeBox.attr('id'),
+    id:         myAyeBox.find('.aye .ayeNum').attr('data-id'),
     title:      myAyeBox.find('.aye .ayeNum').attr('data-original-title'),
     audio:      myAyeBox.find('.aye .ayeNum').attr('data-qiraat'),
     oneAye:     (_playOneAye? '': null),
