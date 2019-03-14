@@ -1,0 +1,91 @@
+{%extends display.dash%}
+
+
+
+{%block sidenav%}
+  <li><a href="{{url.here}}"><i class='sf-group-full'></i> <span>{% trans "Manage" %}</span></a></li>
+
+{%endblock%}
+
+{% block iqari%}
+<label for="qari">{%trans "Qari"%}</label>
+<div class="input">
+  <input type="text" name="qari" id="qari" value="{{dataRow.qari}}" maxlength='200'>
+</div>
+{% endblock %}
+
+
+{% block iavatar %}
+<div class="input preview">
+ <input type="file" accept="image/gif, image/jpeg, image/png" name="avatar" id="avatar1" data-preview data-max="500">
+ <label for="avatar1" title='{%trans "Avatar"%}'>
+    {%if dataRow.avatar%}<img src="{{dataRow.avatar}}">{%endif%}
+ </label>
+</div>
+{%endblock%}
+
+{% block itype%}
+<label for="type">{%trans "type"%}</label>
+<div class="input">
+  <input type="text" name="type" id="type" value="{{dataRow.type}}" maxlength='200'>
+</div>
+{% endblock %}
+
+{% block ireadtype%}
+<label for="readtype">{%trans "readtype"%}</label>
+<div class="input">
+  <input type="text" name="readtype" id="readtype" value="{{dataRow.readtype}}" maxlength='200'>
+</div>
+{% endblock %}
+
+{% block ifiletype%}
+<label for="filetype">{%trans "filetype"%}</label>
+<div class="input">
+  <input type="text" name="filetype" id="filetype" value="{{dataRow.filetype}}" maxlength='200'>
+</div>
+{% endblock %}
+
+
+
+
+{% block icountry%}
+<div class="mB10">
+  <label for='nationality'>{%trans "Nationality"%}</label>
+  <div class="ui fluid search selection dropdown">
+    <input type="hidden" name="nationality" value="{%if dataRowMember.nationality%}{{dataRowMember.nationality}}{%else%}IR{%endif%}">
+    <i class="dropdown icon"></i>
+    <div class="default text">{%trans "Choose your nationality"%}</div>
+    <div class="menu">
+{%for key, value in countryList%}
+      <div class="item" data-value="{{key}}">
+        <i class="{{value.iso2 | lower }} flag"></i>{%set myCountry = value.name%} {%trans myCountry%}<small class="description">{{value.name | capitalize}}</small>
+      </div>
+{%endfor%}
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+{% block iquality%}
+<label for="quality">{%trans "quality"%}</label>
+<div class="input">
+  <input type="number" name="quality" id="quality" value="{{dataRow.quality}}" maxlength='200'>
+</div>
+{% endblock %}
+
+
+{%block iadd%}
+<button class="btn primary block mT20">{%trans "Add"%}</button>
+{%endblock%}
+
+{%block isave%}
+<button class="btn primary block mT20">{%trans "Save"%}</button>
+{%endblock%}
+
+

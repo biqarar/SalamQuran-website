@@ -35,9 +35,26 @@ class audiobank
 	}
 
 
-	public static function search()
+	public static function search($_string = null, $_option = [])
 	{
-		$result = \dash\db\config::public_search('audiobank', ...func_get_args());
+		$default =
+		[
+			'search_field' =>
+			"
+				audiobank.qari LIKE ('%__string__%') OR
+				audiobank.type LIKE ('%__string__%') OR
+				audiobank.readtype LIKE ('%__string__%')
+			",
+		];
+
+		if(!is_array($_option))
+		{
+			$_option = [];
+		}
+
+		$_option = array_merge($default, $_option);
+
+		$result = \dash\db\config::public_search('audiobank', $_string, $_option);
 		return $result;
 	}
 
