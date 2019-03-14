@@ -231,45 +231,21 @@ function bindAudioTools()
   // on end
   talavatEl.onended = function()
   {
-    setPlayerStatus('end');
     highlightAye();
     detectNextAye();
   };
   // on start
   talavatEl.onplay = function()
   {
-    setPlayerStatus('play');
     highlightAye();
   };
   // on pause
   talavatEl.onpause = function()
   {
-    setPlayerStatus('pause');
     highlightAye();
   };
-
 }
 
-function setPlayerStatus(_mode)
-{
-  if(_mode === 'play')
-  {
-    if($('.player').attr('data-play') === undefined)
-    {
-      // if not on play, stary play from player
-      iqra('player');
-    }
-    $('.player').attr('data-play', '');
-  }
-  else if(_mode === 'pause')
-  {
-    $('.player').attr('data-play', null);
-  }
-  else if(_mode === 'end')
-  {
-    $('.player').attr('data-play', null);
-  }
-}
 
 
 function iqra(_ayeNumEl, _playOneAye)
@@ -391,7 +367,7 @@ function updatePlayer(_ayeData)
     // load new audio
     talavatEl.load();
   }
-  // playerTogglePlay if audio exist
+
   if(talavatEl.src)
   {
     return true;
@@ -414,9 +390,10 @@ function loadNextAudio(_nextUrl)
 }
 
 
-function highlightAye()
+function highlightAye(_mode)
 {
-  var ayeNum   = $('.player').attr('data-aye');
+  var myPlayer = $('.player');
+  var ayeNum   = myPlayer.attr('data-aye');
   var ayeNumEl = $('.Quran .ayeNum[data-id="' + ayeNum + '"]');
 
   parentAyeBox = ayeNumEl.parents('.ayeBox');
@@ -431,13 +408,31 @@ function highlightAye()
   {
     // we are in page view, highlight each i tag of words
   }
+
+  // check force mode
+  if(_mode === 'play')
+  {
+    myPlayer.attr('data-play', '');
+  }
+  else if(_mode === 'pause')
+  {
+    myPlayer.attr('data-play', null);
+  }
+  else if(_mode === 'end')
+  {
+    myPlayer.attr('data-play', null);
+  }
+  else
+  {
+    myPlayer.attr('data-play', null);
+  }
 }
 
 
-function playerTogglePlay(_ayeData)
+function playerTogglePlay(_force)
 {
   var talavatEl = document.getElementById('talavat');
-  var myPlayer = $('.player');
+  var myPlayer  = $('.player');
   if(!talavatEl)
   {
     return false;
@@ -450,18 +445,15 @@ function playerTogglePlay(_ayeData)
   if (talavatEl.paused)
   {
     talavatEl.play();
-    myPlayer.attr('data-play', '');
   }
   else if(talavatEl.readyState == 1)
   {
     talavatEl.currentTime = 0;
     talavatEl.play();
-    myPlayer.attr('data-play', '');
   }
   else
   {
     talavatEl.pause();
-    myPlayer.attr('data-play', null);
   }
 }
 
