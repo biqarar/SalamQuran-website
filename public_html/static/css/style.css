@@ -6772,6 +6772,28 @@ html[lang="ar"] #soreha .c7 span {
   height: 0;
   opacity: 0; }
 
+.ayeLine {
+  cursor: default; }
+
+.ayeLine {
+  position: relative;
+  transition: 0.3s;
+  padding: 5px 0;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  min-height: 1em;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #000; }
+
+.ayeLine:hover {
+  background-color: rgba(0, 200, 255, 0.05);
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.ayeLine.active {
+  background-color: rgba(0, 200, 255, 0.05);
+  border-color: #2080d0; }
+
 .player {
   position: fixed;
   bottom: 0;
