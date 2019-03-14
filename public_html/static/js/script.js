@@ -325,20 +325,19 @@ function getAyeData(_ayeNumEl, _playOneAye)
 
 function fetchPlayerData()
 {
-  var myPlayer       = $('.player');
-  var detectedAyeBox = null;
+  var myPlayer         = $('.player');
+  var detectedAyeNumEl = null;
   if(myPlayer.attr('data-aye'))
   {
     // we have aye id, get it from ayebox
-    detectedAyeBox = $('.ayeBox#'+ myPlayer.attr('data-aye'));
+    detectedAyeNumEl = $('.ayeNum[data-id="'+ myPlayer.attr('data-aye') + '"]');
   }
   else
   {
     // player is not loaded, use first aye
-    detectedAyeBox = $('.ayeBox:first');
+    detectedAyeNumEl = $('.ayeNum:first');
   }
-
-  return detectedAyeBox;
+  return detectedAyeNumEl;
 }
 
 
