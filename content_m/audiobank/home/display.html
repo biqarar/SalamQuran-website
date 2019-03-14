@@ -74,13 +74,13 @@
   <table class="tbl1 v1 cbox fs12">
     <thead>
       <tr>
-        <th data-sort="{{sortLink.qari.order}}"><a href="{{sortLink.qari.link}}">{%trans "qari"%}</a></th>
-        <th data-sort="{{sortLink.avatar.order}}"><a href="{{sortLink.avatar.link}}">{%trans "avatar"%}</a></th>
-        <th data-sort="{{sortLink.type.order}}"><a href="{{sortLink.type.link}}">{%trans "type"%}</a></th>
-        <th data-sort="{{sortLink.readtype.order}}"><a href="{{sortLink.readtype.link}}">{%trans "readtype"%}</a></th>
-        <th data-sort="{{sortLink.filetype.order}}"><a href="{{sortLink.filetype.link}}">{%trans "filetype"%}</a></th>
-        <th data-sort="{{sortLink.country.order}}"><a href="{{sortLink.country.link}}">{%trans "country"%}</a></th>
-        <th data-sort="{{sortLink.quality.order}}"><a href="{{sortLink.quality.link}}">{%trans "quality"%}</a></th>
+        <th class="collapsing">&nbsp;</th>
+        <th data-sort="{{sortLink.qari.order}}"><a href="{{sortLink.qari.link}}">{%trans "Qari"%}</a></th>
+        <th data-sort="{{sortLink.type.order}}"><a href="{{sortLink.type.link}}">{%trans "Type"%}</a></th>
+        <th data-sort="{{sortLink.readtype.order}}"><a href="{{sortLink.readtype.link}}">{%trans "Read type"%}</a></th>
+        <th data-sort="{{sortLink.filetype.order}}"><a href="{{sortLink.filetype.link}}">{%trans "file type"%}</a></th>
+        <th data-sort="{{sortLink.country.order}}"><a href="{{sortLink.country.link}}">{%trans "Country"%}</a></th>
+        <th data-sort="{{sortLink.quality.order}}"><a href="{{sortLink.quality.link}}">{%trans "Quality"%}</a></th>
         <th data-sort="{{sortLink.status.order}}"><a href='{{sortLink.status.link}}'>{%trans "Status"%}</a></th>
       </tr>
     </thead>
@@ -88,8 +88,8 @@
     <tbody>
       {%for key, value in dataTable%}
       <tr>
+        <td><img src="{{value.avatar}}" class="avatar"></td>
         <td><a href="{{url.this}}/edit?id={{value.id}}"> <i class="sf-edit"></i> {{value.qari}}</a></td>
-        <td>{{value.avatar}}</td>
         <td>{{value.type}}</td>
         <td>{{value.readtype}}</td>
         <td>{{value.filetype}}</td>

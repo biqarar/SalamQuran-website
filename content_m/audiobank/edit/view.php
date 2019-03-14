@@ -22,6 +22,10 @@ class view
 
 		\dash\data::dataRow($result);
 
+		$countryList = \dash\utility\location\countres::$data;
+		\dash\data::countryList($countryList);
+
+
 	}
 }
 ?>

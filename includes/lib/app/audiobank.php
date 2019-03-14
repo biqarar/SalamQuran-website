@@ -123,6 +123,7 @@ class audiobank
 	 */
 	public static function ready($_data)
 	{
+		$_data = \dash\app::fix_avatar($_data);
 		$result = [];
 		$result['location_string'] = [];
 		foreach ($_data as $key => $value)
