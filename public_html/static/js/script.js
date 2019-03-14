@@ -320,7 +320,7 @@ function fetchPlayerData()
   var detectedAyeNumEl = null;
   if(myPlayer.attr('data-aye'))
   {
-    // we have aye id, get it from ayebox
+    // we have aye id, get it from aye box
     detectedAyeNumEl = $('.ayeNum[data-id="'+ myPlayer.attr('data-aye') + '"]');
   }
   else
@@ -344,9 +344,6 @@ function updatePlayer(_ayeData)
     return false;
   }
 
-  // update design to highlight this aye
-  highlightAye(_ayeData);
-
   // set id to player
   myPlayer.attr('data-aye', _ayeData.id);
   // set oneAye status
@@ -355,6 +352,9 @@ function updatePlayer(_ayeData)
   myPlayer.attr('data-play', '');
   // set title of aye
   myPlayer.find('.title').text(_ayeData.title);
+
+  // update design to highlight this aye
+  highlightAye(_ayeData);
 
   // set player new audio
   if(talavatEl.src === _ayeData.audio)
@@ -386,15 +386,23 @@ function updatePlayer(_ayeData)
 }
 
 
-function highlightAye(_ayeData)
+function highlightAye()
 {
+  var ayeNum = $('.player').attr('data-aye');
+  var ayeNumEl = $('.Quran .ayeNum[data-id="' + ayeNum + '"]');
+
+  parentAyeBox = ayeNumEl.parents('.ayeBox');
+  if(parentAyeBox.length > 0)
+  {
     $('.Quran .ayeBox').removeClass('active');
-    if(_ayeData.ayeBox)
-    {
-      _ayeData.ayeBox.addClass('active');
-    }
+    parentAyeBox.addClass('active');
     // change scroll to start of this aye
-    scrollSmoothTo($('#'+ _ayeData.id))
+    scrollSmoothTo($('.ayeBox#'+ ayeNum))
+  }
+  else
+  {
+    // we are in page view, highlight each i tag of words
+  }
 }
 
 
