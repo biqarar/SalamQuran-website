@@ -1101,6 +1101,10 @@ class quran_word
 				$value['audio_key'] = substr($audio_key, 4, 11);
 			}
 
+			if(isset($value['char_type']) && $value['char_type'] === 'end')
+			{
+				$value = self::load_aya_detail($value, $_meta);
+			}
 
 			$quran[$myPageKey][$myKey][$myArrayKey]['word'][] = $value;
 		}
@@ -1212,6 +1216,11 @@ class quran_word
 		}
 	}
 
+	private static function load_aya_detail($_value, $_meta)
+	{
+		$_value['audio']         = self::get_aya_audio($_value['sura'], $_value['aya'], $_meta);
+		return $_value;
+	}
 
 	private static function find_first_page($_field, $_value, $_aya = null)
 	{
