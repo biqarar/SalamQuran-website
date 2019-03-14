@@ -89,13 +89,13 @@
       {%for key, value in dataTable%}
       <tr>
         <td><img src="{{value.avatar}}" class="avatar"></td>
-        <td><a href="{{url.this}}/edit?id={{value.id}}"> <i class="sf-edit"></i> {{value.qari}}</a></td>
-        <td>{{value.type}}</td>
-        <td>{{value.readtype}}</td>
+        <td><a href="{{url.this}}/edit?id={{value.id}}"> <i class="sf-edit"></i> {%set myqari = value.qari%}{%trans myqari%}</a></td>
+        <td>{%set mytype = value.type%}{%trans mytype%}</td>
+        <td>{%set myreadtype = value.readtype%}{%trans myreadtype%}</td>
         <td>{{value.filetype}}</td>
-        <td>{{value.country}}</td>
-        <td>{{value.quality}}</td>
-        <td>{{value.status}}</td>
+        <td>{{value.location_string}}</td>
+        <td>{{value.quality | fitNumber}}</td>
+        <td>{%set mystatus = value.status%}{%trans mystatus%}</td>
 
       </tr>
       {%endfor%}

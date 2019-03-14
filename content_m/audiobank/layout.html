@@ -9,9 +9,12 @@
 
 {% block iqari%}
 <label for="qari">{%trans "Qari"%}</label>
-<div class="input">
-  <input type="text" name="qari" id="qari" value="{{dataRow.qari}}" maxlength='200'>
-</div>
+<select name="qari" class="mB10 select ui dropdown search" id="qari">
+  <option value="" readonly>{%trans "Please select one item"%}</option>
+  {%for key, value in qariList%}
+    <option value="{{value.key}}" {%if value.key == dataRow.qari %} selected {%endif%}>{{value.value}}</option>
+  {%endfor%}
+</select>
 {% endblock %}
 
 
@@ -24,18 +27,16 @@
 </div>
 {%endblock%}
 
-{% block itype%}
-<label for="type">{%trans "type"%}</label>
-<div class="input">
-  <input type="text" name="type" id="type" value="{{dataRow.type}}" maxlength='200'>
-</div>
-{% endblock %}
 
 {% block ireadtype%}
-<label for="readtype">{%trans "readtype"%}</label>
-<div class="input">
-  <input type="text" name="readtype" id="readtype" value="{{dataRow.readtype}}" maxlength='200'>
-</div>
+
+<label for="readtype">{%trans "Read Type"%}</label>
+<select name="readtype" class="mB10 select ui dropdown search" id="readtype">
+  <option value="" readonly>{%trans "Please select one item"%}</option>
+  {%for key, value in readtypeList%}
+    <option value="{{value.key}}" {%if value.key == dataRow.readtype %} selected {%endif%}>{{value.value}}</option>
+  {%endfor%}
+</select>
 {% endblock %}
 
 {% block ifiletype%}
@@ -48,13 +49,26 @@
 
 
 
+{% block itype %}
+
+<label for="type">{%trans "Type"%}</label>
+<select name="type" class="mB10 select ui dropdown search" id="type">
+  <option value="" readonly>{%trans "Please select one item"%}</option>
+  {%for key, value in typeList%}
+    <option value="{{value.key}}" {%if value.key == dataRow.type %} selected {%endif%}>{{value.value}}</option>
+  {%endfor%}
+</select>
+
+{% endblock %}
+
+
 {% block icountry%}
 <div class="mB10">
-  <label for='nationality'>{%trans "Nationality"%}</label>
+  <label for='country'>{%trans "Country"%}</label>
   <div class="ui fluid search selection dropdown">
-    <input type="hidden" name="nationality" value="{%if dataRowMember.nationality%}{{dataRowMember.nationality}}{%else%}IR{%endif%}">
+    <input type="hidden" name="country" value="{{dataRow.country}}">
     <i class="dropdown icon"></i>
-    <div class="default text">{%trans "Choose your nationality"%}</div>
+    <div class="default text">{%trans "Choose country"%}</div>
     <div class="menu">
 {%for key, value in countryList%}
       <div class="item" data-value="{{key}}">

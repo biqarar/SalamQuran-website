@@ -17,6 +17,49 @@ class audiobank
 		'quality',
 	];
 
+	public static function qari_list()
+	{
+		$list = [];
+		$list[] = [ 'key' => 'AbdulBaset AbdulSamad', 			'value' => T_('AbdulBaset AbdulSamad'),];
+		$list[] = [ 'key' => 'Mishary Rashid Alafasy', 			'value' => T_('Mishary Rashid Alafasy'), ];
+		$list[] = [ 'key' => 'Mahmoud Khalil Al-Husary', 		'value' => T_('Mahmoud Khalil Al-Husary'),];
+		$list[] = [ 'key' => 'Mohamed Siddiq al-Minshawi', 		'value' => T_('Mohamed Siddiq al-Minshawi'),];
+		$list[] = [ 'key' => 'Hani ar-Rifai', 					'value' => T_('Hani ar-Rifai'),];
+		$list[] = [ 'key' => 'Abu Bakr al-Shatri', 				'value' => T_('Abu Bakr al-Shatri'),];
+		$list[] = [ 'key' => 'Sa`ud ash-Shuraym', 				'value' => T_('Sa`ud ash-Shuraym'),];
+		$list[] = [ 'key' => 'Abdur-Rahman as-Sudais', 			'value' => T_('Abdur-Rahman as-Sudais'),];
+		$list[] = [ 'key' => 'Rasim Balayev', 					'value' => T_('Rasim Balayev'),];
+		$list[] = [ 'key' => 'Ibrahim Walk', 					'value' => T_('Ibrahim Walk'),];
+		$list[] = [ 'key' => 'Shahriyar parhizgar',				'value' => T_('Shahriyar parhizgar'), ];
+		$list[] = [ 'key' => 'Karim mansouri', 					'value' => T_('Karim mansouri'),];
+		$list[] = [ 'key' => 'Mohsen Qaraati', 					'value' => T_('Mohsen Qaraati'),];
+		$list[] = [ 'key' => 'Mohammad mahdi fouladvand', 		'value' => T_('Mohammad mahdi fouladvand'),];
+		$list[] = [ 'key' => 'Naser makarem shirazi', 			'value' => T_('Naser makarem shirazi'),];
+		return $list;
+	}
+
+
+	public static function type_list()
+	{
+		$list   = [];
+		$list[] = [ 'key' => 'Muallim', 	'value' => T_('Muallim'),];
+		$list[] = [ 'key' => 'Mujawwad', 	'value' => T_('Mujawwad'), ];
+		$list[] = [ 'key' => 'Murattal', 	'value' => T_('Murattal'),];
+		$list[] = [ 'key' => 'Commentary', 	'value' => T_('Commentary'),];
+		$list[] = [ 'key' => 'Translate', 	'value' => T_('Translate'),];
+		return $list;
+	}
+
+
+	public static function readtype_list()
+	{
+		$list   = [];
+		$list[] = [ 'key' => 'Page screen', 'value' => T_('Page screen'),];
+		$list[] = [ 'key' => 'Aya', 		'value' => T_('Aya'), ];
+		$list[] = [ 'key' => 'Sura', 		'value' => T_('Sura'),];
+		$list[] = [ 'key' => 'Juz', 		'value' => T_('Juz'),];
+		return $list;
+	}
 
 	public static function get($_id)
 	{
