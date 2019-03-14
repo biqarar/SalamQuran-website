@@ -1,14 +1,20 @@
 
 {%for key, value in quranLoaded.text.page1%}
-  {%for page_number, page_line in value%}
+<!-- load page number once for each page -->
   <div class='readerMode'>
+{%for page_number, page_line in value%}
+    <div class='ayeLine'>
+{%for k, myWord in page_line.word%}
 
-    <div class='aye-line block'>
-      {%for k, v in page_line.word%}
-        <span class='compact {{v.class_name}}'>{{v.code | raw}}</span>
-      {%endfor%}
+{%if myWord.char_type != 'end'%}
+      <b class="{{myWord.class_name}}" data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</b>
+{%else%}
+      <b class='{{myWord.class_name}} ayeNum' data-id='{{myAye.detail.index}}' title='{{myAye.detail.verse_title}}' data-qiraat='{{myAye.detail.audio}}'>{{myWord.code | raw}}</b>
+{%endif%}
+
+{%endfor%}
     </div>
+{%endfor%}
 
   </div>
-  {%endfor%}
 {%endfor%}

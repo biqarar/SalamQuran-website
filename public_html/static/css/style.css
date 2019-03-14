@@ -6443,6 +6443,9 @@ html[lang="ar"] #soreha .c7 span {
   display: block;
   font-size: 0.8em; }
 
+.Quran b {
+  font-weight: 400; }
+
 .ayeSimple {
   direction: rtl;
   text-align: right;
