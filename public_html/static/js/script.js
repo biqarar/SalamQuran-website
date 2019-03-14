@@ -198,7 +198,8 @@ function handlePlayWbw()
     }
     else if($(this).attr('data-qiraat'))
     {
-      iqra(this, true);
+      // iqra($(this), true);
+      iqra($(this));
     }
   });
 
@@ -211,7 +212,8 @@ function bindAudioTools()
   $(".ayeBox .play").off('click');
   $(".ayeBox .play").on('click', function()
   {
-    iqra(this);
+    var ayeNumEl = $(this).parents('.ayeBox').find('.ayeNum');
+    iqra(ayeNumEl);
   });
 
   // show if quran exist in this page
@@ -257,31 +259,17 @@ function iqra(_callMode, _playOneAye)
 }
 
 
-function getAyeData(_callMode, _playOneAye)
+function getAyeData(_ayeNumEl, _playOneAye)
 {
-  var myAyeBox;
   var myAyeNum;
-  if(_callMode === 'player')
+  if(_ayeNumEl === 'player')
   {
-    myAyeBox = fetchPlayerData();
+    myAyeNum = fetchPlayerData();
   }
   else
   {
-    myAyeBox = $(_callMode);
-    myAyeNum = $(_callMode);
-    if(myAyeNum.is('.ayeNum'))
-    {
-      // do nothing, get ayeNum
-    }
-    else if(myAyeBox.is('.ayeBox'))
-    {
-      // this is AyeBox el, do nothing
-    }
-    else
-    {
-      myAyeBox = myAyeBox.parents('.ayeBox');
-    }
-    $('.ayeBox[data-playing]').attr('data-playing', null);
+    myAyeNum = _ayeNumEl;
+    // $('.ayeBox[data-playing]').attr('data-playing', null);
   }
 
   // check ayeBox selected from one way
@@ -289,7 +277,7 @@ function getAyeData(_callMode, _playOneAye)
   // {
   //   return false;
   // }
-  console.log(myAyeNum);
+  // console.log(myAyeNum);
 
 
   // define result variable
@@ -300,7 +288,7 @@ function getAyeData(_callMode, _playOneAye)
     title:      myAyeNum.attr('data-original-title'),
     audio:      myAyeNum.attr('data-qiraat'),
     oneAye:     (_playOneAye? '': null),
-    fromPlayer: (_callMode === 'player'? true: false),
+    fromPlayer: (_ayeNumEl === 'player'? true: false),
     init:       ($('.player').attr('data-aye')? false: true),
     nextAudio:  null
   }
@@ -329,7 +317,7 @@ function getAyeData(_callMode, _playOneAye)
   //   }
   // }
 
-  console.log(ayeResult);
+  // console.log(ayeResult);
   // on default return id of ayebox
   return ayeResult;
 }
