@@ -239,6 +239,7 @@ function bindAudioTools()
   {
     if($(this).attr('data-play') === undefined)
     {
+      console.log('play init');
       iqra('player', false, true);
     }
     highlightAye('play');
@@ -271,10 +272,10 @@ function iqra(_ayeNumEl, _playOneAye, _forceByPlayer)
       // highlight
       highlightAye();
     }
-
-    // load next audio
-    loadNextAudio(ayeDetail.nextAudio);
   }
+
+  // load next audio
+  loadNextAudio(ayeDetail.nextAudio);
 }
 
 
@@ -393,6 +394,7 @@ function updatePlayer(_ayeData)
   }
   else
   {
+    console.log('set new source');
     talavatEl.src = _ayeData.audio;
     // load new audio
     talavatEl.load();
