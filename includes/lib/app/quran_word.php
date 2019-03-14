@@ -1209,27 +1209,30 @@ class quran_word
 
 		}
 
-		$count_page2 = count($quran['page2']['line']);
-		if($count_page2 === 13)
+		if(isset($quran['page2']['line']))
 		{
-			$end_sura_key  = end($quran['page2']['line']);
-			$end_sura_key  = $end_sura_key['detail']['sura'];
-			$next_sura_key = intval($end_sura_key) + 1;
-			// load sura title and besmellah
-			$sura_detail = \lib\app\sura::detail($next_sura_key);
-			$quran['page2']['line']["{$next_sura_key}_14"]['detail'] = array_merge(['char_type' => 'start_sura', ], $sura_detail);
-			$quran['page2']['line']["{$next_sura_key}_15"]['detail'] = ['char_type' => 'besmellah', ];
+			$count_page2 = count($quran['page2']['line']);
+			if($count_page2 === 13)
+			{
+				$end_sura_key  = end($quran['page2']['line']);
+				$end_sura_key  = $end_sura_key['detail']['sura'];
+				$next_sura_key = intval($end_sura_key) + 1;
+				// load sura title and besmellah
+				$sura_detail = \lib\app\sura::detail($next_sura_key);
+				$quran['page2']['line']["{$next_sura_key}_14"]['detail'] = array_merge(['char_type' => 'start_sura', ], $sura_detail);
+				$quran['page2']['line']["{$next_sura_key}_15"]['detail'] = ['char_type' => 'besmellah', ];
 
-		}
-		elseif($count_page2 === 14)
-		{
-			$end_sura_key  = end($quran['page2']['line']);
-			$end_sura_key  = $end_sura_key['detail']['sura'];
-			$next_sura_key = intval($end_sura_key) + 1;
-			// load sura title and besmellah
-			$sura_detail = \lib\app\sura::detail($next_sura_key);
-			$quran['page2']['line']["{$next_sura_key}_15"]['detail'] = array_merge(['char_type' => 'start_sura', ], $sura_detail);
+			}
+			elseif($count_page2 === 14)
+			{
+				$end_sura_key  = end($quran['page2']['line']);
+				$end_sura_key  = $end_sura_key['detail']['sura'];
+				$next_sura_key = intval($end_sura_key) + 1;
+				// load sura title and besmellah
+				$sura_detail = \lib\app\sura::detail($next_sura_key);
+				$quran['page2']['line']["{$next_sura_key}_15"]['detail'] = array_merge(['char_type' => 'start_sura', ], $sura_detail);
 
+			}
 		}
 
 
