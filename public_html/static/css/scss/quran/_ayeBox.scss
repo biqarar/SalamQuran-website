@@ -54,20 +54,20 @@
     font-size: 4rem;
     word-break: keep-all
 }
-.ayeBox .aye span{
+.ayeBox .aye b{
     display: inline-block;
     padding:0 1px;
     transition: 0.3s;
     border-bottom: 1px solid transparent;
 }
-.ayeBox .aye span[title], .ayeBox .aye span[data-tippy-title]{
+.ayeBox .aye b[title], .ayeBox .aye b[data-tippy-title]{
     cursor: help;
 }
-.ayeBox .aye span:hover{
+.ayeBox .aye b:hover{
     color:#07b7dd;
     border-bottom-color:#999;
 }
-.ayeBox .aye[data-style='uthmani'] span{
+.ayeBox .aye[data-style='uthmani'] b{
     padding:0;
 }
 .ayeBox .aye[data-style='iransans'] .ayeNum{

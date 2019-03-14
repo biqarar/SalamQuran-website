@@ -187,8 +187,8 @@ function checkFPS()
 
 function handlePlayWbw()
 {
-  $(".aye span").off('click');
-  $(".aye span").on('click', function()
+  $(".aye b").off('click');
+  $(".aye b").on('click', function()
   {
     wbwAddr = $(this).attr('data-wbw');
     if(wbwAddr)
@@ -267,6 +267,7 @@ function getAyeData(_callMode, _playOneAye)
   else
   {
     myAyeBox = $(_callMode);
+    console.log(myAyeBox);
 
     if(myAyeBox.is('.ayeBox'))
     {

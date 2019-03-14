@@ -1,9 +1,9 @@
     <div class='aye' data-style='{{requestGET.font}}'>
 {%for wordIndex, myWord in myAye.word%}
 {%if myWord.char_type != 'end'%}
-      <span data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.text}}</span>
+      <b data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.text}}</b>
 {%else%}
-      <span class='ayeNum' data-id='{{myAye.detail.index}}' title='{{myAye.detail.verse_title}}' data-qiraat='{{myAye.detail.audio}}'>﴿{{myAye.detail.aya | fitNumber}}﴾</span>
+      <b class='ayeNum' data-id='{{myAye.detail.index}}' title='{{myAye.detail.verse_title}}' data-qiraat='{{myAye.detail.audio}}'>﴿{{myAye.detail.aya | fitNumber}}﴾</b>
 {%endif%}
 {%endfor%}
     </div>

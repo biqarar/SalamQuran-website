@@ -1,9 +1,9 @@
     <div class='aye' data-style='{{uthmani}}'>
 {%for wordIndex, myWord in myAye.word%}
 {%if myWord.char_type != 'end'%}
-      <span class="{{myWord.class_name}}" data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</span>
+      <b class="{{myWord.class_name}}" data-wbw='{{myWord.audio}}'{%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</b>
 {%else%}
-      <span class='ayeNum {{myWord.class_name}}' data-id='{{myAye.detail.index}}' title='{{myAye.detail.verse_title}}' data-qiraat='{{myAye.detail.audio}}'>{{myWord.code | raw}}</span>
+      <b class='ayeNum {{myWord.class_name}}' data-id='{{myAye.detail.index}}' title='{{myAye.detail.verse_title}}' data-qiraat='{{myAye.detail.audio}}'>{{myWord.code | raw}}</b>
 {%endif%}
 {%endfor%}
     </div>
