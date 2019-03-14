@@ -6473,6 +6473,10 @@ html[lang="ar"] #soreha .c7 span {
   direction: rtl;
   text-align: center; }
 
+.Quran .readerMode .bismillah {
+  font-size: 50px;
+  line-height: 50px; }
+
 .Quran i {
   font-weight: 400;
   font-style: normal;
