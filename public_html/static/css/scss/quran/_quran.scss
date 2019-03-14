@@ -3,30 +3,6 @@
 .Quran{
 
 }
-.Quran i{
-	font-weight: 400;
-	font-style: normal;
-    display: inline-block;
-    padding:0 1px;
-    transition: 0.3s;
-    border-bottom: 1px solid transparent;
-}
-.Quran i[title], .Quran i[data-tippy-title]{
-    cursor: help;
-}
-.Quran i:hover{
-    color:#07b7dd;
-    border-bottom-color:#999;
-}
-.Quran[data-style='uthmani'] i{
-    padding:0;
-}
-.Quran[data-style='iransans'] .ayeNum{
-    font-family: "Traditional Arabic", "Times New Roman";
-    letter-spacing: 2px;
-    color: #777;
-}
-
 .ayeSimple{
     direction: rtl;
     text-align: right;
