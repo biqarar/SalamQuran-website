@@ -45,6 +45,30 @@ class view
 			$args['type'] = \dash\request::get('type');
 		}
 
+		if(\dash\request::get('qari'))
+		{
+			$args['qari'] = \dash\request::get('qari');
+		}
+
+		if(\dash\request::get('readtype'))
+		{
+			$args['readtype'] = \dash\request::get('readtype');
+		}
+
+		if(\dash\request::get('filetype'))
+		{
+			$args['filetype'] = \dash\request::get('filetype');
+		}
+
+		if(\dash\request::get('country'))
+		{
+			$args['country'] = \dash\request::get('country');
+		}
+
+		if(\dash\request::get('quality'))
+		{
+			$args['quality'] = \dash\request::get('quality');
+		}
 
 
 		$sortLink  = \dash\app\sort::make_sortLink(\lib\app\audiobank::$sort_field, \dash\url::this());

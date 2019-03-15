@@ -58,12 +58,12 @@
       <tr>
         <td>{{(key + 1) | fitNumber}}</td>
         <td><img src="{{value.avatar}}" class="avatar"></td>
-        <td>{%set myqari = value.qari%}{%trans myqari%}</td>
-        <td>{%set mytype = value.type%}{%trans mytype%}</td>
-        <td>{%set myreadtype = value.readtype%}{%trans myreadtype%}</td>
-        <td>{{value.filetype}}</td>
-        <td>{{value.location_string}}</td>
-        <td>{{value.quality | fitNumber}}</td>
+        <td><a href="{{url.this}}?qari={{value.qari}}">{%set myqari = value.qari%}{%trans myqari%}</a></td>
+        <td><a href="{{url.this}}?type={{value.type}}">{%set mytype = value.type%}{%trans mytype%}</a></td>
+        <td><a href="{{url.this}}?readtype={{value.readtype}}">{%set myreadtype = value.readtype%}{%trans myreadtype%}</a></td>
+        <td><a href="{{url.this}}?filetype={{value.filetype}}">{{value.filetype}}</a></td>
+        <td><a href="{{url.this}}?country={{value.country}}">{{value.location_string}}</a></td>
+        <td><a href="{{url.this}}?quality={{value.quality}}">{{value.quality | fitNumber}}</a></td>
         <td>{{value.addr}}</td>
 
       </tr>
