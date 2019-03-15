@@ -66,19 +66,16 @@ class twigTransTerms
 	echo T_("Covering all Quranic information of Muslims");                           // Line 6
 
 	//----------------------------------projects/SalamQuran/content/audio/display.html
-	echo T_("Quran Qari");                                                            // Line 45
-	echo T_("mansori");                                                               // Line 11
-	echo T_("parhizgar");                                                             // Line 18
-	echo T_("menshawi");                                                              // Line 25
-	echo T_("sudais");                                                                // Line 32
-	echo T_("basit");                                                                 // Line 39
-	echo T_("husary");                                                                // Line 46
-	echo T_("Qari");                                                                  // Line 56
-	echo T_("Reader");                                                                // Line 56
-	echo T_("Type");                                                                  // Line 57
-	echo T_("Translation");                                                           // Line 30
-	echo T_("Sore");                                                                  // Line 59
-	echo T_("Complete");                                                              // Line 60
+	echo T_("Qari");                                                                  // Line 78
+	echo T_("Type");                                                                  // Line 79
+	echo T_("Read type");                                                             // Line 80
+	echo T_("file type");                                                             // Line 81
+	echo T_("Country");                                                               // Line 82
+	echo T_("Quality");                                                               // Line 83
+	echo T_("Addr");                                                                  // Line 84
+	echo T_("Clear filters");                                                         // Line 122
+	echo T_("Result not found!");                                                     // Line 121
+	echo T_("Search with new keywords.");                                             // Line 121
 
 	//--------------------------------projects/SalamQuran/content/mission/display.html
 	echo T_("We are define below missions for SalamQuran on start of project and extend it later.");// Line 6
@@ -189,6 +186,7 @@ class twigTransTerms
 	echo T_("Hadith al-Thaqalayn");                                                   // Line 24
 
 	//---------------------------------projects/SalamQuran/content/home/sore-font.html
+	echo T_("Translation");                                                           // Line 30
 	echo T_("List of soreha");                                                        // Line 25
 
 	//---------------------------------projects/SalamQuran/content/home/list-sore.html
@@ -418,22 +416,23 @@ class twigTransTerms
 	echo T_("An-Nas");                                                                // Line 578
 	echo T_("The Mankind");                                                           // Line 578
 
+	//-----------------------projects/SalamQuran/content/home/theme-translatePage.html
+
+	//-------------------------------------projects/SalamQuran/content/home/theme.html
+
 	//--------------------------projects/SalamQuran/content/home/blocks/block-cmd.html
 
-	//---------------------projects/SalamQuran/content/home/blocks/block-aye-text.html
-
 	//---------------projects/SalamQuran/content/home/blocks/block-ayeTranslation.html
-	echo T_("Remove this translate");                                                 // Line 6
 
 	//---------------projects/SalamQuran/content/home/blocks/block-cmd-translator.html
 	echo T_("Add Translations");                                                      // Line 3
 	echo T_("Add new translation");                                                   // Line 5
 	echo T_("All Translations");                                                      // Line 13
 
-	//------------------projects/SalamQuran/content/home/blocks/block-aye-uthmani.html
-
 	//---------------------projects/SalamQuran/content/home/blocks/block-cmd-mode.html
 	echo T_("Change Read Mode");                                                      // Line 5
+
+	//--------------------projects/SalamQuran/content/home/blocks/block-aye-words.html
 
 	//---------------------projects/SalamQuran/content/home/blocks/block-cmd-qari.html
 	echo T_("Change Qari");                                                           // Line 6
@@ -503,6 +502,31 @@ class twigTransTerms
 	echo T_("Primary studies were done.");                                            // Line 79
 	echo T_("The project was initiated and the initial agreement was made.");         // Line 85
 	echo T_("Be patient...");                                                         // Line 92
+
+	//---------------------------------------projects/SalamQuran/content_m/layout.html
+	echo T_("Manage");                                                                // Line 6
+
+	//-----------------------------projects/SalamQuran/content_m/audiobank/layout.html
+	echo T_("Please select one item");                                                // Line 56
+	echo T_("Avatar");                                                                // Line 24
+	echo T_("Read Type");                                                             // Line 33
+	echo T_("filetype");                                                              // Line 43
+	echo T_("Choose country");                                                        // Line 71
+	echo T_("addr");                                                                  // Line 86
+	echo T_("quality");                                                               // Line 95
+	echo T_("Add");                                                                   // Line 103
+	echo T_("Save");                                                                  // Line 107
+
+	//-----------------------projects/SalamQuran/content_m/audiobank/home/display.html
+	echo T_("List");                                                                  // Line 13
+	echo T_("Check audio online");                                                    // Line 22
+	echo T_("Search");                                                                // Line 65
+	echo T_("Status");                                                                // Line 85
+	echo T_("Hi!");                                                                   // Line 128
+	echo T_("Try to start with add new audio!");                                      // Line 128
+
+	//---------------------------------projects/SalamQuran/content_m/home/display.html
+	echo T_("Audio bank");                                                            // Line 20
 
  }
 }

@@ -13,7 +13,7 @@
 
   <div class="c">
 {%if navPosition == 'top'%}
-    <a class="link compact" href="{{url.pwd}}"><span class="floatR icon-surah"></span> <span class="floatR icon-surah{{quranLoaded.detail.index}}"></span></a>
+    {%if false%}<a class="link compact" href="{{url.pwd}}"><span class="floatR icon-surah"></span> <span class="floatR icon-surah{{quranLoaded.detail.index}}"></span></a>{%endif%}
 
 {%elseif navPosition == 'bottom'%}
     <a class="btn outline" href="{{quranLoaded.detail.beginning.link}}#iqra">
