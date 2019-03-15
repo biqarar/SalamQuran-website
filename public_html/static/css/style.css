@@ -4637,10 +4637,6 @@ html:before {
 body {
   min-height: 100%; }
 
-body.preload::before {
-  content: "";
-  background: #2B3134; }
-
 #main {
   z-index: 10;
   position: relative;
