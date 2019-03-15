@@ -4,75 +4,89 @@
 
 {%block page%}
 
-<div class="f txtC fs08">
-  <div class="c2 s6">
-    <a href="{{url.this}}/mansori">
-      <img src="{{url.static}}/images/qariyan/mansori.png" alt='{%trans "Quran Qari"%} {%trans "mansori"%}'>
-      <h3>{%trans "mansori"%}</h3>
-    </a>
-  </div>
 
-  <div class="c2 s6">
-    <a href="{{url.this}}/parhizgar">
-      <img src="{{url.static}}/images/qariyan/parhizgar.png" alt='{%trans "Quran Qari"%} {%trans "parhizgar"%}'>
-      <h3>{%trans "parhizgar"%}</h3>
-    </a>
-  </div>
 
-  <div class="c2 s6">
-    <a href="{{url.this}}/menshawi">
-      <img src="{{url.static}}/images/qariyan/menshawi.png" alt='{%trans "Quran Qari"%} {%trans "menshawi"%}'>
-      <h3>{%trans "menshawi"%}</h3>
-    </a>
-  </div>
+{%if dataTable%}
+ {%if dataFilter%}
 
-  <div class="c2 s6">
-    <a href="{{url.this}}/sudais">
-      <img src="{{url.static}}/images/qariyan/sudais.png" alt='{%trans "Quran Qari"%} {%trans "sudais"%}'>
-      <h3>{%trans "sudais"%}</h3>
-    </a>
-  </div>
+  {{block('htmlTable')}}
+  {{block('htmlFilter')}}
 
-  <div class="c2 s6">
-    <a href="{{url.this}}/basit">
-      <img src="{{url.static}}/images/qariyan/basit.png" alt='{%trans "Quran Qari"%} {%trans "basit"%}'>
-      <h3>{%trans "basit"%}</h3>
-    </a>
-  </div>
+ {%else%}
 
-  <div class="c2 s6">
-    <a href="{{url.this}}/husary">
-      <img src="{{url.static}}/images/qariyan/husary.png" alt='{%trans "Quran Qari"%} {%trans "husary"%}'>
-      <h3>{%trans "husary"%}</h3>
-    </a>
-  </div>
+  {{block('htmlTable')}}
 
-</div>
+ {%endif%}
+{%else%}
+ {%if dataFilter%}
 
-<div class="tblBox mT100">
-  <table class="tbl1 v6">
+  {{block('htmlFilterNoResult')}}
+
+ {%else%}
+
+  {{block('htmlStartAddNew')}}
+
+ {%endif%}
+{%endif%}
+
+{%endblock%}
+
+
+
+
+
+{%block htmlTable%}
+
+  <table class="tbl1 v9 ">
     <thead>
       <tr>
-        <th>{%trans "Qari"%} <small>{%trans "Reader"%}</small></th>
-        <th>{%trans "Type"%}</th>
-        <th>{%trans "Translation"%}</th>
-        <th>{%trans "Sore"%}</th>
-        <th>{%trans "Complete"%}</th>
+        <th class="collapsing">#</th>
+        <th class="collapsing">&nbsp;</th>
+        <th data-sort="{{sortLink.qari.order}}"><a href="{{sortLink.qari.link}}">{%trans "Qari"%}</a></th>
+        <th data-sort="{{sortLink.type.order}}"><a href="{{sortLink.type.link}}">{%trans "Type"%}</a></th>
+        <th data-sort="{{sortLink.readtype.order}}"><a href="{{sortLink.readtype.link}}">{%trans "Read type"%}</a></th>
+        <th data-sort="{{sortLink.filetype.order}}"><a href="{{sortLink.filetype.link}}">{%trans "file type"%}</a></th>
+        <th data-sort="{{sortLink.country.order}}"><a href="{{sortLink.country.link}}">{%trans "Country"%}</a></th>
+        <th data-sort="{{sortLink.quality.order}}"><a href="{{sortLink.quality.link}}">{%trans "Quality"%}</a></th>
+        <th data-sort="{{sortLink.addr.order}}"><a href="{{sortLink.addr.link}}">{%trans "Addr"%}</a></th>
+
       </tr>
     </thead>
+
     <tbody>
+      {%for key, value in dataTable%}
       <tr>
-        <td>AbdulBaset AbdulSamad</td>
-        <td>Murattal</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
+        <td>{{(key + 1) | fitNumber}}</td>
+        <td><img src="{{value.avatar}}" class="avatar"></td>
+        <td>{%set myqari = value.qari%}{%trans myqari%}</td>
+        <td>{%set mytype = value.type%}{%trans mytype%}</td>
+        <td>{%set myreadtype = value.readtype%}{%trans myreadtype%}</td>
+        <td>{{value.filetype}}</td>
+        <td>{{value.location_string}}</td>
+        <td>{{value.quality | fitNumber}}</td>
+        <td>{{value.addr}}</td>
+
       </tr>
+      {%endfor%}
     </tbody>
   </table>
+  {%include display.pagination%}
 
-</div>
+{%endblock%}
 
 
+{%block htmlFilter%}
+<p class="f fs14 msg info2">
+  <span class="c">{{dataFilter | raw}}</span>
+  <a class="cauto" href="{{url.this}}">{%trans "Clear filters"%}</a>
+</p>
+{%endblock%}
+
+
+{%block htmlFilterNoResult%}
+<p class="f fs14 msg warn2">
+  <span class="c">{%trans "Result not found!"%} {%trans "Search with new keywords."%}</span>
+  <a class="cauto" href="{{url.this}}">{%trans "Clear filters"%}</a>
+</p>
 {%endblock%}
 
