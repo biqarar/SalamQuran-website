@@ -310,7 +310,7 @@ function getAyeData(_ayeNumEl, _playOneAye)
   var ayeResult =
   {
     ayeNumEl:   myAyeNum,
-    id:         myAyeNum.attr('data-id'),
+    id:         myAyeNum.attr('data-i'),
     title:      myAyeNum.attr('data-original-title'),
     audio:      myAyeNum.attr('data-qiraat'),
     oneAye:     (_playOneAye? '': null),
@@ -342,7 +342,7 @@ function fetchPlayerData()
   if(myPlayer.attr('data-aye'))
   {
     // we have aye id, get it from aye box
-    detectedAyeNumEl = $('.ayeNum[data-id="'+ myPlayer.attr('data-aye') + '"]');
+    detectedAyeNumEl = $('.ayeNum[data-i="'+ myPlayer.attr('data-aye') + '"]');
   }
   else
   {
@@ -439,8 +439,8 @@ function highlightAye(_mode)
 {
   var myPlayer = $('.player');
   var ayeNum   = myPlayer.attr('data-aye');
-  var ayeNumEl = $('.Quran .ayeNum[data-id="' + ayeNum + '"]');
-  var ayeAllEl = $('.Quran i[data-id="' + ayeNum + '"]');
+  var ayeNumEl = $('.Quran .ayeNum[data-i="' + ayeNum + '"]');
+  var ayeAllEl = $('.Quran i[data-i="' + ayeNum + '"]');
 
   parentAyeBox = ayeNumEl.parents('.ayeBox');
   if(parentAyeBox.length > 0)
@@ -525,7 +525,7 @@ function detectNextAye(_check)
   if(oneAye === undefined)
   {
     var idNext        = idCurrent = parseInt(idCurrent) + 1;
-    var nextAyeNumEl  = $('.Quran .ayeNum[data-id="' + idNext + '"]');
+    var nextAyeNumEl  = $('.Quran .ayeNum[data-i="' + idNext + '"]');
     if(nextAyeNumEl.length > 0)
     {
       if(_check)
