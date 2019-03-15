@@ -121,8 +121,8 @@ class view
 
 				if($page1 && $page2)
 				{
-					$title = T_('Pages'). ' '. \dash\utility\human::fitNumber($page1). ' '. T_("and"). ' '. \dash\utility\human::fitNumber($page2);
-					$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($page1). ' '. T_('page'). ' '. T_("and"). ' '. \dash\utility\human::fitNumber($page2);
+					$title = T_('Pages'). ' '. \dash\utility\human::fitNumber($page1). ' '. T_(","). ' '. \dash\utility\human::fitNumber($page2);
+					$desc  = T_('Quran'). ' #' . T_('page'). ' '. \dash\utility\human::fitNumber($page1). ' - '. \dash\utility\human::fitNumber($page2);
 				}
 				elseif($page1)
 				{
@@ -132,6 +132,7 @@ class view
 				break;
 
 			case 'onepage':
+			default:
 				$page  = \dash\data::quranLoaded_find_id();
 				$page1 = null;
 
@@ -147,7 +148,6 @@ class view
 
 
 			case 'sura':
-			default:
 				if(\dash\data::suraDetail())
 				{
 					$title = T_('Surah'). ' '. T_(\dash\data::suraDetail_tname());
