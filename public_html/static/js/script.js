@@ -185,6 +185,8 @@ function checkFPS()
 }
 
 
+var wbwAudio = new Audio();
+
 function handlePlayWbw()
 {
   $(".Quran i").off('click');
@@ -193,8 +195,8 @@ function handlePlayWbw()
     wbwAddr = $(this).attr('data-wbw');
     if(wbwAddr)
     {
-      var myWord = new Audio("https://dl.salamquran.com/wbw/" + wbwAddr);
-      myWord.play();
+      wbwAudio.src = "https://dl.salamquran.com/wbw/" + wbwAddr;
+      wbwAudio.play();
     }
     else if($(this).attr('data-qiraat'))
     {
@@ -364,7 +366,7 @@ function updatePlayer(_ayeData)
   }
   if(!_ayeData.audio)
   {
-    say('Player audtio address is not exist!');
+    say('Player audio address is not exist!');
     return false;
   }
 
