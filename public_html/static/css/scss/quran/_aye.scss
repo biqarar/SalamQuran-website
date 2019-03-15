@@ -21,20 +21,31 @@
 .Quran i.h{
     color:#0770dd;
 }
+// normal and aye mode
+.Quran[data-style='uthmani'] .ayeBox .aye{
+    font-size: 2.5em;
+}
+.Quran[data-style='uthmani'] .p1 i{
+    font-size: 1.3em;
+}
+.Quran[data-style='uthmani'] .p2 i{
+    font-size: 1.3em;
+}
+// reader mode
+.Quran[data-style='uthmani'] .reader i{
+    padding:0;
+    font-size: 1.3em;
+}
+.Quran[data-style='uthmani'] .reader .p1 i{
+    font-size: 1.6em;
+}
+.Quran[data-style='uthmani'] .reader .p2 i{
+    font-size: 1.6em;
+}
 .Quran[data-style='iransans'] .ayeNum{
     font-family: "Traditional Arabic", "Times New Roman";
     letter-spacing: 2px;
     color: #777;
-}
-.Quran[data-style='uthmani'] i{
-    padding:0;
-    font-size: 1.3em;
-}
-.Quran[data-style='uthmani'] .p1 i{
-    font-size: 1.6em;
-}
-.Quran[data-style='uthmani'] .p2 i{
-    font-size: 1.6em;
 }
 .Quran[data-style='noorehuda'] i{
     font-family: Noorehuda;
