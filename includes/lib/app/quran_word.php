@@ -999,8 +999,8 @@ class quran_word
 			return false;
 		}
 
-
-
+		$page1_classname = null;
+		$page2_classname = null;
 
 		$load             = \lib\db\quran_word::get($get_quran);
 		$load_quran_aya   = \lib\db\quran::get($get_quran);
@@ -1025,6 +1025,16 @@ class quran_word
 			elseif($_meta['mode'] === 'twopage')
 			{
 				$myPageKey = intval($value['page']) === $page1 ? 'page1' : 'page2';
+			}
+
+			if($myPageKey === 'page1' && !$page1_classname)
+			{
+				$page1_classname = 'p'. $value['page'];
+			}
+
+			if($myPageKey === 'page2' && !$page2_classname)
+			{
+				$page2_classname = 'p'. $value['page'];
 			}
 
 			if($check_sura === 0)
@@ -1320,6 +1330,11 @@ class quran_word
 		}
 
 		$quran_detail['first_verse'] = $first_verse;
+
+		$quran_detail['page1']['class'] = $page1_classname;
+		$quran_detail['page2']['class'] = $page2_classname;
+
+
 		$result['detail']            = $quran_detail;
 		$result['find_by']           = $_meta['mode'];
 		$result['find_id']           = ['page1' => $page1, 'page2' => $page2];
