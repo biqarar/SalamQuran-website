@@ -192,15 +192,15 @@ function handlePlayWbw()
   $(".Quran i").on('click', function()
   {
     var wbwAddr = $(this).attr('id');
-    if(wbwAddr.substr(0,1) !== 'w')
-    {
-      return false;
-    }
-    // remove w from id
-    wbwAddr = wbwAddr.substr(1);
-
     if(wbwAddr)
     {
+      if(wbwAddr.substr(0,1) !== 'w')
+      {
+        return false;
+      }
+      // remove w from id
+      wbwAddr = wbwAddr.substr(1);
+
       var soreID  = wbwAddr.substr(0,3);
       if(soreID)
       {
@@ -440,6 +440,7 @@ function highlightAye(_mode)
   var myPlayer = $('.player');
   var ayeNum   = myPlayer.attr('data-aye');
   var ayeNumEl = $('.Quran .ayeNum[data-id="' + ayeNum + '"]');
+  var ayeAllEl = $('.Quran i[data-id="' + ayeNum + '"]');
 
   parentAyeBox = ayeNumEl.parents('.ayeBox');
   if(parentAyeBox.length > 0)
@@ -451,6 +452,14 @@ function highlightAye(_mode)
   }
   else
   {
+    if(ayeAllEl)
+    {
+      var zeroWoed = $(ayeAllEl.get(0));
+      if(zeroWoed)
+      {
+        scrollSmoothTo(zeroWoed);
+      }
+    }
     // we are in page view, highlight each i tag of words
   }
   // remove h class from all words
@@ -460,7 +469,7 @@ function highlightAye(_mode)
   if(_mode === 'play')
   {
     myPlayer.attr('data-play', '');
-    ayeNumEl.addClass('h');
+    ayeAllEl.addClass('h');
   }
   else if(_mode === 'pause')
   {

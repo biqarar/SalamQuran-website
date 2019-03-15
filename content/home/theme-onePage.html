@@ -13,9 +13,9 @@
     <div class='ayeLine'>
 	{%for k, myWord in page_line.word%}
 	{%if myWord.char_type != 'end'%}
-	      <i id='w{{myWord.audio_key}}' class="{{myWord.class_name}}" {%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</i>
+	      <i id='w{{myWord.audio_key}}' class="{{myWord.class_name}}" data-id='{{myWord.index}}' {%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</i>
 	{%else%}
-	      <i class='{{myWord.class_name}} ayeNum' data-id='{{myWord.index}}' title='{{myWord.verse_title}}' data-qiraat='{{myWord.audio}}'>{{myWord.code | raw}}</i>
+	      <i class='{{myWord.class_name}} ayeNum' data-id='{{myWord.index}}' data-sura='{{myWord.sura}}' title='{{myWord.verse_title}}' data-qiraat='{{myWord.audio}}'>{{myWord.code | raw}}</i>
 	{%endif%}
 
 	{%endfor%}
