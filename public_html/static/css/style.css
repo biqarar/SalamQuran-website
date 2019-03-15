@@ -5289,6 +5289,9 @@ html[lang="ar"] #soreha .c7 span {
   color: #07b7dd;
   border-bottom-color: #999; }
 
+.Quran i.h {
+  color: #dd7f07; }
+
 .Quran[data-style='uthmani'] i {
   padding: 0; }
 

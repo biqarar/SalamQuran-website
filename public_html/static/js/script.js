@@ -320,7 +320,6 @@ function getAyeData(_ayeNumEl, _playOneAye)
   }
 
   // console.log(ayeResult);
-  // on default return id of ayebox
   return ayeResult;
 }
 
@@ -443,11 +442,14 @@ function highlightAye(_mode)
   {
     // we are in page view, highlight each i tag of words
   }
+  // remove h class from all words
+  $('.Quran i').removeClass('h');
 
   // check force mode
   if(_mode === 'play')
   {
     myPlayer.attr('data-play', '');
+    ayeNumEl.addClass('h');
   }
   else if(_mode === 'pause')
   {
