@@ -1,0 +1,8 @@
+{%set wordChar%}
+{%if pageStyle == 'uthmani'%}{{myWord.code | raw}}{%else%}{{myWord.text}}{%endif%}
+{%endset%}
+{%if myWord.char_type != 'end'%}
+	      <i data-id='{{myWord.index}}' id='w{{myWord.audio_key}}' {%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{wordChar}}</i>
+{%else%}
+	      <i data-id='{{myWord.index}}' class='ayeNum' title='{{myWord.verse_title}}' data-qiraat='{{myWord.audio}}'>{{wordChar}}</i>
+{%endif%}

@@ -1,7 +1,7 @@
 
 {%for key, value in quranLoaded.text.page1%}
 <!-- load page number once for each page -->
-  <div class='readerMode {{quranLoaded.detail.page1.class}}'>
+  <div class='readerMode {%if pageStyle == "uthmani"%}{{quranLoaded.detail.page1.class}}{%endif%}'>
 {%for page_number, page_line in value%}
 
 {%if page_line.detail.char_type == 'besmellah'%}
@@ -11,17 +11,12 @@
 	<div>{{page_line.detail.name}}</div>
 {%else%}
     <div class='ayeLine'>
-	{%for k, myWord in page_line.word%}
-	{%if myWord.char_type != 'end'%}
-	      <i id='w{{myWord.audio_key}}' data-id='{{myWord.index}}' {%if requestGET.wbwt%} title='{{myWord.translation}}'{%endif%}>{{myWord.code | raw}}</i>
-	{%else%}
-	      <i class='ayeNum' data-id='{{myWord.index}}' data-sura='{{myWord.sura}}' title='{{myWord.verse_title}}' data-qiraat='{{myWord.audio}}'>{{myWord.code | raw}}</i>
-	{%endif%}
-
-	{%endfor%}
+{%for myWord in page_line.word%}
+{%include 'content/home/blocks/block-aye-words.html'%}
+{%endfor%}
     </div>
 {%endif%}
 {%endfor%}
-	</div>
+  </div>
 {%endfor%}
 

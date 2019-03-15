@@ -41,15 +41,15 @@ class view
 		$fontStyleLoaded = \lib\app\font_style::load(\dash\request::get('font'));
 		\dash\data::fontStyleLoaded($fontStyleLoaded);
 
-		$uthmani = 'uthmani';
+		$pageStyle = 'uthmani';
 		if(\dash\request::get('font'))
 		{
 			if(\dash\request::get('font') !== 'uthmani')
 			{
-				$uthmani = null;
+				$pageStyle = null;
 			}
 		}
-		\dash\data::uthmani($uthmani);
+		\dash\data::pageStyle($pageStyle);
 
 		\dash\data::zoomInUrl(\lib\app\font_style::zoom_in_url());
 		\dash\data::zoomOutUrl(\lib\app\font_style::zoom_out_url());
