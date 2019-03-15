@@ -132,7 +132,6 @@ class view
 				break;
 
 			case 'onepage':
-			default:
 				$page  = \dash\data::quranLoaded_find_id();
 				$page1 = null;
 
@@ -169,8 +168,13 @@ class view
 					$desc  .= ' | '. \dash\data::suraDetail_name();
 				}
 				break;
-		}
 
+
+			default:
+				$title = \dash\data::site_title();
+				$desc = \dash\data::site_desc();
+				break;
+		}
 
 		\dash\data::page_title($title);
 		\dash\data::page_desc($desc);
