@@ -44,9 +44,16 @@ class view
 		$pageStyle = 'uthmani';
 		if(\dash\request::get('font'))
 		{
-			if(\dash\request::get('font') !== 'uthmani')
+			switch (\dash\request::get('font'))
 			{
-				$pageStyle = null;
+				case 'uthmani':
+				case 'noorehuda':
+					$pageStyle = \dash\request::get('font');
+					break;
+
+				default:
+					$pageStyle = null;
+					break;
 			}
 		}
 		\dash\data::pageStyle($pageStyle);
