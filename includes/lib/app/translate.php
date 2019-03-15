@@ -4,6 +4,50 @@ namespace lib\app;
 
 class translate
 {
+
+	public static function current_list()
+	{
+		$get       = \dash\request::get();
+		$getTrans  = isset($get['t']) ? $get['t'] : '';
+		$getTrans  = explode('-', $getTrans);
+		$getTrans  = array_filter($getTrans);
+		$getTrans  = array_unique($getTrans);
+		if(!$getTrans)
+		{
+			return null;
+		}
+		$current_list = [];
+		$list         = self::translate_list();
+
+		foreach ($list as $key => $value)
+		{
+			$myKey = $value['language']. $value['index'];
+
+			if(in_array($myKey, $getTrans))
+			{
+				$thisGet       = \dash\request::get();
+				$thisGetTrans  = isset($thisGet['t']) ? $thisGet['t'] : '';
+				$thisGetTrans  = explode('-', $thisGetTrans);
+				$thisGetTrans  = array_filter($thisGetTrans);
+				$thisGetTrans  = array_unique($thisGetTrans);
+				if(in_array($myKey, $thisGetTrans))
+				{
+					unset($thisGetTrans[array_search($myKey, $thisGetTrans)]);
+				}
+
+				$get['t']        = implode('-', $thisGetTrans);
+
+				$url             = \dash\url::that(). '?'. http_build_query($get);
+
+				$value['remove_url'] = $url;
+
+				$current_list[] = $value;
+			}
+		}
+
+		return $current_list;
+	}
+
 	public static function get_translate($_lang)
 	{
 		$list = self::translate_list();

@@ -21,6 +21,26 @@
 {%include 'content/home/blocks/block-cmd-extra.html'%}
   </div>
 
+{%if quranLoaded.translatelist%}
+<div class="c12">
+<div class="f">
+
+{%for key, value in quranLoaded.translatelist%}
+<div class="cauto mRa10 badge light">
+
+  <a href="{{value.remove_url}}"><span class="sf-times fc-red"></span></a>
+  <i class="flag {{value.flag}}"></i>
+  <abbr>{{value.localname}}</abbr>
+  {%if value.image%}
+  <img src="{{value.image}}" alt="{{value.localname}}" class="avatar">
+  {%endif%}
+</div>
+
+{%endfor%}
+</div>
+</div>
+{%endif%}
+
 </div>
 
 {%for key, myAye in suraDetail%}

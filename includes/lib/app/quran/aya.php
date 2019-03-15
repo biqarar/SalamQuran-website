@@ -559,6 +559,8 @@ class aya
 		$result['find_by']           = $_type;
 		$result['find_id']           = $_id;
 
+		$result['translatelist']     = \lib\app\translate::current_list();
+
 		// \dash\notif::api($result);
 
 
