@@ -6,8 +6,8 @@
 {%include 'content/home/blocks/block-ayeActions.html'%}
     </div>
     <div class="c s12">
-     <div class='aye' data-style='{{pageStyle}}'>
-{%for wordIndex, myWord in myAye.word%}
+     <div class='aye'>
+{%for myWord in myAye.word%}
 {%include 'content/home/blocks/block-aye-words.html'%}
 {%endfor%}
      </div>
