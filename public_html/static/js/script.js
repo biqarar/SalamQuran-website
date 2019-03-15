@@ -159,11 +159,11 @@ function checkFPS()
       now    = Date.now();
       fps    = Math.round(1000 / (now - before));
       before = now;
-      if(fps < 20)
+      if(fps < 15)
       {
         lessFPS.push(fps);
         console.log('low fps ', lessFPS.length, fps);
-        if(lessFPS.length > 70)
+        if(lessFPS.length > 50)
         {
           console.log('Your fps is low and we are remove animation to improve performace');
           $('#nodes').remove();
@@ -458,6 +458,7 @@ function highlightAye(_mode)
   }
   else if(_mode === 'end')
   {
+    $('.Quran .ayeBox').removeClass('active');
     myPlayer.attr('data-play', null);
   }
   else
@@ -501,6 +502,7 @@ function detectNextAye(_check)
   var myPlayer  = $('.player');
   var oneAye    = myPlayer.attr('data-oneAye');
   var idCurrent = myPlayer.attr('data-aye');
+  console.log(oneAye);
   if(oneAye === undefined)
   {
     var idNext        = idCurrent = parseInt(idCurrent) + 1;
