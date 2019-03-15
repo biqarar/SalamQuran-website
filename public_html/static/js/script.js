@@ -210,8 +210,14 @@ function handlePlayWbw()
     }
     else if($(this).attr('data-qiraat'))
     {
-      iqra($(this), true);
-      // iqra($(this));
+      if($('.Quran .ayeBox').length > 0)
+      {
+        iqra($(this), true);
+      }
+      else
+      {
+        iqra($(this));
+      }
     }
   });
 
@@ -472,7 +478,7 @@ function highlightAye(_mode)
     ayeAllEl.addClass('h');
     if(parentAyeBox)
     {
-    	parentAyeBox.addClass('active');
+      parentAyeBox.addClass('active');
     }
   }
   else if(_mode === 'pause')
