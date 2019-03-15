@@ -441,12 +441,11 @@ function highlightAye(_mode)
   var ayeNum   = myPlayer.attr('data-aye');
   var ayeNumEl = $('.Quran .ayeNum[data-i="' + ayeNum + '"]');
   var ayeAllEl = $('.Quran i[data-i="' + ayeNum + '"]');
+  var ayeBox   = null;
 
   parentAyeBox = ayeNumEl.parents('.ayeBox');
   if(parentAyeBox.length > 0)
   {
-    $('.Quran .ayeBox').removeClass('active');
-    parentAyeBox.addClass('active');
     // change scroll to start of this aye
     scrollSmoothTo($('.ayeBox#'+ ayeNum))
   }
@@ -454,22 +453,27 @@ function highlightAye(_mode)
   {
     if(ayeAllEl)
     {
-      var zeroWoed = $(ayeAllEl.get(0));
-      if(zeroWoed)
+      var zeroWord = $(ayeAllEl.get(0));
+      if(zeroWord)
       {
-        scrollSmoothTo(zeroWoed);
+        scrollSmoothTo(zeroWord);
       }
     }
     // we are in page view, highlight each i tag of words
   }
   // remove h class from all words
   $('.Quran i').removeClass('h');
+  $('.Quran .ayeBox').removeClass('active');
 
   // check force mode
   if(_mode === 'play')
   {
     myPlayer.attr('data-play', '');
     ayeAllEl.addClass('h');
+    if(parentAyeBox)
+    {
+    	parentAyeBox.addClass('active');
+    }
   }
   else if(_mode === 'pause')
   {
@@ -477,7 +481,6 @@ function highlightAye(_mode)
   }
   else if(_mode === 'end')
   {
-    $('.Quran .ayeBox').removeClass('active');
     myPlayer.attr('data-play', null);
   }
   else
