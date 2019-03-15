@@ -162,12 +162,11 @@ function checkFPS()
       if(fps < 15)
       {
         lessFPS.push(fps);
-        console.log('low fps ', lessFPS.length, fps);
+        // console.log('low fps ', lessFPS.length, fps);
         if(lessFPS.length > 50)
         {
-          console.log('Your fps is low and we are remove animation to improve performace');
+          console.log('Your fps is low and we are remove animation to improve performace', lessFPS);
           $('#nodes').remove();
-          $('html').css('background', '#0aa5dc');
 
           return false;
         }
@@ -239,7 +238,7 @@ function bindAudioTools()
   // on start
   talavatEl.onplay = function()
   {
-    if($(this).attr('data-play') === undefined)
+    if($('.player').attr('data-aye') === undefined)
     {
       console.log('play init');
       iqra('player', false, true);
@@ -270,9 +269,7 @@ function iqra(_ayeNumEl, _playOneAye, _forceByPlayer)
     else
     {
       // press play btn
-      playerTogglePlay(ayeDetail);
-      // highlight
-      highlightAye();
+      playerTogglePlay();
     }
   }
 
@@ -502,7 +499,7 @@ function detectNextAye(_check)
   var myPlayer  = $('.player');
   var oneAye    = myPlayer.attr('data-oneAye');
   var idCurrent = myPlayer.attr('data-aye');
-  console.log(oneAye);
+
   if(oneAye === undefined)
   {
     var idNext        = idCurrent = parseInt(idCurrent) + 1;
