@@ -4,6 +4,24 @@ namespace lib\app;
 
 class qari
 {
+
+	public static function get_aya_audio($_sura, $_aya, $_meta = [], $_get_key = false)
+	{
+		if(!isset($_meta['qari']))
+		{
+			$_meta['qari'] = 1;
+		}
+
+		if(!ctype_digit($_meta['qari']))
+		{
+			$_meta['qari'] = 1;
+		}
+
+		$get_url = self::get_aya_url($_meta['qari'], $_sura, $_aya, $_get_key);
+		return $get_url;
+	}
+
+
 	private static function qari_image($_slug = null)
 	{
 		$url = \dash\url::site(). '/static/images/qariyan/';

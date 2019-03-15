@@ -38,7 +38,7 @@ class controller
 			$meta['mode'] = \dash\request::get('mode');
 		}
 
-		$quran = \lib\app\quran_word::find($url, $meta);
+		$quran = \lib\app\quran\find::find($url, $meta);
 
 		if($quran)
 		{
