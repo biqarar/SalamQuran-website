@@ -191,11 +191,22 @@ function handlePlayWbw()
   $(".Quran i").off('click');
   $(".Quran i").on('click', function()
   {
-    wbwAddr = $(this).attr('data-wbw');
+    var wbwAddr = $(this).attr('id');
+    if(wbwAddr.substr(0,1) !== 'w')
+    {
+      return false;
+    }
+    // remove w from id
+    wbwAddr = wbwAddr.substr(1);
+
     if(wbwAddr)
     {
-      wbwAudio.src = "https://dl.salamquran.com/wbw/" + wbwAddr;
-      wbwAudio.play();
+      var soreID  = wbwAddr.substr(0,3);
+      if(soreID)
+      {
+        wbwAudio.src = "https://dl.salamquran.com/wbw/" + soreID + '/' + wbwAddr + '.mp3';
+        wbwAudio.play();
+      }
     }
     else if($(this).attr('data-qiraat'))
     {
