@@ -14,6 +14,7 @@ class model
 		$post['filetype'] = \dash\request::post('filetype');
 		$post['country']  = \dash\request::post('country');
 		$post['quality']  = \dash\request::post('quality');
+		$post['addr']     = \dash\request::post('addr');
 
 		$file = \dash\app\file::upload_quick('avatar');
 

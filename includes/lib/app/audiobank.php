@@ -122,6 +122,13 @@ class audiobank
 			return false;
 		}
 
+		$addr = \dash\app::request('addr');
+		if($addr && mb_strlen($addr) > 1000)
+		{
+			\dash\notif::error(T_("Please set addr less than 200 character"), 'addr');
+			return false;
+		}
+
 		$country = \dash\app::request('country');
 		if($country && mb_strlen($country) > 200)
 		{
@@ -153,6 +160,7 @@ class audiobank
 		$args['country']  = $country;
 		$args['quality']  = $quality;
 		$args['status']   = $status;
+		$args['addr']     = $addr;
 
 		return $args;
 
@@ -363,6 +371,7 @@ class audiobank
 		if(!\dash\app::isset_request('country')) unset($args['country']);
 		if(!\dash\app::isset_request('quality')) unset($args['quality']);
 		if(!\dash\app::isset_request('status')) unset($args['status']);
+		if(!\dash\app::isset_request('addr')) unset($args['addr']);
 
 
 		if(!empty($args))

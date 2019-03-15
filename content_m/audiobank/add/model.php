@@ -13,6 +13,7 @@ class model
 		$post['filetype'] = \dash\request::post('filetype');
 		$post['country']  = \dash\request::post('country');
 		$post['quality']  = \dash\request::post('quality');
+		$post['addr']     = \dash\request::post('addr');
 
 		\lib\app\audiobank::add($post);
 		\dash\redirect::to(\dash\url::this());

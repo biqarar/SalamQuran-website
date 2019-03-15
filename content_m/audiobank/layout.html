@@ -82,7 +82,12 @@
 
 
 
-
+{% block iaddr%}
+<label for="addr">{%trans "addr"%}</label>
+<div class="input">
+  <input type="text" name="addr" id="addr" value="{{dataRow.addr}}" maxlength='1000'>
+</div>
+{% endblock %}
 
 
 

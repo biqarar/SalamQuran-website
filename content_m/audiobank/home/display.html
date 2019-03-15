@@ -81,6 +81,7 @@
         <th data-sort="{{sortLink.filetype.order}}"><a href="{{sortLink.filetype.link}}">{%trans "file type"%}</a></th>
         <th data-sort="{{sortLink.country.order}}"><a href="{{sortLink.country.link}}">{%trans "Country"%}</a></th>
         <th data-sort="{{sortLink.quality.order}}"><a href="{{sortLink.quality.link}}">{%trans "Quality"%}</a></th>
+        <th data-sort="{{sortLink.addr.order}}"><a href="{{sortLink.addr.link}}">{%trans "Addr"%}</a></th>
         <th data-sort="{{sortLink.status.order}}"><a href='{{sortLink.status.link}}'>{%trans "Status"%}</a></th>
       </tr>
     </thead>
@@ -95,6 +96,7 @@
         <td>{{value.filetype}}</td>
         <td>{{value.location_string}}</td>
         <td>{{value.quality | fitNumber}}</td>
+        <td>{{value.addr}}</td>
         <td>{%set mystatus = value.status%}{%trans mystatus%}</td>
 
       </tr>
