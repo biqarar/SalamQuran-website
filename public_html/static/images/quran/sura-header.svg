@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="462px"
 	 height="52px" viewBox="0 0 462 52" enable-background="new 0 0 462 52" xml:space="preserve">
-<g id="Layer_3">
+<g>
 	<g>
 		<g>
 			<path fill-rule="evenodd" clip-rule="evenodd" fill="#F8EBD9" d="M456.531,0.922L5.156,0.953c-2.209,0-4,1.791-4,4v42
@@ -14,7 +13,7 @@
 		</g>
 	</g>
 </g>
-<g id="Layer_1">
+<g>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" d="
 		M235.71,6.152h100.781c0.134,0.1,0.267,0.2,0.4,0.3c1.1,0.8,2.149,1.7,3.149,2.7c0.4,0.4,0.783,0.817,1.15,1.25
 		c4.1,0.133,7.616,1.684,10.55,4.65c0.833,0.833,1.566,1.733,2.2,2.7c0.544,0.827,1.003,1.694,1.375,2.6
@@ -86,7 +85,7 @@
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" d="
 		M372.1,24.647c0.619,0.402,1.253,0.681,1.901,0.835c0.093,0.03,0.186,0.046,0.278,0.046c0,0.03,0.032,0.046,0.093,0.046
 		c0.093-0.372,0.279-0.696,0.557-0.974c0.216-0.217,0.448-0.372,0.695-0.464c0-0.03,0-0.061,0-0.093"/>
-	
+
 		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" x1="375.624" y1="24.137" x2="375.671" y2="24.137"/>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" d="
 		M372.146,28.404c0.619-0.402,1.269-0.666,1.948-0.789c0.032,0,0.078,0,0.139,0c0.063-0.062,0.14-0.123,0.232-0.186
@@ -126,9 +125,9 @@
 		M433.457,31.699c0.948-1.549,1.505-3.363,1.505-5.311c0-1.949-0.557-3.764-1.505-5.312"/>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" d="
 		M424.765,16.21c-5.62,0-10.176,4.556-10.176,10.177s4.556,10.177,10.176,10.177"/>
-	
+
 		<circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" cx="424.766" cy="26.387" r="5.343"/>
-	
+
 		<circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" cx="376.739" cy="26.399" r="2.396"/>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" d="
 		M381.595,15.396h0.046c0.154,0.185,0.231,0.386,0.231,0.602c0,0.03,0,0.077,0,0.139c-0.03,0.154-0.108,0.293-0.231,0.417
@@ -291,7 +290,7 @@
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" d="
 		M89.584,24.647c-0.619,0.402-1.253,0.681-1.901,0.835c-0.093,0.03-0.186,0.046-0.278,0.046c0,0.03-0.032,0.046-0.093,0.046
 		c-0.093-0.372-0.279-0.696-0.557-0.974c-0.216-0.217-0.448-0.372-0.695-0.464c0-0.03,0-0.061,0-0.093"/>
-	
+
 		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" x1="86.06" y1="24.137" x2="86.013" y2="24.137"/>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" d="
 		M89.538,28.404c-0.619-0.402-1.269-0.666-1.948-0.789c-0.032,0-0.078,0-0.139,0c-0.063-0.062-0.14-0.123-0.232-0.186
@@ -330,9 +329,9 @@
 		M28.227,31.699c-0.948-1.549-1.505-3.363-1.505-5.311c0-1.949,0.557-3.764,1.505-5.312"/>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" d="
 		M36.919,16.21c5.62,0,10.176,4.556,10.176,10.177s-4.556,10.177-10.176,10.177"/>
-	
+
 		<circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" cx="36.918" cy="26.387" r="5.343"/>
-	
+
 		<circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" cx="84.945" cy="26.399" r="2.396"/>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#865520" stroke-width="0.75" stroke-miterlimit="10" d="
 		M80.089,15.396h-0.046c-0.154,0.185-0.231,0.386-0.231,0.602c0,0.03,0,0.077,0,0.139c0.03,0.154,0.108,0.293,0.231,0.417
