@@ -1,12 +1,12 @@
-.Quran .fullCommand{
+.fullCommand{
     user-select: none;
 }
-.Quran .fullCommand .btn{
+.fullCommand .btn{
     background: rgba(0,100,255,0.05);
 }
 
 // dropdowns
-.Quran .ui.dropdown{
+.fullCommand .ui.dropdown{
     cursor: pointer;
     display: block;
     min-height: 1em;
@@ -28,10 +28,10 @@
     margin: 5px;
     width: auto;
 }
-.Quran .ui.dropdown:hover{
+.fullCommand .ui.dropdown:hover{
 	background-color: #eee;
 }
-.Quran .ui.dropdown > .text{
+.fullCommand .ui.dropdown > .text{
 	display: block;
 	height: 36px;
 	line-height: 36px;
@@ -42,7 +42,7 @@
 .ui.dropdown > .text > img{
 
 }
-.Quran .ui.dropdown > .text span{
+.fullCommand .ui.dropdown > .text span{
     display: inline-block;
     height: 36px;
     overflow: hidden;
@@ -50,14 +50,14 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.Quran .ui.dropdown#chooseQari > .text span{
+.fullCommand .ui.dropdown#chooseQari > .text span{
     line-height: 25px;
     max-width: calc(100% - 40px);
 }
-.Quran .ui.dropdown#chooseTranslate .text img{
+.fullCommand .ui.dropdown#chooseTranslate .text img{
     display: none;
 }
-.Quran .ui.dropdown > .text span.type{
+.fullCommand .ui.dropdown > .text span.type{
     height: 15px;
     line-height: 12px!important;
     width: 100%!important;
@@ -68,11 +68,11 @@
 	right: 10px;
 	left:40px;
 }
-.rtl .Quran .ui.dropdown > .text span.type{
+.rtl .fullCommand .ui.dropdown > .text span.type{
 	left:10px;
 	right:40px;
 }
-.Quran .ui.dropdown > i{
+.fullCommand .ui.dropdown > i{
     position: absolute;
     width: 36px;
     height: 36px;
@@ -87,7 +87,7 @@
     top:0;
     left: 0;
 }
-.Quran .ui.dropdown .menu{
+.fullCommand .ui.dropdown .menu{
     max-height: 400px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -95,40 +95,40 @@
     backface-visibility: hidden;
     -webkit-overflow-scrolling: touch;
 }
-.rtl .Quran .ui.dropdown .menu{
+.rtl .fullCommand .ui.dropdown .menu{
     right: 0;
     left: auto;
 }
-.Quran .ui.dropdown#chooseQari .menu{
+.fullCommand .ui.dropdown#chooseQari .menu{
     height: 50vh;
     min-height: 200px;
 }
-.Quran .ui.dropdown#chooseTranslate .menu{
+.fullCommand .ui.dropdown#chooseTranslate .menu{
     height: 50vh;
     min-height: 200px;
     min-width: 200px;
 }
-.rtl .Quran .ui.dropdown .menu > .item > .flag{
+.rtl .fullCommand .ui.dropdown .menu > .item > .flag{
     margin-right: 0;
     margin-left: 1rem;
 }
-.Quran .ui.dropdown .menu > .header{
+.fullCommand .ui.dropdown .menu > .header{
     background-color: rgba(0,0,0,.05);
     line-height: 20px;
     cursor: not-allowed;
     margin:0;
     padding: 1em 0.5em;
 }
-.Quran .ui.dropdown .menu > .header.lang{
+.fullCommand .ui.dropdown .menu > .header.lang{
     background-color: rgba(0,100,255,0.05);
 }
-.Quran .ui.dropdown .menu > .item{
+.fullCommand .ui.dropdown .menu > .item{
 	overflow: hidden;
 }
-.Quran .ui.dropdown .item .type{
+.fullCommand .ui.dropdown .item .type{
 	float: right;
 	color: #999;
 }
-.rtl .Quran .ui.dropdown .item .type{
+.rtl .fullCommand .ui.dropdown .item .type{
 	float: left;
 }
