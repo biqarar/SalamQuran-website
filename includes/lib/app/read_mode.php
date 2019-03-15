@@ -64,6 +64,15 @@ class read_mode
 				'class'   => 'book',
 				'url'     => $master. http_build_query(array_merge($get, ['mode' => 'twopage'])),
 			],
+
+			// 'translatepage' =>
+			// [
+			// 	'default' => false,
+			// 	'name'    => T_('Translate page'),
+			// 	'font'    => null,
+			// 	'class'   => 'book',
+			// 	'url'     => $master. http_build_query(array_merge($get, ['mode' => 'translatepage'])),
+			// ],
 		];
 		return $read_mode;
 	}

@@ -55,7 +55,7 @@ class page
 		$mode      = $_meta['mode'];
 		$get_quran = [];
 
-		if($mode === 'onepage' || !$mode)
+		if($mode === 'onepage' || $mode === 'translatepage' || !$mode)
 		{
 			$get_quran['page'] = $first_page;
 		}
@@ -74,6 +74,17 @@ class page
 		$load             = \lib\db\quran_word::get($get_quran);
 		$load_quran_aya   = \lib\db\quran::get($get_quran);
 
+		$translatePage = [];
+		if($mode === 'translatepage')
+		{
+			$aya_in_page = array_column($load, 'aya');
+			$aya_in_page = array_unique($aya_in_page);
+			$aya_in_page = array_filter($aya_in_page);
+			$aya_in_page = array_values($aya_in_page);
+
+			$translatePage = \lib\app\quran\translate::load($load, $_meta);
+		}
+
 		$quran            = [];
 		$quran['page1']   = [];
 		$quran['page2']   = [];
@@ -84,14 +95,13 @@ class page
 
 		foreach ($load as $key => $value)
 		{
-
 			$myKey      = 'line';
 			$myArrayKey = $value['sura']. '_'. $value['line'];
-			if($_meta['mode'] === 'onepage' || !$_meta['mode'])
+			if($mode === 'onepage' || $mode === 'translatepage' || !$mode)
 			{
 				$myPageKey = 'page1';
 			}
-			elseif($_meta['mode'] === 'twopage')
+			elseif($mode === 'twopage')
 			{
 				$myPageKey = intval($value['page']) === $page1 ? 'page1' : 'page2';
 			}
@@ -314,10 +324,10 @@ class page
 			}
 		}
 
-
+		$result['translatepage'] = $translatePage;
 		$result['text']    = $quran;
 
-		if($_meta['mode'] === 'onepage' || !$_meta['mode'])
+		if($mode === 'onepage' || $mode === 'translatepage' || !$mode)
 		{
 			$next_page = intval($first_page) + 1;
 			$prev_page = intval($first_page) - 1;
@@ -357,7 +367,7 @@ class page
 				];
 			}
 		}
-		elseif($_meta['mode'] === 'twopage')
+		elseif($mode === 'twopage')
 		{
 			$next_page = intval($first_page) + 2;
 			$prev_page = intval($first_page) - 1;
@@ -405,7 +415,7 @@ class page
 
 
 		$result['detail']            = $quran_detail;
-		$result['find_by']           = $_meta['mode'];
+		$result['find_by']           = $mode;
 		$result['find_id']           = ['page1' => substr($page1_classname, 1), 'page2' => substr($page2_classname, 1)];
 
 		// \dash\notif::api($result);

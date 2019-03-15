@@ -107,9 +107,10 @@ class translate
 				$result[] = $translate;
 			}
 		}
+
 		self::$load_translate = true;
 		self::$translate = $result;
-
+		return $result;
 	}
 
 
