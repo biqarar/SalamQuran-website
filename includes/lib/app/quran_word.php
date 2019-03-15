@@ -373,6 +373,8 @@ class quran_word
 					'index'         => isset($quran_aya[$quran_aya_key]['index']) ? $quran_aya[$quran_aya_key]['index'] : null,
 					'text'          => isset($quran_aya[$quran_aya_key]['text']) ? self::normalize($quran_aya[$quran_aya_key]['text']) : null,
 					'simple'        => isset($quran_aya[$quran_aya_key]['simple']) ? $quran_aya[$quran_aya_key]['simple'] : null,
+					'page'          => isset($quran_aya[$quran_aya_key]['page']) ? $quran_aya[$quran_aya_key]['page'] : null,
+					'class_name'    => isset($quran_aya[$quran_aya_key]['page']) ? 'p'.$quran_aya[$quran_aya_key]['page'] : null,
 					'juz'           => isset($quran_aya[$quran_aya_key]['juz']) ? $quran_aya[$quran_aya_key]['juz'] : null,
 					'hizb'          => isset($quran_aya[$quran_aya_key]['hizb']) ? $quran_aya[$quran_aya_key]['hizb'] : null,
 					'word'          => isset($quran_aya[$quran_aya_key]['word']) ? $quran_aya[$quran_aya_key]['word'] : null,
@@ -783,7 +785,7 @@ class quran_word
 		$result['find_by']           = $_type;
 		$result['find_id']           = $_id;
 
-		// \dash\notif::api($result);
+		\dash\notif::api($result);
 
 		self::$find_by    = $_type;
 		return $result;
