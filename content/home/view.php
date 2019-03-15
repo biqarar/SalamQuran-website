@@ -48,6 +48,7 @@ class view
 			{
 				case 'uthmani':
 				case 'noorehuda':
+				case 'iransans':
 					$pageStyle = \dash\request::get('font');
 					break;
 

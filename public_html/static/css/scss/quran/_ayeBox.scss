@@ -37,23 +37,6 @@
 .ayeBox .aye:hover{
     background-color: rgba(0,200,255,0.05);
 }
-.ayeBox .aye[data-style='uthmani']{
-    font-size: 2.5em;
-}
-.ayeBox .aye[data-style='uthmani'] .p1{
-    font-size: 1.2em;
-}
-.ayeBox .aye[data-style='uthmani'] .p2{
-    font-size: 1.2em;
-}
-.ayeBox .aye[data-style='noorehuda']{
-    font-family: Noorehuda;
-    direction: rtl;
-    line-height: 1.8;
-    word-wrap: break-word;
-    font-size: 4rem;
-    word-break: keep-all
-}
 .ayeBox .translate{
     color: #333;
 }

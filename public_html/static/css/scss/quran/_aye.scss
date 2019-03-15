@@ -21,11 +21,26 @@
 .Quran i.h{
     color:#0770dd;
 }
-.Quran[data-style='uthmani'] i{
-    padding:0;
-}
 .Quran[data-style='iransans'] .ayeNum{
     font-family: "Traditional Arabic", "Times New Roman";
     letter-spacing: 2px;
     color: #777;
+}
+.Quran[data-style='uthmani'] i{
+    padding:0;
+    font-size: 1.3em;
+}
+.Quran[data-style='uthmani'] .p1 i{
+    font-size: 1.6em;
+}
+.Quran[data-style='uthmani'] .p2 i{
+    font-size: 1.6em;
+}
+.Quran[data-style='noorehuda'] i{
+    font-family: Noorehuda;
+    direction: rtl;
+    line-height: 1.8;
+    word-wrap: break-word;
+    font-size: 4rem;
+    word-break: keep-all
 }
