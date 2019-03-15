@@ -1238,7 +1238,7 @@ class quran_word
 
 		$result['text']    = $quran;
 
-		if($_meta['mode'] === 'onepage')
+		if($_meta['mode'] === 'onepage' || !$_meta['mode'])
 		{
 			$next_page = intval($first_page) + 1;
 			$prev_page = intval($first_page) - 1;
