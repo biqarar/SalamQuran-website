@@ -24,7 +24,7 @@ self::$config['site']['slogan']        = "Quran Anywhere Anytime";
 
 self::$config['enter']['force_verify'] = false;
 
-self::$config['coming'] = true;
+// self::$config['coming'] = true;
 
 self::$config['api_v6']['appkey']   = [];
 self::$config['api_v6']['appkey'][] = null;
