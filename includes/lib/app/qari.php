@@ -197,10 +197,28 @@ class qari
 		else
 		{
 			$load = self::load($_gari);
+
+
 			if(isset($load['addr']))
 			{
 				$addr = $load['addr'];
-				$url = $addr. $_sura. $_aya. '.mp3';
+
+				if($load['slug'] === 'qaraati')
+				{
+					$qeraati = \lib\app\qeraati_audio::get($_sura. $_aya);
+					if($qeraati)
+					{
+						$url = $addr. $qeraati. '.mp3';
+					}
+					else
+					{
+						$url = null;
+					}
+				}
+				else
+				{
+					$url = $addr. $_sura. $_aya. '.mp3';
+				}
 				return $url;
 			}
 			else
