@@ -5544,12 +5544,12 @@ html[lang="ar"] #soreha .c7 span {
   vertical-align: middle;
   transition: none; }
 
-.ayeBox[data-playing] .meta .opr.play::before {
+.ayeBox.active .meta .opr.play::before {
   content: "\e232";
   font-family: "siftal","tahoma" !important;
   display: inline-block; }
 
-.ayeBox[data-playing] .meta .opr.play::after {
+.ayeBox.active .meta .opr.play::after {
   content: attr(data-pause);
   display: inline-block; }
 
