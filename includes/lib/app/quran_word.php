@@ -232,7 +232,7 @@ class quran_word
 
 	private static function load_quran($_type, $_id, $_aye = null, $_meta = [])
 	{
-		if(in_array($_meta['mode'], ['onepage', 'twopage']))
+		if(in_array($_meta['mode'], ['onepage', 'twopage']) || !$_meta['mode'])
 		{
 			return self::quran_mode(...func_get_args());
 		}
@@ -986,7 +986,7 @@ class quran_word
 		$mode      = $_meta['mode'];
 		$get_quran = [];
 
-		if($mode === 'onepage')
+		if($mode === 'onepage' || !$mode)
 		{
 			$get_quran['page'] = $first_page;
 		}
@@ -1018,7 +1018,7 @@ class quran_word
 
 			$myKey      = 'line';
 			$myArrayKey = $value['sura']. '_'. $value['line'];
-			if($_meta['mode'] === 'onepage')
+			if($_meta['mode'] === 'onepage' || !$_meta['mode'])
 			{
 				$myPageKey = 'page1';
 			}

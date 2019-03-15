@@ -3,13 +3,13 @@
 {%include 'content/home/blocks/block-navigation.html' with {'navPosition': 'top'}%}
 
 
-{%if requestGET.mode == 'onepage'%}
+{%if requestGET.mode == 'onepage' or not requestGET.mode %}
       {%include 'content/home/theme-onePage.html'%}
 
 {%elseif requestGET.mode == 'twopage'%}
       {%include 'content/home/theme-twoPage.html'%}
 
-{%else%}
+{%elseif requestGET.mode == 'aye'%}
       {%include 'content/home/theme-ayeBox.html'%}
 
 {%endif%}
