@@ -132,16 +132,25 @@ class view
 				break;
 
 			case 'onepage':
-				$page  = \dash\data::quranLoaded_find_id();
-				$page1 = null;
-
-				if(isset($page['page1']))
+			default:
+				if(!\dash\url::directory())
 				{
-					$page1 = $page['page1'];
+					$title = \dash\data::site_title();
+					$desc  = \dash\data::site_desc();
 				}
+				else
+				{
+					$page  = \dash\data::quranLoaded_find_id();
+					$page1 = null;
 
-				$title = T_('Page'). ' '. \dash\utility\human::fitNumber($page1);
-				$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($page1). ' '. T_('page');
+					if(isset($page['page1']))
+					{
+						$page1 = $page['page1'];
+					}
+
+					$title = T_('Page'). ' '. \dash\utility\human::fitNumber($page1);
+					$desc  = T_('Quran'). ' #'. \dash\utility\human::fitNumber($page1). ' '. T_('page');
+				}
 
 				break;
 
@@ -170,10 +179,10 @@ class view
 				break;
 
 
-			default:
-				$title = \dash\data::site_title();
-				$desc = \dash\data::site_desc();
-				break;
+			// default:
+			// 	$title = \dash\data::site_title();
+			// 	$desc = \dash\data::site_desc();
+			// 	break;
 		}
 
 		\dash\data::page_title($title);
